@@ -1,0 +1,2446 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="" /> -->
+    <meta property="og:image" content="/public/images/thumbs.png" />
+    <meta property="og:image:width" content="800" /><!--생략가능-->
+    <meta property="og:image:height" content="400" /><!--생략가능-->
+
+    <!-- <meta name="twitter:title" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:description" content=""/>
+
+    <meta name="Keywords" content=""/>
+    <meta name="Description" content=""/>
+    <link rel="canonical" href=""> -->
+
+    <title>안동관광</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/public/css/fullpage.css">
+
+    <link rel="shortcut icon" href="/public/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/_cs_/popup/style.less" type="text/css" />
+    
+</head>
+
+<body>
+    <!-- header start -->
+    <header id="header" class="bgOn">
+    <div class="hd-util-con">
+        <div class="area">
+
+            
+
+<div class="weather-con">
+    <h4>안동날씨</h4>
+        <span class="weather-icon">
+                <img src="/public/images/hd_util_sunny.png" alt="">
+        </span>
+        <div class="air-con">
+              <p class="temp">18.1℃</p>
+                          <p class="bar">|</p>
+              <p class="dust">미세먼지 9.01㎛/㎥</p>
+        </div>
+</div>
+
+                <div class="sch-con">
+                    <div class="ip-box">
+                        <input type="text" id="qq" name="qq" placeholder="검색어를 입력하세요.">
+                        <button type="submit" id="search_submit" class="sch-btn" onclick="search_click()"><img src="/public/images/hd_util_sch.png" alt=""></button>
+                    </div>
+                </div>
+
+
+                <div class="right-wrap">
+                    <div class="sns-con">
+                        <ul>
+                            <li><a href="https://www.facebook.com/makadaAndon" target="_blank"><img src="/public/images/hd_util_facebook.png" alt="페이스북 바로가기"></a></li>
+
+                            <li><a href="/public/sub5/sub4_3.cshtml" target="_blank"><img src="/public/images/hd_util_youtube.png" alt="유튜브 바로가기"></a></li>
+
+                            <li><a href="https://blog.naver.com/andongcity00" target="_blank"><img src="/public/images/hd_util_blog.png" alt="블로그 바로가기"></a></li>
+
+                            <li><a href="https://www.instagram.com/andongcity_official/" target="_blank"><img src="/public/images/hd_util_insta.png" alt="인스타그램 바로가기"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="lang-con">
+                        <div class="h4-wrap">
+                            <h4>LANGUAGE</h4>
+                            <img src="/public/images/hd_util_down.png" alt="">
+                        </div>
+
+                        <ul class="lang-list">
+                            <li><a href="/eng"><p>ENGLISH</p></a></li>
+                            <li><a href="/jpn"><p>日本語</p></a></li>
+                            <li><a href="/chn"><p>中國語(GB)</p></a></li>
+                            <li><a href="/spain"><p>español</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="hd-con">
+        <div class="area">
+            <h1 class="logo">
+                <a href="/public/">
+                    <img class="logo-off" src="/public/images/hd_logo.png" alt="안동관광">
+                    <img class="logo-on" src="/public/images/hd_logo_on.png" alt="안동관광">
+                </a>
+            </h1>
+
+            <div class="gnb">
+                <ul>
+                       <li >
+                           <a href="/public/sub1/sub1.cshtml">
+                               <p>추천여행길</p>
+                               <span class="on-bar"></span>
+                           </a>
+                       </li>
+
+                       <li class="active">
+                           <a href="/public/sub2/sub1.cshtml">
+                               <span class="dot"></span>
+                               <p>안동 즐기기</p>
+                               <span class="on-bar"></span>
+                           </a>
+                       </li>
+                                                     <li >
+                               <a href="/public/sub3/sub1.cshtml">
+                                   <span class="dot"></span>
+                                   <p>안동 맛보기</p>
+                                   <span class="on-bar"></span>
+                               </a>
+                            </li>
+
+
+
+                          <li >
+                             <a href="/public/sub3/sub2.cshtml">
+                                 <span class="dot"></span>
+                                 <p>안동 쉬어가기</p>
+                                 <span class="on-bar"></span>
+                             </a>
+                          </li>
+
+                          <li >
+                             <a href="/public/sub4/sub1.cshtml?category=0&page=17">
+                                 <span class="dot"></span>
+                                 <p>문화유산</p>
+                                 <span class="on-bar"></span>
+                             </a>
+                          </li>
+                                                    <li >
+                                <a href="/public/sub5/sub1.cshtml">
+                                    <span class="dot"></span>
+                                    <p>여행안내</p>
+                                    <span class="on-bar"></span>
+                                </a>
+                             </li>
+
+                </ul>
+            </div>
+
+            <div class="mo-gnb">
+                <ul>
+                    <li class="mo-gnb-sch">
+                        <button>
+                            <img src="/public/images/mobile/mo_hd_search.png" alt="">
+                        </button>
+                    </li>
+
+                    <li class="mo-gnb-lang">
+                        <button>
+                            <img src="/public/images/mobile/mo_hd_language.png" alt="">
+                        </button>
+                    </li>
+
+                    <li class="mo-gnb-menu">
+                        <button>
+                            <img src="/public/images/mobile/mo_hd_menu.png" alt="">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="fullMenu">
+            <div class="fm-wrap">
+                <div class="fm-list-wrap fm-list-1">
+                    <div class="flex-wrap">
+                        <div class="fm-sub-con">
+                            <div class="sub-con-tit">
+                                <h4>추천여행길</h4>
+                                
+                                <p>유서 깊은 문화와 고즈넉한 풍경이 <br>어우러진 안동의 추천 여행길</p>
+                                
+                            </div>
+
+                            <div class="sub-con-img">
+                                <img src="/public/images/full_menu_1_sub_img.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="fm-list-con">
+                            <ul class="fm-list-depth1">
+                                <li class="depth1-li">
+                                    <div class="depth1-tit">
+                                        <h5>안동 대표여행길</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+
+                                    <ul class="fm-list-depth2">
+                                        <li class="depth2-li">
+                                            <a href="/public/sub1/sub1.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>하회마을 코스</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub1/sub1_2.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>도산서원 코스</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub1/sub1_3.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>봉정사 코스</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub1/sub1_4.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>동남부권 코스</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub1/sub1_5.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>안동시내 코스</h6>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <div class="depth1-tit">
+                                        <h5>키워드 여행길</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+
+                                    <ul class="fm-list-depth2">
+                                        <li class="depth2-li">
+                                            <a href="/public/sub1/sub2_2.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>일정별 코스</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub1/sub3.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>테마별 코스</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub1/sub7.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>스탬프 투어</h6>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <a href="/public/sub1/sub4.cshtml">
+                                    <div class="depth1-tit">
+                                        <h5>퇴계 예뎐길</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <a href="/public/sub1/sub5.cshtml">
+                                    <div class="depth1-tit">
+                                        <h5>박물관 탐방</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <a href="/public/sub1/sub6.cshtml">
+                                    <div class="depth1-tit">
+                                        <h5>맞춤 여행길</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fm-list-wrap fm-list-2">
+                    <div class="flex-wrap">
+                        <div class="fm-sub-con">
+                            <div class="sub-con-tit">
+                                <h4>안동 즐기기</h4>
+                                <p>전통의 향기 속에서 다채로운 <br>체험을 만나는 안동의 특별한 하루</p>
+                            </div>
+
+                            <div class="sub-con-img">
+                                <img src="/public/images/full_menu_2_sub_img.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="fm-list-con">
+                            <ul class="fm-list-depth1">
+                                <li class="depth1-li">
+                                    <div class="depth1-tit">
+                                        <h5>축제 소개</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+
+                                    <ul class="fm-list-depth2">
+                                        <li class="depth2-li">
+                                            <a href="/public/sub2/sub1.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>대표 축제</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub2/sub2.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>지역행사</h6>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <div class="depth1-tit">
+                                        <h5>체험 소개</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+
+                                    <ul class="fm-list-depth2">
+                                        <li class="depth2-li">
+                                            <a href="/public/sub2/sub3.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>전통공예</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub2/sub4.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>레포츠</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub2/sub5.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>농촌</h6>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <div class="depth1-tit">
+                                        <h5>추천 PICK</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+
+                                    <ul class="fm-list-depth2">
+                                        <li class="depth2-li">
+                                            <a href="/public/sub2/sub8.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>유네스코세계유산</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub2/sub6.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>꽃놀이</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub2/sub7.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>물놀이</h6>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fm-list-wrap fm-list-3">
+                    <div class="flex-wrap">
+                        <div class="fm-sub-con">
+                            <div class="sub-con-tit">
+                                <h4>안동 맛보기</h4>
+                                <p>전통의 깊은 맛과 감각적인 로컬 <br>미식이 어우러진 안동맛 여행</p>
+                            </div>
+
+                            <div class="sub-con-img">
+                                <img src="/public/images/full_menu_3_sub_img.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="fm-list-con">
+                            <ul class="fm-list-depth1">
+                                <li class="depth1-li">
+                                    <a href="/public/sub3/sub1.cshtml">
+                                    <div class="depth1-tit">
+                                        <h5>대표 먹거리</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <a href="/public/sub3/sub1_3.cshtml">
+                                    <div class="depth1-tit">
+                                        <h5>맛집 투어</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fm-list-wrap fm-list-4">
+                    <div class="flex-wrap">
+                        <div class="fm-sub-con">
+                            <div class="sub-con-tit">
+                                <h4>안동 쉬어가기</h4>
+                                <p>전통이 깃든 고요함 속에서 <br>마음이 쉬어가는 안동의 특별한 휴식처</p>
+                            </div>
+
+                            <div class="sub-con-img">
+                                <img src="/public/images/full_menu_4_sub_img.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="fm-list-con">
+                            <ul class="fm-list-depth1">
+                                <li class="depth1-li">
+                                    <a href="/public/sub3/sub2.cshtml">
+                                    <div class="depth1-tit">
+                                        <h5>숙박 안내</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <a href="/public/sub3/sub3.cshtml">
+                                    <div class="depth1-tit">
+                                        <h5>쇼핑 안내</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fm-list-wrap fm-list-5">
+                    <div class="flex-wrap">
+                        <div class="fm-sub-con">
+                            <div class="sub-con-tit">
+                                <h4>문화유산</h4>
+                                <p>오랜 세월을 거쳐 전해지는 전통과 <br>가치를 담은 안동의 소중한 문화유산</p>
+                            </div>
+
+                            <div class="sub-con-img">
+                                <img src="/public/images/full_menu_5_sub_img.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="fm-list-con">
+                            <ul class="fm-list-depth1">
+                                <li class="depth1-li">
+                                    <a href="/public/sub4/sub1.cshtml?category=0&page=17">
+                                    <div class="depth1-tit">
+                                        <h5>안동의 문화유산</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <a href="/public/sub4/sub3.cshtml">
+                                    <div class="depth1-tit">
+                                        <h5>문화유산 안내</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fm-list-wrap fm-list-6">
+                    <div class="flex-wrap">
+                        <div class="fm-sub-con">
+                            <div class="sub-con-tit">
+                                <h4>여행안내</h4>
+                               <p> 전통의 멋과 사람의 온기가 가득한 <br>안동으로 떠나는 특별한 여정</p>
+                            </div>
+
+                            <div class="sub-con-img">
+                                <img src="/public/images/full_menu_6_sub_img.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="fm-list-con">
+                            <ul class="fm-list-depth1">
+                                <li class="depth1-li">
+
+                                    <div class="depth1-tit">
+                                        <h5>교통정보</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+
+                                    <ul class="fm-list-depth2">
+                                        <li class="depth2-li">
+                                            <a href="/public/sub5/sub1.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>안동 오시는길</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub5/sub1_2.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>관광지 가시는길</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub5/sub1_3.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>교통 예약정보</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="https://andongtourtaxi.com" target="_blank">
+                                                <span class="dot"></span>
+                                                <h6>안동관광택시</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="https://bus.andong.go.kr/">
+                                                <span class="dot"></span>
+                                                <h6>실시간 버스정보시스템</h6>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <div class="depth1-tit">
+                                        <h5>관람정보</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+
+                                    <ul class="fm-list-depth2">
+                                        <li class="depth2-li">
+                                            <a href="/public/sub5/sub2.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>관람요금</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub5/sub2_2.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>관람시간</h6>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <a href="/public/sub5/sub3.cshtml">
+                                    <div class="depth1-tit">
+                                        <h5>관광소식</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <div class="depth1-tit">
+                                        <h5>관광도우미</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+
+                                    <ul class="fm-list-depth2">
+                                        <li class="depth2-li">
+                                            <a href="/public/sub5/sub5.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>문화해설사예약</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub5/sub6.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>관광홍보물 신청</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub5/sub10.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>안동 관광지도</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub5/sub8.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>관광안내소</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub5/sub12.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>관광통역안내전화 1330</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub5/sub14.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>기후정보</h6>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <a href="/public/sub5/sub13.cshtml">
+                                    <div class="depth1-tit">
+                                        <h5>디지털 관광 주민증</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <div class="depth1-tit">
+                                        <h5>안동이야기</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+
+                                    <ul class="fm-list-depth2">
+                                        <li class="depth2-li">
+                                            <a href="/public/sub5/sub4.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>간행물</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub5/sub4_2.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>안동문화FEEL</h6>
+                                            </a>
+                                        </li>
+
+                                        <li class="depth2-li">
+                                            <a href="/public/sub5/sub4_3.cshtml">
+                                                <span class="dot"></span>
+                                                <h6>사진영상 자료실</h6>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <a href="/public/sub5/sub9.cshtml">
+                                    <div class="depth1-tit">
+                                        <h5>국제교류도시</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+
+                                <li class="depth1-li">
+                                    <a href="/public/sub5/sub11.cshtml">
+                                    <div class="depth1-tit">
+                                        <h5>여행사</h5>
+                                        <span class="depth1-tit-arrow">
+                                            <img class="arrow-off" src="/public/images/full_menu_arrow_off.png" alt="">
+                                            <img class="arrow-on" src="/public/images/full_menu_arrow_on.png" alt="">
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+
+
+    function search_click(){
+
+        $("#schFullMenu").fadeIn(400);
+
+        var search_text = document.getElementById('qq').value;
+
+        if (search_text == '') {
+
+            alert('검색어를 확인해주세요.');
+
+        } else {
+
+            location.href = '/public/search/default.cshtml?q=' + search_text;
+
+        }
+
+    }
+
+
+</script>
+
+    <!-- header end -->
+    <div id="black"></div>
+
+    
+
+
+
+<div id="moFullMenu">
+    <div class="moFullMenuWrap">
+        <button class="close-btn"><img src="/public/images/mobile/mo_full_menu_close.png" alt=""></button>
+
+        <h2 class="hd-logo">
+            <a href=""><img src="/public/images/hd_logo_on.png" alt="안동관광111"></a>
+        </h2>
+
+        <div class="fm-list-con">
+            <ul class="fm-list-depth1">
+                <li class="depth1-li">
+                    <div class="depth1-tit">
+                        <h4>추천여행길</h4>
+                        <img class="off" src="/public/images/mobile/mo_full_menu_up.png" alt="">
+                        <img class="on" src="/public/images/mobile/mo_full_menu_up_on.png" alt="">
+                    </div>
+
+                    <ul class="fm-list-depth2">
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>안동 대표여행길</h5>
+                                <img src="/public/images/mobile/mo_full_menu_more.png" alt="">
+                            </div>
+
+                            <ul class="fm-list-depth3">
+                                <li class="depth3-li">
+                                    <a href="/public/sub1/sub1.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>하회마을 코스</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub1/sub1_2.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>도산서원 코스</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub1/sub1_3.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>봉정사 코스</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub1/sub1_4.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>동남부권 코스</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub1/sub1_5.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>안동시내 코스</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>키워드 여행길</h5>
+                                <img src="/public/images/mobile/mo_full_menu_more.png" alt="">
+                            </div>
+
+                            <ul class="fm-list-depth3">
+                                <li class="depth3-li">
+                                    <a href="/public/sub1/sub2_2.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>일정별 코스</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub1/sub3.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>테마별 코스</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub1/sub7.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>스탬프 투어</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>
+                                    <a href="/public/sub1/sub4.cshtml">
+                                        선비 순례길
+                                    </a>
+                                </h5>
+                            </div>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>
+                                    <a href="/public/sub1/sub5.cshtml">
+                                        박물관 탐방
+                                    </a>
+                                </h5>
+                            </div>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>
+                                    <a href="/public/sub1/sub6.cshtml">
+                                        맞춤 여행길
+                                    </a>
+                                </h5>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="depth1-li">
+                    <div class="depth1-tit">
+                        <h4>안동 즐기기</h4>
+                        <img class="off" src="/public/images/mobile/mo_full_menu_up.png" alt="">
+                        <img class="on" src="/public/images/mobile/mo_full_menu_up_on.png" alt="">
+                    </div>
+
+                    <ul class="fm-list-depth2">
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>축제 소개</h5>
+                                <img src="/public/images/mobile/mo_full_menu_more.png" alt="">
+                            </div>
+
+                            <ul class="fm-list-depth3">
+                                <li class="depth3-li">
+                                    <a href="/public/sub2/sub1.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>대표 축제</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub2/sub2.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>지역 행사</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>체험 소개</h5>
+                                <img src="/public/images/mobile/mo_full_menu_more.png" alt="">
+                            </div>
+
+                            <ul class="fm-list-depth3">
+                                <li class="depth3-li">
+                                    <a href="/public/sub2/sub3.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>전통공예</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub2/sub4.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>레포츠</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub2/sub5.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>농촌</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>추천 PICK</h5>
+                                <img src="/public/images/mobile/mo_full_menu_more.png" alt="">
+                            </div>
+
+                            <ul class="fm-list-depth3">
+                                <li class="depth3-li">
+                                    <a href="/public/sub2/sub8.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>유네스코세계유산</h6>
+                                    </a>
+                                </li>
+                                <li class="depth3-li">
+                                    <a href="/public/sub2/sub6.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>꽃놀이</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub2/sub7.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>물놀이</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="depth1-li">
+                    <div class="depth1-tit">
+                        <h4>안동 맛보기</h4>
+                        <img class="off" src="/public/images/mobile/mo_full_menu_up.png" alt="">
+                        <img class="on" src="/public/images/mobile/mo_full_menu_up_on.png" alt="">
+                    </div>
+
+                    <ul class="fm-list-depth2">
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>
+                                    <a href="/public/sub3/sub1.cshtml">
+                                        대표 먹거리
+                                    </a>
+                                </h5>
+                            </div>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>
+                                    <a href="/public/sub3/sub1_3.cshtml">
+                                        맛집 투어
+                                    </a>
+                                </h5>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="depth1-li">
+                    <div class="depth1-tit">
+                        <h4>안동 쉬어가기</h4>
+                        <img class="off" src="/public/images/mobile/mo_full_menu_up.png" alt="">
+                        <img class="on" src="/public/images/mobile/mo_full_menu_up_on.png" alt="">
+                    </div>
+
+                    <ul class="fm-list-depth2">
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>
+                                    <a href="/public/sub3/sub2.cshtml">
+                                        숙박 안내
+                                    </a>
+                                </h5>
+                            </div>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>
+                                    <a href="/public/sub3/sub3.cshtml">
+                                        쇼핑 안내
+                                    </a>
+                                </h5>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="depth1-li">
+                    <div class="depth1-tit">
+                        <h4>문화유산</h4>
+                        <img class="off" src="/public/images/mobile/mo_full_menu_up.png" alt="">
+                        <img class="on" src="/public/images/mobile/mo_full_menu_up_on.png" alt="">
+                    </div>
+
+                    <ul class="fm-list-depth2">
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>
+                                    <a href="/public/sub4/sub1.cshtml?category=0&page=17">
+                                        안동의 문화유산
+                                    </a>
+                                </h5>
+                            </div>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>
+                                    <a href="/public/sub4/sub3.cshtml">
+                                        문화유산 안내
+                                    </a>
+                                </h5>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="depth1-li">
+                    <div class="depth1-tit">
+                        <h4>여행안내</h4>
+                        <img class="off" src="/public/images/mobile/mo_full_menu_up.png" alt="">
+                        <img class="on" src="/public/images/mobile/mo_full_menu_up_on.png" alt="">
+                    </div>
+
+                    <ul class="fm-list-depth2">
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>교통정보</h5>
+                                <img src="/public/images/mobile/mo_full_menu_more.png" alt="">
+                            </div>
+
+                            <ul class="fm-list-depth3">
+                                <li class="depth3-li">
+                                    <a href="/public/sub5/sub1.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>안동 오시는길</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub5/sub1_2.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>관광지 가시는길</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub5/sub1_3.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>교통 예약정보</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="https://www.andongtourtaxi.com" target="_blank">
+                                        <span class="dot"></span>
+                                        <h6>안동관광택시</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="https://bus.andong.go.kr/">
+                                        <span class="dot"></span>
+                                        <h6>실시간 버스정보시스템</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>관람정보</h5>
+                                <img src="/public/images/mobile/mo_full_menu_more.png" alt="">
+                            </div>
+
+                            <ul class="fm-list-depth3">
+                                <li class="depth3-li">
+                                    <a href="/public/sub5/sub2.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>관람요금</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub5/sub2_2.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>관람시간</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>
+                                    <a href="/public/sub5/sub3.cshtml">
+                                        관광소식
+                                    </a>
+                                </h5>
+                            </div>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>관광도우미</h5>
+                                <img src="/public/images/mobile/mo_full_menu_more.png" alt="">
+                            </div>
+
+                            <ul class="fm-list-depth3">
+                                <li class="depth3-li">
+                                    <a href="/public/sub5/sub5.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>문화해설사예약</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub5/sub6.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>관광홍보물 신청</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub5/sub10.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>안동 관광지도</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub5/sub8.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>관광안내소</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub5/sub12.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>관광통역안내전화 1330</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub5/sub14.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>기후정보</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>
+                                    <a href="/public/sub5/sub13.cshtml">
+                                        디지털 관광 주민증
+                                    </a>
+                                </h5>
+                            </div>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>안동이야기</h5>
+                                <img src="/public/images/mobile/mo_full_menu_more.png" alt="">
+                            </div>
+
+                            <ul class="fm-list-depth3">
+                                <li class="depth3-li">
+                                    <a href="/public/sub5/sub4.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>간행물</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub5/sub4_2.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>안동문화FEEL</h6>
+                                    </a>
+                                </li>
+
+                                <li class="depth3-li">
+                                    <a href="/public/sub5/sub4_3.cshtml">
+                                        <span class="dot"></span>
+                                        <h6>사진영상 자료실</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>
+                                    <a href="/public/sub5/sub9.cshtml">
+                                        국제교류도시
+                                    </a>
+                                </h5>
+                            </div>
+                        </li>
+
+                        <li class="depth2-li">
+                            <div class="depth2-tit">
+                                <h5>
+                                    <a href="/public/sub5/sub11.cshtml">
+                                        여행사
+                                    </a>
+                                </h5>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="schFullMenu">
+    <div class="area">
+        <div class="sch-con">
+            <h3>어떤걸 찾으시나요?</h3>
+
+                <div class="ip-box">
+                    <input type="text" id="qq11" name="qq11" placeholder="검색어를 입력하세요.">
+                    <button type="button" id="search_submit" class="sch-btn" onclick="search_detail();"><img src="/public/images/hd_util_sch.png" alt=""></button>
+                </div>
+
+                <div class="sch-list-wrap">
+                    <div class="alphabet-wrap">
+                        <ul class="alphabel-list">
+                            <li class="on" onclick="ja_search('ㄱ');"><p>ㄱ</p></li>
+                            <li onclick="ja_search('ㄴ');"><p>ㄴ</p></li>
+                            <li onclick="ja_search('ㄷ');"><p>ㄷ</p></li>
+                            <li onclick="ja_search('ㄹ');"><p>ㄹ</p></li>
+                            <li onclick="ja_search('ㅁ');"><p>ㅁ</p></li>
+                            <li onclick="ja_search('ㅂ');"><p>ㅂ</p></li>
+                            <li onclick="ja_search('ㅅ');"><p>ㅅ</p></li>
+                            <li onclick="ja_search('ㅇ');"><p>ㅇ</p></li>
+                            <li onclick="ja_search('ㅈ');"><p>ㅈ</p></li>
+                            <li onclick="ja_search('ㅊ');"><p>ㅊ</p></li>
+                            <li onclick="ja_search('ㅋ');"><p>ㅋ</p></li>
+                            <li onclick="ja_search('ㅌ');"><p>ㅌ</p></li>
+                            <li onclick="ja_search('ㅍ');"><p>ㅍ</p></li>
+                            <li onclick="ja_search('ㅎ');"><p>ㅎ</p></li>
+                        </ul>
+                    </div>
+
+                    <div class="word-wrap">
+                        <span class="triangle-icon"><img src="/public/images/sch_full_triangle.png" alt=""></span>
+
+                        <div class="word-list no-scroll" id="ja_check">
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="best-con">
+            <div class="best-con-tit">
+                <h3>이건 어때요?</h3>
+                <strong>BEST</strong>
+            </div>
+
+            <div class="recom-word-wrap">
+                <h4>추천 검색어</h4>
+                <button class="down-btn"><img src="/public/images/sch_full_down.png" alt=""></button>
+            </div>
+
+            <div class="word-wrap">
+                <span class="triangle-icon"><img src="/public/images/sch_full_triangle.png" alt=""></span>
+
+                <div class="word-list">
+                    <ul>
+                            <li onclick="search_link('안동 맛집')" style="cursor:pointer"><p>#안동 맛집</p></li>
+                            <li onclick="search_link('암산얼음축제')" style="cursor:pointer"><p>#암산얼음축제</p></li>
+                            <li onclick="search_link('전통한옥')" style="cursor:pointer"><p>#전통한옥</p></li>
+                            <li onclick="search_link('안동 특산품')" style="cursor:pointer"><p>#안동 특산품</p></li>
+                            <li onclick="search_link('안동 관광명소')" style="cursor:pointer"><p>#안동 관광명소</p></li>
+                            <li onclick="search_link('농촌체험')" style="cursor:pointer"><p>#농촌체험</p></li>
+                            <li onclick="search_link('하회마을')" style="cursor:pointer"><p>#하회마을</p></li>
+                            <li onclick="search_link('스탬프투어')" style="cursor:pointer"><p>#스탬프투어</p></li>
+                            <li onclick="search_link('안동국제탈춤페스티벌')" style="cursor:pointer"><p>#안동국제탈춤페스티벌</p></li>
+                            <li onclick="search_link('유네스코세계유산도시')" style="cursor:pointer"><p>#유네스코세계유산도시</p></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="sch-snb-con">
+            <ul>
+                <li>
+                    <a href="/public/sub5/sub10.cshtml" target="_blank" title="새창열림">
+                        <span class="icon"><img src="/public/images/sch_full_btn1.png" alt=""></span>
+                        <span class="tri"><img src="/public/images/sch_full_btn_tri.png" alt=""></span>
+                        <p>관광지도<span></span></p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.andong.go.kr/photo/master/list.do" target="_blank" title="새창열림">
+                        <span class="icon"><img src="/public/images/sch_full_btn2.png" alt=""></span>
+                        <span class="tri"><img src="/public/images/sch_full_btn_tri.png" alt=""></span>
+                        <p>포토안동<span></span></p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://bus.andong.go.kr/" target="_blank" title="새창열림">
+                        <span class="icon"><img src="/public/images/sch_full_btn3.png" alt=""></span>
+                        <span class="tri"><img src="/public/images/sch_full_btn_tri.png" alt=""></span>
+                        <p>실시간<br>버스정보<span></span></p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="sch-full-close">
+        <img class="pc" src="/public/images/sch_full_close.png" alt="">
+        <img class="mo" src="/public/images/mobile/mo_sch_full_close.png" alt="">
+    </button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+
+    function search_detail(){
+
+        var search_text = document.getElementById('qq11').value;
+
+        if(search_text == ''){
+
+            alert('검색어를 확인해주세요.');
+
+        }else{
+
+            location.href = '/public/search/default.cshtml?q=' +search_text;
+
+        }
+
+    }
+
+    $(function(){
+
+        ja_search('ㄱ');
+
+    })
+
+    function ja_search(ja){
+
+        $.ajax({
+
+            url: 'https://www.tourandong.com/public/ja_search.cshtml?ja=' + ja,
+            dataType : 'html' ,
+            success: function(data) {
+
+                $("#ja_check").html(data);
+
+            }
+
+        });
+
+    }
+
+
+    function search_link(ja){
+
+        location.href = 'https://www.tourandong.com/public/search/default.cshtml?q=' + ja;
+
+    }
+
+
+</script>
+
+
+    <div id="snb">
+        <ul class="clear">
+            <li class="snb-li-1">
+                <a href="https://www.tourandong.com/eng_ksg/sub4/sub1.cshtml" target="_blank">
+                    <p>Tour guide for foreigners</p>
+                    <img src="/public/images/snb_icon1.png" alt="">
+                </a>
+            </li>
+
+            <li class="snb-li-2">
+                <a href="javascript:void(0);" onclick="openTtalk();">
+                    <p>여행상담</p>
+                    <img src="/public/images/snb_icon2.png" alt="">
+                </a>
+                <script>
+                    (
+                        function () {
+                            function ttalk_load() {
+                                var s = document.createElement("script");
+                                s.type = "text/javascript";
+                                s.async = true;
+                                s.src = "https://1330chat.visitkorea.or.kr/ttalk/js/ttalkDev.js";
+                                s.charset = "UTF-8";
+                                var x = document.getElementsByTagName("script")[0];
+                                x.parentNode.insertBefore(s, x);
+                            }
+                            if (document.readyState === "complete") {
+                                ttalk_load();
+                            } else if (window.attachEvent) {
+                                window.attachEvent("onload", ttalk_load);
+                            } else {
+                                window.addEventListener("DOMContentLoaded", ttalk_load, false);
+                            }
+                        }
+                    )();
+                    var ttalk_option = { "uuid": "CHAT1330_160635739001093018", "button": "ttalk_quick", "extra": "_0400_0100_luistest0119" };
+                </script>
+            </li>
+            <li class="snb-li-3">
+                <a href="#" id="scrollToTop">
+                    <p>맨위로</p>
+                    <img src="/public/images/snb_icon3.png" alt="" />
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="btmQuick">
+        <div class="btm-quick-btn">
+            <span class="btn-click"><img src="/public/images/btm_quick_click.png" alt=""></span>
+            <span class="btn-up"><img src="/public/images/btm_quick_up.png" alt=""></span>
+        </div>
+
+        <div class="btm-quick-underbar"></div>
+
+        <div class="btm-quick-wrap">
+            <ul>
+                <li>
+                    <a href="https://www.tourandong.com/map/" target="_blank">
+                        <span class="icon">
+                            <img src="/public/images/btm_quick_icon1.png" alt="">
+                        </span>
+                        <span class="tri"><img src="/public/images/sch_full_btn_tri.png" alt=""></span>
+                        <p>관광지도</p>
+                        <span class="p-bar-on"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.andong.go.kr/photo/master/list.do" target="_blank">
+                        <span class="icon">
+                            <img src="/public/images/btm_quick_icon2.png" alt="">
+                        </span>
+                        <span class="tri"><img src="/public/images/sch_full_btn_tri.png" alt=""></span>
+                        <p>포토안동</p>
+                        <span class="p-bar-on"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.gbtour.kr/coding/main.asp" target="_blank">
+                        <span class="icon">
+                            <img src="/public/images/btm_quick_icon3.png" alt="">
+                        </span>
+                        <span class="tri"><img src="/public/images/sch_full_btn_tri.png" alt=""></span>
+                        <p>시티투어</p>
+                        <span class="p-bar-on"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://andongtourtaxi.com/" target="_blank">
+                        <span class="icon">
+                            <img src="/public/images/btm_quick_icon4.png" alt="">
+                        </span>
+                        <span class="tri"><img src="/public/images/sch_full_btn_tri.png" alt=""></span>
+                        <p>관광택시</p>
+                        <span class="p-bar-on"></span>
+                    </a>
+                </li>
+
+                <li class="btm-quick-list-5">
+                    <a href="https://www.gbtourpass.kr/" target="_blank">
+                        <span class="icon">
+                            <img src="/public/images/btm_quick_icon5.png" alt="">
+                        </span>
+                        <span class="tri"><img src="/public/images/sch_full_btn_tri.png" alt=""></span>
+                        <p>경북투어패스</p>
+                        <span class="p-bar-on"></span>
+                    </a>
+                </li>
+
+                <li class="btm-quick-list-6">
+                    <a href="https://bus.andong.go.kr/" target="_blank">
+                        <span class="icon">
+                            <img src="/public/images/btm_quick_icon6.png" alt="">
+                        </span>
+                        <span class="tri"><img src="/public/images/sch_full_btn_tri.png" alt=""></span>
+                        <p>실시간버스정보</p>
+                        <span class="p-bar-on"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+<head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title></title>
+<!-- 서브페이지 css -->
+<link rel="stylesheet" href="/public/css/sub_layout.css" />
+<link rel="stylesheet" href="/public/css/sub_content.css" />
+<link rel="stylesheet" href="/public/css/board.css" />
+<script src="/public/js/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+            },
+        });
+
+        var swiper2 = new Swiper(".mySwiper3", {
+            slidesPerView: 3.8,
+            spaceBetween: 40,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next3",
+                prevEl: ".swiper-button-prev3",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                960: {
+                    slidesPerView: 2.8,
+                    spaceBetween: 30,
+                },
+                1750: {
+                    slidesPerView: 3.8,
+                    spaceBetween: 40,
+                },
+            },
+        });
+    });
+
+</script>
+<!-- sub Script -->
+</head>
+
+
+
+
+
+<div class="subTitleWrap blue">
+    <div class="area">
+        <div class="titleWrap">
+            <div class="title">
+                <h3 class="tit">안동 즐기기</h3>
+                <p class="txt">전통의 향기 속에서 다채로운 체험을 만나는 안동의 특별한 하루</p>
+            </div>
+
+            <ul class="location">
+                <li><a href="/public" class="home">홈</a></li>
+                <li><a href="/public/sub2/sub3.cshtml">안동 즐기기</a></li>
+                <li><a href="/public/sub2/sub3.cshtml">체험 소개</a></li>
+                    <li><a href="/public/sub2/sub3.cshtml">전통공예</a></li>
+            </ul>
+
+            <div class="imgArea">
+                <span class="all">
+                    <img src="/public/images/sub/layout/sub_title2_img1.png" alt="" />
+                </span>
+                <span class="cloud1">
+                    <img src="/public/images/sub/layout/sub_title2_img2.png" alt="" />
+                </span>
+                <span class="cloud2">
+                    <img src="/public/images/sub/layout/sub_title2_img3.png" alt="" />
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="subMenuWrap">
+        <div class="menuWrap">
+            <a href="/public/sub2/sub3.cshtml" class="active">체험 소개</a>
+            <div class="menuListWrap">
+                <ul class="menuList">
+                    <li><a href="/public/sub2/sub1.cshtml">축제 소개</a></li>
+                    <li><a href="/public/sub2/sub8.cshtml">추천 PICK</a></li>
+                </ul>
+
+                <ul class="menuListMo">
+                    <li>
+                        <a href="javascript:void(0);">체험 소개</a>
+                        <ul>
+                            <li><a href="/public/sub2/sub1.cshtml">축제 소개</a></li>
+                            <li><a href="/public/sub2/sub8.cshtml">추천 PICK</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+       <ul class="iconList">
+         <li>
+           <a href="#n" class="share">공유</a>
+           <ul class="snsList">
+             <li>
+               <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.tourandong.com%2fpublic%2fsub2%2fsub3.cshtml%3fseq%3d196%26page%3d1%26searchKey%3d0%26search%3d" target="_blank">
+                 <img src="/public/images/sns_icon1.png" alt="페이스북 아이콘" />
+               </a>
+             </li>
+             <li>
+               <a href="https://twitter.com/share?url=https%3a%2f%2fwww.tourandong.com%2fpublic%2fsub2%2fsub3.cshtml%3fseq%3d196%26page%3d1%26searchKey%3d0%26search%3d&text=체험 소개" target="_blank" >
+                 <img src="/public/images/sns_icon2.png" alt="X 아이콘" />
+               </a>
+             </li>
+           </ul>
+         </li>
+         <li><a href="#n" id="printPage" class="print">프린트</a></li>
+       </ul>
+    </div>
+</div>
+
+
+<script>
+$('#printPage').on('click', function (e) {
+  e.preventDefault();
+  window.print();
+});
+
+</script>
+
+<div class="subContent">
+    <div class="area">
+        <!-- 탭메뉴 -->
+        <ul class="tabList nth3 blue">
+            <li><a href="/public/sub2/sub3.cshtml" class="active">전통공예</a></li>
+            <li><a href="/public/sub2/sub4.cshtml">레포츠</a></li>
+            <li><a href="/public/sub2/sub5.cshtml">농촌</a></li>
+        </ul>
+
+        <!-- 타이틀 -->
+        <h4 class="cont-title">전통공예</h4>
+
+        
+
+
+
+<div class="courseView">
+    <div class="btnArea">
+            <a href="/public/sub2/sub3.cshtml?seq=372&amp;keyword=&amp;idx=0&amp;day_idx=0&amp;id=0" class="prev">안동공예문화전시관</a>
+
+            <a href="/public/sub2/sub3.cshtml?seq=51&amp;keyword=&amp;idx=0&amp;day_idx=0&amp;id=0" class="next">안동소주박물관</a>
+
+    </div>
+
+    <div class="viewContArea">
+        <div class="slideArea">
+            <div class="viewSlide">
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper viewSwiper2">
+                    <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/df23e7ca3f219d272a3f1f9e0584ce22.jpg?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/hahoe.jpg?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4227.JPG?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4238[2].JPG?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4247.JPG?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4249.JPG?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/42-입선-박진수-하회마을의봄.jpg?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/충효당1.jpg?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/2.은상.박진수.하회마을의_가을.jpg?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4260.JPG?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4266.JPG?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4272.JPG?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/KakaoTalk_20220511_092232789_04.jpg?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/KakaoTalk_20220511_092449722_02.jpg?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/52.입선.김홍자.하회마을전경.jpg?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/2.은상.권영목.하회물돌이.jpg?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/hahoe2.jpg?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/20210201_111457[0].jpg?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/20210206_132546.jpg?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/20210307_140128.jpg?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/20210602_124109.jpg?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4207.JPG?size=1200x1200" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4218.JPG?size=1200x1200" alt="하회마을" />
+                            </div>
+                    </div>
+                </div>
+                <div thumbsSlider="" class="swiper viewSwiper">
+                    <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/df23e7ca3f219d272a3f1f9e0584ce22.jpg?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/hahoe.jpg?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4227.JPG?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4238[2].JPG?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4247.JPG?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4249.JPG?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/42-입선-박진수-하회마을의봄.jpg?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/충효당1.jpg?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/2.은상.박진수.하회마을의_가을.jpg?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4260.JPG?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4266.JPG?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4272.JPG?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/KakaoTalk_20220511_092232789_04.jpg?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/KakaoTalk_20220511_092449722_02.jpg?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/52.입선.김홍자.하회마을전경.jpg?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/2.은상.권영목.하회물돌이.jpg?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/hahoe2.jpg?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/20210201_111457[0].jpg?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/20210206_132546.jpg?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/20210307_140128.jpg?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/20210602_124109.jpg?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4207.JPG?crop=260x181" alt="하회마을" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/_cs_/thumb.cshtml/tour/196/IMG_4218.JPG?crop=260x181" alt="하회마을" />
+                            </div>
+                    </div>
+                    <div class="swiper-button-next next btn"></div>
+                    <div class="swiper-button-prev prev btn"></div>
+                </div>
+            </div>
+
+            <div class="viewText">
+                <div class="text">
+                    <p class="tit unesco">하회마을</p>
+                    <ul class="list">
+                        <li class="loca">
+                            <span>주소</span>
+                            <p>안동시 풍천면 하회남촌길 63</p>
+                        </li>
+
+                        <li class="call">
+                            <span>전화</span>
+                            <p>054-854-3669</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="btnArea">
+                    <li class="heart">
+                        <a href="#n" data-tour-vote="196">추천 <span>128</span></a>
+                    </li>
+
+                        <li class="home"><a href="http://www.hahoe.or.kr" target="_blank">홈페이지</a></li>
+                                            <li class="tell"><a href="tel:054-854-3669">전화걸기</a></li>
+                                            <li class="map"><a href="/map/?seq=196" target="tourmap">지도보기</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h5 class="cont-title">상세설명</h5>
+        <div class="viewInfoArea">
+            <div class="textArea">
+                            <h6 class="cont-title">자원설명</h6>
+                        <ul class="cont-list mb80">
+                            <li><ul>
+<li>분   류 : 민속마을</li>
+<li>지   정 : 중요민속자료 122호 (1984.01.10)</li>
+<li>소재지 : 안동시 풍천면 하회리</li>
+<li>시   대 : 조선시대</li>
+<li>수   량 : 5,288,008㎡ </li>
+</ul>
+
+<p>조선 시대의 성리학자인 겸암 류운룡 선생, 서애 류성룡 선생의 출신 고장으로 유명한 이 곳은 대대로 풍산류씨가 살아 오는 동성부락이다. 낙동강물이 흐르다가 이 지역에서 마을을 감싸 돌면서 흐른다고 하여 ′하회′라는 지명이 붙었다. 별신굿탈놀이와 하회탈이 유명한 마을이다. <br>
+마을 전체가 중요민속자료로 지정되어 있을 뿐만 아니라, 보물로 지정된 입암고택(사랑채 : 고려양식, 안채 : 이조양식, 불천위 사당 : 2채)과 충효당(경내에는 영모각이 있음.)을 비롯하여 중요민속자료로 지정된 고택과 정사들, 서낭당, 정려각, 노거수 등이 있음.</p>
+
+<p>이 마을은 조선 전기 이후의 전통적인 가옥군, 영남의 명기(名基)라는 풍수적 경관, 오랜 역사적 배경, 별신굿과 같은 민간전승 등이 잘 보존된 민속마을이다. 전국유수의 풍산 류씨 동성촌락이며, 그 터전은 낙동강의 넓은 강류가 마을 전체를 동·남·서 세방향으로 감싸도는 명기이다. 지형은 풍수학적으로 태극형(太極形)·연화부수형(蓮花浮水形)·다리미형이라고 한다. 이곳은 대체로 허씨, 안씨 등의 유력한 씨족이 살아왔던 것으로 추정되는데 1635년(인조 13)의 기록을 보면 벌써 류씨의 수가 압도적으로 많다. 류씨의 입향조는 8세 전서공 류종혜(典書公 柳從惠)로 알려져 있으며, 오늘과 같은 동족기반은 중흥조 류운룡(柳雲龍)·류성룡(柳成龍)에 의해서 이루어진 것이다. 류운룡은 시조에서 14대의 종손이며 류성룡은 지손인데 이 두 계손들을 겸암파(謙菴派)·서애파(西厓派)로 부르기도 한다.<br>
+끝없이 펼쳐진 백사장과 울창한 소나무숲이 절경을 이루며 조선전기 이래의 건축물과 하회별신굿탈놀이, 선유줄불놀이 등의 민속문화가 그대로 남아 있어 안동의 전통문화를 이해하기에 가장 적합한 민속마을이다.<br>
+이 마을을 감싸도는 화천(花川)은 낙동강의 상류이며 그 둘레에는 퇴적된 넓은 모래밭이 펼쳐지고, 그 서북쪽에는 울창한 노송림이 들어서 있어 경관이 아름답다. 강류의 마을 쪽이 백사장인데 반해 건너편은 층암절별으로 여러 정대(亭臺)가 자리잡고 있어 승경(勝景)으로서의 면모를 잘 갖추고 있다. 강의 최대폭은 대략 300m이고 최대 수심은 5m에 이른다. 강 건너 인근과의 교통수단은 나룻배이며, 과거에는 음력 7월 보름에 부용대 밑에서 시회가 열렸으며 유명한 줄불놀이가 벌어졌었다. 이 강상유화(江上流花)의 놀이는 화회별신굿과 함께 이 고장의 오랜 민간전승놀이이다. 별신굿에 쓰이던 가면(하회탈과 병산탈)들은 국보(121호)로 지정되어 있으며 그  제작연대는 고려시대로 추정되어 하회마을의 역사적 배경을 잘 말해주고 있다.<br>
+풍산으로부터의 진입도로와 연결된 큰 길이 마을 중심부를 동서로 관통하는데 이 마을길 북쪽을 북촌, 남쪽을 남촌이라 한다. 현재 120가구에 290여명이 살고 있다. <br>
+보물로 지정된 곳은 안동양진당(306호)과 충효당(414호)이 있고, 중요민속자료로는 하회북촌택(84호), 하회원지정사(85호), 하회빈연정사(86호), 하회류씨주가옥(87호), 하회겸암정사(89호), 하회남촌택(90호), 하회주일재(91호) 등이 있다. 이들 지정 가옥들은 모두 류씨집안의 소유이며, 그 중에서도 규모나 유래로 보아 가장 대표적인 것이 양진당, 충효당, 북촌택, 남촌택, 옥연정사, 겸암정사 등을 꼽을 수 있다. <br>
+이러한 전통가옥들 외에도 소규모의 토담집과 붕담집은 기본적 건축재료인 진흙만으로 벽체를 쌓아올리는 원초적 민가축조기법을 보여주고 있다. 평면구조도 一자집, □자집, 튼□자집 등 다양한 민가형식을 보이고 있는데, 과거 신분제사회에서의 반상(班常)의 생활을 볼 수 있는 풍부한 자료들이라 할 수 있다.</p>
+
+<ul>
+<li><p>유래 <br>
+하회마을은 지금부터 약 600여년전 공조전서였던 류종혜공이 이 마을에 터를 닦은 후 그의 후손들이 대대로 살아오던 마을로 현재는 풍산 류씨가 마을 가구수의 약 75%를 차지하고 있는 전형적인 동성부락 마을이다. "하회마을 전체가 문화재"라 할 정도로 문화유적들이 많이 남아 있다. 낙동강물이 동쪽으로 흐르다가 S자형을 이루면서 여기서 마을을 싸고 돌고 있으며 마을 중심부에는 류씨들의 집인 큰 기와집이 자리잡고 있으며 원형이 잘 보존된 초가집들이 둘러싸고 있다. </p></li>
+<li><p>관련 인물 및 유적 <br>
+. 류운룡, 류성룡<br>
+. 하회탈 및 병산탈, 징비록, 류성룡종손가문적11종 22점, 서애유물 3종 27점, 양진당, 충효당, 북촌댁, 원지정사, 빈연정사, 작천고택, 옥연정사, 겸암정사, 남촌댁, 주일재</p></li>
+</ul>
+</li>
+                        </ul>
+                            <h6 class="cont-title">관련 행사개요</h6>
+                        <ul class="cont-list mb80">
+                            <li><p>. 하회별신굿탈놀이 상설공연:<br>
+   - 1월 ~  2월 : 매주 토, 일 오후2시~3시 (하회마을 상설공연장)<br>
+   - 3월 ~ 12월 : 매주 화, 수, 목, 금, 토, 일 오후2시~3시 (하회마을 상설공연장)<br>
+   - 7월 ~  9월 : 매주 토, 일요일 19시~20시 (안동댐 개목나루 여름특별공연)<br>
+   *하회별신굿탈놀이 상설공연 관람료 : 무료<br>
+   - 장소 : 하회마을내 탈춤 전수관</p>
+
+<p>. 안동국제탈춤페스티벌(매년 9월 마지막주 금요일부터 10일간)</p>
+</li>
+                        </ul>
+                            <h6 class="cont-title">이용요금</h6>
+                        <ul class="cont-list mb80">
+                            <li><p>⊙관람료<br>
+- 일반 개인 : 5,000원, 청소년 : 2,500원, 어린이 : 1,500원<br>
+- 일반 단체 : 4,000원, 청소년 : 2,000원, 어린이 : 1,200원<br>
+- 안동시민 개인 : 1,000원, 청소년 : 500원, 어린이 : 400원<br>
+- 안동시민 단체 : 900원, 청소년 : 400원, 어린이 : 300원</p>
+
+<ul>
+<li>단체는 30인 이상</li>
+<li>(1) 만 13세부터 18세 청소년</li>
+<li>(2) 하사관 이하 정복 착용 병사</li>
+<li>65세 이상은 무료</li>
+<li>장애 1급부터 3급까지는 본인 및 보호자 1인 무료</li>
+<li>장애 4급부터는 본인만 무료</li>
+</ul>
+
+<p>⊙입장시간 안내<br>
+- 하절기(4월~9월) 09:00~17:30(입장마감)<br>
+- 동절기(10월~3월) 09:00~16:30(입장마감)</p>
+
+<p>⊙ 체험안내<br>
+- 민속체험(멧돌, 절구, 다듬이방망이, 짚공예), 교육체험(접빈다례, 예절교육), 문화체험(가훈쓰기)<br>
+- 소요시간 : 1시간 내외<br>
+⊙ 주차료 <br>
+  - 무료</p>
+</li>
+                        </ul>
+                            <h6 class="cont-title">고가옥전통체험 가능</h6>
+                        <ul class="cont-list mb80">
+                            <li><p>하회마을 보존회 054-853-0109</p>
+</li>
+                        </ul>
+                            <h6 class="cont-title">위치 설명</h6>
+                        <ul class="cont-list mb80">
+                            <li><p>안동시에서 예천방면 34번국도로 약 20㎞(풍산)→풍천구담방면으로 지방도로 916번 4㎞→풍천중리삼거리에서 하회마을 3㎞지점에 위치한다.</p>
+</li>
+                        </ul>
+                            <h6 class="cont-title">교통편</h6>
+                        <ul class="cont-list mb80">
+                            <li><ul>
+<li>시내버스 210, 풍천2, 급행2 탑승후 하회마을 하차</li>
+<li>자세한 사항 안동시 버스정보시스템 홈페이지 참조 <br>
+<a href="https://bus.andong.go.kr/" target="_blank">https://bus.andong.go.kr/</a></li>
+</ul>
+</li>
+                        </ul>
+                            <h6 class="cont-title">부가정보</h6>
+                        <ul class="cont-list mb80">
+                            <li><ul>
+<li><p>영국 여왕 엘리자베스2세가 이 마을을 방문하였으며, 영화 "YMCA 야구단"이 마을의 옛 분교터와 겸암정사에서 촬영되었으며, 영화 "스캔들-조선남여상열지사"가 옥연정사에서 촬영되기도 하였다.</p></li>
+<li><p>2004학년도 수능문제(사회탐구)에 하회마을의 풍수지리적인 설명을 현대적으로 재해석하는 문제가 출제되기도 했다.</p>
+
+<p><a href="http://www.hahoe.or.kr/">http://www.hahoe.or.kr/</a><br>
+http://www.visitkorea.or.kr/ya/gg/yagg<em>mv0.jsp?i</em>seqno=2142&amp;i<em>type=0&amp;i</em>areacode=35&amp;i_sigun=0</p></li>
+</ul>
+</li>
+                        </ul>
+                            <h6 class="cont-title">이용문의</h6>
+                        <ul class="cont-list mb80">
+                            <li><p>마을관광안내전화: (054)852-3588 <br>
+문화관광해설·통역안내: (054)840-6974 <br>
+안동하회마을관리사무소 (054)854-3669</p>
+</li>
+                        </ul>
+            </div>
+        </div>
+        <a href="/public/sub2/sub3.cshtml?page=1" class="listBtn">목록으로</a>
+    </div>
+</div>
+<script>
+    (function () {
+	$('a[data-tour-vote]').on('click', function (e) {
+		var self = $(this), seq = self.attr('data-tour-vote');
+		$.post('/_cs_/tour/@vote', { seq: seq }, function (result) {
+			if (result.error) return alert(result.error), false;
+			self.html('추천 ' + result.vote);
+		}, 'json');
+		return false;
+	});
+})();
+</script>
+
+    </div>
+</div>
+
+
+    <!-- footer start -->
+    
+<footer id="footer" class="section">
+    <div class="area">
+        <div class="ft-util">
+            <ul>
+                <li><a href="/public/sub5/sub1.cshtml">안동 오시는 길</a></li>
+                <li><a href="https://www.andong.go.kr/portal/contents.do?mId=0802000000" target="_blank" >개인정보처리방침</a></li>
+                    <li><a href="https://www.tourandong.com/public/user/login.cshtml">로그인</a></li>
+            </ul>
+        </div>
+
+        <div class="ft-txt">
+            <div class="ft-txt-left">
+                <ul>
+                    <li>
+                        <h5><span>주</span>소</h5>
+                        <p>(36709) 경상북도 안동시 도산면 월천길 300 <br>한국문화테마파크</p>
+                    </li>
+
+                    <li>
+                        <h5>관광문의</h5>
+                        <p>(054) 840-3431</p>
+                    </li>
+
+                    <li>
+                        <h5>축제문의</h5>
+                        <p>(054) 840-3421</p>
+                    </li>
+
+                    <li>
+                        <h5><span>팩</span>스</h5>
+                        <p>(054) 840-6592</p>
+                    </li>
+                </ul>
+
+                <strong>본 사이트에서는 이메일 주소가 무단 수집되는 것을 거부하며, 위반시 정보통신법에 의해 처벌됨을 알려드립니다.</strong>
+
+                <address>Copyright (C) tourandong.com All rights reserved.</address>
+            </div>
+
+            <div class="ft-txt-right">
+                <h2 class="ft-logo"><a href=""><img src="/public/images/ft_logo.png" alt="안동관광"></a></h2>
+
+                <p class="main-tel">관광통역안내전화 <strong>1330</strong></p>
+
+                <div class="family-site">
+                    <div class="h4-wrap">
+                        <h4>패밀리 사이트</h4>
+
+                        <img class="off" src="/public/images/ft_con_down.png" alt="">
+                        <img class="on" src="/public/images/ft_con_down_on2.png" alt="">
+                    </div>
+
+                    <ul>
+                        <li><a href="http://www.andong.go.kr" target="_blank">안동시청</a></li>
+                        <li><a href="http://www.maskdance.com" target="_blank">안동국제탈춤페스티벌</a></li>
+                        <li><a href="http://hahoe.or.kr" target="_blank">하회마을</a></li>
+                        <li><a href="https://www.andong.go.kr/dosanseowon/main.do" target="_blank">도산서원</a></li>
+                        <li><a href="http://www.byeongsan.net/" target="_blank">병산서원</a></li>
+                        <li><a href="http://www.bongjeongsa.org/" target="_blank">봉정사</a></li>
+                        <li><a href="http://webzine.tourandong.com/" target="_blank">안동문화FEEL</a></li>
+                        <li><a href="http://www.gotaek.kr/" target="_blank">안동의 고가</a></li>
+                        <li><a href="https://imaco.or.kr" target="_blank">세계탈문화예술연맹</a></li>
+                        <li><a href="http://www.andong.go.kr/arts/main.do" target="_blank">안동문화예술의 전당</a></li>
+                        <li><a href="https://www.grandculture.net/korea" target="_blank">한국향토문화전자대전</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- footer end -->
+    <!-- script start -->
+    <script src="/public/js/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="/public/js/jquery.nice-select.js"></script>
+    <script src="/public/js/swiper-bundle.min.js"></script>
+    <script src="/public/js/prefixfree.min.js"></script>
+    <script src="/public/js/fullpage.js"></script>
+    <script src="/public/js/main.js"></script>
+    <script type="text/javascript" src="/_cs_/popup/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                },
+            });
+
+            var swiper2 = new Swiper(".mySwiper3", {
+                slidesPerView: 3.8,
+                spaceBetween: 40,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next3",
+                    prevEl: ".swiper-button-prev3",
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    960: {
+                        slidesPerView: 2.8,
+                        spaceBetween: 30,
+                    },
+                    1750: {
+                        slidesPerView: 3.8,
+                        spaceBetween: 40,
+                    },
+                },
+            });
+
+        });
+
+        $("#scrollToTop").on("click", function (e) {
+            e.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, "slow"); // 부드럽게 최상단 이동
+
+            fullpage_api.moveTo(1, 1);
+             fullpage_api.setScrollingSpeed(700);
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const swiper2 = new Swiper(".mySwiper2", {
+                slidesPerView: 5,
+                loop: true,
+                spaceBetween: 28,
+                navigation: {
+                    nextEl: ".swiper-button-next2",
+                    prevEl: ".swiper-button-prev2",
+                },
+                on: {
+                    init: function () {
+                        updateShiftClasses(this);
+                    },
+                    slideChange: function () {
+                        updateShiftClasses(this);
+                    },
+                },
+                breakpoints: {
+                    320: { slidesPerView: 1, spaceBetween: 60 },
+                    640: { slidesPerView: 3, spaceBetween: 20 },
+                    960: { slidesPerView: 5, spaceBetween: 28 },
+                },
+            });
+
+            const swiper2_2 = new Swiper(".mySwiper2-2", {
+                slidesPerView: 5,
+                // loop: true,
+                spaceBetween: 28,
+                navigation: {
+                    nextEl: ".swiper-button-next3",
+                    prevEl: ".swiper-button-prev3",
+                },
+                on: {
+                    init: function () {
+                        // 초기 슬라이드 순서를 정렬
+                        this.slideToLoop(0, 0, false);
+                    },
+                    slideChange: function () {
+                        // 추가 동작 없음
+                    },
+                },
+                breakpoints: {
+                    320: { slidesPerView: 1, spaceBetween: 60 },
+                    640: { slidesPerView: 3, spaceBetween: 20 },
+                    960: { slidesPerView: 5, spaceBetween: 28 },
+                },
+            });
+
+            const swiper2_3 = new Swiper(".mySwiper2-3", {
+                slidesPerView: 5,
+                // loop: true,
+                spaceBetween: 28,
+                navigation: {
+                    nextEl: ".swiper-button-next4",
+                    prevEl: ".swiper-button-prev4",
+                },
+                on: {
+                    init: function () {
+                        // 초기 슬라이드 순서를 정렬
+                        this.slideToLoop(0, 0, false);
+                    },
+                    slideChange: function () {
+                        // 추가 동작 없음
+                    },
+                },
+                breakpoints: {
+                    320: { slidesPerView: 1, spaceBetween: 60 },
+                    640: { slidesPerView: 3, spaceBetween: 20 },
+                    960: { slidesPerView: 5, spaceBetween: 28 },
+                },
+            });
+
+            function updateShiftClasses(swiperInstance) {
+                swiperInstance.slides.forEach((slide) => {
+                    slide.classList.remove("active-shift", "third-slide-style");
+                });
+
+                const visibleSlides = swiperInstance.slides.slice(swiperInstance.activeIndex, swiperInstance.activeIndex + 5);
+                if (visibleSlides[1]) visibleSlides[1].classList.add("active-shift");
+                if (visibleSlides[3]) visibleSlides[3].classList.add("active-shift");
+                if (visibleSlides[2]) visibleSlides[2].classList.add("third-slide-style");
+            }
+
+            const liItems = document.querySelectorAll(".list-item");
+
+            liItems[0].classList.add("expanded");
+
+            liItems.forEach((item) => {
+                item.addEventListener("click", function () {
+                    if (this.classList.contains("expanded")) {
+                        return;
+                    }
+
+                    liItems.forEach((li) => {
+                        li.classList.remove("expanded");
+                        const liBg = li.querySelector(".li-bg");
+                        if (liBg) {
+                            liBg.style.backgroundImage = `url('${liBg.getAttribute("data-bg")}')`;
+                        }
+                    });
+
+                    this.classList.add("expanded");
+                    const liBg = this.querySelector(".li-bg");
+                    if (liBg) {
+                        const expandedBg = liBg.getAttribute("data-expanded-bg");
+                        liBg.style.backgroundImage = `url('${expandedBg}')`;
+                    }
+                });
+            });
+
+            const btmQuickBtn = document.querySelector("#btmQuick .btm-quick-btn .btn-click");
+            const footer = document.getElementById("footer");
+
+            function checkFooterVisibility() {
+                const footerRect = footer.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+
+                const threshold = 100;
+
+                if (footerRect.top < windowHeight - threshold) {
+                    btmQuickBtn.style.display = "none";
+                } else {
+                    btmQuickBtn.style.display = "block";
+                }
+            }
+
+            function initializeFullpage() {
+                if (window.innerWidth > 960) {
+                    new fullpage(".fullpage", {
+                        autoScrolling: true,
+                        fitToSection: true,
+                        scrollOverflow: true,
+                        normalScrollElements: ".scrollable-content",
+                        onLeave: function (origin, destination, direction) {
+                            const header = document.getElementById("header");
+
+                            if (destination.index === 0) {
+                                header.classList.remove("scrolled");
+                            } else {
+                                header.classList.add("scrolled");
+                            }
+
+                            checkFooterVisibility();
+                        },
+                        afterLoad: function (origin, destination, direction) {
+                            checkFooterVisibility();
+                        },
+                    });
+                    document.body.classList.add("fullpage-initialized");
+                } else if (typeof fullpage_api !== "undefined") {
+                    fullpage_api.destroy("all");
+                    document.body.classList.remove("fullpage-initialized");
+                }
+            }
+
+            let isScrolling = false;
+
+            document.querySelectorAll(".scrollable-content").forEach((scrollable) => {
+                scrollable.addEventListener("wheel", (e) => {
+                    const isAtTop = scrollable.scrollTop === 0;
+                    const isAtBottom = scrollable.scrollHeight - scrollable.scrollTop === scrollable.clientHeight;
+
+                    const isScrollingUp = e.deltaY < 0;
+                    const isScrollingDown = e.deltaY > 0;
+
+                    if (isScrolling) {
+                        e.preventDefault();
+                        return;
+                    }
+
+                    if (isAtTop && isScrollingUp) {
+                        e.preventDefault();
+                        isScrolling = true;
+                        fullpage_api.moveSectionUp();
+                        setTimeout(() => {
+                            isScrolling = false;
+                        }, 600);
+                    } else if (isAtBottom && isScrollingDown) {
+                        e.preventDefault();
+                        isScrolling = true;
+                        fullpage_api.moveSectionDown();
+                        setTimeout(() => {
+                            isScrolling = false;
+                        }, 600);
+                    }
+                });
+            });
+
+            window.addEventListener("scroll", checkFooterVisibility);
+            window.addEventListener("resize", () => {
+                initializeFullpage();
+            });
+
+            initializeFullpage();
+            checkFooterVisibility();
+        });
+    </script>
+    
+    <!-- sub Script -->
+    <script src="/public/js/content.js"></script>
+    
+    
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-56273708-6', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="https://wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+      if (!wcs_add) var wcs_add = {};
+      wcs_add["wa"] = "f219b02fdefd8c";
+      wcs_do();
+    </script>
+
+    <script type="text/javascript" src="/_cs_/counter/counter.js"></script>
+</body>
+
+</html>

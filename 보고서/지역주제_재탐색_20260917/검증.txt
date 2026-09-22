@@ -1,0 +1,6 @@
+Regions=145
+Monthly rows=4081
+Matched prior=145
+Max discrepancy=2.4868995751603507e-14
+Festival pairs=56
+Seconds=1.02

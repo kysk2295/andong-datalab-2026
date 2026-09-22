@@ -1,0 +1,494 @@
+{
+ "list": [
+  {
+   "BASE_DATE": "2013",
+   "AIRPT_POT_CD": "3201",
+   "AIRPT_POT_NM": "부산항구",
+   "PSON_NUM": 192542,
+   "SUM_PSON_NUM": 780451
+  },
+  {
+   "BASE_DATE": "2013",
+   "AIRPT_POT_CD": "3202",
+   "AIRPT_POT_NM": "인천항구",
+   "PSON_NUM": 170403,
+   "SUM_PSON_NUM": 780451
+  },
+  {
+   "BASE_DATE": "2013",
+   "AIRPT_POT_CD": "3213",
+   "AIRPT_POT_NM": "여수항구",
+   "PSON_NUM": 12045,
+   "SUM_PSON_NUM": 780451
+  },
+  {
+   "BASE_DATE": "2013",
+   "AIRPT_POT_CD": "3227",
+   "AIRPT_POT_NM": "제주항구",
+   "PSON_NUM": 386401,
+   "SUM_PSON_NUM": 780451
+  },
+  {
+   "BASE_DATE": "2013",
+   "AIRPT_POT_CD": "3999",
+   "AIRPT_POT_NM": "기타항구",
+   "PSON_NUM": 19060,
+   "SUM_PSON_NUM": 780451
+  },
+  {
+   "BASE_DATE": "2014",
+   "AIRPT_POT_CD": "3201",
+   "AIRPT_POT_NM": "부산항구",
+   "PSON_NUM": 236951,
+   "SUM_PSON_NUM": 1050696
+  },
+  {
+   "BASE_DATE": "2014",
+   "AIRPT_POT_CD": "3202",
+   "AIRPT_POT_NM": "인천항구",
+   "PSON_NUM": 184759,
+   "SUM_PSON_NUM": 1050696
+  },
+  {
+   "BASE_DATE": "2014",
+   "AIRPT_POT_CD": "3213",
+   "AIRPT_POT_NM": "여수항구",
+   "PSON_NUM": 405,
+   "SUM_PSON_NUM": 1050696
+  },
+  {
+   "BASE_DATE": "2014",
+   "AIRPT_POT_CD": "3227",
+   "AIRPT_POT_NM": "제주항구",
+   "PSON_NUM": 590301,
+   "SUM_PSON_NUM": 1050696
+  },
+  {
+   "BASE_DATE": "2014",
+   "AIRPT_POT_CD": "3999",
+   "AIRPT_POT_NM": "기타항구",
+   "PSON_NUM": 38280,
+   "SUM_PSON_NUM": 1050696
+  },
+  {
+   "BASE_DATE": "2015",
+   "AIRPT_POT_CD": "3201",
+   "AIRPT_POT_NM": "부산항구",
+   "PSON_NUM": 151444,
+   "SUM_PSON_NUM": 852511
+  },
+  {
+   "BASE_DATE": "2015",
+   "AIRPT_POT_CD": "3202",
+   "AIRPT_POT_NM": "인천항구",
+   "PSON_NUM": 80601,
+   "SUM_PSON_NUM": 852511
+  },
+  {
+   "BASE_DATE": "2015",
+   "AIRPT_POT_CD": "3213",
+   "AIRPT_POT_NM": "여수항구",
+   "PSON_NUM": 797,
+   "SUM_PSON_NUM": 852511
+  },
+  {
+   "BASE_DATE": "2015",
+   "AIRPT_POT_CD": "3227",
+   "AIRPT_POT_NM": "제주항구",
+   "PSON_NUM": 619170,
+   "SUM_PSON_NUM": 852511
+  },
+  {
+   "BASE_DATE": "2015",
+   "AIRPT_POT_CD": "3999",
+   "AIRPT_POT_NM": "기타항구",
+   "PSON_NUM": 499,
+   "SUM_PSON_NUM": 852511
+  },
+  {
+   "BASE_DATE": "2016",
+   "AIRPT_POT_CD": "3201",
+   "AIRPT_POT_NM": "부산항구",
+   "PSON_NUM": 533538,
+   "SUM_PSON_NUM": 1870418
+  },
+  {
+   "BASE_DATE": "2016",
+   "AIRPT_POT_CD": "3202",
+   "AIRPT_POT_NM": "인천항구",
+   "PSON_NUM": 152961,
+   "SUM_PSON_NUM": 1870418
+  },
+  {
+   "BASE_DATE": "2016",
+   "AIRPT_POT_CD": "3213",
+   "AIRPT_POT_NM": "여수항구",
+   "PSON_NUM": 3300,
+   "SUM_PSON_NUM": 1870418
+  },
+  {
+   "BASE_DATE": "2016",
+   "AIRPT_POT_CD": "3227",
+   "AIRPT_POT_NM": "제주항구",
+   "PSON_NUM": 1177233,
+   "SUM_PSON_NUM": 1870418
+  },
+  {
+   "BASE_DATE": "2016",
+   "AIRPT_POT_CD": "3999",
+   "AIRPT_POT_NM": "기타항구",
+   "PSON_NUM": 3386,
+   "SUM_PSON_NUM": 1870418
+  },
+  {
+   "BASE_DATE": "2017",
+   "AIRPT_POT_CD": "3201",
+   "AIRPT_POT_NM": "부산항구",
+   "PSON_NUM": 146023,
+   "SUM_PSON_NUM": 358544
+  },
+  {
+   "BASE_DATE": "2017",
+   "AIRPT_POT_CD": "3202",
+   "AIRPT_POT_NM": "인천항구",
+   "PSON_NUM": 26822,
+   "SUM_PSON_NUM": 358544
+  },
+  {
+   "BASE_DATE": "2017",
+   "AIRPT_POT_CD": "3213",
+   "AIRPT_POT_NM": "여수항구",
+   "PSON_NUM": 859,
+   "SUM_PSON_NUM": 358544
+  },
+  {
+   "BASE_DATE": "2017",
+   "AIRPT_POT_CD": "3227",
+   "AIRPT_POT_NM": "제주항구",
+   "PSON_NUM": 181049,
+   "SUM_PSON_NUM": 358544
+  },
+  {
+   "BASE_DATE": "2017",
+   "AIRPT_POT_CD": "3999",
+   "AIRPT_POT_NM": "기타항구",
+   "PSON_NUM": 3791,
+   "SUM_PSON_NUM": 358544
+  },
+  {
+   "BASE_DATE": "2018",
+   "AIRPT_POT_CD": "3201",
+   "AIRPT_POT_NM": "부산항구",
+   "PSON_NUM": 105373,
+   "SUM_PSON_NUM": 137373
+  },
+  {
+   "BASE_DATE": "2018",
+   "AIRPT_POT_CD": "3202",
+   "AIRPT_POT_NM": "인천항구",
+   "PSON_NUM": 10522,
+   "SUM_PSON_NUM": 137373
+  },
+  {
+   "BASE_DATE": "2018",
+   "AIRPT_POT_CD": "3213",
+   "AIRPT_POT_NM": "여수항구",
+   "PSON_NUM": 4277,
+   "SUM_PSON_NUM": 137373
+  },
+  {
+   "BASE_DATE": "2018",
+   "AIRPT_POT_CD": "3227",
+   "AIRPT_POT_NM": "제주항구",
+   "PSON_NUM": 14593,
+   "SUM_PSON_NUM": 137373
+  },
+  {
+   "BASE_DATE": "2018",
+   "AIRPT_POT_CD": "3999",
+   "AIRPT_POT_NM": "기타항구",
+   "PSON_NUM": 2608,
+   "SUM_PSON_NUM": 137373
+  },
+  {
+   "BASE_DATE": "2019",
+   "AIRPT_POT_CD": "3201",
+   "AIRPT_POT_NM": "부산항구",
+   "PSON_NUM": 145182,
+   "SUM_PSON_NUM": 185546
+  },
+  {
+   "BASE_DATE": "2019",
+   "AIRPT_POT_CD": "3202",
+   "AIRPT_POT_NM": "인천항구",
+   "PSON_NUM": 4083,
+   "SUM_PSON_NUM": 185546
+  },
+  {
+   "BASE_DATE": "2019",
+   "AIRPT_POT_CD": "3213",
+   "AIRPT_POT_NM": "여수항구",
+   "PSON_NUM": 10223,
+   "SUM_PSON_NUM": 185546
+  },
+  {
+   "BASE_DATE": "2019",
+   "AIRPT_POT_CD": "3227",
+   "AIRPT_POT_NM": "제주항구",
+   "PSON_NUM": 20311,
+   "SUM_PSON_NUM": 185546
+  },
+  {
+   "BASE_DATE": "2019",
+   "AIRPT_POT_CD": "3999",
+   "AIRPT_POT_NM": "기타항구",
+   "PSON_NUM": 5747,
+   "SUM_PSON_NUM": 185546
+  },
+  {
+   "BASE_DATE": "2020",
+   "AIRPT_POT_CD": "3201",
+   "AIRPT_POT_NM": "부산항구",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "2020",
+   "AIRPT_POT_CD": "3202",
+   "AIRPT_POT_NM": "인천항구",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "2020",
+   "AIRPT_POT_CD": "3213",
+   "AIRPT_POT_NM": "여수항구",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "2020",
+   "AIRPT_POT_CD": "3227",
+   "AIRPT_POT_NM": "제주항구",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "2020",
+   "AIRPT_POT_CD": "3999",
+   "AIRPT_POT_NM": "기타항구",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "2021",
+   "AIRPT_POT_CD": "3201",
+   "AIRPT_POT_NM": "부산항구",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "2021",
+   "AIRPT_POT_CD": "3202",
+   "AIRPT_POT_NM": "인천항구",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "2021",
+   "AIRPT_POT_CD": "3213",
+   "AIRPT_POT_NM": "여수항구",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "2021",
+   "AIRPT_POT_CD": "3227",
+   "AIRPT_POT_NM": "제주항구",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "2021",
+   "AIRPT_POT_CD": "3999",
+   "AIRPT_POT_NM": "기타항구",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "2022",
+   "AIRPT_POT_CD": "3201",
+   "AIRPT_POT_NM": "부산항구",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "2022",
+   "AIRPT_POT_CD": "3202",
+   "AIRPT_POT_NM": "인천항구",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "2022",
+   "AIRPT_POT_CD": "3213",
+   "AIRPT_POT_NM": "여수항구",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "2022",
+   "AIRPT_POT_CD": "3227",
+   "AIRPT_POT_NM": "제주항구",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "2022",
+   "AIRPT_POT_CD": "3999",
+   "AIRPT_POT_NM": "기타항구",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "2023",
+   "AIRPT_POT_CD": "3201",
+   "AIRPT_POT_NM": "부산항구",
+   "PSON_NUM": 128053,
+   "SUM_PSON_NUM": 217967
+  },
+  {
+   "BASE_DATE": "2023",
+   "AIRPT_POT_CD": "3202",
+   "AIRPT_POT_NM": "인천항구",
+   "PSON_NUM": 6718,
+   "SUM_PSON_NUM": 217967
+  },
+  {
+   "BASE_DATE": "2023",
+   "AIRPT_POT_CD": "3213",
+   "AIRPT_POT_NM": "여수항구",
+   "PSON_NUM": 2256,
+   "SUM_PSON_NUM": 217967
+  },
+  {
+   "BASE_DATE": "2023",
+   "AIRPT_POT_CD": "3227",
+   "AIRPT_POT_NM": "제주항구",
+   "PSON_NUM": 27102,
+   "SUM_PSON_NUM": 217967
+  },
+  {
+   "BASE_DATE": "2023",
+   "AIRPT_POT_CD": "3999",
+   "AIRPT_POT_NM": "기타항구",
+   "PSON_NUM": 53838,
+   "SUM_PSON_NUM": 217967
+  },
+  {
+   "BASE_DATE": "2024",
+   "AIRPT_POT_CD": "3201",
+   "AIRPT_POT_NM": "부산항구",
+   "PSON_NUM": 127931,
+   "SUM_PSON_NUM": 756936
+  },
+  {
+   "BASE_DATE": "2024",
+   "AIRPT_POT_CD": "3202",
+   "AIRPT_POT_NM": "인천항구",
+   "PSON_NUM": 17163,
+   "SUM_PSON_NUM": 756936
+  },
+  {
+   "BASE_DATE": "2024",
+   "AIRPT_POT_CD": "3213",
+   "AIRPT_POT_NM": "여수항구",
+   "PSON_NUM": 1173,
+   "SUM_PSON_NUM": 756936
+  },
+  {
+   "BASE_DATE": "2024",
+   "AIRPT_POT_CD": "3227",
+   "AIRPT_POT_NM": "제주항구",
+   "PSON_NUM": 181378,
+   "SUM_PSON_NUM": 756936
+  },
+  {
+   "BASE_DATE": "2024",
+   "AIRPT_POT_CD": "3999",
+   "AIRPT_POT_NM": "기타항구",
+   "PSON_NUM": 429291,
+   "SUM_PSON_NUM": 756936
+  },
+  {
+   "BASE_DATE": "2025",
+   "AIRPT_POT_CD": "3201",
+   "AIRPT_POT_NM": "부산항구",
+   "PSON_NUM": 188879,
+   "SUM_PSON_NUM": 979488
+  },
+  {
+   "BASE_DATE": "2025",
+   "AIRPT_POT_CD": "3202",
+   "AIRPT_POT_NM": "인천항구",
+   "PSON_NUM": 46509,
+   "SUM_PSON_NUM": 979488
+  },
+  {
+   "BASE_DATE": "2025",
+   "AIRPT_POT_CD": "3213",
+   "AIRPT_POT_NM": "여수항구",
+   "PSON_NUM": 5248,
+   "SUM_PSON_NUM": 979488
+  },
+  {
+   "BASE_DATE": "2025",
+   "AIRPT_POT_CD": "3227",
+   "AIRPT_POT_NM": "제주항구",
+   "PSON_NUM": 193723,
+   "SUM_PSON_NUM": 979488
+  },
+  {
+   "BASE_DATE": "2025",
+   "AIRPT_POT_CD": "3999",
+   "AIRPT_POT_NM": "기타항구",
+   "PSON_NUM": 545129,
+   "SUM_PSON_NUM": 979488
+  },
+  {
+   "BASE_DATE": "2026",
+   "AIRPT_POT_CD": "3201",
+   "AIRPT_POT_NM": "부산항구",
+   "PSON_NUM": 322437,
+   "SUM_PSON_NUM": 849048
+  },
+  {
+   "BASE_DATE": "2026",
+   "AIRPT_POT_CD": "3202",
+   "AIRPT_POT_NM": "인천항구",
+   "PSON_NUM": 120660,
+   "SUM_PSON_NUM": 849048
+  },
+  {
+   "BASE_DATE": "2026",
+   "AIRPT_POT_CD": "3213",
+   "AIRPT_POT_NM": "여수항구",
+   "PSON_NUM": 17046,
+   "SUM_PSON_NUM": 849048
+  },
+  {
+   "BASE_DATE": "2026",
+   "AIRPT_POT_CD": "3227",
+   "AIRPT_POT_NM": "제주항구",
+   "PSON_NUM": 74145,
+   "SUM_PSON_NUM": 849048
+  },
+  {
+   "BASE_DATE": "2026",
+   "AIRPT_POT_CD": "3999",
+   "AIRPT_POT_NM": "기타항구",
+   "PSON_NUM": 314760,
+   "SUM_PSON_NUM": 849048
+  }
+ ]
+}

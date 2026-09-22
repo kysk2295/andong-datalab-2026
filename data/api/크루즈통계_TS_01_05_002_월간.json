@@ -1,0 +1,819 @@
+{
+ "list": [
+  {
+   "BASE_DATE": "201301",
+   "TOU_NUM1": 58,
+   "TOU_NUM2": 105
+  },
+  {
+   "BASE_DATE": "201302",
+   "TOU_NUM1": 1584,
+   "TOU_NUM2": 2269
+  },
+  {
+   "BASE_DATE": "201303",
+   "TOU_NUM1": 14806,
+   "TOU_NUM2": 20984
+  },
+  {
+   "BASE_DATE": "201304",
+   "TOU_NUM1": 27691,
+   "TOU_NUM2": 39555
+  },
+  {
+   "BASE_DATE": "201305",
+   "TOU_NUM1": 22786,
+   "TOU_NUM2": 32930
+  },
+  {
+   "BASE_DATE": "201306",
+   "TOU_NUM1": 41109,
+   "TOU_NUM2": 61728
+  },
+  {
+   "BASE_DATE": "201307",
+   "TOU_NUM1": 56388,
+   "TOU_NUM2": 82477
+  },
+  {
+   "BASE_DATE": "201308",
+   "TOU_NUM1": 68547,
+   "TOU_NUM2": 101593
+  },
+  {
+   "BASE_DATE": "201309",
+   "TOU_NUM1": 35557,
+   "TOU_NUM2": 56514
+  },
+  {
+   "BASE_DATE": "201310",
+   "TOU_NUM1": 31056,
+   "TOU_NUM2": 44353
+  },
+  {
+   "BASE_DATE": "201311",
+   "TOU_NUM1": 9145,
+   "TOU_NUM2": 15190
+  },
+  {
+   "BASE_DATE": "201312",
+   "TOU_NUM1": 5668,
+   "TOU_NUM2": 8358
+  },
+  {
+   "BASE_DATE": "201401",
+   "TOU_NUM1": 8484,
+   "TOU_NUM2": 11434
+  },
+  {
+   "BASE_DATE": "201402",
+   "TOU_NUM1": 10988,
+   "TOU_NUM2": 16607
+  },
+  {
+   "BASE_DATE": "201403",
+   "TOU_NUM1": 22397,
+   "TOU_NUM2": 35152
+  },
+  {
+   "BASE_DATE": "201404",
+   "TOU_NUM1": 36031,
+   "TOU_NUM2": 59918
+  },
+  {
+   "BASE_DATE": "201405",
+   "TOU_NUM1": 32366,
+   "TOU_NUM2": 59322
+  },
+  {
+   "BASE_DATE": "201406",
+   "TOU_NUM1": 68510,
+   "TOU_NUM2": 96008
+  },
+  {
+   "BASE_DATE": "201407",
+   "TOU_NUM1": 62774,
+   "TOU_NUM2": 91470
+  },
+  {
+   "BASE_DATE": "201408",
+   "TOU_NUM1": 68173,
+   "TOU_NUM2": 99312
+  },
+  {
+   "BASE_DATE": "201409",
+   "TOU_NUM1": 43747,
+   "TOU_NUM2": 68834
+  },
+  {
+   "BASE_DATE": "201410",
+   "TOU_NUM1": 37022,
+   "TOU_NUM2": 51746
+  },
+  {
+   "BASE_DATE": "201411",
+   "TOU_NUM1": 16782,
+   "TOU_NUM2": 24962
+  },
+  {
+   "BASE_DATE": "201412",
+   "TOU_NUM1": 10743,
+   "TOU_NUM2": 17914
+  },
+  {
+   "BASE_DATE": "201501",
+   "TOU_NUM1": 4590,
+   "TOU_NUM2": 6892
+  },
+  {
+   "BASE_DATE": "201502",
+   "TOU_NUM1": 12436,
+   "TOU_NUM2": 17248
+  },
+  {
+   "BASE_DATE": "201503",
+   "TOU_NUM1": 19604,
+   "TOU_NUM2": 31090
+  },
+  {
+   "BASE_DATE": "201504",
+   "TOU_NUM1": 37194,
+   "TOU_NUM2": 54028
+  },
+  {
+   "BASE_DATE": "201505",
+   "TOU_NUM1": 35028,
+   "TOU_NUM2": 55228
+  },
+  {
+   "BASE_DATE": "201506",
+   "TOU_NUM1": 35641,
+   "TOU_NUM2": 57998
+  },
+  {
+   "BASE_DATE": "201507",
+   "TOU_NUM1": 18436,
+   "TOU_NUM2": 28282
+  },
+  {
+   "BASE_DATE": "201508",
+   "TOU_NUM1": 40335,
+   "TOU_NUM2": 60709
+  },
+  {
+   "BASE_DATE": "201509",
+   "TOU_NUM1": 41833,
+   "TOU_NUM2": 68937
+  },
+  {
+   "BASE_DATE": "201510",
+   "TOU_NUM1": 45753,
+   "TOU_NUM2": 71234
+  },
+  {
+   "BASE_DATE": "201511",
+   "TOU_NUM1": 25268,
+   "TOU_NUM2": 42444
+  },
+  {
+   "BASE_DATE": "201512",
+   "TOU_NUM1": 16055,
+   "TOU_NUM2": 26248
+  },
+  {
+   "BASE_DATE": "201601",
+   "TOU_NUM1": 24020,
+   "TOU_NUM2": 34469
+  },
+  {
+   "BASE_DATE": "201602",
+   "TOU_NUM1": 24228,
+   "TOU_NUM2": 33881
+  },
+  {
+   "BASE_DATE": "201603",
+   "TOU_NUM1": 36614,
+   "TOU_NUM2": 57785
+  },
+  {
+   "BASE_DATE": "201604",
+   "TOU_NUM1": 47047,
+   "TOU_NUM2": 76068
+  },
+  {
+   "BASE_DATE": "201605",
+   "TOU_NUM1": 69398,
+   "TOU_NUM2": 115981
+  },
+  {
+   "BASE_DATE": "201606",
+   "TOU_NUM1": 72688,
+   "TOU_NUM2": 120242
+  },
+  {
+   "BASE_DATE": "201607",
+   "TOU_NUM1": 91486,
+   "TOU_NUM2": 146395
+  },
+  {
+   "BASE_DATE": "201608",
+   "TOU_NUM1": 96574,
+   "TOU_NUM2": 147280
+  },
+  {
+   "BASE_DATE": "201609",
+   "TOU_NUM1": 86396,
+   "TOU_NUM2": 145322
+  },
+  {
+   "BASE_DATE": "201610",
+   "TOU_NUM1": 72616,
+   "TOU_NUM2": 117652
+  },
+  {
+   "BASE_DATE": "201611",
+   "TOU_NUM1": 51856,
+   "TOU_NUM2": 88925
+  },
+  {
+   "BASE_DATE": "201612",
+   "TOU_NUM1": 40906,
+   "TOU_NUM2": 72589
+  },
+  {
+   "BASE_DATE": "201701",
+   "TOU_NUM1": 41303,
+   "TOU_NUM2": 59991
+  },
+  {
+   "BASE_DATE": "201702",
+   "TOU_NUM1": 39196,
+   "TOU_NUM2": 60091
+  },
+  {
+   "BASE_DATE": "201703",
+   "TOU_NUM1": 18369,
+   "TOU_NUM2": 26524
+  },
+  {
+   "BASE_DATE": "201704",
+   "TOU_NUM1": 10763,
+   "TOU_NUM2": 12835
+  },
+  {
+   "BASE_DATE": "201705",
+   "TOU_NUM1": 5102,
+   "TOU_NUM2": 7601
+  },
+  {
+   "BASE_DATE": "201706",
+   "TOU_NUM1": 3494,
+   "TOU_NUM2": 7360
+  },
+  {
+   "BASE_DATE": "201707",
+   "TOU_NUM1": 7518,
+   "TOU_NUM2": 10599
+  },
+  {
+   "BASE_DATE": "201708",
+   "TOU_NUM1": 8028,
+   "TOU_NUM2": 10919
+  },
+  {
+   "BASE_DATE": "201709",
+   "TOU_NUM1": 5247,
+   "TOU_NUM2": 8334
+  },
+  {
+   "BASE_DATE": "201710",
+   "TOU_NUM1": 5841,
+   "TOU_NUM2": 7537
+  },
+  {
+   "BASE_DATE": "201711",
+   "TOU_NUM1": 777,
+   "TOU_NUM2": 1115
+  },
+  {
+   "BASE_DATE": "201712",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "201801",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "201802",
+   "TOU_NUM1": 1718,
+   "TOU_NUM2": 2053
+  },
+  {
+   "BASE_DATE": "201803",
+   "TOU_NUM1": 3263,
+   "TOU_NUM2": 4534
+  },
+  {
+   "BASE_DATE": "201804",
+   "TOU_NUM1": 10024,
+   "TOU_NUM2": 12845
+  },
+  {
+   "BASE_DATE": "201805",
+   "TOU_NUM1": 8454,
+   "TOU_NUM2": 11597
+  },
+  {
+   "BASE_DATE": "201806",
+   "TOU_NUM1": 7356,
+   "TOU_NUM2": 11672
+  },
+  {
+   "BASE_DATE": "201807",
+   "TOU_NUM1": 3266,
+   "TOU_NUM2": 4590
+  },
+  {
+   "BASE_DATE": "201808",
+   "TOU_NUM1": 7641,
+   "TOU_NUM2": 9913
+  },
+  {
+   "BASE_DATE": "201809",
+   "TOU_NUM1": 4169,
+   "TOU_NUM2": 5812
+  },
+  {
+   "BASE_DATE": "201810",
+   "TOU_NUM1": 8344,
+   "TOU_NUM2": 11309
+  },
+  {
+   "BASE_DATE": "201811",
+   "TOU_NUM1": 3441,
+   "TOU_NUM2": 5372
+  },
+  {
+   "BASE_DATE": "201812",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "201901",
+   "TOU_NUM1": 2625,
+   "TOU_NUM2": 2959
+  },
+  {
+   "BASE_DATE": "201902",
+   "TOU_NUM1": 2434,
+   "TOU_NUM2": 2763
+  },
+  {
+   "BASE_DATE": "201903",
+   "TOU_NUM1": 3095,
+   "TOU_NUM2": 3784
+  },
+  {
+   "BASE_DATE": "201904",
+   "TOU_NUM1": 11653,
+   "TOU_NUM2": 16268
+  },
+  {
+   "BASE_DATE": "201905",
+   "TOU_NUM1": 14139,
+   "TOU_NUM2": 21024
+  },
+  {
+   "BASE_DATE": "201906",
+   "TOU_NUM1": 9579,
+   "TOU_NUM2": 14629
+  },
+  {
+   "BASE_DATE": "201907",
+   "TOU_NUM1": 5603,
+   "TOU_NUM2": 8127
+  },
+  {
+   "BASE_DATE": "201908",
+   "TOU_NUM1": 10305,
+   "TOU_NUM2": 13409
+  },
+  {
+   "BASE_DATE": "201909",
+   "TOU_NUM1": 7048,
+   "TOU_NUM2": 10560
+  },
+  {
+   "BASE_DATE": "201910",
+   "TOU_NUM1": 6194,
+   "TOU_NUM2": 9233
+  },
+  {
+   "BASE_DATE": "201911",
+   "TOU_NUM1": 3048,
+   "TOU_NUM2": 4435
+  },
+  {
+   "BASE_DATE": "201912",
+   "TOU_NUM1": 1133,
+   "TOU_NUM2": 1499
+  },
+  {
+   "BASE_DATE": "202001",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202002",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202003",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202004",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202005",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202006",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202007",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202008",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202009",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202010",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202011",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202012",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202101",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202102",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202103",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202104",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202105",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202106",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202107",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202108",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202109",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202110",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202111",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202112",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202201",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202202",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202203",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202204",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202205",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202206",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202207",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202208",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202209",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202210",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202211",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202212",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202301",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202302",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": 0
+  },
+  {
+   "BASE_DATE": "202303",
+   "TOU_NUM1": 7533,
+   "TOU_NUM2": 8095
+  },
+  {
+   "BASE_DATE": "202304",
+   "TOU_NUM1": 11175,
+   "TOU_NUM2": 12701
+  },
+  {
+   "BASE_DATE": "202305",
+   "TOU_NUM1": 9152,
+   "TOU_NUM2": 13221
+  },
+  {
+   "BASE_DATE": "202306",
+   "TOU_NUM1": 6251,
+   "TOU_NUM2": 9124
+  },
+  {
+   "BASE_DATE": "202307",
+   "TOU_NUM1": 10682,
+   "TOU_NUM2": 14564
+  },
+  {
+   "BASE_DATE": "202308",
+   "TOU_NUM1": 8886,
+   "TOU_NUM2": 11981
+  },
+  {
+   "BASE_DATE": "202309",
+   "TOU_NUM1": 9413,
+   "TOU_NUM2": 13838
+  },
+  {
+   "BASE_DATE": "202310",
+   "TOU_NUM1": 14877,
+   "TOU_NUM2": 20381
+  },
+  {
+   "BASE_DATE": "202311",
+   "TOU_NUM1": 11391,
+   "TOU_NUM2": 16375
+  },
+  {
+   "BASE_DATE": "202312",
+   "TOU_NUM1": 3641,
+   "TOU_NUM2": 4686
+  },
+  {
+   "BASE_DATE": "202401",
+   "TOU_NUM1": 8756,
+   "TOU_NUM2": 10831
+  },
+  {
+   "BASE_DATE": "202402",
+   "TOU_NUM1": 9370,
+   "TOU_NUM2": 11768
+  },
+  {
+   "BASE_DATE": "202403",
+   "TOU_NUM1": 34310,
+   "TOU_NUM2": 47027
+  },
+  {
+   "BASE_DATE": "202404",
+   "TOU_NUM1": 46751,
+   "TOU_NUM2": 64394
+  },
+  {
+   "BASE_DATE": "202405",
+   "TOU_NUM1": 38950,
+   "TOU_NUM2": 58629
+  },
+  {
+   "BASE_DATE": "202406",
+   "TOU_NUM1": 33166,
+   "TOU_NUM2": 52047
+  },
+  {
+   "BASE_DATE": "202407",
+   "TOU_NUM1": 23233,
+   "TOU_NUM2": 32263
+  },
+  {
+   "BASE_DATE": "202408",
+   "TOU_NUM1": 30995,
+   "TOU_NUM2": 43123
+  },
+  {
+   "BASE_DATE": "202409",
+   "TOU_NUM1": 28077,
+   "TOU_NUM2": 41115
+  },
+  {
+   "BASE_DATE": "202410",
+   "TOU_NUM1": 30207,
+   "TOU_NUM2": 42233
+  },
+  {
+   "BASE_DATE": "202411",
+   "TOU_NUM1": 17272,
+   "TOU_NUM2": 26343
+  },
+  {
+   "BASE_DATE": "202412",
+   "TOU_NUM1": 10690,
+   "TOU_NUM2": 15386
+  },
+  {
+   "BASE_DATE": "202501",
+   "TOU_NUM1": 15022,
+   "TOU_NUM2": 21100
+  },
+  {
+   "BASE_DATE": "202502",
+   "TOU_NUM1": 18012,
+   "TOU_NUM2": 24286
+  },
+  {
+   "BASE_DATE": "202503",
+   "TOU_NUM1": 37320,
+   "TOU_NUM2": 52959
+  },
+  {
+   "BASE_DATE": "202504",
+   "TOU_NUM1": 49269,
+   "TOU_NUM2": 68155
+  },
+  {
+   "BASE_DATE": "202505",
+   "TOU_NUM1": 43961,
+   "TOU_NUM2": 66699
+  },
+  {
+   "BASE_DATE": "202506",
+   "TOU_NUM1": 41979,
+   "TOU_NUM2": 63919
+  },
+  {
+   "BASE_DATE": "202507",
+   "TOU_NUM1": 43928,
+   "TOU_NUM2": 61137
+  },
+  {
+   "BASE_DATE": "202508",
+   "TOU_NUM1": 38502,
+   "TOU_NUM2": 55904
+  },
+  {
+   "BASE_DATE": "202509",
+   "TOU_NUM1": 34502,
+   "TOU_NUM2": 52713
+  },
+  {
+   "BASE_DATE": "202510",
+   "TOU_NUM1": 36460,
+   "TOU_NUM2": 54398
+  },
+  {
+   "BASE_DATE": "202511",
+   "TOU_NUM1": 29492,
+   "TOU_NUM2": 42378
+  },
+  {
+   "BASE_DATE": "202512",
+   "TOU_NUM1": 11230,
+   "TOU_NUM2": 16163
+  },
+  {
+   "BASE_DATE": "202601",
+   "TOU_NUM1": 17514,
+   "TOU_NUM2": 25378
+  },
+  {
+   "BASE_DATE": "202602",
+   "TOU_NUM1": 37812,
+   "TOU_NUM2": 52831
+  },
+  {
+   "BASE_DATE": "202603",
+   "TOU_NUM1": 43725,
+   "TOU_NUM2": 63868
+  },
+  {
+   "BASE_DATE": "202604",
+   "TOU_NUM1": 50985,
+   "TOU_NUM2": 75024
+  },
+  {
+   "BASE_DATE": "202605",
+   "TOU_NUM1": 66831,
+   "TOU_NUM2": 104719
+  },
+  {
+   "BASE_DATE": "202606",
+   "TOU_NUM1": 57866,
+   "TOU_NUM2": 94611
+  },
+  {
+   "BASE_DATE": "202607",
+   "TOU_NUM1": 62603,
+   "TOU_NUM2": 95281
+  }
+ ]
+}

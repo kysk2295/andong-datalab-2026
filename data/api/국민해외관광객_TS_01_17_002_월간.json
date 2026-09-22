@@ -1,0 +1,6766 @@
+{
+ "list": [
+  {
+   "BASE_YM": "201501",
+   "AGE_CD": "20세 이하",
+   "QTY": 301220.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201501",
+   "AGE_CD": "21~30세",
+   "QTY": 283176.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201501",
+   "AGE_CD": "31~40세",
+   "QTY": 307078.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201501",
+   "AGE_CD": "41~50세",
+   "QTY": 379788.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201501",
+   "AGE_CD": "51~60세",
+   "QTY": 300834.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201501",
+   "AGE_CD": "61세이상",
+   "QTY": 143044.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201501",
+   "AGE_CD": "승무원",
+   "QTY": 119398.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201502",
+   "AGE_CD": "20세 이하",
+   "QTY": 206942.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201502",
+   "AGE_CD": "21~30세",
+   "QTY": 248092.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201502",
+   "AGE_CD": "31~40세",
+   "QTY": 262924.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201502",
+   "AGE_CD": "41~50세",
+   "QTY": 275839.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201502",
+   "AGE_CD": "51~60세",
+   "QTY": 226932.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201502",
+   "AGE_CD": "61세이상",
+   "QTY": 117504.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201502",
+   "AGE_CD": "승무원",
+   "QTY": 107376.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201503",
+   "AGE_CD": "20세 이하",
+   "QTY": 82944.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201503",
+   "AGE_CD": "21~30세",
+   "QTY": 201350.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201503",
+   "AGE_CD": "31~40세",
+   "QTY": 293380.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201503",
+   "AGE_CD": "41~50세",
+   "QTY": 267373.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201503",
+   "AGE_CD": "51~60세",
+   "QTY": 280097.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201503",
+   "AGE_CD": "61세이상",
+   "QTY": 176458.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201503",
+   "AGE_CD": "승무원",
+   "QTY": 115081.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201504",
+   "AGE_CD": "20세 이하",
+   "QTY": 104094.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201504",
+   "AGE_CD": "21~30세",
+   "QTY": 189814.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201504",
+   "AGE_CD": "31~40세",
+   "QTY": 314217.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201504",
+   "AGE_CD": "41~50세",
+   "QTY": 284795.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201504",
+   "AGE_CD": "51~60세",
+   "QTY": 293448.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201504",
+   "AGE_CD": "61세이상",
+   "QTY": 192801.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201504",
+   "AGE_CD": "승무원",
+   "QTY": 116291.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201505",
+   "AGE_CD": "20세 이하",
+   "QTY": 149556.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201505",
+   "AGE_CD": "21~30세",
+   "QTY": 217825.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201505",
+   "AGE_CD": "31~40세",
+   "QTY": 332890.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201505",
+   "AGE_CD": "41~50세",
+   "QTY": 303417.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201505",
+   "AGE_CD": "51~60세",
+   "QTY": 277562.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201505",
+   "AGE_CD": "61세이상",
+   "QTY": 173334.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201505",
+   "AGE_CD": "승무원",
+   "QTY": 124681.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201506",
+   "AGE_CD": "20세 이하",
+   "QTY": 126840.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201506",
+   "AGE_CD": "21~30세",
+   "QTY": 239813.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201506",
+   "AGE_CD": "31~40세",
+   "QTY": 289808.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201506",
+   "AGE_CD": "41~50세",
+   "QTY": 247376.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201506",
+   "AGE_CD": "51~60세",
+   "QTY": 225269.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201506",
+   "AGE_CD": "61세이상",
+   "QTY": 132103.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201506",
+   "AGE_CD": "승무원",
+   "QTY": 112342.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201507",
+   "AGE_CD": "20세 이하",
+   "QTY": 269059.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201507",
+   "AGE_CD": "21~30세",
+   "QTY": 315250.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201507",
+   "AGE_CD": "31~40세",
+   "QTY": 333955.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201507",
+   "AGE_CD": "41~50세",
+   "QTY": 307305.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201507",
+   "AGE_CD": "51~60세",
+   "QTY": 226632.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201507",
+   "AGE_CD": "61세이상",
+   "QTY": 112143.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201507",
+   "AGE_CD": "승무원",
+   "QTY": 110988.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201508",
+   "AGE_CD": "20세 이하",
+   "QTY": 267449.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201508",
+   "AGE_CD": "21~30세",
+   "QTY": 384359.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201508",
+   "AGE_CD": "31~40세",
+   "QTY": 367370.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201508",
+   "AGE_CD": "41~50세",
+   "QTY": 315888.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201508",
+   "AGE_CD": "51~60세",
+   "QTY": 255375.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201508",
+   "AGE_CD": "61세이상",
+   "QTY": 121817.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201508",
+   "AGE_CD": "승무원",
+   "QTY": 122991.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201509",
+   "AGE_CD": "20세 이하",
+   "QTY": 138342.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201509",
+   "AGE_CD": "21~30세",
+   "QTY": 269196.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201509",
+   "AGE_CD": "31~40세",
+   "QTY": 335348.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201509",
+   "AGE_CD": "41~50세",
+   "QTY": 262631.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201509",
+   "AGE_CD": "51~60세",
+   "QTY": 240929.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201509",
+   "AGE_CD": "61세이상",
+   "QTY": 143679.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201509",
+   "AGE_CD": "승무원",
+   "QTY": 121532.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201510",
+   "AGE_CD": "20세 이하",
+   "QTY": 152429.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201510",
+   "AGE_CD": "21~30세",
+   "QTY": 256806.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201510",
+   "AGE_CD": "31~40세",
+   "QTY": 373390.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201510",
+   "AGE_CD": "41~50세",
+   "QTY": 328310.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201510",
+   "AGE_CD": "51~60세",
+   "QTY": 310987.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201510",
+   "AGE_CD": "61세이상",
+   "QTY": 185978.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201510",
+   "AGE_CD": "승무원",
+   "QTY": 127408.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201511",
+   "AGE_CD": "20세 이하",
+   "QTY": 137539.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201511",
+   "AGE_CD": "21~30세",
+   "QTY": 241217.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201511",
+   "AGE_CD": "31~40세",
+   "QTY": 348658.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201511",
+   "AGE_CD": "41~50세",
+   "QTY": 321479.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201511",
+   "AGE_CD": "51~60세",
+   "QTY": 289482.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201511",
+   "AGE_CD": "61세이상",
+   "QTY": 166997.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201511",
+   "AGE_CD": "승무원",
+   "QTY": 120691.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201512",
+   "AGE_CD": "20세 이하",
+   "QTY": 260178.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201512",
+   "AGE_CD": "21~30세",
+   "QTY": 301667.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201512",
+   "AGE_CD": "31~40세",
+   "QTY": 351303.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201512",
+   "AGE_CD": "41~50세",
+   "QTY": 345046.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201512",
+   "AGE_CD": "51~60세",
+   "QTY": 260852.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201512",
+   "AGE_CD": "61세이상",
+   "QTY": 136672.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201512",
+   "AGE_CD": "승무원",
+   "QTY": 125997.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "201601",
+   "AGE_CD": "20세 이하",
+   "QTY": 361500.0,
+   "PRE_QTY": 301220.0,
+   "GROW_RATE_PSON_NUM": 20.0
+  },
+  {
+   "BASE_YM": "201601",
+   "AGE_CD": "21~30세",
+   "QTY": 348187.0,
+   "PRE_QTY": 283176.0,
+   "GROW_RATE_PSON_NUM": 23.0
+  },
+  {
+   "BASE_YM": "201601",
+   "AGE_CD": "31~40세",
+   "QTY": 341397.0,
+   "PRE_QTY": 307078.0,
+   "GROW_RATE_PSON_NUM": 11.2
+  },
+  {
+   "BASE_YM": "201601",
+   "AGE_CD": "41~50세",
+   "QTY": 422288.0,
+   "PRE_QTY": 379788.0,
+   "GROW_RATE_PSON_NUM": 11.2
+  },
+  {
+   "BASE_YM": "201601",
+   "AGE_CD": "51~60세",
+   "QTY": 337052.0,
+   "PRE_QTY": 300834.0,
+   "GROW_RATE_PSON_NUM": 12.0
+  },
+  {
+   "BASE_YM": "201601",
+   "AGE_CD": "61세이상",
+   "QTY": 169905.0,
+   "PRE_QTY": 143044.0,
+   "GROW_RATE_PSON_NUM": 18.8
+  },
+  {
+   "BASE_YM": "201601",
+   "AGE_CD": "승무원",
+   "QTY": 132008.0,
+   "PRE_QTY": 119398.0,
+   "GROW_RATE_PSON_NUM": 10.6
+  },
+  {
+   "BASE_YM": "201602",
+   "AGE_CD": "20세 이하",
+   "QTY": 288635.0,
+   "PRE_QTY": 206942.0,
+   "GROW_RATE_PSON_NUM": 39.5
+  },
+  {
+   "BASE_YM": "201602",
+   "AGE_CD": "21~30세",
+   "QTY": 334696.0,
+   "PRE_QTY": 248092.0,
+   "GROW_RATE_PSON_NUM": 34.9
+  },
+  {
+   "BASE_YM": "201602",
+   "AGE_CD": "31~40세",
+   "QTY": 315424.0,
+   "PRE_QTY": 262924.0,
+   "GROW_RATE_PSON_NUM": 20.0
+  },
+  {
+   "BASE_YM": "201602",
+   "AGE_CD": "41~50세",
+   "QTY": 356618.0,
+   "PRE_QTY": 275839.0,
+   "GROW_RATE_PSON_NUM": 29.3
+  },
+  {
+   "BASE_YM": "201602",
+   "AGE_CD": "51~60세",
+   "QTY": 299193.0,
+   "PRE_QTY": 226932.0,
+   "GROW_RATE_PSON_NUM": 31.8
+  },
+  {
+   "BASE_YM": "201602",
+   "AGE_CD": "61세이상",
+   "QTY": 158373.0,
+   "PRE_QTY": 117504.0,
+   "GROW_RATE_PSON_NUM": 34.8
+  },
+  {
+   "BASE_YM": "201602",
+   "AGE_CD": "승무원",
+   "QTY": 123989.0,
+   "PRE_QTY": 107376.0,
+   "GROW_RATE_PSON_NUM": 15.5
+  },
+  {
+   "BASE_YM": "201603",
+   "AGE_CD": "20세 이하",
+   "QTY": 97325.0,
+   "PRE_QTY": 82944.0,
+   "GROW_RATE_PSON_NUM": 17.3
+  },
+  {
+   "BASE_YM": "201603",
+   "AGE_CD": "21~30세",
+   "QTY": 232693.0,
+   "PRE_QTY": 201350.0,
+   "GROW_RATE_PSON_NUM": 15.6
+  },
+  {
+   "BASE_YM": "201603",
+   "AGE_CD": "31~40세",
+   "QTY": 313404.0,
+   "PRE_QTY": 293380.0,
+   "GROW_RATE_PSON_NUM": 6.8
+  },
+  {
+   "BASE_YM": "201603",
+   "AGE_CD": "41~50세",
+   "QTY": 291465.0,
+   "PRE_QTY": 267373.0,
+   "GROW_RATE_PSON_NUM": 9.0
+  },
+  {
+   "BASE_YM": "201603",
+   "AGE_CD": "51~60세",
+   "QTY": 305312.0,
+   "PRE_QTY": 280097.0,
+   "GROW_RATE_PSON_NUM": 9.0
+  },
+  {
+   "BASE_YM": "201603",
+   "AGE_CD": "61세이상",
+   "QTY": 204489.0,
+   "PRE_QTY": 176458.0,
+   "GROW_RATE_PSON_NUM": 15.9
+  },
+  {
+   "BASE_YM": "201603",
+   "AGE_CD": "승무원",
+   "QTY": 124474.0,
+   "PRE_QTY": 115081.0,
+   "GROW_RATE_PSON_NUM": 8.2
+  },
+  {
+   "BASE_YM": "201604",
+   "AGE_CD": "20세 이하",
+   "QTY": 125624.0,
+   "PRE_QTY": 104094.0,
+   "GROW_RATE_PSON_NUM": 20.7
+  },
+  {
+   "BASE_YM": "201604",
+   "AGE_CD": "21~30세",
+   "QTY": 227494.0,
+   "PRE_QTY": 189814.0,
+   "GROW_RATE_PSON_NUM": 19.9
+  },
+  {
+   "BASE_YM": "201604",
+   "AGE_CD": "31~40세",
+   "QTY": 346696.0,
+   "PRE_QTY": 314217.0,
+   "GROW_RATE_PSON_NUM": 10.3
+  },
+  {
+   "BASE_YM": "201604",
+   "AGE_CD": "41~50세",
+   "QTY": 308915.0,
+   "PRE_QTY": 284795.0,
+   "GROW_RATE_PSON_NUM": 8.5
+  },
+  {
+   "BASE_YM": "201604",
+   "AGE_CD": "51~60세",
+   "QTY": 302306.0,
+   "PRE_QTY": 293448.0,
+   "GROW_RATE_PSON_NUM": 3.0
+  },
+  {
+   "BASE_YM": "201604",
+   "AGE_CD": "61세이상",
+   "QTY": 203891.0,
+   "PRE_QTY": 192801.0,
+   "GROW_RATE_PSON_NUM": 5.8
+  },
+  {
+   "BASE_YM": "201604",
+   "AGE_CD": "승무원",
+   "QTY": 121671.0,
+   "PRE_QTY": 116291.0,
+   "GROW_RATE_PSON_NUM": 4.6
+  },
+  {
+   "BASE_YM": "201605",
+   "AGE_CD": "20세 이하",
+   "QTY": 311748.0,
+   "PRE_QTY": 299112.0,
+   "GROW_RATE_PSON_NUM": 4.2
+  },
+  {
+   "BASE_YM": "201605",
+   "AGE_CD": "21~30세",
+   "QTY": 470912.0,
+   "PRE_QTY": 435650.0,
+   "GROW_RATE_PSON_NUM": 8.1
+  },
+  {
+   "BASE_YM": "201605",
+   "AGE_CD": "31~40세",
+   "QTY": 689752.0,
+   "PRE_QTY": 665780.0,
+   "GROW_RATE_PSON_NUM": 3.6
+  },
+  {
+   "BASE_YM": "201605",
+   "AGE_CD": "41~50세",
+   "QTY": 631706.0,
+   "PRE_QTY": 606834.0,
+   "GROW_RATE_PSON_NUM": 4.1
+  },
+  {
+   "BASE_YM": "201605",
+   "AGE_CD": "51~60세",
+   "QTY": 576028.0,
+   "PRE_QTY": 555124.0,
+   "GROW_RATE_PSON_NUM": 3.8
+  },
+  {
+   "BASE_YM": "201605",
+   "AGE_CD": "61세이상",
+   "QTY": 375634.0,
+   "PRE_QTY": 346668.0,
+   "GROW_RATE_PSON_NUM": 8.4
+  },
+  {
+   "BASE_YM": "201605",
+   "AGE_CD": "승무원",
+   "QTY": 257676.0,
+   "PRE_QTY": 249362.0,
+   "GROW_RATE_PSON_NUM": 3.3
+  },
+  {
+   "BASE_YM": "201606",
+   "AGE_CD": "20세 이하",
+   "QTY": 176843.0,
+   "PRE_QTY": 126840.0,
+   "GROW_RATE_PSON_NUM": 39.4
+  },
+  {
+   "BASE_YM": "201606",
+   "AGE_CD": "21~30세",
+   "QTY": 316219.0,
+   "PRE_QTY": 239813.0,
+   "GROW_RATE_PSON_NUM": 31.9
+  },
+  {
+   "BASE_YM": "201606",
+   "AGE_CD": "31~40세",
+   "QTY": 363474.0,
+   "PRE_QTY": 289808.0,
+   "GROW_RATE_PSON_NUM": 25.4
+  },
+  {
+   "BASE_YM": "201606",
+   "AGE_CD": "41~50세",
+   "QTY": 321727.0,
+   "PRE_QTY": 247376.0,
+   "GROW_RATE_PSON_NUM": 30.1
+  },
+  {
+   "BASE_YM": "201606",
+   "AGE_CD": "51~60세",
+   "QTY": 296871.0,
+   "PRE_QTY": 225269.0,
+   "GROW_RATE_PSON_NUM": 31.8
+  },
+  {
+   "BASE_YM": "201606",
+   "AGE_CD": "61세이상",
+   "QTY": 177007.0,
+   "PRE_QTY": 132103.0,
+   "GROW_RATE_PSON_NUM": 34.0
+  },
+  {
+   "BASE_YM": "201606",
+   "AGE_CD": "승무원",
+   "QTY": 126176.0,
+   "PRE_QTY": 112342.0,
+   "GROW_RATE_PSON_NUM": 12.3
+  },
+  {
+   "BASE_YM": "201607",
+   "AGE_CD": "20세 이하",
+   "QTY": 346306.0,
+   "PRE_QTY": 269059.0,
+   "GROW_RATE_PSON_NUM": 28.7
+  },
+  {
+   "BASE_YM": "201607",
+   "AGE_CD": "21~30세",
+   "QTY": 401329.0,
+   "PRE_QTY": 315250.0,
+   "GROW_RATE_PSON_NUM": 27.3
+  },
+  {
+   "BASE_YM": "201607",
+   "AGE_CD": "31~40세",
+   "QTY": 391396.0,
+   "PRE_QTY": 333955.0,
+   "GROW_RATE_PSON_NUM": 17.2
+  },
+  {
+   "BASE_YM": "201607",
+   "AGE_CD": "41~50세",
+   "QTY": 376332.0,
+   "PRE_QTY": 307305.0,
+   "GROW_RATE_PSON_NUM": 22.5
+  },
+  {
+   "BASE_YM": "201607",
+   "AGE_CD": "51~60세",
+   "QTY": 289102.0,
+   "PRE_QTY": 226632.0,
+   "GROW_RATE_PSON_NUM": 27.6
+  },
+  {
+   "BASE_YM": "201607",
+   "AGE_CD": "61세이상",
+   "QTY": 146289.0,
+   "PRE_QTY": 112143.0,
+   "GROW_RATE_PSON_NUM": 30.4
+  },
+  {
+   "BASE_YM": "201607",
+   "AGE_CD": "승무원",
+   "QTY": 135314.0,
+   "PRE_QTY": 110988.0,
+   "GROW_RATE_PSON_NUM": 21.9
+  },
+  {
+   "BASE_YM": "201608",
+   "AGE_CD": "20세 이하",
+   "QTY": 315583.0,
+   "PRE_QTY": 267449.0,
+   "GROW_RATE_PSON_NUM": 18.0
+  },
+  {
+   "BASE_YM": "201608",
+   "AGE_CD": "21~30세",
+   "QTY": 443842.0,
+   "PRE_QTY": 384359.0,
+   "GROW_RATE_PSON_NUM": 15.5
+  },
+  {
+   "BASE_YM": "201608",
+   "AGE_CD": "31~40세",
+   "QTY": 402367.0,
+   "PRE_QTY": 367370.0,
+   "GROW_RATE_PSON_NUM": 9.5
+  },
+  {
+   "BASE_YM": "201608",
+   "AGE_CD": "41~50세",
+   "QTY": 354127.0,
+   "PRE_QTY": 315888.0,
+   "GROW_RATE_PSON_NUM": 12.1
+  },
+  {
+   "BASE_YM": "201608",
+   "AGE_CD": "51~60세",
+   "QTY": 280643.0,
+   "PRE_QTY": 255375.0,
+   "GROW_RATE_PSON_NUM": 9.9
+  },
+  {
+   "BASE_YM": "201608",
+   "AGE_CD": "61세이상",
+   "QTY": 137563.0,
+   "PRE_QTY": 121817.0,
+   "GROW_RATE_PSON_NUM": 12.9
+  },
+  {
+   "BASE_YM": "201608",
+   "AGE_CD": "승무원",
+   "QTY": 130116.0,
+   "PRE_QTY": 122991.0,
+   "GROW_RATE_PSON_NUM": 5.8
+  },
+  {
+   "BASE_YM": "201609",
+   "AGE_CD": "20세 이하",
+   "QTY": 186989.0,
+   "PRE_QTY": 138342.0,
+   "GROW_RATE_PSON_NUM": 35.2
+  },
+  {
+   "BASE_YM": "201609",
+   "AGE_CD": "21~30세",
+   "QTY": 355588.0,
+   "PRE_QTY": 269196.0,
+   "GROW_RATE_PSON_NUM": 32.1
+  },
+  {
+   "BASE_YM": "201609",
+   "AGE_CD": "31~40세",
+   "QTY": 410781.0,
+   "PRE_QTY": 335348.0,
+   "GROW_RATE_PSON_NUM": 22.5
+  },
+  {
+   "BASE_YM": "201609",
+   "AGE_CD": "41~50세",
+   "QTY": 323981.0,
+   "PRE_QTY": 262631.0,
+   "GROW_RATE_PSON_NUM": 23.4
+  },
+  {
+   "BASE_YM": "201609",
+   "AGE_CD": "51~60세",
+   "QTY": 311478.0,
+   "PRE_QTY": 240929.0,
+   "GROW_RATE_PSON_NUM": 29.3
+  },
+  {
+   "BASE_YM": "201609",
+   "AGE_CD": "61세이상",
+   "QTY": 185615.0,
+   "PRE_QTY": 143679.0,
+   "GROW_RATE_PSON_NUM": 29.2
+  },
+  {
+   "BASE_YM": "201609",
+   "AGE_CD": "승무원",
+   "QTY": 130092.0,
+   "PRE_QTY": 121532.0,
+   "GROW_RATE_PSON_NUM": 7.0
+  },
+  {
+   "BASE_YM": "201610",
+   "AGE_CD": "20세 이하",
+   "QTY": 176829.0,
+   "PRE_QTY": 152429.0,
+   "GROW_RATE_PSON_NUM": 16.0
+  },
+  {
+   "BASE_YM": "201610",
+   "AGE_CD": "21~30세",
+   "QTY": 294729.0,
+   "PRE_QTY": 256806.0,
+   "GROW_RATE_PSON_NUM": 14.8
+  },
+  {
+   "BASE_YM": "201610",
+   "AGE_CD": "31~40세",
+   "QTY": 403858.0,
+   "PRE_QTY": 373390.0,
+   "GROW_RATE_PSON_NUM": 8.2
+  },
+  {
+   "BASE_YM": "201610",
+   "AGE_CD": "41~50세",
+   "QTY": 345408.0,
+   "PRE_QTY": 328310.0,
+   "GROW_RATE_PSON_NUM": 5.2
+  },
+  {
+   "BASE_YM": "201610",
+   "AGE_CD": "51~60세",
+   "QTY": 315743.0,
+   "PRE_QTY": 310987.0,
+   "GROW_RATE_PSON_NUM": 1.5
+  },
+  {
+   "BASE_YM": "201610",
+   "AGE_CD": "61세이상",
+   "QTY": 200854.0,
+   "PRE_QTY": 185978.0,
+   "GROW_RATE_PSON_NUM": 8.0
+  },
+  {
+   "BASE_YM": "201610",
+   "AGE_CD": "승무원",
+   "QTY": 128131.0,
+   "PRE_QTY": 127408.0,
+   "GROW_RATE_PSON_NUM": 0.6
+  },
+  {
+   "BASE_YM": "201611",
+   "AGE_CD": "20세 이하",
+   "QTY": 166885.0,
+   "PRE_QTY": 137539.0,
+   "GROW_RATE_PSON_NUM": 21.3
+  },
+  {
+   "BASE_YM": "201611",
+   "AGE_CD": "21~30세",
+   "QTY": 279780.0,
+   "PRE_QTY": 241217.0,
+   "GROW_RATE_PSON_NUM": 16.0
+  },
+  {
+   "BASE_YM": "201611",
+   "AGE_CD": "31~40세",
+   "QTY": 386272.0,
+   "PRE_QTY": 348658.0,
+   "GROW_RATE_PSON_NUM": 10.8
+  },
+  {
+   "BASE_YM": "201611",
+   "AGE_CD": "41~50세",
+   "QTY": 359430.0,
+   "PRE_QTY": 321479.0,
+   "GROW_RATE_PSON_NUM": 11.8
+  },
+  {
+   "BASE_YM": "201611",
+   "AGE_CD": "51~60세",
+   "QTY": 320375.0,
+   "PRE_QTY": 289482.0,
+   "GROW_RATE_PSON_NUM": 10.7
+  },
+  {
+   "BASE_YM": "201611",
+   "AGE_CD": "61세이상",
+   "QTY": 186680.0,
+   "PRE_QTY": 166997.0,
+   "GROW_RATE_PSON_NUM": 11.8
+  },
+  {
+   "BASE_YM": "201611",
+   "AGE_CD": "승무원",
+   "QTY": 126279.0,
+   "PRE_QTY": 120691.0,
+   "GROW_RATE_PSON_NUM": 4.6
+  },
+  {
+   "BASE_YM": "201612",
+   "AGE_CD": "20세 이하",
+   "QTY": 307122.0,
+   "PRE_QTY": 260178.0,
+   "GROW_RATE_PSON_NUM": 18.0
+  },
+  {
+   "BASE_YM": "201612",
+   "AGE_CD": "21~30세",
+   "QTY": 355430.0,
+   "PRE_QTY": 301667.0,
+   "GROW_RATE_PSON_NUM": 17.8
+  },
+  {
+   "BASE_YM": "201612",
+   "AGE_CD": "31~40세",
+   "QTY": 388578.0,
+   "PRE_QTY": 351303.0,
+   "GROW_RATE_PSON_NUM": 10.6
+  },
+  {
+   "BASE_YM": "201612",
+   "AGE_CD": "41~50세",
+   "QTY": 380461.0,
+   "PRE_QTY": 345046.0,
+   "GROW_RATE_PSON_NUM": 10.3
+  },
+  {
+   "BASE_YM": "201612",
+   "AGE_CD": "51~60세",
+   "QTY": 286808.0,
+   "PRE_QTY": 260852.0,
+   "GROW_RATE_PSON_NUM": 10.0
+  },
+  {
+   "BASE_YM": "201612",
+   "AGE_CD": "61세이상",
+   "QTY": 156770.0,
+   "PRE_QTY": 136672.0,
+   "GROW_RATE_PSON_NUM": 14.7
+  },
+  {
+   "BASE_YM": "201612",
+   "AGE_CD": "승무원",
+   "QTY": 131866.0,
+   "PRE_QTY": 125997.0,
+   "GROW_RATE_PSON_NUM": 4.7
+  },
+  {
+   "BASE_YM": "201701",
+   "AGE_CD": "20세 이하",
+   "QTY": 426458.0,
+   "PRE_QTY": 361500.0,
+   "GROW_RATE_PSON_NUM": 18.0
+  },
+  {
+   "BASE_YM": "201701",
+   "AGE_CD": "21~30세",
+   "QTY": 409681.0,
+   "PRE_QTY": 348187.0,
+   "GROW_RATE_PSON_NUM": 17.7
+  },
+  {
+   "BASE_YM": "201701",
+   "AGE_CD": "31~40세",
+   "QTY": 370504.0,
+   "PRE_QTY": 341397.0,
+   "GROW_RATE_PSON_NUM": 8.5
+  },
+  {
+   "BASE_YM": "201701",
+   "AGE_CD": "41~50세",
+   "QTY": 452694.0,
+   "PRE_QTY": 422288.0,
+   "GROW_RATE_PSON_NUM": 7.2
+  },
+  {
+   "BASE_YM": "201701",
+   "AGE_CD": "51~60세",
+   "QTY": 359071.0,
+   "PRE_QTY": 337052.0,
+   "GROW_RATE_PSON_NUM": 6.5
+  },
+  {
+   "BASE_YM": "201701",
+   "AGE_CD": "61세이상",
+   "QTY": 183722.0,
+   "PRE_QTY": 169905.0,
+   "GROW_RATE_PSON_NUM": 8.1
+  },
+  {
+   "BASE_YM": "201701",
+   "AGE_CD": "승무원",
+   "QTY": 140918.0,
+   "PRE_QTY": 132008.0,
+   "GROW_RATE_PSON_NUM": 6.7
+  },
+  {
+   "BASE_YM": "201702",
+   "AGE_CD": "20세 이하",
+   "QTY": 365853.0,
+   "PRE_QTY": 288635.0,
+   "GROW_RATE_PSON_NUM": 26.8
+  },
+  {
+   "BASE_YM": "201702",
+   "AGE_CD": "21~30세",
+   "QTY": 395561.0,
+   "PRE_QTY": 334696.0,
+   "GROW_RATE_PSON_NUM": 18.2
+  },
+  {
+   "BASE_YM": "201702",
+   "AGE_CD": "31~40세",
+   "QTY": 349459.0,
+   "PRE_QTY": 315424.0,
+   "GROW_RATE_PSON_NUM": 10.8
+  },
+  {
+   "BASE_YM": "201702",
+   "AGE_CD": "41~50세",
+   "QTY": 434831.0,
+   "PRE_QTY": 356618.0,
+   "GROW_RATE_PSON_NUM": 21.9
+  },
+  {
+   "BASE_YM": "201702",
+   "AGE_CD": "51~60세",
+   "QTY": 360983.0,
+   "PRE_QTY": 299193.0,
+   "GROW_RATE_PSON_NUM": 20.7
+  },
+  {
+   "BASE_YM": "201702",
+   "AGE_CD": "61세이상",
+   "QTY": 197980.0,
+   "PRE_QTY": 158373.0,
+   "GROW_RATE_PSON_NUM": 25.0
+  },
+  {
+   "BASE_YM": "201702",
+   "AGE_CD": "승무원",
+   "QTY": 126602.0,
+   "PRE_QTY": 123989.0,
+   "GROW_RATE_PSON_NUM": 2.1
+  },
+  {
+   "BASE_YM": "201703",
+   "AGE_CD": "20세 이하",
+   "QTY": 131409.0,
+   "PRE_QTY": 97325.0,
+   "GROW_RATE_PSON_NUM": 35.0
+  },
+  {
+   "BASE_YM": "201703",
+   "AGE_CD": "21~30세",
+   "QTY": 290256.0,
+   "PRE_QTY": 232693.0,
+   "GROW_RATE_PSON_NUM": 24.7
+  },
+  {
+   "BASE_YM": "201703",
+   "AGE_CD": "31~40세",
+   "QTY": 389047.0,
+   "PRE_QTY": 313404.0,
+   "GROW_RATE_PSON_NUM": 24.1
+  },
+  {
+   "BASE_YM": "201703",
+   "AGE_CD": "41~50세",
+   "QTY": 355462.0,
+   "PRE_QTY": 291465.0,
+   "GROW_RATE_PSON_NUM": 22.0
+  },
+  {
+   "BASE_YM": "201703",
+   "AGE_CD": "51~60세",
+   "QTY": 383094.0,
+   "PRE_QTY": 305312.0,
+   "GROW_RATE_PSON_NUM": 25.5
+  },
+  {
+   "BASE_YM": "201703",
+   "AGE_CD": "61세이상",
+   "QTY": 257727.0,
+   "PRE_QTY": 204489.0,
+   "GROW_RATE_PSON_NUM": 26.0
+  },
+  {
+   "BASE_YM": "201703",
+   "AGE_CD": "승무원",
+   "QTY": 133547.0,
+   "PRE_QTY": 124474.0,
+   "GROW_RATE_PSON_NUM": 7.3
+  },
+  {
+   "BASE_YM": "201704",
+   "AGE_CD": "20세 이하",
+   "QTY": 179775.0,
+   "PRE_QTY": 125624.0,
+   "GROW_RATE_PSON_NUM": 43.1
+  },
+  {
+   "BASE_YM": "201704",
+   "AGE_CD": "21~30세",
+   "QTY": 303567.0,
+   "PRE_QTY": 227494.0,
+   "GROW_RATE_PSON_NUM": 33.4
+  },
+  {
+   "BASE_YM": "201704",
+   "AGE_CD": "31~40세",
+   "QTY": 442203.0,
+   "PRE_QTY": 346696.0,
+   "GROW_RATE_PSON_NUM": 27.5
+  },
+  {
+   "BASE_YM": "201704",
+   "AGE_CD": "41~50세",
+   "QTY": 372309.0,
+   "PRE_QTY": 308915.0,
+   "GROW_RATE_PSON_NUM": 20.5
+  },
+  {
+   "BASE_YM": "201704",
+   "AGE_CD": "51~60세",
+   "QTY": 345028.0,
+   "PRE_QTY": 302306.0,
+   "GROW_RATE_PSON_NUM": 14.1
+  },
+  {
+   "BASE_YM": "201704",
+   "AGE_CD": "61세이상",
+   "QTY": 231544.0,
+   "PRE_QTY": 203891.0,
+   "GROW_RATE_PSON_NUM": 13.6
+  },
+  {
+   "BASE_YM": "201704",
+   "AGE_CD": "승무원",
+   "QTY": 129517.0,
+   "PRE_QTY": 121671.0,
+   "GROW_RATE_PSON_NUM": 6.4
+  },
+  {
+   "BASE_YM": "201705",
+   "AGE_CD": "20세 이하",
+   "QTY": 212984.0,
+   "PRE_QTY": 155874.0,
+   "GROW_RATE_PSON_NUM": 36.6
+  },
+  {
+   "BASE_YM": "201705",
+   "AGE_CD": "21~30세",
+   "QTY": 313902.0,
+   "PRE_QTY": 235456.0,
+   "GROW_RATE_PSON_NUM": 33.3
+  },
+  {
+   "BASE_YM": "201705",
+   "AGE_CD": "31~40세",
+   "QTY": 420506.0,
+   "PRE_QTY": 344876.0,
+   "GROW_RATE_PSON_NUM": 21.9
+  },
+  {
+   "BASE_YM": "201705",
+   "AGE_CD": "41~50세",
+   "QTY": 372106.0,
+   "PRE_QTY": 315853.0,
+   "GROW_RATE_PSON_NUM": 17.8
+  },
+  {
+   "BASE_YM": "201705",
+   "AGE_CD": "51~60세",
+   "QTY": 327358.0,
+   "PRE_QTY": 288014.0,
+   "GROW_RATE_PSON_NUM": 13.7
+  },
+  {
+   "BASE_YM": "201705",
+   "AGE_CD": "61세이상",
+   "QTY": 222797.0,
+   "PRE_QTY": 187817.0,
+   "GROW_RATE_PSON_NUM": 18.6
+  },
+  {
+   "BASE_YM": "201705",
+   "AGE_CD": "승무원",
+   "QTY": 134181.0,
+   "PRE_QTY": 128838.0,
+   "GROW_RATE_PSON_NUM": 4.1
+  },
+  {
+   "BASE_YM": "201706",
+   "AGE_CD": "20세 이하",
+   "QTY": 231917.0,
+   "PRE_QTY": 176843.0,
+   "GROW_RATE_PSON_NUM": 31.1
+  },
+  {
+   "BASE_YM": "201706",
+   "AGE_CD": "21~30세",
+   "QTY": 376265.0,
+   "PRE_QTY": 316219.0,
+   "GROW_RATE_PSON_NUM": 19.0
+  },
+  {
+   "BASE_YM": "201706",
+   "AGE_CD": "31~40세",
+   "QTY": 433859.0,
+   "PRE_QTY": 363474.0,
+   "GROW_RATE_PSON_NUM": 19.4
+  },
+  {
+   "BASE_YM": "201706",
+   "AGE_CD": "41~50세",
+   "QTY": 383485.0,
+   "PRE_QTY": 321727.0,
+   "GROW_RATE_PSON_NUM": 19.2
+  },
+  {
+   "BASE_YM": "201706",
+   "AGE_CD": "51~60세",
+   "QTY": 334958.0,
+   "PRE_QTY": 296871.0,
+   "GROW_RATE_PSON_NUM": 12.8
+  },
+  {
+   "BASE_YM": "201706",
+   "AGE_CD": "61세이상",
+   "QTY": 208148.0,
+   "PRE_QTY": 177007.0,
+   "GROW_RATE_PSON_NUM": 17.6
+  },
+  {
+   "BASE_YM": "201706",
+   "AGE_CD": "승무원",
+   "QTY": 129494.0,
+   "PRE_QTY": 126176.0,
+   "GROW_RATE_PSON_NUM": 2.6
+  },
+  {
+   "BASE_YM": "201707",
+   "AGE_CD": "20세 이하",
+   "QTY": 410796.0,
+   "PRE_QTY": 346306.0,
+   "GROW_RATE_PSON_NUM": 18.6
+  },
+  {
+   "BASE_YM": "201707",
+   "AGE_CD": "21~30세",
+   "QTY": 470401.0,
+   "PRE_QTY": 401329.0,
+   "GROW_RATE_PSON_NUM": 17.2
+  },
+  {
+   "BASE_YM": "201707",
+   "AGE_CD": "31~40세",
+   "QTY": 444303.0,
+   "PRE_QTY": 391396.0,
+   "GROW_RATE_PSON_NUM": 13.5
+  },
+  {
+   "BASE_YM": "201707",
+   "AGE_CD": "41~50세",
+   "QTY": 432147.0,
+   "PRE_QTY": 376332.0,
+   "GROW_RATE_PSON_NUM": 14.8
+  },
+  {
+   "BASE_YM": "201707",
+   "AGE_CD": "51~60세",
+   "QTY": 316799.0,
+   "PRE_QTY": 289102.0,
+   "GROW_RATE_PSON_NUM": 9.6
+  },
+  {
+   "BASE_YM": "201707",
+   "AGE_CD": "61세이상",
+   "QTY": 168307.0,
+   "PRE_QTY": 146289.0,
+   "GROW_RATE_PSON_NUM": 15.1
+  },
+  {
+   "BASE_YM": "201707",
+   "AGE_CD": "승무원",
+   "QTY": 146694.0,
+   "PRE_QTY": 135314.0,
+   "GROW_RATE_PSON_NUM": 8.4
+  },
+  {
+   "BASE_YM": "201708",
+   "AGE_CD": "20세 이하",
+   "QTY": 377132.0,
+   "PRE_QTY": 315583.0,
+   "GROW_RATE_PSON_NUM": 19.5
+  },
+  {
+   "BASE_YM": "201708",
+   "AGE_CD": "21~30세",
+   "QTY": 510560.0,
+   "PRE_QTY": 443842.0,
+   "GROW_RATE_PSON_NUM": 15.0
+  },
+  {
+   "BASE_YM": "201708",
+   "AGE_CD": "31~40세",
+   "QTY": 455840.0,
+   "PRE_QTY": 402367.0,
+   "GROW_RATE_PSON_NUM": 13.3
+  },
+  {
+   "BASE_YM": "201708",
+   "AGE_CD": "41~50세",
+   "QTY": 412671.0,
+   "PRE_QTY": 354127.0,
+   "GROW_RATE_PSON_NUM": 16.5
+  },
+  {
+   "BASE_YM": "201708",
+   "AGE_CD": "51~60세",
+   "QTY": 315251.0,
+   "PRE_QTY": 280643.0,
+   "GROW_RATE_PSON_NUM": 12.3
+  },
+  {
+   "BASE_YM": "201708",
+   "AGE_CD": "61세이상",
+   "QTY": 158461.0,
+   "PRE_QTY": 137563.0,
+   "GROW_RATE_PSON_NUM": 15.2
+  },
+  {
+   "BASE_YM": "201708",
+   "AGE_CD": "승무원",
+   "QTY": 155386.0,
+   "PRE_QTY": 130116.0,
+   "GROW_RATE_PSON_NUM": 19.4
+  },
+  {
+   "BASE_YM": "201709",
+   "AGE_CD": "20세 이하",
+   "QTY": 231475.0,
+   "PRE_QTY": 186989.0,
+   "GROW_RATE_PSON_NUM": 23.8
+  },
+  {
+   "BASE_YM": "201709",
+   "AGE_CD": "21~30세",
+   "QTY": 425828.0,
+   "PRE_QTY": 355588.0,
+   "GROW_RATE_PSON_NUM": 19.8
+  },
+  {
+   "BASE_YM": "201709",
+   "AGE_CD": "31~40세",
+   "QTY": 508649.0,
+   "PRE_QTY": 410781.0,
+   "GROW_RATE_PSON_NUM": 23.8
+  },
+  {
+   "BASE_YM": "201709",
+   "AGE_CD": "41~50세",
+   "QTY": 385856.0,
+   "PRE_QTY": 323981.0,
+   "GROW_RATE_PSON_NUM": 19.1
+  },
+  {
+   "BASE_YM": "201709",
+   "AGE_CD": "51~60세",
+   "QTY": 334648.0,
+   "PRE_QTY": 311478.0,
+   "GROW_RATE_PSON_NUM": 7.4
+  },
+  {
+   "BASE_YM": "201709",
+   "AGE_CD": "61세이상",
+   "QTY": 213137.0,
+   "PRE_QTY": 185615.0,
+   "GROW_RATE_PSON_NUM": 14.8
+  },
+  {
+   "BASE_YM": "201709",
+   "AGE_CD": "승무원",
+   "QTY": 136907.0,
+   "PRE_QTY": 130092.0,
+   "GROW_RATE_PSON_NUM": 5.2
+  },
+  {
+   "BASE_YM": "201710",
+   "AGE_CD": "20세 이하",
+   "QTY": 251272.0,
+   "PRE_QTY": 176829.0,
+   "GROW_RATE_PSON_NUM": 42.1
+  },
+  {
+   "BASE_YM": "201710",
+   "AGE_CD": "21~30세",
+   "QTY": 361054.0,
+   "PRE_QTY": 294729.0,
+   "GROW_RATE_PSON_NUM": 22.5
+  },
+  {
+   "BASE_YM": "201710",
+   "AGE_CD": "31~40세",
+   "QTY": 448837.0,
+   "PRE_QTY": 403858.0,
+   "GROW_RATE_PSON_NUM": 11.1
+  },
+  {
+   "BASE_YM": "201710",
+   "AGE_CD": "41~50세",
+   "QTY": 398586.0,
+   "PRE_QTY": 345408.0,
+   "GROW_RATE_PSON_NUM": 15.4
+  },
+  {
+   "BASE_YM": "201710",
+   "AGE_CD": "51~60세",
+   "QTY": 378772.0,
+   "PRE_QTY": 315743.0,
+   "GROW_RATE_PSON_NUM": 20.0
+  },
+  {
+   "BASE_YM": "201710",
+   "AGE_CD": "61세이상",
+   "QTY": 250216.0,
+   "PRE_QTY": 200854.0,
+   "GROW_RATE_PSON_NUM": 24.6
+  },
+  {
+   "BASE_YM": "201710",
+   "AGE_CD": "승무원",
+   "QTY": 143011.0,
+   "PRE_QTY": 128131.0,
+   "GROW_RATE_PSON_NUM": 11.6
+  },
+  {
+   "BASE_YM": "201711",
+   "AGE_CD": "20세 이하",
+   "QTY": 210378.0,
+   "PRE_QTY": 166885.0,
+   "GROW_RATE_PSON_NUM": 26.1
+  },
+  {
+   "BASE_YM": "201711",
+   "AGE_CD": "21~30세",
+   "QTY": 339144.0,
+   "PRE_QTY": 279780.0,
+   "GROW_RATE_PSON_NUM": 21.2
+  },
+  {
+   "BASE_YM": "201711",
+   "AGE_CD": "31~40세",
+   "QTY": 453534.0,
+   "PRE_QTY": 386272.0,
+   "GROW_RATE_PSON_NUM": 17.4
+  },
+  {
+   "BASE_YM": "201711",
+   "AGE_CD": "41~50세",
+   "QTY": 437003.0,
+   "PRE_QTY": 359430.0,
+   "GROW_RATE_PSON_NUM": 21.6
+  },
+  {
+   "BASE_YM": "201711",
+   "AGE_CD": "51~60세",
+   "QTY": 402000.0,
+   "PRE_QTY": 320375.0,
+   "GROW_RATE_PSON_NUM": 25.5
+  },
+  {
+   "BASE_YM": "201711",
+   "AGE_CD": "61세이상",
+   "QTY": 248056.0,
+   "PRE_QTY": 186680.0,
+   "GROW_RATE_PSON_NUM": 32.9
+  },
+  {
+   "BASE_YM": "201711",
+   "AGE_CD": "승무원",
+   "QTY": 137632.0,
+   "PRE_QTY": 126279.0,
+   "GROW_RATE_PSON_NUM": 9.0
+  },
+  {
+   "BASE_YM": "201712",
+   "AGE_CD": "20세 이하",
+   "QTY": 361907.0,
+   "PRE_QTY": 307122.0,
+   "GROW_RATE_PSON_NUM": 17.8
+  },
+  {
+   "BASE_YM": "201712",
+   "AGE_CD": "21~30세",
+   "QTY": 425598.0,
+   "PRE_QTY": 355430.0,
+   "GROW_RATE_PSON_NUM": 19.7
+  },
+  {
+   "BASE_YM": "201712",
+   "AGE_CD": "31~40세",
+   "QTY": 457721.0,
+   "PRE_QTY": 388578.0,
+   "GROW_RATE_PSON_NUM": 17.8
+  },
+  {
+   "BASE_YM": "201712",
+   "AGE_CD": "41~50세",
+   "QTY": 458085.0,
+   "PRE_QTY": 380461.0,
+   "GROW_RATE_PSON_NUM": 20.4
+  },
+  {
+   "BASE_YM": "201712",
+   "AGE_CD": "51~60세",
+   "QTY": 355820.0,
+   "PRE_QTY": 286808.0,
+   "GROW_RATE_PSON_NUM": 24.1
+  },
+  {
+   "BASE_YM": "201712",
+   "AGE_CD": "61세이상",
+   "QTY": 200264.0,
+   "PRE_QTY": 156770.0,
+   "GROW_RATE_PSON_NUM": 27.7
+  },
+  {
+   "BASE_YM": "201712",
+   "AGE_CD": "승무원",
+   "QTY": 145547.0,
+   "PRE_QTY": 131866.0,
+   "GROW_RATE_PSON_NUM": 10.4
+  },
+  {
+   "BASE_YM": "201801",
+   "AGE_CD": "20세 이하",
+   "QTY": 525185.0,
+   "PRE_QTY": 426458.0,
+   "GROW_RATE_PSON_NUM": 23.2
+  },
+  {
+   "BASE_YM": "201801",
+   "AGE_CD": "21~30세",
+   "QTY": 476453.0,
+   "PRE_QTY": 409681.0,
+   "GROW_RATE_PSON_NUM": 16.3
+  },
+  {
+   "BASE_YM": "201801",
+   "AGE_CD": "31~40세",
+   "QTY": 425790.0,
+   "PRE_QTY": 370504.0,
+   "GROW_RATE_PSON_NUM": 14.9
+  },
+  {
+   "BASE_YM": "201801",
+   "AGE_CD": "41~50세",
+   "QTY": 566225.0,
+   "PRE_QTY": 452694.0,
+   "GROW_RATE_PSON_NUM": 25.1
+  },
+  {
+   "BASE_YM": "201801",
+   "AGE_CD": "51~60세",
+   "QTY": 470538.0,
+   "PRE_QTY": 359071.0,
+   "GROW_RATE_PSON_NUM": 31.0
+  },
+  {
+   "BASE_YM": "201801",
+   "AGE_CD": "61세이상",
+   "QTY": 250717.0,
+   "PRE_QTY": 183722.0,
+   "GROW_RATE_PSON_NUM": 36.5
+  },
+  {
+   "BASE_YM": "201801",
+   "AGE_CD": "승무원",
+   "QTY": 151872.0,
+   "PRE_QTY": 140918.0,
+   "GROW_RATE_PSON_NUM": 7.8
+  },
+  {
+   "BASE_YM": "201802",
+   "AGE_CD": "20세 이하",
+   "QTY": 395913.0,
+   "PRE_QTY": 365853.0,
+   "GROW_RATE_PSON_NUM": 8.2
+  },
+  {
+   "BASE_YM": "201802",
+   "AGE_CD": "21~30세",
+   "QTY": 425352.0,
+   "PRE_QTY": 395561.0,
+   "GROW_RATE_PSON_NUM": 7.5
+  },
+  {
+   "BASE_YM": "201802",
+   "AGE_CD": "31~40세",
+   "QTY": 366496.0,
+   "PRE_QTY": 349459.0,
+   "GROW_RATE_PSON_NUM": 4.9
+  },
+  {
+   "BASE_YM": "201802",
+   "AGE_CD": "41~50세",
+   "QTY": 430165.0,
+   "PRE_QTY": 434831.0,
+   "GROW_RATE_PSON_NUM": -1.1
+  },
+  {
+   "BASE_YM": "201802",
+   "AGE_CD": "51~60세",
+   "QTY": 349172.0,
+   "PRE_QTY": 360983.0,
+   "GROW_RATE_PSON_NUM": -3.3
+  },
+  {
+   "BASE_YM": "201802",
+   "AGE_CD": "61세이상",
+   "QTY": 205498.0,
+   "PRE_QTY": 197980.0,
+   "GROW_RATE_PSON_NUM": 3.8
+  },
+  {
+   "BASE_YM": "201802",
+   "AGE_CD": "승무원",
+   "QTY": 138413.0,
+   "PRE_QTY": 126602.0,
+   "GROW_RATE_PSON_NUM": 9.3
+  },
+  {
+   "BASE_YM": "201803",
+   "AGE_CD": "20세 이하",
+   "QTY": 155302.0,
+   "PRE_QTY": 131409.0,
+   "GROW_RATE_PSON_NUM": 18.2
+  },
+  {
+   "BASE_YM": "201803",
+   "AGE_CD": "21~30세",
+   "QTY": 354028.0,
+   "PRE_QTY": 290256.0,
+   "GROW_RATE_PSON_NUM": 22.0
+  },
+  {
+   "BASE_YM": "201803",
+   "AGE_CD": "31~40세",
+   "QTY": 434433.0,
+   "PRE_QTY": 389047.0,
+   "GROW_RATE_PSON_NUM": 11.7
+  },
+  {
+   "BASE_YM": "201803",
+   "AGE_CD": "41~50세",
+   "QTY": 406101.0,
+   "PRE_QTY": 355462.0,
+   "GROW_RATE_PSON_NUM": 14.2
+  },
+  {
+   "BASE_YM": "201803",
+   "AGE_CD": "51~60세",
+   "QTY": 444804.0,
+   "PRE_QTY": 383094.0,
+   "GROW_RATE_PSON_NUM": 16.1
+  },
+  {
+   "BASE_YM": "201803",
+   "AGE_CD": "61세이상",
+   "QTY": 315017.0,
+   "PRE_QTY": 257727.0,
+   "GROW_RATE_PSON_NUM": 22.2
+  },
+  {
+   "BASE_YM": "201803",
+   "AGE_CD": "승무원",
+   "QTY": 142880.0,
+   "PRE_QTY": 133547.0,
+   "GROW_RATE_PSON_NUM": 7.0
+  },
+  {
+   "BASE_YM": "201804",
+   "AGE_CD": "20세 이하",
+   "QTY": 190310.0,
+   "PRE_QTY": 179775.0,
+   "GROW_RATE_PSON_NUM": 5.9
+  },
+  {
+   "BASE_YM": "201804",
+   "AGE_CD": "21~30세",
+   "QTY": 322927.0,
+   "PRE_QTY": 303567.0,
+   "GROW_RATE_PSON_NUM": 6.4
+  },
+  {
+   "BASE_YM": "201804",
+   "AGE_CD": "31~40세",
+   "QTY": 456392.0,
+   "PRE_QTY": 442203.0,
+   "GROW_RATE_PSON_NUM": 3.2
+  },
+  {
+   "BASE_YM": "201804",
+   "AGE_CD": "41~50세",
+   "QTY": 412668.0,
+   "PRE_QTY": 372309.0,
+   "GROW_RATE_PSON_NUM": 10.8
+  },
+  {
+   "BASE_YM": "201804",
+   "AGE_CD": "51~60세",
+   "QTY": 403075.0,
+   "PRE_QTY": 345028.0,
+   "GROW_RATE_PSON_NUM": 16.8
+  },
+  {
+   "BASE_YM": "201804",
+   "AGE_CD": "61세이상",
+   "QTY": 302952.0,
+   "PRE_QTY": 231544.0,
+   "GROW_RATE_PSON_NUM": 30.8
+  },
+  {
+   "BASE_YM": "201804",
+   "AGE_CD": "승무원",
+   "QTY": 141876.0,
+   "PRE_QTY": 129517.0,
+   "GROW_RATE_PSON_NUM": 9.5
+  },
+  {
+   "BASE_YM": "201805",
+   "AGE_CD": "20세 이하",
+   "QTY": 261813.0,
+   "PRE_QTY": 212984.0,
+   "GROW_RATE_PSON_NUM": 22.9
+  },
+  {
+   "BASE_YM": "201805",
+   "AGE_CD": "21~30세",
+   "QTY": 348693.0,
+   "PRE_QTY": 313902.0,
+   "GROW_RATE_PSON_NUM": 11.1
+  },
+  {
+   "BASE_YM": "201805",
+   "AGE_CD": "31~40세",
+   "QTY": 467085.0,
+   "PRE_QTY": 420506.0,
+   "GROW_RATE_PSON_NUM": 11.1
+  },
+  {
+   "BASE_YM": "201805",
+   "AGE_CD": "41~50세",
+   "QTY": 442695.0,
+   "PRE_QTY": 372106.0,
+   "GROW_RATE_PSON_NUM": 19.0
+  },
+  {
+   "BASE_YM": "201805",
+   "AGE_CD": "51~60세",
+   "QTY": 386081.0,
+   "PRE_QTY": 327358.0,
+   "GROW_RATE_PSON_NUM": 17.9
+  },
+  {
+   "BASE_YM": "201805",
+   "AGE_CD": "61세이상",
+   "QTY": 277648.0,
+   "PRE_QTY": 222797.0,
+   "GROW_RATE_PSON_NUM": 24.6
+  },
+  {
+   "BASE_YM": "201805",
+   "AGE_CD": "승무원",
+   "QTY": 147550.0,
+   "PRE_QTY": 134181.0,
+   "GROW_RATE_PSON_NUM": 10.0
+  },
+  {
+   "BASE_YM": "201806",
+   "AGE_CD": "20세 이하",
+   "QTY": 258345.0,
+   "PRE_QTY": 231917.0,
+   "GROW_RATE_PSON_NUM": 11.4
+  },
+  {
+   "BASE_YM": "201806",
+   "AGE_CD": "21~30세",
+   "QTY": 408793.0,
+   "PRE_QTY": 376265.0,
+   "GROW_RATE_PSON_NUM": 8.6
+  },
+  {
+   "BASE_YM": "201806",
+   "AGE_CD": "31~40세",
+   "QTY": 477091.0,
+   "PRE_QTY": 433859.0,
+   "GROW_RATE_PSON_NUM": 10.0
+  },
+  {
+   "BASE_YM": "201806",
+   "AGE_CD": "41~50세",
+   "QTY": 423781.0,
+   "PRE_QTY": 383485.0,
+   "GROW_RATE_PSON_NUM": 10.5
+  },
+  {
+   "BASE_YM": "201806",
+   "AGE_CD": "51~60세",
+   "QTY": 366081.0,
+   "PRE_QTY": 334958.0,
+   "GROW_RATE_PSON_NUM": 9.3
+  },
+  {
+   "BASE_YM": "201806",
+   "AGE_CD": "61세이상",
+   "QTY": 246428.0,
+   "PRE_QTY": 208148.0,
+   "GROW_RATE_PSON_NUM": 18.4
+  },
+  {
+   "BASE_YM": "201806",
+   "AGE_CD": "승무원",
+   "QTY": 143467.0,
+   "PRE_QTY": 129494.0,
+   "GROW_RATE_PSON_NUM": 10.8
+  },
+  {
+   "BASE_YM": "201807",
+   "AGE_CD": "20세 이하",
+   "QTY": 416709.0,
+   "PRE_QTY": 410796.0,
+   "GROW_RATE_PSON_NUM": 1.4
+  },
+  {
+   "BASE_YM": "201807",
+   "AGE_CD": "21~30세",
+   "QTY": 485123.0,
+   "PRE_QTY": 470401.0,
+   "GROW_RATE_PSON_NUM": 3.1
+  },
+  {
+   "BASE_YM": "201807",
+   "AGE_CD": "31~40세",
+   "QTY": 446550.0,
+   "PRE_QTY": 444303.0,
+   "GROW_RATE_PSON_NUM": 0.5
+  },
+  {
+   "BASE_YM": "201807",
+   "AGE_CD": "41~50세",
+   "QTY": 452971.0,
+   "PRE_QTY": 432147.0,
+   "GROW_RATE_PSON_NUM": 4.8
+  },
+  {
+   "BASE_YM": "201807",
+   "AGE_CD": "51~60세",
+   "QTY": 346840.0,
+   "PRE_QTY": 316799.0,
+   "GROW_RATE_PSON_NUM": 9.5
+  },
+  {
+   "BASE_YM": "201807",
+   "AGE_CD": "61세이상",
+   "QTY": 196227.0,
+   "PRE_QTY": 168307.0,
+   "GROW_RATE_PSON_NUM": 16.6
+  },
+  {
+   "BASE_YM": "201807",
+   "AGE_CD": "승무원",
+   "QTY": 150877.0,
+   "PRE_QTY": 146694.0,
+   "GROW_RATE_PSON_NUM": 2.9
+  },
+  {
+   "BASE_YM": "201808",
+   "AGE_CD": "20세 이하",
+   "QTY": 382335.0,
+   "PRE_QTY": 377132.0,
+   "GROW_RATE_PSON_NUM": 1.4
+  },
+  {
+   "BASE_YM": "201808",
+   "AGE_CD": "21~30세",
+   "QTY": 528881.0,
+   "PRE_QTY": 510560.0,
+   "GROW_RATE_PSON_NUM": 3.6
+  },
+  {
+   "BASE_YM": "201808",
+   "AGE_CD": "31~40세",
+   "QTY": 470367.0,
+   "PRE_QTY": 455840.0,
+   "GROW_RATE_PSON_NUM": 3.2
+  },
+  {
+   "BASE_YM": "201808",
+   "AGE_CD": "41~50세",
+   "QTY": 441763.0,
+   "PRE_QTY": 412671.0,
+   "GROW_RATE_PSON_NUM": 7.0
+  },
+  {
+   "BASE_YM": "201808",
+   "AGE_CD": "51~60세",
+   "QTY": 354588.0,
+   "PRE_QTY": 315251.0,
+   "GROW_RATE_PSON_NUM": 12.5
+  },
+  {
+   "BASE_YM": "201808",
+   "AGE_CD": "61세이상",
+   "QTY": 186464.0,
+   "PRE_QTY": 158461.0,
+   "GROW_RATE_PSON_NUM": 17.7
+  },
+  {
+   "BASE_YM": "201808",
+   "AGE_CD": "승무원",
+   "QTY": 155462.0,
+   "PRE_QTY": 155386.0,
+   "GROW_RATE_PSON_NUM": 0.0
+  },
+  {
+   "BASE_YM": "201809",
+   "AGE_CD": "20세 이하",
+   "QTY": 234337.0,
+   "PRE_QTY": 231475.0,
+   "GROW_RATE_PSON_NUM": 1.2
+  },
+  {
+   "BASE_YM": "201809",
+   "AGE_CD": "21~30세",
+   "QTY": 410152.0,
+   "PRE_QTY": 425828.0,
+   "GROW_RATE_PSON_NUM": -3.7
+  },
+  {
+   "BASE_YM": "201809",
+   "AGE_CD": "31~40세",
+   "QTY": 480366.0,
+   "PRE_QTY": 508649.0,
+   "GROW_RATE_PSON_NUM": -5.6
+  },
+  {
+   "BASE_YM": "201809",
+   "AGE_CD": "41~50세",
+   "QTY": 380333.0,
+   "PRE_QTY": 385856.0,
+   "GROW_RATE_PSON_NUM": -1.4
+  },
+  {
+   "BASE_YM": "201809",
+   "AGE_CD": "51~60세",
+   "QTY": 343982.0,
+   "PRE_QTY": 334648.0,
+   "GROW_RATE_PSON_NUM": 2.8
+  },
+  {
+   "BASE_YM": "201809",
+   "AGE_CD": "61세이상",
+   "QTY": 232797.0,
+   "PRE_QTY": 213137.0,
+   "GROW_RATE_PSON_NUM": 9.2
+  },
+  {
+   "BASE_YM": "201809",
+   "AGE_CD": "승무원",
+   "QTY": 143789.0,
+   "PRE_QTY": 136907.0,
+   "GROW_RATE_PSON_NUM": 5.0
+  },
+  {
+   "BASE_YM": "201810",
+   "AGE_CD": "20세 이하",
+   "QTY": 234356.0,
+   "PRE_QTY": 251272.0,
+   "GROW_RATE_PSON_NUM": -6.7
+  },
+  {
+   "BASE_YM": "201810",
+   "AGE_CD": "21~30세",
+   "QTY": 358709.0,
+   "PRE_QTY": 361054.0,
+   "GROW_RATE_PSON_NUM": -0.6
+  },
+  {
+   "BASE_YM": "201810",
+   "AGE_CD": "31~40세",
+   "QTY": 476172.0,
+   "PRE_QTY": 448837.0,
+   "GROW_RATE_PSON_NUM": 6.1
+  },
+  {
+   "BASE_YM": "201810",
+   "AGE_CD": "41~50세",
+   "QTY": 433999.0,
+   "PRE_QTY": 398586.0,
+   "GROW_RATE_PSON_NUM": 8.9
+  },
+  {
+   "BASE_YM": "201810",
+   "AGE_CD": "51~60세",
+   "QTY": 407641.0,
+   "PRE_QTY": 378772.0,
+   "GROW_RATE_PSON_NUM": 7.6
+  },
+  {
+   "BASE_YM": "201810",
+   "AGE_CD": "61세이상",
+   "QTY": 285350.0,
+   "PRE_QTY": 250216.0,
+   "GROW_RATE_PSON_NUM": 14.0
+  },
+  {
+   "BASE_YM": "201810",
+   "AGE_CD": "승무원",
+   "QTY": 151649.0,
+   "PRE_QTY": 143011.0,
+   "GROW_RATE_PSON_NUM": 6.0
+  },
+  {
+   "BASE_YM": "201811",
+   "AGE_CD": "20세 이하",
+   "QTY": 213668.0,
+   "PRE_QTY": 210378.0,
+   "GROW_RATE_PSON_NUM": 1.6
+  },
+  {
+   "BASE_YM": "201811",
+   "AGE_CD": "21~30세",
+   "QTY": 358264.0,
+   "PRE_QTY": 339144.0,
+   "GROW_RATE_PSON_NUM": 5.6
+  },
+  {
+   "BASE_YM": "201811",
+   "AGE_CD": "31~40세",
+   "QTY": 453840.0,
+   "PRE_QTY": 453534.0,
+   "GROW_RATE_PSON_NUM": 0.1
+  },
+  {
+   "BASE_YM": "201811",
+   "AGE_CD": "41~50세",
+   "QTY": 445466.0,
+   "PRE_QTY": 437003.0,
+   "GROW_RATE_PSON_NUM": 1.9
+  },
+  {
+   "BASE_YM": "201811",
+   "AGE_CD": "51~60세",
+   "QTY": 411778.0,
+   "PRE_QTY": 402000.0,
+   "GROW_RATE_PSON_NUM": 2.4
+  },
+  {
+   "BASE_YM": "201811",
+   "AGE_CD": "61세이상",
+   "QTY": 266357.0,
+   "PRE_QTY": 248056.0,
+   "GROW_RATE_PSON_NUM": 7.4
+  },
+  {
+   "BASE_YM": "201811",
+   "AGE_CD": "승무원",
+   "QTY": 146437.0,
+   "PRE_QTY": 137632.0,
+   "GROW_RATE_PSON_NUM": 6.4
+  },
+  {
+   "BASE_YM": "201812",
+   "AGE_CD": "20세 이하",
+   "QTY": 362022.0,
+   "PRE_QTY": 361907.0,
+   "GROW_RATE_PSON_NUM": 0.0
+  },
+  {
+   "BASE_YM": "201812",
+   "AGE_CD": "21~30세",
+   "QTY": 451441.0,
+   "PRE_QTY": 425598.0,
+   "GROW_RATE_PSON_NUM": 6.1
+  },
+  {
+   "BASE_YM": "201812",
+   "AGE_CD": "31~40세",
+   "QTY": 464893.0,
+   "PRE_QTY": 457721.0,
+   "GROW_RATE_PSON_NUM": 1.6
+  },
+  {
+   "BASE_YM": "201812",
+   "AGE_CD": "41~50세",
+   "QTY": 470069.0,
+   "PRE_QTY": 458085.0,
+   "GROW_RATE_PSON_NUM": 2.6
+  },
+  {
+   "BASE_YM": "201812",
+   "AGE_CD": "51~60세",
+   "QTY": 373769.0,
+   "PRE_QTY": 355820.0,
+   "GROW_RATE_PSON_NUM": 5.0
+  },
+  {
+   "BASE_YM": "201812",
+   "AGE_CD": "61세이상",
+   "QTY": 219763.0,
+   "PRE_QTY": 200264.0,
+   "GROW_RATE_PSON_NUM": 9.7
+  },
+  {
+   "BASE_YM": "201812",
+   "AGE_CD": "승무원",
+   "QTY": 153322.0,
+   "PRE_QTY": 145547.0,
+   "GROW_RATE_PSON_NUM": 5.3
+  },
+  {
+   "BASE_YM": "201901",
+   "AGE_CD": "20세 이하",
+   "QTY": 524920.0,
+   "PRE_QTY": 525185.0,
+   "GROW_RATE_PSON_NUM": -0.1
+  },
+  {
+   "BASE_YM": "201901",
+   "AGE_CD": "21~30세",
+   "QTY": 500398.0,
+   "PRE_QTY": 476453.0,
+   "GROW_RATE_PSON_NUM": 5.0
+  },
+  {
+   "BASE_YM": "201901",
+   "AGE_CD": "31~40세",
+   "QTY": 437866.0,
+   "PRE_QTY": 425790.0,
+   "GROW_RATE_PSON_NUM": 2.8
+  },
+  {
+   "BASE_YM": "201901",
+   "AGE_CD": "41~50세",
+   "QTY": 552770.0,
+   "PRE_QTY": 566225.0,
+   "GROW_RATE_PSON_NUM": -2.4
+  },
+  {
+   "BASE_YM": "201901",
+   "AGE_CD": "51~60세",
+   "QTY": 474979.0,
+   "PRE_QTY": 470538.0,
+   "GROW_RATE_PSON_NUM": 0.9
+  },
+  {
+   "BASE_YM": "201901",
+   "AGE_CD": "61세이상",
+   "QTY": 262816.0,
+   "PRE_QTY": 250717.0,
+   "GROW_RATE_PSON_NUM": 4.8
+  },
+  {
+   "BASE_YM": "201901",
+   "AGE_CD": "승무원",
+   "QTY": 158582.0,
+   "PRE_QTY": 151872.0,
+   "GROW_RATE_PSON_NUM": 4.4
+  },
+  {
+   "BASE_YM": "201902",
+   "AGE_CD": "20세 이하",
+   "QTY": 422789.0,
+   "PRE_QTY": 395913.0,
+   "GROW_RATE_PSON_NUM": 6.8
+  },
+  {
+   "BASE_YM": "201902",
+   "AGE_CD": "21~30세",
+   "QTY": 456804.0,
+   "PRE_QTY": 425352.0,
+   "GROW_RATE_PSON_NUM": 7.4
+  },
+  {
+   "BASE_YM": "201902",
+   "AGE_CD": "31~40세",
+   "QTY": 407862.0,
+   "PRE_QTY": 366496.0,
+   "GROW_RATE_PSON_NUM": 11.3
+  },
+  {
+   "BASE_YM": "201902",
+   "AGE_CD": "41~50세",
+   "QTY": 489328.0,
+   "PRE_QTY": 430165.0,
+   "GROW_RATE_PSON_NUM": 13.8
+  },
+  {
+   "BASE_YM": "201902",
+   "AGE_CD": "51~60세",
+   "QTY": 435113.0,
+   "PRE_QTY": 349172.0,
+   "GROW_RATE_PSON_NUM": 24.6
+  },
+  {
+   "BASE_YM": "201902",
+   "AGE_CD": "61세이상",
+   "QTY": 262511.0,
+   "PRE_QTY": 205498.0,
+   "GROW_RATE_PSON_NUM": 27.7
+  },
+  {
+   "BASE_YM": "201902",
+   "AGE_CD": "승무원",
+   "QTY": 143539.0,
+   "PRE_QTY": 138413.0,
+   "GROW_RATE_PSON_NUM": 3.7
+  },
+  {
+   "BASE_YM": "201903",
+   "AGE_CD": "20세 이하",
+   "QTY": 155306.0,
+   "PRE_QTY": 155302.0,
+   "GROW_RATE_PSON_NUM": 0.0
+  },
+  {
+   "BASE_YM": "201903",
+   "AGE_CD": "21~30세",
+   "QTY": 360527.0,
+   "PRE_QTY": 354028.0,
+   "GROW_RATE_PSON_NUM": 1.8
+  },
+  {
+   "BASE_YM": "201903",
+   "AGE_CD": "31~40세",
+   "QTY": 448214.0,
+   "PRE_QTY": 434433.0,
+   "GROW_RATE_PSON_NUM": 3.2
+  },
+  {
+   "BASE_YM": "201903",
+   "AGE_CD": "41~50세",
+   "QTY": 406905.0,
+   "PRE_QTY": 406101.0,
+   "GROW_RATE_PSON_NUM": 0.2
+  },
+  {
+   "BASE_YM": "201903",
+   "AGE_CD": "51~60세",
+   "QTY": 459001.0,
+   "PRE_QTY": 444804.0,
+   "GROW_RATE_PSON_NUM": 3.2
+  },
+  {
+   "BASE_YM": "201903",
+   "AGE_CD": "61세이상",
+   "QTY": 350694.0,
+   "PRE_QTY": 315017.0,
+   "GROW_RATE_PSON_NUM": 11.3
+  },
+  {
+   "BASE_YM": "201903",
+   "AGE_CD": "승무원",
+   "QTY": 153506.0,
+   "PRE_QTY": 142880.0,
+   "GROW_RATE_PSON_NUM": 7.4
+  },
+  {
+   "BASE_YM": "201904",
+   "AGE_CD": "20세 이하",
+   "QTY": 190222.0,
+   "PRE_QTY": 190310.0,
+   "GROW_RATE_PSON_NUM": -0.0
+  },
+  {
+   "BASE_YM": "201904",
+   "AGE_CD": "21~30세",
+   "QTY": 328885.0,
+   "PRE_QTY": 322927.0,
+   "GROW_RATE_PSON_NUM": 1.8
+  },
+  {
+   "BASE_YM": "201904",
+   "AGE_CD": "31~40세",
+   "QTY": 455133.0,
+   "PRE_QTY": 456392.0,
+   "GROW_RATE_PSON_NUM": -0.3
+  },
+  {
+   "BASE_YM": "201904",
+   "AGE_CD": "41~50세",
+   "QTY": 403816.0,
+   "PRE_QTY": 412668.0,
+   "GROW_RATE_PSON_NUM": -2.1
+  },
+  {
+   "BASE_YM": "201904",
+   "AGE_CD": "51~60세",
+   "QTY": 405070.0,
+   "PRE_QTY": 403075.0,
+   "GROW_RATE_PSON_NUM": 0.5
+  },
+  {
+   "BASE_YM": "201904",
+   "AGE_CD": "61세이상",
+   "QTY": 313687.0,
+   "PRE_QTY": 302952.0,
+   "GROW_RATE_PSON_NUM": 3.5
+  },
+  {
+   "BASE_YM": "201904",
+   "AGE_CD": "승무원",
+   "QTY": 149604.0,
+   "PRE_QTY": 141876.0,
+   "GROW_RATE_PSON_NUM": 5.4
+  },
+  {
+   "BASE_YM": "201905",
+   "AGE_CD": "20세 이하",
+   "QTY": 251597.0,
+   "PRE_QTY": 261813.0,
+   "GROW_RATE_PSON_NUM": -3.9
+  },
+  {
+   "BASE_YM": "201905",
+   "AGE_CD": "21~30세",
+   "QTY": 364551.0,
+   "PRE_QTY": 348693.0,
+   "GROW_RATE_PSON_NUM": 4.5
+  },
+  {
+   "BASE_YM": "201905",
+   "AGE_CD": "31~40세",
+   "QTY": 482679.0,
+   "PRE_QTY": 467085.0,
+   "GROW_RATE_PSON_NUM": 3.3
+  },
+  {
+   "BASE_YM": "201905",
+   "AGE_CD": "41~50세",
+   "QTY": 436358.0,
+   "PRE_QTY": 442695.0,
+   "GROW_RATE_PSON_NUM": -1.4
+  },
+  {
+   "BASE_YM": "201905",
+   "AGE_CD": "51~60세",
+   "QTY": 404105.0,
+   "PRE_QTY": 386081.0,
+   "GROW_RATE_PSON_NUM": 4.7
+  },
+  {
+   "BASE_YM": "201905",
+   "AGE_CD": "61세이상",
+   "QTY": 305987.0,
+   "PRE_QTY": 277648.0,
+   "GROW_RATE_PSON_NUM": 10.2
+  },
+  {
+   "BASE_YM": "201905",
+   "AGE_CD": "승무원",
+   "QTY": 155927.0,
+   "PRE_QTY": 147550.0,
+   "GROW_RATE_PSON_NUM": 5.7
+  },
+  {
+   "BASE_YM": "201906",
+   "AGE_CD": "20세 이하",
+   "QTY": 282244.0,
+   "PRE_QTY": 258345.0,
+   "GROW_RATE_PSON_NUM": 9.3
+  },
+  {
+   "BASE_YM": "201906",
+   "AGE_CD": "21~30세",
+   "QTY": 441985.0,
+   "PRE_QTY": 408793.0,
+   "GROW_RATE_PSON_NUM": 8.1
+  },
+  {
+   "BASE_YM": "201906",
+   "AGE_CD": "31~40세",
+   "QTY": 502797.0,
+   "PRE_QTY": 477091.0,
+   "GROW_RATE_PSON_NUM": 5.4
+  },
+  {
+   "BASE_YM": "201906",
+   "AGE_CD": "41~50세",
+   "QTY": 444954.0,
+   "PRE_QTY": 423781.0,
+   "GROW_RATE_PSON_NUM": 5.0
+  },
+  {
+   "BASE_YM": "201906",
+   "AGE_CD": "51~60세",
+   "QTY": 401323.0,
+   "PRE_QTY": 366081.0,
+   "GROW_RATE_PSON_NUM": 9.6
+  },
+  {
+   "BASE_YM": "201906",
+   "AGE_CD": "61세이상",
+   "QTY": 271590.0,
+   "PRE_QTY": 246428.0,
+   "GROW_RATE_PSON_NUM": 10.2
+  },
+  {
+   "BASE_YM": "201906",
+   "AGE_CD": "승무원",
+   "QTY": 150905.0,
+   "PRE_QTY": 143467.0,
+   "GROW_RATE_PSON_NUM": 5.2
+  },
+  {
+   "BASE_YM": "201907",
+   "AGE_CD": "20세 이하",
+   "QTY": 445047.0,
+   "PRE_QTY": 416709.0,
+   "GROW_RATE_PSON_NUM": 6.8
+  },
+  {
+   "BASE_YM": "201907",
+   "AGE_CD": "21~30세",
+   "QTY": 507597.0,
+   "PRE_QTY": 485123.0,
+   "GROW_RATE_PSON_NUM": 4.6
+  },
+  {
+   "BASE_YM": "201907",
+   "AGE_CD": "31~40세",
+   "QTY": 475553.0,
+   "PRE_QTY": 446550.0,
+   "GROW_RATE_PSON_NUM": 6.5
+  },
+  {
+   "BASE_YM": "201907",
+   "AGE_CD": "41~50세",
+   "QTY": 477147.0,
+   "PRE_QTY": 452971.0,
+   "GROW_RATE_PSON_NUM": 5.3
+  },
+  {
+   "BASE_YM": "201907",
+   "AGE_CD": "51~60세",
+   "QTY": 366703.0,
+   "PRE_QTY": 346840.0,
+   "GROW_RATE_PSON_NUM": 5.7
+  },
+  {
+   "BASE_YM": "201907",
+   "AGE_CD": "61세이상",
+   "QTY": 214692.0,
+   "PRE_QTY": 196227.0,
+   "GROW_RATE_PSON_NUM": 9.4
+  },
+  {
+   "BASE_YM": "201907",
+   "AGE_CD": "승무원",
+   "QTY": 155846.0,
+   "PRE_QTY": 150877.0,
+   "GROW_RATE_PSON_NUM": 3.3
+  },
+  {
+   "BASE_YM": "201908",
+   "AGE_CD": "20세 이하",
+   "QTY": 353466.0,
+   "PRE_QTY": 382335.0,
+   "GROW_RATE_PSON_NUM": -7.6
+  },
+  {
+   "BASE_YM": "201908",
+   "AGE_CD": "21~30세",
+   "QTY": 504018.0,
+   "PRE_QTY": 528881.0,
+   "GROW_RATE_PSON_NUM": -4.7
+  },
+  {
+   "BASE_YM": "201908",
+   "AGE_CD": "31~40세",
+   "QTY": 467219.0,
+   "PRE_QTY": 470367.0,
+   "GROW_RATE_PSON_NUM": -0.7
+  },
+  {
+   "BASE_YM": "201908",
+   "AGE_CD": "41~50세",
+   "QTY": 416469.0,
+   "PRE_QTY": 441763.0,
+   "GROW_RATE_PSON_NUM": -5.7
+  },
+  {
+   "BASE_YM": "201908",
+   "AGE_CD": "51~60세",
+   "QTY": 344087.0,
+   "PRE_QTY": 354588.0,
+   "GROW_RATE_PSON_NUM": -3.0
+  },
+  {
+   "BASE_YM": "201908",
+   "AGE_CD": "61세이상",
+   "QTY": 185300.0,
+   "PRE_QTY": 186464.0,
+   "GROW_RATE_PSON_NUM": -0.6
+  },
+  {
+   "BASE_YM": "201908",
+   "AGE_CD": "승무원",
+   "QTY": 157075.0,
+   "PRE_QTY": 155462.0,
+   "GROW_RATE_PSON_NUM": 1.0
+  },
+  {
+   "BASE_YM": "201909",
+   "AGE_CD": "20세 이하",
+   "QTY": 204392.0,
+   "PRE_QTY": 234337.0,
+   "GROW_RATE_PSON_NUM": -12.8
+  },
+  {
+   "BASE_YM": "201909",
+   "AGE_CD": "21~30세",
+   "QTY": 355527.0,
+   "PRE_QTY": 410152.0,
+   "GROW_RATE_PSON_NUM": -13.3
+  },
+  {
+   "BASE_YM": "201909",
+   "AGE_CD": "31~40세",
+   "QTY": 440225.0,
+   "PRE_QTY": 480366.0,
+   "GROW_RATE_PSON_NUM": -8.4
+  },
+  {
+   "BASE_YM": "201909",
+   "AGE_CD": "41~50세",
+   "QTY": 346968.0,
+   "PRE_QTY": 380333.0,
+   "GROW_RATE_PSON_NUM": -8.8
+  },
+  {
+   "BASE_YM": "201909",
+   "AGE_CD": "51~60세",
+   "QTY": 325559.0,
+   "PRE_QTY": 343982.0,
+   "GROW_RATE_PSON_NUM": -5.4
+  },
+  {
+   "BASE_YM": "201909",
+   "AGE_CD": "61세이상",
+   "QTY": 235991.0,
+   "PRE_QTY": 232797.0,
+   "GROW_RATE_PSON_NUM": 1.4
+  },
+  {
+   "BASE_YM": "201909",
+   "AGE_CD": "승무원",
+   "QTY": 141168.0,
+   "PRE_QTY": 143789.0,
+   "GROW_RATE_PSON_NUM": -1.8
+  },
+  {
+   "BASE_YM": "201910",
+   "AGE_CD": "20세 이하",
+   "QTY": 218562.0,
+   "PRE_QTY": 234356.0,
+   "GROW_RATE_PSON_NUM": -6.7
+  },
+  {
+   "BASE_YM": "201910",
+   "AGE_CD": "21~30세",
+   "QTY": 323689.0,
+   "PRE_QTY": 358709.0,
+   "GROW_RATE_PSON_NUM": -9.8
+  },
+  {
+   "BASE_YM": "201910",
+   "AGE_CD": "31~40세",
+   "QTY": 447065.0,
+   "PRE_QTY": 476172.0,
+   "GROW_RATE_PSON_NUM": -6.1
+  },
+  {
+   "BASE_YM": "201910",
+   "AGE_CD": "41~50세",
+   "QTY": 397877.0,
+   "PRE_QTY": 433999.0,
+   "GROW_RATE_PSON_NUM": -8.3
+  },
+  {
+   "BASE_YM": "201910",
+   "AGE_CD": "51~60세",
+   "QTY": 369347.0,
+   "PRE_QTY": 407641.0,
+   "GROW_RATE_PSON_NUM": -9.4
+  },
+  {
+   "BASE_YM": "201910",
+   "AGE_CD": "61세이상",
+   "QTY": 253277.0,
+   "PRE_QTY": 285350.0,
+   "GROW_RATE_PSON_NUM": -11.2
+  },
+  {
+   "BASE_YM": "201910",
+   "AGE_CD": "승무원",
+   "QTY": 144030.0,
+   "PRE_QTY": 151649.0,
+   "GROW_RATE_PSON_NUM": -5.0
+  },
+  {
+   "BASE_YM": "201911",
+   "AGE_CD": "20세 이하",
+   "QTY": 191921.0,
+   "PRE_QTY": 213668.0,
+   "GROW_RATE_PSON_NUM": -10.2
+  },
+  {
+   "BASE_YM": "201911",
+   "AGE_CD": "21~30세",
+   "QTY": 316204.0,
+   "PRE_QTY": 358264.0,
+   "GROW_RATE_PSON_NUM": -11.7
+  },
+  {
+   "BASE_YM": "201911",
+   "AGE_CD": "31~40세",
+   "QTY": 417091.0,
+   "PRE_QTY": 453840.0,
+   "GROW_RATE_PSON_NUM": -8.1
+  },
+  {
+   "BASE_YM": "201911",
+   "AGE_CD": "41~50세",
+   "QTY": 399368.0,
+   "PRE_QTY": 445466.0,
+   "GROW_RATE_PSON_NUM": -10.3
+  },
+  {
+   "BASE_YM": "201911",
+   "AGE_CD": "51~60세",
+   "QTY": 373363.0,
+   "PRE_QTY": 411778.0,
+   "GROW_RATE_PSON_NUM": -9.3
+  },
+  {
+   "BASE_YM": "201911",
+   "AGE_CD": "61세이상",
+   "QTY": 254273.0,
+   "PRE_QTY": 266357.0,
+   "GROW_RATE_PSON_NUM": -4.5
+  },
+  {
+   "BASE_YM": "201911",
+   "AGE_CD": "승무원",
+   "QTY": 137972.0,
+   "PRE_QTY": 146437.0,
+   "GROW_RATE_PSON_NUM": -5.8
+  },
+  {
+   "BASE_YM": "201912",
+   "AGE_CD": "20세 이하",
+   "QTY": 304218.0,
+   "PRE_QTY": 362022.0,
+   "GROW_RATE_PSON_NUM": -16.0
+  },
+  {
+   "BASE_YM": "201912",
+   "AGE_CD": "21~30세",
+   "QTY": 381398.0,
+   "PRE_QTY": 451441.0,
+   "GROW_RATE_PSON_NUM": -15.5
+  },
+  {
+   "BASE_YM": "201912",
+   "AGE_CD": "31~40세",
+   "QTY": 433357.0,
+   "PRE_QTY": 464893.0,
+   "GROW_RATE_PSON_NUM": -6.8
+  },
+  {
+   "BASE_YM": "201912",
+   "AGE_CD": "41~50세",
+   "QTY": 442116.0,
+   "PRE_QTY": 470069.0,
+   "GROW_RATE_PSON_NUM": -5.9
+  },
+  {
+   "BASE_YM": "201912",
+   "AGE_CD": "51~60세",
+   "QTY": 375396.0,
+   "PRE_QTY": 373769.0,
+   "GROW_RATE_PSON_NUM": 0.4
+  },
+  {
+   "BASE_YM": "201912",
+   "AGE_CD": "61세이상",
+   "QTY": 260147.0,
+   "PRE_QTY": 219763.0,
+   "GROW_RATE_PSON_NUM": 18.4
+  },
+  {
+   "BASE_YM": "201912",
+   "AGE_CD": "승무원",
+   "QTY": 145678.0,
+   "PRE_QTY": 153322.0,
+   "GROW_RATE_PSON_NUM": -5.0
+  },
+  {
+   "BASE_YM": "202001",
+   "AGE_CD": "20세 이하",
+   "QTY": 374797.0,
+   "PRE_QTY": 524920.0,
+   "GROW_RATE_PSON_NUM": -28.6
+  },
+  {
+   "BASE_YM": "202001",
+   "AGE_CD": "21~30세",
+   "QTY": 424159.0,
+   "PRE_QTY": 500398.0,
+   "GROW_RATE_PSON_NUM": -15.2
+  },
+  {
+   "BASE_YM": "202001",
+   "AGE_CD": "31~40세",
+   "QTY": 378510.0,
+   "PRE_QTY": 437866.0,
+   "GROW_RATE_PSON_NUM": -13.6
+  },
+  {
+   "BASE_YM": "202001",
+   "AGE_CD": "41~50세",
+   "QTY": 466435.0,
+   "PRE_QTY": 552770.0,
+   "GROW_RATE_PSON_NUM": -15.6
+  },
+  {
+   "BASE_YM": "202001",
+   "AGE_CD": "51~60세",
+   "QTY": 424702.0,
+   "PRE_QTY": 474979.0,
+   "GROW_RATE_PSON_NUM": -10.6
+  },
+  {
+   "BASE_YM": "202001",
+   "AGE_CD": "61세이상",
+   "QTY": 289226.0,
+   "PRE_QTY": 262816.0,
+   "GROW_RATE_PSON_NUM": 10.0
+  },
+  {
+   "BASE_YM": "202001",
+   "AGE_CD": "승무원",
+   "QTY": 155201.0,
+   "PRE_QTY": 158582.0,
+   "GROW_RATE_PSON_NUM": -2.1
+  },
+  {
+   "BASE_YM": "202002",
+   "AGE_CD": "20세 이하",
+   "QTY": 122155.0,
+   "PRE_QTY": 422789.0,
+   "GROW_RATE_PSON_NUM": -71.1
+  },
+  {
+   "BASE_YM": "202002",
+   "AGE_CD": "21~30세",
+   "QTY": 195665.0,
+   "PRE_QTY": 456804.0,
+   "GROW_RATE_PSON_NUM": -57.2
+  },
+  {
+   "BASE_YM": "202002",
+   "AGE_CD": "31~40세",
+   "QTY": 172744.0,
+   "PRE_QTY": 407862.0,
+   "GROW_RATE_PSON_NUM": -57.6
+  },
+  {
+   "BASE_YM": "202002",
+   "AGE_CD": "41~50세",
+   "QTY": 193003.0,
+   "PRE_QTY": 489328.0,
+   "GROW_RATE_PSON_NUM": -60.6
+  },
+  {
+   "BASE_YM": "202002",
+   "AGE_CD": "51~60세",
+   "QTY": 149291.0,
+   "PRE_QTY": 435113.0,
+   "GROW_RATE_PSON_NUM": -65.7
+  },
+  {
+   "BASE_YM": "202002",
+   "AGE_CD": "61세이상",
+   "QTY": 96112.0,
+   "PRE_QTY": 262511.0,
+   "GROW_RATE_PSON_NUM": -63.4
+  },
+  {
+   "BASE_YM": "202002",
+   "AGE_CD": "승무원",
+   "QTY": 117809.0,
+   "PRE_QTY": 143539.0,
+   "GROW_RATE_PSON_NUM": -17.9
+  },
+  {
+   "BASE_YM": "202003",
+   "AGE_CD": "20세 이하",
+   "QTY": 12408.0,
+   "PRE_QTY": 155306.0,
+   "GROW_RATE_PSON_NUM": -92.0
+  },
+  {
+   "BASE_YM": "202003",
+   "AGE_CD": "21~30세",
+   "QTY": 22463.0,
+   "PRE_QTY": 360527.0,
+   "GROW_RATE_PSON_NUM": -93.8
+  },
+  {
+   "BASE_YM": "202003",
+   "AGE_CD": "31~40세",
+   "QTY": 25032.0,
+   "PRE_QTY": 448214.0,
+   "GROW_RATE_PSON_NUM": -94.4
+  },
+  {
+   "BASE_YM": "202003",
+   "AGE_CD": "41~50세",
+   "QTY": 20480.0,
+   "PRE_QTY": 406905.0,
+   "GROW_RATE_PSON_NUM": -95.0
+  },
+  {
+   "BASE_YM": "202003",
+   "AGE_CD": "51~60세",
+   "QTY": 12603.0,
+   "PRE_QTY": 459001.0,
+   "GROW_RATE_PSON_NUM": -97.3
+  },
+  {
+   "BASE_YM": "202003",
+   "AGE_CD": "61세이상",
+   "QTY": 8083.0,
+   "PRE_QTY": 350694.0,
+   "GROW_RATE_PSON_NUM": -97.7
+  },
+  {
+   "BASE_YM": "202003",
+   "AGE_CD": "승무원",
+   "QTY": 42297.0,
+   "PRE_QTY": 153506.0,
+   "GROW_RATE_PSON_NUM": -72.4
+  },
+  {
+   "BASE_YM": "202004",
+   "AGE_CD": "20세 이하",
+   "QTY": 347.0,
+   "PRE_QTY": 190222.0,
+   "GROW_RATE_PSON_NUM": -99.8
+  },
+  {
+   "BASE_YM": "202004",
+   "AGE_CD": "21~30세",
+   "QTY": 1052.0,
+   "PRE_QTY": 328885.0,
+   "GROW_RATE_PSON_NUM": -99.7
+  },
+  {
+   "BASE_YM": "202004",
+   "AGE_CD": "31~40세",
+   "QTY": 1700.0,
+   "PRE_QTY": 455133.0,
+   "GROW_RATE_PSON_NUM": -99.6
+  },
+  {
+   "BASE_YM": "202004",
+   "AGE_CD": "41~50세",
+   "QTY": 1564.0,
+   "PRE_QTY": 403816.0,
+   "GROW_RATE_PSON_NUM": -99.6
+  },
+  {
+   "BASE_YM": "202004",
+   "AGE_CD": "51~60세",
+   "QTY": 882.0,
+   "PRE_QTY": 405070.0,
+   "GROW_RATE_PSON_NUM": -99.8
+  },
+  {
+   "BASE_YM": "202004",
+   "AGE_CD": "61세이상",
+   "QTY": 293.0,
+   "PRE_QTY": 313687.0,
+   "GROW_RATE_PSON_NUM": -99.9
+  },
+  {
+   "BASE_YM": "202004",
+   "AGE_CD": "승무원",
+   "QTY": 25587.0,
+   "PRE_QTY": 149604.0,
+   "GROW_RATE_PSON_NUM": -82.9
+  },
+  {
+   "BASE_YM": "202005",
+   "AGE_CD": "20세 이하",
+   "QTY": 615.0,
+   "PRE_QTY": 251597.0,
+   "GROW_RATE_PSON_NUM": -99.8
+  },
+  {
+   "BASE_YM": "202005",
+   "AGE_CD": "21~30세",
+   "QTY": 2311.0,
+   "PRE_QTY": 364551.0,
+   "GROW_RATE_PSON_NUM": -99.4
+  },
+  {
+   "BASE_YM": "202005",
+   "AGE_CD": "31~40세",
+   "QTY": 3405.0,
+   "PRE_QTY": 482679.0,
+   "GROW_RATE_PSON_NUM": -99.3
+  },
+  {
+   "BASE_YM": "202005",
+   "AGE_CD": "41~50세",
+   "QTY": 2784.0,
+   "PRE_QTY": 436358.0,
+   "GROW_RATE_PSON_NUM": -99.4
+  },
+  {
+   "BASE_YM": "202005",
+   "AGE_CD": "51~60세",
+   "QTY": 1585.0,
+   "PRE_QTY": 404105.0,
+   "GROW_RATE_PSON_NUM": -99.6
+  },
+  {
+   "BASE_YM": "202005",
+   "AGE_CD": "61세이상",
+   "QTY": 718.0,
+   "PRE_QTY": 305987.0,
+   "GROW_RATE_PSON_NUM": -99.8
+  },
+  {
+   "BASE_YM": "202005",
+   "AGE_CD": "승무원",
+   "QTY": 26384.0,
+   "PRE_QTY": 155927.0,
+   "GROW_RATE_PSON_NUM": -83.1
+  },
+  {
+   "BASE_YM": "202006",
+   "AGE_CD": "20세 이하",
+   "QTY": 1768.0,
+   "PRE_QTY": 282244.0,
+   "GROW_RATE_PSON_NUM": -99.4
+  },
+  {
+   "BASE_YM": "202006",
+   "AGE_CD": "21~30세",
+   "QTY": 4041.0,
+   "PRE_QTY": 441985.0,
+   "GROW_RATE_PSON_NUM": -99.1
+  },
+  {
+   "BASE_YM": "202006",
+   "AGE_CD": "31~40세",
+   "QTY": 5648.0,
+   "PRE_QTY": 502797.0,
+   "GROW_RATE_PSON_NUM": -98.9
+  },
+  {
+   "BASE_YM": "202006",
+   "AGE_CD": "41~50세",
+   "QTY": 4625.0,
+   "PRE_QTY": 444954.0,
+   "GROW_RATE_PSON_NUM": -99.0
+  },
+  {
+   "BASE_YM": "202006",
+   "AGE_CD": "51~60세",
+   "QTY": 2872.0,
+   "PRE_QTY": 401323.0,
+   "GROW_RATE_PSON_NUM": -99.3
+  },
+  {
+   "BASE_YM": "202006",
+   "AGE_CD": "61세이상",
+   "QTY": 1717.0,
+   "PRE_QTY": 271590.0,
+   "GROW_RATE_PSON_NUM": -99.4
+  },
+  {
+   "BASE_YM": "202006",
+   "AGE_CD": "승무원",
+   "QTY": 27682.0,
+   "PRE_QTY": 150905.0,
+   "GROW_RATE_PSON_NUM": -81.7
+  },
+  {
+   "BASE_YM": "202007",
+   "AGE_CD": "20세 이하",
+   "QTY": 5549.0,
+   "PRE_QTY": 445047.0,
+   "GROW_RATE_PSON_NUM": -98.8
+  },
+  {
+   "BASE_YM": "202007",
+   "AGE_CD": "21~30세",
+   "QTY": 7018.0,
+   "PRE_QTY": 507597.0,
+   "GROW_RATE_PSON_NUM": -98.6
+  },
+  {
+   "BASE_YM": "202007",
+   "AGE_CD": "31~40세",
+   "QTY": 8725.0,
+   "PRE_QTY": 475553.0,
+   "GROW_RATE_PSON_NUM": -98.2
+  },
+  {
+   "BASE_YM": "202007",
+   "AGE_CD": "41~50세",
+   "QTY": 7624.0,
+   "PRE_QTY": 477147.0,
+   "GROW_RATE_PSON_NUM": -98.4
+  },
+  {
+   "BASE_YM": "202007",
+   "AGE_CD": "51~60세",
+   "QTY": 4192.0,
+   "PRE_QTY": 366703.0,
+   "GROW_RATE_PSON_NUM": -98.9
+  },
+  {
+   "BASE_YM": "202007",
+   "AGE_CD": "61세이상",
+   "QTY": 2272.0,
+   "PRE_QTY": 214692.0,
+   "GROW_RATE_PSON_NUM": -98.9
+  },
+  {
+   "BASE_YM": "202007",
+   "AGE_CD": "승무원",
+   "QTY": 30556.0,
+   "PRE_QTY": 155846.0,
+   "GROW_RATE_PSON_NUM": -80.4
+  },
+  {
+   "BASE_YM": "202008",
+   "AGE_CD": "20세 이하",
+   "QTY": 16314.0,
+   "PRE_QTY": 353466.0,
+   "GROW_RATE_PSON_NUM": -95.4
+  },
+  {
+   "BASE_YM": "202008",
+   "AGE_CD": "21~30세",
+   "QTY": 12572.0,
+   "PRE_QTY": 504018.0,
+   "GROW_RATE_PSON_NUM": -97.5
+  },
+  {
+   "BASE_YM": "202008",
+   "AGE_CD": "31~40세",
+   "QTY": 11119.0,
+   "PRE_QTY": 467219.0,
+   "GROW_RATE_PSON_NUM": -97.6
+  },
+  {
+   "BASE_YM": "202008",
+   "AGE_CD": "41~50세",
+   "QTY": 10976.0,
+   "PRE_QTY": 416469.0,
+   "GROW_RATE_PSON_NUM": -97.4
+  },
+  {
+   "BASE_YM": "202008",
+   "AGE_CD": "51~60세",
+   "QTY": 5225.0,
+   "PRE_QTY": 344087.0,
+   "GROW_RATE_PSON_NUM": -98.5
+  },
+  {
+   "BASE_YM": "202008",
+   "AGE_CD": "61세이상",
+   "QTY": 2271.0,
+   "PRE_QTY": 185300.0,
+   "GROW_RATE_PSON_NUM": -98.8
+  },
+  {
+   "BASE_YM": "202008",
+   "AGE_CD": "승무원",
+   "QTY": 30411.0,
+   "PRE_QTY": 157075.0,
+   "GROW_RATE_PSON_NUM": -80.6
+  },
+  {
+   "BASE_YM": "202009",
+   "AGE_CD": "20세 이하",
+   "QTY": 9095.0,
+   "PRE_QTY": 204392.0,
+   "GROW_RATE_PSON_NUM": -95.6
+  },
+  {
+   "BASE_YM": "202009",
+   "AGE_CD": "21~30세",
+   "QTY": 9773.0,
+   "PRE_QTY": 355527.0,
+   "GROW_RATE_PSON_NUM": -97.3
+  },
+  {
+   "BASE_YM": "202009",
+   "AGE_CD": "31~40세",
+   "QTY": 9904.0,
+   "PRE_QTY": 440225.0,
+   "GROW_RATE_PSON_NUM": -97.8
+  },
+  {
+   "BASE_YM": "202009",
+   "AGE_CD": "41~50세",
+   "QTY": 8931.0,
+   "PRE_QTY": 346968.0,
+   "GROW_RATE_PSON_NUM": -97.4
+  },
+  {
+   "BASE_YM": "202009",
+   "AGE_CD": "51~60세",
+   "QTY": 5511.0,
+   "PRE_QTY": 325559.0,
+   "GROW_RATE_PSON_NUM": -98.3
+  },
+  {
+   "BASE_YM": "202009",
+   "AGE_CD": "61세이상",
+   "QTY": 2741.0,
+   "PRE_QTY": 235991.0,
+   "GROW_RATE_PSON_NUM": -98.8
+  },
+  {
+   "BASE_YM": "202009",
+   "AGE_CD": "승무원",
+   "QTY": 30843.0,
+   "PRE_QTY": 141168.0,
+   "GROW_RATE_PSON_NUM": -78.2
+  },
+  {
+   "BASE_YM": "202010",
+   "AGE_CD": "20세 이하",
+   "QTY": 4683.0,
+   "PRE_QTY": 218562.0,
+   "GROW_RATE_PSON_NUM": -97.9
+  },
+  {
+   "BASE_YM": "202010",
+   "AGE_CD": "21~30세",
+   "QTY": 7710.0,
+   "PRE_QTY": 323689.0,
+   "GROW_RATE_PSON_NUM": -97.6
+  },
+  {
+   "BASE_YM": "202010",
+   "AGE_CD": "31~40세",
+   "QTY": 9696.0,
+   "PRE_QTY": 447065.0,
+   "GROW_RATE_PSON_NUM": -97.8
+  },
+  {
+   "BASE_YM": "202010",
+   "AGE_CD": "41~50세",
+   "QTY": 8264.0,
+   "PRE_QTY": 397877.0,
+   "GROW_RATE_PSON_NUM": -97.9
+  },
+  {
+   "BASE_YM": "202010",
+   "AGE_CD": "51~60세",
+   "QTY": 5621.0,
+   "PRE_QTY": 369347.0,
+   "GROW_RATE_PSON_NUM": -98.5
+  },
+  {
+   "BASE_YM": "202010",
+   "AGE_CD": "61세이상",
+   "QTY": 3124.0,
+   "PRE_QTY": 253277.0,
+   "GROW_RATE_PSON_NUM": -98.8
+  },
+  {
+   "BASE_YM": "202010",
+   "AGE_CD": "승무원",
+   "QTY": 32872.0,
+   "PRE_QTY": 144030.0,
+   "GROW_RATE_PSON_NUM": -77.2
+  },
+  {
+   "BASE_YM": "202011",
+   "AGE_CD": "20세 이하",
+   "QTY": 4009.0,
+   "PRE_QTY": 191921.0,
+   "GROW_RATE_PSON_NUM": -97.9
+  },
+  {
+   "BASE_YM": "202011",
+   "AGE_CD": "21~30세",
+   "QTY": 6236.0,
+   "PRE_QTY": 316204.0,
+   "GROW_RATE_PSON_NUM": -98.0
+  },
+  {
+   "BASE_YM": "202011",
+   "AGE_CD": "31~40세",
+   "QTY": 9503.0,
+   "PRE_QTY": 417091.0,
+   "GROW_RATE_PSON_NUM": -97.7
+  },
+  {
+   "BASE_YM": "202011",
+   "AGE_CD": "41~50세",
+   "QTY": 8481.0,
+   "PRE_QTY": 399368.0,
+   "GROW_RATE_PSON_NUM": -97.9
+  },
+  {
+   "BASE_YM": "202011",
+   "AGE_CD": "51~60세",
+   "QTY": 5986.0,
+   "PRE_QTY": 373363.0,
+   "GROW_RATE_PSON_NUM": -98.4
+  },
+  {
+   "BASE_YM": "202011",
+   "AGE_CD": "61세이상",
+   "QTY": 3384.0,
+   "PRE_QTY": 254273.0,
+   "GROW_RATE_PSON_NUM": -98.7
+  },
+  {
+   "BASE_YM": "202011",
+   "AGE_CD": "승무원",
+   "QTY": 33087.0,
+   "PRE_QTY": 137972.0,
+   "GROW_RATE_PSON_NUM": -76.0
+  },
+  {
+   "BASE_YM": "202012",
+   "AGE_CD": "20세 이하",
+   "QTY": 6394.0,
+   "PRE_QTY": 304218.0,
+   "GROW_RATE_PSON_NUM": -97.9
+  },
+  {
+   "BASE_YM": "202012",
+   "AGE_CD": "21~30세",
+   "QTY": 8499.0,
+   "PRE_QTY": 381398.0,
+   "GROW_RATE_PSON_NUM": -97.8
+  },
+  {
+   "BASE_YM": "202012",
+   "AGE_CD": "31~40세",
+   "QTY": 11023.0,
+   "PRE_QTY": 433357.0,
+   "GROW_RATE_PSON_NUM": -97.5
+  },
+  {
+   "BASE_YM": "202012",
+   "AGE_CD": "41~50세",
+   "QTY": 9972.0,
+   "PRE_QTY": 442116.0,
+   "GROW_RATE_PSON_NUM": -97.7
+  },
+  {
+   "BASE_YM": "202012",
+   "AGE_CD": "51~60세",
+   "QTY": 6843.0,
+   "PRE_QTY": 375396.0,
+   "GROW_RATE_PSON_NUM": -98.2
+  },
+  {
+   "BASE_YM": "202012",
+   "AGE_CD": "61세이상",
+   "QTY": 3571.0,
+   "PRE_QTY": 260147.0,
+   "GROW_RATE_PSON_NUM": -98.6
+  },
+  {
+   "BASE_YM": "202012",
+   "AGE_CD": "승무원",
+   "QTY": 34671.0,
+   "PRE_QTY": 145678.0,
+   "GROW_RATE_PSON_NUM": -76.2
+  },
+  {
+   "BASE_YM": "202101",
+   "AGE_CD": "20세 이하",
+   "QTY": 7740.0,
+   "PRE_QTY": 374797.0,
+   "GROW_RATE_PSON_NUM": -97.9
+  },
+  {
+   "BASE_YM": "202101",
+   "AGE_CD": "21~30세",
+   "QTY": 12594.0,
+   "PRE_QTY": 424159.0,
+   "GROW_RATE_PSON_NUM": -97.0
+  },
+  {
+   "BASE_YM": "202101",
+   "AGE_CD": "31~40세",
+   "QTY": 12727.0,
+   "PRE_QTY": 378510.0,
+   "GROW_RATE_PSON_NUM": -96.6
+  },
+  {
+   "BASE_YM": "202101",
+   "AGE_CD": "41~50세",
+   "QTY": 10218.0,
+   "PRE_QTY": 466435.0,
+   "GROW_RATE_PSON_NUM": -97.8
+  },
+  {
+   "BASE_YM": "202101",
+   "AGE_CD": "51~60세",
+   "QTY": 6007.0,
+   "PRE_QTY": 424702.0,
+   "GROW_RATE_PSON_NUM": -98.6
+  },
+  {
+   "BASE_YM": "202101",
+   "AGE_CD": "61세이상",
+   "QTY": 3002.0,
+   "PRE_QTY": 289226.0,
+   "GROW_RATE_PSON_NUM": -99.0
+  },
+  {
+   "BASE_YM": "202101",
+   "AGE_CD": "승무원",
+   "QTY": 33855.0,
+   "PRE_QTY": 155201.0,
+   "GROW_RATE_PSON_NUM": -78.2
+  },
+  {
+   "BASE_YM": "202102",
+   "AGE_CD": "20세 이하",
+   "QTY": 4402.0,
+   "PRE_QTY": 122155.0,
+   "GROW_RATE_PSON_NUM": -96.4
+  },
+  {
+   "BASE_YM": "202102",
+   "AGE_CD": "21~30세",
+   "QTY": 7563.0,
+   "PRE_QTY": 195665.0,
+   "GROW_RATE_PSON_NUM": -96.1
+  },
+  {
+   "BASE_YM": "202102",
+   "AGE_CD": "31~40세",
+   "QTY": 9462.0,
+   "PRE_QTY": 172744.0,
+   "GROW_RATE_PSON_NUM": -94.5
+  },
+  {
+   "BASE_YM": "202102",
+   "AGE_CD": "41~50세",
+   "QTY": 8551.0,
+   "PRE_QTY": 193003.0,
+   "GROW_RATE_PSON_NUM": -95.6
+  },
+  {
+   "BASE_YM": "202102",
+   "AGE_CD": "51~60세",
+   "QTY": 5359.0,
+   "PRE_QTY": 149291.0,
+   "GROW_RATE_PSON_NUM": -96.4
+  },
+  {
+   "BASE_YM": "202102",
+   "AGE_CD": "61세이상",
+   "QTY": 2918.0,
+   "PRE_QTY": 96112.0,
+   "GROW_RATE_PSON_NUM": -97.0
+  },
+  {
+   "BASE_YM": "202102",
+   "AGE_CD": "승무원",
+   "QTY": 29958.0,
+   "PRE_QTY": 117809.0,
+   "GROW_RATE_PSON_NUM": -74.6
+  },
+  {
+   "BASE_YM": "202103",
+   "AGE_CD": "20세 이하",
+   "QTY": 4046.0,
+   "PRE_QTY": 12408.0,
+   "GROW_RATE_PSON_NUM": -67.4
+  },
+  {
+   "BASE_YM": "202103",
+   "AGE_CD": "21~30세",
+   "QTY": 7716.0,
+   "PRE_QTY": 22463.0,
+   "GROW_RATE_PSON_NUM": -65.7
+  },
+  {
+   "BASE_YM": "202103",
+   "AGE_CD": "31~40세",
+   "QTY": 9933.0,
+   "PRE_QTY": 25032.0,
+   "GROW_RATE_PSON_NUM": -60.3
+  },
+  {
+   "BASE_YM": "202103",
+   "AGE_CD": "41~50세",
+   "QTY": 8871.0,
+   "PRE_QTY": 20480.0,
+   "GROW_RATE_PSON_NUM": -56.7
+  },
+  {
+   "BASE_YM": "202103",
+   "AGE_CD": "51~60세",
+   "QTY": 5853.0,
+   "PRE_QTY": 12603.0,
+   "GROW_RATE_PSON_NUM": -53.6
+  },
+  {
+   "BASE_YM": "202103",
+   "AGE_CD": "61세이상",
+   "QTY": 3235.0,
+   "PRE_QTY": 8083.0,
+   "GROW_RATE_PSON_NUM": -60.0
+  },
+  {
+   "BASE_YM": "202103",
+   "AGE_CD": "승무원",
+   "QTY": 34345.0,
+   "PRE_QTY": 42297.0,
+   "GROW_RATE_PSON_NUM": -18.8
+  },
+  {
+   "BASE_YM": "202104",
+   "AGE_CD": "20세 이하",
+   "QTY": 3368.0,
+   "PRE_QTY": 347.0,
+   "GROW_RATE_PSON_NUM": 870.6
+  },
+  {
+   "BASE_YM": "202104",
+   "AGE_CD": "21~30세",
+   "QTY": 6660.0,
+   "PRE_QTY": 1052.0,
+   "GROW_RATE_PSON_NUM": 533.1
+  },
+  {
+   "BASE_YM": "202104",
+   "AGE_CD": "31~40세",
+   "QTY": 9452.0,
+   "PRE_QTY": 1700.0,
+   "GROW_RATE_PSON_NUM": 456.0
+  },
+  {
+   "BASE_YM": "202104",
+   "AGE_CD": "41~50세",
+   "QTY": 8148.0,
+   "PRE_QTY": 1564.0,
+   "GROW_RATE_PSON_NUM": 421.0
+  },
+  {
+   "BASE_YM": "202104",
+   "AGE_CD": "51~60세",
+   "QTY": 5832.0,
+   "PRE_QTY": 882.0,
+   "GROW_RATE_PSON_NUM": 561.2
+  },
+  {
+   "BASE_YM": "202104",
+   "AGE_CD": "61세이상",
+   "QTY": 3444.0,
+   "PRE_QTY": 293.0,
+   "GROW_RATE_PSON_NUM": 1075.4
+  },
+  {
+   "BASE_YM": "202104",
+   "AGE_CD": "승무원",
+   "QTY": 34398.0,
+   "PRE_QTY": 25587.0,
+   "GROW_RATE_PSON_NUM": 34.4
+  },
+  {
+   "BASE_YM": "202105",
+   "AGE_CD": "20세 이하",
+   "QTY": 2998.0,
+   "PRE_QTY": 615.0,
+   "GROW_RATE_PSON_NUM": 387.5
+  },
+  {
+   "BASE_YM": "202105",
+   "AGE_CD": "21~30세",
+   "QTY": 6874.0,
+   "PRE_QTY": 2311.0,
+   "GROW_RATE_PSON_NUM": 197.4
+  },
+  {
+   "BASE_YM": "202105",
+   "AGE_CD": "31~40세",
+   "QTY": 10188.0,
+   "PRE_QTY": 3405.0,
+   "GROW_RATE_PSON_NUM": 199.2
+  },
+  {
+   "BASE_YM": "202105",
+   "AGE_CD": "41~50세",
+   "QTY": 8888.0,
+   "PRE_QTY": 2784.0,
+   "GROW_RATE_PSON_NUM": 219.3
+  },
+  {
+   "BASE_YM": "202105",
+   "AGE_CD": "51~60세",
+   "QTY": 6484.0,
+   "PRE_QTY": 1585.0,
+   "GROW_RATE_PSON_NUM": 309.1
+  },
+  {
+   "BASE_YM": "202105",
+   "AGE_CD": "61세이상",
+   "QTY": 4701.0,
+   "PRE_QTY": 718.0,
+   "GROW_RATE_PSON_NUM": 554.7
+  },
+  {
+   "BASE_YM": "202105",
+   "AGE_CD": "승무원",
+   "QTY": 35283.0,
+   "PRE_QTY": 26384.0,
+   "GROW_RATE_PSON_NUM": 33.7
+  },
+  {
+   "BASE_YM": "202106",
+   "AGE_CD": "20세 이하",
+   "QTY": 4437.0,
+   "PRE_QTY": 1768.0,
+   "GROW_RATE_PSON_NUM": 151.0
+  },
+  {
+   "BASE_YM": "202106",
+   "AGE_CD": "21~30세",
+   "QTY": 7631.0,
+   "PRE_QTY": 4041.0,
+   "GROW_RATE_PSON_NUM": 88.8
+  },
+  {
+   "BASE_YM": "202106",
+   "AGE_CD": "31~40세",
+   "QTY": 10519.0,
+   "PRE_QTY": 5648.0,
+   "GROW_RATE_PSON_NUM": 86.2
+  },
+  {
+   "BASE_YM": "202106",
+   "AGE_CD": "41~50세",
+   "QTY": 9388.0,
+   "PRE_QTY": 4625.0,
+   "GROW_RATE_PSON_NUM": 103.0
+  },
+  {
+   "BASE_YM": "202106",
+   "AGE_CD": "51~60세",
+   "QTY": 6942.0,
+   "PRE_QTY": 2872.0,
+   "GROW_RATE_PSON_NUM": 141.7
+  },
+  {
+   "BASE_YM": "202106",
+   "AGE_CD": "61세이상",
+   "QTY": 6324.0,
+   "PRE_QTY": 1717.0,
+   "GROW_RATE_PSON_NUM": 268.3
+  },
+  {
+   "BASE_YM": "202106",
+   "AGE_CD": "승무원",
+   "QTY": 34205.0,
+   "PRE_QTY": 27682.0,
+   "GROW_RATE_PSON_NUM": 23.6
+  },
+  {
+   "BASE_YM": "202107",
+   "AGE_CD": "20세 이하",
+   "QTY": 12677.0,
+   "PRE_QTY": 5549.0,
+   "GROW_RATE_PSON_NUM": 128.5
+  },
+  {
+   "BASE_YM": "202107",
+   "AGE_CD": "21~30세",
+   "QTY": 10761.0,
+   "PRE_QTY": 7018.0,
+   "GROW_RATE_PSON_NUM": 53.3
+  },
+  {
+   "BASE_YM": "202107",
+   "AGE_CD": "31~40세",
+   "QTY": 14074.0,
+   "PRE_QTY": 8725.0,
+   "GROW_RATE_PSON_NUM": 61.3
+  },
+  {
+   "BASE_YM": "202107",
+   "AGE_CD": "41~50세",
+   "QTY": 14094.0,
+   "PRE_QTY": 7624.0,
+   "GROW_RATE_PSON_NUM": 84.9
+  },
+  {
+   "BASE_YM": "202107",
+   "AGE_CD": "51~60세",
+   "QTY": 8303.0,
+   "PRE_QTY": 4192.0,
+   "GROW_RATE_PSON_NUM": 98.1
+  },
+  {
+   "BASE_YM": "202107",
+   "AGE_CD": "61세이상",
+   "QTY": 6231.0,
+   "PRE_QTY": 2272.0,
+   "GROW_RATE_PSON_NUM": 174.3
+  },
+  {
+   "BASE_YM": "202107",
+   "AGE_CD": "승무원",
+   "QTY": 35823.0,
+   "PRE_QTY": 30556.0,
+   "GROW_RATE_PSON_NUM": 17.2
+  },
+  {
+   "BASE_YM": "202108",
+   "AGE_CD": "20세 이하",
+   "QTY": 28018.0,
+   "PRE_QTY": 16314.0,
+   "GROW_RATE_PSON_NUM": 71.7
+  },
+  {
+   "BASE_YM": "202108",
+   "AGE_CD": "21~30세",
+   "QTY": 22961.0,
+   "PRE_QTY": 12572.0,
+   "GROW_RATE_PSON_NUM": 82.6
+  },
+  {
+   "BASE_YM": "202108",
+   "AGE_CD": "31~40세",
+   "QTY": 17214.0,
+   "PRE_QTY": 11119.0,
+   "GROW_RATE_PSON_NUM": 54.8
+  },
+  {
+   "BASE_YM": "202108",
+   "AGE_CD": "41~50세",
+   "QTY": 18949.0,
+   "PRE_QTY": 10976.0,
+   "GROW_RATE_PSON_NUM": 72.6
+  },
+  {
+   "BASE_YM": "202108",
+   "AGE_CD": "51~60세",
+   "QTY": 9346.0,
+   "PRE_QTY": 5225.0,
+   "GROW_RATE_PSON_NUM": 78.9
+  },
+  {
+   "BASE_YM": "202108",
+   "AGE_CD": "61세이상",
+   "QTY": 5187.0,
+   "PRE_QTY": 2271.0,
+   "GROW_RATE_PSON_NUM": 128.4
+  },
+  {
+   "BASE_YM": "202108",
+   "AGE_CD": "승무원",
+   "QTY": 36037.0,
+   "PRE_QTY": 30411.0,
+   "GROW_RATE_PSON_NUM": 18.5
+  },
+  {
+   "BASE_YM": "202109",
+   "AGE_CD": "20세 이하",
+   "QTY": 10221.0,
+   "PRE_QTY": 9095.0,
+   "GROW_RATE_PSON_NUM": 12.4
+  },
+  {
+   "BASE_YM": "202109",
+   "AGE_CD": "21~30세",
+   "QTY": 17352.0,
+   "PRE_QTY": 9773.0,
+   "GROW_RATE_PSON_NUM": 77.6
+  },
+  {
+   "BASE_YM": "202109",
+   "AGE_CD": "31~40세",
+   "QTY": 17015.0,
+   "PRE_QTY": 9904.0,
+   "GROW_RATE_PSON_NUM": 71.8
+  },
+  {
+   "BASE_YM": "202109",
+   "AGE_CD": "41~50세",
+   "QTY": 14735.0,
+   "PRE_QTY": 8931.0,
+   "GROW_RATE_PSON_NUM": 65.0
+  },
+  {
+   "BASE_YM": "202109",
+   "AGE_CD": "51~60세",
+   "QTY": 12026.0,
+   "PRE_QTY": 5511.0,
+   "GROW_RATE_PSON_NUM": 118.2
+  },
+  {
+   "BASE_YM": "202109",
+   "AGE_CD": "61세이상",
+   "QTY": 10412.0,
+   "PRE_QTY": 2741.0,
+   "GROW_RATE_PSON_NUM": 279.9
+  },
+  {
+   "BASE_YM": "202109",
+   "AGE_CD": "승무원",
+   "QTY": 34854.0,
+   "PRE_QTY": 30843.0,
+   "GROW_RATE_PSON_NUM": 13.0
+  },
+  {
+   "BASE_YM": "202110",
+   "AGE_CD": "20세 이하",
+   "QTY": 5345.0,
+   "PRE_QTY": 4683.0,
+   "GROW_RATE_PSON_NUM": 14.1
+  },
+  {
+   "BASE_YM": "202110",
+   "AGE_CD": "21~30세",
+   "QTY": 14654.0,
+   "PRE_QTY": 7710.0,
+   "GROW_RATE_PSON_NUM": 90.1
+  },
+  {
+   "BASE_YM": "202110",
+   "AGE_CD": "31~40세",
+   "QTY": 21576.0,
+   "PRE_QTY": 9696.0,
+   "GROW_RATE_PSON_NUM": 122.5
+  },
+  {
+   "BASE_YM": "202110",
+   "AGE_CD": "41~50세",
+   "QTY": 18912.0,
+   "PRE_QTY": 8264.0,
+   "GROW_RATE_PSON_NUM": 128.8
+  },
+  {
+   "BASE_YM": "202110",
+   "AGE_CD": "51~60세",
+   "QTY": 15859.0,
+   "PRE_QTY": 5621.0,
+   "GROW_RATE_PSON_NUM": 182.1
+  },
+  {
+   "BASE_YM": "202110",
+   "AGE_CD": "61세이상",
+   "QTY": 11703.0,
+   "PRE_QTY": 3124.0,
+   "GROW_RATE_PSON_NUM": 274.6
+  },
+  {
+   "BASE_YM": "202110",
+   "AGE_CD": "승무원",
+   "QTY": 36350.0,
+   "PRE_QTY": 32872.0,
+   "GROW_RATE_PSON_NUM": 10.6
+  },
+  {
+   "BASE_YM": "202111",
+   "AGE_CD": "20세 이하",
+   "QTY": 6367.0,
+   "PRE_QTY": 4009.0,
+   "GROW_RATE_PSON_NUM": 58.8
+  },
+  {
+   "BASE_YM": "202111",
+   "AGE_CD": "21~30세",
+   "QTY": 18898.0,
+   "PRE_QTY": 6236.0,
+   "GROW_RATE_PSON_NUM": 203.0
+  },
+  {
+   "BASE_YM": "202111",
+   "AGE_CD": "31~40세",
+   "QTY": 28829.0,
+   "PRE_QTY": 9503.0,
+   "GROW_RATE_PSON_NUM": 203.4
+  },
+  {
+   "BASE_YM": "202111",
+   "AGE_CD": "41~50세",
+   "QTY": 24285.0,
+   "PRE_QTY": 8481.0,
+   "GROW_RATE_PSON_NUM": 186.3
+  },
+  {
+   "BASE_YM": "202111",
+   "AGE_CD": "51~60세",
+   "QTY": 19475.0,
+   "PRE_QTY": 5986.0,
+   "GROW_RATE_PSON_NUM": 225.3
+  },
+  {
+   "BASE_YM": "202111",
+   "AGE_CD": "61세이상",
+   "QTY": 14000.0,
+   "PRE_QTY": 3384.0,
+   "GROW_RATE_PSON_NUM": 313.7
+  },
+  {
+   "BASE_YM": "202111",
+   "AGE_CD": "승무원",
+   "QTY": 36053.0,
+   "PRE_QTY": 33087.0,
+   "GROW_RATE_PSON_NUM": 9.0
+  },
+  {
+   "BASE_YM": "202112",
+   "AGE_CD": "20세 이하",
+   "QTY": 13368.0,
+   "PRE_QTY": 6394.0,
+   "GROW_RATE_PSON_NUM": 109.1
+  },
+  {
+   "BASE_YM": "202112",
+   "AGE_CD": "21~30세",
+   "QTY": 19205.0,
+   "PRE_QTY": 8499.0,
+   "GROW_RATE_PSON_NUM": 126.0
+  },
+  {
+   "BASE_YM": "202112",
+   "AGE_CD": "31~40세",
+   "QTY": 21333.0,
+   "PRE_QTY": 11023.0,
+   "GROW_RATE_PSON_NUM": 93.5
+  },
+  {
+   "BASE_YM": "202112",
+   "AGE_CD": "41~50세",
+   "QTY": 19608.0,
+   "PRE_QTY": 9972.0,
+   "GROW_RATE_PSON_NUM": 96.6
+  },
+  {
+   "BASE_YM": "202112",
+   "AGE_CD": "51~60세",
+   "QTY": 15377.0,
+   "PRE_QTY": 6843.0,
+   "GROW_RATE_PSON_NUM": 124.7
+  },
+  {
+   "BASE_YM": "202112",
+   "AGE_CD": "61세이상",
+   "QTY": 12356.0,
+   "PRE_QTY": 3571.0,
+   "GROW_RATE_PSON_NUM": 246.0
+  },
+  {
+   "BASE_YM": "202112",
+   "AGE_CD": "승무원",
+   "QTY": 38179.0,
+   "PRE_QTY": 34671.0,
+   "GROW_RATE_PSON_NUM": 10.1
+  },
+  {
+   "BASE_YM": "202201",
+   "AGE_CD": "20세 이하",
+   "QTY": 17983.0,
+   "PRE_QTY": 7740.0,
+   "GROW_RATE_PSON_NUM": 132.3
+  },
+  {
+   "BASE_YM": "202201",
+   "AGE_CD": "21~30세",
+   "QTY": 27779.0,
+   "PRE_QTY": 12594.0,
+   "GROW_RATE_PSON_NUM": 120.6
+  },
+  {
+   "BASE_YM": "202201",
+   "AGE_CD": "31~40세",
+   "QTY": 22517.0,
+   "PRE_QTY": 12727.0,
+   "GROW_RATE_PSON_NUM": 76.9
+  },
+  {
+   "BASE_YM": "202201",
+   "AGE_CD": "41~50세",
+   "QTY": 19929.0,
+   "PRE_QTY": 10218.0,
+   "GROW_RATE_PSON_NUM": 95.0
+  },
+  {
+   "BASE_YM": "202201",
+   "AGE_CD": "51~60세",
+   "QTY": 13485.0,
+   "PRE_QTY": 6007.0,
+   "GROW_RATE_PSON_NUM": 124.5
+  },
+  {
+   "BASE_YM": "202201",
+   "AGE_CD": "61세이상",
+   "QTY": 8282.0,
+   "PRE_QTY": 3002.0,
+   "GROW_RATE_PSON_NUM": 175.9
+  },
+  {
+   "BASE_YM": "202201",
+   "AGE_CD": "승무원",
+   "QTY": 37459.0,
+   "PRE_QTY": 33855.0,
+   "GROW_RATE_PSON_NUM": 10.6
+  },
+  {
+   "BASE_YM": "202202",
+   "AGE_CD": "20세 이하",
+   "QTY": 8103.0,
+   "PRE_QTY": 4402.0,
+   "GROW_RATE_PSON_NUM": 84.1
+  },
+  {
+   "BASE_YM": "202202",
+   "AGE_CD": "21~30세",
+   "QTY": 15805.0,
+   "PRE_QTY": 7563.0,
+   "GROW_RATE_PSON_NUM": 109.0
+  },
+  {
+   "BASE_YM": "202202",
+   "AGE_CD": "31~40세",
+   "QTY": 18403.0,
+   "PRE_QTY": 9462.0,
+   "GROW_RATE_PSON_NUM": 94.5
+  },
+  {
+   "BASE_YM": "202202",
+   "AGE_CD": "41~50세",
+   "QTY": 17085.0,
+   "PRE_QTY": 8551.0,
+   "GROW_RATE_PSON_NUM": 99.8
+  },
+  {
+   "BASE_YM": "202202",
+   "AGE_CD": "51~60세",
+   "QTY": 12890.0,
+   "PRE_QTY": 5359.0,
+   "GROW_RATE_PSON_NUM": 140.5
+  },
+  {
+   "BASE_YM": "202202",
+   "AGE_CD": "61세이상",
+   "QTY": 8035.0,
+   "PRE_QTY": 2918.0,
+   "GROW_RATE_PSON_NUM": 175.4
+  },
+  {
+   "BASE_YM": "202202",
+   "AGE_CD": "승무원",
+   "QTY": 32401.0,
+   "PRE_QTY": 29958.0,
+   "GROW_RATE_PSON_NUM": 8.2
+  },
+  {
+   "BASE_YM": "202203",
+   "AGE_CD": "20세 이하",
+   "QTY": 8854.0,
+   "PRE_QTY": 4046.0,
+   "GROW_RATE_PSON_NUM": 118.8
+  },
+  {
+   "BASE_YM": "202203",
+   "AGE_CD": "21~30세",
+   "QTY": 21146.0,
+   "PRE_QTY": 7716.0,
+   "GROW_RATE_PSON_NUM": 174.1
+  },
+  {
+   "BASE_YM": "202203",
+   "AGE_CD": "31~40세",
+   "QTY": 24852.0,
+   "PRE_QTY": 9933.0,
+   "GROW_RATE_PSON_NUM": 150.2
+  },
+  {
+   "BASE_YM": "202203",
+   "AGE_CD": "41~50세",
+   "QTY": 22635.0,
+   "PRE_QTY": 8871.0,
+   "GROW_RATE_PSON_NUM": 155.2
+  },
+  {
+   "BASE_YM": "202203",
+   "AGE_CD": "51~60세",
+   "QTY": 17367.0,
+   "PRE_QTY": 5853.0,
+   "GROW_RATE_PSON_NUM": 196.7
+  },
+  {
+   "BASE_YM": "202203",
+   "AGE_CD": "61세이상",
+   "QTY": 11956.0,
+   "PRE_QTY": 3235.0,
+   "GROW_RATE_PSON_NUM": 269.6
+  },
+  {
+   "BASE_YM": "202203",
+   "AGE_CD": "승무원",
+   "QTY": 38693.0,
+   "PRE_QTY": 34345.0,
+   "GROW_RATE_PSON_NUM": 12.7
+  },
+  {
+   "BASE_YM": "202204",
+   "AGE_CD": "20세 이하",
+   "QTY": 13134.0,
+   "PRE_QTY": 3368.0,
+   "GROW_RATE_PSON_NUM": 290.0
+  },
+  {
+   "BASE_YM": "202204",
+   "AGE_CD": "21~30세",
+   "QTY": 29463.0,
+   "PRE_QTY": 6660.0,
+   "GROW_RATE_PSON_NUM": 342.4
+  },
+  {
+   "BASE_YM": "202204",
+   "AGE_CD": "31~40세",
+   "QTY": 43668.0,
+   "PRE_QTY": 9452.0,
+   "GROW_RATE_PSON_NUM": 362.0
+  },
+  {
+   "BASE_YM": "202204",
+   "AGE_CD": "41~50세",
+   "QTY": 38467.0,
+   "PRE_QTY": 8148.0,
+   "GROW_RATE_PSON_NUM": 372.1
+  },
+  {
+   "BASE_YM": "202204",
+   "AGE_CD": "51~60세",
+   "QTY": 30389.0,
+   "PRE_QTY": 5832.0,
+   "GROW_RATE_PSON_NUM": 421.1
+  },
+  {
+   "BASE_YM": "202204",
+   "AGE_CD": "61세이상",
+   "QTY": 20785.0,
+   "PRE_QTY": 3444.0,
+   "GROW_RATE_PSON_NUM": 503.5
+  },
+  {
+   "BASE_YM": "202204",
+   "AGE_CD": "승무원",
+   "QTY": 39340.0,
+   "PRE_QTY": 34398.0,
+   "GROW_RATE_PSON_NUM": 14.4
+  },
+  {
+   "BASE_YM": "202205",
+   "AGE_CD": "20세 이하",
+   "QTY": 16527.0,
+   "PRE_QTY": 2998.0,
+   "GROW_RATE_PSON_NUM": 451.3
+  },
+  {
+   "BASE_YM": "202205",
+   "AGE_CD": "21~30세",
+   "QTY": 44633.0,
+   "PRE_QTY": 6874.0,
+   "GROW_RATE_PSON_NUM": 549.3
+  },
+  {
+   "BASE_YM": "202205",
+   "AGE_CD": "31~40세",
+   "QTY": 70726.0,
+   "PRE_QTY": 10188.0,
+   "GROW_RATE_PSON_NUM": 594.2
+  },
+  {
+   "BASE_YM": "202205",
+   "AGE_CD": "41~50세",
+   "QTY": 57523.0,
+   "PRE_QTY": 8888.0,
+   "GROW_RATE_PSON_NUM": 547.2
+  },
+  {
+   "BASE_YM": "202205",
+   "AGE_CD": "51~60세",
+   "QTY": 49913.0,
+   "PRE_QTY": 6484.0,
+   "GROW_RATE_PSON_NUM": 669.8
+  },
+  {
+   "BASE_YM": "202205",
+   "AGE_CD": "61세이상",
+   "QTY": 33320.0,
+   "PRE_QTY": 4701.0,
+   "GROW_RATE_PSON_NUM": 608.8
+  },
+  {
+   "BASE_YM": "202205",
+   "AGE_CD": "승무원",
+   "QTY": 43303.0,
+   "PRE_QTY": 35283.0,
+   "GROW_RATE_PSON_NUM": 22.7
+  },
+  {
+   "BASE_YM": "202206",
+   "AGE_CD": "20세 이하",
+   "QTY": 31227.0,
+   "PRE_QTY": 4437.0,
+   "GROW_RATE_PSON_NUM": 603.8
+  },
+  {
+   "BASE_YM": "202206",
+   "AGE_CD": "21~30세",
+   "QTY": 66120.0,
+   "PRE_QTY": 7631.0,
+   "GROW_RATE_PSON_NUM": 766.5
+  },
+  {
+   "BASE_YM": "202206",
+   "AGE_CD": "31~40세",
+   "QTY": 87789.0,
+   "PRE_QTY": 10519.0,
+   "GROW_RATE_PSON_NUM": 734.6
+  },
+  {
+   "BASE_YM": "202206",
+   "AGE_CD": "41~50세",
+   "QTY": 75569.0,
+   "PRE_QTY": 9388.0,
+   "GROW_RATE_PSON_NUM": 705.0
+  },
+  {
+   "BASE_YM": "202206",
+   "AGE_CD": "51~60세",
+   "QTY": 62886.0,
+   "PRE_QTY": 6942.0,
+   "GROW_RATE_PSON_NUM": 805.9
+  },
+  {
+   "BASE_YM": "202206",
+   "AGE_CD": "61세이상",
+   "QTY": 44678.0,
+   "PRE_QTY": 6324.0,
+   "GROW_RATE_PSON_NUM": 606.5
+  },
+  {
+   "BASE_YM": "202206",
+   "AGE_CD": "승무원",
+   "QTY": 44529.0,
+   "PRE_QTY": 34205.0,
+   "GROW_RATE_PSON_NUM": 30.2
+  },
+  {
+   "BASE_YM": "202207",
+   "AGE_CD": "20세 이하",
+   "QTY": 103439.0,
+   "PRE_QTY": 12677.0,
+   "GROW_RATE_PSON_NUM": 716.0
+  },
+  {
+   "BASE_YM": "202207",
+   "AGE_CD": "21~30세",
+   "QTY": 110468.0,
+   "PRE_QTY": 10761.0,
+   "GROW_RATE_PSON_NUM": 926.6
+  },
+  {
+   "BASE_YM": "202207",
+   "AGE_CD": "31~40세",
+   "QTY": 129257.0,
+   "PRE_QTY": 14074.0,
+   "GROW_RATE_PSON_NUM": 818.4
+  },
+  {
+   "BASE_YM": "202207",
+   "AGE_CD": "41~50세",
+   "QTY": 122838.0,
+   "PRE_QTY": 14094.0,
+   "GROW_RATE_PSON_NUM": 771.6
+  },
+  {
+   "BASE_YM": "202207",
+   "AGE_CD": "51~60세",
+   "QTY": 89931.0,
+   "PRE_QTY": 8303.0,
+   "GROW_RATE_PSON_NUM": 983.1
+  },
+  {
+   "BASE_YM": "202207",
+   "AGE_CD": "61세이상",
+   "QTY": 59960.0,
+   "PRE_QTY": 6231.0,
+   "GROW_RATE_PSON_NUM": 862.3
+  },
+  {
+   "BASE_YM": "202207",
+   "AGE_CD": "승무원",
+   "QTY": 58129.0,
+   "PRE_QTY": 35823.0,
+   "GROW_RATE_PSON_NUM": 62.3
+  },
+  {
+   "BASE_YM": "202208",
+   "AGE_CD": "20세 이하",
+   "QTY": 102316.0,
+   "PRE_QTY": 28018.0,
+   "GROW_RATE_PSON_NUM": 265.2
+  },
+  {
+   "BASE_YM": "202208",
+   "AGE_CD": "21~30세",
+   "QTY": 141532.0,
+   "PRE_QTY": 22961.0,
+   "GROW_RATE_PSON_NUM": 516.4
+  },
+  {
+   "BASE_YM": "202208",
+   "AGE_CD": "31~40세",
+   "QTY": 140264.0,
+   "PRE_QTY": 17214.0,
+   "GROW_RATE_PSON_NUM": 714.8
+  },
+  {
+   "BASE_YM": "202208",
+   "AGE_CD": "41~50세",
+   "QTY": 121950.0,
+   "PRE_QTY": 18949.0,
+   "GROW_RATE_PSON_NUM": 543.6
+  },
+  {
+   "BASE_YM": "202208",
+   "AGE_CD": "51~60세",
+   "QTY": 84467.0,
+   "PRE_QTY": 9346.0,
+   "GROW_RATE_PSON_NUM": 803.8
+  },
+  {
+   "BASE_YM": "202208",
+   "AGE_CD": "61세이상",
+   "QTY": 48582.0,
+   "PRE_QTY": 5187.0,
+   "GROW_RATE_PSON_NUM": 836.6
+  },
+  {
+   "BASE_YM": "202208",
+   "AGE_CD": "승무원",
+   "QTY": 63042.0,
+   "PRE_QTY": 36037.0,
+   "GROW_RATE_PSON_NUM": 74.9
+  },
+  {
+   "BASE_YM": "202209",
+   "AGE_CD": "20세 이하",
+   "QTY": 48730.0,
+   "PRE_QTY": 10221.0,
+   "GROW_RATE_PSON_NUM": 376.8
+  },
+  {
+   "BASE_YM": "202209",
+   "AGE_CD": "21~30세",
+   "QTY": 115449.0,
+   "PRE_QTY": 17352.0,
+   "GROW_RATE_PSON_NUM": 565.3
+  },
+  {
+   "BASE_YM": "202209",
+   "AGE_CD": "31~40세",
+   "QTY": 144325.0,
+   "PRE_QTY": 17015.0,
+   "GROW_RATE_PSON_NUM": 748.2
+  },
+  {
+   "BASE_YM": "202209",
+   "AGE_CD": "41~50세",
+   "QTY": 105827.0,
+   "PRE_QTY": 14735.0,
+   "GROW_RATE_PSON_NUM": 618.2
+  },
+  {
+   "BASE_YM": "202209",
+   "AGE_CD": "51~60세",
+   "QTY": 87947.0,
+   "PRE_QTY": 12026.0,
+   "GROW_RATE_PSON_NUM": 631.3
+  },
+  {
+   "BASE_YM": "202209",
+   "AGE_CD": "61세이상",
+   "QTY": 60848.0,
+   "PRE_QTY": 10412.0,
+   "GROW_RATE_PSON_NUM": 484.4
+  },
+  {
+   "BASE_YM": "202209",
+   "AGE_CD": "승무원",
+   "QTY": 56828.0,
+   "PRE_QTY": 34854.0,
+   "GROW_RATE_PSON_NUM": 63.0
+  },
+  {
+   "BASE_YM": "202210",
+   "AGE_CD": "20세 이하",
+   "QTY": 52943.0,
+   "PRE_QTY": 5345.0,
+   "GROW_RATE_PSON_NUM": 890.5
+  },
+  {
+   "BASE_YM": "202210",
+   "AGE_CD": "21~30세",
+   "QTY": 135935.0,
+   "PRE_QTY": 14654.0,
+   "GROW_RATE_PSON_NUM": 827.6
+  },
+  {
+   "BASE_YM": "202210",
+   "AGE_CD": "31~40세",
+   "QTY": 183449.0,
+   "PRE_QTY": 21576.0,
+   "GROW_RATE_PSON_NUM": 750.2
+  },
+  {
+   "BASE_YM": "202210",
+   "AGE_CD": "41~50세",
+   "QTY": 136710.0,
+   "PRE_QTY": 18912.0,
+   "GROW_RATE_PSON_NUM": 622.9
+  },
+  {
+   "BASE_YM": "202210",
+   "AGE_CD": "51~60세",
+   "QTY": 113537.0,
+   "PRE_QTY": 15859.0,
+   "GROW_RATE_PSON_NUM": 615.9
+  },
+  {
+   "BASE_YM": "202210",
+   "AGE_CD": "61세이상",
+   "QTY": 82786.0,
+   "PRE_QTY": 11703.0,
+   "GROW_RATE_PSON_NUM": 607.4
+  },
+  {
+   "BASE_YM": "202210",
+   "AGE_CD": "승무원",
+   "QTY": 68120.0,
+   "PRE_QTY": 36350.0,
+   "GROW_RATE_PSON_NUM": 87.4
+  },
+  {
+   "BASE_YM": "202211",
+   "AGE_CD": "20세 이하",
+   "QTY": 77245.0,
+   "PRE_QTY": 6367.0,
+   "GROW_RATE_PSON_NUM": 1113.2
+  },
+  {
+   "BASE_YM": "202211",
+   "AGE_CD": "21~30세",
+   "QTY": 199179.0,
+   "PRE_QTY": 18898.0,
+   "GROW_RATE_PSON_NUM": 954.0
+  },
+  {
+   "BASE_YM": "202211",
+   "AGE_CD": "31~40세",
+   "QTY": 224810.0,
+   "PRE_QTY": 28829.0,
+   "GROW_RATE_PSON_NUM": 679.8
+  },
+  {
+   "BASE_YM": "202211",
+   "AGE_CD": "41~50세",
+   "QTY": 177741.0,
+   "PRE_QTY": 24285.0,
+   "GROW_RATE_PSON_NUM": 631.9
+  },
+  {
+   "BASE_YM": "202211",
+   "AGE_CD": "51~60세",
+   "QTY": 159354.0,
+   "PRE_QTY": 19475.0,
+   "GROW_RATE_PSON_NUM": 718.2
+  },
+  {
+   "BASE_YM": "202211",
+   "AGE_CD": "61세이상",
+   "QTY": 126133.0,
+   "PRE_QTY": 14000.0,
+   "GROW_RATE_PSON_NUM": 800.9
+  },
+  {
+   "BASE_YM": "202211",
+   "AGE_CD": "승무원",
+   "QTY": 76969.0,
+   "PRE_QTY": 36053.0,
+   "GROW_RATE_PSON_NUM": 113.5
+  },
+  {
+   "BASE_YM": "202212",
+   "AGE_CD": "20세 이하",
+   "QTY": 171681.0,
+   "PRE_QTY": 13368.0,
+   "GROW_RATE_PSON_NUM": 1184.3
+  },
+  {
+   "BASE_YM": "202212",
+   "AGE_CD": "21~30세",
+   "QTY": 294360.0,
+   "PRE_QTY": 19205.0,
+   "GROW_RATE_PSON_NUM": 1432.7
+  },
+  {
+   "BASE_YM": "202212",
+   "AGE_CD": "31~40세",
+   "QTY": 271622.0,
+   "PRE_QTY": 21333.0,
+   "GROW_RATE_PSON_NUM": 1173.2
+  },
+  {
+   "BASE_YM": "202212",
+   "AGE_CD": "41~50세",
+   "QTY": 220583.0,
+   "PRE_QTY": 19608.0,
+   "GROW_RATE_PSON_NUM": 1025.0
+  },
+  {
+   "BASE_YM": "202212",
+   "AGE_CD": "51~60세",
+   "QTY": 198573.0,
+   "PRE_QTY": 15377.0,
+   "GROW_RATE_PSON_NUM": 1191.4
+  },
+  {
+   "BASE_YM": "202212",
+   "AGE_CD": "61세이상",
+   "QTY": 146247.0,
+   "PRE_QTY": 12356.0,
+   "GROW_RATE_PSON_NUM": 1083.6
+  },
+  {
+   "BASE_YM": "202212",
+   "AGE_CD": "승무원",
+   "QTY": 90277.0,
+   "PRE_QTY": 38179.0,
+   "GROW_RATE_PSON_NUM": 136.5
+  },
+  {
+   "BASE_YM": "202301",
+   "AGE_CD": "20세 이하",
+   "QTY": 280910.0,
+   "PRE_QTY": 17983.0,
+   "GROW_RATE_PSON_NUM": 1462.1
+  },
+  {
+   "BASE_YM": "202301",
+   "AGE_CD": "21~30세",
+   "QTY": 350988.0,
+   "PRE_QTY": 27779.0,
+   "GROW_RATE_PSON_NUM": 1163.5
+  },
+  {
+   "BASE_YM": "202301",
+   "AGE_CD": "31~40세",
+   "QTY": 276082.0,
+   "PRE_QTY": 22517.0,
+   "GROW_RATE_PSON_NUM": 1126.1
+  },
+  {
+   "BASE_YM": "202301",
+   "AGE_CD": "41~50세",
+   "QTY": 294812.0,
+   "PRE_QTY": 19929.0,
+   "GROW_RATE_PSON_NUM": 1379.3
+  },
+  {
+   "BASE_YM": "202301",
+   "AGE_CD": "51~60세",
+   "QTY": 279408.0,
+   "PRE_QTY": 13485.0,
+   "GROW_RATE_PSON_NUM": 1972.0
+  },
+  {
+   "BASE_YM": "202301",
+   "AGE_CD": "61세이상",
+   "QTY": 201721.0,
+   "PRE_QTY": 8282.0,
+   "GROW_RATE_PSON_NUM": 2335.7
+  },
+  {
+   "BASE_YM": "202301",
+   "AGE_CD": "승무원",
+   "QTY": 98392.0,
+   "PRE_QTY": 37459.0,
+   "GROW_RATE_PSON_NUM": 162.7
+  },
+  {
+   "BASE_YM": "202302",
+   "AGE_CD": "20세 이하",
+   "QTY": 251223.0,
+   "PRE_QTY": 8103.0,
+   "GROW_RATE_PSON_NUM": 3000.4
+  },
+  {
+   "BASE_YM": "202302",
+   "AGE_CD": "21~30세",
+   "QTY": 331133.0,
+   "PRE_QTY": 15805.0,
+   "GROW_RATE_PSON_NUM": 1995.1
+  },
+  {
+   "BASE_YM": "202302",
+   "AGE_CD": "31~40세",
+   "QTY": 248680.0,
+   "PRE_QTY": 18403.0,
+   "GROW_RATE_PSON_NUM": 1251.3
+  },
+  {
+   "BASE_YM": "202302",
+   "AGE_CD": "41~50세",
+   "QTY": 292480.0,
+   "PRE_QTY": 17085.0,
+   "GROW_RATE_PSON_NUM": 1611.9
+  },
+  {
+   "BASE_YM": "202302",
+   "AGE_CD": "51~60세",
+   "QTY": 290306.0,
+   "PRE_QTY": 12890.0,
+   "GROW_RATE_PSON_NUM": 2152.2
+  },
+  {
+   "BASE_YM": "202302",
+   "AGE_CD": "61세이상",
+   "QTY": 217570.0,
+   "PRE_QTY": 8035.0,
+   "GROW_RATE_PSON_NUM": 2607.8
+  },
+  {
+   "BASE_YM": "202302",
+   "AGE_CD": "승무원",
+   "QTY": 93488.0,
+   "PRE_QTY": 32401.0,
+   "GROW_RATE_PSON_NUM": 188.5
+  },
+  {
+   "BASE_YM": "202303",
+   "AGE_CD": "20세 이하",
+   "QTY": 84844.0,
+   "PRE_QTY": 8854.0,
+   "GROW_RATE_PSON_NUM": 858.3
+  },
+  {
+   "BASE_YM": "202303",
+   "AGE_CD": "21~30세",
+   "QTY": 249266.0,
+   "PRE_QTY": 21146.0,
+   "GROW_RATE_PSON_NUM": 1078.8
+  },
+  {
+   "BASE_YM": "202303",
+   "AGE_CD": "31~40세",
+   "QTY": 281931.0,
+   "PRE_QTY": 24852.0,
+   "GROW_RATE_PSON_NUM": 1034.4
+  },
+  {
+   "BASE_YM": "202303",
+   "AGE_CD": "41~50세",
+   "QTY": 225270.0,
+   "PRE_QTY": 22635.0,
+   "GROW_RATE_PSON_NUM": 895.2
+  },
+  {
+   "BASE_YM": "202303",
+   "AGE_CD": "51~60세",
+   "QTY": 271609.0,
+   "PRE_QTY": 17367.0,
+   "GROW_RATE_PSON_NUM": 1463.9
+  },
+  {
+   "BASE_YM": "202303",
+   "AGE_CD": "61세이상",
+   "QTY": 254937.0,
+   "PRE_QTY": 11956.0,
+   "GROW_RATE_PSON_NUM": 2032.3
+  },
+  {
+   "BASE_YM": "202303",
+   "AGE_CD": "승무원",
+   "QTY": 104336.0,
+   "PRE_QTY": 38693.0,
+   "GROW_RATE_PSON_NUM": 169.7
+  },
+  {
+   "BASE_YM": "202304",
+   "AGE_CD": "20세 이하",
+   "QTY": 109523.0,
+   "PRE_QTY": 13134.0,
+   "GROW_RATE_PSON_NUM": 733.9
+  },
+  {
+   "BASE_YM": "202304",
+   "AGE_CD": "21~30세",
+   "QTY": 240034.0,
+   "PRE_QTY": 29463.0,
+   "GROW_RATE_PSON_NUM": 714.7
+  },
+  {
+   "BASE_YM": "202304",
+   "AGE_CD": "31~40세",
+   "QTY": 309827.0,
+   "PRE_QTY": 43668.0,
+   "GROW_RATE_PSON_NUM": 609.5
+  },
+  {
+   "BASE_YM": "202304",
+   "AGE_CD": "41~50세",
+   "QTY": 245467.0,
+   "PRE_QTY": 38467.0,
+   "GROW_RATE_PSON_NUM": 538.1
+  },
+  {
+   "BASE_YM": "202304",
+   "AGE_CD": "51~60세",
+   "QTY": 251348.0,
+   "PRE_QTY": 30389.0,
+   "GROW_RATE_PSON_NUM": 727.1
+  },
+  {
+   "BASE_YM": "202304",
+   "AGE_CD": "61세이상",
+   "QTY": 232897.0,
+   "PRE_QTY": 20785.0,
+   "GROW_RATE_PSON_NUM": 1020.5
+  },
+  {
+   "BASE_YM": "202304",
+   "AGE_CD": "승무원",
+   "QTY": 108009.0,
+   "PRE_QTY": 39340.0,
+   "GROW_RATE_PSON_NUM": 174.6
+  },
+  {
+   "BASE_YM": "202305",
+   "AGE_CD": "20세 이하",
+   "QTY": 155749.0,
+   "PRE_QTY": 16527.0,
+   "GROW_RATE_PSON_NUM": 842.4
+  },
+  {
+   "BASE_YM": "202305",
+   "AGE_CD": "21~30세",
+   "QTY": 271308.0,
+   "PRE_QTY": 44633.0,
+   "GROW_RATE_PSON_NUM": 507.9
+  },
+  {
+   "BASE_YM": "202305",
+   "AGE_CD": "31~40세",
+   "QTY": 340898.0,
+   "PRE_QTY": 70726.0,
+   "GROW_RATE_PSON_NUM": 382.0
+  },
+  {
+   "BASE_YM": "202305",
+   "AGE_CD": "41~50세",
+   "QTY": 284533.0,
+   "PRE_QTY": 57523.0,
+   "GROW_RATE_PSON_NUM": 394.6
+  },
+  {
+   "BASE_YM": "202305",
+   "AGE_CD": "51~60세",
+   "QTY": 269860.0,
+   "PRE_QTY": 49913.0,
+   "GROW_RATE_PSON_NUM": 440.7
+  },
+  {
+   "BASE_YM": "202305",
+   "AGE_CD": "61세이상",
+   "QTY": 244407.0,
+   "PRE_QTY": 33320.0,
+   "GROW_RATE_PSON_NUM": 633.5
+  },
+  {
+   "BASE_YM": "202305",
+   "AGE_CD": "승무원",
+   "QTY": 116267.0,
+   "PRE_QTY": 43303.0,
+   "GROW_RATE_PSON_NUM": 168.5
+  },
+  {
+   "BASE_YM": "202306",
+   "AGE_CD": "20세 이하",
+   "QTY": 169383.0,
+   "PRE_QTY": 31227.0,
+   "GROW_RATE_PSON_NUM": 442.4
+  },
+  {
+   "BASE_YM": "202306",
+   "AGE_CD": "21~30세",
+   "QTY": 322844.0,
+   "PRE_QTY": 66120.0,
+   "GROW_RATE_PSON_NUM": 388.3
+  },
+  {
+   "BASE_YM": "202306",
+   "AGE_CD": "31~40세",
+   "QTY": 339871.0,
+   "PRE_QTY": 87789.0,
+   "GROW_RATE_PSON_NUM": 287.1
+  },
+  {
+   "BASE_YM": "202306",
+   "AGE_CD": "41~50세",
+   "QTY": 292379.0,
+   "PRE_QTY": 75569.0,
+   "GROW_RATE_PSON_NUM": 286.9
+  },
+  {
+   "BASE_YM": "202306",
+   "AGE_CD": "51~60세",
+   "QTY": 284975.0,
+   "PRE_QTY": 62886.0,
+   "GROW_RATE_PSON_NUM": 353.2
+  },
+  {
+   "BASE_YM": "202306",
+   "AGE_CD": "61세이상",
+   "QTY": 246882.0,
+   "PRE_QTY": 44678.0,
+   "GROW_RATE_PSON_NUM": 452.6
+  },
+  {
+   "BASE_YM": "202306",
+   "AGE_CD": "승무원",
+   "QTY": 115628.0,
+   "PRE_QTY": 44529.0,
+   "GROW_RATE_PSON_NUM": 159.7
+  },
+  {
+   "BASE_YM": "202307",
+   "AGE_CD": "20세 이하",
+   "QTY": 363651.0,
+   "PRE_QTY": 103439.0,
+   "GROW_RATE_PSON_NUM": 251.6
+  },
+  {
+   "BASE_YM": "202307",
+   "AGE_CD": "21~30세",
+   "QTY": 403978.0,
+   "PRE_QTY": 110468.0,
+   "GROW_RATE_PSON_NUM": 265.7
+  },
+  {
+   "BASE_YM": "202307",
+   "AGE_CD": "31~40세",
+   "QTY": 362815.0,
+   "PRE_QTY": 129257.0,
+   "GROW_RATE_PSON_NUM": 180.7
+  },
+  {
+   "BASE_YM": "202307",
+   "AGE_CD": "41~50세",
+   "QTY": 379410.0,
+   "PRE_QTY": 122838.0,
+   "GROW_RATE_PSON_NUM": 208.9
+  },
+  {
+   "BASE_YM": "202307",
+   "AGE_CD": "51~60세",
+   "QTY": 299550.0,
+   "PRE_QTY": 89931.0,
+   "GROW_RATE_PSON_NUM": 233.1
+  },
+  {
+   "BASE_YM": "202307",
+   "AGE_CD": "61세이상",
+   "QTY": 216337.0,
+   "PRE_QTY": 59960.0,
+   "GROW_RATE_PSON_NUM": 260.8
+  },
+  {
+   "BASE_YM": "202307",
+   "AGE_CD": "승무원",
+   "QTY": 128116.0,
+   "PRE_QTY": 58129.0,
+   "GROW_RATE_PSON_NUM": 120.4
+  },
+  {
+   "BASE_YM": "202308",
+   "AGE_CD": "20세 이하",
+   "QTY": 308659.0,
+   "PRE_QTY": 102316.0,
+   "GROW_RATE_PSON_NUM": 201.7
+  },
+  {
+   "BASE_YM": "202308",
+   "AGE_CD": "21~30세",
+   "QTY": 431348.0,
+   "PRE_QTY": 141532.0,
+   "GROW_RATE_PSON_NUM": 204.8
+  },
+  {
+   "BASE_YM": "202308",
+   "AGE_CD": "31~40세",
+   "QTY": 372926.0,
+   "PRE_QTY": 140264.0,
+   "GROW_RATE_PSON_NUM": 165.9
+  },
+  {
+   "BASE_YM": "202308",
+   "AGE_CD": "41~50세",
+   "QTY": 353413.0,
+   "PRE_QTY": 121950.0,
+   "GROW_RATE_PSON_NUM": 189.8
+  },
+  {
+   "BASE_YM": "202308",
+   "AGE_CD": "51~60세",
+   "QTY": 293902.0,
+   "PRE_QTY": 84467.0,
+   "GROW_RATE_PSON_NUM": 247.9
+  },
+  {
+   "BASE_YM": "202308",
+   "AGE_CD": "61세이상",
+   "QTY": 203407.0,
+   "PRE_QTY": 48582.0,
+   "GROW_RATE_PSON_NUM": 318.7
+  },
+  {
+   "BASE_YM": "202308",
+   "AGE_CD": "승무원",
+   "QTY": 129581.0,
+   "PRE_QTY": 63042.0,
+   "GROW_RATE_PSON_NUM": 105.5
+  },
+  {
+   "BASE_YM": "202309",
+   "AGE_CD": "20세 이하",
+   "QTY": 200085.0,
+   "PRE_QTY": 48730.0,
+   "GROW_RATE_PSON_NUM": 310.6
+  },
+  {
+   "BASE_YM": "202309",
+   "AGE_CD": "21~30세",
+   "QTY": 350111.0,
+   "PRE_QTY": 115449.0,
+   "GROW_RATE_PSON_NUM": 203.3
+  },
+  {
+   "BASE_YM": "202309",
+   "AGE_CD": "31~40세",
+   "QTY": 425845.0,
+   "PRE_QTY": 144325.0,
+   "GROW_RATE_PSON_NUM": 195.1
+  },
+  {
+   "BASE_YM": "202309",
+   "AGE_CD": "41~50세",
+   "QTY": 331447.0,
+   "PRE_QTY": 105827.0,
+   "GROW_RATE_PSON_NUM": 213.2
+  },
+  {
+   "BASE_YM": "202309",
+   "AGE_CD": "51~60세",
+   "QTY": 308408.0,
+   "PRE_QTY": 87947.0,
+   "GROW_RATE_PSON_NUM": 250.7
+  },
+  {
+   "BASE_YM": "202309",
+   "AGE_CD": "61세이상",
+   "QTY": 276498.0,
+   "PRE_QTY": 60848.0,
+   "GROW_RATE_PSON_NUM": 354.4
+  },
+  {
+   "BASE_YM": "202309",
+   "AGE_CD": "승무원",
+   "QTY": 124763.0,
+   "PRE_QTY": 56828.0,
+   "GROW_RATE_PSON_NUM": 119.5
+  },
+  {
+   "BASE_YM": "202310",
+   "AGE_CD": "20세 이하",
+   "QTY": 183985.0,
+   "PRE_QTY": 52943.0,
+   "GROW_RATE_PSON_NUM": 247.5
+  },
+  {
+   "BASE_YM": "202310",
+   "AGE_CD": "21~30세",
+   "QTY": 312377.0,
+   "PRE_QTY": 135935.0,
+   "GROW_RATE_PSON_NUM": 129.8
+  },
+  {
+   "BASE_YM": "202310",
+   "AGE_CD": "31~40세",
+   "QTY": 392829.0,
+   "PRE_QTY": 183449.0,
+   "GROW_RATE_PSON_NUM": 114.1
+  },
+  {
+   "BASE_YM": "202310",
+   "AGE_CD": "41~50세",
+   "QTY": 339790.0,
+   "PRE_QTY": 136710.0,
+   "GROW_RATE_PSON_NUM": 148.5
+  },
+  {
+   "BASE_YM": "202310",
+   "AGE_CD": "51~60세",
+   "QTY": 344680.0,
+   "PRE_QTY": 113537.0,
+   "GROW_RATE_PSON_NUM": 203.6
+  },
+  {
+   "BASE_YM": "202310",
+   "AGE_CD": "61세이상",
+   "QTY": 337592.0,
+   "PRE_QTY": 82786.0,
+   "GROW_RATE_PSON_NUM": 307.8
+  },
+  {
+   "BASE_YM": "202310",
+   "AGE_CD": "승무원",
+   "QTY": 131450.0,
+   "PRE_QTY": 68120.0,
+   "GROW_RATE_PSON_NUM": 93.0
+  },
+  {
+   "BASE_YM": "202311",
+   "AGE_CD": "20세 이하",
+   "QTY": 176443.0,
+   "PRE_QTY": 77245.0,
+   "GROW_RATE_PSON_NUM": 128.4
+  },
+  {
+   "BASE_YM": "202311",
+   "AGE_CD": "21~30세",
+   "QTY": 324211.0,
+   "PRE_QTY": 199179.0,
+   "GROW_RATE_PSON_NUM": 62.8
+  },
+  {
+   "BASE_YM": "202311",
+   "AGE_CD": "31~40세",
+   "QTY": 383934.0,
+   "PRE_QTY": 224810.0,
+   "GROW_RATE_PSON_NUM": 70.8
+  },
+  {
+   "BASE_YM": "202311",
+   "AGE_CD": "41~50세",
+   "QTY": 349296.0,
+   "PRE_QTY": 177741.0,
+   "GROW_RATE_PSON_NUM": 96.5
+  },
+  {
+   "BASE_YM": "202311",
+   "AGE_CD": "51~60세",
+   "QTY": 362173.0,
+   "PRE_QTY": 159354.0,
+   "GROW_RATE_PSON_NUM": 127.3
+  },
+  {
+   "BASE_YM": "202311",
+   "AGE_CD": "61세이상",
+   "QTY": 333878.0,
+   "PRE_QTY": 126133.0,
+   "GROW_RATE_PSON_NUM": 164.7
+  },
+  {
+   "BASE_YM": "202311",
+   "AGE_CD": "승무원",
+   "QTY": 131711.0,
+   "PRE_QTY": 76969.0,
+   "GROW_RATE_PSON_NUM": 71.1
+  },
+  {
+   "BASE_YM": "202312",
+   "AGE_CD": "20세 이하",
+   "QTY": 316312.0,
+   "PRE_QTY": 171681.0,
+   "GROW_RATE_PSON_NUM": 84.2
+  },
+  {
+   "BASE_YM": "202312",
+   "AGE_CD": "21~30세",
+   "QTY": 445366.0,
+   "PRE_QTY": 294360.0,
+   "GROW_RATE_PSON_NUM": 51.3
+  },
+  {
+   "BASE_YM": "202312",
+   "AGE_CD": "31~40세",
+   "QTY": 436165.0,
+   "PRE_QTY": 271622.0,
+   "GROW_RATE_PSON_NUM": 60.6
+  },
+  {
+   "BASE_YM": "202312",
+   "AGE_CD": "41~50세",
+   "QTY": 404891.0,
+   "PRE_QTY": 220583.0,
+   "GROW_RATE_PSON_NUM": 83.6
+  },
+  {
+   "BASE_YM": "202312",
+   "AGE_CD": "51~60세",
+   "QTY": 373979.0,
+   "PRE_QTY": 198573.0,
+   "GROW_RATE_PSON_NUM": 88.3
+  },
+  {
+   "BASE_YM": "202312",
+   "AGE_CD": "61세이상",
+   "QTY": 298336.0,
+   "PRE_QTY": 146247.0,
+   "GROW_RATE_PSON_NUM": 104.0
+  },
+  {
+   "BASE_YM": "202312",
+   "AGE_CD": "승무원",
+   "QTY": 140718.0,
+   "PRE_QTY": 90277.0,
+   "GROW_RATE_PSON_NUM": 55.9
+  },
+  {
+   "BASE_YM": "202401",
+   "AGE_CD": "20세 이하",
+   "QTY": 464792.0,
+   "PRE_QTY": 280910.0,
+   "GROW_RATE_PSON_NUM": 65.5
+  },
+  {
+   "BASE_YM": "202401",
+   "AGE_CD": "21~30세",
+   "QTY": 492241.0,
+   "PRE_QTY": 350988.0,
+   "GROW_RATE_PSON_NUM": 40.2
+  },
+  {
+   "BASE_YM": "202401",
+   "AGE_CD": "31~40세",
+   "QTY": 370348.0,
+   "PRE_QTY": 276082.0,
+   "GROW_RATE_PSON_NUM": 34.1
+  },
+  {
+   "BASE_YM": "202401",
+   "AGE_CD": "41~50세",
+   "QTY": 475621.0,
+   "PRE_QTY": 294812.0,
+   "GROW_RATE_PSON_NUM": 61.3
+  },
+  {
+   "BASE_YM": "202401",
+   "AGE_CD": "51~60세",
+   "QTY": 467041.0,
+   "PRE_QTY": 279408.0,
+   "GROW_RATE_PSON_NUM": 67.2
+  },
+  {
+   "BASE_YM": "202401",
+   "AGE_CD": "61세이상",
+   "QTY": 355740.0,
+   "PRE_QTY": 201721.0,
+   "GROW_RATE_PSON_NUM": 76.4
+  },
+  {
+   "BASE_YM": "202401",
+   "AGE_CD": "승무원",
+   "QTY": 145083.0,
+   "PRE_QTY": 98392.0,
+   "GROW_RATE_PSON_NUM": 47.5
+  },
+  {
+   "BASE_YM": "202402",
+   "AGE_CD": "20세 이하",
+   "QTY": 415664.0,
+   "PRE_QTY": 251223.0,
+   "GROW_RATE_PSON_NUM": 65.5
+  },
+  {
+   "BASE_YM": "202402",
+   "AGE_CD": "21~30세",
+   "QTY": 426601.0,
+   "PRE_QTY": 331133.0,
+   "GROW_RATE_PSON_NUM": 28.8
+  },
+  {
+   "BASE_YM": "202402",
+   "AGE_CD": "31~40세",
+   "QTY": 356427.0,
+   "PRE_QTY": 248680.0,
+   "GROW_RATE_PSON_NUM": 43.3
+  },
+  {
+   "BASE_YM": "202402",
+   "AGE_CD": "41~50세",
+   "QTY": 442263.0,
+   "PRE_QTY": 292480.0,
+   "GROW_RATE_PSON_NUM": 51.2
+  },
+  {
+   "BASE_YM": "202402",
+   "AGE_CD": "51~60세",
+   "QTY": 406850.0,
+   "PRE_QTY": 290306.0,
+   "GROW_RATE_PSON_NUM": 40.1
+  },
+  {
+   "BASE_YM": "202402",
+   "AGE_CD": "61세이상",
+   "QTY": 327638.0,
+   "PRE_QTY": 217570.0,
+   "GROW_RATE_PSON_NUM": 50.6
+  },
+  {
+   "BASE_YM": "202402",
+   "AGE_CD": "승무원",
+   "QTY": 136666.0,
+   "PRE_QTY": 93488.0,
+   "GROW_RATE_PSON_NUM": 46.2
+  },
+  {
+   "BASE_YM": "202403",
+   "AGE_CD": "20세 이하",
+   "QTY": 132284.0,
+   "PRE_QTY": 84844.0,
+   "GROW_RATE_PSON_NUM": 55.9
+  },
+  {
+   "BASE_YM": "202403",
+   "AGE_CD": "21~30세",
+   "QTY": 341659.0,
+   "PRE_QTY": 249266.0,
+   "GROW_RATE_PSON_NUM": 37.1
+  },
+  {
+   "BASE_YM": "202403",
+   "AGE_CD": "31~40세",
+   "QTY": 398353.0,
+   "PRE_QTY": 281931.0,
+   "GROW_RATE_PSON_NUM": 41.3
+  },
+  {
+   "BASE_YM": "202403",
+   "AGE_CD": "41~50세",
+   "QTY": 322376.0,
+   "PRE_QTY": 225270.0,
+   "GROW_RATE_PSON_NUM": 43.1
+  },
+  {
+   "BASE_YM": "202403",
+   "AGE_CD": "51~60세",
+   "QTY": 396371.0,
+   "PRE_QTY": 271609.0,
+   "GROW_RATE_PSON_NUM": 45.9
+  },
+  {
+   "BASE_YM": "202403",
+   "AGE_CD": "61세이상",
+   "QTY": 411028.0,
+   "PRE_QTY": 254937.0,
+   "GROW_RATE_PSON_NUM": 61.2
+  },
+  {
+   "BASE_YM": "202403",
+   "AGE_CD": "승무원",
+   "QTY": 139921.0,
+   "PRE_QTY": 104336.0,
+   "GROW_RATE_PSON_NUM": 34.1
+  },
+  {
+   "BASE_YM": "202404",
+   "AGE_CD": "20세 이하",
+   "QTY": 169066.0,
+   "PRE_QTY": 109523.0,
+   "GROW_RATE_PSON_NUM": 54.4
+  },
+  {
+   "BASE_YM": "202404",
+   "AGE_CD": "21~30세",
+   "QTY": 316628.0,
+   "PRE_QTY": 240034.0,
+   "GROW_RATE_PSON_NUM": 31.9
+  },
+  {
+   "BASE_YM": "202404",
+   "AGE_CD": "31~40세",
+   "QTY": 428851.0,
+   "PRE_QTY": 309827.0,
+   "GROW_RATE_PSON_NUM": 38.4
+  },
+  {
+   "BASE_YM": "202404",
+   "AGE_CD": "41~50세",
+   "QTY": 350810.0,
+   "PRE_QTY": 245467.0,
+   "GROW_RATE_PSON_NUM": 42.9
+  },
+  {
+   "BASE_YM": "202404",
+   "AGE_CD": "51~60세",
+   "QTY": 358396.0,
+   "PRE_QTY": 251348.0,
+   "GROW_RATE_PSON_NUM": 42.6
+  },
+  {
+   "BASE_YM": "202404",
+   "AGE_CD": "61세이상",
+   "QTY": 354624.0,
+   "PRE_QTY": 232897.0,
+   "GROW_RATE_PSON_NUM": 52.3
+  },
+  {
+   "BASE_YM": "202404",
+   "AGE_CD": "승무원",
+   "QTY": 132579.0,
+   "PRE_QTY": 108009.0,
+   "GROW_RATE_PSON_NUM": 22.7
+  },
+  {
+   "BASE_YM": "202405",
+   "AGE_CD": "20세 이하",
+   "QTY": 227133.0,
+   "PRE_QTY": 155749.0,
+   "GROW_RATE_PSON_NUM": 45.8
+  },
+  {
+   "BASE_YM": "202405",
+   "AGE_CD": "21~30세",
+   "QTY": 348603.0,
+   "PRE_QTY": 271308.0,
+   "GROW_RATE_PSON_NUM": 28.5
+  },
+  {
+   "BASE_YM": "202405",
+   "AGE_CD": "31~40세",
+   "QTY": 451863.0,
+   "PRE_QTY": 340898.0,
+   "GROW_RATE_PSON_NUM": 32.6
+  },
+  {
+   "BASE_YM": "202405",
+   "AGE_CD": "41~50세",
+   "QTY": 388461.0,
+   "PRE_QTY": 284533.0,
+   "GROW_RATE_PSON_NUM": 36.5
+  },
+  {
+   "BASE_YM": "202405",
+   "AGE_CD": "51~60세",
+   "QTY": 363072.0,
+   "PRE_QTY": 269860.0,
+   "GROW_RATE_PSON_NUM": 34.5
+  },
+  {
+   "BASE_YM": "202405",
+   "AGE_CD": "61세이상",
+   "QTY": 347293.0,
+   "PRE_QTY": 244407.0,
+   "GROW_RATE_PSON_NUM": 42.1
+  },
+  {
+   "BASE_YM": "202405",
+   "AGE_CD": "승무원",
+   "QTY": 141885.0,
+   "PRE_QTY": 116267.0,
+   "GROW_RATE_PSON_NUM": 22.0
+  },
+  {
+   "BASE_YM": "202407",
+   "AGE_CD": "20세 이하",
+   "QTY": 416775.0,
+   "PRE_QTY": 363651.0,
+   "GROW_RATE_PSON_NUM": 14.6
+  },
+  {
+   "BASE_YM": "202407",
+   "AGE_CD": "21~30세",
+   "QTY": 456609.0,
+   "PRE_QTY": 403978.0,
+   "GROW_RATE_PSON_NUM": 13.0
+  },
+  {
+   "BASE_YM": "202407",
+   "AGE_CD": "31~40세",
+   "QTY": 420427.0,
+   "PRE_QTY": 362815.0,
+   "GROW_RATE_PSON_NUM": 15.9
+  },
+  {
+   "BASE_YM": "202407",
+   "AGE_CD": "41~50세",
+   "QTY": 444238.0,
+   "PRE_QTY": 379410.0,
+   "GROW_RATE_PSON_NUM": 17.1
+  },
+  {
+   "BASE_YM": "202407",
+   "AGE_CD": "51~60세",
+   "QTY": 352838.0,
+   "PRE_QTY": 299550.0,
+   "GROW_RATE_PSON_NUM": 17.8
+  },
+  {
+   "BASE_YM": "202407",
+   "AGE_CD": "61세이상",
+   "QTY": 263717.0,
+   "PRE_QTY": 216337.0,
+   "GROW_RATE_PSON_NUM": 21.9
+  },
+  {
+   "BASE_YM": "202407",
+   "AGE_CD": "승무원",
+   "QTY": 147365.0,
+   "PRE_QTY": 128116.0,
+   "GROW_RATE_PSON_NUM": 15.0
+  },
+  {
+   "BASE_YM": "202408",
+   "AGE_CD": "20세 이하",
+   "QTY": 341877.0,
+   "PRE_QTY": 308659.0,
+   "GROW_RATE_PSON_NUM": 10.8
+  },
+  {
+   "BASE_YM": "202408",
+   "AGE_CD": "21~30세",
+   "QTY": 458717.0,
+   "PRE_QTY": 431348.0,
+   "GROW_RATE_PSON_NUM": 6.3
+  },
+  {
+   "BASE_YM": "202408",
+   "AGE_CD": "31~40세",
+   "QTY": 418883.0,
+   "PRE_QTY": 372926.0,
+   "GROW_RATE_PSON_NUM": 12.3
+  },
+  {
+   "BASE_YM": "202408",
+   "AGE_CD": "41~50세",
+   "QTY": 405397.0,
+   "PRE_QTY": 353413.0,
+   "GROW_RATE_PSON_NUM": 14.7
+  },
+  {
+   "BASE_YM": "202408",
+   "AGE_CD": "51~60세",
+   "QTY": 338869.0,
+   "PRE_QTY": 293902.0,
+   "GROW_RATE_PSON_NUM": 15.3
+  },
+  {
+   "BASE_YM": "202408",
+   "AGE_CD": "61세이상",
+   "QTY": 245408.0,
+   "PRE_QTY": 203407.0,
+   "GROW_RATE_PSON_NUM": 20.6
+  },
+  {
+   "BASE_YM": "202408",
+   "AGE_CD": "승무원",
+   "QTY": 150399.0,
+   "PRE_QTY": 129581.0,
+   "GROW_RATE_PSON_NUM": 16.1
+  },
+  {
+   "BASE_YM": "202409",
+   "AGE_CD": "20세 이하",
+   "QTY": 232196.0,
+   "PRE_QTY": 200085.0,
+   "GROW_RATE_PSON_NUM": 16.0
+  },
+  {
+   "BASE_YM": "202409",
+   "AGE_CD": "21~30세",
+   "QTY": 387776.0,
+   "PRE_QTY": 350111.0,
+   "GROW_RATE_PSON_NUM": 10.8
+  },
+  {
+   "BASE_YM": "202409",
+   "AGE_CD": "31~40세",
+   "QTY": 478879.0,
+   "PRE_QTY": 425845.0,
+   "GROW_RATE_PSON_NUM": 12.5
+  },
+  {
+   "BASE_YM": "202409",
+   "AGE_CD": "41~50세",
+   "QTY": 378053.0,
+   "PRE_QTY": 331447.0,
+   "GROW_RATE_PSON_NUM": 14.1
+  },
+  {
+   "BASE_YM": "202409",
+   "AGE_CD": "51~60세",
+   "QTY": 351317.0,
+   "PRE_QTY": 308408.0,
+   "GROW_RATE_PSON_NUM": 13.9
+  },
+  {
+   "BASE_YM": "202409",
+   "AGE_CD": "61세이상",
+   "QTY": 338322.0,
+   "PRE_QTY": 276498.0,
+   "GROW_RATE_PSON_NUM": 22.4
+  },
+  {
+   "BASE_YM": "202409",
+   "AGE_CD": "승무원",
+   "QTY": 145249.0,
+   "PRE_QTY": 124763.0,
+   "GROW_RATE_PSON_NUM": 16.4
+  },
+  {
+   "BASE_YM": "202410",
+   "AGE_CD": "20세 이하",
+   "QTY": 229078.0,
+   "PRE_QTY": 183985.0,
+   "GROW_RATE_PSON_NUM": 24.5
+  },
+  {
+   "BASE_YM": "202410",
+   "AGE_CD": "21~30세",
+   "QTY": 363639.0,
+   "PRE_QTY": 312377.0,
+   "GROW_RATE_PSON_NUM": 16.4
+  },
+  {
+   "BASE_YM": "202410",
+   "AGE_CD": "31~40세",
+   "QTY": 467417.0,
+   "PRE_QTY": 392829.0,
+   "GROW_RATE_PSON_NUM": 19.0
+  },
+  {
+   "BASE_YM": "202410",
+   "AGE_CD": "41~50세",
+   "QTY": 406622.0,
+   "PRE_QTY": 339790.0,
+   "GROW_RATE_PSON_NUM": 19.7
+  },
+  {
+   "BASE_YM": "202410",
+   "AGE_CD": "51~60세",
+   "QTY": 395573.0,
+   "PRE_QTY": 344680.0,
+   "GROW_RATE_PSON_NUM": 14.8
+  },
+  {
+   "BASE_YM": "202410",
+   "AGE_CD": "61세이상",
+   "QTY": 369067.0,
+   "PRE_QTY": 337592.0,
+   "GROW_RATE_PSON_NUM": 9.3
+  },
+  {
+   "BASE_YM": "202410",
+   "AGE_CD": "승무원",
+   "QTY": 151068.0,
+   "PRE_QTY": 131450.0,
+   "GROW_RATE_PSON_NUM": 14.9
+  },
+  {
+   "BASE_YM": "202411",
+   "AGE_CD": "20세 이하",
+   "QTY": 220126.0,
+   "PRE_QTY": 176443.0,
+   "GROW_RATE_PSON_NUM": 24.8
+  },
+  {
+   "BASE_YM": "202411",
+   "AGE_CD": "21~30세",
+   "QTY": 387229.0,
+   "PRE_QTY": 324211.0,
+   "GROW_RATE_PSON_NUM": 19.4
+  },
+  {
+   "BASE_YM": "202411",
+   "AGE_CD": "31~40세",
+   "QTY": 456067.0,
+   "PRE_QTY": 383934.0,
+   "GROW_RATE_PSON_NUM": 18.8
+  },
+  {
+   "BASE_YM": "202411",
+   "AGE_CD": "41~50세",
+   "QTY": 409364.0,
+   "PRE_QTY": 349296.0,
+   "GROW_RATE_PSON_NUM": 17.2
+  },
+  {
+   "BASE_YM": "202411",
+   "AGE_CD": "51~60세",
+   "QTY": 404486.0,
+   "PRE_QTY": 362173.0,
+   "GROW_RATE_PSON_NUM": 11.7
+  },
+  {
+   "BASE_YM": "202411",
+   "AGE_CD": "61세이상",
+   "QTY": 370626.0,
+   "PRE_QTY": 333878.0,
+   "GROW_RATE_PSON_NUM": 11.0
+  },
+  {
+   "BASE_YM": "202411",
+   "AGE_CD": "승무원",
+   "QTY": 143242.0,
+   "PRE_QTY": 131711.0,
+   "GROW_RATE_PSON_NUM": 8.8
+  },
+  {
+   "BASE_YM": "202412",
+   "AGE_CD": "20세 이하",
+   "QTY": 356841.0,
+   "PRE_QTY": 316312.0,
+   "GROW_RATE_PSON_NUM": 12.8
+  },
+  {
+   "BASE_YM": "202412",
+   "AGE_CD": "21~30세",
+   "QTY": 501337.0,
+   "PRE_QTY": 445366.0,
+   "GROW_RATE_PSON_NUM": 12.6
+  },
+  {
+   "BASE_YM": "202412",
+   "AGE_CD": "31~40세",
+   "QTY": 493461.0,
+   "PRE_QTY": 436165.0,
+   "GROW_RATE_PSON_NUM": 13.1
+  },
+  {
+   "BASE_YM": "202412",
+   "AGE_CD": "41~50세",
+   "QTY": 454413.0,
+   "PRE_QTY": 404891.0,
+   "GROW_RATE_PSON_NUM": 12.2
+  },
+  {
+   "BASE_YM": "202412",
+   "AGE_CD": "51~60세",
+   "QTY": 413345.0,
+   "PRE_QTY": 373979.0,
+   "GROW_RATE_PSON_NUM": 10.5
+  },
+  {
+   "BASE_YM": "202412",
+   "AGE_CD": "61세이상",
+   "QTY": 341729.0,
+   "PRE_QTY": 298336.0,
+   "GROW_RATE_PSON_NUM": 14.5
+  },
+  {
+   "BASE_YM": "202412",
+   "AGE_CD": "승무원",
+   "QTY": 155012.0,
+   "PRE_QTY": 140718.0,
+   "GROW_RATE_PSON_NUM": 10.2
+  },
+  {
+   "BASE_YM": "202501",
+   "AGE_CD": "20세 이하",
+   "QTY": 506092.0,
+   "PRE_QTY": 464792.0,
+   "GROW_RATE_PSON_NUM": 8.9
+  },
+  {
+   "BASE_YM": "202501",
+   "AGE_CD": "21~30세",
+   "QTY": 515086.0,
+   "PRE_QTY": 492241.0,
+   "GROW_RATE_PSON_NUM": 4.6
+  },
+  {
+   "BASE_YM": "202501",
+   "AGE_CD": "31~40세",
+   "QTY": 458839.0,
+   "PRE_QTY": 370348.0,
+   "GROW_RATE_PSON_NUM": 23.9
+  },
+  {
+   "BASE_YM": "202501",
+   "AGE_CD": "41~50세",
+   "QTY": 509762.0,
+   "PRE_QTY": 475621.0,
+   "GROW_RATE_PSON_NUM": 7.2
+  },
+  {
+   "BASE_YM": "202501",
+   "AGE_CD": "51~60세",
+   "QTY": 467623.0,
+   "PRE_QTY": 467041.0,
+   "GROW_RATE_PSON_NUM": 0.1
+  },
+  {
+   "BASE_YM": "202501",
+   "AGE_CD": "61세이상",
+   "QTY": 358028.0,
+   "PRE_QTY": 355740.0,
+   "GROW_RATE_PSON_NUM": 0.6
+  },
+  {
+   "BASE_YM": "202501",
+   "AGE_CD": "승무원",
+   "QTY": 157486.0,
+   "PRE_QTY": 145083.0,
+   "GROW_RATE_PSON_NUM": 8.5
+  },
+  {
+   "BASE_YM": "202502",
+   "AGE_CD": "20세 이하",
+   "QTY": 431834.0,
+   "PRE_QTY": 415664.0,
+   "GROW_RATE_PSON_NUM": 3.9
+  },
+  {
+   "BASE_YM": "202502",
+   "AGE_CD": "21~30세",
+   "QTY": 474415.0,
+   "PRE_QTY": 426601.0,
+   "GROW_RATE_PSON_NUM": 11.2
+  },
+  {
+   "BASE_YM": "202502",
+   "AGE_CD": "31~40세",
+   "QTY": 374761.0,
+   "PRE_QTY": 356427.0,
+   "GROW_RATE_PSON_NUM": 5.1
+  },
+  {
+   "BASE_YM": "202502",
+   "AGE_CD": "41~50세",
+   "QTY": 456256.0,
+   "PRE_QTY": 442263.0,
+   "GROW_RATE_PSON_NUM": 3.2
+  },
+  {
+   "BASE_YM": "202502",
+   "AGE_CD": "51~60세",
+   "QTY": 419237.0,
+   "PRE_QTY": 406850.0,
+   "GROW_RATE_PSON_NUM": 3.0
+  },
+  {
+   "BASE_YM": "202502",
+   "AGE_CD": "61세이상",
+   "QTY": 329360.0,
+   "PRE_QTY": 327638.0,
+   "GROW_RATE_PSON_NUM": 0.5
+  },
+  {
+   "BASE_YM": "202502",
+   "AGE_CD": "승무원",
+   "QTY": 139771.0,
+   "PRE_QTY": 136666.0,
+   "GROW_RATE_PSON_NUM": 2.3
+  },
+  {
+   "BASE_YM": "202503",
+   "AGE_CD": "20세 이하",
+   "QTY": 136174.0,
+   "PRE_QTY": 132284.0,
+   "GROW_RATE_PSON_NUM": 2.9
+  },
+  {
+   "BASE_YM": "202503",
+   "AGE_CD": "21~30세",
+   "QTY": 357006.0,
+   "PRE_QTY": 341659.0,
+   "GROW_RATE_PSON_NUM": 4.5
+  },
+  {
+   "BASE_YM": "202503",
+   "AGE_CD": "31~40세",
+   "QTY": 430565.0,
+   "PRE_QTY": 398353.0,
+   "GROW_RATE_PSON_NUM": 8.1
+  },
+  {
+   "BASE_YM": "202503",
+   "AGE_CD": "41~50세",
+   "QTY": 338742.0,
+   "PRE_QTY": 322376.0,
+   "GROW_RATE_PSON_NUM": 5.1
+  },
+  {
+   "BASE_YM": "202503",
+   "AGE_CD": "51~60세",
+   "QTY": 395794.0,
+   "PRE_QTY": 396371.0,
+   "GROW_RATE_PSON_NUM": -0.1
+  },
+  {
+   "BASE_YM": "202503",
+   "AGE_CD": "61세이상",
+   "QTY": 390101.0,
+   "PRE_QTY": 411028.0,
+   "GROW_RATE_PSON_NUM": -5.1
+  },
+  {
+   "BASE_YM": "202503",
+   "AGE_CD": "승무원",
+   "QTY": 149589.0,
+   "PRE_QTY": 139921.0,
+   "GROW_RATE_PSON_NUM": 6.9
+  },
+  {
+   "BASE_YM": "202504",
+   "AGE_CD": "20세 이하",
+   "QTY": 172005.0,
+   "PRE_QTY": 169066.0,
+   "GROW_RATE_PSON_NUM": 1.7
+  },
+  {
+   "BASE_YM": "202504",
+   "AGE_CD": "21~30세",
+   "QTY": 326093.0,
+   "PRE_QTY": 316628.0,
+   "GROW_RATE_PSON_NUM": 3.0
+  },
+  {
+   "BASE_YM": "202504",
+   "AGE_CD": "31~40세",
+   "QTY": 449536.0,
+   "PRE_QTY": 428851.0,
+   "GROW_RATE_PSON_NUM": 4.8
+  },
+  {
+   "BASE_YM": "202504",
+   "AGE_CD": "41~50세",
+   "QTY": 357449.0,
+   "PRE_QTY": 350810.0,
+   "GROW_RATE_PSON_NUM": 1.9
+  },
+  {
+   "BASE_YM": "202504",
+   "AGE_CD": "51~60세",
+   "QTY": 357659.0,
+   "PRE_QTY": 358396.0,
+   "GROW_RATE_PSON_NUM": -0.2
+  },
+  {
+   "BASE_YM": "202504",
+   "AGE_CD": "61세이상",
+   "QTY": 345710.0,
+   "PRE_QTY": 354624.0,
+   "GROW_RATE_PSON_NUM": -2.5
+  },
+  {
+   "BASE_YM": "202504",
+   "AGE_CD": "승무원",
+   "QTY": 141125.0,
+   "PRE_QTY": 132579.0,
+   "GROW_RATE_PSON_NUM": 6.4
+  },
+  {
+   "BASE_YM": "202505",
+   "AGE_CD": "20세 이하",
+   "QTY": 242562.0,
+   "PRE_QTY": 227133.0,
+   "GROW_RATE_PSON_NUM": 6.8
+  },
+  {
+   "BASE_YM": "202505",
+   "AGE_CD": "21~30세",
+   "QTY": 369678.0,
+   "PRE_QTY": 348603.0,
+   "GROW_RATE_PSON_NUM": 6.0
+  },
+  {
+   "BASE_YM": "202505",
+   "AGE_CD": "31~40세",
+   "QTY": 482527.0,
+   "PRE_QTY": 451863.0,
+   "GROW_RATE_PSON_NUM": 6.8
+  },
+  {
+   "BASE_YM": "202505",
+   "AGE_CD": "41~50세",
+   "QTY": 408915.0,
+   "PRE_QTY": 388461.0,
+   "GROW_RATE_PSON_NUM": 5.3
+  },
+  {
+   "BASE_YM": "202505",
+   "AGE_CD": "51~60세",
+   "QTY": 379330.0,
+   "PRE_QTY": 363072.0,
+   "GROW_RATE_PSON_NUM": 4.5
+  },
+  {
+   "BASE_YM": "202505",
+   "AGE_CD": "61세이상",
+   "QTY": 358262.0,
+   "PRE_QTY": 347293.0,
+   "GROW_RATE_PSON_NUM": 3.2
+  },
+  {
+   "BASE_YM": "202505",
+   "AGE_CD": "승무원",
+   "QTY": 149856.0,
+   "PRE_QTY": 141885.0,
+   "GROW_RATE_PSON_NUM": 5.6
+  },
+  {
+   "BASE_YM": "202506",
+   "AGE_CD": "20세 이하",
+   "QTY": 218080.0,
+   "PRE_QTY": 227807.0,
+   "GROW_RATE_PSON_NUM": -4.3
+  },
+  {
+   "BASE_YM": "202506",
+   "AGE_CD": "21~30세",
+   "QTY": 386464.0,
+   "PRE_QTY": 386781.0,
+   "GROW_RATE_PSON_NUM": -0.1
+  },
+  {
+   "BASE_YM": "202506",
+   "AGE_CD": "31~40세",
+   "QTY": 440682.0,
+   "PRE_QTY": 428943.0,
+   "GROW_RATE_PSON_NUM": 2.7
+  },
+  {
+   "BASE_YM": "202506",
+   "AGE_CD": "41~50세",
+   "QTY": 372733.0,
+   "PRE_QTY": 374578.0,
+   "GROW_RATE_PSON_NUM": -0.5
+  },
+  {
+   "BASE_YM": "202506",
+   "AGE_CD": "51~60세",
+   "QTY": 352924.0,
+   "PRE_QTY": 351809.0,
+   "GROW_RATE_PSON_NUM": 0.3
+  },
+  {
+   "BASE_YM": "202506",
+   "AGE_CD": "61세이상",
+   "QTY": 311064.0,
+   "PRE_QTY": 310262.0,
+   "GROW_RATE_PSON_NUM": 0.3
+  },
+  {
+   "BASE_YM": "202506",
+   "AGE_CD": "승무원",
+   "QTY": 144449.0,
+   "PRE_QTY": 138971.0,
+   "GROW_RATE_PSON_NUM": 3.9
+  },
+  {
+   "BASE_YM": "202507",
+   "AGE_CD": "20세 이하",
+   "QTY": 400467.0,
+   "PRE_QTY": 416775.0,
+   "GROW_RATE_PSON_NUM": -3.9
+  },
+  {
+   "BASE_YM": "202507",
+   "AGE_CD": "21~30세",
+   "QTY": 424372.0,
+   "PRE_QTY": 456609.0,
+   "GROW_RATE_PSON_NUM": -7.1
+  },
+  {
+   "BASE_YM": "202507",
+   "AGE_CD": "31~40세",
+   "QTY": 422700.0,
+   "PRE_QTY": 420427.0,
+   "GROW_RATE_PSON_NUM": 0.5
+  },
+  {
+   "BASE_YM": "202507",
+   "AGE_CD": "41~50세",
+   "QTY": 441999.0,
+   "PRE_QTY": 444238.0,
+   "GROW_RATE_PSON_NUM": -0.5
+  },
+  {
+   "BASE_YM": "202507",
+   "AGE_CD": "51~60세",
+   "QTY": 339938.0,
+   "PRE_QTY": 352838.0,
+   "GROW_RATE_PSON_NUM": -3.7
+  },
+  {
+   "BASE_YM": "202507",
+   "AGE_CD": "61세이상",
+   "QTY": 251751.0,
+   "PRE_QTY": 263717.0,
+   "GROW_RATE_PSON_NUM": -4.5
+  },
+  {
+   "BASE_YM": "202507",
+   "AGE_CD": "승무원",
+   "QTY": 154064.0,
+   "PRE_QTY": 147365.0,
+   "GROW_RATE_PSON_NUM": 4.5
+  },
+  {
+   "BASE_YM": "202508",
+   "AGE_CD": "20세 이하",
+   "QTY": 350015.0,
+   "PRE_QTY": 341877.0,
+   "GROW_RATE_PSON_NUM": 2.4
+  },
+  {
+   "BASE_YM": "202508",
+   "AGE_CD": "21~30세",
+   "QTY": 471143.0,
+   "PRE_QTY": 458717.0,
+   "GROW_RATE_PSON_NUM": 2.7
+  },
+  {
+   "BASE_YM": "202508",
+   "AGE_CD": "31~40세",
+   "QTY": 445514.0,
+   "PRE_QTY": 418883.0,
+   "GROW_RATE_PSON_NUM": 6.4
+  },
+  {
+   "BASE_YM": "202508",
+   "AGE_CD": "41~50세",
+   "QTY": 419988.0,
+   "PRE_QTY": 405397.0,
+   "GROW_RATE_PSON_NUM": 3.6
+  },
+  {
+   "BASE_YM": "202508",
+   "AGE_CD": "51~60세",
+   "QTY": 337003.0,
+   "PRE_QTY": 338869.0,
+   "GROW_RATE_PSON_NUM": -0.6
+  },
+  {
+   "BASE_YM": "202508",
+   "AGE_CD": "61세이상",
+   "QTY": 238859.0,
+   "PRE_QTY": 245408.0,
+   "GROW_RATE_PSON_NUM": -2.7
+  },
+  {
+   "BASE_YM": "202508",
+   "AGE_CD": "승무원",
+   "QTY": 159696.0,
+   "PRE_QTY": 150399.0,
+   "GROW_RATE_PSON_NUM": 6.2
+  },
+  {
+   "BASE_YM": "202509",
+   "AGE_CD": "20세 이하",
+   "QTY": 194022.0,
+   "PRE_QTY": 232196.0,
+   "GROW_RATE_PSON_NUM": -16.4
+  },
+  {
+   "BASE_YM": "202509",
+   "AGE_CD": "21~30세",
+   "QTY": 376013.0,
+   "PRE_QTY": 387776.0,
+   "GROW_RATE_PSON_NUM": -3.0
+  },
+  {
+   "BASE_YM": "202509",
+   "AGE_CD": "31~40세",
+   "QTY": 476916.0,
+   "PRE_QTY": 478879.0,
+   "GROW_RATE_PSON_NUM": -0.4
+  },
+  {
+   "BASE_YM": "202509",
+   "AGE_CD": "41~50세",
+   "QTY": 370699.0,
+   "PRE_QTY": 378053.0,
+   "GROW_RATE_PSON_NUM": -1.9
+  },
+  {
+   "BASE_YM": "202509",
+   "AGE_CD": "51~60세",
+   "QTY": 343857.0,
+   "PRE_QTY": 351317.0,
+   "GROW_RATE_PSON_NUM": -2.1
+  },
+  {
+   "BASE_YM": "202509",
+   "AGE_CD": "61세이상",
+   "QTY": 326202.0,
+   "PRE_QTY": 338322.0,
+   "GROW_RATE_PSON_NUM": -3.6
+  },
+  {
+   "BASE_YM": "202509",
+   "AGE_CD": "승무원",
+   "QTY": 148165.0,
+   "PRE_QTY": 145249.0,
+   "GROW_RATE_PSON_NUM": 2.0
+  },
+  {
+   "BASE_YM": "202510",
+   "AGE_CD": "20세 이하",
+   "QTY": 307513.0,
+   "PRE_QTY": 229078.0,
+   "GROW_RATE_PSON_NUM": 34.2
+  },
+  {
+   "BASE_YM": "202510",
+   "AGE_CD": "21~30세",
+   "QTY": 385435.0,
+   "PRE_QTY": 363639.0,
+   "GROW_RATE_PSON_NUM": 6.0
+  },
+  {
+   "BASE_YM": "202510",
+   "AGE_CD": "31~40세",
+   "QTY": 514492.0,
+   "PRE_QTY": 467417.0,
+   "GROW_RATE_PSON_NUM": 10.1
+  },
+  {
+   "BASE_YM": "202510",
+   "AGE_CD": "41~50세",
+   "QTY": 458527.0,
+   "PRE_QTY": 406622.0,
+   "GROW_RATE_PSON_NUM": 12.8
+  },
+  {
+   "BASE_YM": "202510",
+   "AGE_CD": "51~60세",
+   "QTY": 430020.0,
+   "PRE_QTY": 395573.0,
+   "GROW_RATE_PSON_NUM": 8.7
+  },
+  {
+   "BASE_YM": "202510",
+   "AGE_CD": "61세이상",
+   "QTY": 423347.0,
+   "PRE_QTY": 369067.0,
+   "GROW_RATE_PSON_NUM": 14.7
+  },
+  {
+   "BASE_YM": "202510",
+   "AGE_CD": "승무원",
+   "QTY": 159042.0,
+   "PRE_QTY": 151068.0,
+   "GROW_RATE_PSON_NUM": 5.3
+  },
+  {
+   "BASE_YM": "202511",
+   "AGE_CD": "20세 이하",
+   "QTY": 228222.0,
+   "PRE_QTY": 220126.0,
+   "GROW_RATE_PSON_NUM": 3.7
+  },
+  {
+   "BASE_YM": "202511",
+   "AGE_CD": "21~30세",
+   "QTY": 379534.0,
+   "PRE_QTY": 387229.0,
+   "GROW_RATE_PSON_NUM": -2.0
+  },
+  {
+   "BASE_YM": "202511",
+   "AGE_CD": "31~40세",
+   "QTY": 482570.0,
+   "PRE_QTY": 456067.0,
+   "GROW_RATE_PSON_NUM": 5.8
+  },
+  {
+   "BASE_YM": "202511",
+   "AGE_CD": "41~50세",
+   "QTY": 424554.0,
+   "PRE_QTY": 409364.0,
+   "GROW_RATE_PSON_NUM": 3.7
+  },
+  {
+   "BASE_YM": "202511",
+   "AGE_CD": "51~60세",
+   "QTY": 417190.0,
+   "PRE_QTY": 404486.0,
+   "GROW_RATE_PSON_NUM": 3.1
+  },
+  {
+   "BASE_YM": "202511",
+   "AGE_CD": "61세이상",
+   "QTY": 387342.0,
+   "PRE_QTY": 370626.0,
+   "GROW_RATE_PSON_NUM": 4.5
+  },
+  {
+   "BASE_YM": "202511",
+   "AGE_CD": "승무원",
+   "QTY": 148289.0,
+   "PRE_QTY": 143242.0,
+   "GROW_RATE_PSON_NUM": 3.5
+  },
+  {
+   "BASE_YM": "202512",
+   "AGE_CD": "20세 이하",
+   "QTY": 367493.0,
+   "PRE_QTY": 356841.0,
+   "GROW_RATE_PSON_NUM": 3.0
+  },
+  {
+   "BASE_YM": "202512",
+   "AGE_CD": "21~30세",
+   "QTY": 487679.0,
+   "PRE_QTY": 501337.0,
+   "GROW_RATE_PSON_NUM": -2.7
+  },
+  {
+   "BASE_YM": "202512",
+   "AGE_CD": "31~40세",
+   "QTY": 512916.0,
+   "PRE_QTY": 493461.0,
+   "GROW_RATE_PSON_NUM": 3.9
+  },
+  {
+   "BASE_YM": "202512",
+   "AGE_CD": "41~50세",
+   "QTY": 469394.0,
+   "PRE_QTY": 454413.0,
+   "GROW_RATE_PSON_NUM": 3.3
+  },
+  {
+   "BASE_YM": "202512",
+   "AGE_CD": "51~60세",
+   "QTY": 414533.0,
+   "PRE_QTY": 413345.0,
+   "GROW_RATE_PSON_NUM": 0.3
+  },
+  {
+   "BASE_YM": "202512",
+   "AGE_CD": "61세이상",
+   "QTY": 337598.0,
+   "PRE_QTY": 341729.0,
+   "GROW_RATE_PSON_NUM": -1.2
+  },
+  {
+   "BASE_YM": "202512",
+   "AGE_CD": "승무원",
+   "QTY": 157480.0,
+   "PRE_QTY": 155012.0,
+   "GROW_RATE_PSON_NUM": 1.6
+  },
+  {
+   "BASE_YM": "202601",
+   "AGE_CD": "20세 이하",
+   "QTY": 582202.0,
+   "PRE_QTY": 506092.0,
+   "GROW_RATE_PSON_NUM": 15.0
+  },
+  {
+   "BASE_YM": "202601",
+   "AGE_CD": "21~30세",
+   "QTY": 544400.0,
+   "PRE_QTY": 515086.0,
+   "GROW_RATE_PSON_NUM": 5.7
+  },
+  {
+   "BASE_YM": "202601",
+   "AGE_CD": "31~40세",
+   "QTY": 465982.0,
+   "PRE_QTY": 458839.0,
+   "GROW_RATE_PSON_NUM": 1.6
+  },
+  {
+   "BASE_YM": "202601",
+   "AGE_CD": "41~50세",
+   "QTY": 575064.0,
+   "PRE_QTY": 509762.0,
+   "GROW_RATE_PSON_NUM": 12.8
+  },
+  {
+   "BASE_YM": "202601",
+   "AGE_CD": "51~60세",
+   "QTY": 529646.0,
+   "PRE_QTY": 467623.0,
+   "GROW_RATE_PSON_NUM": 13.3
+  },
+  {
+   "BASE_YM": "202601",
+   "AGE_CD": "61세이상",
+   "QTY": 407958.0,
+   "PRE_QTY": 358028.0,
+   "GROW_RATE_PSON_NUM": 13.9
+  },
+  {
+   "BASE_YM": "202601",
+   "AGE_CD": "승무원",
+   "QTY": 162736.0,
+   "PRE_QTY": 157486.0,
+   "GROW_RATE_PSON_NUM": 3.3
+  },
+  {
+   "BASE_YM": "202602",
+   "AGE_CD": "20세 이하",
+   "QTY": 485055.0,
+   "PRE_QTY": 431834.0,
+   "GROW_RATE_PSON_NUM": 12.3
+  },
+  {
+   "BASE_YM": "202602",
+   "AGE_CD": "21~30세",
+   "QTY": 458781.0,
+   "PRE_QTY": 474415.0,
+   "GROW_RATE_PSON_NUM": -3.3
+  },
+  {
+   "BASE_YM": "202602",
+   "AGE_CD": "31~40세",
+   "QTY": 426894.0,
+   "PRE_QTY": 374761.0,
+   "GROW_RATE_PSON_NUM": 13.9
+  },
+  {
+   "BASE_YM": "202602",
+   "AGE_CD": "41~50세",
+   "QTY": 492376.0,
+   "PRE_QTY": 456256.0,
+   "GROW_RATE_PSON_NUM": 7.9
+  },
+  {
+   "BASE_YM": "202602",
+   "AGE_CD": "51~60세",
+   "QTY": 419195.0,
+   "PRE_QTY": 419237.0,
+   "GROW_RATE_PSON_NUM": -0.0
+  },
+  {
+   "BASE_YM": "202602",
+   "AGE_CD": "61세이상",
+   "QTY": 339203.0,
+   "PRE_QTY": 329360.0,
+   "GROW_RATE_PSON_NUM": 3.0
+  },
+  {
+   "BASE_YM": "202602",
+   "AGE_CD": "승무원",
+   "QTY": 147791.0,
+   "PRE_QTY": 139771.0,
+   "GROW_RATE_PSON_NUM": 5.7
+  },
+  {
+   "BASE_YM": "202603",
+   "AGE_CD": "20세 이하",
+   "QTY": 138918.0,
+   "PRE_QTY": 136174.0,
+   "GROW_RATE_PSON_NUM": 2.0
+  },
+  {
+   "BASE_YM": "202603",
+   "AGE_CD": "21~30세",
+   "QTY": 348022.0,
+   "PRE_QTY": 357006.0,
+   "GROW_RATE_PSON_NUM": -2.5
+  },
+  {
+   "BASE_YM": "202603",
+   "AGE_CD": "31~40세",
+   "QTY": 441203.0,
+   "PRE_QTY": 430565.0,
+   "GROW_RATE_PSON_NUM": 2.5
+  },
+  {
+   "BASE_YM": "202603",
+   "AGE_CD": "41~50세",
+   "QTY": 351164.0,
+   "PRE_QTY": 338742.0,
+   "GROW_RATE_PSON_NUM": 3.7
+  },
+  {
+   "BASE_YM": "202603",
+   "AGE_CD": "51~60세",
+   "QTY": 418690.0,
+   "PRE_QTY": 395794.0,
+   "GROW_RATE_PSON_NUM": 5.8
+  },
+  {
+   "BASE_YM": "202603",
+   "AGE_CD": "61세이상",
+   "QTY": 440822.0,
+   "PRE_QTY": 390101.0,
+   "GROW_RATE_PSON_NUM": 13.0
+  },
+  {
+   "BASE_YM": "202603",
+   "AGE_CD": "승무원",
+   "QTY": 154897.0,
+   "PRE_QTY": 149589.0,
+   "GROW_RATE_PSON_NUM": 3.5
+  },
+  {
+   "BASE_YM": "202604",
+   "AGE_CD": "20세 이하",
+   "QTY": 183337.0,
+   "PRE_QTY": 172005.0,
+   "GROW_RATE_PSON_NUM": 6.6
+  },
+  {
+   "BASE_YM": "202604",
+   "AGE_CD": "21~30세",
+   "QTY": 316767.0,
+   "PRE_QTY": 326093.0,
+   "GROW_RATE_PSON_NUM": -2.9
+  },
+  {
+   "BASE_YM": "202604",
+   "AGE_CD": "31~40세",
+   "QTY": 470724.0,
+   "PRE_QTY": 449536.0,
+   "GROW_RATE_PSON_NUM": 4.7
+  },
+  {
+   "BASE_YM": "202604",
+   "AGE_CD": "41~50세",
+   "QTY": 381955.0,
+   "PRE_QTY": 357449.0,
+   "GROW_RATE_PSON_NUM": 6.9
+  },
+  {
+   "BASE_YM": "202604",
+   "AGE_CD": "51~60세",
+   "QTY": 386019.0,
+   "PRE_QTY": 357659.0,
+   "GROW_RATE_PSON_NUM": 7.9
+  },
+  {
+   "BASE_YM": "202604",
+   "AGE_CD": "61세이상",
+   "QTY": 395296.0,
+   "PRE_QTY": 345710.0,
+   "GROW_RATE_PSON_NUM": 14.3
+  },
+  {
+   "BASE_YM": "202604",
+   "AGE_CD": "승무원",
+   "QTY": 151745.0,
+   "PRE_QTY": 141125.0,
+   "GROW_RATE_PSON_NUM": 7.5
+  },
+  {
+   "BASE_YM": "202605",
+   "AGE_CD": "20세 이하",
+   "QTY": 245670.0,
+   "PRE_QTY": 242562.0,
+   "GROW_RATE_PSON_NUM": 1.3
+  },
+  {
+   "BASE_YM": "202605",
+   "AGE_CD": "21~30세",
+   "QTY": 341415.0,
+   "PRE_QTY": 369678.0,
+   "GROW_RATE_PSON_NUM": -7.6
+  },
+  {
+   "BASE_YM": "202605",
+   "AGE_CD": "31~40세",
+   "QTY": 476213.0,
+   "PRE_QTY": 482527.0,
+   "GROW_RATE_PSON_NUM": -1.3
+  },
+  {
+   "BASE_YM": "202605",
+   "AGE_CD": "41~50세",
+   "QTY": 407858.0,
+   "PRE_QTY": 408915.0,
+   "GROW_RATE_PSON_NUM": -0.3
+  },
+  {
+   "BASE_YM": "202605",
+   "AGE_CD": "51~60세",
+   "QTY": 363980.0,
+   "PRE_QTY": 379330.0,
+   "GROW_RATE_PSON_NUM": -4.0
+  },
+  {
+   "BASE_YM": "202605",
+   "AGE_CD": "61세이상",
+   "QTY": 349213.0,
+   "PRE_QTY": 358262.0,
+   "GROW_RATE_PSON_NUM": -2.5
+  },
+  {
+   "BASE_YM": "202605",
+   "AGE_CD": "승무원",
+   "QTY": 155996.0,
+   "PRE_QTY": 149856.0,
+   "GROW_RATE_PSON_NUM": 4.1
+  },
+  {
+   "BASE_YM": "202606",
+   "AGE_CD": "20세 이하",
+   "QTY": 185635.0,
+   "PRE_QTY": 218080.0,
+   "GROW_RATE_PSON_NUM": -14.9
+  },
+  {
+   "BASE_YM": "202606",
+   "AGE_CD": "21~30세",
+   "QTY": 343074.0,
+   "PRE_QTY": 386464.0,
+   "GROW_RATE_PSON_NUM": -11.2
+  },
+  {
+   "BASE_YM": "202606",
+   "AGE_CD": "31~40세",
+   "QTY": 390578.0,
+   "PRE_QTY": 440682.0,
+   "GROW_RATE_PSON_NUM": -11.4
+  },
+  {
+   "BASE_YM": "202606",
+   "AGE_CD": "41~50세",
+   "QTY": 329984.0,
+   "PRE_QTY": 372733.0,
+   "GROW_RATE_PSON_NUM": -11.5
+  },
+  {
+   "BASE_YM": "202606",
+   "AGE_CD": "51~60세",
+   "QTY": 313184.0,
+   "PRE_QTY": 352924.0,
+   "GROW_RATE_PSON_NUM": -11.3
+  },
+  {
+   "BASE_YM": "202606",
+   "AGE_CD": "61세이상",
+   "QTY": 291985.0,
+   "PRE_QTY": 311064.0,
+   "GROW_RATE_PSON_NUM": -6.1
+  },
+  {
+   "BASE_YM": "202606",
+   "AGE_CD": "승무원",
+   "QTY": 150283.0,
+   "PRE_QTY": 144449.0,
+   "GROW_RATE_PSON_NUM": 4.0
+  },
+  {
+   "BASE_YM": "202607",
+   "AGE_CD": "20세 이하",
+   "QTY": 389097.0,
+   "PRE_QTY": 400467.0,
+   "GROW_RATE_PSON_NUM": -2.8
+  },
+  {
+   "BASE_YM": "202607",
+   "AGE_CD": "21~30세",
+   "QTY": 417950.0,
+   "PRE_QTY": 424372.0,
+   "GROW_RATE_PSON_NUM": -1.5
+  },
+  {
+   "BASE_YM": "202607",
+   "AGE_CD": "31~40세",
+   "QTY": 416059.0,
+   "PRE_QTY": 422700.0,
+   "GROW_RATE_PSON_NUM": -1.6
+  },
+  {
+   "BASE_YM": "202607",
+   "AGE_CD": "41~50세",
+   "QTY": 433899.0,
+   "PRE_QTY": 441999.0,
+   "GROW_RATE_PSON_NUM": -1.8
+  },
+  {
+   "BASE_YM": "202607",
+   "AGE_CD": "51~60세",
+   "QTY": 339571.0,
+   "PRE_QTY": 339938.0,
+   "GROW_RATE_PSON_NUM": -0.1
+  },
+  {
+   "BASE_YM": "202607",
+   "AGE_CD": "61세이상",
+   "QTY": 264792.0,
+   "PRE_QTY": 251751.0,
+   "GROW_RATE_PSON_NUM": 5.2
+  },
+  {
+   "BASE_YM": "202607",
+   "AGE_CD": "승무원",
+   "QTY": 158089.0,
+   "PRE_QTY": 154064.0,
+   "GROW_RATE_PSON_NUM": 2.6
+  }
+ ]
+}

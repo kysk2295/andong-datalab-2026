@@ -1,0 +1,6850 @@
+{
+ "list": [
+  {
+   "BASE_DATE": "201301",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 11,
+   "SUM_PSON_NUM": 163
+  },
+  {
+   "BASE_DATE": "201301",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 4,
+   "SUM_PSON_NUM": 163
+  },
+  {
+   "BASE_DATE": "201301",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 19,
+   "SUM_PSON_NUM": 163
+  },
+  {
+   "BASE_DATE": "201301",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 16,
+   "SUM_PSON_NUM": 163
+  },
+  {
+   "BASE_DATE": "201301",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 31,
+   "SUM_PSON_NUM": 163
+  },
+  {
+   "BASE_DATE": "201301",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 82,
+   "SUM_PSON_NUM": 163
+  },
+  {
+   "BASE_DATE": "201302",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 412,
+   "SUM_PSON_NUM": 3853
+  },
+  {
+   "BASE_DATE": "201302",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 562,
+   "SUM_PSON_NUM": 3853
+  },
+  {
+   "BASE_DATE": "201302",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 787,
+   "SUM_PSON_NUM": 3853
+  },
+  {
+   "BASE_DATE": "201302",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 833,
+   "SUM_PSON_NUM": 3853
+  },
+  {
+   "BASE_DATE": "201302",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 627,
+   "SUM_PSON_NUM": 3853
+  },
+  {
+   "BASE_DATE": "201302",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 632,
+   "SUM_PSON_NUM": 3853
+  },
+  {
+   "BASE_DATE": "201303",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1321,
+   "SUM_PSON_NUM": 35790
+  },
+  {
+   "BASE_DATE": "201303",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 2255,
+   "SUM_PSON_NUM": 35790
+  },
+  {
+   "BASE_DATE": "201303",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 3483,
+   "SUM_PSON_NUM": 35790
+  },
+  {
+   "BASE_DATE": "201303",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 2853,
+   "SUM_PSON_NUM": 35790
+  },
+  {
+   "BASE_DATE": "201303",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 7955,
+   "SUM_PSON_NUM": 35790
+  },
+  {
+   "BASE_DATE": "201303",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 17923,
+   "SUM_PSON_NUM": 35790
+  },
+  {
+   "BASE_DATE": "201304",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 3685,
+   "SUM_PSON_NUM": 67246
+  },
+  {
+   "BASE_DATE": "201304",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 7329,
+   "SUM_PSON_NUM": 67246
+  },
+  {
+   "BASE_DATE": "201304",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 9007,
+   "SUM_PSON_NUM": 67246
+  },
+  {
+   "BASE_DATE": "201304",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 8212,
+   "SUM_PSON_NUM": 67246
+  },
+  {
+   "BASE_DATE": "201304",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 14949,
+   "SUM_PSON_NUM": 67246
+  },
+  {
+   "BASE_DATE": "201304",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 24064,
+   "SUM_PSON_NUM": 67246
+  },
+  {
+   "BASE_DATE": "201305",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 2894,
+   "SUM_PSON_NUM": 55716
+  },
+  {
+   "BASE_DATE": "201305",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 3851,
+   "SUM_PSON_NUM": 55716
+  },
+  {
+   "BASE_DATE": "201305",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 6238,
+   "SUM_PSON_NUM": 55716
+  },
+  {
+   "BASE_DATE": "201305",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 6198,
+   "SUM_PSON_NUM": 55716
+  },
+  {
+   "BASE_DATE": "201305",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 11008,
+   "SUM_PSON_NUM": 55716
+  },
+  {
+   "BASE_DATE": "201305",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 25527,
+   "SUM_PSON_NUM": 55716
+  },
+  {
+   "BASE_DATE": "201306",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 10661,
+   "SUM_PSON_NUM": 102837
+  },
+  {
+   "BASE_DATE": "201306",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 9621,
+   "SUM_PSON_NUM": 102837
+  },
+  {
+   "BASE_DATE": "201306",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 16803,
+   "SUM_PSON_NUM": 102837
+  },
+  {
+   "BASE_DATE": "201306",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 15017,
+   "SUM_PSON_NUM": 102837
+  },
+  {
+   "BASE_DATE": "201306",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 22125,
+   "SUM_PSON_NUM": 102837
+  },
+  {
+   "BASE_DATE": "201306",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 28610,
+   "SUM_PSON_NUM": 102837
+  },
+  {
+   "BASE_DATE": "201307",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 30026,
+   "SUM_PSON_NUM": 138865
+  },
+  {
+   "BASE_DATE": "201307",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 11539,
+   "SUM_PSON_NUM": 138865
+  },
+  {
+   "BASE_DATE": "201307",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 28652,
+   "SUM_PSON_NUM": 138865
+  },
+  {
+   "BASE_DATE": "201307",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 25166,
+   "SUM_PSON_NUM": 138865
+  },
+  {
+   "BASE_DATE": "201307",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 18610,
+   "SUM_PSON_NUM": 138865
+  },
+  {
+   "BASE_DATE": "201307",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 24872,
+   "SUM_PSON_NUM": 138865
+  },
+  {
+   "BASE_DATE": "201308",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 39557,
+   "SUM_PSON_NUM": 170140
+  },
+  {
+   "BASE_DATE": "201308",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 13357,
+   "SUM_PSON_NUM": 170140
+  },
+  {
+   "BASE_DATE": "201308",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 33935,
+   "SUM_PSON_NUM": 170140
+  },
+  {
+   "BASE_DATE": "201308",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 33888,
+   "SUM_PSON_NUM": 170140
+  },
+  {
+   "BASE_DATE": "201308",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 20864,
+   "SUM_PSON_NUM": 170140
+  },
+  {
+   "BASE_DATE": "201308",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 28539,
+   "SUM_PSON_NUM": 170140
+  },
+  {
+   "BASE_DATE": "201309",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 6259,
+   "SUM_PSON_NUM": 92071
+  },
+  {
+   "BASE_DATE": "201309",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 10126,
+   "SUM_PSON_NUM": 92071
+  },
+  {
+   "BASE_DATE": "201309",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 13977,
+   "SUM_PSON_NUM": 92071
+  },
+  {
+   "BASE_DATE": "201309",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 12922,
+   "SUM_PSON_NUM": 92071
+  },
+  {
+   "BASE_DATE": "201309",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 22590,
+   "SUM_PSON_NUM": 92071
+  },
+  {
+   "BASE_DATE": "201309",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 26197,
+   "SUM_PSON_NUM": 92071
+  },
+  {
+   "BASE_DATE": "201310",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 6455,
+   "SUM_PSON_NUM": 75409
+  },
+  {
+   "BASE_DATE": "201310",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 7999,
+   "SUM_PSON_NUM": 75409
+  },
+  {
+   "BASE_DATE": "201310",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 12285,
+   "SUM_PSON_NUM": 75409
+  },
+  {
+   "BASE_DATE": "201310",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 10546,
+   "SUM_PSON_NUM": 75409
+  },
+  {
+   "BASE_DATE": "201310",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 14569,
+   "SUM_PSON_NUM": 75409
+  },
+  {
+   "BASE_DATE": "201310",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 23555,
+   "SUM_PSON_NUM": 75409
+  },
+  {
+   "BASE_DATE": "201311",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1051,
+   "SUM_PSON_NUM": 24335
+  },
+  {
+   "BASE_DATE": "201311",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 2532,
+   "SUM_PSON_NUM": 24335
+  },
+  {
+   "BASE_DATE": "201311",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 3101,
+   "SUM_PSON_NUM": 24335
+  },
+  {
+   "BASE_DATE": "201311",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 3454,
+   "SUM_PSON_NUM": 24335
+  },
+  {
+   "BASE_DATE": "201311",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 7023,
+   "SUM_PSON_NUM": 24335
+  },
+  {
+   "BASE_DATE": "201311",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 7174,
+   "SUM_PSON_NUM": 24335
+  },
+  {
+   "BASE_DATE": "201312",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 717,
+   "SUM_PSON_NUM": 14026
+  },
+  {
+   "BASE_DATE": "201312",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 1817,
+   "SUM_PSON_NUM": 14026
+  },
+  {
+   "BASE_DATE": "201312",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 3278,
+   "SUM_PSON_NUM": 14026
+  },
+  {
+   "BASE_DATE": "201312",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 2801,
+   "SUM_PSON_NUM": 14026
+  },
+  {
+   "BASE_DATE": "201312",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 3060,
+   "SUM_PSON_NUM": 14026
+  },
+  {
+   "BASE_DATE": "201312",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 2353,
+   "SUM_PSON_NUM": 14026
+  },
+  {
+   "BASE_DATE": "201401",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 2317,
+   "SUM_PSON_NUM": 19918
+  },
+  {
+   "BASE_DATE": "201401",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 2321,
+   "SUM_PSON_NUM": 19918
+  },
+  {
+   "BASE_DATE": "201401",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 4346,
+   "SUM_PSON_NUM": 19918
+  },
+  {
+   "BASE_DATE": "201401",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 2555,
+   "SUM_PSON_NUM": 19918
+  },
+  {
+   "BASE_DATE": "201401",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 3363,
+   "SUM_PSON_NUM": 19918
+  },
+  {
+   "BASE_DATE": "201401",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 5016,
+   "SUM_PSON_NUM": 19918
+  },
+  {
+   "BASE_DATE": "201402",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 3203,
+   "SUM_PSON_NUM": 27595
+  },
+  {
+   "BASE_DATE": "201402",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 3415,
+   "SUM_PSON_NUM": 27595
+  },
+  {
+   "BASE_DATE": "201402",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 5222,
+   "SUM_PSON_NUM": 27595
+  },
+  {
+   "BASE_DATE": "201402",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 4333,
+   "SUM_PSON_NUM": 27595
+  },
+  {
+   "BASE_DATE": "201402",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 5828,
+   "SUM_PSON_NUM": 27595
+  },
+  {
+   "BASE_DATE": "201402",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 5594,
+   "SUM_PSON_NUM": 27595
+  },
+  {
+   "BASE_DATE": "201403",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 2778,
+   "SUM_PSON_NUM": 57549
+  },
+  {
+   "BASE_DATE": "201403",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 4891,
+   "SUM_PSON_NUM": 57549
+  },
+  {
+   "BASE_DATE": "201403",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 7283,
+   "SUM_PSON_NUM": 57549
+  },
+  {
+   "BASE_DATE": "201403",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 6848,
+   "SUM_PSON_NUM": 57549
+  },
+  {
+   "BASE_DATE": "201403",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 14874,
+   "SUM_PSON_NUM": 57549
+  },
+  {
+   "BASE_DATE": "201403",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 20875,
+   "SUM_PSON_NUM": 57549
+  },
+  {
+   "BASE_DATE": "201404",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 6200,
+   "SUM_PSON_NUM": 95949
+  },
+  {
+   "BASE_DATE": "201404",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 7708,
+   "SUM_PSON_NUM": 95949
+  },
+  {
+   "BASE_DATE": "201404",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 13279,
+   "SUM_PSON_NUM": 95949
+  },
+  {
+   "BASE_DATE": "201404",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 12936,
+   "SUM_PSON_NUM": 95949
+  },
+  {
+   "BASE_DATE": "201404",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 23593,
+   "SUM_PSON_NUM": 95949
+  },
+  {
+   "BASE_DATE": "201404",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 32233,
+   "SUM_PSON_NUM": 95949
+  },
+  {
+   "BASE_DATE": "201405",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 4910,
+   "SUM_PSON_NUM": 91688
+  },
+  {
+   "BASE_DATE": "201405",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 10572,
+   "SUM_PSON_NUM": 91688
+  },
+  {
+   "BASE_DATE": "201405",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 19256,
+   "SUM_PSON_NUM": 91688
+  },
+  {
+   "BASE_DATE": "201405",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 15273,
+   "SUM_PSON_NUM": 91688
+  },
+  {
+   "BASE_DATE": "201405",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 16330,
+   "SUM_PSON_NUM": 91688
+  },
+  {
+   "BASE_DATE": "201405",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 25347,
+   "SUM_PSON_NUM": 91688
+  },
+  {
+   "BASE_DATE": "201406",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 15616,
+   "SUM_PSON_NUM": 164518
+  },
+  {
+   "BASE_DATE": "201406",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 15514,
+   "SUM_PSON_NUM": 164518
+  },
+  {
+   "BASE_DATE": "201406",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 29822,
+   "SUM_PSON_NUM": 164518
+  },
+  {
+   "BASE_DATE": "201406",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 31962,
+   "SUM_PSON_NUM": 164518
+  },
+  {
+   "BASE_DATE": "201406",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 33571,
+   "SUM_PSON_NUM": 164518
+  },
+  {
+   "BASE_DATE": "201406",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 38033,
+   "SUM_PSON_NUM": 164518
+  },
+  {
+   "BASE_DATE": "201407",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 36596,
+   "SUM_PSON_NUM": 154244
+  },
+  {
+   "BASE_DATE": "201407",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 10911,
+   "SUM_PSON_NUM": 154244
+  },
+  {
+   "BASE_DATE": "201407",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 33387,
+   "SUM_PSON_NUM": 154244
+  },
+  {
+   "BASE_DATE": "201407",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 24845,
+   "SUM_PSON_NUM": 154244
+  },
+  {
+   "BASE_DATE": "201407",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 18702,
+   "SUM_PSON_NUM": 154244
+  },
+  {
+   "BASE_DATE": "201407",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 29803,
+   "SUM_PSON_NUM": 154244
+  },
+  {
+   "BASE_DATE": "201408",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 40370,
+   "SUM_PSON_NUM": 167485
+  },
+  {
+   "BASE_DATE": "201408",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 13898,
+   "SUM_PSON_NUM": 167485
+  },
+  {
+   "BASE_DATE": "201408",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 37873,
+   "SUM_PSON_NUM": 167485
+  },
+  {
+   "BASE_DATE": "201408",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 27850,
+   "SUM_PSON_NUM": 167485
+  },
+  {
+   "BASE_DATE": "201408",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 20930,
+   "SUM_PSON_NUM": 167485
+  },
+  {
+   "BASE_DATE": "201408",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 26564,
+   "SUM_PSON_NUM": 167485
+  },
+  {
+   "BASE_DATE": "201409",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 7172,
+   "SUM_PSON_NUM": 112581
+  },
+  {
+   "BASE_DATE": "201409",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 11770,
+   "SUM_PSON_NUM": 112581
+  },
+  {
+   "BASE_DATE": "201409",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 14926,
+   "SUM_PSON_NUM": 112581
+  },
+  {
+   "BASE_DATE": "201409",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 13245,
+   "SUM_PSON_NUM": 112581
+  },
+  {
+   "BASE_DATE": "201409",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 29386,
+   "SUM_PSON_NUM": 112581
+  },
+  {
+   "BASE_DATE": "201409",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 36082,
+   "SUM_PSON_NUM": 112581
+  },
+  {
+   "BASE_DATE": "201410",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 7093,
+   "SUM_PSON_NUM": 88768
+  },
+  {
+   "BASE_DATE": "201410",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 8715,
+   "SUM_PSON_NUM": 88768
+  },
+  {
+   "BASE_DATE": "201410",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 13219,
+   "SUM_PSON_NUM": 88768
+  },
+  {
+   "BASE_DATE": "201410",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 10884,
+   "SUM_PSON_NUM": 88768
+  },
+  {
+   "BASE_DATE": "201410",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 20003,
+   "SUM_PSON_NUM": 88768
+  },
+  {
+   "BASE_DATE": "201410",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 28854,
+   "SUM_PSON_NUM": 88768
+  },
+  {
+   "BASE_DATE": "201411",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 2044,
+   "SUM_PSON_NUM": 41744
+  },
+  {
+   "BASE_DATE": "201411",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 4521,
+   "SUM_PSON_NUM": 41744
+  },
+  {
+   "BASE_DATE": "201411",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 5489,
+   "SUM_PSON_NUM": 41744
+  },
+  {
+   "BASE_DATE": "201411",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 5160,
+   "SUM_PSON_NUM": 41744
+  },
+  {
+   "BASE_DATE": "201411",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 10637,
+   "SUM_PSON_NUM": 41744
+  },
+  {
+   "BASE_DATE": "201411",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 13893,
+   "SUM_PSON_NUM": 41744
+  },
+  {
+   "BASE_DATE": "201412",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1236,
+   "SUM_PSON_NUM": 28657
+  },
+  {
+   "BASE_DATE": "201412",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 3227,
+   "SUM_PSON_NUM": 28657
+  },
+  {
+   "BASE_DATE": "201412",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 5283,
+   "SUM_PSON_NUM": 28657
+  },
+  {
+   "BASE_DATE": "201412",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 5716,
+   "SUM_PSON_NUM": 28657
+  },
+  {
+   "BASE_DATE": "201412",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 7127,
+   "SUM_PSON_NUM": 28657
+  },
+  {
+   "BASE_DATE": "201412",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 6068,
+   "SUM_PSON_NUM": 28657
+  },
+  {
+   "BASE_DATE": "201501",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1030,
+   "SUM_PSON_NUM": 11482
+  },
+  {
+   "BASE_DATE": "201501",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 1277,
+   "SUM_PSON_NUM": 11482
+  },
+  {
+   "BASE_DATE": "201501",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 2093,
+   "SUM_PSON_NUM": 11482
+  },
+  {
+   "BASE_DATE": "201501",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 1302,
+   "SUM_PSON_NUM": 11482
+  },
+  {
+   "BASE_DATE": "201501",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 2866,
+   "SUM_PSON_NUM": 11482
+  },
+  {
+   "BASE_DATE": "201501",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 2914,
+   "SUM_PSON_NUM": 11482
+  },
+  {
+   "BASE_DATE": "201502",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 4486,
+   "SUM_PSON_NUM": 29684
+  },
+  {
+   "BASE_DATE": "201502",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 3128,
+   "SUM_PSON_NUM": 29684
+  },
+  {
+   "BASE_DATE": "201502",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 6777,
+   "SUM_PSON_NUM": 29684
+  },
+  {
+   "BASE_DATE": "201502",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 5468,
+   "SUM_PSON_NUM": 29684
+  },
+  {
+   "BASE_DATE": "201502",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 4410,
+   "SUM_PSON_NUM": 29684
+  },
+  {
+   "BASE_DATE": "201502",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 5415,
+   "SUM_PSON_NUM": 29684
+  },
+  {
+   "BASE_DATE": "201503",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 2789,
+   "SUM_PSON_NUM": 50694
+  },
+  {
+   "BASE_DATE": "201503",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 4621,
+   "SUM_PSON_NUM": 50694
+  },
+  {
+   "BASE_DATE": "201503",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 6110,
+   "SUM_PSON_NUM": 50694
+  },
+  {
+   "BASE_DATE": "201503",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 5306,
+   "SUM_PSON_NUM": 50694
+  },
+  {
+   "BASE_DATE": "201503",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 13766,
+   "SUM_PSON_NUM": 50694
+  },
+  {
+   "BASE_DATE": "201503",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 18102,
+   "SUM_PSON_NUM": 50694
+  },
+  {
+   "BASE_DATE": "201504",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 5439,
+   "SUM_PSON_NUM": 91222
+  },
+  {
+   "BASE_DATE": "201504",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 6687,
+   "SUM_PSON_NUM": 91222
+  },
+  {
+   "BASE_DATE": "201504",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 10897,
+   "SUM_PSON_NUM": 91222
+  },
+  {
+   "BASE_DATE": "201504",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 9999,
+   "SUM_PSON_NUM": 91222
+  },
+  {
+   "BASE_DATE": "201504",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 20262,
+   "SUM_PSON_NUM": 91222
+  },
+  {
+   "BASE_DATE": "201504",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 37938,
+   "SUM_PSON_NUM": 91222
+  },
+  {
+   "BASE_DATE": "201505",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 6674,
+   "SUM_PSON_NUM": 90256
+  },
+  {
+   "BASE_DATE": "201505",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 7192,
+   "SUM_PSON_NUM": 90256
+  },
+  {
+   "BASE_DATE": "201505",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 11622,
+   "SUM_PSON_NUM": 90256
+  },
+  {
+   "BASE_DATE": "201505",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 9474,
+   "SUM_PSON_NUM": 90256
+  },
+  {
+   "BASE_DATE": "201505",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 19401,
+   "SUM_PSON_NUM": 90256
+  },
+  {
+   "BASE_DATE": "201505",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 35893,
+   "SUM_PSON_NUM": 90256
+  },
+  {
+   "BASE_DATE": "201506",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 8365,
+   "SUM_PSON_NUM": 93639
+  },
+  {
+   "BASE_DATE": "201506",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 8674,
+   "SUM_PSON_NUM": 93639
+  },
+  {
+   "BASE_DATE": "201506",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 15269,
+   "SUM_PSON_NUM": 93639
+  },
+  {
+   "BASE_DATE": "201506",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 11922,
+   "SUM_PSON_NUM": 93639
+  },
+  {
+   "BASE_DATE": "201506",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 21310,
+   "SUM_PSON_NUM": 93639
+  },
+  {
+   "BASE_DATE": "201506",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 28099,
+   "SUM_PSON_NUM": 93639
+  },
+  {
+   "BASE_DATE": "201507",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 9263,
+   "SUM_PSON_NUM": 46718
+  },
+  {
+   "BASE_DATE": "201507",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 3646,
+   "SUM_PSON_NUM": 46718
+  },
+  {
+   "BASE_DATE": "201507",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 9198,
+   "SUM_PSON_NUM": 46718
+  },
+  {
+   "BASE_DATE": "201507",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 5983,
+   "SUM_PSON_NUM": 46718
+  },
+  {
+   "BASE_DATE": "201507",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 7015,
+   "SUM_PSON_NUM": 46718
+  },
+  {
+   "BASE_DATE": "201507",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 11613,
+   "SUM_PSON_NUM": 46718
+  },
+  {
+   "BASE_DATE": "201508",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 20615,
+   "SUM_PSON_NUM": 101044
+  },
+  {
+   "BASE_DATE": "201508",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 8466,
+   "SUM_PSON_NUM": 101044
+  },
+  {
+   "BASE_DATE": "201508",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 19374,
+   "SUM_PSON_NUM": 101044
+  },
+  {
+   "BASE_DATE": "201508",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 13693,
+   "SUM_PSON_NUM": 101044
+  },
+  {
+   "BASE_DATE": "201508",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 15803,
+   "SUM_PSON_NUM": 101044
+  },
+  {
+   "BASE_DATE": "201508",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 23093,
+   "SUM_PSON_NUM": 101044
+  },
+  {
+   "BASE_DATE": "201509",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 7283,
+   "SUM_PSON_NUM": 110770
+  },
+  {
+   "BASE_DATE": "201509",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 12416,
+   "SUM_PSON_NUM": 110770
+  },
+  {
+   "BASE_DATE": "201509",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 17254,
+   "SUM_PSON_NUM": 110770
+  },
+  {
+   "BASE_DATE": "201509",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 13652,
+   "SUM_PSON_NUM": 110770
+  },
+  {
+   "BASE_DATE": "201509",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 28144,
+   "SUM_PSON_NUM": 110770
+  },
+  {
+   "BASE_DATE": "201509",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 32021,
+   "SUM_PSON_NUM": 110770
+  },
+  {
+   "BASE_DATE": "201510",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 8792,
+   "SUM_PSON_NUM": 116987
+  },
+  {
+   "BASE_DATE": "201510",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 11574,
+   "SUM_PSON_NUM": 116987
+  },
+  {
+   "BASE_DATE": "201510",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 16713,
+   "SUM_PSON_NUM": 116987
+  },
+  {
+   "BASE_DATE": "201510",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 13742,
+   "SUM_PSON_NUM": 116987
+  },
+  {
+   "BASE_DATE": "201510",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 29188,
+   "SUM_PSON_NUM": 116987
+  },
+  {
+   "BASE_DATE": "201510",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 36978,
+   "SUM_PSON_NUM": 116987
+  },
+  {
+   "BASE_DATE": "201511",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 3051,
+   "SUM_PSON_NUM": 67712
+  },
+  {
+   "BASE_DATE": "201511",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 7980,
+   "SUM_PSON_NUM": 67712
+  },
+  {
+   "BASE_DATE": "201511",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 9870,
+   "SUM_PSON_NUM": 67712
+  },
+  {
+   "BASE_DATE": "201511",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 8958,
+   "SUM_PSON_NUM": 67712
+  },
+  {
+   "BASE_DATE": "201511",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 17658,
+   "SUM_PSON_NUM": 67712
+  },
+  {
+   "BASE_DATE": "201511",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 20195,
+   "SUM_PSON_NUM": 67712
+  },
+  {
+   "BASE_DATE": "201512",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 2281,
+   "SUM_PSON_NUM": 42303
+  },
+  {
+   "BASE_DATE": "201512",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 4152,
+   "SUM_PSON_NUM": 42303
+  },
+  {
+   "BASE_DATE": "201512",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 5956,
+   "SUM_PSON_NUM": 42303
+  },
+  {
+   "BASE_DATE": "201512",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 5103,
+   "SUM_PSON_NUM": 42303
+  },
+  {
+   "BASE_DATE": "201512",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 11438,
+   "SUM_PSON_NUM": 42303
+  },
+  {
+   "BASE_DATE": "201512",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 13373,
+   "SUM_PSON_NUM": 42303
+  },
+  {
+   "BASE_DATE": "201601",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 7616,
+   "SUM_PSON_NUM": 58489
+  },
+  {
+   "BASE_DATE": "201601",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 8388,
+   "SUM_PSON_NUM": 58489
+  },
+  {
+   "BASE_DATE": "201601",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 11343,
+   "SUM_PSON_NUM": 58489
+  },
+  {
+   "BASE_DATE": "201601",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 6932,
+   "SUM_PSON_NUM": 58489
+  },
+  {
+   "BASE_DATE": "201601",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 11016,
+   "SUM_PSON_NUM": 58489
+  },
+  {
+   "BASE_DATE": "201601",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 13194,
+   "SUM_PSON_NUM": 58489
+  },
+  {
+   "BASE_DATE": "201602",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 9063,
+   "SUM_PSON_NUM": 58109
+  },
+  {
+   "BASE_DATE": "201602",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 5968,
+   "SUM_PSON_NUM": 58109
+  },
+  {
+   "BASE_DATE": "201602",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 11005,
+   "SUM_PSON_NUM": 58109
+  },
+  {
+   "BASE_DATE": "201602",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 7419,
+   "SUM_PSON_NUM": 58109
+  },
+  {
+   "BASE_DATE": "201602",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 10253,
+   "SUM_PSON_NUM": 58109
+  },
+  {
+   "BASE_DATE": "201602",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 14401,
+   "SUM_PSON_NUM": 58109
+  },
+  {
+   "BASE_DATE": "201603",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 4708,
+   "SUM_PSON_NUM": 94399
+  },
+  {
+   "BASE_DATE": "201603",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 7757,
+   "SUM_PSON_NUM": 94399
+  },
+  {
+   "BASE_DATE": "201603",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 11217,
+   "SUM_PSON_NUM": 94399
+  },
+  {
+   "BASE_DATE": "201603",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 10283,
+   "SUM_PSON_NUM": 94399
+  },
+  {
+   "BASE_DATE": "201603",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 22310,
+   "SUM_PSON_NUM": 94399
+  },
+  {
+   "BASE_DATE": "201603",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 38124,
+   "SUM_PSON_NUM": 94399
+  },
+  {
+   "BASE_DATE": "201604",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 7360,
+   "SUM_PSON_NUM": 123115
+  },
+  {
+   "BASE_DATE": "201604",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 12399,
+   "SUM_PSON_NUM": 123115
+  },
+  {
+   "BASE_DATE": "201604",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 16574,
+   "SUM_PSON_NUM": 123115
+  },
+  {
+   "BASE_DATE": "201604",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 13156,
+   "SUM_PSON_NUM": 123115
+  },
+  {
+   "BASE_DATE": "201604",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 26709,
+   "SUM_PSON_NUM": 123115
+  },
+  {
+   "BASE_DATE": "201604",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 46917,
+   "SUM_PSON_NUM": 123115
+  },
+  {
+   "BASE_DATE": "201605",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 11680,
+   "SUM_PSON_NUM": 185379
+  },
+  {
+   "BASE_DATE": "201605",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 15202,
+   "SUM_PSON_NUM": 185379
+  },
+  {
+   "BASE_DATE": "201605",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 23161,
+   "SUM_PSON_NUM": 185379
+  },
+  {
+   "BASE_DATE": "201605",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 20701,
+   "SUM_PSON_NUM": 185379
+  },
+  {
+   "BASE_DATE": "201605",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 44254,
+   "SUM_PSON_NUM": 185379
+  },
+  {
+   "BASE_DATE": "201605",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 70381,
+   "SUM_PSON_NUM": 185379
+  },
+  {
+   "BASE_DATE": "201606",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 19613,
+   "SUM_PSON_NUM": 192930
+  },
+  {
+   "BASE_DATE": "201606",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 17817,
+   "SUM_PSON_NUM": 192930
+  },
+  {
+   "BASE_DATE": "201606",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 29388,
+   "SUM_PSON_NUM": 192930
+  },
+  {
+   "BASE_DATE": "201606",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 22649,
+   "SUM_PSON_NUM": 192930
+  },
+  {
+   "BASE_DATE": "201606",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 43136,
+   "SUM_PSON_NUM": 192930
+  },
+  {
+   "BASE_DATE": "201606",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 60327,
+   "SUM_PSON_NUM": 192930
+  },
+  {
+   "BASE_DATE": "201607",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 53195,
+   "SUM_PSON_NUM": 237881
+  },
+  {
+   "BASE_DATE": "201607",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 16450,
+   "SUM_PSON_NUM": 237881
+  },
+  {
+   "BASE_DATE": "201607",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 45783,
+   "SUM_PSON_NUM": 237881
+  },
+  {
+   "BASE_DATE": "201607",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 32154,
+   "SUM_PSON_NUM": 237881
+  },
+  {
+   "BASE_DATE": "201607",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 32638,
+   "SUM_PSON_NUM": 237881
+  },
+  {
+   "BASE_DATE": "201607",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 57661,
+   "SUM_PSON_NUM": 237881
+  },
+  {
+   "BASE_DATE": "201608",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 62068,
+   "SUM_PSON_NUM": 243854
+  },
+  {
+   "BASE_DATE": "201608",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 17808,
+   "SUM_PSON_NUM": 243854
+  },
+  {
+   "BASE_DATE": "201608",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 50092,
+   "SUM_PSON_NUM": 243854
+  },
+  {
+   "BASE_DATE": "201608",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 35994,
+   "SUM_PSON_NUM": 243854
+  },
+  {
+   "BASE_DATE": "201608",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 29297,
+   "SUM_PSON_NUM": 243854
+  },
+  {
+   "BASE_DATE": "201608",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 48595,
+   "SUM_PSON_NUM": 243854
+  },
+  {
+   "BASE_DATE": "201609",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 17491,
+   "SUM_PSON_NUM": 231718
+  },
+  {
+   "BASE_DATE": "201609",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 26469,
+   "SUM_PSON_NUM": 231718
+  },
+  {
+   "BASE_DATE": "201609",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 36270,
+   "SUM_PSON_NUM": 231718
+  },
+  {
+   "BASE_DATE": "201609",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 27829,
+   "SUM_PSON_NUM": 231718
+  },
+  {
+   "BASE_DATE": "201609",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 52536,
+   "SUM_PSON_NUM": 231718
+  },
+  {
+   "BASE_DATE": "201609",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 71123,
+   "SUM_PSON_NUM": 231718
+  },
+  {
+   "BASE_DATE": "201610",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 14997,
+   "SUM_PSON_NUM": 190268
+  },
+  {
+   "BASE_DATE": "201610",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 20728,
+   "SUM_PSON_NUM": 190268
+  },
+  {
+   "BASE_DATE": "201610",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 28932,
+   "SUM_PSON_NUM": 190268
+  },
+  {
+   "BASE_DATE": "201610",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 22646,
+   "SUM_PSON_NUM": 190268
+  },
+  {
+   "BASE_DATE": "201610",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 43298,
+   "SUM_PSON_NUM": 190268
+  },
+  {
+   "BASE_DATE": "201610",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 59667,
+   "SUM_PSON_NUM": 190268
+  },
+  {
+   "BASE_DATE": "201611",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 6773,
+   "SUM_PSON_NUM": 140781
+  },
+  {
+   "BASE_DATE": "201611",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 12788,
+   "SUM_PSON_NUM": 140781
+  },
+  {
+   "BASE_DATE": "201611",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 15520,
+   "SUM_PSON_NUM": 140781
+  },
+  {
+   "BASE_DATE": "201611",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 14670,
+   "SUM_PSON_NUM": 140781
+  },
+  {
+   "BASE_DATE": "201611",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 39608,
+   "SUM_PSON_NUM": 140781
+  },
+  {
+   "BASE_DATE": "201611",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 51422,
+   "SUM_PSON_NUM": 140781
+  },
+  {
+   "BASE_DATE": "201612",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 7593,
+   "SUM_PSON_NUM": 113495
+  },
+  {
+   "BASE_DATE": "201612",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 14852,
+   "SUM_PSON_NUM": 113495
+  },
+  {
+   "BASE_DATE": "201612",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 19747,
+   "SUM_PSON_NUM": 113495
+  },
+  {
+   "BASE_DATE": "201612",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 13424,
+   "SUM_PSON_NUM": 113495
+  },
+  {
+   "BASE_DATE": "201612",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 25161,
+   "SUM_PSON_NUM": 113495
+  },
+  {
+   "BASE_DATE": "201612",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 32718,
+   "SUM_PSON_NUM": 113495
+  },
+  {
+   "BASE_DATE": "201701",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 15168,
+   "SUM_PSON_NUM": 101294
+  },
+  {
+   "BASE_DATE": "201701",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 13690,
+   "SUM_PSON_NUM": 101294
+  },
+  {
+   "BASE_DATE": "201701",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 20427,
+   "SUM_PSON_NUM": 101294
+  },
+  {
+   "BASE_DATE": "201701",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 12373,
+   "SUM_PSON_NUM": 101294
+  },
+  {
+   "BASE_DATE": "201701",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 16617,
+   "SUM_PSON_NUM": 101294
+  },
+  {
+   "BASE_DATE": "201701",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 23019,
+   "SUM_PSON_NUM": 101294
+  },
+  {
+   "BASE_DATE": "201702",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 11484,
+   "SUM_PSON_NUM": 99287
+  },
+  {
+   "BASE_DATE": "201702",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 12535,
+   "SUM_PSON_NUM": 99287
+  },
+  {
+   "BASE_DATE": "201702",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 18052,
+   "SUM_PSON_NUM": 99287
+  },
+  {
+   "BASE_DATE": "201702",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 12827,
+   "SUM_PSON_NUM": 99287
+  },
+  {
+   "BASE_DATE": "201702",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 19127,
+   "SUM_PSON_NUM": 99287
+  },
+  {
+   "BASE_DATE": "201702",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 25262,
+   "SUM_PSON_NUM": 99287
+  },
+  {
+   "BASE_DATE": "201703",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1694,
+   "SUM_PSON_NUM": 44893
+  },
+  {
+   "BASE_DATE": "201703",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 3256,
+   "SUM_PSON_NUM": 44893
+  },
+  {
+   "BASE_DATE": "201703",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 4441,
+   "SUM_PSON_NUM": 44893
+  },
+  {
+   "BASE_DATE": "201703",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 3982,
+   "SUM_PSON_NUM": 44893
+  },
+  {
+   "BASE_DATE": "201703",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 9394,
+   "SUM_PSON_NUM": 44893
+  },
+  {
+   "BASE_DATE": "201703",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 22126,
+   "SUM_PSON_NUM": 44893
+  },
+  {
+   "BASE_DATE": "201704",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 781,
+   "SUM_PSON_NUM": 23598
+  },
+  {
+   "BASE_DATE": "201704",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 511,
+   "SUM_PSON_NUM": 23598
+  },
+  {
+   "BASE_DATE": "201704",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 923,
+   "SUM_PSON_NUM": 23598
+  },
+  {
+   "BASE_DATE": "201704",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 1463,
+   "SUM_PSON_NUM": 23598
+  },
+  {
+   "BASE_DATE": "201704",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 3287,
+   "SUM_PSON_NUM": 23598
+  },
+  {
+   "BASE_DATE": "201704",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 16633,
+   "SUM_PSON_NUM": 23598
+  },
+  {
+   "BASE_DATE": "201705",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 573,
+   "SUM_PSON_NUM": 12703
+  },
+  {
+   "BASE_DATE": "201705",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 327,
+   "SUM_PSON_NUM": 12703
+  },
+  {
+   "BASE_DATE": "201705",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 640,
+   "SUM_PSON_NUM": 12703
+  },
+  {
+   "BASE_DATE": "201705",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 840,
+   "SUM_PSON_NUM": 12703
+  },
+  {
+   "BASE_DATE": "201705",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 1544,
+   "SUM_PSON_NUM": 12703
+  },
+  {
+   "BASE_DATE": "201705",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 8779,
+   "SUM_PSON_NUM": 12703
+  },
+  {
+   "BASE_DATE": "201706",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 193,
+   "SUM_PSON_NUM": 10854
+  },
+  {
+   "BASE_DATE": "201706",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 182,
+   "SUM_PSON_NUM": 10854
+  },
+  {
+   "BASE_DATE": "201706",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 329,
+   "SUM_PSON_NUM": 10854
+  },
+  {
+   "BASE_DATE": "201706",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 743,
+   "SUM_PSON_NUM": 10854
+  },
+  {
+   "BASE_DATE": "201706",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 1810,
+   "SUM_PSON_NUM": 10854
+  },
+  {
+   "BASE_DATE": "201706",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 7597,
+   "SUM_PSON_NUM": 10854
+  },
+  {
+   "BASE_DATE": "201707",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 2634,
+   "SUM_PSON_NUM": 18117
+  },
+  {
+   "BASE_DATE": "201707",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 717,
+   "SUM_PSON_NUM": 18117
+  },
+  {
+   "BASE_DATE": "201707",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1235,
+   "SUM_PSON_NUM": 18117
+  },
+  {
+   "BASE_DATE": "201707",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 2134,
+   "SUM_PSON_NUM": 18117
+  },
+  {
+   "BASE_DATE": "201707",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 2713,
+   "SUM_PSON_NUM": 18117
+  },
+  {
+   "BASE_DATE": "201707",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 8684,
+   "SUM_PSON_NUM": 18117
+  },
+  {
+   "BASE_DATE": "201708",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 3563,
+   "SUM_PSON_NUM": 18947
+  },
+  {
+   "BASE_DATE": "201708",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 608,
+   "SUM_PSON_NUM": 18947
+  },
+  {
+   "BASE_DATE": "201708",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1479,
+   "SUM_PSON_NUM": 18947
+  },
+  {
+   "BASE_DATE": "201708",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 2412,
+   "SUM_PSON_NUM": 18947
+  },
+  {
+   "BASE_DATE": "201708",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 2303,
+   "SUM_PSON_NUM": 18947
+  },
+  {
+   "BASE_DATE": "201708",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 8582,
+   "SUM_PSON_NUM": 18947
+  },
+  {
+   "BASE_DATE": "201709",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 489,
+   "SUM_PSON_NUM": 13581
+  },
+  {
+   "BASE_DATE": "201709",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 712,
+   "SUM_PSON_NUM": 13581
+  },
+  {
+   "BASE_DATE": "201709",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 928,
+   "SUM_PSON_NUM": 13581
+  },
+  {
+   "BASE_DATE": "201709",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 1315,
+   "SUM_PSON_NUM": 13581
+  },
+  {
+   "BASE_DATE": "201709",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 2674,
+   "SUM_PSON_NUM": 13581
+  },
+  {
+   "BASE_DATE": "201709",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 7463,
+   "SUM_PSON_NUM": 13581
+  },
+  {
+   "BASE_DATE": "201710",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 280,
+   "SUM_PSON_NUM": 13378
+  },
+  {
+   "BASE_DATE": "201710",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 379,
+   "SUM_PSON_NUM": 13378
+  },
+  {
+   "BASE_DATE": "201710",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 633,
+   "SUM_PSON_NUM": 13378
+  },
+  {
+   "BASE_DATE": "201710",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 844,
+   "SUM_PSON_NUM": 13378
+  },
+  {
+   "BASE_DATE": "201710",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 2296,
+   "SUM_PSON_NUM": 13378
+  },
+  {
+   "BASE_DATE": "201710",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 8946,
+   "SUM_PSON_NUM": 13378
+  },
+  {
+   "BASE_DATE": "201711",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 102,
+   "SUM_PSON_NUM": 1892
+  },
+  {
+   "BASE_DATE": "201711",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 91,
+   "SUM_PSON_NUM": 1892
+  },
+  {
+   "BASE_DATE": "201711",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 151,
+   "SUM_PSON_NUM": 1892
+  },
+  {
+   "BASE_DATE": "201711",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 153,
+   "SUM_PSON_NUM": 1892
+  },
+  {
+   "BASE_DATE": "201711",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 321,
+   "SUM_PSON_NUM": 1892
+  },
+  {
+   "BASE_DATE": "201711",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 1074,
+   "SUM_PSON_NUM": 1892
+  },
+  {
+   "BASE_DATE": "201712",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201712",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201712",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201712",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201712",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201712",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201801",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201801",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201801",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201801",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201801",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201801",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201802",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 22,
+   "SUM_PSON_NUM": 3771
+  },
+  {
+   "BASE_DATE": "201802",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 39,
+   "SUM_PSON_NUM": 3771
+  },
+  {
+   "BASE_DATE": "201802",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 57,
+   "SUM_PSON_NUM": 3771
+  },
+  {
+   "BASE_DATE": "201802",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 131,
+   "SUM_PSON_NUM": 3771
+  },
+  {
+   "BASE_DATE": "201802",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 603,
+   "SUM_PSON_NUM": 3771
+  },
+  {
+   "BASE_DATE": "201802",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 2919,
+   "SUM_PSON_NUM": 3771
+  },
+  {
+   "BASE_DATE": "201803",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 161,
+   "SUM_PSON_NUM": 7797
+  },
+  {
+   "BASE_DATE": "201803",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 273,
+   "SUM_PSON_NUM": 7797
+  },
+  {
+   "BASE_DATE": "201803",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 349,
+   "SUM_PSON_NUM": 7797
+  },
+  {
+   "BASE_DATE": "201803",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 548,
+   "SUM_PSON_NUM": 7797
+  },
+  {
+   "BASE_DATE": "201803",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 1668,
+   "SUM_PSON_NUM": 7797
+  },
+  {
+   "BASE_DATE": "201803",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 4798,
+   "SUM_PSON_NUM": 7797
+  },
+  {
+   "BASE_DATE": "201804",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 896,
+   "SUM_PSON_NUM": 22869
+  },
+  {
+   "BASE_DATE": "201804",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 661,
+   "SUM_PSON_NUM": 22869
+  },
+  {
+   "BASE_DATE": "201804",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1042,
+   "SUM_PSON_NUM": 22869
+  },
+  {
+   "BASE_DATE": "201804",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 1816,
+   "SUM_PSON_NUM": 22869
+  },
+  {
+   "BASE_DATE": "201804",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 4120,
+   "SUM_PSON_NUM": 22869
+  },
+  {
+   "BASE_DATE": "201804",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 14334,
+   "SUM_PSON_NUM": 22869
+  },
+  {
+   "BASE_DATE": "201805",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 925,
+   "SUM_PSON_NUM": 20051
+  },
+  {
+   "BASE_DATE": "201805",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 532,
+   "SUM_PSON_NUM": 20051
+  },
+  {
+   "BASE_DATE": "201805",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 926,
+   "SUM_PSON_NUM": 20051
+  },
+  {
+   "BASE_DATE": "201805",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 1390,
+   "SUM_PSON_NUM": 20051
+  },
+  {
+   "BASE_DATE": "201805",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 2939,
+   "SUM_PSON_NUM": 20051
+  },
+  {
+   "BASE_DATE": "201805",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 13339,
+   "SUM_PSON_NUM": 20051
+  },
+  {
+   "BASE_DATE": "201806",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1237,
+   "SUM_PSON_NUM": 19028
+  },
+  {
+   "BASE_DATE": "201806",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 630,
+   "SUM_PSON_NUM": 19028
+  },
+  {
+   "BASE_DATE": "201806",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1021,
+   "SUM_PSON_NUM": 19028
+  },
+  {
+   "BASE_DATE": "201806",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 1624,
+   "SUM_PSON_NUM": 19028
+  },
+  {
+   "BASE_DATE": "201806",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 2999,
+   "SUM_PSON_NUM": 19028
+  },
+  {
+   "BASE_DATE": "201806",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 11517,
+   "SUM_PSON_NUM": 19028
+  },
+  {
+   "BASE_DATE": "201807",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1219,
+   "SUM_PSON_NUM": 7856
+  },
+  {
+   "BASE_DATE": "201807",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 377,
+   "SUM_PSON_NUM": 7856
+  },
+  {
+   "BASE_DATE": "201807",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 595,
+   "SUM_PSON_NUM": 7856
+  },
+  {
+   "BASE_DATE": "201807",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 926,
+   "SUM_PSON_NUM": 7856
+  },
+  {
+   "BASE_DATE": "201807",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 1154,
+   "SUM_PSON_NUM": 7856
+  },
+  {
+   "BASE_DATE": "201807",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 3585,
+   "SUM_PSON_NUM": 7856
+  },
+  {
+   "BASE_DATE": "201808",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 2646,
+   "SUM_PSON_NUM": 17554
+  },
+  {
+   "BASE_DATE": "201808",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 578,
+   "SUM_PSON_NUM": 17554
+  },
+  {
+   "BASE_DATE": "201808",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1180,
+   "SUM_PSON_NUM": 17554
+  },
+  {
+   "BASE_DATE": "201808",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 2170,
+   "SUM_PSON_NUM": 17554
+  },
+  {
+   "BASE_DATE": "201808",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 2370,
+   "SUM_PSON_NUM": 17554
+  },
+  {
+   "BASE_DATE": "201808",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 8610,
+   "SUM_PSON_NUM": 17554
+  },
+  {
+   "BASE_DATE": "201809",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 338,
+   "SUM_PSON_NUM": 9981
+  },
+  {
+   "BASE_DATE": "201809",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 383,
+   "SUM_PSON_NUM": 9981
+  },
+  {
+   "BASE_DATE": "201809",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 573,
+   "SUM_PSON_NUM": 9981
+  },
+  {
+   "BASE_DATE": "201809",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 682,
+   "SUM_PSON_NUM": 9981
+  },
+  {
+   "BASE_DATE": "201809",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 1740,
+   "SUM_PSON_NUM": 9981
+  },
+  {
+   "BASE_DATE": "201809",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 6265,
+   "SUM_PSON_NUM": 9981
+  },
+  {
+   "BASE_DATE": "201810",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 402,
+   "SUM_PSON_NUM": 19653
+  },
+  {
+   "BASE_DATE": "201810",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 494,
+   "SUM_PSON_NUM": 19653
+  },
+  {
+   "BASE_DATE": "201810",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 793,
+   "SUM_PSON_NUM": 19653
+  },
+  {
+   "BASE_DATE": "201810",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 1171,
+   "SUM_PSON_NUM": 19653
+  },
+  {
+   "BASE_DATE": "201810",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 2767,
+   "SUM_PSON_NUM": 19653
+  },
+  {
+   "BASE_DATE": "201810",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 14026,
+   "SUM_PSON_NUM": 19653
+  },
+  {
+   "BASE_DATE": "201811",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 262,
+   "SUM_PSON_NUM": 8813
+  },
+  {
+   "BASE_DATE": "201811",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 240,
+   "SUM_PSON_NUM": 8813
+  },
+  {
+   "BASE_DATE": "201811",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 374,
+   "SUM_PSON_NUM": 8813
+  },
+  {
+   "BASE_DATE": "201811",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 453,
+   "SUM_PSON_NUM": 8813
+  },
+  {
+   "BASE_DATE": "201811",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 1192,
+   "SUM_PSON_NUM": 8813
+  },
+  {
+   "BASE_DATE": "201811",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 6292,
+   "SUM_PSON_NUM": 8813
+  },
+  {
+   "BASE_DATE": "201812",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201812",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201812",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201812",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201812",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201812",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "201901",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 646,
+   "SUM_PSON_NUM": 5584
+  },
+  {
+   "BASE_DATE": "201901",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 279,
+   "SUM_PSON_NUM": 5584
+  },
+  {
+   "BASE_DATE": "201901",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 248,
+   "SUM_PSON_NUM": 5584
+  },
+  {
+   "BASE_DATE": "201901",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 567,
+   "SUM_PSON_NUM": 5584
+  },
+  {
+   "BASE_DATE": "201901",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 1009,
+   "SUM_PSON_NUM": 5584
+  },
+  {
+   "BASE_DATE": "201901",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 2835,
+   "SUM_PSON_NUM": 5584
+  },
+  {
+   "BASE_DATE": "201902",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 31,
+   "SUM_PSON_NUM": 5197
+  },
+  {
+   "BASE_DATE": "201902",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 102,
+   "SUM_PSON_NUM": 5197
+  },
+  {
+   "BASE_DATE": "201902",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 118,
+   "SUM_PSON_NUM": 5197
+  },
+  {
+   "BASE_DATE": "201902",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 176,
+   "SUM_PSON_NUM": 5197
+  },
+  {
+   "BASE_DATE": "201902",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 521,
+   "SUM_PSON_NUM": 5197
+  },
+  {
+   "BASE_DATE": "201902",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 4249,
+   "SUM_PSON_NUM": 5197
+  },
+  {
+   "BASE_DATE": "201903",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 108,
+   "SUM_PSON_NUM": 6879
+  },
+  {
+   "BASE_DATE": "201903",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 108,
+   "SUM_PSON_NUM": 6879
+  },
+  {
+   "BASE_DATE": "201903",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 184,
+   "SUM_PSON_NUM": 6879
+  },
+  {
+   "BASE_DATE": "201903",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 247,
+   "SUM_PSON_NUM": 6879
+  },
+  {
+   "BASE_DATE": "201903",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 813,
+   "SUM_PSON_NUM": 6879
+  },
+  {
+   "BASE_DATE": "201903",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 5419,
+   "SUM_PSON_NUM": 6879
+  },
+  {
+   "BASE_DATE": "201904",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1283,
+   "SUM_PSON_NUM": 27921
+  },
+  {
+   "BASE_DATE": "201904",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 1224,
+   "SUM_PSON_NUM": 27921
+  },
+  {
+   "BASE_DATE": "201904",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1733,
+   "SUM_PSON_NUM": 27921
+  },
+  {
+   "BASE_DATE": "201904",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 2136,
+   "SUM_PSON_NUM": 27921
+  },
+  {
+   "BASE_DATE": "201904",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 4380,
+   "SUM_PSON_NUM": 27921
+  },
+  {
+   "BASE_DATE": "201904",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 17165,
+   "SUM_PSON_NUM": 27921
+  },
+  {
+   "BASE_DATE": "201905",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1385,
+   "SUM_PSON_NUM": 35163
+  },
+  {
+   "BASE_DATE": "201905",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 1066,
+   "SUM_PSON_NUM": 35163
+  },
+  {
+   "BASE_DATE": "201905",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1795,
+   "SUM_PSON_NUM": 35163
+  },
+  {
+   "BASE_DATE": "201905",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 2470,
+   "SUM_PSON_NUM": 35163
+  },
+  {
+   "BASE_DATE": "201905",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 5560,
+   "SUM_PSON_NUM": 35163
+  },
+  {
+   "BASE_DATE": "201905",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 22887,
+   "SUM_PSON_NUM": 35163
+  },
+  {
+   "BASE_DATE": "201906",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1698,
+   "SUM_PSON_NUM": 24208
+  },
+  {
+   "BASE_DATE": "201906",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 1060,
+   "SUM_PSON_NUM": 24208
+  },
+  {
+   "BASE_DATE": "201906",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1441,
+   "SUM_PSON_NUM": 24208
+  },
+  {
+   "BASE_DATE": "201906",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 2194,
+   "SUM_PSON_NUM": 24208
+  },
+  {
+   "BASE_DATE": "201906",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 4031,
+   "SUM_PSON_NUM": 24208
+  },
+  {
+   "BASE_DATE": "201906",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 13784,
+   "SUM_PSON_NUM": 24208
+  },
+  {
+   "BASE_DATE": "201907",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 2700,
+   "SUM_PSON_NUM": 13730
+  },
+  {
+   "BASE_DATE": "201907",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 691,
+   "SUM_PSON_NUM": 13730
+  },
+  {
+   "BASE_DATE": "201907",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1231,
+   "SUM_PSON_NUM": 13730
+  },
+  {
+   "BASE_DATE": "201907",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 2165,
+   "SUM_PSON_NUM": 13730
+  },
+  {
+   "BASE_DATE": "201907",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 1989,
+   "SUM_PSON_NUM": 13730
+  },
+  {
+   "BASE_DATE": "201907",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 4954,
+   "SUM_PSON_NUM": 13730
+  },
+  {
+   "BASE_DATE": "201908",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 4022,
+   "SUM_PSON_NUM": 23714
+  },
+  {
+   "BASE_DATE": "201908",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 882,
+   "SUM_PSON_NUM": 23714
+  },
+  {
+   "BASE_DATE": "201908",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1726,
+   "SUM_PSON_NUM": 23714
+  },
+  {
+   "BASE_DATE": "201908",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 3027,
+   "SUM_PSON_NUM": 23714
+  },
+  {
+   "BASE_DATE": "201908",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 3298,
+   "SUM_PSON_NUM": 23714
+  },
+  {
+   "BASE_DATE": "201908",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 10759,
+   "SUM_PSON_NUM": 23714
+  },
+  {
+   "BASE_DATE": "201909",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 721,
+   "SUM_PSON_NUM": 17608
+  },
+  {
+   "BASE_DATE": "201909",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 773,
+   "SUM_PSON_NUM": 17608
+  },
+  {
+   "BASE_DATE": "201909",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1049,
+   "SUM_PSON_NUM": 17608
+  },
+  {
+   "BASE_DATE": "201909",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 1366,
+   "SUM_PSON_NUM": 17608
+  },
+  {
+   "BASE_DATE": "201909",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 2919,
+   "SUM_PSON_NUM": 17608
+  },
+  {
+   "BASE_DATE": "201909",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 10780,
+   "SUM_PSON_NUM": 17608
+  },
+  {
+   "BASE_DATE": "201910",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 234,
+   "SUM_PSON_NUM": 15427
+  },
+  {
+   "BASE_DATE": "201910",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 477,
+   "SUM_PSON_NUM": 15427
+  },
+  {
+   "BASE_DATE": "201910",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 547,
+   "SUM_PSON_NUM": 15427
+  },
+  {
+   "BASE_DATE": "201910",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 818,
+   "SUM_PSON_NUM": 15427
+  },
+  {
+   "BASE_DATE": "201910",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 2203,
+   "SUM_PSON_NUM": 15427
+  },
+  {
+   "BASE_DATE": "201910",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 11148,
+   "SUM_PSON_NUM": 15427
+  },
+  {
+   "BASE_DATE": "201911",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 173,
+   "SUM_PSON_NUM": 7483
+  },
+  {
+   "BASE_DATE": "201911",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 228,
+   "SUM_PSON_NUM": 7483
+  },
+  {
+   "BASE_DATE": "201911",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 311,
+   "SUM_PSON_NUM": 7483
+  },
+  {
+   "BASE_DATE": "201911",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 395,
+   "SUM_PSON_NUM": 7483
+  },
+  {
+   "BASE_DATE": "201911",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 1158,
+   "SUM_PSON_NUM": 7483
+  },
+  {
+   "BASE_DATE": "201911",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 5218,
+   "SUM_PSON_NUM": 7483
+  },
+  {
+   "BASE_DATE": "201912",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 124,
+   "SUM_PSON_NUM": 2632
+  },
+  {
+   "BASE_DATE": "201912",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 101,
+   "SUM_PSON_NUM": 2632
+  },
+  {
+   "BASE_DATE": "201912",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 128,
+   "SUM_PSON_NUM": 2632
+  },
+  {
+   "BASE_DATE": "201912",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 202,
+   "SUM_PSON_NUM": 2632
+  },
+  {
+   "BASE_DATE": "201912",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 394,
+   "SUM_PSON_NUM": 2632
+  },
+  {
+   "BASE_DATE": "201912",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 1683,
+   "SUM_PSON_NUM": 2632
+  },
+  {
+   "BASE_DATE": "202001",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202001",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202001",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202001",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202001",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202001",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202002",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202002",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202002",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202002",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202002",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202002",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202003",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202003",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202003",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202003",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202003",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202003",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202004",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202004",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202004",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202004",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202004",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202004",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202005",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202005",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202005",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202005",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202005",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202005",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202006",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202006",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202006",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202006",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202006",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202006",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202007",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202007",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202007",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202007",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202007",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202007",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202008",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202008",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202008",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202008",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202008",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202008",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202009",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202009",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202009",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202009",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202009",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202009",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202010",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202010",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202010",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202010",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202010",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202010",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202011",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202011",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202011",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202011",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202011",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202011",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202012",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202012",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202012",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202012",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202012",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202012",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202101",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202101",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202101",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202101",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202101",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202101",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202102",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202102",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202102",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202102",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202102",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202102",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202103",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202103",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202103",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202103",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202103",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202103",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202104",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202104",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202104",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202104",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202104",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202104",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202105",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202105",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202105",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202105",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202105",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202105",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202106",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202106",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202106",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202106",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202106",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202106",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202107",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202107",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202107",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202107",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202107",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202107",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202108",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202108",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202108",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202108",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202108",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202108",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202109",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202109",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202109",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202109",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202109",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202109",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202110",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202110",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202110",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202110",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202110",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202110",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202111",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202111",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202111",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202111",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202111",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202111",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202112",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202112",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202112",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202112",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202112",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202112",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202201",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202201",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202201",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202201",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202201",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202201",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202202",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202202",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202202",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202202",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202202",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202202",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202203",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202203",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202203",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202203",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202203",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202203",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202204",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202204",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202204",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202204",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202204",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202204",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202205",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202205",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202205",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202205",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202205",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202205",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202206",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202206",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202206",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202206",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202206",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202206",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202207",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202207",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202207",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202207",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202207",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202207",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202208",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202208",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202208",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202208",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202208",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202208",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202209",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202209",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202209",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202209",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202209",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202209",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202210",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202210",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202210",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202210",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202210",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202210",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202211",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202211",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202211",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202211",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202211",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202211",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202212",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202212",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202212",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202212",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202212",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202212",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202301",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202301",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202301",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202301",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202301",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202301",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202302",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202302",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202302",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202302",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202302",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202302",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 0,
+   "SUM_PSON_NUM": 0
+  },
+  {
+   "BASE_DATE": "202303",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 240,
+   "SUM_PSON_NUM": 15628
+  },
+  {
+   "BASE_DATE": "202303",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 512,
+   "SUM_PSON_NUM": 15628
+  },
+  {
+   "BASE_DATE": "202303",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 688,
+   "SUM_PSON_NUM": 15628
+  },
+  {
+   "BASE_DATE": "202303",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 710,
+   "SUM_PSON_NUM": 15628
+  },
+  {
+   "BASE_DATE": "202303",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 1456,
+   "SUM_PSON_NUM": 15628
+  },
+  {
+   "BASE_DATE": "202303",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 12022,
+   "SUM_PSON_NUM": 15628
+  },
+  {
+   "BASE_DATE": "202304",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 574,
+   "SUM_PSON_NUM": 23876
+  },
+  {
+   "BASE_DATE": "202304",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 536,
+   "SUM_PSON_NUM": 23876
+  },
+  {
+   "BASE_DATE": "202304",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 892,
+   "SUM_PSON_NUM": 23876
+  },
+  {
+   "BASE_DATE": "202304",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 1240,
+   "SUM_PSON_NUM": 23876
+  },
+  {
+   "BASE_DATE": "202304",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 3526,
+   "SUM_PSON_NUM": 23876
+  },
+  {
+   "BASE_DATE": "202304",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 17108,
+   "SUM_PSON_NUM": 23876
+  },
+  {
+   "BASE_DATE": "202305",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 308,
+   "SUM_PSON_NUM": 22373
+  },
+  {
+   "BASE_DATE": "202305",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 442,
+   "SUM_PSON_NUM": 22373
+  },
+  {
+   "BASE_DATE": "202305",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 623,
+   "SUM_PSON_NUM": 22373
+  },
+  {
+   "BASE_DATE": "202305",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 971,
+   "SUM_PSON_NUM": 22373
+  },
+  {
+   "BASE_DATE": "202305",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 2514,
+   "SUM_PSON_NUM": 22373
+  },
+  {
+   "BASE_DATE": "202305",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 17515,
+   "SUM_PSON_NUM": 22373
+  },
+  {
+   "BASE_DATE": "202306",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 691,
+   "SUM_PSON_NUM": 15375
+  },
+  {
+   "BASE_DATE": "202306",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 482,
+   "SUM_PSON_NUM": 15375
+  },
+  {
+   "BASE_DATE": "202306",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 555,
+   "SUM_PSON_NUM": 15375
+  },
+  {
+   "BASE_DATE": "202306",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 884,
+   "SUM_PSON_NUM": 15375
+  },
+  {
+   "BASE_DATE": "202306",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 1816,
+   "SUM_PSON_NUM": 15375
+  },
+  {
+   "BASE_DATE": "202306",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 10947,
+   "SUM_PSON_NUM": 15375
+  },
+  {
+   "BASE_DATE": "202307",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 3896,
+   "SUM_PSON_NUM": 25246
+  },
+  {
+   "BASE_DATE": "202307",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 1256,
+   "SUM_PSON_NUM": 25246
+  },
+  {
+   "BASE_DATE": "202307",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 2047,
+   "SUM_PSON_NUM": 25246
+  },
+  {
+   "BASE_DATE": "202307",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 3268,
+   "SUM_PSON_NUM": 25246
+  },
+  {
+   "BASE_DATE": "202307",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 3352,
+   "SUM_PSON_NUM": 25246
+  },
+  {
+   "BASE_DATE": "202307",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 11427,
+   "SUM_PSON_NUM": 25246
+  },
+  {
+   "BASE_DATE": "202308",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 3517,
+   "SUM_PSON_NUM": 20867
+  },
+  {
+   "BASE_DATE": "202308",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 743,
+   "SUM_PSON_NUM": 20867
+  },
+  {
+   "BASE_DATE": "202308",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1352,
+   "SUM_PSON_NUM": 20867
+  },
+  {
+   "BASE_DATE": "202308",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 2412,
+   "SUM_PSON_NUM": 20867
+  },
+  {
+   "BASE_DATE": "202308",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 2587,
+   "SUM_PSON_NUM": 20867
+  },
+  {
+   "BASE_DATE": "202308",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 10256,
+   "SUM_PSON_NUM": 20867
+  },
+  {
+   "BASE_DATE": "202309",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1054,
+   "SUM_PSON_NUM": 23251
+  },
+  {
+   "BASE_DATE": "202309",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 1115,
+   "SUM_PSON_NUM": 23251
+  },
+  {
+   "BASE_DATE": "202309",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1652,
+   "SUM_PSON_NUM": 23251
+  },
+  {
+   "BASE_DATE": "202309",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 1710,
+   "SUM_PSON_NUM": 23251
+  },
+  {
+   "BASE_DATE": "202309",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 3710,
+   "SUM_PSON_NUM": 23251
+  },
+  {
+   "BASE_DATE": "202309",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 14010,
+   "SUM_PSON_NUM": 23251
+  },
+  {
+   "BASE_DATE": "202310",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 828,
+   "SUM_PSON_NUM": 35258
+  },
+  {
+   "BASE_DATE": "202310",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 922,
+   "SUM_PSON_NUM": 35258
+  },
+  {
+   "BASE_DATE": "202310",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1685,
+   "SUM_PSON_NUM": 35258
+  },
+  {
+   "BASE_DATE": "202310",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 1542,
+   "SUM_PSON_NUM": 35258
+  },
+  {
+   "BASE_DATE": "202310",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 4412,
+   "SUM_PSON_NUM": 35258
+  },
+  {
+   "BASE_DATE": "202310",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 25869,
+   "SUM_PSON_NUM": 35258
+  },
+  {
+   "BASE_DATE": "202311",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 397,
+   "SUM_PSON_NUM": 27766
+  },
+  {
+   "BASE_DATE": "202311",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 1240,
+   "SUM_PSON_NUM": 27766
+  },
+  {
+   "BASE_DATE": "202311",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1709,
+   "SUM_PSON_NUM": 27766
+  },
+  {
+   "BASE_DATE": "202311",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 1755,
+   "SUM_PSON_NUM": 27766
+  },
+  {
+   "BASE_DATE": "202311",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 4248,
+   "SUM_PSON_NUM": 27766
+  },
+  {
+   "BASE_DATE": "202311",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 18417,
+   "SUM_PSON_NUM": 27766
+  },
+  {
+   "BASE_DATE": "202312",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 255,
+   "SUM_PSON_NUM": 8327
+  },
+  {
+   "BASE_DATE": "202312",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 511,
+   "SUM_PSON_NUM": 8327
+  },
+  {
+   "BASE_DATE": "202312",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1246,
+   "SUM_PSON_NUM": 8327
+  },
+  {
+   "BASE_DATE": "202312",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 1152,
+   "SUM_PSON_NUM": 8327
+  },
+  {
+   "BASE_DATE": "202312",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 1462,
+   "SUM_PSON_NUM": 8327
+  },
+  {
+   "BASE_DATE": "202312",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 3701,
+   "SUM_PSON_NUM": 8327
+  },
+  {
+   "BASE_DATE": "202401",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1484,
+   "SUM_PSON_NUM": 19587
+  },
+  {
+   "BASE_DATE": "202401",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 1071,
+   "SUM_PSON_NUM": 19587
+  },
+  {
+   "BASE_DATE": "202401",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 1919,
+   "SUM_PSON_NUM": 19587
+  },
+  {
+   "BASE_DATE": "202401",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 1561,
+   "SUM_PSON_NUM": 19587
+  },
+  {
+   "BASE_DATE": "202401",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 2813,
+   "SUM_PSON_NUM": 19587
+  },
+  {
+   "BASE_DATE": "202401",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 10739,
+   "SUM_PSON_NUM": 19587
+  },
+  {
+   "BASE_DATE": "202402",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 3451,
+   "SUM_PSON_NUM": 21138
+  },
+  {
+   "BASE_DATE": "202402",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 1142,
+   "SUM_PSON_NUM": 21138
+  },
+  {
+   "BASE_DATE": "202402",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 2896,
+   "SUM_PSON_NUM": 21138
+  },
+  {
+   "BASE_DATE": "202402",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 2394,
+   "SUM_PSON_NUM": 21138
+  },
+  {
+   "BASE_DATE": "202402",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 2469,
+   "SUM_PSON_NUM": 21138
+  },
+  {
+   "BASE_DATE": "202402",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 8786,
+   "SUM_PSON_NUM": 21138
+  },
+  {
+   "BASE_DATE": "202403",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1873,
+   "SUM_PSON_NUM": 81337
+  },
+  {
+   "BASE_DATE": "202403",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 2415,
+   "SUM_PSON_NUM": 81337
+  },
+  {
+   "BASE_DATE": "202403",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 3897,
+   "SUM_PSON_NUM": 81337
+  },
+  {
+   "BASE_DATE": "202403",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 3616,
+   "SUM_PSON_NUM": 81337
+  },
+  {
+   "BASE_DATE": "202403",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 11748,
+   "SUM_PSON_NUM": 81337
+  },
+  {
+   "BASE_DATE": "202403",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 57788,
+   "SUM_PSON_NUM": 81337
+  },
+  {
+   "BASE_DATE": "202404",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 4429,
+   "SUM_PSON_NUM": 111145
+  },
+  {
+   "BASE_DATE": "202404",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 3789,
+   "SUM_PSON_NUM": 111145
+  },
+  {
+   "BASE_DATE": "202404",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 8079,
+   "SUM_PSON_NUM": 111145
+  },
+  {
+   "BASE_DATE": "202404",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 8558,
+   "SUM_PSON_NUM": 111145
+  },
+  {
+   "BASE_DATE": "202404",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 18138,
+   "SUM_PSON_NUM": 111145
+  },
+  {
+   "BASE_DATE": "202404",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 68152,
+   "SUM_PSON_NUM": 111145
+  },
+  {
+   "BASE_DATE": "202405",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 4502,
+   "SUM_PSON_NUM": 97579
+  },
+  {
+   "BASE_DATE": "202405",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 3619,
+   "SUM_PSON_NUM": 97579
+  },
+  {
+   "BASE_DATE": "202405",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 7489,
+   "SUM_PSON_NUM": 97579
+  },
+  {
+   "BASE_DATE": "202405",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 7134,
+   "SUM_PSON_NUM": 97579
+  },
+  {
+   "BASE_DATE": "202405",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 14276,
+   "SUM_PSON_NUM": 97579
+  },
+  {
+   "BASE_DATE": "202405",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 60559,
+   "SUM_PSON_NUM": 97579
+  },
+  {
+   "BASE_DATE": "202406",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 6333,
+   "SUM_PSON_NUM": 85213
+  },
+  {
+   "BASE_DATE": "202406",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 5266,
+   "SUM_PSON_NUM": 85213
+  },
+  {
+   "BASE_DATE": "202406",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 8403,
+   "SUM_PSON_NUM": 85213
+  },
+  {
+   "BASE_DATE": "202406",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 8816,
+   "SUM_PSON_NUM": 85213
+  },
+  {
+   "BASE_DATE": "202406",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 15735,
+   "SUM_PSON_NUM": 85213
+  },
+  {
+   "BASE_DATE": "202406",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 40660,
+   "SUM_PSON_NUM": 85213
+  },
+  {
+   "BASE_DATE": "202407",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 12065,
+   "SUM_PSON_NUM": 55496
+  },
+  {
+   "BASE_DATE": "202407",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 2972,
+   "SUM_PSON_NUM": 55496
+  },
+  {
+   "BASE_DATE": "202407",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 5656,
+   "SUM_PSON_NUM": 55496
+  },
+  {
+   "BASE_DATE": "202407",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 7806,
+   "SUM_PSON_NUM": 55496
+  },
+  {
+   "BASE_DATE": "202407",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 7654,
+   "SUM_PSON_NUM": 55496
+  },
+  {
+   "BASE_DATE": "202407",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 19343,
+   "SUM_PSON_NUM": 55496
+  },
+  {
+   "BASE_DATE": "202408",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 16640,
+   "SUM_PSON_NUM": 74118
+  },
+  {
+   "BASE_DATE": "202408",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 3602,
+   "SUM_PSON_NUM": 74118
+  },
+  {
+   "BASE_DATE": "202408",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 8557,
+   "SUM_PSON_NUM": 74118
+  },
+  {
+   "BASE_DATE": "202408",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 9814,
+   "SUM_PSON_NUM": 74118
+  },
+  {
+   "BASE_DATE": "202408",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 9852,
+   "SUM_PSON_NUM": 74118
+  },
+  {
+   "BASE_DATE": "202408",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 25653,
+   "SUM_PSON_NUM": 74118
+  },
+  {
+   "BASE_DATE": "202409",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 2476,
+   "SUM_PSON_NUM": 69192
+  },
+  {
+   "BASE_DATE": "202409",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 2988,
+   "SUM_PSON_NUM": 69192
+  },
+  {
+   "BASE_DATE": "202409",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 5128,
+   "SUM_PSON_NUM": 69192
+  },
+  {
+   "BASE_DATE": "202409",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 5045,
+   "SUM_PSON_NUM": 69192
+  },
+  {
+   "BASE_DATE": "202409",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 11488,
+   "SUM_PSON_NUM": 69192
+  },
+  {
+   "BASE_DATE": "202409",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 42067,
+   "SUM_PSON_NUM": 69192
+  },
+  {
+   "BASE_DATE": "202410",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 3103,
+   "SUM_PSON_NUM": 72440
+  },
+  {
+   "BASE_DATE": "202410",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 3844,
+   "SUM_PSON_NUM": 72440
+  },
+  {
+   "BASE_DATE": "202410",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 6914,
+   "SUM_PSON_NUM": 72440
+  },
+  {
+   "BASE_DATE": "202410",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 6165,
+   "SUM_PSON_NUM": 72440
+  },
+  {
+   "BASE_DATE": "202410",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 11924,
+   "SUM_PSON_NUM": 72440
+  },
+  {
+   "BASE_DATE": "202410",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 40490,
+   "SUM_PSON_NUM": 72440
+  },
+  {
+   "BASE_DATE": "202411",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1319,
+   "SUM_PSON_NUM": 43615
+  },
+  {
+   "BASE_DATE": "202411",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 1600,
+   "SUM_PSON_NUM": 43615
+  },
+  {
+   "BASE_DATE": "202411",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 2927,
+   "SUM_PSON_NUM": 43615
+  },
+  {
+   "BASE_DATE": "202411",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 3243,
+   "SUM_PSON_NUM": 43615
+  },
+  {
+   "BASE_DATE": "202411",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 6730,
+   "SUM_PSON_NUM": 43615
+  },
+  {
+   "BASE_DATE": "202411",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 27796,
+   "SUM_PSON_NUM": 43615
+  },
+  {
+   "BASE_DATE": "202412",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1048,
+   "SUM_PSON_NUM": 26076
+  },
+  {
+   "BASE_DATE": "202412",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 1395,
+   "SUM_PSON_NUM": 26076
+  },
+  {
+   "BASE_DATE": "202412",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 2511,
+   "SUM_PSON_NUM": 26076
+  },
+  {
+   "BASE_DATE": "202412",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 2736,
+   "SUM_PSON_NUM": 26076
+  },
+  {
+   "BASE_DATE": "202412",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 4475,
+   "SUM_PSON_NUM": 26076
+  },
+  {
+   "BASE_DATE": "202412",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 13911,
+   "SUM_PSON_NUM": 26076
+  },
+  {
+   "BASE_DATE": "202501",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 7048,
+   "SUM_PSON_NUM": 36122
+  },
+  {
+   "BASE_DATE": "202501",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 3294,
+   "SUM_PSON_NUM": 36122
+  },
+  {
+   "BASE_DATE": "202501",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 6418,
+   "SUM_PSON_NUM": 36122
+  },
+  {
+   "BASE_DATE": "202501",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 5138,
+   "SUM_PSON_NUM": 36122
+  },
+  {
+   "BASE_DATE": "202501",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 3822,
+   "SUM_PSON_NUM": 36122
+  },
+  {
+   "BASE_DATE": "202501",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 10402,
+   "SUM_PSON_NUM": 36122
+  },
+  {
+   "BASE_DATE": "202502",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 4484,
+   "SUM_PSON_NUM": 42298
+  },
+  {
+   "BASE_DATE": "202502",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 2777,
+   "SUM_PSON_NUM": 42298
+  },
+  {
+   "BASE_DATE": "202502",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 4881,
+   "SUM_PSON_NUM": 42298
+  },
+  {
+   "BASE_DATE": "202502",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 4822,
+   "SUM_PSON_NUM": 42298
+  },
+  {
+   "BASE_DATE": "202502",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 6244,
+   "SUM_PSON_NUM": 42298
+  },
+  {
+   "BASE_DATE": "202502",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 19090,
+   "SUM_PSON_NUM": 42298
+  },
+  {
+   "BASE_DATE": "202503",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 2382,
+   "SUM_PSON_NUM": 90279
+  },
+  {
+   "BASE_DATE": "202503",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 3532,
+   "SUM_PSON_NUM": 90279
+  },
+  {
+   "BASE_DATE": "202503",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 6137,
+   "SUM_PSON_NUM": 90279
+  },
+  {
+   "BASE_DATE": "202503",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 6184,
+   "SUM_PSON_NUM": 90279
+  },
+  {
+   "BASE_DATE": "202503",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 14021,
+   "SUM_PSON_NUM": 90279
+  },
+  {
+   "BASE_DATE": "202503",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 58023,
+   "SUM_PSON_NUM": 90279
+  },
+  {
+   "BASE_DATE": "202504",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 3727,
+   "SUM_PSON_NUM": 117423
+  },
+  {
+   "BASE_DATE": "202504",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 3651,
+   "SUM_PSON_NUM": 117423
+  },
+  {
+   "BASE_DATE": "202504",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 6985,
+   "SUM_PSON_NUM": 117423
+  },
+  {
+   "BASE_DATE": "202504",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 7854,
+   "SUM_PSON_NUM": 117423
+  },
+  {
+   "BASE_DATE": "202504",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 17673,
+   "SUM_PSON_NUM": 117423
+  },
+  {
+   "BASE_DATE": "202504",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 77533,
+   "SUM_PSON_NUM": 117423
+  },
+  {
+   "BASE_DATE": "202505",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 6132,
+   "SUM_PSON_NUM": 110660
+  },
+  {
+   "BASE_DATE": "202505",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 6283,
+   "SUM_PSON_NUM": 110660
+  },
+  {
+   "BASE_DATE": "202505",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 10305,
+   "SUM_PSON_NUM": 110660
+  },
+  {
+   "BASE_DATE": "202505",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 8976,
+   "SUM_PSON_NUM": 110660
+  },
+  {
+   "BASE_DATE": "202505",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 16199,
+   "SUM_PSON_NUM": 110660
+  },
+  {
+   "BASE_DATE": "202505",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 62765,
+   "SUM_PSON_NUM": 110660
+  },
+  {
+   "BASE_DATE": "202506",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 8110,
+   "SUM_PSON_NUM": 105898
+  },
+  {
+   "BASE_DATE": "202506",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 5869,
+   "SUM_PSON_NUM": 105898
+  },
+  {
+   "BASE_DATE": "202506",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 8162,
+   "SUM_PSON_NUM": 105898
+  },
+  {
+   "BASE_DATE": "202506",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 9444,
+   "SUM_PSON_NUM": 105898
+  },
+  {
+   "BASE_DATE": "202506",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 16514,
+   "SUM_PSON_NUM": 105898
+  },
+  {
+   "BASE_DATE": "202506",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 57799,
+   "SUM_PSON_NUM": 105898
+  },
+  {
+   "BASE_DATE": "202507",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 26160,
+   "SUM_PSON_NUM": 105065
+  },
+  {
+   "BASE_DATE": "202507",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 6353,
+   "SUM_PSON_NUM": 105065
+  },
+  {
+   "BASE_DATE": "202507",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 12461,
+   "SUM_PSON_NUM": 105065
+  },
+  {
+   "BASE_DATE": "202507",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 15316,
+   "SUM_PSON_NUM": 105065
+  },
+  {
+   "BASE_DATE": "202507",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 13301,
+   "SUM_PSON_NUM": 105065
+  },
+  {
+   "BASE_DATE": "202507",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 31474,
+   "SUM_PSON_NUM": 105065
+  },
+  {
+   "BASE_DATE": "202508",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 21662,
+   "SUM_PSON_NUM": 94406
+  },
+  {
+   "BASE_DATE": "202508",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 6559,
+   "SUM_PSON_NUM": 94406
+  },
+  {
+   "BASE_DATE": "202508",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 12310,
+   "SUM_PSON_NUM": 94406
+  },
+  {
+   "BASE_DATE": "202508",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 13195,
+   "SUM_PSON_NUM": 94406
+  },
+  {
+   "BASE_DATE": "202508",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 12755,
+   "SUM_PSON_NUM": 94406
+  },
+  {
+   "BASE_DATE": "202508",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 27925,
+   "SUM_PSON_NUM": 94406
+  },
+  {
+   "BASE_DATE": "202509",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 3974,
+   "SUM_PSON_NUM": 87214
+  },
+  {
+   "BASE_DATE": "202509",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 5520,
+   "SUM_PSON_NUM": 87214
+  },
+  {
+   "BASE_DATE": "202509",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 8237,
+   "SUM_PSON_NUM": 87214
+  },
+  {
+   "BASE_DATE": "202509",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 8405,
+   "SUM_PSON_NUM": 87214
+  },
+  {
+   "BASE_DATE": "202509",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 15658,
+   "SUM_PSON_NUM": 87214
+  },
+  {
+   "BASE_DATE": "202509",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 45420,
+   "SUM_PSON_NUM": 87214
+  },
+  {
+   "BASE_DATE": "202510",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 3943,
+   "SUM_PSON_NUM": 90858
+  },
+  {
+   "BASE_DATE": "202510",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 4848,
+   "SUM_PSON_NUM": 90858
+  },
+  {
+   "BASE_DATE": "202510",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 7372,
+   "SUM_PSON_NUM": 90858
+  },
+  {
+   "BASE_DATE": "202510",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 7471,
+   "SUM_PSON_NUM": 90858
+  },
+  {
+   "BASE_DATE": "202510",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 14051,
+   "SUM_PSON_NUM": 90858
+  },
+  {
+   "BASE_DATE": "202510",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 53173,
+   "SUM_PSON_NUM": 90858
+  },
+  {
+   "BASE_DATE": "202511",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 2427,
+   "SUM_PSON_NUM": 71870
+  },
+  {
+   "BASE_DATE": "202511",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 4292,
+   "SUM_PSON_NUM": 71870
+  },
+  {
+   "BASE_DATE": "202511",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 6497,
+   "SUM_PSON_NUM": 71870
+  },
+  {
+   "BASE_DATE": "202511",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 6171,
+   "SUM_PSON_NUM": 71870
+  },
+  {
+   "BASE_DATE": "202511",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 11958,
+   "SUM_PSON_NUM": 71870
+  },
+  {
+   "BASE_DATE": "202511",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 40525,
+   "SUM_PSON_NUM": 71870
+  },
+  {
+   "BASE_DATE": "202512",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 1750,
+   "SUM_PSON_NUM": 27393
+  },
+  {
+   "BASE_DATE": "202512",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 2296,
+   "SUM_PSON_NUM": 27393
+  },
+  {
+   "BASE_DATE": "202512",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 2992,
+   "SUM_PSON_NUM": 27393
+  },
+  {
+   "BASE_DATE": "202512",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 2791,
+   "SUM_PSON_NUM": 27393
+  },
+  {
+   "BASE_DATE": "202512",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 3695,
+   "SUM_PSON_NUM": 27393
+  },
+  {
+   "BASE_DATE": "202512",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 13869,
+   "SUM_PSON_NUM": 27393
+  },
+  {
+   "BASE_DATE": "202601",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 5012,
+   "SUM_PSON_NUM": 42892
+  },
+  {
+   "BASE_DATE": "202601",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 3775,
+   "SUM_PSON_NUM": 42892
+  },
+  {
+   "BASE_DATE": "202601",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 5818,
+   "SUM_PSON_NUM": 42892
+  },
+  {
+   "BASE_DATE": "202601",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 5138,
+   "SUM_PSON_NUM": 42892
+  },
+  {
+   "BASE_DATE": "202601",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 5297,
+   "SUM_PSON_NUM": 42892
+  },
+  {
+   "BASE_DATE": "202601",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 17852,
+   "SUM_PSON_NUM": 42892
+  },
+  {
+   "BASE_DATE": "202602",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 19440,
+   "SUM_PSON_NUM": 90643
+  },
+  {
+   "BASE_DATE": "202602",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 6529,
+   "SUM_PSON_NUM": 90643
+  },
+  {
+   "BASE_DATE": "202602",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 15475,
+   "SUM_PSON_NUM": 90643
+  },
+  {
+   "BASE_DATE": "202602",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 12493,
+   "SUM_PSON_NUM": 90643
+  },
+  {
+   "BASE_DATE": "202602",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 8813,
+   "SUM_PSON_NUM": 90643
+  },
+  {
+   "BASE_DATE": "202602",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 27893,
+   "SUM_PSON_NUM": 90643
+  },
+  {
+   "BASE_DATE": "202603",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 4644,
+   "SUM_PSON_NUM": 107593
+  },
+  {
+   "BASE_DATE": "202603",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 6020,
+   "SUM_PSON_NUM": 107593
+  },
+  {
+   "BASE_DATE": "202603",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 9242,
+   "SUM_PSON_NUM": 107593
+  },
+  {
+   "BASE_DATE": "202603",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 7623,
+   "SUM_PSON_NUM": 107593
+  },
+  {
+   "BASE_DATE": "202603",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 15600,
+   "SUM_PSON_NUM": 107593
+  },
+  {
+   "BASE_DATE": "202603",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 64464,
+   "SUM_PSON_NUM": 107593
+  },
+  {
+   "BASE_DATE": "202604",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 8268,
+   "SUM_PSON_NUM": 126009
+  },
+  {
+   "BASE_DATE": "202604",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 8205,
+   "SUM_PSON_NUM": 126009
+  },
+  {
+   "BASE_DATE": "202604",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 12481,
+   "SUM_PSON_NUM": 126009
+  },
+  {
+   "BASE_DATE": "202604",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 9688,
+   "SUM_PSON_NUM": 126009
+  },
+  {
+   "BASE_DATE": "202604",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 17800,
+   "SUM_PSON_NUM": 126009
+  },
+  {
+   "BASE_DATE": "202604",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 69567,
+   "SUM_PSON_NUM": 126009
+  },
+  {
+   "BASE_DATE": "202605",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 13107,
+   "SUM_PSON_NUM": 171549
+  },
+  {
+   "BASE_DATE": "202605",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 15505,
+   "SUM_PSON_NUM": 171549
+  },
+  {
+   "BASE_DATE": "202605",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 21227,
+   "SUM_PSON_NUM": 171549
+  },
+  {
+   "BASE_DATE": "202605",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 15295,
+   "SUM_PSON_NUM": 171549
+  },
+  {
+   "BASE_DATE": "202605",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 24428,
+   "SUM_PSON_NUM": 171549
+  },
+  {
+   "BASE_DATE": "202605",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 81987,
+   "SUM_PSON_NUM": 171549
+  },
+  {
+   "BASE_DATE": "202606",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 17678,
+   "SUM_PSON_NUM": 152476
+  },
+  {
+   "BASE_DATE": "202606",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 14937,
+   "SUM_PSON_NUM": 152476
+  },
+  {
+   "BASE_DATE": "202606",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 20164,
+   "SUM_PSON_NUM": 152476
+  },
+  {
+   "BASE_DATE": "202606",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 15511,
+   "SUM_PSON_NUM": 152476
+  },
+  {
+   "BASE_DATE": "202606",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 21873,
+   "SUM_PSON_NUM": 152476
+  },
+  {
+   "BASE_DATE": "202606",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 62313,
+   "SUM_PSON_NUM": 152476
+  },
+  {
+   "BASE_DATE": "202607",
+   "AGEG_DIV_CD": "2001",
+   "AGEG_DIV_NM": "0~20세",
+   "PSON_NUM": 43949,
+   "SUM_PSON_NUM": 157884
+  },
+  {
+   "BASE_DATE": "202607",
+   "AGEG_DIV_CD": "2002",
+   "AGEG_DIV_NM": "21~30세",
+   "PSON_NUM": 9753,
+   "SUM_PSON_NUM": 157884
+  },
+  {
+   "BASE_DATE": "202607",
+   "AGEG_DIV_CD": "2003",
+   "AGEG_DIV_NM": "31~40세",
+   "PSON_NUM": 22400,
+   "SUM_PSON_NUM": 157884
+  },
+  {
+   "BASE_DATE": "202607",
+   "AGEG_DIV_CD": "2004",
+   "AGEG_DIV_NM": "41~50세",
+   "PSON_NUM": 22869,
+   "SUM_PSON_NUM": 157884
+  },
+  {
+   "BASE_DATE": "202607",
+   "AGEG_DIV_CD": "2005",
+   "AGEG_DIV_NM": "51~60세",
+   "PSON_NUM": 16836,
+   "SUM_PSON_NUM": 157884
+  },
+  {
+   "BASE_DATE": "202607",
+   "AGEG_DIV_CD": "2006",
+   "AGEG_DIV_NM": "61세 이상",
+   "PSON_NUM": 42077,
+   "SUM_PSON_NUM": 157884
+  }
+ ]
+}

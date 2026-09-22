@@ -1,0 +1,994 @@
+{
+ "list": [
+  {
+   "BASE_DATE": "1995",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -282.4,
+   "PREYR_GTOT": -251.4
+  },
+  {
+   "BASE_DATE": "1995",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 5060.2,
+   "PREYR_GTOT": 3316.5
+  },
+  {
+   "BASE_DATE": "1995",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1348.2,
+   "PREYR_GTOT": 810.3
+  },
+  {
+   "BASE_DATE": "1995",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 5342.6,
+   "PREYR_GTOT": 3567.9
+  },
+  {
+   "BASE_DATE": "1995",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1399.0,
+   "PREYR_GTOT": 1131.1
+  },
+  {
+   "BASE_DATE": "1996",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -1498.9,
+   "PREYR_GTOT": -282.4
+  },
+  {
+   "BASE_DATE": "1996",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 4855.4,
+   "PREYR_GTOT": 5060.2
+  },
+  {
+   "BASE_DATE": "1996",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1318.0,
+   "PREYR_GTOT": 1348.2
+  },
+  {
+   "BASE_DATE": "1996",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 6354.3,
+   "PREYR_GTOT": 5342.6
+  },
+  {
+   "BASE_DATE": "1996",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1366.7,
+   "PREYR_GTOT": 1399.0
+  },
+  {
+   "BASE_DATE": "1997",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -1119.6,
+   "PREYR_GTOT": -1498.9
+  },
+  {
+   "BASE_DATE": "1997",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 4710.2,
+   "PREYR_GTOT": 4855.4
+  },
+  {
+   "BASE_DATE": "1997",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1205.2,
+   "PREYR_GTOT": 1318.0
+  },
+  {
+   "BASE_DATE": "1997",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 5829.8,
+   "PREYR_GTOT": 6354.3
+  },
+  {
+   "BASE_DATE": "1997",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1283.5,
+   "PREYR_GTOT": 1366.7
+  },
+  {
+   "BASE_DATE": "1998",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": 4225.1,
+   "PREYR_GTOT": -1119.6
+  },
+  {
+   "BASE_DATE": "1998",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 6865.4,
+   "PREYR_GTOT": 4710.2
+  },
+  {
+   "BASE_DATE": "1998",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1615.3,
+   "PREYR_GTOT": 1205.2
+  },
+  {
+   "BASE_DATE": "1998",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 2640.3,
+   "PREYR_GTOT": 5829.8
+  },
+  {
+   "BASE_DATE": "1998",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 860.9,
+   "PREYR_GTOT": 1283.5
+  },
+  {
+   "BASE_DATE": "1999",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": 2826.5,
+   "PREYR_GTOT": 4225.1
+  },
+  {
+   "BASE_DATE": "1999",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 6801.9,
+   "PREYR_GTOT": 6865.4
+  },
+  {
+   "BASE_DATE": "1999",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1459.7,
+   "PREYR_GTOT": 1615.3
+  },
+  {
+   "BASE_DATE": "1999",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 3975.4,
+   "PREYR_GTOT": 2640.3
+  },
+  {
+   "BASE_DATE": "1999",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 915.7,
+   "PREYR_GTOT": 860.9
+  },
+  {
+   "BASE_DATE": "2000",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": 637.3,
+   "PREYR_GTOT": 2826.5
+  },
+  {
+   "BASE_DATE": "2000",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 6811.3,
+   "PREYR_GTOT": 6801.9
+  },
+  {
+   "BASE_DATE": "2000",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1279.9,
+   "PREYR_GTOT": 1459.7
+  },
+  {
+   "BASE_DATE": "2000",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 6174.0,
+   "PREYR_GTOT": 3975.4
+  },
+  {
+   "BASE_DATE": "2000",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1120.9,
+   "PREYR_GTOT": 915.7
+  },
+  {
+   "BASE_DATE": "2001",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -176.3,
+   "PREYR_GTOT": 637.3
+  },
+  {
+   "BASE_DATE": "2001",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 6370.7,
+   "PREYR_GTOT": 6811.3
+  },
+  {
+   "BASE_DATE": "2001",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1237.7,
+   "PREYR_GTOT": 1279.9
+  },
+  {
+   "BASE_DATE": "2001",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 6547.0,
+   "PREYR_GTOT": 6174.0
+  },
+  {
+   "BASE_DATE": "2001",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1076.0,
+   "PREYR_GTOT": 1120.9
+  },
+  {
+   "BASE_DATE": "2002",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -3122.9,
+   "PREYR_GTOT": -176.3
+  },
+  {
+   "BASE_DATE": "2002",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 5915.0,
+   "PREYR_GTOT": 6370.7
+  },
+  {
+   "BASE_DATE": "2002",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1106.1,
+   "PREYR_GTOT": 1237.7
+  },
+  {
+   "BASE_DATE": "2002",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 9037.9,
+   "PREYR_GTOT": 6547.0
+  },
+  {
+   "BASE_DATE": "2002",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1268.8,
+   "PREYR_GTOT": 1076.0
+  },
+  {
+   "BASE_DATE": "2003",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -2908.2,
+   "PREYR_GTOT": -3122.9
+  },
+  {
+   "BASE_DATE": "2003",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 5339.9,
+   "PREYR_GTOT": 5915.0
+  },
+  {
+   "BASE_DATE": "2003",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1123.5,
+   "PREYR_GTOT": 1106.1
+  },
+  {
+   "BASE_DATE": "2003",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 8248.1,
+   "PREYR_GTOT": 9037.9
+  },
+  {
+   "BASE_DATE": "2003",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1164.0,
+   "PREYR_GTOT": 1268.8
+  },
+  {
+   "BASE_DATE": "2004",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -3807.1,
+   "PREYR_GTOT": -2908.2
+  },
+  {
+   "BASE_DATE": "2004",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 6049.3,
+   "PREYR_GTOT": 5339.9
+  },
+  {
+   "BASE_DATE": "2004",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1039.7,
+   "PREYR_GTOT": 1123.5
+  },
+  {
+   "BASE_DATE": "2004",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 9856.4,
+   "PREYR_GTOT": 8248.1
+  },
+  {
+   "BASE_DATE": "2004",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1116.8,
+   "PREYR_GTOT": 1164.0
+  },
+  {
+   "BASE_DATE": "2005",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -6239.9,
+   "PREYR_GTOT": -3807.1
+  },
+  {
+   "BASE_DATE": "2005",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 5785.1,
+   "PREYR_GTOT": 6049.3
+  },
+  {
+   "BASE_DATE": "2005",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 960.5,
+   "PREYR_GTOT": 1039.7
+  },
+  {
+   "BASE_DATE": "2005",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 12025.0,
+   "PREYR_GTOT": 9856.4
+  },
+  {
+   "BASE_DATE": "2005",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1192.9,
+   "PREYR_GTOT": 1116.8
+  },
+  {
+   "BASE_DATE": "2006",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -8605.5,
+   "PREYR_GTOT": -6239.9
+  },
+  {
+   "BASE_DATE": "2006",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 5689.0,
+   "PREYR_GTOT": 5785.1
+  },
+  {
+   "BASE_DATE": "2006",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 924.3,
+   "PREYR_GTOT": 960.5
+  },
+  {
+   "BASE_DATE": "2006",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 14294.5,
+   "PREYR_GTOT": 12025.0
+  },
+  {
+   "BASE_DATE": "2006",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1231.2,
+   "PREYR_GTOT": 1192.9
+  },
+  {
+   "BASE_DATE": "2007",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -10873.9,
+   "PREYR_GTOT": -8605.5
+  },
+  {
+   "BASE_DATE": "2007",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 6057.6,
+   "PREYR_GTOT": 5689.0
+  },
+  {
+   "BASE_DATE": "2007",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 939.4,
+   "PREYR_GTOT": 924.3
+  },
+  {
+   "BASE_DATE": "2007",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 16931.5,
+   "PREYR_GTOT": 14294.5
+  },
+  {
+   "BASE_DATE": "2007",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1270.7,
+   "PREYR_GTOT": 1231.2
+  },
+  {
+   "BASE_DATE": "2008",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -4891.2,
+   "PREYR_GTOT": -10873.9
+  },
+  {
+   "BASE_DATE": "2008",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 9680.5,
+   "PREYR_GTOT": 6057.6
+  },
+  {
+   "BASE_DATE": "2008",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1404.8,
+   "PREYR_GTOT": 939.4
+  },
+  {
+   "BASE_DATE": "2008",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 14571.7,
+   "PREYR_GTOT": 16931.5
+  },
+  {
+   "BASE_DATE": "2008",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1214.7,
+   "PREYR_GTOT": 1270.7
+  },
+  {
+   "BASE_DATE": "2009",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -1298.7,
+   "PREYR_GTOT": -4891.2
+  },
+  {
+   "BASE_DATE": "2009",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 9737.0,
+   "PREYR_GTOT": 9680.5
+  },
+  {
+   "BASE_DATE": "2009",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1245.5,
+   "PREYR_GTOT": 1404.8
+  },
+  {
+   "BASE_DATE": "2009",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 11035.7,
+   "PREYR_GTOT": 14571.7
+  },
+  {
+   "BASE_DATE": "2009",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1162.4,
+   "PREYR_GTOT": 1214.7
+  },
+  {
+   "BASE_DATE": "2010",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -4052.3,
+   "PREYR_GTOT": -1298.7
+  },
+  {
+   "BASE_DATE": "2010",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 10225.4,
+   "PREYR_GTOT": 9737.0
+  },
+  {
+   "BASE_DATE": "2010",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1162.3,
+   "PREYR_GTOT": 1245.5
+  },
+  {
+   "BASE_DATE": "2010",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 14277.7,
+   "PREYR_GTOT": 11035.7
+  },
+  {
+   "BASE_DATE": "2010",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1143.3,
+   "PREYR_GTOT": 1162.4
+  },
+  {
+   "BASE_DATE": "2011",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -3296.9,
+   "PREYR_GTOT": -4052.3
+  },
+  {
+   "BASE_DATE": "2011",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 12233.9,
+   "PREYR_GTOT": 10225.4
+  },
+  {
+   "BASE_DATE": "2011",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1249.0,
+   "PREYR_GTOT": 1162.3
+  },
+  {
+   "BASE_DATE": "2011",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 15530.8,
+   "PREYR_GTOT": 14277.7
+  },
+  {
+   "BASE_DATE": "2011",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1223.5,
+   "PREYR_GTOT": 1143.3
+  },
+  {
+   "BASE_DATE": "2012",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -3293.4,
+   "PREYR_GTOT": -3296.9
+  },
+  {
+   "BASE_DATE": "2012",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 13201.1,
+   "PREYR_GTOT": 12233.9
+  },
+  {
+   "BASE_DATE": "2012",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1185.0,
+   "PREYR_GTOT": 1249.0
+  },
+  {
+   "BASE_DATE": "2012",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 16494.5,
+   "PREYR_GTOT": 15530.8
+  },
+  {
+   "BASE_DATE": "2012",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1200.7,
+   "PREYR_GTOT": 1223.5
+  },
+  {
+   "BASE_DATE": "2013",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -3052.3,
+   "PREYR_GTOT": -3293.4
+  },
+  {
+   "BASE_DATE": "2013",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 14288.4,
+   "PREYR_GTOT": 13201.1
+  },
+  {
+   "BASE_DATE": "2013",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1173.5,
+   "PREYR_GTOT": 1185.0
+  },
+  {
+   "BASE_DATE": "2013",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 17340.7,
+   "PREYR_GTOT": 16494.5
+  },
+  {
+   "BASE_DATE": "2013",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1168.0,
+   "PREYR_GTOT": 1200.7
+  },
+  {
+   "BASE_DATE": "2014",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -2134.0,
+   "PREYR_GTOT": -3052.3
+  },
+  {
+   "BASE_DATE": "2014",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 17335.9,
+   "PREYR_GTOT": 14288.4
+  },
+  {
+   "BASE_DATE": "2014",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1220.7,
+   "PREYR_GTOT": 1173.5
+  },
+  {
+   "BASE_DATE": "2014",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 19469.9,
+   "PREYR_GTOT": 17340.7
+  },
+  {
+   "BASE_DATE": "2014",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1210.8,
+   "PREYR_GTOT": 1168.0
+  },
+  {
+   "BASE_DATE": "2015",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -6852.2,
+   "PREYR_GTOT": -2134.0
+  },
+  {
+   "BASE_DATE": "2015",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 14675.8,
+   "PREYR_GTOT": 17335.9
+  },
+  {
+   "BASE_DATE": "2015",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1109.1,
+   "PREYR_GTOT": 1220.7
+  },
+  {
+   "BASE_DATE": "2015",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 21528.0,
+   "PREYR_GTOT": 19469.9
+  },
+  {
+   "BASE_DATE": "2015",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1114.8,
+   "PREYR_GTOT": 1210.8
+  },
+  {
+   "BASE_DATE": "2016",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -6934.7,
+   "PREYR_GTOT": -6852.2
+  },
+  {
+   "BASE_DATE": "2016",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 16753.9,
+   "PREYR_GTOT": 14675.8
+  },
+  {
+   "BASE_DATE": "2016",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 971.7,
+   "PREYR_GTOT": 1109.1
+  },
+  {
+   "BASE_DATE": "2016",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 23688.6,
+   "PREYR_GTOT": 21528.0
+  },
+  {
+   "BASE_DATE": "2016",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1058.3,
+   "PREYR_GTOT": 1114.8
+  },
+  {
+   "BASE_DATE": "2017",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -14695.9,
+   "PREYR_GTOT": -6934.7
+  },
+  {
+   "BASE_DATE": "2017",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 13263.9,
+   "PREYR_GTOT": 16753.9
+  },
+  {
+   "BASE_DATE": "2017",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 994.6,
+   "PREYR_GTOT": 971.7
+  },
+  {
+   "BASE_DATE": "2017",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 27959.8,
+   "PREYR_GTOT": 23688.6
+  },
+  {
+   "BASE_DATE": "2017",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1055.2,
+   "PREYR_GTOT": 1058.3
+  },
+  {
+   "BASE_DATE": "2018",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -13066.1,
+   "PREYR_GTOT": -14695.9
+  },
+  {
+   "BASE_DATE": "2018",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 18461.8,
+   "PREYR_GTOT": 13263.9
+  },
+  {
+   "BASE_DATE": "2018",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1203.0,
+   "PREYR_GTOT": 994.6
+  },
+  {
+   "BASE_DATE": "2018",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 31527.9,
+   "PREYR_GTOT": 27959.8
+  },
+  {
+   "BASE_DATE": "2018",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1098.7,
+   "PREYR_GTOT": 1055.2
+  },
+  {
+   "BASE_DATE": "2019",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -8515.6,
+   "PREYR_GTOT": -13066.1
+  },
+  {
+   "BASE_DATE": "2019",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 20744.9,
+   "PREYR_GTOT": 18461.8
+  },
+  {
+   "BASE_DATE": "2019",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1185.2,
+   "PREYR_GTOT": 1203.0
+  },
+  {
+   "BASE_DATE": "2019",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 29260.5,
+   "PREYR_GTOT": 31527.9
+  },
+  {
+   "BASE_DATE": "2019",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1019.0,
+   "PREYR_GTOT": 1098.7
+  },
+  {
+   "BASE_DATE": "2020",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -2561.1,
+   "PREYR_GTOT": -8515.6
+  },
+  {
+   "BASE_DATE": "2020",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 10984.0,
+   "PREYR_GTOT": 20744.9
+  },
+  {
+   "BASE_DATE": "2020",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 4360.3,
+   "PREYR_GTOT": 1185.2
+  },
+  {
+   "BASE_DATE": "2020",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 13545.1,
+   "PREYR_GTOT": 29260.5
+  },
+  {
+   "BASE_DATE": "2020",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 3167.7,
+   "PREYR_GTOT": 1019.0
+  },
+  {
+   "BASE_DATE": "2021",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -4079.5,
+   "PREYR_GTOT": -2561.1
+  },
+  {
+   "BASE_DATE": "2021",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 11335.1,
+   "PREYR_GTOT": 10984.0
+  },
+  {
+   "BASE_DATE": "2021",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 11721.9,
+   "PREYR_GTOT": 4360.3
+  },
+  {
+   "BASE_DATE": "2021",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 15414.6,
+   "PREYR_GTOT": 13545.1
+  },
+  {
+   "BASE_DATE": "2021",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 12608.7,
+   "PREYR_GTOT": 3167.7
+  },
+  {
+   "BASE_DATE": "2022",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -5731.4,
+   "PREYR_GTOT": -4079.5
+  },
+  {
+   "BASE_DATE": "2022",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 13021.5,
+   "PREYR_GTOT": 11335.1
+  },
+  {
+   "BASE_DATE": "2022",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 4071.7,
+   "PREYR_GTOT": 11721.9
+  },
+  {
+   "BASE_DATE": "2022",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 18752.9,
+   "PREYR_GTOT": 15414.6
+  },
+  {
+   "BASE_DATE": "2022",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 2861.3,
+   "PREYR_GTOT": 12608.7
+  },
+  {
+   "BASE_DATE": "2023",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -10382.6,
+   "PREYR_GTOT": -5731.4
+  },
+  {
+   "BASE_DATE": "2023",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 16214.2,
+   "PREYR_GTOT": 13021.5
+  },
+  {
+   "BASE_DATE": "2023",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1469.8,
+   "PREYR_GTOT": 4071.7
+  },
+  {
+   "BASE_DATE": "2023",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 26596.8,
+   "PREYR_GTOT": 18752.9
+  },
+  {
+   "BASE_DATE": "2023",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1170.8,
+   "PREYR_GTOT": 2861.3
+  },
+  {
+   "BASE_DATE": "2024",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -10207.2,
+   "PREYR_GTOT": -10382.6
+  },
+  {
+   "BASE_DATE": "2024",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 19131.3,
+   "PREYR_GTOT": 16214.2
+  },
+  {
+   "BASE_DATE": "2024",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1168.7,
+   "PREYR_GTOT": 1469.8
+  },
+  {
+   "BASE_DATE": "2024",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 29338.5,
+   "PREYR_GTOT": 26596.8
+  },
+  {
+   "BASE_DATE": "2024",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1022.7,
+   "PREYR_GTOT": 1170.8
+  },
+  {
+   "BASE_DATE": "2025",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -10760.4,
+   "PREYR_GTOT": -10207.2
+  },
+  {
+   "BASE_DATE": "2025",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 21887.7,
+   "PREYR_GTOT": 19131.3
+  },
+  {
+   "BASE_DATE": "2025",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1155.8,
+   "PREYR_GTOT": 1168.7
+  },
+  {
+   "BASE_DATE": "2025",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 32648.1,
+   "PREYR_GTOT": 29338.5
+  },
+  {
+   "BASE_DATE": "2025",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1104.8,
+   "PREYR_GTOT": 1022.7
+  },
+  {
+   "BASE_DATE": "2026",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -1312.2,
+   "PREYR_GTOT": -6082.4
+  },
+  {
+   "BASE_DATE": "2026",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 16230.5,
+   "PREYR_GTOT": 12031.2
+  },
+  {
+   "BASE_DATE": "2026",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1267.7,
+   "PREYR_GTOT": 1139.4
+  },
+  {
+   "BASE_DATE": "2026",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 17542.7,
+   "PREYR_GTOT": 18113.6
+  },
+  {
+   "BASE_DATE": "2026",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1009.3,
+   "PREYR_GTOT": 1065.6
+  },
+  {
+   "BASE_DATE": "총계",
+   "ITEM_DIV_NM": "관광수지 전체(백만달러)",
+   "INTL_BALC_AMT": -148063.5,
+   "PREYR_GTOT": -142324.7
+  },
+  {
+   "BASE_DATE": "총계",
+   "ITEM_DIV_NM": "관광수입 전체(백만달러)",
+   "INTL_BALC_AMT": 355717.8,
+   "PREYR_GTOT": 332947.3
+  },
+  {
+   "BASE_DATE": "총계",
+   "ITEM_DIV_NM": "관광수입 1인당(달러)",
+   "INTL_BALC_AMT": 1276.9,
+   "PREYR_GTOT": 1273.3
+  },
+  {
+   "BASE_DATE": "총계",
+   "ITEM_DIV_NM": "관광지출 전체(백만달러)",
+   "INTL_BALC_AMT": 503781.3,
+   "PREYR_GTOT": 475272.0
+  },
+  {
+   "BASE_DATE": "총계",
+   "ITEM_DIV_NM": "관광지출 1인당(달러)",
+   "INTL_BALC_AMT": 1207.0,
+   "PREYR_GTOT": 1216.8
+  }
+ ]
+}

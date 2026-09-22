@@ -1,0 +1,260 @@
+<title>KTX에서 서원까지</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#F3F5F6; --surface:#FFFFFF; --ink:#15212C; --ink-2:#4B5966; --ink-3:#7A8894;
+  --rule:#D3DAE0; --grid:#E3E8EC; --teal:#0B7285; --teal-soft:#D8ECEF;
+  --amber:#B45A00; --amber-soft:#F5E4D2; --m1:#8E9BA7; --m2:#B3BDC6;
+  --sans:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E151C; --surface:#141E27; --ink:#E3E9EE; --ink-2:#A3B0BB; --ink-3:#77858F;
+    --rule:#2A3642; --grid:#1F2A34; --teal:#4DB6C4; --teal-soft:#16343A;
+    --amber:#EE9E4A; --amber-soft:#3A2717; --m1:#6E7D89; --m2:#4B5864;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E151C; --surface:#141E27; --ink:#E3E9EE; --ink-2:#A3B0BB; --ink-3:#77858F;
+  --rule:#2A3642; --grid:#1F2A34; --teal:#4DB6C4; --teal-soft:#16343A;
+  --amber:#EE9E4A; --amber-soft:#3A2717; --m1:#6E7D89; --m2:#4B5864;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.72 var(--sans);word-break:keep-all;overflow-wrap:break-word}
+a{color:var(--teal);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.wrap{max-width:920px;margin:0 auto;padding:52px 26px 84px;display:flex;flex-direction:column;gap:52px}
+.eyebrow{font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+h1{font:700 clamp(32px,5.4vw,46px)/1.12 var(--sans);letter-spacing:-.02em;margin:10px 0 14px;text-wrap:balance}
+h2{font:700 22px/1.35 var(--sans);margin:0 0 6px;text-wrap:balance}
+h3{font:600 16.5px/1.45 var(--sans);margin:0}
+p{margin:0 0 10px}
+.deck{font-size:18px;line-height:1.6;color:var(--ink-2);margin:0;max-width:700px}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.hl-t{color:var(--teal);font-weight:600}.hl-a{color:var(--amber);font-weight:600}
+section{display:flex;flex-direction:column;gap:16px}
+.sec-no{font:600 12px/1.4 var(--mono);color:var(--teal);letter-spacing:.06em}
+.prose{max-width:720px}
+.thesis{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:20px 0;display:flex;flex-direction:column;gap:8px}
+.thesis .big{font:700 clamp(21px,3.2vw,27px)/1.4 var(--sans);text-wrap:balance}
+.thesis p{color:var(--ink-2);margin:0;max-width:720px}
+figure{margin:0;display:flex;flex-direction:column;gap:8px}
+.fig-title{font:600 14.5px/1.4 var(--sans)}
+figcaption{font-size:14px;line-height:1.55;color:var(--ink-2)}
+.chart{overflow-x:auto}.chart svg{display:block;width:100%;height:auto;min-width:560px}
+.source{font:400 11.5px/1.5 var(--mono);color:var(--ink-3)}
+.tick,.lab,.clab{font-family:var(--mono);fill:var(--ink-2)}.tick{font-size:11px;fill:var(--ink-3)}.lab{font-size:11.5px;fill:var(--ink)}.clab{font-size:12px;font-family:var(--sans);fill:var(--ink)}
+.grid{stroke:var(--grid)}
+.tbl-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--rule);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--grid)}
+thead th{font:500 11.5px/1.3 var(--mono);letter-spacing:.05em;color:var(--ink-3);border-bottom:1px solid var(--rule);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.k{font-weight:600;white-space:nowrap}
+td.n,th.n{font-family:var(--mono);white-space:nowrap;text-align:right}
+.status{display:inline-block;font:500 11.5px/1 var(--sans);padding:5px 8px;border-radius:3px;white-space:nowrap}
+.s-live{background:var(--teal-soft);color:var(--teal)}
+.s-gap{background:var(--amber-soft);color:var(--amber)}
+.plan{display:flex;flex-direction:column;gap:0;border:1px solid var(--rule);border-radius:6px;background:var(--surface);overflow:hidden}
+.plan article{display:grid;grid-template-columns:64px 1fr;gap:0;border-top:1px solid var(--rule)}
+.plan article:first-child{border-top:0}
+.plan .tag{font:600 18px/1 var(--mono);color:var(--teal);padding:20px 0 0 18px}
+.plan .body{padding:18px 20px 20px 0;display:flex;flex-direction:column;gap:10px}
+.plan .body>p{margin:0;color:var(--ink-2);font-size:15px}
+.meta{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--grid);border-radius:4px}
+.meta div{padding:8px 10px;border-left:1px solid var(--grid);display:flex;flex-direction:column;gap:2px;font-size:13.5px;line-height:1.45}
+.meta div:first-child{border-left:0}
+.meta small{font:500 10.5px/1.3 var(--mono);letter-spacing:.05em;color:var(--ink-3)}
+@media (max-width:720px){.meta{grid-template-columns:1fr 1fr}.meta div:nth-child(3){border-left:0}.meta div:nth-child(n+3){border-top:1px solid var(--grid)}.plan article{grid-template-columns:44px 1fr}}
+.note{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--amber);border-radius:0 6px 6px 0;padding:14px 18px;font-size:15px;display:flex;flex-direction:column;gap:6px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media (max-width:760px){.cols{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:16px 18px;display:flex;flex-direction:column;gap:6px}
+.card p{font-size:14.5px;color:var(--ink-2);margin:0}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:15px}
+footer{border-top:1px solid var(--rule);padding-top:18px;display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--ink-2)}
+footer ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:3px}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">왜 안동인가 · 후속 · 실행방안 설계</div>
+  <h1>KTX에서 서원까지</h1>
+  <p class="deck">수상작들이 실제로 한 방식(지자체형 실행 + 학생팀형 지수·도구)을 안동에 옮긴 실행방안. 새로 짓는 것은 없다. 이미 돌고 있는 제도 사이의 빈칸 하나를 메운다.</p>
+</header>
+
+<div class="thesis">
+  <div class="big">안동은 관광객을 부르는 제도는 이미 다 있다. <span class="hl-a">관광지까지 데려다줄 수단만 없다.</span></div>
+  <p>반값여행은 “지정 관광지 방문”을, 코레일 무료여행은 “하회마을 QR 인증”을 조건으로 건다. 그런데 KTX에서 내린 사람이 도산서원행 버스를 타려면 평균 한 시간 넘게 기다린다. 실행방안은 이 빈칸 하나에 집중한다.</p>
+</div>
+
+<section>
+  <div class="sec-no">1 · 수상작은 어떻게 실행했나</div>
+  <h2>두 개의 트랙, 우리는 둘 다 쓴다</h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>수상작</th><th>실행 방식</th><th>성과 표현</th><th>안동에 가져올 것</th></tr></thead>
+    <tbody>
+      <tr><td class="k">강진 반값여행 (2025 대상)</td><td>여행경비 50%를 지역화폐로 환급</td><td>참여자 소비 69억, 방문 +18%</td><td>안동 반값여행이 이미 9월 시작 → <strong>이동 수단을 붙인다</strong></td></tr>
+      <tr><td class="k">김포 5味로드 (2025 우수)</td><td>내비 검색·카드 데이터로 코스 설계 후 상점 참여</td><td>로컬 상권 직접소비 +10%</td><td>역세권–원도심 <strong>소비 코스</strong></td></tr>
+      <tr><td class="k">부산 NSI (2025 우수, 학생팀)</td><td>가중치 산식 지수 + 2축 매트릭스</td><td>“수요 높은데 안전 낮은 곳” 우선순위</td><td><strong>KTX 도착 전환지수</strong> + 중앙선 8개 도시 매트릭스</td></tr>
+      <tr><td class="k">옥천 관광주민증 (2023 대상)</td><td>디지털 관광주민증 혜택 설계</td><td>재방문·가맹점 이용</td><td>안동 관광주민증(도산서원 50%)을 <strong>이동 혜택과 묶는다</strong></td></tr>
+      <tr><td class="k">파주 통일동산 (2022 대상)</td><td>관광 데이터 → 교통·주차 행정으로 번역</td><td>정체·주차 개선</td><td>관광 데이터 → <strong>2차 교통 배차·호출 규칙</strong></td></tr>
+    </tbody>
+  </table></div>
+  <p class="source">팀 문서 「수상작분석_추가아이디어.md」 · 「수상작_문제발굴챕터_정의.md」 기반</p>
+</section>
+
+<section>
+  <div class="sec-no">2 · 이미 깔린 판</div>
+  <h2>안동에 지금 돌아가는 제도와 빈칸</h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>제도</th><th>내용</th><th>관광객에게 요구하는 것</th><th>상태</th></tr></thead>
+    <tbody>
+      <tr><td class="k">지역사랑 휴가지원 (반값여행)</td><td>숙박·식사·관광 경비 50% 안동사랑상품권 환급 (청년 70%, 최대 14만 원). 2026.09.14~11.30 신청</td><td>안동에서 지출 + 증빙</td><td><span class="status s-live">운영 중</span></td></tr>
+      <tr><td class="k">코레일 인구감소지역 여행</td><td>청량리↔안동 왕복 운임(55,400원) 환급 · 지역사랑 철도여행 50% 쿠폰</td><td><strong>하회마을 QR 인증</strong></td><td><span class="status s-live">운영 중</span></td></tr>
+      <tr><td class="k">디지털 관광주민증</td><td>도산서원 입장료 50% 등 제휴 할인</td><td>제휴처 방문</td><td><span class="status s-live">운영 중</span></td></tr>
+      <tr><td class="k">KTX 연계 시티투어</td><td>5종 코스, KTX 도착에 맞춰 11:30 출발 · 17:30 역 복귀, 숙박쿠폰 2만 원</td><td>당일 코스 참여</td><td><span class="status s-live">운영 중</span></td></tr>
+      <tr><td class="k">행복택시 (DRT)</td><td>호출 앱 · 기사 33명 · 10개 면 · 주 6일</td><td>—</td><td><span class="status s-gap">주민 전용</span></td></tr>
+      <tr><td class="k">역 → 관광지 대중교통</td><td>하회 210번 하루 13회(40~90분 간격) · 도산서원 급행3 하루 5회</td><td>—</td><td><span class="status s-gap">빈칸</span></td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose">인센티브는 사람을 하회마을과 도산서원으로 <strong>보내는데</strong>, 교통은 거기까지 <strong>데려다주지 못한다</strong>. 하회행 210번 이용객은 하루 216명(2019)에서 337명(2024)으로 56% 늘었다. 차 없이 가려는 수요는 이미 커지고 있다.</p>
+</section>
+
+<section>
+  <div class="sec-no">3 · 실측</div>
+  <h2>KTX에서 내려 도산서원행 버스를 얼마나 기다리나</h2>
+  <figure>
+    <div class="fig-title">부전발 KTX-이음 안동 도착 시각 × 도산서원 급행3 출발 시각 (역·터미널, 하루)</div>
+    <div class="chart" id="c-wait"></div>
+    <figcaption>KTX-이음 8회 도착 중 당일 도산서원에 갈 수 있는 열차는 <strong>6회</strong>, 평균 대기 <strong class="hl-a" id="w-mean">72분</strong>(최대 2시간 15분). 16:15 막차 이후 도착하는 2회는 당일 방문이 불가능하다. 버스 45분을 더하면 역에서 서원까지 평균 약 2시간이다. 부산에서 안동까지 KTX가 1시간 49분이니, <strong>역에서 서원까지가 기차보다 오래 걸린다.</strong></figcaption>
+    <div class="source">train.asamaru.net 부전→안동 시간표(2026.09) · tourandong.com 도산서원 대중교통 안내 · 역→정류장 도보 5분 가정 · 청량리발 도착 시각은 확보 후 추가</div>
+  </figure>
+</section>
+
+<section>
+  <div class="sec-no">4 · 실행방안</div>
+  <h2>네 가지 — 전부 기존 제도의 규칙을 바꾸는 방식</h2>
+  <div class="plan">
+    <article><div class="tag">A</div><div class="body">
+      <h3>반값여행 × KTX 연결 셔틀 — “인증 관광지까지 책임지고 모신다”</h3>
+      <p>반값여행 참가자와 코레일 무료여행 이용자(하회 QR 인증 필요)를 대상으로, 주말·공휴일 KTX 도착 시각에 맞춘 역 기점 셔틀(역→하회·병산 / 역→도산서원)을 운행한다. 셔틀 탑승 기록을 인증 관광지 방문 증빙으로 인정하고, 이동비도 환급 인정 항목에 넣는다.</p>
+      <div class="meta"><div><small>수상작 선례</small>강진 반값여행</div><div><small>주체</small>안동시 · 코레일 · 운수사</div><div><small>비용 규모</small>촉진지역 1곳 기준 국비 4억 + 지방비 4억</div><div><small>KPI</small>인증 관광지 도달률, 참가자 1인당 지출</div></div>
+    </div></article>
+    <article><div class="tag">B</div><div class="body">
+      <h3>행복택시(DRT) 관광객 개방 — “이미 있는 앱에 관광 호출을 연다”</h3>
+      <p>주말·공휴일, 관광권역 면(풍천·도산·서후)에 한해 관광객 합승 호출을 허용한다. KTX 도착 30분 전후로 역 호출 우선 배차. 평일 주민 수요와 겹치지 않는 시간대만 쓴다. 호출 로그가 곧 ‘관광객 2차 이동’ 데이터가 된다.</p>
+      <div class="meta"><div><small>수상작 선례</small>파주 통일동산 (관광→교통 행정)</div><div><small>주체</small>안동시 교통과</div><div><small>비용 규모</small>기존 기사·앱 활용, 주말 운행분 추가</div><div><small>KPI</small>관광 호출 건수, 역→관광지 대기시간</div></div>
+    </div></article>
+    <article><div class="tag">C</div><div class="body">
+      <h3>시티투어를 1박에 잇기 — “17:30 역 복귀를 21:00 원도심 해산으로”</h3>
+      <p>KTX 연계 시티투어의 당일 구조(11:30 출발 · 17:30 역 복귀)를 야간 원도심 코스로 연장하고, 이미 제공 중인 숙박쿠폰(2만 원)을 반값여행 환급과 겹쳐 쓸 수 있게 한다. 다음 날 오전 도산권역 코스와 짝을 지어 1박 2일 상품으로 판매한다.</p>
+      <div class="meta"><div><small>수상작 선례</small>인천 9경 (체류) · 강진</div><div><small>주체</small>안동시 · 코레일관광개발</div><div><small>비용 규모</small>기존 투어 차량·코스 재편</div><div><small>KPI</small>1박 전환율, 숙박업 소비 비중</div></div>
+    </div></article>
+    <article><div class="tag">D</div><div class="body">
+      <h3>역–원도심 소비 코스 — “데이터로 뽑은 역세권 코스 + 상품권 사용처”</h3>
+      <p>원도심(서구동, 외지인 방문 +27%)과 역을 잇는 동선에서 카드 데이터로 소비가 줄어든 업종(카페 −4.8%, 문화서비스 −42%)을 골라 코스를 만들고, 반값여행 환급 상품권 사용처로 묶는다. 돈이 로컬 상권으로 돌아오는 경로를 설계한다.</p>
+      <div class="meta"><div><small>수상작 선례</small>김포 5味로드</div><div><small>주체</small>안동시 · 원도심 상인회</div><div><small>비용 규모</small>홍보·지도 제작 수준</div><div><small>KPI</small>상품권 결제액, 카페·문화 소비 비중</div></div>
+    </div></article>
+  </div>
+</section>
+
+<section>
+  <div class="sec-no">5 · 도구</div>
+  <h2>KTX 도착 전환지수 — NSI처럼 산식과 매트릭스로</h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>구성 요소</th><th class="n">가중치(안)</th><th>지표</th><th>데이터</th></tr></thead>
+    <tbody>
+      <tr><td class="k">도달</td><td class="n">0.30</td><td>역 하차 대비 관광권역 방문 증가 · 역→관광지 대기시간</td><td>코레일 · 이동통신 읍면동 · 버스 시간표</td></tr>
+      <tr><td class="k">전환</td><td class="n">0.30</td><td>관광권역 방문 대비 소비 · 1인당 소비(전국 중앙값 대비)</td><td>신한카드 · 이동통신</td></tr>
+      <tr><td class="k">수단 전환</td><td class="n">0.20</td><td>주유 소비 변화 · 역/터미널 검색 비중</td><td>신한카드 업종 · T map 검색</td></tr>
+      <tr><td class="k">환승 품질</td><td class="n">0.20</td><td>환승·배차 만족도 · 관광지행 하루 배차 수</td><td>교통안전공단 · 시간표</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose">X축 = 철도 도착 수요 증가, Y축 = 전환지수. <strong>“도착은 늘었는데 전환이 낮은 곳”</strong>이 우선 개입 도시다. 중앙선 8개 도시에 먼저 적용하고, 코드·데이터·산식을 공개해 수상 뒤 실적 증빙으로 쓴다. 가중치는 민감도 분석으로 결과가 뒤집히지 않는지 확인한다.</p>
+</section>
+
+<section>
+  <div class="sec-no">6 · 효과 산출</div>
+  <h2>비용 8억 원 대비 1박 전환 시나리오</h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>시나리오</th><th class="n">1박 전환율</th><th class="n">추가 1박 인원</th><th class="n">추가 소비</th><th class="n">비용 대비</th></tr></thead>
+    <tbody>
+      <tr><td>보수</td><td class="n">3%</td><td class="n">7,058명</td><td class="n">12.7억 원</td><td class="n">1.6배</td></tr>
+      <tr><td>기준</td><td class="n">5%</td><td class="n">11,764명</td><td class="n hl-t">21.2억 원</td><td class="n hl-t">2.6배</td></tr>
+      <tr><td>적극</td><td class="n">10%</td><td class="n">23,528명</td><td class="n">42.4억 원</td><td class="n">5.3배</td></tr>
+    </tbody>
+  </table></div>
+  <ul class="clean">
+    <li>기준: 2024년 안동역 하차 470,562명 × 관광 목적 비율 50%(가정) × 1박 전환율 × 1박 추가 시 소비 18만 원(경북도 발표, 경북일보 2026).</li>
+    <li>비용: 2026 관광교통 촉진지역 1곳 지원 규모(국비 4억 + 지방비 4억)를 벤치마크로 썼다.</li>
+    <li>관광 목적 비율과 전환율은 <strong>현장 설문으로 대체</strong>해야 하는 가정값이다(아래 7).</li>
+  </ul>
+</section>
+
+<section>
+  <div class="sec-no">7 · 마감 전 실증</div>
+  <h2>수상작처럼 “해봤다”를 만드는 19일</h2>
+  <div class="cols">
+    <div class="card"><div class="eyebrow">09.19–09.20 · 팀</div><h3>뚜벅이 실측 여행</h3><p>팀원이 KTX로 안동에 가서 반값여행을 실제로 신청하고, 역→하회·도산을 대중교통으로 이동한다. 대기시간·이동비·지출·환급 과정을 기록하면 그 자체가 현장 실증 사례가 된다.</p></div>
+    <div class="card"><div class="eyebrow">같은 주말 · 팀</div><h3>안동역 하차객 설문</h3><p>50~100명. 여행 목적, 차 유무, 다음 목적지, 대기 경험, “셔틀·DRT가 있으면 몇 곳 더 가고 얼마 더 쓰겠나(WTP)”. 효과 산출의 가정값을 실측값으로 바꾼다.</p></div>
+    <div class="card"><div class="eyebrow">09.15–09.19 · 팀</div><h3>안동시 자료 요청·인터뷰</h3><p>행복택시 호출 기록, 시티투어 이용객, 반값여행 설계. 가능하면 “실증 협력 의향”을 한 줄이라도 받아 두면 효과성 점수의 근거가 된다.</p></div>
+    <div class="card"><div class="eyebrow">09.12–09.18 · Claude</div><h3>지수·매트릭스 산출</h3><p>KTX 도착 전환지수를 중앙선 8개 도시에 적용하고, 청량리발 도착 시각까지 넣어 환승 대기 분석을 완성한다. 코드·데이터 공개본을 만든다.</p></div>
+  </div>
+  <div class="note"><strong>순서가 중요하다.</strong> 반값여행 신청이 9월 14일 열리므로, 뚜벅이 실측과 설문은 첫 주말(9/19–20)에 몰아야 마감 전에 결과를 넣을 수 있다.</div>
+</section>
+
+<section>
+  <div class="sec-no">8 · 로드맵</div>
+  <h2>공모전 이후까지</h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>시기</th><th>단계</th><th>비교군</th></tr></thead>
+    <tbody>
+      <tr><td class="k">2026.10–11</td><td>반값여행 기간에 A(셔틀)·B(DRT 개방) 주말 시범</td><td>시범 전 주말 vs 시범 주말</td></tr>
+      <tr><td class="k">2027 상반기</td><td>관광교통 촉진지역 공모 신청 — 지수·시범 결과를 제안서 근거로</td><td>의성(2026 선정, 교통 먼저 투입) · 영주(미투입)</td></tr>
+      <tr><td class="k">2027 이후</td><td>중앙선 8개 도시로 지수 확산, 코레일 지역사랑 철도여행 인증과 연동</td><td>지수 순위 변화</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<footer>
+  <div class="eyebrow">근거 자료</div>
+  <ul>
+    <li>앞선 보고서: <a href="https://claude.ai/code/artifact/f04c56cd-8e44-4874-bc74-6618839ae627">왜 안동인가</a> · <a href="https://claude.ai/code/artifact/a67ceec9-d571-4ab4-89d0-9cef8588e50e">KTX-이음 이후의 안동</a></li>
+    <li>반값여행: <a href="https://korean.visitkorea.or.kr/dgtourcard/tour50.do">대한민국 반값여행 안내</a> · <a href="https://www.kyongbuk.co.kr/news/articleView.html?idxno=4080818">경북일보, 안동 가을 반값여행</a> · <a href="https://www.telltrip.com/news/andong-2026-travel-refund-program-announced/">청년 70% 환급</a></li>
+    <li>철도: <a href="https://www.econovill.com/news/articleView.html?idxno=733348">코레일 인구감소지역 운임 환급</a> · <a href="https://www.thefairnews.co.kr/news/articleView.html?idxno=87558">지역사랑 철도여행 성과</a> · <a href="https://train.asamaru.net/%EC%8B%9C%EA%B0%84%ED%91%9C/%EB%B6%80%EC%A0%84%EC%97%AD-%EB%8F%99%ED%95%B4%EC%84%A0/%EC%B6%9C%EB%B0%9C/%EC%95%88%EB%8F%99%EC%97%AD-%EC%A4%91%EC%95%99%EC%84%A0/%EB%8F%84%EC%B0%A9/">부전→안동 시간표</a></li>
+    <li>현지 교통: <a href="https://www.tourandong.com/public/sub1/sub1_2.cshtml?seq=557">도산서원 대중교통</a> · <a href="https://namu.wiki/w/%EC%95%88%EB%8F%99%20%EB%B2%84%EC%8A%A4%20210">안동 버스 210</a> · <a href="https://www.kyongbuk.co.kr/news/articleView.html?idxno=4065270">행복택시</a> · <a href="http://www.traveli.co.kr/read/contentsView/13628/0">KTX 연계 시티투어</a> · <a href="https://www.tourandong.com/public/sub5/sub13.cshtml">안동 디지털 관광주민증</a></li>
+  </ul>
+</footer>
+</div>
+
+<script>
+(function(){
+  const arr=[["07:53","KTX"],["10:00","KTX"],["10:11","ITX"],["11:05","KTX"],["12:00","KTX"],["14:02","KTX"],["15:18","KTX"],["16:42","KTX"],["18:12","KTX"],["18:21","ITX"]];
+  const bus=["08:15","09:35","12:15","13:15","16:15"];
+  const mm=s=>+s.slice(0,2)*60+ +s.slice(3);
+  const NS="http://www.w3.org/2000/svg",host=document.getElementById("c-wait");
+  const el=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p&&p.appendChild(e);return e;};
+  const tx=(p,x,y,s,c,an)=>{const t=el("text",{x,y,class:c,"text-anchor":an||"start"},p);t.textContent=s;return t;};
+  const W=880,H=300,L=110,R=20,t0=7*60,t1=19*60,xs=m=>L+(W-L-R)*(m-t0)/(t1-t0);
+  const svg=el("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":"KTX 도착과 도산서원 버스 출발 시각, 환승 대기"});host.appendChild(svg);
+  for(let h=7;h<=19;h++){el("line",{x1:xs(h*60),x2:xs(h*60),y1:26,y2:H-34,class:"grid"},svg);tx(svg,xs(h*60),H-14,String(h).padStart(2,"0")+":00","tick","middle");}
+  const yB=60,yK=H-70;
+  tx(svg,L-12,yB+4,"급행3 출발","clab","end");tx(svg,L-12,yK+4,"KTX 도착","clab","end");
+  bus.forEach(b=>{el("rect",{x:xs(mm(b))-5,y:yB-10,width:10,height:20,rx:2,style:"fill:var(--teal)"},svg);tx(svg,xs(mm(b)),yB-16,b,"tick","middle");});
+  const ws=[];
+  arr.forEach(([a,k],i)=>{const x=xs(mm(a)),ktx=k==="KTX";const nxt=bus.find(b=>mm(b)>=mm(a)+5);
+    const y=yK+(i%2?14:0);
+    if(ktx&&nxt){const w=mm(nxt)-mm(a);ws.push(w);
+      el("path",{d:`M${x},${yK-8} C${x},${yB+40} ${xs(mm(nxt))},${yK-40} ${xs(mm(nxt))},${yB+12}`,fill:"none",style:"stroke:var(--amber)","stroke-width":1.6,opacity:.8},svg);
+      const mx=(x+xs(mm(nxt)))/2;tx(svg,mx,(yB+yK)/2+(i%2?16:0),w+"분","lab","middle").style.fill="var(--amber)";}
+    el("circle",{cx:x,cy:yK,r:ktx?6:4.5,style:"fill:"+(ktx?(nxt?"var(--ink)":"var(--amber)"):"var(--m2)")},svg);
+    tx(svg,x,yK+22+(i%2?12:0),a+(ktx?"":" ITX"),"tick","middle");
+    if(ktx&&!nxt){const t=tx(svg,x,yK-14,"당일 불가","lab","middle");t.style.fill="var(--amber)";}
+  });
+  const mean=Math.round(ws.reduce((a,b)=>a+b,0)/ws.length);document.getElementById("w-mean").textContent=mean+"분";
+})();
+</script>

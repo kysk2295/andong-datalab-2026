@@ -1,0 +1,256 @@
+{
+ "list": [
+  {
+   "BASE_YM": "2015",
+   "SEX_CD": "남성",
+   "QTY": 9356188.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "2015",
+   "SEX_CD": "여성",
+   "QTY": 8529466.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "2015",
+   "SEX_CD": "승무원",
+   "QTY": 1424776.0,
+   "PRE_QTY": 0.0,
+   "GROW_RATE_PSON_NUM": null
+  },
+  {
+   "BASE_YM": "2016",
+   "SEX_CD": "남성",
+   "QTY": 10654475.0,
+   "PRE_QTY": 9356188.0,
+   "GROW_RATE_PSON_NUM": 13.88
+  },
+  {
+   "BASE_YM": "2016",
+   "SEX_CD": "여성",
+   "QTY": 10189761.0,
+   "PRE_QTY": 8529466.0,
+   "GROW_RATE_PSON_NUM": 19.47
+  },
+  {
+   "BASE_YM": "2016",
+   "SEX_CD": "승무원",
+   "QTY": 1538954.0,
+   "PRE_QTY": 1424776.0,
+   "GROW_RATE_PSON_NUM": 8.01
+  },
+  {
+   "BASE_YM": "2017",
+   "SEX_CD": "남성",
+   "QTY": 12385530.0,
+   "PRE_QTY": 10654475.0,
+   "GROW_RATE_PSON_NUM": 16.25
+  },
+  {
+   "BASE_YM": "2017",
+   "SEX_CD": "여성",
+   "QTY": 12451481.0,
+   "PRE_QTY": 10189761.0,
+   "GROW_RATE_PSON_NUM": 22.2
+  },
+  {
+   "BASE_YM": "2017",
+   "SEX_CD": "승무원",
+   "QTY": 1659436.0,
+   "PRE_QTY": 1538954.0,
+   "GROW_RATE_PSON_NUM": 7.83
+  },
+  {
+   "BASE_YM": "2018",
+   "SEX_CD": "남성",
+   "QTY": 13512627.0,
+   "PRE_QTY": 12385530.0,
+   "GROW_RATE_PSON_NUM": 9.1
+  },
+  {
+   "BASE_YM": "2018",
+   "SEX_CD": "여성",
+   "QTY": 13415762.0,
+   "PRE_QTY": 12451481.0,
+   "GROW_RATE_PSON_NUM": 7.74
+  },
+  {
+   "BASE_YM": "2018",
+   "SEX_CD": "승무원",
+   "QTY": 1767594.0,
+   "PRE_QTY": 1659436.0,
+   "GROW_RATE_PSON_NUM": 6.52
+  },
+  {
+   "BASE_YM": "2019",
+   "SEX_CD": "남성",
+   "QTY": 13674478.0,
+   "PRE_QTY": 13512627.0,
+   "GROW_RATE_PSON_NUM": 1.2
+  },
+  {
+   "BASE_YM": "2019",
+   "SEX_CD": "여성",
+   "QTY": 13245937.0,
+   "PRE_QTY": 13415762.0,
+   "GROW_RATE_PSON_NUM": -1.27
+  },
+  {
+   "BASE_YM": "2019",
+   "SEX_CD": "승무원",
+   "QTY": 1793832.0,
+   "PRE_QTY": 1767594.0,
+   "GROW_RATE_PSON_NUM": 1.48
+  },
+  {
+   "BASE_YM": "2020",
+   "SEX_CD": "남성",
+   "QTY": 1963723.0,
+   "PRE_QTY": 13674478.0,
+   "GROW_RATE_PSON_NUM": -85.64
+  },
+  {
+   "BASE_YM": "2020",
+   "SEX_CD": "여성",
+   "QTY": 1724883.0,
+   "PRE_QTY": 13245937.0,
+   "GROW_RATE_PSON_NUM": -86.98
+  },
+  {
+   "BASE_YM": "2020",
+   "SEX_CD": "승무원",
+   "QTY": 587400.0,
+   "PRE_QTY": 1793832.0,
+   "GROW_RATE_PSON_NUM": -67.25
+  },
+  {
+   "BASE_YM": "2021",
+   "SEX_CD": "남성",
+   "QTY": 466056.0,
+   "PRE_QTY": 1963723.0,
+   "GROW_RATE_PSON_NUM": -76.27
+  },
+  {
+   "BASE_YM": "2021",
+   "SEX_CD": "여성",
+   "QTY": 337145.0,
+   "PRE_QTY": 1724883.0,
+   "GROW_RATE_PSON_NUM": -80.45
+  },
+  {
+   "BASE_YM": "2021",
+   "SEX_CD": "승무원",
+   "QTY": 419340.0,
+   "PRE_QTY": 587400.0,
+   "GROW_RATE_PSON_NUM": -28.61
+  },
+  {
+   "BASE_YM": "2022",
+   "SEX_CD": "남성",
+   "QTY": 3192005.0,
+   "PRE_QTY": 466056.0,
+   "GROW_RATE_PSON_NUM": 584.9
+  },
+  {
+   "BASE_YM": "2022",
+   "SEX_CD": "여성",
+   "QTY": 2712936.0,
+   "PRE_QTY": 337145.0,
+   "GROW_RATE_PSON_NUM": 704.68
+  },
+  {
+   "BASE_YM": "2022",
+   "SEX_CD": "승무원",
+   "QTY": 649090.0,
+   "PRE_QTY": 419340.0,
+   "GROW_RATE_PSON_NUM": 54.79
+  },
+  {
+   "BASE_YM": "2023",
+   "SEX_CD": "남성",
+   "QTY": 10659248.0,
+   "PRE_QTY": 3192005.0,
+   "GROW_RATE_PSON_NUM": 233.94
+  },
+  {
+   "BASE_YM": "2023",
+   "SEX_CD": "여성",
+   "QTY": 10634134.0,
+   "PRE_QTY": 2712936.0,
+   "GROW_RATE_PSON_NUM": 291.98
+  },
+  {
+   "BASE_YM": "2023",
+   "SEX_CD": "승무원",
+   "QTY": 1422459.0,
+   "PRE_QTY": 649090.0,
+   "GROW_RATE_PSON_NUM": 119.15
+  },
+  {
+   "BASE_YM": "2024",
+   "SEX_CD": "남성",
+   "QTY": 13415050.0,
+   "PRE_QTY": 10659248.0,
+   "GROW_RATE_PSON_NUM": 25.85
+  },
+  {
+   "BASE_YM": "2024",
+   "SEX_CD": "여성",
+   "QTY": 13543945.0,
+   "PRE_QTY": 10634134.0,
+   "GROW_RATE_PSON_NUM": 27.36
+  },
+  {
+   "BASE_YM": "2024",
+   "SEX_CD": "승무원",
+   "QTY": 1727440.0,
+   "PRE_QTY": 1422459.0,
+   "GROW_RATE_PSON_NUM": 21.44
+  },
+  {
+   "BASE_YM": "2025",
+   "SEX_CD": "남성",
+   "QTY": 13951782.0,
+   "PRE_QTY": 13415050.0,
+   "GROW_RATE_PSON_NUM": 4.0
+  },
+  {
+   "BASE_YM": "2025",
+   "SEX_CD": "여성",
+   "QTY": 13789383.0,
+   "PRE_QTY": 13543945.0,
+   "GROW_RATE_PSON_NUM": 1.81
+  },
+  {
+   "BASE_YM": "2025",
+   "SEX_CD": "승무원",
+   "QTY": 1809012.0,
+   "PRE_QTY": 1727440.0,
+   "GROW_RATE_PSON_NUM": 4.72
+  },
+  {
+   "BASE_YM": "2026",
+   "SEX_CD": "남성",
+   "QTY": 8130485.0,
+   "PRE_QTY": 8002304.0,
+   "GROW_RATE_PSON_NUM": 1.6
+  },
+  {
+   "BASE_YM": "2026",
+   "SEX_CD": "여성",
+   "QTY": 8169345.0,
+   "PRE_QTY": 7960271.0,
+   "GROW_RATE_PSON_NUM": 2.63
+  },
+  {
+   "BASE_YM": "2026",
+   "SEX_CD": "승무원",
+   "QTY": 1081537.0,
+   "PRE_QTY": 1036340.0,
+   "GROW_RATE_PSON_NUM": 4.36
+  }
+ ]
+}

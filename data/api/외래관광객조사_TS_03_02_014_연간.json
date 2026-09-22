@@ -1,0 +1,59 @@
+{
+ "list": [
+  {
+   "BASE_DATE": "2015",
+   "NAT_NM": "전체",
+   "DAY_EXPENSES_AVG": "328.1"
+  },
+  {
+   "BASE_DATE": "2016",
+   "NAT_NM": "전체",
+   "DAY_EXPENSES_AVG": "318.4"
+  },
+  {
+   "BASE_DATE": "2017",
+   "NAT_NM": "전체",
+   "DAY_EXPENSES_AVG": "270.4"
+  },
+  {
+   "BASE_DATE": "2018",
+   "NAT_NM": "전체",
+   "DAY_EXPENSES_AVG": "254.8"
+  },
+  {
+   "BASE_DATE": "2019",
+   "NAT_NM": "전체",
+   "DAY_EXPENSES_AVG": "245.4"
+  },
+  {
+   "BASE_DATE": "2020",
+   "NAT_NM": "전체",
+   "DAY_EXPENSES_AVG": "166.5"
+  },
+  {
+   "BASE_DATE": "2021",
+   "NAT_NM": "전체",
+   "DAY_EXPENSES_AVG": "264.4"
+  },
+  {
+   "BASE_DATE": "2022",
+   "NAT_NM": "전체",
+   "DAY_EXPENSES_AVG": "359.9"
+  },
+  {
+   "BASE_DATE": "2023",
+   "NAT_NM": "전체",
+   "DAY_EXPENSES_AVG": "332.9"
+  },
+  {
+   "BASE_DATE": "2024",
+   "NAT_NM": "전체",
+   "DAY_EXPENSES_AVG": "326.4"
+  },
+  {
+   "BASE_DATE": "2025",
+   "NAT_NM": "전체",
+   "DAY_EXPENSES_AVG": "321.9"
+  }
+ ]
+}

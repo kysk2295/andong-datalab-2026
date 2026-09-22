@@ -1,0 +1,44 @@
+{
+ "list": [
+  {
+   "BASE_YEAR": "2018",
+   "BAGE": "전체",
+   "T_VALUE": 12.39
+  },
+  {
+   "BASE_YEAR": "2019",
+   "BAGE": "전체",
+   "T_VALUE": 12.94
+  },
+  {
+   "BASE_YEAR": "2020",
+   "BAGE": "전체",
+   "T_VALUE": 7.65
+  },
+  {
+   "BASE_YEAR": "2021",
+   "BAGE": "전체",
+   "T_VALUE": 7.99
+  },
+  {
+   "BASE_YEAR": "2022",
+   "BAGE": "전체",
+   "T_VALUE": 9.71
+  },
+  {
+   "BASE_YEAR": "2023",
+   "BAGE": "전체",
+   "T_VALUE": 10.15
+  },
+  {
+   "BASE_YEAR": "2024",
+   "BAGE": "전체",
+   "T_VALUE": 9.69
+  },
+  {
+   "BASE_YEAR": "2025",
+   "BAGE": "전체",
+   "T_VALUE": 10.18
+  }
+ ]
+}

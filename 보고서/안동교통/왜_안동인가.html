@@ -1,0 +1,259 @@
+<title>왜 안동인가</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#F3F5F6; --surface:#FFFFFF; --ink:#15212C; --ink-2:#4B5966; --ink-3:#7A8894;
+  --rule:#D3DAE0; --grid:#E3E8EC; --teal:#0B7285; --teal-soft:#D8ECEF;
+  --amber:#B45A00; --amber-soft:#F5E4D2; --m1:#8E9BA7; --m2:#B3BDC6;
+  --sans:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E151C; --surface:#141E27; --ink:#E3E9EE; --ink-2:#A3B0BB; --ink-3:#77858F;
+    --rule:#2A3642; --grid:#1F2A34; --teal:#4DB6C4; --teal-soft:#16343A;
+    --amber:#EE9E4A; --amber-soft:#3A2717; --m1:#6E7D89; --m2:#4B5864;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E151C; --surface:#141E27; --ink:#E3E9EE; --ink-2:#A3B0BB; --ink-3:#77858F;
+  --rule:#2A3642; --grid:#1F2A34; --teal:#4DB6C4; --teal-soft:#16343A;
+  --amber:#EE9E4A; --amber-soft:#3A2717; --m1:#6E7D89; --m2:#4B5864;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.72 var(--sans);word-break:keep-all;overflow-wrap:break-word}
+a{color:var(--teal);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.wrap{max-width:900px;margin:0 auto;padding:52px 26px 84px;display:flex;flex-direction:column;gap:52px}
+.eyebrow{font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+h1{font:700 clamp(32px,5.4vw,46px)/1.12 var(--sans);letter-spacing:-.02em;margin:10px 0 14px;text-wrap:balance}
+h2{font:700 22px/1.35 var(--sans);margin:0 0 6px;text-wrap:balance}
+h3{font:600 16px/1.45 var(--sans);margin:0 0 4px}
+p{margin:0 0 10px}
+.deck{font-size:18px;line-height:1.6;color:var(--ink-2);margin:0;max-width:680px}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.hl-t{color:var(--teal);font-weight:600}.hl-a{color:var(--amber);font-weight:600}
+.dday{display:inline-flex;gap:10px;align-items:center;margin-top:16px;font:500 13px/1 var(--mono);color:var(--ink-2)}
+.dday b{font:600 13px/1 var(--mono);background:var(--amber);color:var(--surface);padding:6px 9px;border-radius:3px}
+.thesis{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:20px 0;display:flex;flex-direction:column;gap:10px}
+.thesis .big{font:700 clamp(22px,3.4vw,28px)/1.35 var(--sans);letter-spacing:-.01em;text-wrap:balance}
+.thesis p{color:var(--ink-2);margin:0;max-width:700px}
+section{display:flex;flex-direction:column;gap:16px}
+.sec-no{font:600 12px/1.4 var(--mono);color:var(--teal);letter-spacing:.06em}
+.prose{max-width:700px}
+figure{margin:0;display:flex;flex-direction:column;gap:8px}
+.fig-title{font:600 14.5px/1.4 var(--sans)}
+figcaption{font-size:14px;line-height:1.55;color:var(--ink-2)}
+.chart{overflow-x:auto}.chart svg{display:block;width:100%;height:auto;min-width:480px}
+.source{font:400 11.5px/1.5 var(--mono);color:var(--ink-3)}
+.t,.tick,.barlab,.catlab,.qlab{font-family:var(--mono);fill:var(--ink-2)}
+.tick{font-size:11px;fill:var(--ink-3)}.barlab{font-size:12px;fill:var(--ink)}.qlab{font-size:11px}
+.grid{stroke:var(--grid)}.base{stroke:var(--ink-3)}
+.tbl-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--rule);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--grid)}
+thead th{font:500 11.5px/1.3 var(--mono);letter-spacing:.05em;color:var(--ink-3);border-bottom:1px solid var(--rule);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.k{font-weight:600;white-space:nowrap}
+td.n{font-family:var(--mono);white-space:nowrap}
+.beat td:first-child{font:600 13px/1.5 var(--mono);color:var(--teal);white-space:nowrap}
+.note{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--amber);border-radius:0 6px 6px 0;padding:14px 18px;font-size:15px;display:flex;flex-direction:column;gap:6px}
+.note .eyebrow{color:var(--amber)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media (max-width:760px){.cols{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:16px 18px;display:flex;flex-direction:column;gap:6px}
+.card p{font-size:14.5px;color:var(--ink-2);margin:0}
+ul.clean,ol.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:15px}
+.slides{counter-reset:s;display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid var(--rule);border-radius:6px;background:var(--surface);overflow:hidden}
+.slides div{padding:12px 16px;border-bottom:1px solid var(--grid);border-right:1px solid var(--grid);font-size:14.5px;display:flex;gap:12px}
+.slides div:nth-child(2n){border-right:0}
+.slides div:nth-last-child(-n+2){border-bottom:0}
+.slides div::before{counter-increment:s;content:counter(s,decimal-leading-zero);font:600 12px/1.9 var(--mono);color:var(--teal)}
+@media (max-width:640px){.slides{grid-template-columns:1fr}.slides div{border-right:0}.slides div:nth-last-child(2){border-bottom:1px solid var(--grid)}}
+footer{border-top:1px solid var(--rule);padding-top:18px;display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--ink-2)}
+footer ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:3px}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">2026 한국관광 데이터랩 활용 경진대회 · 주제 선정 전략 노트</div>
+  <h1>왜 안동인가</h1>
+  <p class="deck">안동을 사례로 고르는 근거, 그리고 심사 기준(창의성 20 · 데이터 활용 30 · 효과성 30 · 파급력 20)에 맞춰 문제를 푸는 방법.</p>
+  <div class="dday"><b>D-19</b> 접수 마감 2026.09.30(수) 14:00 · 서면 → 발표 심사 · 시상 19점</div>
+</header>
+
+<div class="thesis">
+  <div class="big">안동은 숫자가 가장 나쁜 도시가 아니다. <span class="hl-t">가장 좋은 실험실</span>이다.</div>
+  <p>교통 충격이 두 번 있었고, 비교할 도시들이 같은 노선 위에 있고, 정부가 1,000억 원을 넣은 거점도시이며, 처방을 바로 붙일 수단(DRT·KTX 연계 시티투어)이 이미 돌고 있다. 한 도시에서 이 네 조건이 겹치는 곳은 중앙선에서 안동뿐이다.</p>
+</div>
+
+<section>
+  <div class="sec-no">1 · 먼저 인정할 것</div>
+  <h2>“안동만 소비가 줄었다”는 말은 쓰지 않는다</h2>
+  <div class="prose"><p>전국 시군구 228곳을 같은 기준으로 돌려 보면, 1인(방문)당 카드 관광소비는 거의 모든 곳에서 줄었다(2026 vs 2024, 1~8월 전국 중앙값 −13.0%). 안동(−16.2%)은 66위로 극단값이 아니다. 방문이 늘고 주유가 준 지역도 49곳이다. 심사위원이 전국 표를 들고 오면 “안동만”이라는 주장은 무너진다.</p></div>
+  <div class="note">
+    <div class="eyebrow">그래서 비교의 틀을 바꾼다</div>
+    <p>절대값이 아니라 <strong>전국 중앙값 대비 상대값</strong>으로, 전국이 아니라 <strong>같은 조건의 도시(중앙선 KTX-이음 7곳 + 관광거점도시)</strong>와 비교한다. 이렇게 보면 안동의 자리가 선명해진다.</p>
+  </div>
+  <figure>
+    <div class="fig-title">전국 중앙값 대비 · 외지인 방문 증가 × 1인당 소비 변화 (2026 vs 2024, 1~8월, %p)</div>
+    <div class="chart" id="c-quad"></div>
+    <figcaption>오른쪽 아래 칸 = <strong>전국보다 더 왔는데, 전국보다 덜 쓴다.</strong> 비교 9개 도시 중 이 칸에 들어간 곳은 안동 하나다. KTX 9년 차이자 관광형 MaaS(강릉패스)를 운영한 강릉은 1인당 소비가 전국보다 3.5%p 덜 줄었다. 목포(방문 −30.8%p)는 축 범위를 벗어나 제외했다.</figcaption>
+    <div class="source">데이터랩 이동통신 외지인 방문(LN_03_01_002) · 신한카드 외지인 관광소비(BDT_02_01_003_35) · 전국 비교 = 이름 중복 없는 시군구 228곳</div>
+  </figure>
+</section>
+
+<section>
+  <div class="sec-no">2 · 선정 근거</div>
+  <h2>안동에서만 겹치는 여섯 가지 조건</h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>조건</th><th>안동</th><th>왜 공모전에 유리한가</th></tr></thead>
+    <tbody>
+      <tr><td class="k">교통 충격 2회</td><td>2021.01 청량리 직결(3:54→2:00) · 2024.12 부전 직결(1:49)</td><td>개통 전후 비교 + 같은 노선의 대조군(영주·제천·단양)과 철도 변화 없는 대조군(전주·군산) → <strong>데이터 활용 30</strong></td></tr>
+      <tr><td class="k">더 왔는데 덜 쓴다</td><td>방문 +0.9%p · 1인당 −3.3%p (전국 중앙값 대비)</td><td>비교 9개 도시 중 유일. 수상작 문법의 ‘격차’를 한 도시 안에서 두 숫자로 보여줄 수 있다 → <strong>창의성 20</strong></td></tr>
+      <tr><td class="k">정책 투자</td><td>지역관광거점도시(2020~2024) 국비 500억 + 지방비 500억, 하회·원도심·안동댐·도산 4권역</td><td>거점도시 중 1인당 소비 변화 최하(강릉 −9.5, 전주 −12.7, 안동 −16.2). “1,000억 원 뒤에 남은 과제” → <strong>파급력 20</strong></td></tr>
+      <tr><td class="k">인구감소지역</td><td>외지인 55%가 경북 안에서 온다 · 경북 출발 방문 +3%</td><td>정부 <strong>2026 관광교통 촉진지역</strong> 공모의 자격 요건(인구감소지역 89곳)에 해당. 필수 과제가 ‘교통거점–관광지 교통’으로 우리 처방과 같다. <span id="sel-status"><strong>2026년 선정 4곳(합천·의성·김천·군위)에 안동은 빠졌다.</strong> 이번 분석이 2027년 공모의 근거 자료가 된다.</span></td></tr>
+      <tr><td class="k">처방 수단이 이미 있다</td><td>DRT 행복택시(앱·기사 33명·10개 면, 주민 전용) · KTX 연계 시티투어 5종(11:30 출발, 17:30 역 복귀)</td><td>새 인프라가 아니라 <strong>운영 규칙 변경</strong>으로 실증 가능 → <strong>효과성 30</strong></td></tr>
+      <tr><td class="k">확장성</td><td>중앙선 KTX-이음 정차 8개 도시 · 앞으로 KTX가 새로 서는 중소도시</td><td>“철도 개통 도시의 소비 전환 모델” 첫 사례 → <strong>파급력 20</strong></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="sec-no">3 · 대회 지형</div>
+  <h2>수상작과 겹치지 않는 자리</h2>
+  <div class="cols">
+    <div class="card"><div class="eyebrow">가장 가까운 선례</div><h3>인천 의료·웰니스 (2025 최우수)</h3><p>외래객 68.5%가 인천으로 입국하는데 인천 방문율은 6.3% — ‘관문도시 패싱’. 공항에서 서울로 빠져나가는 <strong>통과</strong>의 문제.</p></div>
+    <div class="card"><div class="eyebrow">우리의 자리</div><h3>안동 · 신설 KTX역</h3><p>통과가 아니라 <strong>도착한 뒤</strong>의 문제. 사람은 역에 내렸는데(철도 2.3배, 관광권역 +16%) 차가 없어 소비 반경이 좁아졌다. 유치·브랜딩이 아니라 <strong>2차 교통 → 소비 전환</strong>.</p></div>
+  </div>
+  <ul class="clean">
+    <li><strong>주최 예시 주제에 정조준:</strong> 2026 공고가 든 두 예시 중 하나가 “관광객 소비 패턴 분석을 통한 지역 상권 활성화 전략”이다. 업종별 카드 소비 변화(주유·카페·문화서비스·모텔급 숙박)와 원도심 방문(서구동 +27%)이 그대로 이 주제다.</li>
+    <li><strong>정책 흐름과 같은 방향:</strong> 문체부·국토부 관광-교통 정책협의회(2026.05.27 출범) 안건에 DRT·버스 확대, 관광통합패스가 올라 있다.</li>
+    <li><strong>팀 아이디어와 결합:</strong> 팀 내 DRT 아이디어와 이 분석이 하나로 이어진다(문제 = 안동 데이터, 처방 = DRT).</li>
+  </ul>
+</section>
+
+<section>
+  <div class="sec-no">4 · 문제 정의</div>
+  <h2>수상작 5비트 문법으로 쓴 안동</h2>
+  <div class="tbl-wrap"><table class="beat">
+    <tbody>
+      <tr><td>① 현상</td><td>KTX-이음 이용객은 5년 새 <span class="num">2.3배</span>, 안동 관광권역 외지인 방문은 <span class="num">+16%</span>(2019→2025).</td></tr>
+      <tr><td>② 격차</td><td>그런데 외지인 관광소비는 <span class="num">+7%</span>. 부산 직결 뒤 1인당 소비는 <span class="num">−16.2%</span>로 전국 중앙값보다 3.3%p 더 떨어졌고, 거점도시 중 최하다.</td></tr>
+      <tr><td>③ 기전</td><td>차를 두고 기차로 온다: 터미널 검색 <span class="num">−50%</span>, 역 검색 <span class="num">+16%</span>, 주유 소비 <span class="num">−9.5%</span>(전국 하위 22%). 내린 뒤 갈 수단이 없다: 경북 환승 만족도 전국 14위, 도산서원 버스 하루 4회, 시티투어는 17:30 역 복귀로 설계돼 있다.</td></tr>
+      <tr><td>④ 공백</td><td>데이터랩에는 <strong>‘역 도착 → 관광지 도달 → 소비’</strong>를 재는 지표가 없다. DRT는 주민 전용이라 관광객 이동 기록 자체가 없다. → 우리가 지표를 만든다.</td></tr>
+      <tr><td>⑤ 손실</td><td>1인당 소비를 2024년 수준(15,978원)으로 되돌리면 2,593원 × 연 1,800만 방문 ≈ <span class="num hl-a">연 467억 원</span>(상한). 발표 전 관광권역 방문 기준 보수 추정을 따로 낸다.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="sec-no">5 · 데이터 활용 30점</div>
+  <h2>지표를 만든다 — KTX 도착 전환지수</h2>
+  <div class="prose"><p>수상작은 “데이터가 있어서 분석했다”가 아니라 “재는 지표가 없어서 만들었다”로 점수를 땄다. 중앙선 8개 도시에 같은 공식으로 적용해 순위를 매기면, 안동을 고른 이유가 지표로 증명된다.</p></div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>구성 요소</th><th>무엇을 재나</th><th>데이터</th><th>확보</th></tr></thead>
+    <tbody>
+      <tr><td class="k">철도 의존도</td><td>역 하차 ÷ 외지인 방문</td><td>코레일 역별 승하차 × 데이터랩 이동통신</td><td>완료</td></tr>
+      <tr><td class="k">수단 전환</td><td>주유 소비 변화 · 역/터미널 검색 비중</td><td>신한카드 업종 · T map 목적지 검색 Top100</td><td>완료</td></tr>
+      <tr><td class="k">도달</td><td>역 주변 → 관광권역 방문 흐름</td><td>데이터랩 읍면동 방문 + 교통카드 정류장 승하차</td><td>읍면동 완료 · 정류장 <strong>조회 필요</strong></td></tr>
+      <tr><td class="k">전환</td><td>관광권역 방문 대비 소비 · 1인당 소비</td><td>신한카드 ÷ 이동통신(읍면동)</td><td>완료</td></tr>
+      <tr><td class="k">환승 품질</td><td>환승·배차 만족도, 관광지행 배차</td><td>교통안전공단 만족도 · 시내버스 시간표</td><td>완료</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="sec-no">6 · 효과성 30점</div>
+  <h2>처방은 ‘새로 짓기’가 아니라 ‘이미 있는 것 바꾸기’</h2>
+  <div class="cols">
+    <div class="card"><h3>행복택시를 관광객에게 연다</h3><p>주말·공휴일, 도산면·풍천면 등 관광권역 면에서 KTX 도착 시각에 맞춰 호출을 연다. 앱·기사·운영 체계가 이미 있다.</p></div>
+    <div class="card"><h3>시티투어를 1박에 잇는다</h3><p>17:30 역 복귀 구조를 야간 원도심 코스 → 숙박 → 다음 날 도산권역으로 바꾼다. 이미 들어 있는 숙박쿠폰(2만 원)을 그 연결 고리로 쓴다.</p></div>
+    <div class="card"><h3>역–원도심 소비 동선</h3><p>방문이 가장 많이 는 원도심(서구동 +27%)과 역을 잇는 동선에 카페·체험 결제를 묶는다. 줄어든 카페(−4.8%)·문화서비스(−42%) 소비가 성과 지표다.</p></div>
+    <div class="card"><h3>성과 측정 설계</h3><p>KPI: 1인당 소비, 역 → 관광권역 도달률, 카페·문화서비스 비중. 비교군은 둘이다. 같은 노선에 처방이 없는 영주·제천, 그리고 <strong>2026 촉진지역으로 교통거점–관광지 노선이 먼저 들어가는 의성</strong>(안동 바로 옆 KTX-이음 정차역). 의성의 성과를 추적하면 안동 처방의 효과를 미리 가늠할 수 있다. 이 설계가 곧 2027년 촉진지역 공모 제안서의 뼈대가 된다.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-no">7 · 발표 구성</div>
+  <h2>10장 흐름</h2>
+  <div class="slides">
+    <div>KTX-이음 5년, 철도 이용 2.3배 — “교통은 좋아졌다”</div>
+    <div>우리의 첫 가설: 당일치기가 늘었을 것 → 데이터로 기각</div>
+    <div>시군 전체로 보면 안동 외지인 전국 하위 2% → 읍면동으로 쪼개니 관광권역 +16% (반전 1)</div>
+    <div>그런데 소비는 +7%, 부산 직결 뒤 1인당 −16% (반전 2)</div>
+    <div>비교 9개 도시 사분면: 더 왔는데 덜 쓰는 곳은 안동뿐</div>
+    <div>기전: 터미널 −50% · 역 +16% · 주유 −9.5% → 차를 두고 왔다</div>
+    <div>공백: 역에서 멈추는 여행 — 환승 14위, 도산서원 하루 4회, DRT는 주민 전용</div>
+    <div>KTX 도착 전환지수: 중앙선 8개 도시 순위</div>
+    <div>처방: 행복택시 개방 · 시티투어 1박 연결 · 역–원도심 동선</div>
+    <div>효과·확산: 연 최대 467억, 철도 개통 도시 모델, 2027 촉진지역 공모(이웃 의성은 2026 선정)</div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-no">8 · 예상 질문</div>
+  <h2>심사위원이 물을 것과 답</h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>질문</th><th>답</th></tr></thead>
+    <tbody>
+      <tr><td class="k">전국이 다 소비 줄지 않았나?</td><td>그래서 전국 중앙값 대비 상대값과 같은 노선 대조군으로 비교했다. 안동은 방문은 중앙값 이상, 1인당 소비는 중앙값 이하인 유일한 비교 도시다.</td></tr>
+      <tr><td class="k">안동 관광객은 줄었다던데?</td><td>시군 합계는 풍산읍 산업단지(바이오 공장 가동률 65.6%→22.3%)와 용상동 감소에 가려져 있다. 읍면동 분해 결과 감소분의 90%가 이 두 곳이고, 관광권역은 +16%다.</td></tr>
+      <tr><td class="k">차를 두고 와서 못 쓴다는 인과가 증명됐나?</td><td>세 데이터(검색·주유·역 주변 방문)가 같은 방향을 가리키는 정황이다. 그래서 처방을 실증 설계(대조군·KPI)로 제안한다. 정류장 승하차 데이터로 보강 예정.</td></tr>
+      <tr><td class="k">인천 관문도시 패싱과 뭐가 다른가?</td><td>인천은 들르지 않고 지나가는 문제, 안동은 도착한 뒤 움직이지 못하는 문제다. 처방도 유치·브랜딩이 아니라 2차 교통이다.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="sec-no">9 · 남은 19일</div>
+  <h2>마감까지 할 일</h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>기간</th><th>할 일</th><th>누가</th></tr></thead>
+    <tbody>
+      <tr><td class="n">09.12–09.14</td><td>교통카드 빅데이터(stcis) 안동역 정류장 승하차 조회 · 공모요강 제출 양식 확인</td><td>팀</td></tr>
+      <tr><td class="n">09.12–09.16</td><td>KTX 도착 전환지수 산출(중앙선 8개 도시) · 효과 보수 추정</td><td>Claude</td></tr>
+      <tr><td class="n">09.15–09.18</td><td>가능하면 안동역 하차객 짧은 설문 또는 시청 담당자 인터뷰(행복택시 호출 기록 요청)</td><td>팀</td></tr>
+      <tr><td class="n">09.19–09.25</td><td>보고서 본문 작성 · 차트 확정</td><td>팀 + Claude</td></tr>
+      <tr><td class="n">09.26–09.29</td><td>발표 자료 10장 · 예상 질문 리허설 · 수치 교차 검증</td><td>팀</td></tr>
+      <tr><td class="n">09.30 14:00</td><td>접수 마감</td><td>팀</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<footer>
+  <div class="eyebrow">근거 자료</div>
+  <ul>
+    <li>분석 보고서: <a href="https://claude.ai/code/artifact/a67ceec9-d571-4ab4-89d0-9cef8588e50e">KTX-이음 이후의 안동</a> · <a href="https://claude.ai/code/artifact/3b0fbe4d-d146-4bb1-af50-6bf1d0959d65">안동 외지인은 왜 줄었나</a></li>
+    <li>대회: <a href="https://biz.heraldcorp.com/article/10830594">헤럴드경제, 2026 데이터랩 경진대회 개최</a> · <a href="https://www.the-pr.co.kr/news/articleView.html?idxno=62164">더피알</a> · 팀 문서 「수상작_문제발굴챕터_정의.md」</li>
+    <li>정책: <a href="https://touraz.kr/announcementList/pssrpView?pssrpSeqEnc=RZV4OlvbBrtowK12q2wbJA%3D%3D&curPage=1">한국관광공사, 2026 관광교통 촉진지역 공모</a> · <a href="https://www.etoday.co.kr/news/view/2588152">이투데이, 관광-교통 정책협의회</a> · <a href="https://www.startuptoday.co.kr/news/articleView.html?idxno=611305">오늘경제, 2026 관광교통 촉진지역 선정(군위·의성·합천·김천)</a> · <a href="http://webzine.tourandong.com/m/news.aspx?ym=202002&seq=1254">안동시 지역관광거점도시 선정</a></li>
+    <li>사례: <a href="https://www.pressian.com/pages/articles/2023031613365341966">강릉 스마트시티 챌린지(강릉패스)</a> · <a href="https://response.jp/article/2020/03/18/332732.html">이즈 관광형 MaaS Izuko</a> · <a href="https://www.kyongbuk.co.kr/news/articleView.html?idxno=4065270">안동 행복택시</a> · <a href="http://www.traveli.co.kr/read/contentsView/13628/0">KTX-이음 연계 안동시티투어</a></li>
+  </ul>
+</footer>
+</div>
+
+<script>
+(function(){
+  const pts=[["안동",0.90,-3.26,"a"],["경주",2.81,5.55],["전주",0.87,0.22],["강릉",-0.13,3.50],["영천",-0.90,9.82],["영주",-1.97,-1.59],["제천",-3.81,1.04],["의성",-7.58,11.74],["단양",-8.60,-1.77]];
+  const NS="http://www.w3.org/2000/svg",host=document.getElementById("c-quad");
+  const el=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p&&p.appendChild(e);return e;};
+  const tx=(p,x,y,s,c,an)=>{const t=el("text",{x,y,class:c,"text-anchor":an||"start"},p);t.textContent=s;return t;};
+  const W=860,H=400,m={l:52,r:24,t:20,b:44},xmin=-10,xmax=5,ymin=-6,ymax=14;
+  const svg=el("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":"방문 증가와 1인당 소비 변화의 전국 중앙값 대비 사분면"});host.appendChild(svg);
+  const xs=v=>m.l+(W-m.l-m.r)*(v-xmin)/(xmax-xmin),ys=v=>m.t+(H-m.t-m.b)*(1-(v-ymin)/(ymax-ymin));
+  el("rect",{x:xs(0),y:ys(0),width:xs(xmax)-xs(0),height:ys(ymin)-ys(0),style:"fill:var(--amber-soft)"},svg);
+  const q=tx(svg,xs(xmax)-8,ys(ymin)-10,"더 왔는데 덜 쓴다","qlab","end");q.style.fill="var(--amber)";q.style.fontWeight="600";
+  tx(svg,xs(xmax)-8,ys(ymax)+14,"더 왔고 더 쓴다","qlab","end");
+  tx(svg,xs(xmin)+8,ys(ymax)+14,"덜 왔지만 더 쓴다","qlab");
+  tx(svg,xs(xmin)+8,ys(ymin)-10,"덜 왔고 덜 쓴다","qlab");
+  [-10,-8,-6,-4,-2,0,2,4].forEach(v=>{el("line",{x1:xs(v),x2:xs(v),y1:m.t,y2:H-m.b,class:v===0?"base":"grid"},svg);tx(svg,xs(v),H-m.b+16,(v>0?"+":"")+v,"tick","middle");});
+  [-6,-3,0,3,6,9,12].forEach(v=>{el("line",{x1:m.l,x2:W-m.r,y1:ys(v),y2:ys(v),class:v===0?"base":"grid"},svg);tx(svg,m.l-8,ys(v)+4,(v>0?"+":"")+v,"tick","end");});
+  tx(svg,(m.l+W-m.r)/2,H-6,"외지인 방문 증가율 − 전국 중앙값 (%p) →","tick","middle");
+  const cy=(m.t+H-m.b)/2,yt=tx(svg,14,cy,"1인당 소비 변화 − 전국 중앙값 (%p) →","tick","middle");yt.setAttribute("transform","rotate(-90 14 "+cy+")");
+  pts.forEach(([n,x,y,k])=>{const A=k==="a";
+    el("circle",{cx:xs(x),cy:ys(y),r:A?8:5.5,style:"fill:"+(A?"var(--amber)":"var(--m1)")+";stroke:var(--surface)","stroke-width":1.5},svg);
+    const l=tx(svg,xs(x)+(A?12:9),ys(y)+4,n,"barlab");if(A){l.style.fill="var(--amber)";l.style.fontWeight="600";l.style.fontSize="14px";}});
+})();
+</script>

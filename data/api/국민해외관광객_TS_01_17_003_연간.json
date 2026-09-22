@@ -1,0 +1,544 @@
+{
+ "list": [
+  {
+   "BASE_YM": "2015",
+   "ARPT_PRT_CD": "인천공항",
+   "QTY": 14529895.0
+  },
+  {
+   "BASE_YM": "2015",
+   "ARPT_PRT_CD": "김해공항",
+   "QTY": 2477493.0
+  },
+  {
+   "BASE_YM": "2015",
+   "ARPT_PRT_CD": "김포공항",
+   "QTY": 1079351.0
+  },
+  {
+   "BASE_YM": "2015",
+   "ARPT_PRT_CD": "제주공항",
+   "QTY": 53742.0
+  },
+  {
+   "BASE_YM": "2015",
+   "ARPT_PRT_CD": "기타공항",
+   "QTY": 258552.0
+  },
+  {
+   "BASE_YM": "2015",
+   "ARPT_PRT_CD": "인천항구",
+   "QTY": 92519.0
+  },
+  {
+   "BASE_YM": "2015",
+   "ARPT_PRT_CD": "부산항구",
+   "QTY": 561465.0
+  },
+  {
+   "BASE_YM": "2015",
+   "ARPT_PRT_CD": "제주항구",
+   "QTY": 1514.0
+  },
+  {
+   "BASE_YM": "2015",
+   "ARPT_PRT_CD": "기타항구",
+   "QTY": 255899.0
+  },
+  {
+   "BASE_YM": "2016",
+   "ARPT_PRT_CD": "인천공항",
+   "QTY": 16708344.0
+  },
+  {
+   "BASE_YM": "2016",
+   "ARPT_PRT_CD": "김해공항",
+   "QTY": 3159822.0
+  },
+  {
+   "BASE_YM": "2016",
+   "ARPT_PRT_CD": "김포공항",
+   "QTY": 1116788.0
+  },
+  {
+   "BASE_YM": "2016",
+   "ARPT_PRT_CD": "제주공항",
+   "QTY": 70290.0
+  },
+  {
+   "BASE_YM": "2016",
+   "ARPT_PRT_CD": "기타공항",
+   "QTY": 420624.0
+  },
+  {
+   "BASE_YM": "2016",
+   "ARPT_PRT_CD": "인천항구",
+   "QTY": 87737.0
+  },
+  {
+   "BASE_YM": "2016",
+   "ARPT_PRT_CD": "부산항구",
+   "QTY": 598968.0
+  },
+  {
+   "BASE_YM": "2016",
+   "ARPT_PRT_CD": "제주항구",
+   "QTY": 1672.0
+  },
+  {
+   "BASE_YM": "2016",
+   "ARPT_PRT_CD": "기타항구",
+   "QTY": 218945.0
+  },
+  {
+   "BASE_YM": "2017",
+   "ARPT_PRT_CD": "인천공항",
+   "QTY": 19724432.0
+  },
+  {
+   "BASE_YM": "2017",
+   "ARPT_PRT_CD": "김해공항",
+   "QTY": 3714190.0
+  },
+  {
+   "BASE_YM": "2017",
+   "ARPT_PRT_CD": "김포공항",
+   "QTY": 1130538.0
+  },
+  {
+   "BASE_YM": "2017",
+   "ARPT_PRT_CD": "제주공항",
+   "QTY": 93649.0
+  },
+  {
+   "BASE_YM": "2017",
+   "ARPT_PRT_CD": "기타공항",
+   "QTY": 841201.0
+  },
+  {
+   "BASE_YM": "2017",
+   "ARPT_PRT_CD": "인천항구",
+   "QTY": 76225.0
+  },
+  {
+   "BASE_YM": "2017",
+   "ARPT_PRT_CD": "부산항구",
+   "QTY": 708523.0
+  },
+  {
+   "BASE_YM": "2017",
+   "ARPT_PRT_CD": "제주항구",
+   "QTY": 984.0
+  },
+  {
+   "BASE_YM": "2017",
+   "ARPT_PRT_CD": "기타항구",
+   "QTY": 206705.0
+  },
+  {
+   "BASE_YM": "2018",
+   "ARPT_PRT_CD": "인천공항",
+   "QTY": 21132076.0
+  },
+  {
+   "BASE_YM": "2018",
+   "ARPT_PRT_CD": "김해공항",
+   "QTY": 4056259.0
+  },
+  {
+   "BASE_YM": "2018",
+   "ARPT_PRT_CD": "김포공항",
+   "QTY": 1106849.0
+  },
+  {
+   "BASE_YM": "2018",
+   "ARPT_PRT_CD": "제주공항",
+   "QTY": 137679.0
+  },
+  {
+   "BASE_YM": "2018",
+   "ARPT_PRT_CD": "기타공항",
+   "QTY": 1288562.0
+  },
+  {
+   "BASE_YM": "2018",
+   "ARPT_PRT_CD": "인천항구",
+   "QTY": 81186.0
+  },
+  {
+   "BASE_YM": "2018",
+   "ARPT_PRT_CD": "부산항구",
+   "QTY": 712585.0
+  },
+  {
+   "BASE_YM": "2018",
+   "ARPT_PRT_CD": "제주항구",
+   "QTY": 1915.0
+  },
+  {
+   "BASE_YM": "2018",
+   "ARPT_PRT_CD": "기타항구",
+   "QTY": 178872.0
+  },
+  {
+   "BASE_YM": "2019",
+   "ARPT_PRT_CD": "인천공항",
+   "QTY": 21307108.0
+  },
+  {
+   "BASE_YM": "2019",
+   "ARPT_PRT_CD": "김해공항",
+   "QTY": 3853804.0
+  },
+  {
+   "BASE_YM": "2019",
+   "ARPT_PRT_CD": "김포공항",
+   "QTY": 1011750.0
+  },
+  {
+   "BASE_YM": "2019",
+   "ARPT_PRT_CD": "제주공항",
+   "QTY": 143890.0
+  },
+  {
+   "BASE_YM": "2019",
+   "ARPT_PRT_CD": "기타공항",
+   "QTY": 1694671.0
+  },
+  {
+   "BASE_YM": "2019",
+   "ARPT_PRT_CD": "인천항구",
+   "QTY": 73312.0
+  },
+  {
+   "BASE_YM": "2019",
+   "ARPT_PRT_CD": "부산항구",
+   "QTY": 458732.0
+  },
+  {
+   "BASE_YM": "2019",
+   "ARPT_PRT_CD": "제주항구",
+   "QTY": 1216.0
+  },
+  {
+   "BASE_YM": "2019",
+   "ARPT_PRT_CD": "기타항구",
+   "QTY": 169764.0
+  },
+  {
+   "BASE_YM": "2020",
+   "ARPT_PRT_CD": "인천공항",
+   "QTY": 3334970.0
+  },
+  {
+   "BASE_YM": "2020",
+   "ARPT_PRT_CD": "김해공항",
+   "QTY": 453411.0
+  },
+  {
+   "BASE_YM": "2020",
+   "ARPT_PRT_CD": "김포공항",
+   "QTY": 124925.0
+  },
+  {
+   "BASE_YM": "2020",
+   "ARPT_PRT_CD": "제주공항",
+   "QTY": 17341.0
+  },
+  {
+   "BASE_YM": "2020",
+   "ARPT_PRT_CD": "기타공항",
+   "QTY": 160829.0
+  },
+  {
+   "BASE_YM": "2020",
+   "ARPT_PRT_CD": "인천항구",
+   "QTY": 17786.0
+  },
+  {
+   "BASE_YM": "2020",
+   "ARPT_PRT_CD": "부산항구",
+   "QTY": 66477.0
+  },
+  {
+   "BASE_YM": "2020",
+   "ARPT_PRT_CD": "제주항구",
+   "QTY": 1393.0
+  },
+  {
+   "BASE_YM": "2020",
+   "ARPT_PRT_CD": "기타항구",
+   "QTY": 98874.0
+  },
+  {
+   "BASE_YM": "2021",
+   "ARPT_PRT_CD": "인천공항",
+   "QTY": 1043443.0
+  },
+  {
+   "BASE_YM": "2021",
+   "ARPT_PRT_CD": "김해공항",
+   "QTY": 6351.0
+  },
+  {
+   "BASE_YM": "2021",
+   "ARPT_PRT_CD": "김포공항",
+   "QTY": 8889.0
+  },
+  {
+   "BASE_YM": "2021",
+   "ARPT_PRT_CD": "제주공항",
+   "QTY": 2494.0
+  },
+  {
+   "BASE_YM": "2021",
+   "ARPT_PRT_CD": "기타공항",
+   "QTY": 2410.0
+  },
+  {
+   "BASE_YM": "2021",
+   "ARPT_PRT_CD": "인천항구",
+   "QTY": 20903.0
+  },
+  {
+   "BASE_YM": "2021",
+   "ARPT_PRT_CD": "부산항구",
+   "QTY": 39533.0
+  },
+  {
+   "BASE_YM": "2021",
+   "ARPT_PRT_CD": "제주항구",
+   "QTY": 967.0
+  },
+  {
+   "BASE_YM": "2021",
+   "ARPT_PRT_CD": "기타항구",
+   "QTY": 97551.0
+  },
+  {
+   "BASE_YM": "2022",
+   "ARPT_PRT_CD": "인천공항",
+   "QTY": 5663478.0
+  },
+  {
+   "BASE_YM": "2022",
+   "ARPT_PRT_CD": "김해공항",
+   "QTY": 533708.0
+  },
+  {
+   "BASE_YM": "2022",
+   "ARPT_PRT_CD": "김포공항",
+   "QTY": 119235.0
+  },
+  {
+   "BASE_YM": "2022",
+   "ARPT_PRT_CD": "제주공항",
+   "QTY": 13404.0
+  },
+  {
+   "BASE_YM": "2022",
+   "ARPT_PRT_CD": "기타공항",
+   "QTY": 73914.0
+  },
+  {
+   "BASE_YM": "2022",
+   "ARPT_PRT_CD": "인천항구",
+   "QTY": 20311.0
+  },
+  {
+   "BASE_YM": "2022",
+   "ARPT_PRT_CD": "부산항구",
+   "QTY": 41852.0
+  },
+  {
+   "BASE_YM": "2022",
+   "ARPT_PRT_CD": "제주항구",
+   "QTY": 1390.0
+  },
+  {
+   "BASE_YM": "2022",
+   "ARPT_PRT_CD": "기타항구",
+   "QTY": 86739.0
+  },
+  {
+   "BASE_YM": "2023",
+   "ARPT_PRT_CD": "인천공항",
+   "QTY": 17689317.0
+  },
+  {
+   "BASE_YM": "2023",
+   "ARPT_PRT_CD": "김해공항",
+   "QTY": 2769282.0
+  },
+  {
+   "BASE_YM": "2023",
+   "ARPT_PRT_CD": "김포공항",
+   "QTY": 828618.0
+  },
+  {
+   "BASE_YM": "2023",
+   "ARPT_PRT_CD": "제주공항",
+   "QTY": 88517.0
+  },
+  {
+   "BASE_YM": "2023",
+   "ARPT_PRT_CD": "기타공항",
+   "QTY": 906967.0
+  },
+  {
+   "BASE_YM": "2023",
+   "ARPT_PRT_CD": "인천항구",
+   "QTY": 26266.0
+  },
+  {
+   "BASE_YM": "2023",
+   "ARPT_PRT_CD": "부산항구",
+   "QTY": 308076.0
+  },
+  {
+   "BASE_YM": "2023",
+   "ARPT_PRT_CD": "제주항구",
+   "QTY": 533.0
+  },
+  {
+   "BASE_YM": "2023",
+   "ARPT_PRT_CD": "기타항구",
+   "QTY": 98265.0
+  },
+  {
+   "BASE_YM": "2024",
+   "ARPT_PRT_CD": "인천공항",
+   "QTY": 21858713.0
+  },
+  {
+   "BASE_YM": "2024",
+   "ARPT_PRT_CD": "김해공항",
+   "QTY": 3666004.0
+  },
+  {
+   "BASE_YM": "2024",
+   "ARPT_PRT_CD": "김포공항",
+   "QTY": 940687.0
+  },
+  {
+   "BASE_YM": "2024",
+   "ARPT_PRT_CD": "제주공항",
+   "QTY": 124180.0
+  },
+  {
+   "BASE_YM": "2024",
+   "ARPT_PRT_CD": "기타공항",
+   "QTY": 1526208.0
+  },
+  {
+   "BASE_YM": "2024",
+   "ARPT_PRT_CD": "인천항구",
+   "QTY": 40998.0
+  },
+  {
+   "BASE_YM": "2024",
+   "ARPT_PRT_CD": "부산항구",
+   "QTY": 424392.0
+  },
+  {
+   "BASE_YM": "2024",
+   "ARPT_PRT_CD": "제주항구",
+   "QTY": 736.0
+  },
+  {
+   "BASE_YM": "2024",
+   "ARPT_PRT_CD": "기타항구",
+   "QTY": 104517.0
+  },
+  {
+   "BASE_YM": "2025",
+   "ARPT_PRT_CD": "인천공항",
+   "QTY": 22021044.0
+  },
+  {
+   "BASE_YM": "2025",
+   "ARPT_PRT_CD": "김해공항",
+   "QTY": 4065097.0
+  },
+  {
+   "BASE_YM": "2025",
+   "ARPT_PRT_CD": "김포공항",
+   "QTY": 1033064.0
+  },
+  {
+   "BASE_YM": "2025",
+   "ARPT_PRT_CD": "제주공항",
+   "QTY": 164904.0
+  },
+  {
+   "BASE_YM": "2025",
+   "ARPT_PRT_CD": "기타공항",
+   "QTY": 1598822.0
+  },
+  {
+   "BASE_YM": "2025",
+   "ARPT_PRT_CD": "인천항구",
+   "QTY": 54456.0
+  },
+  {
+   "BASE_YM": "2025",
+   "ARPT_PRT_CD": "부산항구",
+   "QTY": 509071.0
+  },
+  {
+   "BASE_YM": "2025",
+   "ARPT_PRT_CD": "제주항구",
+   "QTY": 1322.0
+  },
+  {
+   "BASE_YM": "2025",
+   "ARPT_PRT_CD": "기타항구",
+   "QTY": 102397.0
+  },
+  {
+   "BASE_YM": "2026",
+   "ARPT_PRT_CD": "인천공항",
+   "QTY": 12569574.0
+  },
+  {
+   "BASE_YM": "2026",
+   "ARPT_PRT_CD": "김해공항",
+   "QTY": 2542978.0
+  },
+  {
+   "BASE_YM": "2026",
+   "ARPT_PRT_CD": "김포공항",
+   "QTY": 682361.0
+  },
+  {
+   "BASE_YM": "2026",
+   "ARPT_PRT_CD": "제주공항",
+   "QTY": 117885.0
+  },
+  {
+   "BASE_YM": "2026",
+   "ARPT_PRT_CD": "기타공항",
+   "QTY": 1019505.0
+  },
+  {
+   "BASE_YM": "2026",
+   "ARPT_PRT_CD": "인천항구",
+   "QTY": 26674.0
+  },
+  {
+   "BASE_YM": "2026",
+   "ARPT_PRT_CD": "부산항구",
+   "QTY": 360453.0
+  },
+  {
+   "BASE_YM": "2026",
+   "ARPT_PRT_CD": "제주항구",
+   "QTY": 213.0
+  },
+  {
+   "BASE_YM": "2026",
+   "ARPT_PRT_CD": "기타항구",
+   "QTY": 61724.0
+  }
+ ]
+}

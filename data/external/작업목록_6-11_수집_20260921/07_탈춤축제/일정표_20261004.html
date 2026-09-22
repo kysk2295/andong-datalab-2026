@@ -1,0 +1,1606 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+<title>행사일정표</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=4.0,user-scalable=1">
+<meta http-equiv="Content-Type" content="text/html; charset=ks_c_5601-1987; charset=EUC-KR">
+<meta http-equiv="Pragma"	content="no-cache">
+<meta http-equiv="Expires" content ="-1">
+<meta name="subject" content="안동국제탈춤페스티벌">
+<meta name="title" content="안동국제탈춤페스티벌">
+<meta name="description" content="안동국제탈춤페스티벌, 9월 26일부터 10월 5일까지, 안동 탈춤공원과 원도심 일원, 탈춤축제, 탈춤공연, 탈놀이경연대회, 탈놀이대동난장 등">
+<meta name="keywords" content="안동국제탈춤페스티벌, 안동탈춤, 탈춤축제, 안동탈춤페스티벌, 탈춤페스티벌, 탈춤공연, 탈놀이대동난장, 탈놀이경연대회, 축제일정">
+<meta name="location" content="south korea">
+<meta name="distribution" content="탈춤">
+<meta name="copyright" content="maskdance">
+<meta name="robots" content="all">
+<meta property="og:type" content="website">
+<meta property="og:title" content="안동국제탈춤페스티벌">
+<meta property="og:description" content="탈춤축제, 탈춤페스티벌, 안동탈춤축제, 탈춤공연, 경연대회, 프로그램, 축제가이드, 참여신청">
+<meta property="og:image" content="https://www.maskdance.com/2024/images/v2/og_img.png">
+<meta property="og:url" content="http://www.maskdance.com">
+
+<script type="text/javascript" src="/gears/resource/ie-detect.js"></script>
+<link rel="stylesheet" href="/2024/inc/style.css?v1" type="text/css" charset="euc-kr">
+<link rel="stylesheet" href="/gears/board/resource/board_2024.css" type="text/css">
+<link rel="stylesheet" href="/gears/photogrid/resource/style.css" type="text/css">
+<script type="text/javascript" src="/gears/resource/jquery-latest.min.js"></script>
+<script type="text/javascript" src="/2024/inc/menu-hover.js"></script>
+<script type="text/javascript" src="/2024/inc/script.js"></script>
+<script src="/2024/inc/jquery.rwdImageMaps.min.js"></script>
+<link rel="stylesheet" href="/2024/inc/font-awesome/css/font-awesome.min.css">
+<script src="/2024/inc/swiper/swiper.min.js"></script> 
+<link rel="stylesheet" href="/2024/inc/swiper/swiper.min.css">
+
+<!-- 파비콘 이미지 -->
+<link href="/2024/images/favicon.png" rel="icon" type="image/png">
+<link href="/2024/images/favicon.png" rel="shortcut icon" type="image/png">
+<link href="/2024/images/favicon.png" rel="apple-touch-icon" type="image/png">
+
+<script type="text/javascript">
+$(function(){
+  var $subMenu = $("body").attr("id");
+
+  // 탑 메뉴 오버
+  $("#topMenuDiv > li > a").hover(
+    function(){
+      $(this).css({ color: "#00FF00" });
+      var $index = $(this).parent().index();
+
+      if($subMenu != "main" && $subMenu != "sub7"){
+        if($index != $subMenu){
+          $(this).css({ color: "#00FF00" });
+        };
+      };
+
+      $("#topMenuDiv div").hide();
+      $("#topMenuDiv div ul").hide();
+      $("#topMenuDiv div:eq(" + $index + ")").show();
+      $("#topMenuDiv div:eq(" + $index + ") ul").fadeIn();
+    },
+    function(){
+      $(this).css({ color: "#fff" });
+    }
+  );
+
+  // 서브메뉴 셀렉팅
+  var $subMenu = $("body").attr("id");
+  if($subMenu != "main" && $subMenu != "sub7"){
+    $subMenu = parseInt($subMenu.replace("sub","")) - 1;
+
+    var $li = $("#topMenuDiv > li:eq(" + $subMenu + ")");
+    $li.addClass("selected");
+    $("> a", $li).css({ color: "#00FF00" })
+    $("div", $li).show().children().fadeIn("slow");
+  };
+
+  // 서브 레프트 메뉴 셀렉팅
+  var $path = "/2024/sub7/sub1.asp";
+  var $idx = $path.lastIndexOf("/");
+  var $file1 = $path.substring($idx + 1, $path.length);
+
+  if($file1.indexOf("?") > -1){
+    $file1 = $file1.substring(0,$file1.indexOf("?"));
+  };
+  /*
+  if($subMenu == 4){
+    if($file1.indexOf("_") > -1){
+      $file1 = $file1.substring(0,$file1.indexOf("_"));
+      $file1 += ".asp";
+    }
+  };
+  */
+
+  $("#leftMenuDiv li a").each(function(idx){
+    var $this = $(this);
+    var $href = $this.attr("href");
+    var $idxx = $href.lastIndexOf("/");
+    var $file2 = $href.substring($idxx + 1, $href.length);
+
+    if($file1 == $file2){
+      $this.addClass("selected");
+    };
+  });
+
+  $('#language > a').click(function () {
+    $('#languages').slideToggle('fast');
+    return false;
+  });
+
+  $('#eosForm').submit(function () {
+    var charset = document.charset;
+    document.charset = 'utf-8';
+    this.submit();
+    document.charset = charset;
+    return false;
+  });
+});
+</script>
+
+<script type="text/javascript">
+  $(function () {
+    $('div.ytabs a.ytab').click(function () {
+      $(this).closest('div.ytabs').find('ul').slideToggle('fast');
+      return false;
+    });
+  });
+</script>
+
+<link rel="stylesheet" href="/gears/resource/fancybox/jquery.fancybox-1.3.4.css" type="text/css">
+<script type="text/javascript" src="/gears/resource/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript">
+  $(function () {
+
+
+    $('img[usemap]').rwdImageMaps();
+
+    $('a.js-gallery').live('click', function () {
+      $.fancybox(this, {
+        transitionIn: 'elastic',
+        transitionOut: 'elastic',
+        titlePosition: 'inside'
+      });
+      return false;
+    });
+  });
+</script>
+
+<style>
+  @media (max-width:640px) {
+    #FormBoard div.board-comment table.board-comment-list colgroup {display:none;}
+    #FormBoard div.board-comment table.board-comment-list,
+    #FormBoard div.board-comment table.board-comment-list tr,
+    #FormBoard div.board-comment table.board-comment-list td {display:block;width:100%;text-align:left;}
+  }
+</style>
+<style type="text/css">
+
+.pl_list_type ul {display:block; text-align:right;}
+.pl_list_type ul li {display:inline-block; width:126px; margin-left:10px;}
+.pl_list_type ul li a {display:flex; height:43px; font-size:16px; border:1px solid #bbbbbb; align-items:center; justify-content:center;}
+.pl_list_type ul li a i {margin-right:5px;}
+.pl_list_type ul li a.active {background:#3b3b3b; color:#FFF; border:1px solid #3b3b3b;}
+
+
+.pl_category {border-top:2px solid #000; margin-top:20px; background:url(/2024/images/main_dotline_h.png) repeat-x 0 bottom; margin-bottom:50px; z-index:0;}
+.pl_category ul {display:flex; justify-content:center;}
+.pl_category ul li a {position:relative; display:block;  height:70px; padding:0 20px; font-size:16px; font-family: 'GmarketSansMedium'; }
+.pl_category ul li a span {position:relative; display:inline-flex; align-items:center; justify-content:center; height:100%; padding:0 4px;}
+.pl_category ul li a span:after {position:absolute; width:0px; height:3px; background:#d92a83; bottom:0; content:""; transition:all .3s;}
+.pl_category ul li a.active span { }
+.pl_category ul li a.active span:after {width:100%; }
+.pl_category ul li a:hover span:after {width:100%; }
+
+.pl_category_wrap.fix {position:fixed; left:0; top:0; width:100%; z-index:999; background:#FFF;}
+.pl_category_wrap.fix .pl_category {max-width:1400px; margin:0 auto;}
+
+.pl_category.slide {position:relative; padding:0 60px; }
+.pl_category.slide .pl_category_slide {overflow:hidden;}
+.pl_category.slide ul { justify-content:start;}
+.pl_category.slide li {}
+.pl_category.slide li a {padding:0 20px;}
+.pl_category.slide li.swiper-slide{ width: fit-content;}
+
+
+.pl_category_left a {
+    cursor: pointer;
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 10px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #222;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pl_category_right a {
+    cursor: pointer;
+    position: absolute;
+    z-index: 9;
+    right: 0;
+    top: 10px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #222;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span.nbr {display:inline-block;white-space:nowrap;}
+
+.pl_category.room .pl_category_left {display:none;}
+.pl_category.room .pl_category_right {display:none;}
+.pl_category.room ul { justify-content:center;}
+
+.schedule form {height:50px;display:flex;align-items:stretch;float:left;}
+.schedule form > * {padding-left:1em;padding-right:1em;}
+.schedule form > input {border:solid 1px #404040;}
+.schedule form a,
+.schedule form button {background:#404040;color:#fff;cursor:pointer;border:0;display:flex;align-items:center;justify-content:center;font:10pt/1 sans-serif;}
+.schedule form a {background:#6b90da;}
+
+@media all and (max-width:900px){
+
+.pl_category.room ul { justify-content:start;}
+.pl_category.room .pl_category_left {display:flex;}
+.pl_category.room .pl_category_right {display:flex;}
+
+}
+
+@media all and (max-width:767px){
+
+.pl_category ul li a {font-size:15px; padding:0 10px;}
+.pl_list_type ul li a {font-size:14px;}
+
+.pl_category.slide li a {padding:0 10px;}
+}
+
+@media all and (max-width:580px){
+.pl_list_type ul {text-align:center;}
+.pl_category ul li a {font-size:13px; padding:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; display:block; letter-spacing:-0.5px;}
+.pl_category ul li a span {padding:0 10px;}
+
+.schedule form {float:none;display:inline-flex;margin-bottom:20px;}
+
+
+
+}
+
+@media all and (max-width:350px){
+
+.pl_list_type ul {display:flex;}
+.pl_list_type ul li {flex:auto;}
+
+.schedule form a,
+.schedule form button { padding:10px !important;}
+}
+
+.page-tab_1 ul li.p4 a[href*="안동시전역"] {background-color:#676767;}
+.schedule_table td .p_04[data-place="안동시전역"] {border-color:#676767; color:#676767;}
+</style>
+
+<script>
+ $( document ).ready( function() { 
+
+	var pl_category_slide = new Swiper('.pl_category_slide', {			
+			slidesPerView: 'auto',  //한번에 보여지는 슬라이드 개수
+			spaceBetween: 0,  //마진값	 
+			initialSlide: 0, //시작위치값
+			//centeredSlides: true, 
+			roundLengths: true,	//일반 해상도 화면에서 텍스트가 흐려지는 것을 방지하기 위해 슬라이드 너비와 높이 값을 반올림	
+		});
+
+		
+		$(".category-left").on("click", function() {
+			pl_category_slide.slidePrev();
+		});
+		$(".category-right").on("click", function() {
+			pl_category_slide.slideNext();
+		});
+		  
+}); 
+</script>
+
+</head>
+<body id="sub7" class="sub">
+<h1 class="invisible">행사일정표</h1>
+<h2 class="invisible">스킵 네비게이션</h2>
+<div id="skipNavigationDiv">
+  <ul>
+    <li><a href="#contentDiv">본문으로 바로가기</a></li>
+  </ul>
+</div>
+<header class="at-header">
+  <div class="at-container wide">
+    <h1 class="logo"><a href="/2024/main.asp"><img src="/2024/images/v2/logo.png" alt="안동국제탈춤페스티벌"></a></h1>
+    <div class="mb-open-menu"> 
+      <!--<span class="line1"></span>
+		<span class="line2"></span>
+		<span class="line3"></span>--> 
+        <div class="map-service"><a href="https://maskdance.com/map/" target="_blank"><img src="/2024/images/v2/bt_map.png" alt="축제장 위치 찾기 서비스"></a></div>
+    </div>
+    <div class="at-topmenu">
+      <h2 class="invisible">메인메뉴</h2>
+      <ul class="at-gnb">
+        <li class="at-gnb-1li"><a href="#none" class="at-gnb-1a"><span>축제소개</span></a>
+          <div class="at-snb at-snb1" data-height="200">
+            <div class="at-sub-title">
+              <div class="tit">축제소개</div>
+              <div class="desc">세계를 하나로 만드는 문화의 춤!<br>
+                탈을 쓰는 당신, 이미 축제의 주인공!</div>
+            </div>
+            <ul>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub1/sub1.asp">개요</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub1/sub2.asp">개최배경</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub1/sub3.asp">joy Festival!</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub1/sub4.asp">축제발자취</a></p>
+              </li>
+              <!--<li class="at-gnb-2li">
+                <p><a href="/2024/sub1/sub5.asp">협찬사</a></p>
+              </li>-->
+            </ul>
+          </div>
+        </li>
+        <li class="at-gnb-1li"><a href="#none" class="at-gnb-1a"><span>축제가이드</span></a>
+          <div class="at-snb at-snb2" data-height="276">
+            <div class="at-sub-title">
+              <div class="tit">축제가이드</div>
+              <div class="desc">세계를 하나로 만드는 문화의 춤!<br>
+                탈을 쓰는 당신, 이미 축제의 주인공!</div>
+            </div>
+            <ul>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub7/sub1.asp">행사일정표</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub7/sub2.asp">입장권안내</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub7/sub7.asp">축제장배치도</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub7/sub3.asp">오시는 길</a></p>
+                <ol>
+                  <li class="at-gnb-3li"><a href="/2024/sub7/sub3.asp">중앙선1942</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub7/sub3_3.asp">원도심</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub7/sub3_5.asp">탈춤공원</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub7/sub3_4.asp">하회마을</a></li>
+                  <!--<li class="at-gnb-3li"><a href="/2024/sub7/images/bus_time.jpg" target="_blank">시내버스 안내</a></li>-->
+                </ol>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub7/sub4.asp">주차장안내</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub7/sub5.asp">셔틀버스안내</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub7/sub8.asp">축제장먹거리</a></p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="at-gnb-1li"><a href="#none" class="at-gnb-1a"><span>프로그램</span></a>
+          <div class="at-snb at-snb3" data-height="376">
+            <div class="at-sub-title">
+              <div class="tit">프로그램</div>
+              <div class="desc">세계를 하나로 만드는 문화의 춤!<br>
+                탈을 쓰는 당신, 이미 축제의 주인공!</div>
+            </div>
+            <ul>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub2/sub0.asp">개막식/폐막식</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub2/sub1.asp">공연 프로그램</a></p>
+                <ol>
+                  <li class="at-gnb-3li"><a href="/2024/sub2/sub1.asp">한국탈춤</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub2/sub1_2.asp">외국탈춤</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub2/sub1_8.asp">마당극 & 창작극</a></li>
+                  <!--<li class="at-gnb-3li"><a href="/2024/sub2/sub1_3.asp">창작극</a></li>-->
+                  <li class="at-gnb-3li"><a href="/2024/sub2/sub1_4.asp">자유참가작공연</a></li>
+                  <!--<li class="at-gnb-3li"><a href="/2024/sub2/sub1_5.asp">지역문화예술인 공연</a></li>-->
+                  <li class="at-gnb-3li"><a href="/2024/sub2/sub1_6.asp">민속놀이</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub2/sub1_7.asp">하회마을행사</a></li>
+                    <li class="at-gnb-3li"><a href="/2024/sub2/sub1_9.asp">선유줄불놀이</a></li>
+                </ol>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub2/sub3_2.asp">참여 프로그램</a></p>
+                <ol>
+                  
+                  <li class="at-gnb-3li"><a href="/2024/sub2/sub3_2.asp">퍼레이드</a></li>
+                    <li class="at-gnb-3li"><a href="/2024/sub2/sub3.asp">대동난장</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub2/sub3_3.asp">탈춤배우기</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub2/sub3_4.asp">Global Mask Dance Challenge</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub2/sub3_5.asp">하회 가디언즈</a></li>
+                </ol>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub2/sub4.asp">경연 프로그램</a></p>
+                <ol>
+                  <li class="at-gnb-3li"><a href="/2024/sub2/sub4.asp?yflag=2026&search=&page=1&seq=4312">세계탈놀이경연대회</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub2/sub4.asp?yflag=2026&search=&page=1&seq=4313">TaLooK</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub2/sub4.asp?yflag=2026&search=&page=1&seq=4314">세계창작탈공모전</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub2/sub4.asp?yflag=2026&search=&page=1&seq=4315">탈춤그리기대회</a></li>
+                </ol>
+              </li>
+                 <li class="at-gnb-2li">
+                <p><a href="/2024/sub2/sub18.asp">전시프로그램</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub2/sub17.asp">연계프로그램</a></p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="at-gnb-1li"><a href="#none" class="at-gnb-1a"><span>참여신청</span></a>
+          <div class="at-snb at-snb4" data-height="200">
+            <div class="at-sub-title">
+              <div class="tit">참여신청</div>
+              <div class="desc">세계를 하나로 만드는 문화의 춤!<br>
+                탈을 쓰는 당신, 이미 축제의 주인공!</div>
+            </div>
+            <ul>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub3/sub1.asp">세계탈놀이 경연 대회</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub3/sub13.asp">TaLooK</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub3/sub2.asp">세계창작탈 공모전</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub3/sub3.asp">탈춤 그리기 대회</a></p>
+              </li>
+              <!--<li class="at-gnb-2li">
+                <p><a href="/2024/sub3/sub5.asp">참여 지원 프로그램</a></p>
+              </li>-->
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub3/sub9.asp">자유참가작 공연 신청</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="https://www.andongvc.or.kr/" target="_blank">축제 자원봉사자 신청</a></p>
+              </li>
+	      <li class="at-gnb-2li">
+                <p><a href="https://www.momo365.net/Community.do?cd=participant&ViewType=view&Code=4895" target="_blank">글로벌 호스트 신청</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub3/sub14.asp">글로벌마스크퍼레이드</a></p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="at-gnb-1li"><a href="#none" class="at-gnb-1a"><span>공지사항</span></a>
+          <div class="at-snb at-snb5" data-height="200">
+            <div class="at-sub-title">
+              <div class="tit">공지사항</div>
+              <div class="desc">세계를 하나로 만드는 문화의 춤!<br>
+                탈을 쓰는 당신, 이미 축제의 주인공!</div>
+            </div>
+            <ul>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub4/sub1.asp">공지사항</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub4/sub4.asp">FAQ</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub4/sub2.asp">묻고답하기</a></p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="at-gnb-1li"><a href="#none" class="at-gnb-1a"><span>자료실</span></a>
+          <div class="at-snb at-snb6" data-height="200">
+            <div class="at-sub-title">
+              <div class="tit">자료실</div>
+              <div class="desc">세계를 하나로 만드는 문화의 춤!<br>
+                탈을 쓰는 당신, 이미 축제의 주인공!</div>
+            </div>
+            <ul>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub5/sub1.asp">축제평가보고서</a></p>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub5/sub4_0.asp">축제영상</a></p>
+                <ol>
+                  <li class="at-gnb-3li"><a href="/2024/sub5/sub4_0.asp">축제 홍보영상</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub5/sub4.asp">탈춤영상자료</a></li>
+                </ol>
+              </li>
+              <li class="at-gnb-2li">
+                <p><a href="/2024/sub5/sub5.asp">축제이미지</a></p>
+                <ol>
+                  <li class="at-gnb-3li"><a href="/2024/sub5/sub5.asp">축제사진 </a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub5/sub5_2.asp">리플릿&팸플릿</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub5/sub5_3.asp">포스터</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub5/sub5_4.asp">캐릭터</a></li>
+                  <li class="at-gnb-3li"><a href="/2024/sub5/sub5_5.asp">애니메이션</a></li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--<a href="#" class="top_menu_bar"> <span class="line"></span> <span class="line"></span> <span class="line"></span> </a>-->
+    <h2 class="invisible">언어선택</h2>
+    <ul class="language">
+      <li><a href="https://www.maskdance.com/2024/main.asp">korean</a></li>
+      <li><a href="http://en.maskdance.com/2024/main.asp">english</a></li>
+    </ul>
+    <ul class="meta">
+      <li><a href="http://archive.kfce.or.kr/archives/index.do" target="_blank"><img src="/2024/images/v2/archive.png" alt="디지털 아카이브"></a></li>
+    </ul>
+  </div>
+</header>
+<div class="at-topmenubg"></div>
+
+<!-- 모바일 메뉴-->
+<div id="aside">
+  <div class="close_menu" id="mobile_menu_close"> <span class="close-line1"></span> <span class="close-line2"></span> </div>
+  <dl class="mobile_language">
+    <!--<dt><a href="#" id="href_lang">Language</a></dt>
+			  <dd id="dd_lang">
+				<ol>
+				  <li><a href="/eng/main.asp" target="_blank">English</a></li>
+				  <li><a href="/jpn/main.asp" target="_blank">日本語</a></li>
+				  <li><a href="/chn/main.asp" target="_blank">中國語(GB)</a></li>
+				</ol>
+			  </dd>-->
+  </dl>
+  <h3><img src="/2024/images/v2/logo.png" alt=""></h3>
+  <ul class="language_m">
+    <li><a href="http://www.maskdance.com/2024/main.asp">korean</a></li>
+    <li><a href="http://en.maskdance.com/2024/main.asp">english</a></li>
+  </ul>
+  <div class="m_barogagi"> 
+      <ul>
+          <li><a href="https://maskdance.com/map/" target="_blank">위치찾기</a></li>
+          <li><a href="/2024/sub7/sub1.asp">일정표</a> </li>
+    </ul>
+</div>
+  <div class="mobile_menu">
+    <ul>
+      <li class="mobile-list"> <a href="/2024/sub1/sub1.asp" class="first">축제소개</a>
+        <ul class="mb-sub-ul">
+          <li><a href="/2024/sub1/sub1.asp" target="_self">개요</a></li>
+          <li><a href="/2024/sub1/sub2.asp" target="_self">개최배경</a></li>
+          <li><a href="/2024/sub1/sub3.asp" target="_self">joy Festival!</a></li>
+          <li><a href="/2024/sub1/sub4.asp" target="_self">축제 발자취</a></li>
+          <!--<li><a href="/2024/sub1/sub5.asp" target="_self">협찬사</a></li>-->
+        </ul>
+      </li>
+      <li class="mobile-list"> <a href="/2024/sub7/sub1.asp" class="first">축제가이드</a>
+        <ul class="mb-sub-ul">
+          <li><a href="/2024/sub7/sub1.asp" target="_self">행사일정표</a></li>
+          <li><a href="/2024/sub7/sub2.asp" target="_self">입장권 안내</a></li>
+          <li><a href="/2024/sub7/sub7.asp" target="_self">축제 배치도</a></li>
+          <li><a href="/2024/sub7/sub3.asp" target="_self">오시는 길</a>
+            <ol>
+              <li><a href="/2024/sub7/sub3.asp">중앙선1942</a></li>
+              <li><a href="/2024/sub7/sub3_3.asp">원도심</a></li>
+              <li><a href="/2024/sub7/sub3_5.asp">탈춤공원</a></li>
+              <li><a href="/2024/sub7/sub3_4.asp">하회마을</a></li>
+              <!--<li><a href="/2024/sub7/images/bus_time.jpg" target="_blank">시내버스 안내</a></li>-->
+            </ol>
+          </li>
+          <li><a href="/2024/sub7/sub4.asp" target="_self">주차장안내</a></li>
+          <li><a href="/2024/sub7/sub5.asp" target="_self">셔틀버스안내</a></li>
+          <li><a href="/2024/sub7/sub8.asp" target="_self">축제장 먹거리</a></li>
+        </ul>
+      </li>
+      <li class="mobile-list"> <a href="/2024/sub2/sub0.asp" class="first">프로그램</a>
+        <ul class="mb-sub-ul">
+          <li><a href="/2024/sub2/sub0.asp" target="_self">개막식/폐막식</a></li>
+          <li><a href="/2024/sub2/sub1.asp" target="_self">공연 프로그램</a>
+            <ol>
+              <li><a href="/2024/sub2/sub1.asp">한국탈춤</a></li>
+              <li><a href="/2024/sub2/sub1_2.asp">외국탈춤</a></li>
+              <li><a href="/2024/sub2/sub1_8.asp">마당극 & 창작극</a></li>
+              <!--<li><a href="/2024/sub2/sub1_3.asp">창작극</a></li>-->
+              <li><a href="/2024/sub2/sub1_4.asp">자유참가작공연</a></li>
+              <!--<li><a href="/2024/sub2/sub1_5.asp">지역문화예술인 공연</a></li>-->
+              <li><a href="/2024/sub2/sub1_6.asp">민속놀이</a></li>
+              <li><a href="/2024/sub2/sub1_7.asp">하회마을행사</a></li>
+                <li><a href="/2024/sub2/sub1_9.asp">선유줄불놀이</a></li>
+            </ol>
+          </li>
+          <li><a href="/2024/sub2/sub3_2.asp" target="_self">참여 프로그램</a>
+            <ol>
+              
+              <li><a href="/2024/sub2/sub3_2.asp">퍼레이드</a></li>
+                <li><a href="/2024/sub2/sub3.asp">대동난장</a></li>
+              <li><a href="/2024/sub2/sub3_3.asp">탈춤배우기</a></li>
+              <li><a href="/2024/sub2/sub3_4.asp">Global Mask Dance Challenge</a></li>
+              <li><a href="/2024/sub2/sub3_5.asp">하회 가디언즈</a></li>
+            </ol>
+          </li>
+          <li><a href="/2024/sub2/sub4.asp" target="_self">경연 프로그램</a>
+            <ol>
+              <li><a href="/2024/sub2/sub4.asp?yflag=2025&search=&page=1&seq=4145">세계탈놀이경연대회</a></li>
+              <li><a href="/2024/sub2/sub4.asp?yflag=2026&search=&page=1&seq=4313">TaLooK</a></li>
+              <li><a href="/2024/sub2/sub4.asp?yflag=2024&search=&page=1&seq=4006">세계창작탈공모전</a></li>
+              <li><a href="/2024/sub2/sub4.asp?yflag=2024&search=&page=1&seq=4007">탈춤그리기대회</a></li>
+            </ol>
+          </li>
+          <li><a href="/2024/sub2/sub17.asp" target="_self">연계프로그램</a></li>
+        </ul>
+      </li>
+      <li class="mobile-list"> <a href="/2024/sub3/sub1.asp" class="first">참여신청</a>
+        <ul class="mb-sub-ul">
+          <li><a href="/2024/sub3/sub1.asp" target="_self">세계탈놀이 경연대회</a></li>
+          <li><a href="/2024/sub3/sub13.asp" target="_self">TaLooK</a></li>
+          <li><a href="/2024/sub3/sub2.asp" target="_self">세계 창작탈 공모전</a></li>
+          <li><a href="/2024/sub3/sub3.asp" target="_self">탈춤 그리기 대회</a></li>
+          <!--<li><a href="/2024/sub3/sub5.asp" target="_self">참여지원 프로그램</a></li>-->
+          <li><a href="/2024/sub3/sub9.asp" target="_self">자유참가작 공연 신청</a></li>
+          <li><a href="https://www.andongvc.or.kr/" target="_blank">축제자원봉사자 신청</a></li>
+		  <li><a href="https://m.momo365.net/Aliso?cd=participant&Code=4895" target="_blank">글로벌 호스트 신청</a></li>
+        </ul>
+      </li>
+      <li class="mobile-list"> <a href="/2024/sub4/sub1.asp" class="first">공지사항</a>
+        <ul class="mb-sub-ul">
+          <li><a href="/2024/sub4/sub1.asp" target="_self">공지사항</a></li>
+          <li><a href="/2024/sub4/sub4.asp" target="_self">FAQ</a></li>
+          <li><a href="/2024/sub4/sub2.asp" target="_self">묻고답하기</a></li>
+        </ul>
+      </li>
+      <li class="mobile-list"> <a href="/2024/sub5/sub1.asp" class="first">자료실</a>
+        <ul class="mb-sub-ul">
+          <li><a href="/2024/sub5/sub1.asp" target="_self">축제평가보고서</a></li>
+          <li><a href="/2024/sub5/sub4.asp" target="_self">축제영상</a>
+            <ol>
+              <li><a href="/2024/sub5/sub4_0.asp">축제 홍보영상</a></li>
+              <li><a href="/2024/sub5/sub4.asp">탈춤영상자료</a></li>
+            </ol>
+          </li>
+          <li><a href="/2024/sub5/sub2.asp" target="_self">축제이미지</a>
+            <ol>
+              <li><a href="/2024/sub5/sub5.asp">축제사진 </a></li>
+              <li><a href="/2024/sub5/sub5_2.asp">리플릿&팸플릿</a></li>
+              <li><a href="/2024/sub5/sub5_3.asp">포스터</a></li>
+              <li><a href="/2024/sub5/sub5_4.asp">캐릭터</a></li>
+              <li><a href="/2024/sub5/sub5_5.asp">애니메이션</a></li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="mobile_sns_box">
+    <ul>
+      <li><a href="https://www.instagram.com/andongtour/" target="_blank"><img src="/2024/images/sns_instagram1.gif" alt="인스타그램"></a></li>
+      <li><a href="https://www.facebook.com/tourandong" target="_blank"><img src="/2024/images/sns_facebook1.gif" alt="페이스북"></a></li>
+      <li><a href="https://www.youtube.com/channel/UCQ908L7kTlLjC0eP9DTwTJg" target="_blank"><img src="/2024/images/sns_youtube1.gif" alt="유튜브"></a></li>
+    </ul>
+  </div>
+  <div class="mobie_meta"> <a href="http://archive.kfce.or.kr/archives/index.do" target="_blank"><!--<img src="/2024/images/v2/archive.png" alt="디지털 아카이브">--> 
+    <sub>안동국제탈춤페스티벌</sub>
+    <p>디지털 아카이브</p>
+    </a> </div>
+</div>
+<div class="mask"></div>
+<!--모바일 메뉴-->
+
+<div class="gnb_all_menu">
+  <button class="gnb_all_close"><img src="/2024/images/v2/gnb_all_close.png" alt=""></button>
+  <ul>
+    <li class="list"> <a href="/2024/sub1/sub1.asp" class="first">축제소개</a>
+      <ul class="sub-ul">
+        <li><a href="/2024/sub1/sub1.asp" target="_self">개요</a></li>
+        <li><a href="/2024/sub1/sub2.asp" target="_self">개최배경</a></li>
+        <li><a href="/2024/sub1/sub3.asp" target="_self">joy Festival!</a></li>
+        <li><a href="/2024/sub1/sub4.asp" target="_self">축제 발자취</a></li>
+        <!--<li><a href="/2024/sub1/sub5.asp" target="_self">협찬사</a></li>-->
+      </ul>
+    </li>
+    <li class="list"> <a href="/2024/sub7/sub1.asp" class="first">축제가이드</a>
+      <ul class="sub-ul">
+        <li><a href="/2024/sub7/sub1.asp" target="_self">행사일정표</a></li>
+        <li><a href="/2024/sub7/sub2.asp" target="_self">입장권 안내</a></li>
+        <li><a href="/2024/sub7/sub7.asp" target="_self">축제 배치도</a></li>
+        <li><a href="/2024/sub7/sub3.asp" target="_self">오시는 길</a>
+          <ul class="sub-ul2">
+            <li><a href="/2024/sub7/sub3.asp">중앙선1942</a></li>
+            <li><a href="/2024/sub7/sub3_3.asp">원도심</a></li>
+            <li><a href="/2024/sub7/sub3_5.asp">탈춤공원</a></li>
+            <li><a href="/2024/sub7/sub3_4.asp">하회마을</a></li>
+            <li><a href="/2024/sub7/images/bus_time.jpg" target="_blank">시내버스 안내</a></li>
+          </ul>
+        </li>
+        <li><a href="/2024/sub7/sub4.asp" target="_self">주차장안내</a></li>
+        <li><a href="/2024/sub7/sub5.asp" target="_self">셔틀버스안내</a></li>
+        <li><a href="/2024/sub7/sub8.asp" target="_self">축제장 먹거리</a></li>
+      </ul>
+    </li>
+    <li class="list"> <a href="/2024/sub2/sub0.asp" class="first">프로그램</a>
+      <ul class="sub-ul">
+        <li><a href="/2024/sub2/sub0.asp" target="_self">개막식/폐막식</a></li>
+        <li><a href="/2024/sub2/sub1.asp" target="_self">공연 프로그램</a>
+          <ul class="sub-ul2">
+            <li><a href="/2024/sub2/sub1.asp">한국탈춤</a></li>
+            <li><a href="/2024/sub2/sub1_2.asp">외국탈춤</a></li>
+            <li><a href="/2024/sub2/sub1_8.asp">마당극 & 창작극</a></li>
+            <!--<li><a href="/2024/sub2/sub1_3.asp">창작극</a></li>-->
+            <li><a href="/2024/sub2/sub1_4.asp">자유참가작공연</a></li>
+            <!--<li><a href="/2024/sub2/sub1_5.asp">지역문화예술인 공연</a></li>-->
+            <li><a href="/2024/sub2/sub1_6.asp">민속놀이</a></li>
+            <li><a href="/2024/sub2/sub1_7.asp">하회마을행사</a></li>
+              <li><a href="/2024/sub2/sub1_9.asp">선유줄불놀이</a></li>
+          </ul>
+        </li>
+        <li><a href="/2024/sub2/sub3_2.asp" target="_self">참여 프로그램</a>
+          <ul class="sub-ul2">
+            
+            <li><a href="/2024/sub2/sub3_2.asp">퍼레이드</a></li>
+              <li><a href="/2024/sub2/sub3.asp">대동난장</a></li>
+            <li><a href="/2024/sub2/sub3_3.asp">탈춤배우기</a></li>
+            <li><a href="/2024/sub2/sub3_4.asp">Global Mask Dance Challenge</a></li>
+            <li><a href="/2024/sub2/sub3_5.asp">하회 가디언즈</a></li>
+          </ul>
+        </li>
+        <li><a href="/2024/sub2/sub4.asp" target="_self">경연 프로그램</a>
+          <ul class="sub-ul2">
+            <li><a href="/2024/sub2/sub4.asp?yflag=2024&search=&page=1&seq=4003">세계탈놀이경연대회</a></li>
+            <li><a href="/2024/sub2/sub4.asp?yflag=2026&search=&page=1&seq=4313">TaLooK</a></li>
+            <li><a href="/2024/sub2/sub4.asp?yflag=2024&search=&page=1&seq=4006">세계창작탈공모전</a></li>
+            <li><a href="/2024/sub2/sub4.asp?yflag=2024&search=&page=1&seq=4007">탈춤그리기대회</a></li>
+          </ul>
+        </li>
+        <li><a href="/2024/sub2/sub17.asp" target="_self">연계프로그램</a></li>
+      </ul>
+    </li>
+    <li class="list"> <a href="/2024/sub3/sub1.asp" class="first">참여신청</a>
+      <ul class="sub-ul">
+        <li><a href="/2024/sub3/sub1.asp" target="_self">세계탈놀이 경연대회</a></li>
+        <!--<li><a href="/2024/sub3/sub13.asp" target="_self">탈 탈랜트</a></li>-->
+        <li><a href="/2024/sub3/sub2.asp" target="_self">세계 창작탈 공모전</a></li>
+        <li><a href="/2024/sub3/sub3.asp" target="_self">탈춤 그리기 대회</a></li>
+        <!--<li><a href="/2024/sub3/sub5.asp" target="_self">참여지원 프로그램</a></li>-->
+        <li><a href="/2024/sub3/sub9.asp" target="_self">자유참가작 공연 신청</a></li>
+        <li><a href="https://www.andongvc.or.kr/" target="_blank">축제자원봉사자 신청</a></li>
+		<li><a href="https://m.momo365.net/Aliso?cd=participant&Code=4895" target="_blank">글로벌 호스트 신청</a></li>
+      </ul>
+    </li>
+    <li class="list"> <a href="/2024/sub4/sub1.asp" class="first">공지사항</a>
+      <ul class="sub-ul">
+        <li><a href="/2024/sub4/sub1.asp" target="_self">공지사항</a></li>
+        <li><a href="/2024/sub4/sub4.asp" target="_self">FAQ</a></li>
+        <li><a href="/2024/sub4/sub2.asp" target="_self">묻고답하기</a></li>
+      </ul>
+    </li>
+    <li class="list"> <a href="/2024/sub5/sub1.asp" class="first">자료실</a>
+      <ul class="sub-ul">
+        <li><a href="/2024/sub5/sub1.asp" target="_self">축제평가보고서</a></li>
+        <li><a href="/2024/sub5/sub4.asp" target="_self">축제영상</a>
+          <ul class="sub-ul2">
+            <li><a href="/2024/sub5/sub4_0.asp">축제 홍보영상</a></li>
+            <li><a href="/2024/sub5/sub4.asp">탈춤영상자료</a></li>
+          </ul>
+        </li>
+        <li><a href="/2024/sub5/sub2.asp" target="_self">축제이미지</a>
+          <ul class="sub-ul2">
+            <li><a href="/2024/sub5/sub5.asp">축제사진</a></li>
+            <li><a href="/2024/sub5/sub5_2.asp">리플릿&팸플릿</a></li>
+            <li><a href="/2024/sub5/sub5_3.asp">포스터</a></li>
+            <li><a href="/2024/sub5/sub5_4.asp">캐릭터</a></li>
+            <li><a href="/2024/sub5/sub5_5.asp">애니메이션</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<h2 class="invisible">본문 내용</h2>
+<div id="subMidDiv">
+  <div class="subvisual sub7">
+    <div class="at-container">
+      <div id="subTxt">
+  <h3><strong>축제정보</strong><br>
+   탈춤으로 전 세계인을 하나로 만드는 신명나는 축제
+  </h3>
+</div>
+
+    </div>
+  </div>
+  <!-- 현재위치 -->
+  <div class="at-loc">
+  <div class="outWrap location-inner">
+    <ul class="loc-1">
+      <li class="home"><a href="/2024/main.asp"></a></li>
+      <li class="location1"> <a href="#none" class="title">축제가이드</a>
+        <ul class="location-2dep" style="display:none;">
+          <li><a href="/2024/sub1/sub1.asp">축제소개</a></li>
+          <li><a href="/2024/sub7/sub1.asp">축제가이드</a></li>
+          <li><a href="/2024/sub2/sub0.asp">프로그램</a></li>
+          <li><a href="/2024/sub3/sub1.asp">참여신청</a></li>
+          <li><a href="/2024/sub4/sub1.asp">공지사항</a></li>
+          <li><a href="/2024/sub5/sub1.asp">자료실</a></li>
+        </ul>
+      </li>
+      <li class="location2"> <a href="#" class="title">행사일정표</a>
+        <ul class="location-2dep" style="display:none;">
+					<li><a href="/2024/sub7/sub1.asp">행사일정표</a></li>
+          		    <li><a href="/2024/sub7/sub2.asp">입장권안내</a></li>
+                    <li><a href="/2024/sub7/sub7.asp">축제장배치도</a></li>
+           		    <li><a href="/2024/sub7/sub3.asp">오시는 길</a></li>
+          		    <li><a href="/2024/sub7/sub4.asp">주차장안내</a></li>
+                    <li><a href="/2024/sub7/sub5.asp">셔틀버스안내</a></li>
+                    <li><a href="/2024/sub7/sub8.asp">축제장먹거리</a></li>
+        </ul>
+      </li>
+			
+    </ul>
+    <!-- SNS바로가기 -->
+    
+<div id="share-area">
+	<input id="cur_url" type="text" style="position:absolute;top:-2000px;" value="https://www.maskdance.com/2024/sub7/sub1.asp?ymd=20261004">
+	<li><a href="#" id="toggleShare"><img src="/2022/images/loc_share.png" alt="공유하기"></a></li>
+	<li class="none"><a href="javascript:window.print()"><img src="/2022/images/loc_print.png" alt="화면 인쇄하기"></a></li>
+</div>
+<!-- Start SNS Share Layer -->
+<h3 class="invisible">공유하기</h3>
+<div id="share-bt">
+  <li><a href="javascript:sendLink();"><img src="/2022/images/icon_kakaotalk.png" alt="카카오톡공유"></a></li>
+  <li><a href="http://share.naver.com/web/shareView.nhn?url=https%3A%2F%2Fwww%2Emaskdance%2Ecom%2F2024%2Fsub7%2Fsub1%2Easp%3Fymd%3D20261004&title=%5B%BE%C8%B5%BF%B1%B9%C1%A6%C5%BB%C3%E3%C6%E4%BD%BA%C6%BC%B9%FA%5D" target="_blank"><img src="/2022/images/icon_blog.png" alt="블로그공유"></a></li>
+  <li><a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww%2Emaskdance%2Ecom%2F2024%2Fsub7%2Fsub1%2Easp%3Fymd%3D20261004" target="_blank"><img src="/2022/images/icon_facebook.png" alt="페이스북공유"></a></li>
+  <li><a href="https://twitter.com/share?url=https%3A%2F%2Fwww%2Emaskdance%2Ecom%2F2024%2Fsub7%2Fsub1%2Easp%3Fymd%3D20261004&text=%5B%BE%C8%B5%BF%B1%B9%C1%A6%C5%BB%C3%E3%C6%E4%BD%BA%C6%BC%B9%FA%5D" target="_blank"><img src="/2022/images/icon_twitter.png" alt="트위터공유"></a></li>
+  <li><a href="https://story.kakao.com/share?url=https%3A%2F%2Fwww%2Emaskdance%2Ecom%2F2024%2Fsub7%2Fsub1%2Easp%3Fymd%3D20261004" target="_blank"><img src="/2022/images/icon_kakaostory.png" alt="카카오스토리공유"></a></li>
+</div>
+<script type="text/javascript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript">
+  //kakao link share
+  (function () {
+    var url = location.href.split('#')[0];
+    window.sendLink = function () {
+      Kakao.init('315edce36249aef356d5ed40a1cfec29');
+      Kakao.Link.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: document.title,
+          imageUrl: $('meta[property="og:image"]').attr('content') || '',
+          link: {
+            mobileWebUrl: url,
+            webUrl: url
+          }
+        },
+        installTalk: true,
+        buttonTitle: '웹으로 보기',
+        fail: function () {
+          alert('공유에 실패했습니다');
+        }
+      });
+    };
+  })();
+</script>
+<!-- End SNS Share Layer -->
+  </div>
+</div>
+
+  <div class="outWrap">
+    <div id="midContentDiv">
+      <h1 id="subtitle">행사일정표</h1>
+      <h2 class="invisible">본문 내용</h2>
+      <div id="contentDiv">
+        <!-- 콘텐츠 시작 -->
+        <!--<p align="center"><img src="/2024/images/ready.jpg" alt="2024.9.27(금) ~ 10.06(일)"></p>-->
+        <div class="schedule">
+          
+          <form action="?" method="get">
+            <input type="text" name="q" value="" placeholder="(행사명으로 검색)">
+            <button type="submit">검색</button>
+            
+          </form>
+          
+          <a href="/gears_pds/book/123/2026_leaflet_ko (2).pdf" class="btn_schedule_hall" target="_blank">축제 홍보 리플릿 보기</a>
+          <a href="download schedule_2026.pdf" class="btn_schedule" target="_blank">축제 전체 일정표 보기</a></div>
+        <!-- 날짜탭 시작 -->
+        <div class="pl_category slide room">
+          <div class="pl_category_left"> <a class="category-left"><i class="fa fa-chevron-left"></i></a> </div>
+          <div class="pl_category_right"> <a class="category-right"><i class="fa fa-chevron-right"></i></a> </div>
+          <div class="pl_category_slide">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide"><a href="?ymd=20260924" class=""><span class="bar">09.24 (목)</span></a></li>
+              <li class="swiper-slide"><a href="?ymd=20260925" class=""><span class="bar">09.25 (금)</span></a></li>
+              <li class="swiper-slide"><a href="?ymd=20260926" class=""><span class="bar">09.26 (토)</span></a></li>
+              <li class="swiper-slide"><a href="?ymd=20260927" class=""><span class="bar">09.27 (일)</span></a></li>
+              <li class="swiper-slide"><a href="?ymd=20260928" class=""><span class="bar">09.28 (월)</span></a></li>
+              <li class="swiper-slide"><a href="?ymd=20260929" class=""><span class="bar">09.29 (화)</span></a></li>
+              <li class="swiper-slide"><a href="?ymd=20260930" class=""><span class="bar">09.30 (수)</span></a></li>
+              <li class="swiper-slide"><a href="?ymd=20261001" class=""><span class="bar">10.01 (목)</span></a></li>
+              <li class="swiper-slide"><a href="?ymd=20261002" class=""><span class="bar">10.02 (금)</span></a></li>
+              <li class="swiper-slide"><a href="?ymd=20261003" class=""><span class="bar">10.03 (토)</span></a></li>
+              <li class="swiper-slide"><a href="?ymd=20261004" class="active"><span class="bar">10.04 (일)</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <!--날짜탭 끝-->
+        
+        
+        <!-- 장소탭 시작 -->
+        <div class="page-tab_1">
+          <ul>
+            <li class="p1"><a href="?ymd=20261004&p1=1.탈춤공원"><span>탈춤공원</span></a></li>
+            <li class="p2"><a href="?ymd=20261004&p1=2.탈춤공연장"><span>탈춤공연장</span></a></li>
+            <li class="p3"><a href="?ymd=20261004&p1=3.중앙선1942"><span>중앙선1942</span></a></li>
+            <li class="p4"><a href="?ymd=20261004&p1=4.안동시전역"><span>안동시전역</span></a></li>
+            <li class="p4"><a href="?ymd=20261004&p1=4.원도심"><span>원도심</span></a></li>
+            <li class="p5"><a href="?ymd=20261004&p1=5.하회마을"><span>하회마을</span></a></li>
+          </ul>
+        </div>
+        <!-- 장소탭 끝 -->
+        
+        <!-- 일정표 시작 -->
+        <p class="table_txt">* 행사명을 클릭하시면 자세한 내용을 보실 수 있습니다. </p>
+        <table class="schedule_table" border="0" cellpadding="0" cellspacing="0" summary="일정표">
+          <thead>
+            <tr>
+              <th>시간</th>
+              <th>행사명</th>
+              <th>장소</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10:00 ~ 11:00</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_2.asp?yflag=2026&search=&page=3&seq=4358" target="_blank">태국1 / 라트비아 / 콜럼비아 / 스리랑카 / 이스라엘 / 멕시코 / 말레이시아3 / 중국</a>
+                
+              </td>
+              <td>
+                <span class="p_03" data-place="중앙선1942">중앙선1942</span>
+                
+                <span class="break">메인무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>10:30 ~ 11:30</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_2.asp?yflag=2026&search=&page=4&seq=4368" target="_blank">튀르키예 / 리투아니아 / 야쿠티아 / 필리핀</a>
+                
+              </td>
+              <td>
+                <span class="p_02" data-place="탈춤공연장">탈춤공연장</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="2">11:00 ~ 11:30</td>
+              <td>
+                
+                <a href="/2024/sub2/sub3_3.asp" target="_blank">탈춤따라배우기</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">버스킹무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub1_4.asp?yflag=2026&search=&page=12&seq=4478" target="_blank">헤이스</a>
+                
+              </td>
+              <td>
+                <span class="p_03" data-place="중앙선1942">중앙선1942</span>
+                
+                <span class="break">메인무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="2">11:00 ~ 12:00</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_4.asp?yflag=2026&search=&page=3&seq=4418" target="_blank">모어모어 공연기획 예술단</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">탈춤공원무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                어린이대상 프로그램
+              </td>
+              <td>
+                <span class="p_04" data-place="원도심">원도심</span>
+                
+                <span class="break">왔니껴무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="2">11:30 ~ 12:00</td>
+              <td>
+                
+                <a href="/2024/sub2/sub3_3.asp" target="_blank">탈랄라댄스배우기</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">버스킹무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub1_4.asp?yflag=2026&search=&page=11&seq=4477" target="_blank">타나유스</a>
+                
+              </td>
+              <td>
+                <span class="p_03" data-place="중앙선1942">중앙선1942</span>
+                
+                <span class="break">메인무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>12:00 ~ 12:30</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_4.asp?yflag=2026&search=&page=6&seq=4443" target="_blank">아랑 고고장구 대곡지부</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">탈춤공원무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>12:00 ~ 15:00</td>
+              <td>
+                아랑고고장구 페스티벌
+              </td>
+              <td>
+                <span class="p_03" data-place="중앙선1942">중앙선1942</span>
+                
+                <span class="break">메인무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>12:30 ~ 13:30</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_2.asp?yflag=2026&search=&page=3&seq=4365" target="_blank">중국 / 태국2 / 타타르스탄 / 말레이시아1 / 러시아</a>
+                
+              </td>
+              <td>
+                <span class="p_02" data-place="탈춤공연장">탈춤공연장</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>13:00 ~ 13:30</td>
+              <td>
+                
+                <a href="/2024/sub2/sub3_3.asp" target="_blank">탈랄라댄스배우기</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">버스킹무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="3">13:00 ~ 14:00</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_8.asp?yflag=2026&search=&page=1&seq=4508" target="_blank">이매 장가가는 날</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub1_4.asp?yflag=2026&search=&page=6&seq=4419" target="_blank">안동시종합사회복지관 위너스 키즈밸리</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">탈춤공원무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub3_2.asp" target="_blank">용상시장 퍼레이드</a>
+                
+              </td>
+              <td>
+                <span class="p_04" data-place="안동시전역">안동시전역</span>
+                
+                <span class="break">용상시장</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>13:00 ~ 15:00</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_8.asp?yflag=2026&search=&page=2&seq=4500" target="_blank">탈춤외전</a>
+                
+              </td>
+              <td>
+                <span class="p_04" data-place="안동시전역">안동시전역</span>
+                
+                <span class="break">구시장</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>14:00 ~ 14:30</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_2.asp?yflag=2026&search=&page=1&seq=4357" target="_blank">뉴질랜드</a>
+                
+              </td>
+              <td>
+                <span class="p_04" data-place="원도심">원도심</span>
+                
+                <span class="break">왔니껴무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="3">14:00 ~ 15:00</td>
+              <td>
+                경북 국악협회
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">탈춤공원무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub1.asp?yflag=2026&search=&page=2&seq=4332" target="_blank">양주별산대놀이</a>
+                
+              </td>
+              <td>
+                <span class="p_02" data-place="탈춤공연장">탈춤공연장</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub1_7.asp?yflag=2026&search=&page=1&seq=4370" target="_blank">하회별신굿 탈놀이</a>
+                
+              </td>
+              <td>
+                <span class="p_05" data-place="하회마을">하회마을</span>
+                
+                <span class="break">전수회관</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>14:00 ~ 16:00</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_8.asp?yflag=2026&search=&page=1&seq=4507" target="_blank">대학생 탈춤</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">버스킹무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>14:30 ~ 15:00</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_2.asp?yflag=2026&search=&page=1&seq=4355" target="_blank">말레이시아3</a>
+                
+              </td>
+              <td>
+                <span class="p_04" data-place="원도심">원도심</span>
+                
+                <span class="break">왔니껴무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>15:00 ~ 15:30</td>
+              <td>
+                실루엣
+              </td>
+              <td>
+                <span class="p_04" data-place="원도심">원도심</span>
+                
+                <span class="break">왔니껴무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="3">15:00 ~ 16:00</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_8.asp?yflag=2026&search=&page=1&seq=4508" target="_blank">이매 장가가는 날</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub1_4.asp?yflag=2026&search=&page=7&seq=4474" target="_blank">안동 하모니카 앙상블</a>
+                
+              </td>
+              <td>
+                <span class="p_03" data-place="중앙선1942">중앙선1942</span>
+                
+                <span class="break">메인무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub3_2.asp" target="_blank">신시장 퍼레이드</a>
+                
+              </td>
+              <td>
+                <span class="p_04" data-place="안동시전역">안동시전역</span>
+                
+                <span class="break">신시장</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>15:30 ~ 16:00</td>
+              <td>
+                소유
+              </td>
+              <td>
+                <span class="p_04" data-place="원도심">원도심</span>
+                
+                <span class="break">왔니껴무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="3">15:30 ~ 16:30</td>
+              <td>
+                경북 연극협회
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">탈춤공원무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub1_2.asp?yflag=2026&search=&page=2&seq=4342" target="_blank">불가리아 / 일본2 / 이탈리아 / 몽골</a>
+                
+              </td>
+              <td>
+                <span class="p_02" data-place="탈춤공연장">탈춤공연장</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub1_7.asp?yflag=2026&search=&page=1&seq=4334" target="_blank">예천청단놀음</a>
+                
+              </td>
+              <td>
+                <span class="p_05" data-place="하회마을">하회마을</span>
+                
+                <span class="break">전수회관</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>16:00 ~ 16:30</td>
+              <td>
+                
+                <a href="/2024/sub2/sub3_3.asp" target="_blank">탈랄라댄스배우기</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">버스킹무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>16:00 ~ 17:00</td>
+              <td>
+                
+                <a href="/2024/sub2/sub17.asp?yflag=2026&search=&page=1&seq=4382" target="_blank">국악한마당</a>
+                
+              </td>
+              <td>
+                <span class="p_04" data-place="원도심">원도심</span>
+                
+                <span class="break">왔니껴무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="2">16:30 ~ 17:00</td>
+              <td>
+                
+                <a href="/2024/sub2/sub3_3.asp" target="_blank">탈춤따라배우기</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">버스킹무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub1_4.asp?yflag=2026&search=&page=10&seq=4395" target="_blank">정상태권예술단</a>
+                
+              </td>
+              <td>
+                <span class="p_03" data-place="중앙선1942">중앙선1942</span>
+                
+                <span class="break">메인무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="4">17:00 ~ 18:00</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_8.asp?yflag=2026&search=&page=1&seq=4508" target="_blank">이매 장가가는 날</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub1_8.asp?yflag=2026&search=&page=1&seq=4497" target="_blank">탈춤, 흥부놀부 (연극촌 사람들)</a>
+                
+              </td>
+              <td>
+                <span class="p_02" data-place="탈춤공연장">탈춤공연장</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub1_4.asp?yflag=2026&search=&page=8&seq=4481" target="_blank">예술집단 단미</a>
+                
+              </td>
+              <td>
+                <span class="p_03" data-place="중앙선1942">중앙선1942</span>
+                
+                <span class="break">메인무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub3_2.asp" target="_blank">구시장 퍼레이드</a>
+                
+              </td>
+              <td>
+                <span class="p_04" data-place="안동시전역">안동시전역</span>
+                
+                <span class="break">구시장</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="2">17:00 ~ 18:30</td>
+              <td>
+                
+                <a href="/2024/sub2/sub4.asp?yflag=2026&search=&page=1&seq=4313" target="_blank">TaLooK(탈룩)</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">탈춤공원무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub1_4.asp?yflag=2026&search=&page=6&seq=4411" target="_blank">아랑고고장구 안동지부</a>
+                
+              </td>
+              <td>
+                <span class="p_04" data-place="원도심">원도심</span>
+                
+                <span class="break">왔니껴무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>17:30 ~ 18:00</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_4.asp?yflag=2026&search=&page=1&seq=4451" target="_blank">가온누리&amp;점프윙스줄넘기</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">버스킹무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>18:00 ~ 18:30</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_4.asp?yflag=2026&search=&page=10&seq=4395" target="_blank">정상태권예술단</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">버스킹무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>18:00 ~ 21:30</td>
+              <td>
+                
+                <a href="/2024/sub2/sub4.asp?yflag=2026&search=&page=1&seq=4312" target="_blank">탈놀이 경연대회(단체부 결승) 및 폐막식</a>
+                
+              </td>
+              <td>
+                <span class="p_03" data-place="중앙선1942">중앙선1942</span>
+                
+                <span class="break">메인무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>18:30 ~ 19:00</td>
+              <td>
+                
+                <a href="/2024/sub2/sub3_2.asp" target="_blank">축제장 퍼레이드</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">탈춤공원무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="2">19:00 ~ 20:00</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_4.asp?yflag=2026&search=&page=12&seq=4402" target="_blank">한울림 색소폰 앙상블</a>
+                
+              </td>
+              <td>
+                <span class="p_01" data-place="탈춤공원">탈춤공원</span>
+                
+                <span class="break">탈춤공원무대</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                
+                <a href="/2024/sub2/sub1.asp?yflag=2026&search=&page=3&seq=4316" target="_blank">하회별신굿 탈놀이</a>
+                
+              </td>
+              <td>
+                <span class="p_02" data-place="탈춤공연장">탈춤공연장</span>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>19:00 ~ 21:00</td>
+              <td>
+                
+                <a href="/2024/sub2/sub1_9.asp" target="_blank">하회선유줄불놀이</a>
+                
+              </td>
+              <td>
+                <span class="p_05" data-place="하회마을">하회마을</span>
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- 일정표 끝 -->
+        
+        
+
+        <!-- 콘텐츠 끝 -->
+      </div>
+    </div>
+  </div>
+</div>
+<div id="bottomDiv">
+	<div class="outWrap">
+    <ul class="sns_b">
+            <li><a href="https://www.instagram.com/andong_maskdance_festival?stkn=emwwaGd0dzBsY3Bj" target="_blank"><img src="/2024/images/sns_instagram1.gif" alt="인스타그램"></a></li>
+            <li><a href="https://www.facebook.com/tourandong" target="_blank"><img src="/2024/images/sns_facebook1.gif" alt="페이스북"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCQ908L7kTlLjC0eP9DTwTJg" target="_blank"><img src="/2024/images/sns_youtube1.gif" alt="유튜브"></a></li>
+            <li><a href="https://pf.kakao.com/_qpzNG" target="_blank"><img src="/2024/images/sns_kakao1.gif" alt="카카오채널"></a></li>
+    </ul>
+    <h2 class="invisible">개인정보취급방침 및 사이트 이용약관 안내</h2>
+    <ul id="privacyDiv">
+      <li><a href="https://www.kfce.or.kr/home/sub6/sub1.asp" target="_blank"><strong>개인정보처리방침</strong></a></li>
+      <li><a href="https://www.kfce.or.kr/home/sub6/sub2.asp" target="_blank">이메일주소무단수집거부</a></li>
+	  <li class="clearfix"></li>
+      <li><a href="/2024/sub7/sub1.asp">축제일정표</a></li>
+      <li><a href="/2024/sub7/sub3.asp">축제장안내</a></li>
+      <li><a href="/gears_pds/book/123/2026_leaflet_ko (2).pdf" target="_blank">리플릿보기</a></li>
+    </ul>
+    <h2 class="invisible">저작권표시, 주소 및 연락처</h2>
+    <ul id="copyrightDiv">
+      <li>(36709) 경상북도 안동시 축제장길 200 한국정신문화재단 / 전화 : 054-840-3424 / 팩스 : 054-840-6592</li>
+      <li>Copyright ⓒ <strong>maskdance.com</strong> All Rights Reserved. </li>
+    </ul>
+  </div>
+</div>
+
+<div class="onairDiv">
+    <!--<div class="pc"><a href="#none" onclick="javascript: alert('생중계 준비중입니다.');"><img src="/2024/images/vod_openning.png" alt="실시간생중계" / style="margin-bottom:20px;"></a></div>
+    <div class="mobile"><a href="#none" onclick="javascript: alert('생중계 준비중입니다.');"><img src="/2024/images/vod_openning_m.png" alt="실시간생중계" / style="margin-bottom:20px;"></a></div>-->
+    
+</div>
+
+<script type="text/javascript" src="/gears/counter/counter.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X7QTJVHNHK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X7QTJVHNHK');
+</script>
+
+</body>
+</html>

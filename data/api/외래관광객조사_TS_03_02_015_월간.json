@@ -1,0 +1,59 @@
+{
+ "list": [
+  {
+   "BASE_DATE": "2015",
+   "NAT_NM": "전체",
+   "REVISIT_RATE": "46.1"
+  },
+  {
+   "BASE_DATE": "2016",
+   "NAT_NM": "전체",
+   "REVISIT_RATE": "38.6"
+  },
+  {
+   "BASE_DATE": "2017",
+   "NAT_NM": "전체",
+   "REVISIT_RATE": "53.3"
+  },
+  {
+   "BASE_DATE": "2018",
+   "NAT_NM": "전체",
+   "REVISIT_RATE": "57.8"
+  },
+  {
+   "BASE_DATE": "2019",
+   "NAT_NM": "전체",
+   "REVISIT_RATE": "58.3"
+  },
+  {
+   "BASE_DATE": "2020",
+   "NAT_NM": "전체",
+   "REVISIT_RATE": "77.7"
+  },
+  {
+   "BASE_DATE": "2021",
+   "NAT_NM": "전체",
+   "REVISIT_RATE": "64.7"
+  },
+  {
+   "BASE_DATE": "2022",
+   "NAT_NM": "전체",
+   "REVISIT_RATE": "54.0"
+  },
+  {
+   "BASE_DATE": "2023",
+   "NAT_NM": "전체",
+   "REVISIT_RATE": "56.1"
+  },
+  {
+   "BASE_DATE": "2024",
+   "NAT_NM": "전체",
+   "REVISIT_RATE": "54.7"
+  },
+  {
+   "BASE_DATE": "2025",
+   "NAT_NM": "전체",
+   "REVISIT_RATE": "56.6"
+  }
+ ]
+}

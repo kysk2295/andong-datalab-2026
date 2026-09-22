@@ -1,0 +1,292 @@
+{
+ "list": [
+  {
+   "BASE_DATE": "1995",
+   "BASE_YEAR": "1995",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -282.4,
+   "VAL2": -251.4,
+   "GROW_RATE_VAL1": -12.3
+  },
+  {
+   "BASE_DATE": "1996",
+   "BASE_YEAR": "1996",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -1498.9,
+   "VAL2": -282.4,
+   "GROW_RATE_VAL1": -430.8
+  },
+  {
+   "BASE_DATE": "1997",
+   "BASE_YEAR": "1997",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -1119.6,
+   "VAL2": -1498.9,
+   "GROW_RATE_VAL1": 25.3
+  },
+  {
+   "BASE_DATE": "1998",
+   "BASE_YEAR": "1998",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": 4225.1,
+   "VAL2": -1119.6,
+   "GROW_RATE_VAL1": 477.4
+  },
+  {
+   "BASE_DATE": "1999",
+   "BASE_YEAR": "1999",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": 2826.5,
+   "VAL2": 4225.1,
+   "GROW_RATE_VAL1": -33.1
+  },
+  {
+   "BASE_DATE": "2000",
+   "BASE_YEAR": "2000",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": 637.3,
+   "VAL2": 2826.5,
+   "GROW_RATE_VAL1": -77.5
+  },
+  {
+   "BASE_DATE": "2001",
+   "BASE_YEAR": "2001",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -176.3,
+   "VAL2": 637.3,
+   "GROW_RATE_VAL1": -127.7
+  },
+  {
+   "BASE_DATE": "2002",
+   "BASE_YEAR": "2002",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -3122.9,
+   "VAL2": -176.3,
+   "GROW_RATE_VAL1": -1671.4
+  },
+  {
+   "BASE_DATE": "2003",
+   "BASE_YEAR": "2003",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -2908.2,
+   "VAL2": -3122.9,
+   "GROW_RATE_VAL1": 6.9
+  },
+  {
+   "BASE_DATE": "2004",
+   "BASE_YEAR": "2004",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -3807.1,
+   "VAL2": -2908.2,
+   "GROW_RATE_VAL1": -30.9
+  },
+  {
+   "BASE_DATE": "2005",
+   "BASE_YEAR": "2005",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -6239.9,
+   "VAL2": -3807.1,
+   "GROW_RATE_VAL1": -63.9
+  },
+  {
+   "BASE_DATE": "2006",
+   "BASE_YEAR": "2006",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -8605.5,
+   "VAL2": -6239.9,
+   "GROW_RATE_VAL1": -37.9
+  },
+  {
+   "BASE_DATE": "2007",
+   "BASE_YEAR": "2007",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -10873.9,
+   "VAL2": -8605.5,
+   "GROW_RATE_VAL1": -26.4
+  },
+  {
+   "BASE_DATE": "2008",
+   "BASE_YEAR": "2008",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -4891.2,
+   "VAL2": -10873.9,
+   "GROW_RATE_VAL1": 55.0
+  },
+  {
+   "BASE_DATE": "2009",
+   "BASE_YEAR": "2009",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -1298.7,
+   "VAL2": -4891.2,
+   "GROW_RATE_VAL1": 73.4
+  },
+  {
+   "BASE_DATE": "2010",
+   "BASE_YEAR": "2010",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -4052.3,
+   "VAL2": -1298.7,
+   "GROW_RATE_VAL1": -212.0
+  },
+  {
+   "BASE_DATE": "2011",
+   "BASE_YEAR": "2011",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -3296.9,
+   "VAL2": -4052.3,
+   "GROW_RATE_VAL1": 18.6
+  },
+  {
+   "BASE_DATE": "2012",
+   "BASE_YEAR": "2012",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -3293.4,
+   "VAL2": -3296.9,
+   "GROW_RATE_VAL1": 0.1
+  },
+  {
+   "BASE_DATE": "2013",
+   "BASE_YEAR": "2013",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -3052.3,
+   "VAL2": -3293.4,
+   "GROW_RATE_VAL1": 7.3
+  },
+  {
+   "BASE_DATE": "2014",
+   "BASE_YEAR": "2014",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -2134.0,
+   "VAL2": -3052.3,
+   "GROW_RATE_VAL1": 30.1
+  },
+  {
+   "BASE_DATE": "2015",
+   "BASE_YEAR": "2015",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -6852.2,
+   "VAL2": -2134.0,
+   "GROW_RATE_VAL1": -221.1
+  },
+  {
+   "BASE_DATE": "2016",
+   "BASE_YEAR": "2016",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -6934.7,
+   "VAL2": -6852.2,
+   "GROW_RATE_VAL1": -1.2
+  },
+  {
+   "BASE_DATE": "2017",
+   "BASE_YEAR": "2017",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -14695.9,
+   "VAL2": -6934.7,
+   "GROW_RATE_VAL1": -111.9
+  },
+  {
+   "BASE_DATE": "2018",
+   "BASE_YEAR": "2018",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -13066.1,
+   "VAL2": -14695.9,
+   "GROW_RATE_VAL1": 11.1
+  },
+  {
+   "BASE_DATE": "2019",
+   "BASE_YEAR": "2019",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -8515.6,
+   "VAL2": -13066.1,
+   "GROW_RATE_VAL1": 34.8
+  },
+  {
+   "BASE_DATE": "2020",
+   "BASE_YEAR": "2020",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -2561.1,
+   "VAL2": -8515.6,
+   "GROW_RATE_VAL1": 69.9
+  },
+  {
+   "BASE_DATE": "2021",
+   "BASE_YEAR": "2021",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -4079.5,
+   "VAL2": -2561.1,
+   "GROW_RATE_VAL1": -59.3
+  },
+  {
+   "BASE_DATE": "2022",
+   "BASE_YEAR": "2022",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -5731.4,
+   "VAL2": -4079.5,
+   "GROW_RATE_VAL1": -40.5
+  },
+  {
+   "BASE_DATE": "2023",
+   "BASE_YEAR": "2023",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -10382.6,
+   "VAL2": -5731.4,
+   "GROW_RATE_VAL1": -81.2
+  },
+  {
+   "BASE_DATE": "2024",
+   "BASE_YEAR": "2024",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -10207.2,
+   "VAL2": -10382.6,
+   "GROW_RATE_VAL1": 1.7
+  },
+  {
+   "BASE_DATE": "2025",
+   "BASE_YEAR": "2025",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -10760.4,
+   "VAL2": -10207.2,
+   "GROW_RATE_VAL1": -5.4
+  },
+  {
+   "BASE_DATE": "2026",
+   "BASE_YEAR": "2026",
+   "DIV_NM": "관광수지",
+   "ITEM_DIV_NM": "전체(백만달러)",
+   "VAL1": -1312.2,
+   "VAL2": -6082.4,
+   "GROW_RATE_VAL1": 78.4
+  }
+ ]
+}

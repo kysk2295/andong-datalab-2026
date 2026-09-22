@@ -1,0 +1,324 @@
+{
+ "list": [
+  {
+   "BASE_YEAR": "2018",
+   "BAGE": "전체",
+   "T_VALUE": 556890.0
+  },
+  {
+   "BASE_YEAR": "2018",
+   "BAGE": "15-19세",
+   "T_VALUE": 25874.0
+  },
+  {
+   "BASE_YEAR": "2018",
+   "BAGE": "20대",
+   "T_VALUE": 89092.0
+  },
+  {
+   "BASE_YEAR": "2018",
+   "BAGE": "30대",
+   "T_VALUE": 104442.0
+  },
+  {
+   "BASE_YEAR": "2018",
+   "BAGE": "40대",
+   "T_VALUE": 126213.0
+  },
+  {
+   "BASE_YEAR": "2018",
+   "BAGE": "50대",
+   "T_VALUE": 110003.0
+  },
+  {
+   "BASE_YEAR": "2018",
+   "BAGE": "60대",
+   "T_VALUE": 62964.0
+  },
+  {
+   "BASE_YEAR": "2018",
+   "BAGE": "70대 이상",
+   "T_VALUE": 38302.0
+  },
+  {
+   "BASE_YEAR": "2019",
+   "BAGE": "전체",
+   "T_VALUE": 585710.0
+  },
+  {
+   "BASE_YEAR": "2019",
+   "BAGE": "15-19세",
+   "T_VALUE": 25562.0
+  },
+  {
+   "BASE_YEAR": "2019",
+   "BAGE": "20대",
+   "T_VALUE": 99005.0
+  },
+  {
+   "BASE_YEAR": "2019",
+   "BAGE": "30대",
+   "T_VALUE": 115341.0
+  },
+  {
+   "BASE_YEAR": "2019",
+   "BAGE": "40대",
+   "T_VALUE": 122142.0
+  },
+  {
+   "BASE_YEAR": "2019",
+   "BAGE": "50대",
+   "T_VALUE": 118227.0
+  },
+  {
+   "BASE_YEAR": "2019",
+   "BAGE": "60대",
+   "T_VALUE": 64406.0
+  },
+  {
+   "BASE_YEAR": "2019",
+   "BAGE": "70대 이상",
+   "T_VALUE": 41025.0
+  },
+  {
+   "BASE_YEAR": "2020",
+   "BAGE": "전체",
+   "T_VALUE": 347876.0
+  },
+  {
+   "BASE_YEAR": "2020",
+   "BAGE": "15-19세",
+   "T_VALUE": 11476.0
+  },
+  {
+   "BASE_YEAR": "2020",
+   "BAGE": "20대",
+   "T_VALUE": 63851.0
+  },
+  {
+   "BASE_YEAR": "2020",
+   "BAGE": "30대",
+   "T_VALUE": 77800.0
+  },
+  {
+   "BASE_YEAR": "2020",
+   "BAGE": "40대",
+   "T_VALUE": 76772.0
+  },
+  {
+   "BASE_YEAR": "2020",
+   "BAGE": "50대",
+   "T_VALUE": 68902.0
+  },
+  {
+   "BASE_YEAR": "2020",
+   "BAGE": "60대",
+   "T_VALUE": 35329.0
+  },
+  {
+   "BASE_YEAR": "2020",
+   "BAGE": "70대 이상",
+   "T_VALUE": 13745.0
+  },
+  {
+   "BASE_YEAR": "2021",
+   "BAGE": "전체",
+   "T_VALUE": 364721.0
+  },
+  {
+   "BASE_YEAR": "2021",
+   "BAGE": "15-19세",
+   "T_VALUE": 11004.0
+  },
+  {
+   "BASE_YEAR": "2021",
+   "BAGE": "20대",
+   "T_VALUE": 68735.0
+  },
+  {
+   "BASE_YEAR": "2021",
+   "BAGE": "30대",
+   "T_VALUE": 76691.0
+  },
+  {
+   "BASE_YEAR": "2021",
+   "BAGE": "40대",
+   "T_VALUE": 79353.0
+  },
+  {
+   "BASE_YEAR": "2021",
+   "BAGE": "50대",
+   "T_VALUE": 72033.0
+  },
+  {
+   "BASE_YEAR": "2021",
+   "BAGE": "60대",
+   "T_VALUE": 42356.0
+  },
+  {
+   "BASE_YEAR": "2021",
+   "BAGE": "70대 이상",
+   "T_VALUE": 14548.0
+  },
+  {
+   "BASE_YEAR": "2022",
+   "BAGE": "전체",
+   "T_VALUE": 443904.0
+  },
+  {
+   "BASE_YEAR": "2022",
+   "BAGE": "15-19세",
+   "T_VALUE": 14069.0
+  },
+  {
+   "BASE_YEAR": "2022",
+   "BAGE": "20대",
+   "T_VALUE": 77072.0
+  },
+  {
+   "BASE_YEAR": "2022",
+   "BAGE": "30대",
+   "T_VALUE": 87453.0
+  },
+  {
+   "BASE_YEAR": "2022",
+   "BAGE": "40대",
+   "T_VALUE": 95379.0
+  },
+  {
+   "BASE_YEAR": "2022",
+   "BAGE": "50대",
+   "T_VALUE": 90452.0
+  },
+  {
+   "BASE_YEAR": "2022",
+   "BAGE": "60대",
+   "T_VALUE": 55851.0
+  },
+  {
+   "BASE_YEAR": "2022",
+   "BAGE": "70대 이상",
+   "T_VALUE": 23627.0
+  },
+  {
+   "BASE_YEAR": "2023",
+   "BAGE": "전체",
+   "T_VALUE": 465391.0
+  },
+  {
+   "BASE_YEAR": "2023",
+   "BAGE": "15-19세",
+   "T_VALUE": 14210.0
+  },
+  {
+   "BASE_YEAR": "2023",
+   "BAGE": "20대",
+   "T_VALUE": 73034.0
+  },
+  {
+   "BASE_YEAR": "2023",
+   "BAGE": "30대",
+   "T_VALUE": 86587.0
+  },
+  {
+   "BASE_YEAR": "2023",
+   "BAGE": "40대",
+   "T_VALUE": 98813.0
+  },
+  {
+   "BASE_YEAR": "2023",
+   "BAGE": "50대",
+   "T_VALUE": 93498.0
+  },
+  {
+   "BASE_YEAR": "2023",
+   "BAGE": "60대",
+   "T_VALUE": 65765.0
+  },
+  {
+   "BASE_YEAR": "2023",
+   "BAGE": "70대 이상",
+   "T_VALUE": 33485.0
+  },
+  {
+   "BASE_YEAR": "2024",
+   "BAGE": "전체",
+   "T_VALUE": 448498.0
+  },
+  {
+   "BASE_YEAR": "2024",
+   "BAGE": "15-19세",
+   "T_VALUE": 13655.0
+  },
+  {
+   "BASE_YEAR": "2024",
+   "BAGE": "20대",
+   "T_VALUE": 67587.0
+  },
+  {
+   "BASE_YEAR": "2024",
+   "BAGE": "30대",
+   "T_VALUE": 84141.0
+  },
+  {
+   "BASE_YEAR": "2024",
+   "BAGE": "40대",
+   "T_VALUE": 92888.0
+  },
+  {
+   "BASE_YEAR": "2024",
+   "BAGE": "50대",
+   "T_VALUE": 89871.0
+  },
+  {
+   "BASE_YEAR": "2024",
+   "BAGE": "60대",
+   "T_VALUE": 68299.0
+  },
+  {
+   "BASE_YEAR": "2024",
+   "BAGE": "70대 이상",
+   "T_VALUE": 32057.0
+  },
+  {
+   "BASE_YEAR": "2025",
+   "BAGE": "전체",
+   "T_VALUE": 472541.0
+  },
+  {
+   "BASE_YEAR": "2025",
+   "BAGE": "15-19세",
+   "T_VALUE": 14143.0
+  },
+  {
+   "BASE_YEAR": "2025",
+   "BAGE": "20대",
+   "T_VALUE": 67067.0
+  },
+  {
+   "BASE_YEAR": "2025",
+   "BAGE": "30대",
+   "T_VALUE": 89074.0
+  },
+  {
+   "BASE_YEAR": "2025",
+   "BAGE": "40대",
+   "T_VALUE": 97048.0
+  },
+  {
+   "BASE_YEAR": "2025",
+   "BAGE": "50대",
+   "T_VALUE": 95550.0
+  },
+  {
+   "BASE_YEAR": "2025",
+   "BAGE": "60대",
+   "T_VALUE": 71820.0
+  },
+  {
+   "BASE_YEAR": "2025",
+   "BAGE": "70대 이상",
+   "T_VALUE": 37838.0
+  }
+ ]
+}

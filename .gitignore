@@ -1,0 +1,12 @@
+# 가상환경·캐시 (원격에서는 requirements.txt로 새로 설치)
+.venv_pdf/
+.venv_sel/
+__pycache__/
+*.pyc
+.codegraph
+.DS_Store
+
+# 100MB 넘는 원자료 10개: 깃허브 한 파일 한도(100MB) 때문에 압축본(.csv.gz)만 올린다.
+# 원격에서는 `bash scripts/원자료_복원.sh`로 풀면 원래 경로에 .csv가 생긴다.
+data/bdt/이동통신/방문자수_성별연령요일시간대_교차표_BDT_01_01_006_20*.csv
+data/bdt/신용카드/시도별_업종중분류_월별_외지인지출액_대용량_BDT_02_01_002_35_1.csv

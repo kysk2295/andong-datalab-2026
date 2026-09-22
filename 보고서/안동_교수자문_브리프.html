@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>안동 릴레이 | 데이터 기반 관광 운영 제안</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#EFF1EF; --surface:#FFFFFF; --sunk:#E5EAE7;
+  --ink:#171C1A; --muted:#59645F; --faint:#98A39E; --rule:#D3D9D5;
+  --accent:#1F5C4D; --accent-soft:#DFEBE6;
+  --flag:#9C3B26; --flag-soft:#F6E4DE;
+  --ask:#7A5B1E; --ask-soft:#F2EBD9;
+  --idle:#6B7671; --idle-soft:#E3E8E5;
+  --serif:"Gowun Batang","Nanum Myeongjo","AppleMyungjo",serif;
+  --sans:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#101413; --surface:#181E1C; --sunk:#141918;
+    --ink:#E2E7E4; --muted:#98A39E; --faint:#4B5652; --rule:#293230;
+    --accent:#79BCA6; --accent-soft:#163029;
+    --flag:#E08A72; --flag-soft:#33201B;
+    --ask:#D2B25E; --ask-soft:#312A15;
+    --idle:#98A39E; --idle-soft:#222A28;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#101413; --surface:#181E1C; --sunk:#141918;
+  --ink:#E2E7E4; --muted:#98A39E; --faint:#4B5652; --rule:#293230;
+  --accent:#79BCA6; --accent-soft:#163029;
+  --flag:#E08A72; --flag-soft:#33201B;
+  --ask:#D2B25E; --ask-soft:#312A15;
+  --idle:#98A39E; --idle-soft:#222A28;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.72;margin:0;word-break:keep-all;overflow-wrap:break-word}
+main{max-width:1000px;margin:0 auto;padding:52px 22px 100px;display:flex;flex-direction:column;gap:60px}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:700;text-wrap:balance;margin:0;line-height:1.32}
+h1{font-size:clamp(28px,4.6vw,40px);letter-spacing:-.01em}
+h2{font-size:25px}
+h3{font-size:17px}
+h4{font-size:15.5px}
+p{margin:0;max-width:70ch}
+ul,ol{margin:0;padding-left:1.15em}
+li{margin:2px 0}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+section{display:flex;flex-direction:column;gap:20px}
+.label{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.caption{font-size:13px;color:var(--muted);max-width:76ch}
+.lede{font-size:17px;color:var(--muted)}
+
+.sec-head{display:flex;flex-direction:column;gap:7px;border-top:2px solid var(--ink);padding-top:16px}
+.sec-head .step{font-family:var(--mono);font-size:12.5px;color:var(--accent);letter-spacing:.05em}
+
+header{display:flex;flex-direction:column;gap:18px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--muted)}
+.meta b{color:var(--ink);font-weight:600}
+.toc{display:flex;flex-wrap:wrap;gap:6px 13px;font-size:13.5px;padding-top:4px}
+.toc a{text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:1px}
+
+/* evidence grade */
+.ev{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;padding:1px 6px;border-radius:3px;white-space:nowrap;vertical-align:1px}
+.ev-m{background:var(--accent-soft);color:var(--accent)}
+.ev-r{background:var(--idle-soft);color:var(--idle)}
+.ev-e{background:var(--ask-soft);color:var(--ask)}
+.ev-x{background:var(--flag-soft);color:var(--flag)}
+
+.pill{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.p-ok{background:var(--accent-soft);color:var(--accent)}
+.p-cut{background:var(--flag-soft);color:var(--flag)}
+.p-warn{background:var(--ask-soft);color:var(--ask)}
+.p-idle{background:var(--idle-soft);color:var(--idle)}
+
+.box{background:var(--surface);border:1px solid var(--rule);border-radius:5px;padding:18px 20px;display:flex;flex-direction:column;gap:9px}
+.box.sunk{background:var(--sunk);border-style:dashed}
+.box.flagged{border-left:3px solid var(--flag)}
+.box.asked{border-left:3px solid var(--ask)}
+.box .tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;color:var(--muted)}
+
+.tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:5px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.8px;min-width:640px}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--rule)}
+th{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.05em;color:var(--muted);background:var(--sunk);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.k{font-weight:600}
+td.r{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td.id{font-family:var(--mono);font-size:11.5px;color:var(--accent);white-space:nowrap}
+td small,th small{display:block;color:var(--muted);font-size:12.2px;font-weight:400;letter-spacing:0}
+tr.grp td{background:var(--sunk);font-family:var(--serif);font-weight:700;font-size:14.5px}
+
+/* flow strip */
+.flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.fcol{display:flex;flex-direction:column;gap:7px;position:relative}
+.fcol:not(:last-child)::after{content:"";position:absolute;right:-11px;top:20px;width:8px;height:8px;border-top:2px solid var(--accent);border-right:2px solid var(--accent);transform:rotate(45deg)}
+.fhead{font-family:var(--serif);font-weight:700;font-size:15.5px;color:var(--accent);min-height:30px}
+.fbox{background:var(--surface);border:1px solid var(--rule);border-radius:5px;padding:9px 11px;font-size:12.7px;line-height:1.5}
+.fbox b{display:block;font-size:13px;margin-bottom:1px}
+.fbox .big{font-family:var(--mono);font-size:19px;color:var(--flag);display:block;line-height:1.15}
+.fbox.core{box-shadow:0 0 0 2px var(--accent) inset;border-color:var(--accent)}
+
+.oneline{font-family:var(--serif);font-size:18px;line-height:1.62;padding:18px 22px;background:var(--accent-soft);border-radius:5px;color:var(--ink)}
+
+/* problem cards */
+.probs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.prob{background:var(--surface);border:1px solid var(--rule);border-radius:5px;padding:15px 17px;display:flex;flex-direction:column;gap:5px}
+.prob .big{font-family:var(--mono);font-size:27px;color:var(--flag);line-height:1.15}
+.prob .tag{font-family:var(--mono);font-size:11.5px;color:var(--accent);letter-spacing:.05em}
+.prob h3{font-size:15.5px}
+.prob p{font-size:13.2px;color:var(--muted)}
+
+/* diverging compare */
+.pc{background:var(--surface);border:1px solid var(--rule);border-radius:5px;padding:8px 18px;overflow-x:auto}
+.pc-head,.pc-row{display:grid;grid-template-columns:62px 66px 1fr 62px;align-items:center;gap:12px;min-width:430px}
+.pc-head{font-family:var(--mono);font-size:11.5px;color:var(--muted);padding:6px 0;border-bottom:1px solid var(--rule)}
+.pc-head span:last-child{grid-column:3 / span 2}
+.pc-row{padding:7px 0;border-bottom:1px solid var(--rule);font-size:13.8px}
+.pc-row:last-child{border-bottom:0}
+.pc-row.hl .c{font-weight:700;color:var(--flag)}
+.pc .div{display:grid;grid-template-columns:1fr 1fr;height:13px;position:relative}
+.pc .div::after{content:"";position:absolute;left:50%;top:-4px;bottom:-4px;border-left:1px solid var(--faint)}
+.pc .neg{justify-self:end;height:100%;background:var(--flag);border-radius:3px 0 0 3px}
+.pc .pos{justify-self:start;height:100%;background:var(--accent);border-radius:0 3px 3px 0}
+.pc .v{text-align:right;font-family:var(--mono)}
+.pc .neg-t{color:var(--flag);font-weight:600}
+
+/* horizontal bar list */
+.hbars{display:flex;flex-direction:column;gap:7px;background:var(--surface);border:1px solid var(--rule);border-radius:5px;padding:16px 18px}
+.hb{display:grid;grid-template-columns:76px 1fr 52px;align-items:center;gap:11px;font-size:13.5px}
+.hb i{display:block;height:15px;background:var(--idle);border-radius:0 3px 3px 0}
+.hb.me i{background:var(--flag)}
+.hb.me span:first-child{font-weight:700;color:var(--flag)}
+.hb .v{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:13px}
+
+/* month bars */
+.mbars{display:grid;grid-template-columns:repeat(12,1fr);gap:5px;align-items:end;height:130px;background:var(--surface);border:1px solid var(--rule);border-radius:5px;padding:16px 14px 8px}
+.mb{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:4px;height:100%}
+.mb i{display:block;width:100%;background:var(--accent-soft);border-top:2px solid var(--accent);border-radius:2px 2px 0 0}
+.mb.pk i{background:var(--flag-soft);border-top-color:var(--flag)}
+.mb span{font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.mb.pk span{color:var(--flag);font-weight:600}
+
+/* charts */
+.chart{background:var(--surface);border:1px solid var(--rule);border-radius:5px;padding:16px 14px 8px;overflow-x:auto}
+.chart svg{display:block;width:100%;min-width:560px;height:auto}
+.ch-grid{stroke:var(--rule);stroke-width:1}
+.ch-ax{fill:var(--muted);font-family:var(--mono);font-size:10.5px}
+.ch-band{fill:var(--flag-soft)}
+.ch-l1{fill:none;stroke:var(--flag);stroke-width:2.2}
+.ch-l2{fill:none;stroke:var(--idle);stroke-width:1.8;stroke-dasharray:5 4}
+.ch-d1{fill:var(--flag)}
+.ch-d2{fill:var(--idle)}
+.ch-lab{fill:var(--flag);font-size:11.5px;font-weight:600;font-family:var(--sans)}
+.ch-lab2{fill:var(--muted);font-size:11px;font-family:var(--sans)}
+.ch-val{fill:var(--ink);font-family:var(--mono);font-size:11px}
+
+/* journey diagram */
+.jrn{background:var(--surface);border:1px solid var(--rule);border-radius:5px;padding:16px 14px 10px;overflow-x:auto}
+.jrn svg{display:block;width:100%;min-width:660px;height:auto}
+.j-rail{stroke:var(--rule);stroke-width:2}
+.j-node{fill:var(--surface);stroke:var(--accent);stroke-width:2}
+.j-node.cut{stroke:var(--flag)}
+.j-t{fill:var(--ink);font-family:var(--sans);font-size:12.5px;font-weight:600}
+.j-s{fill:var(--muted);font-family:var(--sans);font-size:11.5px}
+.j-m{fill:var(--muted);font-family:var(--mono);font-size:11px}
+.j-cut{fill:var(--flag);font-family:var(--sans);font-size:12px;font-weight:600}
+.j-box{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1}
+.j-boxt{fill:var(--accent);font-family:var(--sans);font-size:11.5px;font-weight:600}
+.j-arr{stroke:var(--flag);stroke-width:1.6;fill:none}
+
+/* relay stages */
+.relay{display:grid;grid-template-columns:repeat(auto-fit,minmax(236px,1fr));gap:12px}
+.st{background:var(--surface);border:1px solid var(--rule);border-radius:5px;padding:15px 17px;display:flex;flex-direction:column;gap:7px;position:relative}
+.st.core{box-shadow:0 0 0 2px var(--accent) inset;border-color:var(--accent)}
+.st .n{font-family:var(--mono);font-size:11.5px;color:var(--accent);letter-spacing:.05em}
+.st h3{font-size:15.5px}
+.st p{font-size:13.2px;color:var(--muted)}
+.st .fix{font-size:12.2px;color:var(--ask);border-top:1px dashed var(--rule);padding-top:7px;margin-top:2px}
+
+/* phone mockups */
+.mocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(198px,1fr));gap:14px}
+.ph{background:var(--sunk);border:1px solid var(--rule);border-radius:16px;padding:11px;display:flex;flex-direction:column;gap:8px}
+.ph .scr{background:var(--surface);border:1px solid var(--rule);border-radius:9px;padding:12px 12px 14px;display:flex;flex-direction:column;gap:8px;min-height:236px}
+.ph .bar{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:9.5px;color:var(--faint)}
+.ph .hd{font-family:var(--serif);font-weight:700;font-size:14px;line-height:1.3}
+.ph .sub{font-size:11.5px;color:var(--muted);line-height:1.45}
+.ph .qr{align-self:center;margin:2px 0}
+.ph .row{display:flex;justify-content:space-between;font-size:11.5px;border-top:1px solid var(--rule);padding-top:5px}
+.ph .row b{font-family:var(--mono);font-weight:500}
+.ph .btn{margin-top:auto;background:var(--accent);color:var(--surface);border-radius:5px;padding:7px;text-align:center;font-size:12px;font-weight:600}
+.ph .btn.ghost{background:var(--surface);color:var(--accent);border:1px solid var(--accent)}
+.ph .cap{font-family:var(--mono);font-size:10.5px;color:var(--muted);text-align:center}
+.steps{display:flex;gap:3px}
+.steps i{flex:1;height:3px;background:var(--rule);border-radius:2px}
+.steps i.on{background:var(--accent)}
+
+/* paper mockups */
+.papers{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:14px}
+.paper{background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:16px 18px;display:flex;flex-direction:column;gap:9px;box-shadow:2px 2px 0 var(--sunk)}
+.paper .ttl{font-family:var(--serif);font-weight:700;font-size:15px}
+.paper .rule{border-top:1px solid var(--rule)}
+.qgrp{display:flex;flex-direction:column;gap:5px;font-size:12.8px}
+.qgrp .q{font-weight:600}
+.opt{display:flex;gap:8px;flex-wrap:wrap;font-size:12.2px;color:var(--muted)}
+.opt span{border:1px solid var(--rule);border-radius:3px;padding:2px 9px}
+.opt span.on{border-color:var(--flag);color:var(--flag);font-weight:600}
+.blank{border-bottom:1px solid var(--rule);flex:1;min-width:40px}
+
+/* scatter */
+.scat{background:var(--surface);border:1px solid var(--rule);border-radius:5px;padding:16px 14px 8px;overflow-x:auto}
+.scat svg{display:block;width:100%;min-width:600px;height:auto}
+.sc-q{fill:var(--flag-soft);opacity:.55}
+.sc-ax{stroke:var(--muted);stroke-width:1.2}
+.sc-g{stroke:var(--rule);stroke-width:1;stroke-dasharray:3 3}
+.sc-t{fill:var(--muted);font-family:var(--mono);font-size:10.5px}
+.sc-d{fill:var(--idle);opacity:.42}
+.sc-p{fill:var(--accent)}
+.sc-me{fill:var(--flag);stroke:var(--surface);stroke-width:1.5}
+.sc-l{fill:var(--ink);font-family:var(--sans);font-size:11px}
+.sc-lme{fill:var(--flag);font-family:var(--sans);font-size:13px;font-weight:700}
+.sc-qt{fill:var(--flag);font-family:var(--sans);font-size:11.5px;font-weight:600;opacity:.85}
+.sc-at{fill:var(--muted);font-family:var(--sans);font-size:11.5px}
+
+/* composition bars */
+.comp{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--rule);border-radius:5px;padding:16px 18px}
+.cb{display:grid;grid-template-columns:104px 1fr 46px;align-items:center;gap:11px;font-size:13.4px}
+.cb i{display:block;height:17px;background:var(--accent);opacity:.32;border-radius:0 3px 3px 0;min-width:2px}
+.cb.hot i{background:var(--flag);opacity:1}
+.cb.hot span:first-child,.cb.hot .v{color:var(--flag);font-weight:700}
+.cb .v{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:12.8px}
+
+/* deliverables */
+.dels{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.del{background:var(--surface);border:1px solid var(--rule);border-radius:5px;padding:15px 17px;display:flex;flex-direction:column;gap:7px}
+.del.star{box-shadow:0 0 0 2px var(--accent) inset;border-color:var(--accent)}
+.del .n{font-family:var(--mono);font-size:11.5px;color:var(--accent);letter-spacing:.05em}
+.del h3{font-size:15.5px}
+.del p{font-size:13.2px;color:var(--muted)}
+
+/* dashboard mockup */
+.dash{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:0;overflow:hidden}
+.dash .top{background:var(--sunk);border-bottom:1px solid var(--rule);padding:9px 16px;display:flex;justify-content:space-between;align-items:center;font-size:12.5px}
+.dash .top b{font-family:var(--serif);font-size:14px}
+.dash .top span{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.dash .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:1px;background:var(--rule)}
+.dash .kpi{background:var(--surface);padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.dash .kpi em{font-style:normal;font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.04em}
+.dash .kpi b{font-family:var(--mono);font-size:19px;font-weight:500;line-height:1.2}
+.dash .kpi i{font-style:normal;font-size:11px;color:var(--accent)}
+.dash .kpi.drop b{color:var(--flag)}
+.dash .kpi.drop i{color:var(--flag)}
+.dash .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:9px}
+.fun{display:flex;flex-direction:column;gap:5px}
+.fun .f{display:grid;grid-template-columns:118px 1fr 78px;align-items:center;gap:10px;font-size:12.8px}
+.fun .f i{display:block;height:20px;background:var(--accent);opacity:.3;border-radius:2px}
+.fun .f.last i{background:var(--flag);opacity:.85}
+.fun .f .v{text-align:right;font-family:var(--mono);font-size:12px;color:var(--muted)}
+
+/* spec table look */
+.exv{color:var(--accent);font-weight:600}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}
+.klist{display:flex;flex-direction:column;gap:7px;font-size:13.5px}
+.klist div{display:grid;grid-template-columns:104px 1fr;gap:12px}
+.klist .dt{font-family:var(--mono);font-size:11.5px;color:var(--muted);padding-top:3px}
+@media (max-width:760px){
+  .flow{grid-template-columns:1fr 1fr}
+  .fcol:not(:last-child)::after{display:none}
+  .klist div{grid-template-columns:1fr}
+  .cb,.hb{grid-template-columns:82px 1fr 44px}
+  .fun .f{grid-template-columns:96px 1fr 64px}
+}
+/* findings index + finding frames */
+.fidx{border:1px solid var(--rule);border-radius:5px;background:var(--surface);overflow-x:auto}
+.fidx table{min-width:700px}
+.fidx td.fid{font-family:var(--mono);font-size:12.5px;color:var(--flag);font-weight:600;white-space:nowrap}
+.fidx td.res{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600}
+.fhd{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap;border-top:1px solid var(--rule);padding-top:14px;margin-top:4px}
+.fhd .id{font-family:var(--mono);font-size:13px;color:var(--flag);font-weight:600}
+.fhd h3{font-size:19px}
+.srcline{display:flex;flex-wrap:wrap;gap:6px 10px;font-size:12.5px;color:var(--muted);font-family:var(--mono)}
+.srcline b{color:var(--ink);font-weight:500}
+.saynot{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.saynot > div{border-radius:5px;padding:12px 15px;font-size:13.4px;display:flex;flex-direction:column;gap:5px}
+.saynot .can{background:var(--accent-soft);border-left:3px solid var(--accent)}
+.saynot .cant{background:var(--flag-soft);border-left:3px solid var(--flag)}
+.saynot .t{font-family:var(--mono);font-size:11px;letter-spacing:.05em}
+.saynot .can .t{color:var(--accent)}
+.saynot .cant .t{color:var(--flag)}
+@media (max-width:700px){.saynot{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+:root{--space-1:8px;--space-2:12px;--space-3:20px;--space-4:28px;--space-5:40px;--radius-panel:8px;--type-small:12px;--type-copy:14px;--type-metric:30px}
+html{scroll-behavior:auto;scroll-padding-top:24px}
+main{max-width:1120px}
+header{padding-bottom:var(--space-4)}
+header h1{font-size:clamp(32px,5vw,54px)}
+.phase-track,.pipeline{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--space-2)}
+.phase,.pipeline>div{display:flex;flex-direction:column;gap:var(--space-1);padding:var(--space-3);border:1px solid var(--rule);background:var(--surface);border-radius:var(--radius-panel);min-width:0}
+.phase span,.pipeline span{font-size:var(--type-small);color:var(--muted)}
+.phase small{font-size:var(--type-small);color:var(--muted)}
+.phase.done{border-top:3px solid var(--accent)}
+.phase.active{background:var(--accent-soft);border-color:var(--accent)}
+.artifact{border:1px solid var(--rule);background:var(--surface);border-radius:var(--radius-panel);overflow:hidden;box-shadow:0 5px 20px #00000008}
+.artifact-head{padding:var(--space-3) var(--space-4);background:var(--sunk);border-bottom:1px solid var(--rule);display:flex;align-items:center;justify-content:space-between;gap:var(--space-2);flex-wrap:wrap}
+.artifact-head h3{margin-top:var(--space-1);font-size:20px}
+.artifact-body{padding:var(--space-4);display:flex;flex-direction:column;gap:var(--space-3)}
+.artifact-note{max-width:none;padding:var(--space-3) var(--space-4);border-top:1px solid var(--rule);font-size:13px;color:var(--muted)}
+.report-title{display:flex;justify-content:space-between;align-items:center;gap:var(--space-3)}
+.report-title h3{font-size:24px;margin-top:var(--space-2)}
+.report-stamp{font-family:var(--mono);font-size:42px;color:var(--accent);text-align:right;flex-shrink:0}
+.report-stamp small{display:block;font-family:var(--sans);font-size:var(--type-small);color:var(--muted)}
+.metric-grid,.board-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-2)}
+.metric-grid>div{display:flex;flex-direction:column;padding:var(--space-3);gap:var(--space-1);background:var(--ground);border-radius:var(--radius-panel)}
+.metric-grid span,.metric-grid small{font-size:var(--type-small);color:var(--muted)}
+.metric-grid b{font-family:var(--mono);font-size:var(--type-metric);line-height:1.3;color:var(--accent)}
+.metric-grid b.negative{color:var(--flag)}
+.report-footer{border-top:1px solid var(--rule);padding-top:var(--space-2);color:var(--muted);font-size:var(--type-small)}
+.route-scene{background:var(--ground);border:1px solid var(--rule);border-radius:var(--radius-panel);overflow-x:auto}
+.route-caption{padding:var(--space-3);font-weight:600}.route-caption small{display:block;color:var(--muted);font-size:var(--type-small);font-weight:400}
+.route-scene svg{width:100%;min-width:600px;display:block}
+.board-grid>div{border-left:2px solid var(--accent);padding:var(--space-2) var(--space-3)}
+.board-grid h4{margin:var(--space-2) 0 var(--space-1)}.board-grid p{font-size:var(--type-copy);color:var(--muted)}
+.calculator-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:var(--space-4)}
+.calculator-inputs{display:flex;flex-direction:column;gap:var(--space-2)}
+.calculator-inputs label{display:flex;justify-content:space-between;gap:var(--space-1);font-size:var(--type-copy)}
+.calculator-inputs output{font-family:var(--mono);color:var(--accent);font-weight:600}
+.calculator-inputs input{width:100%;accent-color:var(--accent);min-height:32px;margin:0 0 var(--space-2)}
+.calculator-result{background:var(--accent-soft);padding:var(--space-4);border-radius:var(--radius-panel);display:flex;flex-direction:column;gap:var(--space-1)}
+.calculator-result>b{font-family:var(--mono);font-size:24px}.calculator-result>span,.calculator-result small{font-size:var(--type-small);color:var(--muted)}
+.calculator-result strong{font-family:var(--mono);font-size:var(--type-metric);color:var(--accent)}
+@media(max-width:800px){.phase-track,.pipeline{grid-template-columns:repeat(2,minmax(0,1fr))}.metric-grid,.board-grid{grid-template-columns:1fr}.calculator-grid{grid-template-columns:1fr}.artifact-body,.artifact-head,.artifact-note{padding:var(--space-3)}.report-title{align-items:flex-start}.report-title h3{font-size:20px}.report-stamp{font-size:32px}}
+@media(max-width:420px){main{padding-left:16px;padding-right:16px}.phase-track,.pipeline{grid-template-columns:1fr}.report-title{flex-direction:column}.report-stamp{text-align:left}.artifact-head .pill{white-space:normal}}
+@media print{body{background:white;color:#171C1A}.toc{display:none}main{max-width:none;padding:0;gap:32px}.artifact,.box,.phase,.ph{box-shadow:none;break-inside:avoid}h2,h3{break-after:avoid}.tbl{overflow:visible}table{min-width:0;font-size:11px}.chart svg,.scat svg,.jrn svg,.route-scene svg{min-width:0}.calculator-inputs input{display:none}}
+
+</style>
+<link rel="stylesheet" href="assets/andong-ir/leaflet.css">
+<link rel="stylesheet" href="assets/andong-ir/editorial.css">
+</head>
+<body>
+<main>
+
+<header>
+<div class="hero-editorial"><div class="hero-copy"><span class="eyebrow">안동 관광 데이터 프로젝트 / 2026</span><h1>식사 다음의 안동을<br>설계합니다.</h1><p class="lede">원도심의 식사에서 월영교의 저녁으로,<br>그리고 고택의 하룻밤으로.<br>관광 데이터를 실행 가능한 동선과 혜택으로 연결하는<br><b>안동 릴레이 운영 제안</b>입니다.</p><div class="meta"><span>한국관광 데이터랩 활용 경진대회</span><span>현장 조사 09.19–20</span><span>제출 09.30</span></div></div>
+<figure class="hero-photo"><img src="assets/andong-ir/woryeonggyo.jpg" width="4032" height="3024" alt="안동호 위로 이어지는 실제 월영교와 정자"><figcaption>월영교, 안동 · 2019 / 사진 Christian Bolz · <a href="https://commons.wikimedia.org/wiki/File:Woryeonggyo_(1).jpg">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · 화면 비율에 맞춰 표시</figcaption></figure></div>
+<nav class="toc" aria-label="목차"><a href="#s-gis">GIS 대시보드</a><a href="#s-context">01 프로젝트 소개</a><a href="#s-index">02 조사 데이터</a><a href="#s-prob">03 발견과 진단</a><a href="#s-analysis-plan">04 분석 계획</a><a href="#s-idea">05 릴레이 운영안</a><a href="#s-screen">관광객 화면</a><a href="#s-field-design">06 현장 검증</a><a href="#s-gallery">07 성과물 미리보기</a><a href="#preview-calculator">예산 계산기</a><a href="#s-out">운영 사양·대시보드</a><a href="#s-next">08 시행 후 측정</a><a href="#s-limit">분석 범위</a></nav><div class="evidence-key"><span><b>산출값</b> 제공 집계자료로 계산</span><span><b>보도값</b> 원자료 미확보</span><span><b>계획</b> 앞으로 조사·협의</span><span><b>예시</b> 화면 설명용 가정</span></div></header>
+<section class="gis-section" aria-labelledby="s-gis">
+  <div class="section-kicker">공간으로 보는 실행안 <span>프로토타입 / 실제 상권 좌표 + 운영 예시</span></div>
+  <h2 id="s-gis">음식점은 모여 있고,<br>다음 목적지는 떨어져 있습니다.</h2>
+  <p class="gis-intro">안동의 음식업종 3,254곳을 지도에 올렸습니다. 원도심에서 식사한 뒤 어디로 이동할 수 있는지, 체험·야간·숙박을 어떤 권역으로 연결할지 검토하는 화면입니다. <b>레이어와 범위 버튼을 직접 눌러볼 수 있습니다.</b></p>
+  <div class="gis-app">
+    <div class="gis-top"><div class="gis-brand"><span class="gis-logo">A</span><b>ANDONG <span>관광공간 분석</span></b></div><div class="gis-period">상권 2026.06.30 <span class="demo-label">운영 시나리오 예시</span></div></div>
+    <div class="gis-toolbar"><div class="view-tabs" role="group" aria-label="지도 범위"><button type="button" data-view="city" aria-pressed="false">안동 전체</button><button type="button" data-view="downtown" aria-pressed="true">원도심</button><button type="button" data-view="bridge" aria-pressed="false">월영교 연결권</button></div><span>점포 분포 / 업종별 공급 / 릴레이 후보권역</span></div>
+    <div class="gis-workspace">
+      <aside class="gis-layers" aria-label="지도 레이어">
+        <h3>데이터 레이어</h3><p class="panel-note">상가정보 좌표 기반</p>
+        <label><input type="checkbox" id="layer-food" checked><i class="legend-dot food"></i><span>식당</span><b>2,370</b></label>
+        <label><input type="checkbox" id="layer-cafe" checked><i class="legend-dot cafe"></i><span>카페·커피</span><b>479</b></label>
+        <label><input type="checkbox" id="layer-pub" checked><i class="legend-dot pub"></i><span>주점</span><b>405</b></label>
+        <div class="panel-divider"></div><h3>운영 구상</h3><p class="panel-note">배치와 권역은 예시</p>
+        <label><input type="checkbox" id="layer-nodes" checked><i class="legend-dot node"></i><span>관광 참고 지점</span></label>
+        <label><input type="checkbox" id="layer-scenario" checked><i class="legend-dot area"></i><span>릴레이 후보권역</span></label>
+        <div class="gis-note"><b>공간을 먼저, 시간을 다음에.</b><p>점포의 존재는 영업시간이나 제휴를 뜻하지 않습니다. 21시 영업·체험 접수·고택 입실 조건은 현장에서 채웁니다.</p></div>
+        <div class="gis-source">좌표계 WGS84<br>원자료 3,254건 / 표시 가능 3,254건<br>소상공인시장진흥공단</div>
+      </aside>
+      <div class="gis-map-wrap"><div id="andong-map" aria-label="안동 음식점과 관광 참고 지점 지도"></div><div class="map-status"><span class="live-indicator"></span>현재 화면 <b id="visible-places">집계 중</b><span>선택한 업종 기준</span></div><div class="map-caption">원형 영역·연결선은 운영 가정 / 도로 경로·실측 이동시간 아님</div></div>
+      <aside class="gis-inspector" aria-label="공간 분석 요약">
+        <div class="inspector-overline">선택 지점</div><h3 id="selected-place">원도심 → 월영교</h3><p id="selected-detail">식음 상권과 야간 목적지를 함께 보는 기본 화면입니다. 지도에서 점포·참고 지점을 선택하면 상세 정보가 표시됩니다.</p>
+        <figure class="inspector-photo"><img src="assets/andong-ir/woryeonggyo.jpg" alt="지역 참고 사진: 안동 월영교" loading="lazy"><figcaption>지역 참고 사진 · 월영교 / Christian Bolz</figcaption></figure><div class="panel-divider"></div><div class="panel-heading"><h4>음식업종 분포</h4><span>실제 집계 · 상위 5개 동</span></div>
+        <div id="district-bars" class="district-bars"></div>
+        <div class="panel-divider"></div><div class="panel-heading"><h4>저녁 이용 흐름</h4><span class="demo-label">가상 로그</span></div>
+        <div class="mini-histogram" aria-label="가상 로그: 17시 42건, 18시 68건, 19시 91건, 20시 56건, 21시 24건, 22시 9건"><div><i style="height:42%"></i><span>17</span></div><div><i style="height:68%"></i><span>18</span></div><div><i style="height:91%"></i><span>19</span></div><div><i style="height:56%"></i><span>20</span></div><div><i style="height:24%"></i><span>21</span></div><div><i style="height:9%"></i><span>22시</span></div></div>
+        <p class="panel-note">실행 시 QR 이용 건수로 대체할 화면 예시입니다. 현재 관광객 관측값이 아닙니다.</p>
+      </aside>
+    </div>
+    <div class="gis-bottom"><span>음식업종 점: 원자료 좌표</span><span>관광 지점: 표시용 대표좌표</span><span>운영권역·숙박 후보: 예시</span><span id="map-load-status" role="status">배경지도 불러오는 중</span></div>
+  </div>
+  <div class="map-reading"><b>이 화면으로 정하는 것</b><p>① 식사 인증을 시작할 상권 &nbsp; ② 저녁 콘텐츠까지 연결할 이동 구간 &nbsp; ③ 영업·입실 시간 확인이 필요한 시설. 관광객 이동 궤적이나 정책효과를 그린 지도는 아닙니다.</p></div>
+</section>
+
+
+<section aria-labelledby="s-context">
+  <div class="sec-head"><span class="step">01 · 프로젝트 소개</span><h2 id="s-context">방문 다음의 행동을 연결하는 안동 릴레이</h2><p>팀의 「아이디어 흐름 및 데이터」에서 출발한 프로젝트입니다. 관광객을 더 불러오는 홍보보다, <b>이미 안동에 온 사람이 식사 이후 체험·야간관광·숙박으로 이어지도록</b> 운영 조건을 설계합니다.</p></div>
+  <div class="oneline">원도심에서 식사한 관광객에게 다음 체험을 안내하고, 저녁 이동을 연결하고, 고택 숙박 혜택을 제공합니다. <b>각 단계에서 무엇이 막히는지 데이터를 모아 운영안을 수정하는 것</b>이 이번 프로젝트의 핵심입니다.</div>
+  <div class="two">
+    <div class="box"><span class="tag">출발점</span><h3>사람이 오는 것과 오래 머무는 것은 다릅니다</h3><p>원안은 안동의 방문 증가, 숙박객 체류시간 감소, 방문 규모 대비 카드소비 둔화에 주목했습니다. 관광 유입을 지역의 다양한 활동과 소비로 연결할 필요가 있다는 문제의식입니다.</p><p>다만 집계자료만으로 같은 사람이 식사 후 떠났는지, 그 이유가 교통인지 가격인지까지 알 수는 없습니다. <b>관측한 현상에서 출발해 현장에서 연결 장애물을 확인</b>하는 방식으로 진행합니다.</p></div>
+    <div class="box"><span class="tag">제안하는 방식</span><h3>쿠폰을 여행의 순서에 맞춰 연결합니다</h3><p>식사 영수증 인증 → 체험 혜택 → 저녁 콘텐츠와 이동 → 고택 숙박 혜택. 기존 관광주민증을 활용하는 방향으로 설계하되, 실제 기능 추가와 기관 연동은 협의가 필요한 상태입니다.</p><p>할인액만 정하는 사업이 아닙니다. <b>대상 관광객·시간대·이동수단·참여 업체·공급량·측정 방법</b>을 함께 담은 실행 사양을 만듭니다.</p></div>
+  </div>
+  <h3>원안에서 실행안으로 구체화하는 세 단계</h3>
+  <div class="tbl"><table><thead><tr><th>단계</th><th>관광객 경험</th><th>운영자가 정할 조건</th><th>데이터의 역할</th></tr></thead><tbody>
+    <tr><td class="k">식사 → 체험</td><td>찜닭·갈비 등 식사 후 영수증을 인증하고 체험 쿠폰을 받음</td><td>식사비 문턱, 할인폭, 예약·마지막 접수 시간, 인증 방식</td><td>식음 소비 규모·일행별 결제액·체험 선호·업체 수용성으로 조건 조정</td></tr>
+    <tr><td class="k">체험 → 야간</td><td>월영교 등 저녁 코스와 이동 방법을 안내받음</td><td>운영일·시간대, 교통수단·요금·대기시간, 귀가편과의 연결</td><td>시간대별 방문·역 승차·실제 동선 측정으로 실행 가능한 코스 선정</td></tr>
+    <tr><td class="k">야간 → 숙박</td><td>참여 조건 충족 후 고택·한옥 숙박 혜택을 확인</td><td>할인 단위·금액, 잔여 객실·입실 마감, 기존 숙박객 적용 여부</td><td>기존 숙박 계획·가격별 의향·숙소 공급을 결합해 적용 범위 설정</td></tr>
+  </tbody></table></div>
+  <p class="caption">4만 원 문턱·10% 체험 할인·2만 원 숙박 할인은 현재 가안입니다. 관광택시 유휴 연계, 숙소 제휴, 야간 행사의 해당 날짜 운영은 아직 확약되지 않았습니다.</p>
+  <h3>현재 위치: 데이터 진단을 바탕으로 현장 검증을 준비하고 있습니다</h3>
+  <div class="phase-track" aria-label="프로젝트 진행 단계">
+    <div class="phase done"><span>01 · 정리</span><b>데이터 수집·정제</b><small>외지인 기준·기간·정본 정리</small></div>
+    <div class="phase done"><span>02 · 산출</span><b>8개 발견 정리</b><small>전국 비교와 운영 가설</small></div>
+    <div class="phase active"><span>03 · 준비 중</span><b>현장 설계</b><small>대상·배정·기록 항목 확정</small></div>
+    <div class="phase"><span>04 · 9/19~20 예정</span><b>현장 검증</b><small>설문·QR·업체·동선</small></div>
+    <div class="phase"><span>05 · 제출 전</span><b>운영안 v1</b><small>변경 근거와 성과측정안</small></div>
+  </div>
+  <div class="box sunk"><p><b>이번에 만드는 것:</b> 검증 가능한 근거가 붙은 실행 운영안과 분석·측정 도구입니다. <b>아직 없는 것:</b> 실제 사업 시행에 따른 추가 숙박·소비 증가 성과입니다. 아래 기존 계산값은 현재 브리프의 분석 결과이며, 이번 설명 페이지 개정에서 원자료를 재계산하지는 않았습니다.</p></div>
+</section>
+
+<section aria-labelledby="s-flow">
+  <div class="sec-head"><span class="label">한눈에</span><h2 id="s-flow">전체 흐름</h2></div>
+  <div class="flow" role="figure" aria-label="문제, 연결 가설, 아이디어, 검증, 성과물의 5단계 흐름">
+    <div class="fcol">
+      <div class="fhead">문제</div>
+      <div class="fbox"><span class="big">−6.2%</span><b>숙박객 체류시간</b>2019→2025. 전국 중앙값 +3.0%</div>
+      <div class="fbox"><span class="big">−2.8%</span><b>방문당 관광소비</b>방문은 +5.6%</div>
+    </div>
+    <div class="fcol">
+      <div class="fhead">연결 가설</div>
+      <div class="fbox"><span class="big">1.1%</span><b>체험·문화·레저 소비</b>식음 35.5% · 쇼핑 30.2%</div>
+      <div class="fbox"><span class="big">6.7%</span><b>주민증 이용/발급 비율</b>이용의 58.6%가 두 곳에 집중</div>
+    </div>
+    <div class="fcol">
+      <div class="fhead">아이디어</div>
+      <div class="fbox"><b>1단계 식사 → 체험</b>영수증 QR 인증</div>
+      <div class="fbox core"><b>2단계 이동 + 야간</b>관광택시 유휴 개방 · 19~21시</div>
+      <div class="fbox"><b>3단계 고택 숙박</b>완주자 2만 원 할인</div>
+    </div>
+    <div class="fcol">
+      <div class="fhead">검증</div>
+      <div class="fbox"><b>P1</b> 할인액 무작위 실험 150명</div>
+      <div class="fbox"><b>P2</b> 안내카드 QR 퍼널</div>
+      <div class="fbox"><b>P3</b> 음식점 15곳 수용성</div>
+      <div class="fbox"><b>P4</b> 모의 릴레이 동선 실측</div>
+    </div>
+    <div class="fcol">
+      <div class="fhead">성과물</div>
+      <div class="fbox core"><b>★ 운영안 v0 → v1</b>현장에서 고친 실행안</div>
+      <div class="fbox"><b>전국 전환 매트릭스</b>242개 시군</div>
+      <div class="fbox"><b>예산·공급 시나리오</b></div>
+      <div class="fbox"><b>QR 로그 측정 설계</b></div>
+    </div>
+  </div>
+  <p class="oneline">기존 관광주민증과의 연계를 지향합니다. 기관 협의와 기능 검토를 거쳐 <b>어느 가게·체험·숙소를 어떤 순서와 조건으로 묶을지</b>를 설계합니다.</p>
+</section>
+<section aria-labelledby="s-index">
+  <div class="sec-head"><span class="label">이 문서의 중심</span><h2 id="s-index">우리가 조사한 데이터와 나온 결과</h2><p>여덟 개의 발견입니다. 각각 <b>어떤 데이터로 무엇을 계산해 무엇이 나왔는지</b>, 그리고 <b>그 데이터로 말할 수 없는 것</b>까지 같은 형식으로 적었습니다.</p></div>
+  <div class="fidx"><table>
+    <thead><tr><th style="width:44px">#</th><th>무엇을 봤나</th><th>쓴 데이터</th><th class="r">결과</th><th style="width:66px">근거</th></tr></thead>
+    <tbody>
+      <tr><td class="fid"><a href="#s-prob" style="text-decoration:none;color:inherit">F1</a></td><td class="k">숙박객이 얼마나 머무나</td><td>이동통신 <span class="num">BDT_01_01_006_1</span> · <span class="num">LN_02_01_013</span><small>2019 vs 2025</small></td><td class="res" style="color:var(--flag)">−6.2%</td><td><span class="ev ev-m">산출값</span></td></tr>
+      <tr><td class="fid"><a href="#s-prob" style="text-decoration:none;color:inherit">F2</a></td><td class="k">방문 1회당 얼마를 쓰나</td><td>이동통신 + 신용카드 <span class="num">BDT_02_01_003_35</span><small>2024 vs 2026 각 1~8월</small></td><td class="res" style="color:var(--flag)">−2.8%</td><td><span class="ev ev-m">산출값</span></td></tr>
+      <tr><td class="fid"><a href="#s-prob" style="text-decoration:none;color:inherit">F3</a></td><td class="k">그 돈이 어느 업종으로 가나</td><td>신용카드 중분류 <span class="num">BDT_02_01_003_35</span><small>2026.1~8</small></td><td class="res">체험 1.1%</td><td><span class="ev ev-m">산출값</span></td></tr>
+      <tr><td class="fid"><a href="#s-why" style="text-decoration:none;color:inherit">F4</a></td><td class="k">안동만 그런가 — 전국 비교</td><td>위 두 자료를 전국 시군으로 확장<small>242개 시군</small></td><td class="res">105곳 동일</td><td><span class="ev ev-m">산출값</span></td></tr>
+      <tr><td class="fid"><a href="#s-how" style="text-decoration:none;color:inherit">F5</a></td><td class="k">체험·야간·숙박 중 어디가 끊겼나</td><td>업종 대분류 <span class="num">LN_03_01_045</span> + 이동통신 시간대<small>같은 유형 6곳 비교</small></td><td class="res" style="color:var(--flag)">체험 −6.2%p</td><td><span class="ev ev-m">산출값</span></td></tr>
+      <tr><td class="fid"><a href="#s-six" style="text-decoration:none;color:inherit">F6</a></td><td class="k">누가 언제 오나</td><td>이동통신 교차표 · 문체부 축제 · 고택 리스트<small>2023~2025</small></td><td class="res">10월 174만</td><td><span class="ev ev-m">산출값</span></td></tr>
+      <tr><td class="fid"><a href="#s-station" style="text-decoration:none;color:inherit">F7</a></td><td class="k">몇 시에 떠나나</td><td>코레일 안동역 승하차<small>41,616행 · 2024.01~2026.08</small></td><td class="res" style="color:var(--flag)">주말 19~20시</td><td><span class="ev ev-m">산출값</span></td></tr>
+      <tr><td class="fid"><a href="#s-card" style="text-decoration:none;color:inherit">F8</a></td><td class="k">기존 정책은 쓰이고 있나</td><td>주민증 발급·이용 건수<small>2026.7.5</small></td><td class="res" style="color:var(--flag)">6.7%</td><td><span class="ev ev-r">보도값</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="saynot">
+    <div class="can"><span class="t">이 데이터로 말할 수 있는 것</span>
+      <span>안동의 지표가 <b>과거 대비</b> 어떻게 변했는지, 그리고 <b>전국·동급 도시 안에서 어디쯤</b>인지.</span>
+      <span>소비가 어느 업종으로 가고 어느 시간대에 사람이 빠져나가는지의 <b>흐름</b>.</span>
+    </div>
+    <div class="cant"><span class="t">말할 수 없는 것</span>
+      <span><b>인과.</b> 관측 데이터라 KTX가 원인이라는 증거가 되지 못합니다.</span>
+      <span><b>개인 단위 행동.</b> 전부 집계값이라 한 사람이 어떤 동선을 밟았는지는 보이지 않습니다.</span>
+    </div>
+  </div>
+</section>
+<section aria-labelledby="s-list">
+  <div class="sec-head"><span class="step">자료</span><h2 id="s-list">데이터 전체 목록</h2><p>코드가 있는 항목은 데이터랩·공공데이터포털에서 같은 코드로 재수집할 수 있습니다.</p></div>
+  <div class="tbl"><table>
+    <thead><tr><th style="width:42px">#</th><th>데이터</th><th>출처 · 코드 · 기간</th><th>용도</th><th style="width:74px">상태</th></tr></thead>
+    <tbody>
+      <tr class="grp"><td colspan="5">A. 한국관광 데이터랩</td></tr>
+      <tr><td class="id">D1</td><td class="k">외지인 방문 연인원<small>성·연령·요일·시간대 교차</small></td><td>이동통신 <span class="num">BDT_01_01_006</span><br><small>전국 시군 · 월 · 2018.01~2026.08 · 3,530만 행</small></td><td>방문당 소비 분모 · 타깃층 · 유입 집중시기 · 전환 매트릭스 가로축</td><td><span class="pill p-ok">보유</span></td></tr>
+      <tr><td class="id">D2</td><td class="k">외지인 관광소비<small>업종 중분류별</small></td><td>신용카드 <span class="num">BDT_02_01_003_35</span><br><small>touDivCd=1 · 전국 시군 · 월</small></td><td>방문당 소비 · 업종 구성 · 매트릭스 세로축 · 체험 1.1%</td><td><span class="pill p-ok">보유</span></td></tr>
+      <tr><td class="id">D3</td><td class="k">숙박방문자 비율 · 평균 숙박일수</td><td><span class="num">LN_02_01_013</span> <small>2018~2026</small></td><td>숙박 13.5% · 3.07일 · 당일 86.4% · 축제 달 숙박</td><td><span class="pill p-ok">보유</span></td></tr>
+      <tr><td class="id">D4</td><td class="k">숙박일수별 관광객 · 체류시간</td><td><span class="num">BDT_01_01_006_1</span></td><td>체류시간 −6.2% · 구성효과 점검</td><td><span class="pill p-ok">보유</span></td></tr>
+      <tr><td class="id">D5</td><td class="k">업종별 소비 비중</td><td><span class="num">LN_03_01_045</span></td><td>K-means 군집 변수</td><td><span class="pill p-warn">정의 확인</span></td></tr>
+      <tr><td class="id">D6</td><td class="k">유입지(출발 시도) 비중</td><td><span class="num">LN_03_01_053</span></td><td>축제 수도권 비중 20.8% → 29.4%</td><td><span class="pill p-ok">보유</span></td></tr>
+      <tr><td class="id">D7</td><td class="k">읍면동별 외지인 방문</td><td><span class="num">BDT_01_01_005_1</span> <small>안동 읍면동 · 월</small></td><td>풍산읍 착시 규명 · 권역 우선순위 · 가게 리포트</td><td><span class="pill p-ok">보유</span></td></tr>
+      <tr><td class="id">D8</td><td class="k">월별 결제금액 · 건수</td><td><span class="num">LN_11_01_010</span></td><td>1단계 인증 문턱 금액</td><td><span class="pill p-warn">단위 확인</span></td></tr>
+      <tr><td class="id">D9</td><td class="k">관광지 검색 순위 Top100</td><td><span class="num">LN_03_01_037</span></td><td>체험 검색 16.5% · 고택 37.8%→17.1% · 안동역 +23.8% · 월영교 −26.9%</td><td><span class="pill p-ok">보유</span></td></tr>
+      <tr><td class="id">D10</td><td class="k">문화관광축제 전수 지표<small>56개 축제</small></td><td><span class="num">FE_01_01_003 · 005 · 007</span></td><td>탈춤의 전국 위치 · 발표÷데이터랩 배율 · 외지인 비율</td><td><span class="pill p-ok">보유</span></td></tr>
+      <tr><td class="id">D11</td><td class="k">야간 방문·소비</td><td>데이터랩 야간 지표</td><td>경북 야간 방문 1위 안동 옥동, 야간 소비 상위10엔 태화동만</td><td><span class="pill p-ok">보유</span></td></tr>
+      <tr class="grp"><td colspan="5">B. 외부 공개 · 기관 데이터</td></tr>
+      <tr><td class="id">E1</td><td class="k">안동역 승하차<small>이음·새마을·무궁화 시간대별</small></td><td>한국철도공사 <small>2024.01~2026.08 · 41,616행</small></td><td>저녁 이탈 시각</td><td><span class="pill p-ok">신규</span></td></tr>
+      <tr><td class="id">E2</td><td class="k">안동 고택 리스트</td><td>미래문화재단 · 559건</td><td>숙박 가능 71곳 = 3단계 공급</td><td><span class="pill p-ok">정제</span></td></tr>
+      <tr><td class="id">E3</td><td class="k">경북 관광숙박업 현황</td><td>공공데이터포털 <span class="num">15129082</span></td><td>한옥체험업 188곳·637실 = 경북 전체 참고값</td><td><span class="pill p-ok">보유</span></td></tr>
+      <tr><td class="id">E4</td><td class="k">소상공인 상가(상권)정보</td><td>소상공인시장진흥공단 <small>2026.06.30</small></td><td>안동 음식업종 3,254곳 = 가맹 분모 · P3 대상</td><td><span class="pill p-ok">정제</span></td></tr>
+      <tr><td class="id">E5</td><td class="k">일반음식점 인허가</td><td>식품안전나라 · 7,948건</td><td>영업 중 2,652곳 좌표 변환, 원도심 분포</td><td><span class="pill p-ok">정제</span></td></tr>
+      <tr><td class="id">E6</td><td class="k">안동 반값여행 공고문</td><td>안동시 공고 <span class="num">제2026-2170호</span></td><td>차별점 비교표</td><td><span class="pill p-ok">보유</span></td></tr>
+      <tr><td class="id">E7</td><td class="k">주민증 발급·이용 건수</td><td>언론 보도 · 기관 발표</td><td>안동 6.7% · 편중 58.6% · 평창 10%</td><td><span class="pill p-warn">원자료 없음</span></td></tr>
+      <tr><td class="id">E8</td><td class="k">충주·영천·나주 환급 실적</td><td>각 시 보도자료</td><td>유사 정책 반응 범위(계산기 가정값)</td><td><span class="pill p-warn">보도값</span></td></tr>
+      <tr><td class="id">E9</td><td class="k">시내버스 개편 · 대중교통 만족도</td><td>안동시 · 만족도 조사</td><td>저녁 이동 공백 · 환승 항목 최하위권</td><td><span class="pill p-ok">보유</span></td></tr>
+      <tr><td class="id">E10</td><td class="k">문체부 지역축제 개최계획</td><td>문화체육관광부 <small>2024 · 2025</small></td><td>안동 축제 5종 · 시기 · 예산</td><td><span class="pill p-ok">보유</span></td></tr>
+      <tr class="grp"><td colspan="5">C. 정보공개청구 — 결과에 의존하지 않음</td></tr>
+      <tr><td class="id">R1</td><td class="k">주민증 지점별 이용 건수</td><td>한국관광공사</td><td>E7의 원자료</td><td><span class="pill p-cut">청구</span></td></tr>
+      <tr><td class="id">R2</td><td class="k">충주 환급 업종별 사용 내역</td><td>충주시</td><td>차등 환급의 업종 흐름</td><td><span class="pill p-cut">청구</span></td></tr>
+      <tr><td class="id">R3</td><td class="k">탈박물관 체험 인원</td><td>안동시 · 재단</td><td>체험 수요 공개 통계 부재</td><td><span class="pill p-cut">청구</span></td></tr>
+      <tr class="grp"><td colspan="5">D. 직접 만드는 데이터 — 9/19~20</td></tr>
+      <tr><td class="id">P1</td><td class="k">할인액 무작위 정책선호 실험</td><td>직접 설문 · 목표 150명 · 4조건</td><td>3단계 할인액 결정</td><td><span class="pill p-warn">설계 중</span></td></tr>
+      <tr><td class="id">P2</td><td class="k">안내카드 QR 퍼널</td><td>원도심 가게 2곳 × 2일</td><td>1→2단계 연결</td><td><span class="pill p-warn">섭외</span></td></tr>
+      <tr><td class="id">P3</td><td class="k">사업자 수용성</td><td>원도심 음식점 15곳</td><td>참여 조건 · 거부 이유</td><td><span class="pill p-warn">설계 중</span></td></tr>
+      <tr><td class="id">P4</td><td class="k">모의 릴레이</td><td>팀·지인 동선 주파</td><td>저녁 이동 · 21시 영업 가게 수</td><td><span class="pill p-warn">설계 중</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+<section aria-labelledby="s-prob">
+  <div class="sec-head"><span class="step">발견 F1~F3</span><h2 id="s-prob">문제 — 무엇이 이상한가</h2></div>
+
+  <div class="probs">
+    <div class="prob"><span class="tag">체류시간</span><span class="big">−6.2%</span><h3>숙박객 평균 체류시간</h3><p>2019 → 2025. 전국 중앙값 +3.0%. 261개 시군 중 감소폭 51번째 <span class="ev ev-m">산출값</span></p></div>
+    <div class="prob"><span class="tag">숙박 유입</span><span class="big">13.5%</span><h3>숙박방문자 비율</h3><p>전국 상위 17%. 비율과 절대 규모를 구별 <span class="ev ev-m">산출값</span></p></div>
+    <div class="prob"><span class="tag">체류 깊이</span><span class="big">3.07일</span><h3>평균 숙박일수</h3><p>전국 하위 14%. 1박 숙박자가 66% <span class="ev ev-m">산출값</span></p></div>
+  </div>
+  <p class="caption">세 숫자를 함께 읽으면 진단이 달라집니다. 숙박방문자 비율은 상위 17%인데 평균 숙박일수는 하위 14%입니다. <b>1박 방문이 큰 비중을 차지하므로 숙박 여부와 체류 길이를 분리해 봅니다.</b> 처방도 달라집니다. 숙박객을 더 데려오는 대신 머무는 동안의 동선을 채웁니다.</p>
+
+  <h3>방문은 늘고 방문당 소비는 줄었습니다</h3>
+  <p>중앙선 전 구간 개통(2024.12, 부산 직결) 전후로 2024년과 2026년 각 1~8월을 비교했습니다. 외지인 방문 1,110만 → 1,173만 회, 관광소비 1,729억 → 1,775억 원, 방문당 <b>15,572원 → 15,134원</b>.</p>
+  <div class="pc" role="figure" aria-label="5개 도시의 방문 증가율과 방문당 소비 증감률">
+    <div class="pc-head"><span>도시</span><span>방문</span><span>방문당 관광소비</span></div>
+    <div class="pc-row hl"><span class="c">안동</span><span class="num">+5.6%</span><div class="div"><div class="neg" style="width:14%"></div><div class="pos"></div></div><span class="v neg-t">−2.8%</span></div>
+    <div class="pc-row"><span class="c">경주</span><span class="num">+7.9%</span><div class="div"><div class="neg"></div><div class="pos" style="width:41.5%"></div></div><span class="v">+8.3%</span></div>
+    <div class="pc-row"><span class="c">군산</span><span class="num">+6.3%</span><div class="div"><div class="neg"></div><div class="pos" style="width:49.5%"></div></div><span class="v">+9.9%</span></div>
+    <div class="pc-row"><span class="c">포항</span><span class="num">+3.5%</span><div class="div"><div class="neg"></div><div class="pos" style="width:26%"></div></div><span class="v">+5.2%</span></div>
+    <div class="pc-row"><span class="c">전주</span><span class="num">+6.1%</span><div class="div"><div class="neg"></div><div class="pos" style="width:6%"></div></div><span class="v">+1.2%</span></div>
+  </div>
+  <p class="caption"><span class="ev ev-m">산출값</span> 방문 = 데이터랩 이동통신 외지인 연인원 · 소비 = 데이터랩 신용카드 외지인 관광소비(touDivCd=1). <b>"방문당 소비"는 1인당이 아닙니다.</b> 분모의 중복 집계 규칙과 두 자료의 모집단 정합성을 확인해야 합니다. 실제 개인·여행별 지출액은 아닙니다.</p>
+
+  <h3>업종별 소비 구성에서 연결 가설을 세웁니다</h3>
+  <div class="comp" role="figure" aria-label="2026년 1~8월 안동 외지인 카드 관광소비의 업종 구성">
+    <div class="cb"><span>식음</span><i style="width:100%"></i><span class="v">35.5%</span></div>
+    <div class="cb"><span>쇼핑</span><i style="width:85.1%"></i><span class="v">30.2%</span></div>
+    <div class="cb"><span>교통(육상운송)</span><i style="width:74.4%"></i><span class="v">26.4%</span></div>
+    <div class="cb"><span>골프장</span><i style="width:7.0%"></i><span class="v">2.5%</span></div>
+    <div class="cb hot"><span>숙박</span><i style="width:7.0%"></i><span class="v">2.5%</span></div>
+    <div class="cb"><span>뷰티</span><i style="width:4.8%"></i><span class="v">1.7%</span></div>
+    <div class="cb hot"><span>체험·문화·레저</span><i style="width:3.1%"></i><span class="v">1.1%</span></div>
+  </div>
+  <p class="caption"><span class="ev ev-m">산출값</span> 2026년 1~8월 안동 외지인 카드 관광소비의 업종 구성(신용카드 <span class="num">BDT_02_01_003_35</span>). 식음·쇼핑·교통이 <b>92.1%</b>를 차지합니다. 체험·문화·레저는 <b>1.1%</b>, 숙박은 <b>2.5%</b>에 그칩니다. 문화서비스 단일 업종은 0.2%, 관광유원시설은 0.0%입니다. 집계상 소비 집중을 보여줍니다. 같은 사람이 식사·쇼핑 후 떠났다는 동선은 확인하지 못합니다.</p>
+
+  <h3>운영 가설 — 식사 이후의 선택을 연결합니다</h3>
+  <div class="two">
+    <div class="box flagged">
+      <span class="tag">메커니즘</span>
+      <h3>저녁 이동이 다음 활동의 제약일 수 있습니다</h3>
+      <p>자가용을 이용할 수 없는 관광객에게 원도심과 체험·월영교·고택 사이의 이동이 제약이 될 수 있습니다. <b>현지 이동수단, 실제 배차와 이동시간, 귀가 이유</b>를 P1·P4에서 확인합니다.</p>
+      <p>원안은 이 가설을 <b>스쳐가는 미식(Transit F&amp;B)</b>으로 표현했습니다. 업종별 소비 비중은 출발 근거이며 교통 단절의 결과라고 확정하지 않습니다.</p>
+      <p>대중교통 만족도 조사에서도 <b>환승 노선·환승 요금·환승 정보 항목이 최하위권</b>입니다 <span class="ev ev-m">산출값</span></p>
+    </div>
+    <div class="box">
+      <span class="tag">그래서 설계 방향</span>
+      <h3>가격 혜택에 동선과 이동을 함께 붙입니다</h3>
+      <p>가격·일정·귀가편·교통·콘텐츠 중 어떤 제약이 큰지 구분합니다. 할인만 제시하는 안과 함께 <b>실행 가능한 다음 활동을 안내하는 구조</b>를 설계합니다.</p>
+      <p><b>원도심 식음 → 19~21시 야간 콘텐츠 → 고택 체류</b>로 이어지는 동선을 만들고 각 칸 사이에 이동 수단과 혜택을 붙여 <b>다음 칸으로 넘어가게 잠그는(Lock-in)</b> 설계가 필요합니다.</p>
+      <p>단계 간 이동·접수·입실 조건이 맞아야 하루 코스가 성립합니다. 순차 조건이 오히려 참여 부담을 높이는지도 현장에서 확인합니다.</p>
+    </div>
+  </div>
+</section>
+<section aria-labelledby="s-why">
+  <div class="sec-head"><span class="step">발견 F4</span><h2 id="s-why">왜 안동인가 — 전국 242개 시군 전환 매트릭스</h2><p>안동만 특별히 나쁜지 확인하려고 전국을 같은 방식으로 계산했습니다. 가로는 방문 증가율, 세로는 방문당 소비 증감률입니다.</p></div>
+
+  <div class="scat" role="figure" aria-label="전국 242개 시군의 방문 증가율과 방문당 소비 증감률 산점도. 안동은 방문 증가 소비 감소 사분면에 위치">
+    <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+      <rect class="sc-q" x="240" y="140" width="420" height="110"/>
+      <line class="sc-g" x1="90" y1="30" x2="90" y2="250"/>
+      <line class="sc-g" x1="390" y1="30" x2="390" y2="250"/>
+      <line class="sc-g" x1="540" y1="30" x2="540" y2="250"/>
+      <line class="sc-g" x1="60" y1="71.3" x2="660" y2="71.3"/>
+      <line class="sc-g" x1="60" y1="208.8" x2="660" y2="208.8"/>
+      <line class="sc-ax" x1="240" y1="30" x2="240" y2="250"/>
+      <line class="sc-ax" x1="60" y1="140" x2="660" y2="140"/>
+      <text class="sc-qt" x="650" y="243" text-anchor="end">방문↑ · 소비↓ — 105곳</text>
+      <g class="sc-d">
+        <circle cx="215.8" cy="148.7" r="3"/><circle cx="275.6" cy="166" r="3"/><circle cx="422.7" cy="147.5" r="3"/><circle cx="320.7" cy="64.3" r="3"/><circle cx="325.4" cy="166.7" r="3"/><circle cx="281.4" cy="132.1" r="3"/><circle cx="268.4" cy="163.1" r="3"/><circle cx="268.4" cy="130.9" r="3"/><circle cx="342" cy="126" r="3"/><circle cx="267.2" cy="174.3" r="3"/><circle cx="413.4" cy="208.9" r="3"/><circle cx="276.2" cy="153.6" r="3"/><circle cx="323.2" cy="121.4" r="3"/><circle cx="280.3" cy="146.2" r="3"/><circle cx="306.6" cy="134" r="3"/><circle cx="202" cy="145.8" r="3"/><circle cx="353.7" cy="173.3" r="3"/><circle cx="352.2" cy="155" r="3"/><circle cx="291.2" cy="58.5" r="3"/><circle cx="238" cy="140" r="3"/><circle cx="486.2" cy="231.1" r="3"/><circle cx="473.2" cy="175.8" r="3"/><circle cx="345" cy="84.8" r="3"/><circle cx="279.2" cy="111.3" r="3"/><circle cx="279.9" cy="120" r="3"/><circle cx="327.8" cy="131.3" r="3"/><circle cx="230.1" cy="42.2" r="3"/><circle cx="248.1" cy="89.8" r="3"/><circle cx="281.2" cy="168.3" r="3"/><circle cx="347.2" cy="113.9" r="3"/><circle cx="271.4" cy="148.4" r="3"/><circle cx="146.8" cy="188.7" r="3"/><circle cx="279.8" cy="75.8" r="3"/><circle cx="260" cy="106.2" r="3"/><circle cx="316.2" cy="140.5" r="3"/><circle cx="377.8" cy="228.8" r="3"/><circle cx="325.5" cy="76.8" r="3"/><circle cx="359.1" cy="52.8" r="3"/><circle cx="343.2" cy="140.5" r="3"/><circle cx="326.2" cy="133.3" r="3"/><circle cx="372.2" cy="107.4" r="3"/><circle cx="301.5" cy="97.9" r="3"/><circle cx="332" cy="104.5" r="3"/><circle cx="357.2" cy="165.6" r="3"/><circle cx="294.3" cy="109.3" r="3"/><circle cx="358.5" cy="38.9" r="3"/><circle cx="345.8" cy="163" r="3"/><circle cx="278.2" cy="129.3" r="3"/><circle cx="192.9" cy="116" r="3"/><circle cx="270.6" cy="154.9" r="3"/><circle cx="291" cy="109.5" r="3"/><circle cx="252" cy="91.3" r="3"/><circle cx="174.3" cy="44.2" r="3"/><circle cx="343" cy="110.4" r="3"/><circle cx="397.5" cy="238.7" r="3"/><circle cx="332.4" cy="155" r="3"/><circle cx="324.9" cy="149.6" r="3"/><circle cx="245.6" cy="161.9" r="3"/><circle cx="399" cy="169.6" r="3"/><circle cx="403" cy="166.3" r="3"/><circle cx="436" cy="106.4" r="3"/><circle cx="283.5" cy="176.8" r="3"/><circle cx="258.3" cy="102.7" r="3"/><circle cx="368.7" cy="174.1" r="3"/><circle cx="215.7" cy="64.5" r="3"/><circle cx="285.4" cy="126.7" r="3"/><circle cx="279.3" cy="42.7" r="3"/><circle cx="227" cy="93.2" r="3"/><circle cx="279.6" cy="149.2" r="3"/><circle cx="445" cy="125.2" r="3"/><circle cx="325.7" cy="103.9" r="3"/><circle cx="311.1" cy="92.8" r="3"/><circle cx="333.4" cy="194.6" r="3"/><circle cx="448.4" cy="238.2" r="3"/><circle cx="236.4" cy="93.4" r="3"/><circle cx="326.2" cy="204.7" r="3"/><circle cx="302" cy="106.2" r="3"/><circle cx="329.1" cy="103.6" r="3"/><circle cx="297.3" cy="152.8" r="3"/><circle cx="267" cy="76.4" r="3"/><circle cx="331.5" cy="117.4" r="3"/><circle cx="249" cy="43.8" r="3"/><circle cx="227.2" cy="195.8" r="3"/><circle cx="299.8" cy="163.4" r="3"/><circle cx="247.6" cy="130" r="3"/><circle cx="246.7" cy="157.8" r="3"/><circle cx="368.1" cy="207.6" r="3"/><circle cx="258" cy="138.3" r="3"/><circle cx="237" cy="161.8" r="3"/><circle cx="448.2" cy="176.8" r="3"/><circle cx="323.7" cy="146.7" r="3"/><circle cx="350.2" cy="151.3" r="3"/><circle cx="330" cy="162.6" r="3"/><circle cx="240" cy="125.6" r="3"/><circle cx="564.3" cy="249.8" r="3"/><circle cx="290.6" cy="148.7" r="3"/><circle cx="365.6" cy="154" r="3"/><circle cx="361" cy="97.9" r="3"/><circle cx="386.4" cy="155.5" r="3"/><circle cx="321" cy="142.1" r="3"/><circle cx="428" cy="177.3" r="3"/><circle cx="362.7" cy="192.9" r="3"/><circle cx="443.8" cy="205.7" r="3"/><circle cx="300.6" cy="200.5" r="3"/><circle cx="275.2" cy="184.5" r="3"/><circle cx="449.2" cy="204" r="3"/><circle cx="291" cy="189.6" r="3"/><circle cx="369.3" cy="158.1" r="3"/><circle cx="322.6" cy="137.5" r="3"/><circle cx="198" cy="99.3" r="3"/><circle cx="396.2" cy="133.6" r="3"/><circle cx="350.8" cy="189.4" r="3"/><circle cx="333.6" cy="193.5" r="3"/><circle cx="407.2" cy="189.4" r="3"/><circle cx="402.8" cy="124.3" r="3"/><circle cx="372.4" cy="188.5" r="3"/><circle cx="382" cy="196.8" r="3"/><circle cx="355" cy="168.9" r="3"/><circle cx="327.9" cy="160.5" r="3"/><circle cx="244.5" cy="90.8" r="3"/><circle cx="403" cy="174.6" r="3"/><circle cx="244.6" cy="104" r="3"/><circle cx="163" cy="79.5" r="3"/><circle cx="254.2" cy="109" r="3"/><circle cx="309.6" cy="137.9" r="3"/><circle cx="301" cy="218.4" r="3"/><circle cx="252.4" cy="124.7" r="3"/><circle cx="243" cy="150.1" r="3"/><circle cx="306.4" cy="177.2" r="3"/><circle cx="277.6" cy="84" r="3"/><circle cx="341" cy="178" r="3"/><circle cx="301.5" cy="75.5" r="3"/><circle cx="309.9" cy="44.8" r="3"/><circle cx="465.9" cy="157" r="3"/><circle cx="290.4" cy="134.2" r="3"/><circle cx="302.8" cy="68.2" r="3"/><circle cx="417.2" cy="106.5" r="3"/><circle cx="274.5" cy="87.8" r="3"/><circle cx="375.9" cy="149.5" r="3"/><circle cx="473.8" cy="196.7" r="3"/><circle cx="476.1" cy="146" r="3"/><circle cx="344.5" cy="132.9" r="3"/><circle cx="241.5" cy="90.2" r="3"/><circle cx="519.6" cy="141" r="3"/><circle cx="366.5" cy="132.4" r="3"/><circle cx="320.7" cy="132.6" r="3"/><circle cx="321.8" cy="121.2" r="3"/><circle cx="454" cy="138.8" r="3"/><circle cx="344.7" cy="86.6" r="3"/><circle cx="292.6" cy="126.9" r="3"/><circle cx="351.4" cy="140.7" r="3"/><circle cx="315.2" cy="139.3" r="3"/><circle cx="370.7" cy="200.5" r="3"/><circle cx="320.2" cy="84.6" r="3"/><circle cx="346.5" cy="151.2" r="3"/><circle cx="355" cy="144.5" r="3"/><circle cx="405" cy="174.8" r="3"/><circle cx="295.4" cy="103" r="3"/><circle cx="319.2" cy="33" r="3"/><circle cx="233.1" cy="147.5" r="3"/><circle cx="274" cy="107.2" r="3"/><circle cx="363.2" cy="132.2" r="3"/><circle cx="317.8" cy="137.9" r="3"/><circle cx="233.6" cy="101.6" r="3"/><circle cx="292.6" cy="62.2" r="3"/><circle cx="226.6" cy="234.3" r="3"/><circle cx="262.2" cy="105.3" r="3"/><circle cx="405.8" cy="159.9" r="3"/><circle cx="211" cy="156.8" r="3"/><circle cx="291.2" cy="211.2" r="3"/><circle cx="300.5" cy="150.7" r="3"/><circle cx="300.2" cy="60.7" r="3"/><circle cx="302.1" cy="149.6" r="3"/><circle cx="381.4" cy="151.6" r="3"/><circle cx="337.5" cy="129.6" r="3"/><circle cx="264.6" cy="147.4" r="3"/><circle cx="342" cy="114.8" r="3"/><circle cx="396.8" cy="146" r="3"/><circle cx="343.8" cy="150.2" r="3"/><circle cx="352.2" cy="99.9" r="3"/><circle cx="345.6" cy="158.7" r="3"/><circle cx="313.6" cy="134.4" r="3"/><circle cx="390.9" cy="185.6" r="3"/><circle cx="130.5" cy="86" r="3"/><circle cx="278.6" cy="31.7" r="3"/><circle cx="266.8" cy="110.8" r="3"/><circle cx="399.7" cy="104.9" r="3"/><circle cx="360.9" cy="143" r="3"/><circle cx="373" cy="186.8" r="3"/><circle cx="297.2" cy="109.9" r="3"/><circle cx="390.3" cy="189" r="3"/><circle cx="409.5" cy="125.6" r="3"/><circle cx="210.4" cy="104.7" r="3"/><circle cx="264.2" cy="65.8" r="3"/><circle cx="230.8" cy="134.7" r="3"/><circle cx="331.8" cy="108.7" r="3"/><circle cx="297" cy="89.3" r="3"/><circle cx="327.9" cy="145.3" r="3"/><circle cx="250.8" cy="141.6" r="3"/><circle cx="544.5" cy="186.9" r="3"/><circle cx="347.8" cy="137.9" r="3"/><circle cx="288.3" cy="41.8" r="3"/><circle cx="303.2" cy="161" r="3"/><circle cx="359.7" cy="135.4" r="3"/><circle cx="226.6" cy="58.4" r="3"/><circle cx="281.4" cy="158.5" r="3"/><circle cx="287.5" cy="75.2" r="3"/><circle cx="350.6" cy="142.2" r="3"/><circle cx="400.2" cy="140.3" r="3"/><circle cx="429.4" cy="206.7" r="3"/><circle cx="650.1" cy="168.3" r="3"/><circle cx="350.7" cy="117.1" r="3"/><circle cx="214.2" cy="104.9" r="3"/><circle cx="255.2" cy="111.6" r="3"/>
+      </g>
+      <g class="sc-p">
+        <circle cx="357.9" cy="83.1" r="4.5"/><circle cx="335" cy="72.2" r="4.5"/><circle cx="293" cy="104.6" r="4.5"/><circle cx="331.3" cy="131.9" r="4.5"/>
+        <circle cx="363.6" cy="103.4" r="4"/><circle cx="478.2" cy="89.9" r="4"/><circle cx="494.1" cy="154.8" r="4"/><circle cx="255.4" cy="123.8" r="4"/><circle cx="224.2" cy="166.7" r="4"/><circle cx="316.4" cy="144.3" r="4"/>
+      </g>
+      <circle class="sc-me" cx="324.6" cy="159.3" r="7"/>
+      <text class="sc-lme" x="334" y="176">안동 (+5.6, −2.8)</text>
+      <text class="sc-l" x="335" y="63" text-anchor="middle">군산</text>
+      <text class="sc-l" x="366" y="80" >경주</text>
+      <text class="sc-l" x="372" y="107">공주</text>
+      <text class="sc-l" x="285" y="101" text-anchor="end">포항</text>
+      <text class="sc-l" x="339" y="129">전주</text>
+      <text class="sc-l" x="308" y="141" text-anchor="end">강화</text>
+      <text class="sc-l" x="247" y="121" text-anchor="end">남원</text>
+      <text class="sc-l" x="216" y="170" text-anchor="end">충주</text>
+      <text class="sc-l" x="486" y="87">부여</text>
+      <text class="sc-l" x="502" y="152">문경</text>
+      <text class="sc-t" x="90" y="266" text-anchor="middle">−10</text>
+      <text class="sc-t" x="240" y="266" text-anchor="middle">0</text>
+      <text class="sc-t" x="390" y="266" text-anchor="middle">+10</text>
+      <text class="sc-t" x="540" y="266" text-anchor="middle">+20</text>
+      <text class="sc-t" x="54" y="75" text-anchor="end">+10</text>
+      <text class="sc-t" x="54" y="144" text-anchor="end">0</text>
+      <text class="sc-t" x="54" y="212" text-anchor="end">−10</text>
+      <text class="sc-at" x="660" y="288" text-anchor="end">방문 증가율 (%)</text>
+      <text class="sc-at" x="16" y="24">방문당 소비 증감률 (%)</text>
+    </svg>
+  </div>
+  <p class="caption"><span class="ev ev-m">산출값</span> 2024년 대비 2026년 각 1~8월. 외지인 방문 100만 회 이상 <b>242개 시군</b>. 진한 점은 비교 도시, 중간 점은 같은 유형(K-means) 도시입니다.</p>
+
+  <div class="two">
+    <div class="box flagged">
+      <h3>안동은 특이한 사례가 아닙니다</h3>
+      <div class="tbl"><table>
+        <thead><tr><th>사분면</th><th class="r">시군 수</th><th class="r">비중</th></tr></thead>
+        <tbody>
+          <tr><td class="k">방문↑ 소비↑</td><td class="r">109</td><td class="r">45.0%</td></tr>
+          <tr><td class="k" style="color:var(--flag)">방문↑ 소비↓ <small>안동 포함</small></td><td class="r" style="color:var(--flag);font-weight:600">105</td><td class="r" style="color:var(--flag);font-weight:600">43.4%</td></tr>
+          <tr><td class="k">방문↓ 소비↑</td><td class="r">17</td><td class="r">7.0%</td></tr>
+          <tr><td class="k">방문↓ 소비↓</td><td class="r">11</td><td class="r">4.5%</td></tr>
+        </tbody>
+      </table></div>
+      <p>전국 중앙값은 방문 +5.4%, 방문당 소비 +0.3%입니다. <b>"방문은 늘고 방문당 소비는 주는" 곳이 105개로 전국의 43%</b>입니다. 안동의 소비 증감률은 242곳 중 하위 28% 수준으로, 극단값이 아닙니다.</p>
+      <p>같은 유형 도시 중 문경(−2.2%), 충주(−3.9%), 강화(−0.6%)도 마이너스입니다. <b>"안동만 소비가 떨어졌다"는 문장은 쓸 수 없습니다.</b></p>
+    </div>
+    <div class="box">
+      <h3>안동을 좁히는 것은 두 번째 축입니다</h3>
+      <p>방문↑소비↓ 105곳 중에서 <b>숙박객 체류시간까지 줄어든 곳</b>으로 좁히면 범위가 달라집니다. 안동의 체류시간 −6.2%는 261개 시군 중 51번째로 큰 감소폭이고, 전국 중앙값은 +3.0%입니다.</p>
+      <p>여기에 세 번째 조건이 붙습니다. 숙박방문자 비율 13.5%(상위 17%)로 <b>사람은 이미 오는데</b> 평균 숙박일수는 3.07일(하위 14%)에 머뭅니다.</p>
+      <p><b>유입은 충분하고 체류가 짧아지고 방문당 소비가 준다.</b> 이 세 조건이 겹치는 자리가 안동이고 릴레이가 겨냥하는 지점입니다.</p>
+    </div>
+  </div>
+</section>
+<section aria-labelledby="s-how">
+  <div class="sec-head"><span class="step">발견 F5 · 산식</span><h2 id="s-how">지표를 어떻게 계산했나</h2><p>대부분의 수치는 원자료를 그대로 쓴 것이 아니라 두 자료를 나누거나 묶어 만든 값입니다.</p></div>
+
+  <div class="box">
+    <span class="tag">지표 1</span><h3>방문당 관광소비</h3>
+    <p style="font-family:var(--mono);font-size:14px;background:var(--sunk);padding:11px 14px;border-radius:4px">외지인 카드 관광소비(원) ÷ 외지인 방문 연인원(회)</p>
+    <div class="klist">
+      <div><span class="dt">자료</span><span>분자 신용카드 <span class="num">BDT_02_01_003_35</span> · 분모 이동통신 <span class="num">BDT_01_01_006</span></span></div>
+      <div><span class="dt">기간</span><span>2024년 1~8월 vs 2026년 1~8월. 연 단위로 비교하면 2026년이 8개월치라 왜곡됩니다</span></div>
+      <div><span class="dt">결과</span><span>15,572원 → 15,134원 (−2.8%). 전국 242개 시군 중앙값 +0.3%</span></div>
+      <div><span class="dt">한계</span><span>분자·분모의 출처가 다릅니다. 카드 외 결제와 온라인·사전 결제의 <b>포착 범위·지역 귀속을 확인해야 합니다.</b> 분모가 연인원이라 재방문이 중복됩니다</span></div>
+    </div>
+  </div>
+
+  <div class="box">
+    <span class="tag">지표 2</span><h3>하위 진단점수 — 어느 구간이 끊겼나</h3>
+    <p>종합 점수 하나로 순위를 매기면 어디를 고칠지 보이지 않아 셋으로 나눴습니다.</p>
+    <div class="tbl"><table>
+      <thead><tr><th>하위 점수</th><th>정의 · 출처</th><th class="r">안동</th><th class="r">같은 유형<br>상위 25%</th><th>격차</th></tr></thead>
+      <tbody>
+        <tr><td class="k">① 체험 연결</td><td>레저스포츠 + 문화관광 + 역사관광 + 자연관광 + 체험관광<small>업종 대분류 소비 비중 · <span class="num">LN_03_01_045</span> · 전 기간 합산</small></td><td class="r">27.9%</td><td class="r">34.1%</td><td><span class="pill p-cut">−6.2%p</span></td></tr>
+        <tr><td class="k">② 야간 연결</td><td>21~24시 외지인 방문 비중<small>이동통신 <span class="num">BDT_01_01_006</span> · 2025년</small></td><td class="r">8.91%</td><td class="r">8.68%</td><td><span class="pill p-ok">+0.23%p</span></td></tr>
+        <tr><td class="k">③ 숙박 전환</td><td>숙박 소비 비중<small>업종 대분류 · <span class="num">LN_03_01_045</span> · 전 기간 합산</small></td><td class="r">9.9%</td><td class="r">14.3%</td><td><span class="pill p-cut">−4.4%p</span></td></tr>
+      </tbody>
+    </table></div>
+    <p class="caption">같은 유형 = K-means 군집에서 안동과 같은 칸에 들어간 <b>공주·부여·문경·남원·충주·강화</b>. 상위 25%는 이 6곳의 75번째 백분위입니다. ②는 이번에 새로 산출했습니다.</p>
+  </div>
+
+  <div class="box asked">
+    <h3>체험 1.1%와 27.9% — 두 지표의 기준이 다릅니다</h3>
+    <p>두 자료는 기간과 분류 범위가 다릅니다. <b>코드북과 집계 대상의 대응을 확인하기 전에는 직접 비교하지 않습니다.</b></p>
+    <div class="tbl"><table>
+      <thead><tr><th>구분</th><th>업종 대분류 <span class="num">LN_03_01_045</span></th><th>업종 중분류 <span class="num">BDT_02_01_003_35</span></th></tr></thead>
+      <tbody>
+        <tr><td class="k">기간</td><td>전 기간 합산</td><td>2026년 1~8월</td></tr>
+        <tr><td class="k">체험에 포함</td><td>레저스포츠 · <b>문화관광 · 역사관광 · 자연관광</b> · 체험관광</td><td>관광유원시설 · 문화서비스 · 기타레저 · 여행업</td></tr>
+        <tr><td class="k">체험 값</td><td class="r">27.9%</td><td class="r">1.11%</td></tr>
+        <tr><td class="k">숙박 값</td><td class="r">9.9%</td><td class="r">2.49%</td></tr>
+      </tbody>
+    </table></div>
+    <p>대분류는 역사·자연관광 등을 묶고, 중분류는 문화서비스·기타레저 등을 묶었습니다. 실제 업체의 업종 코드와 분류 대응표를 확인해 포함 범위를 명시합니다.</p>
+    <p>릴레이 1단계는 체험 프로그램 이용을 제안합니다. 현재 분류 차이만으로 ‘보는 관광’과 ‘직접 하는 체험’을 나누거나 실제 참여 규모를 확정하지 않습니다.</p>
+  </div>
+
+  <div class="box">
+    <h3>숙박방문자 비율은 이미 높습니다</h3>
+    <p>숙박 <b>소비</b> 비중은 −4.4%p로 낮지만, 숙박 <b>방문자</b> 비율 13.5%는 같은 유형 상위 25%(12.3%)보다 높습니다. ③의 처방이 "더 재우자"가 아니라 <b>"머무는 동안 쓸 곳을 만들자"</b>가 되는 근거입니다.</p>
+  </div>
+
+  <div class="box flagged">
+    <h3>이 표에 남은 확인 과제</h3>
+    <ul>
+      <li>①③은 <b>전 기간 합산</b>이고 ②는 <b>2025년</b>입니다. 기간이 섞여 있어 제출 전 하나로 맞춥니다.</li>
+      <li>K-means 실루엣 계수가 <b>0.24</b>로 군집 경계가 뚜렷하지 않습니다. 군집 수를 바꿔 안동의 이웃이 흔들리는지 확인하고, <b>종합 지수 순위는 내세우지 않습니다.</b></li>
+      <li>②는 안동이 오히려 <b>+0.23%p 높습니다.</b> "야간이 약하다"는 동급 비교로는 성립하지 않고, 근거는 <b>야간 방문과 소비의 공간적 차이</b>(경북 야간 방문 1위 동네가 안동 옥동인데 야간 소비 상위10에는 태화동만)와 <b>19~20시 이탈</b> 쪽입니다.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <span class="tag">지표 3</span><h3>안동역 시간대별 1일 평균 승차</h3>
+    <p style="font-family:var(--mono);font-size:14px;background:var(--sunk);padding:11px 14px;border-radius:4px">해당 시간대 승차 합계 ÷ <b>0이 아닌 관측 칸 수</b> · 잠정 계산</p>
+    <p>원자료에는 0인 칸이 많습니다. 그 0이 "승객 없음"인지 "열차 없음"인지 구분되지 않습니다. 단순 평균은 열차가 드문 시간대를 자동으로 낮게 만듭니다. <b>0이 아닌 칸만 분모로 삼았습니다.</b> 19~20시 양수 관측은 평일 480칸 중 161칸, 주말 192칸 중 134칸입니다. 이 기준에서 주말 273명 대 평일 93명의 차이가 남습니다.</p>
+    <p class="caption">남는 한계 — 0 제외가 실제 운행일을 뜻하지 않으며 평균을 높이는 선택이 될 수 있습니다. 좌석 공급 차이도 남습니다. 편성 정보를 얻으면 공급량을 통제해 재계산합니다.</p>
+  </div>
+
+  <div class="box"><span class="tag">지표 4 · 설계 변경</span><h3>예산·공급 시나리오</h3><p>기존 초안의 ‘방문 연인원 × 여러 비율 × 의향–행동 보정률’은 실제 순증 숙박 예측에 사용하지 않습니다. 의향–행동 보정률 30~70%에는 실증 근거가 없고, 방문 연인원과 시범사업 대상 일행의 단위도 다릅니다.</p><p>대신 사업 기간의 적격 안내 대상, 직전 단계 기준 참여·사용 비율, 할인액, 실제 공급 상한을 분리해 <b>사용 건수와 필요 예산의 가정별 시나리오</b>를 구성합니다. 모든 입력의 단위·분모·근거를 표시합니다.</p><p><a href="#preview-calculator">성과물 예시에서 가정값을 바꿔 계산해 보기 →</a></p></div>
+</section>
+<section aria-labelledby="s-six">
+  <div class="sec-head"><span class="step">발견 F6</span><h2 id="s-six">안동 방문객은 누구이고 언제 오는가</h2><p>타깃층·유입 시기·축제·고택·이탈 시각을 실측값으로 정리했습니다.</p></div>
+  <div class="tbl"><table>
+    <thead><tr><th style="width:120px">항목</th><th>값</th><th style="width:118px">출처</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="k">타깃층<small>월·성·연령</small></td>
+        <td><b>50대 21.7%</b> · 60대 17.0% · 20대 16.3% · 40대 15.9% · 30대 14.2% · 70대↑ 7.5% · 10대 6.2%<br>남 57.0% / 여 43.0% · 토 19.3% · 일 17.6% · 금 14.0%<br><small>50~60대가 38.7%로 주축이나 <b>20대가 단독 3위</b>입니다. 고택·전통(중장년)과 야간 콘텐츠(청년)가 서로 다른 층을 겨냥하므로 단계별로 타깃이 갈립니다.</small></td>
+        <td>이동통신 <span class="num">BDT_01_01_006</span><small>2023~2025</small></td>
+      </tr>
+      <tr>
+        <td class="k">유입 집중시기</td>
+        <td><b>10월 174.0만 · 9월 171.0만 · 8월 154.1만</b> 회. 최저 2월 123.7만. 최고/최저 <b>1.41배</b><br><small>9~10월 축제 시즌 집중. 이 시기 시범 운영은 표본이 쉽게 모이지만 <b>겨울 작동 여부는 확인할 수 없습니다.</b></small></td>
+        <td>같은 자료</td>
+      </tr>
+      <tr>
+        <td class="k">축제</td>
+        <td>안동 축제 5개 — <b>국제탈춤페스티벌</b>(9월·10일·발표 148.8만) · 차전장군노국공주(5월·6일·25만) · 벚꽃(3월·5일·20만) · 수페스타(7월·10일·15만) · <b>암산얼음축제(1월·9일)</b><br><small>탈춤이 압도적입니다. 겨울 축제인 암산얼음축제는 <b>방문객 집계가 없습니다.</b></small></td>
+        <td>문체부 지역축제 개최계획<br>데이터랩 축제 지표</td>
+      </tr>
+      <tr>
+        <td class="k">21시 이후<br>영업 업종</td>
+        <td><b>데이터가 없습니다.</b> 소상공인 상가정보와 식품 인허가 자료 모두 <b>영업시간 항목이 없습니다.</b><br><small>대안 — ① 소상공인 상권분석의 시간대별 매출로 간접 추정 ② P4에서 원도심을 걸으며 21시에 열려 있는 가게를 직접 셈. 초안의 "21시 상권 마감"은 현재 근거가 없습니다.</small></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="k">당일치기 비율<br>이탈 시각</td>
+        <td>무박 비중 <b>86.4%</b>, 개통 전 86.3%와 동일. 이탈은 <b>주말 19~20시, 0 제외 평균 273명으로 평일 93명의 2.9배</b><br><small>상세는 <a href="#s-station">역 승하차 분석</a>.</small></td>
+        <td>데이터랩 <span class="num">LN_02_01_013</span><br>코레일 승하차</td>
+      </tr>
+      <tr>
+        <td class="k">고택</td>
+        <td>고택 <b>559곳</b> 중 <b>숙박 가능 71곳</b>. 경북 한옥체험업 <b>188곳·637실</b><br><small>3단계 공급 후보 목록입니다. 날짜별 참여·잔여 객실 확인이 필요합니다. 다만 <b>고택·한옥 검색 비중은 37.8% → 17.1%로 떨어졌습니다.</b> "고택 수요가 강하다"는 전제로 쓸 수 없습니다.</small></td>
+        <td>미래문화재단 고택리스트<br>공공데이터포털 <span class="num">15129082</span></td>
+      </tr>
+    </tbody>
+  </table></div>
+
+  <div class="mbars" role="figure" aria-label="안동 월별 외지인 방문 연인원, 2023~2025년 같은 달 평균">
+    <div class="mb"><i style="height:80.7%"></i><span>1</span></div><div class="mb"><i style="height:71.1%"></i><span>2</span></div>
+    <div class="mb"><i style="height:87.0%"></i><span>3</span></div><div class="mb"><i style="height:75.4%"></i><span>4</span></div>
+    <div class="mb"><i style="height:87.1%"></i><span>5</span></div><div class="mb"><i style="height:77.7%"></i><span>6</span></div>
+    <div class="mb"><i style="height:79.0%"></i><span>7</span></div><div class="mb"><i style="height:88.6%"></i><span>8</span></div>
+    <div class="mb pk"><i style="height:98.3%"></i><span>9</span></div><div class="mb pk"><i style="height:100%"></i><span>10</span></div>
+    <div class="mb"><i style="height:82.9%"></i><span>11</span></div><div class="mb"><i style="height:75.2%"></i><span>12</span></div>
+  </div>
+  <p class="caption">월별 외지인 방문 연인원, 2023~2025 같은 달 평균 (만 회) <span class="ev ev-m">산출값</span></p>
+
+  <h3>탈춤축제를 전국 56개 축제와 나란히 놓으면</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>연도</th><th class="r">외지인 방문</th><th class="r">전체(데이터랩)</th><th class="r">외지인 방문당 소비</th><th>비고</th></tr></thead>
+    <tbody>
+      <tr><td class="k">2019</td><td class="r">144,493</td><td class="r">425,417</td><td class="r">10,661원</td><td>코로나 직전</td></tr>
+      <tr><td class="k">2024</td><td class="r">181,964</td><td class="r">504,573</td><td class="r">9,246원</td><td>중앙선 개통 직전</td></tr>
+      <tr><td class="k">2025</td><td class="r">201,523</td><td class="r">554,494</td><td class="r">9,368원</td><td>일평균 55,449명</td></tr>
+      <tr class="grp"><td>2019→2025</td><td class="r" style="color:var(--accent);font-weight:600">+39.5%</td><td class="r">+30.3%</td><td class="r" style="color:var(--flag);font-weight:600">−12.1%</td><td>사람은 늘고 소비는 줄었습니다</td></tr>
+    </tbody>
+  </table></div>
+  <div class="two">
+    <div class="box">
+      <h3>전국 축제 속 위치</h3>
+      <ul>
+        <li>일평균 55,449명 = 56개 중 <b>11위</b> (중앙값 32,391). 붐비는 축제가 맞습니다</li>
+        <li><b>외지인 비율 36.3%</b>, 중앙값 53.5%에 크게 못 미칩니다. 지역민 축제 성격이 강합니다</li>
+        <li>축제 기간 관광소비 지수는 <b>38위</b>. 사람 순위(11위)와 소비 순위가 크게 벌어집니다</li>
+        <li>축제 기간 소비 구성 <b>식음료 60.6% · 숙박 1.0%</b></li>
+        <li>축제 방문자 수도권 비중 20.8%(2024) → <b>29.4%</b>(2025). 접근성 변화와의 관련성을 추가 검토할 관찰 결과입니다</li>
+      </ul>
+      <p class="caption">모두 <span class="ev ev-m">산출값</span>. "식음료 60.6%"는 <b>축제 기간 한정</b> 수치이므로 연중 수치로 쓰지 않습니다.</p>
+    </div>
+    <div class="box flagged">
+      <h3>확인 후 바로잡은 두 가지</h3>
+      <p><b>1.</b> 탈춤 외지인 방문당 소비 9,368원은 전국 축제 중 <b>24위로 중앙값 수준</b>입니다. "다른 축제보다 낮다"는 표현은 쓸 수 없습니다. −12.1%는 안동 자신의 2019년 대비 변화입니다.</p>
+      <p><b>2.</b> "방문객 160만"은 쓰지 않습니다. 발표값 148.8만과 데이터랩 55.4만은 집계 방식이 다릅니다. 기존 배율·순위는 발표값의 연도와 기준을 재확인하기 전까지 제외합니다. 비교에는 데이터랩 기준을 사용하고 발표값은 출처·연도·대상을 따로 표시합니다.</p>
+    </div>
+  </div>
+</section>
+<section aria-labelledby="s-station">
+  <div class="sec-head"><span class="step">발견 F7</span><h2 id="s-station">안동역 시간대별 승하차</h2><p>열차 종류별·시간대별 자료를 받아 41,616행 표로 정리했습니다(2024.01.01~2026.08.31, KTX-이음·새마을·무궁화).</p></div>
+  <div class="chart" role="figure" aria-label="안동역 시간대별 승차 인원, 평일과 주말 비교">
+    <svg viewBox="0 0 700 266" xmlns="http://www.w3.org/2000/svg">
+      <rect class="ch-band" x="582" y="25" width="38" height="190"/>
+      <line class="ch-grid" x1="50" y1="215" x2="680" y2="215"/><line class="ch-grid" x1="50" y1="177" x2="680" y2="177"/>
+      <line class="ch-grid" x1="50" y1="139" x2="680" y2="139"/><line class="ch-grid" x1="50" y1="101" x2="680" y2="101"/>
+      <line class="ch-grid" x1="50" y1="63" x2="680" y2="63"/><line class="ch-grid" x1="50" y1="25" x2="680" y2="25"/>
+      <text class="ch-ax" x="44" y="219" text-anchor="end">0</text><text class="ch-ax" x="44" y="181" text-anchor="end">100</text>
+      <text class="ch-ax" x="44" y="143" text-anchor="end">200</text><text class="ch-ax" x="44" y="105" text-anchor="end">300</text>
+      <text class="ch-ax" x="44" y="67" text-anchor="end">400</text><text class="ch-ax" x="44" y="29" text-anchor="end">500</text>
+      <polyline class="ch-l2" points="50,171.7 89,94.2 129,170.9 168,102.1 208,142.8 247,109.7 286,139.0 326,53.1 365,108.9 404,113.5 444,116.6 483,88.5 523,105.9 562,123.8 601,179.7 641,181.6 680,159.5"/>
+      <polyline class="ch-l1" points="50,168.6 89,100.2 129,158.8 168,60.3 208,115.8 247,73.3 286,104.0 326,29.6 365,68.3 404,70.2 444,44.4 483,47.0 523,64.5 562,110.5 601,111.3 641,154.6 680,131.8"/>
+      <circle class="ch-d1" cx="601" cy="111.3" r="4.5"/><circle class="ch-d2" cx="601" cy="179.7" r="4"/>
+      <text class="ch-val" x="612" y="108">273명</text><text class="ch-val" x="612" y="194">93명</text>
+      <text class="ch-lab" x="601" y="17" text-anchor="middle">19~20시</text>
+      <text class="ch-ax" x="50" y="234" text-anchor="middle">05</text><text class="ch-ax" x="129" y="234" text-anchor="middle">07</text>
+      <text class="ch-ax" x="208" y="234" text-anchor="middle">09</text><text class="ch-ax" x="286" y="234" text-anchor="middle">11</text>
+      <text class="ch-ax" x="365" y="234" text-anchor="middle">13</text><text class="ch-ax" x="444" y="234" text-anchor="middle">15</text>
+      <text class="ch-ax" x="523" y="234" text-anchor="middle">17</text><text class="ch-ax" x="601" y="234" text-anchor="middle">19</text>
+      <text class="ch-ax" x="680" y="234" text-anchor="middle">21</text>
+      <text class="ch-lab2" x="50" y="256">시각 (시)</text>
+      <text class="ch-lab2" x="680" y="256" text-anchor="end">0 제외 관측 평균 승차 인원 (명)</text>
+    </svg>
+  </div>
+  <p class="caption">
+    <span style="display:inline-block;width:22px;border-top:2.2px solid var(--flag);vertical-align:4px"></span> 주말 &nbsp;
+    <span style="display:inline-block;width:22px;border-top:2px dashed var(--idle);vertical-align:4px"></span> 평일 &nbsp;— 안동역에서 <b>열차를 타는</b>(= 떠나는) 인원 <span class="ev ev-m">산출값</span>
+  </p>
+  <div class="two">
+    <div class="box">
+      <h3>읽히는 것</h3>
+      <ul>
+        <li>낮 시간대(14~15시, 17~18시)는 평일·주말이 비슷하게 높습니다. 당일 관광객과 통근·업무 수요가 섞여 있습니다.</li>
+        <li><b>19~20시에서 두 선이 갈라집니다.</b> 평일 93명, 주말 273명 — <b>2.9배</b>.</li>
+        <li>통근·관광·지역민 이동과 운행 공급의 차이가 섞여 있어 방문 목적별 수요로 분해할 수 없습니다.</li>
+        <li>21~22시(막차대)는 주말 219명 · 평일 146명으로 격차가 줄어듭니다.</li>
+      </ul>
+      <p>2단계 야간 콘텐츠 시간대를 <b>19:00~21:00</b>으로 잡은 근거입니다.</p>
+    </div>
+    <div class="box flagged">
+      <h3>이 숫자가 말하지 않는 것</h3>
+      <p>원자료의 0은 "이용객 없음"과 "열차 없음"을 구분하지 못합니다. 0이 아닌 관측만 분모로 삼았으나 실제 운행 여부를 확인하지 못했고 <b>좌석 공급량이 다르면 편향이 남습니다.</b></p>
+      <p>이 자료에는 <b>목적지와 승객 유형 정보가 없습니다.</b> 19~20시 승차자가 관광객인지 귀가하는 지역민인지 직접 확인할 수 없고, 주말/평일 대비로 간접 추론할 뿐입니다.</p>
+      <p>따라서 <b>"저녁 시간대 유출 흐름이 주말에 뚜렷하다"</b>까지만 말하고 "관광객 ○명이 이탈한다"로는 쓰지 않습니다.</p>
+    </div>
+  </div>
+  <div class="two">
+    <div class="box asked">
+      <span class="tag">정리 중 발견 1</span><h3>이전 분석은 KTX-이음만 보고 있었습니다</h3>
+      <p>기존 파일의 합계(승차 956,061명)가 <b>새 자료의 이음 시트와 정확히 일치</b>했습니다. 새마을·무궁화가 빠져 있었습니다. 전 열차 기준 승차는 <b>1,344,425명</b>으로 40% 많습니다. "안동역 이용객"을 말할 때 열차 범위를 항상 밝힙니다.</p>
+    </div>
+    <div class="box asked">
+      <span class="tag">정리 중 발견 2</span><h3>개통으로 열차 구성이 바뀌었습니다</h3>
+      <div class="tbl"><table>
+        <thead><tr><th>연도</th><th class="r">이음</th><th class="r">무궁화</th><th class="r">새마을</th></tr></thead>
+        <tbody>
+          <tr><td class="k">2024</td><td class="r">305,040</td><td class="r">122,834</td><td class="r">41,289</td></tr>
+          <tr><td class="k">2025</td><td class="r">359,460</td><td class="r" style="color:var(--flag)">38,861</td><td class="r" style="color:var(--accent)">103,901</td></tr>
+          <tr><td class="k">2026 <small>1~8월</small></td><td class="r">291,561</td><td class="r">24,778</td><td class="r">56,701</td></tr>
+        </tbody>
+      </table></div>
+      <p>무궁화 승차가 <b>68% 줄고</b> 새마을이 늘었습니다. 열차별 구성 변화가 관찰됩니다. 수요와 편성의 영향을 구분하려면 운행 자료가 필요합니다. 연도를 합치거나 이음만 남기는 것으로 공급 차이가 통제되지는 않습니다.</p>
+    </div>
+  </div>
+</section>
+<section aria-labelledby="s-card">
+  <div class="sec-head"><span class="step">발견 F8</span><h2 id="s-card">디지털 관광주민증</h2></div>
+  <div class="two">
+    <div class="box">
+      <span class="tag">제도</span>
+      <p>한국관광공사가 <b>인구감소지역 89곳</b>의 관광 활성화를 위해 만든 제도입니다. 관광객이 명예 주민으로 등록하면 "대한민국 구석구석" 앱에서 디지털 주민증을 발급받고, 가맹점에서 QR을 제시해 할인을 받습니다.</p>
+      <ul>
+        <li>발급 무료, 앱에서 즉시</li>
+        <li>혜택 범위 — 숙박 · 식음료 · 관광지 입장 · 체험 · KTX</li>
+        <li>안동 적용 사례 — 도산서원 입장료 50% 할인 등</li>
+        <li><b>앱 · QR 발급 · 가맹점 확인 절차가 이미 전부 있습니다.</b></li>
+      </ul>
+      <p class="caption">출처: 한국관광공사 서비스 소개 (korean.visitkorea.or.kr/dgtourcard)</p>
+    </div>
+    <div class="box flagged">
+      <span class="tag">실사용 데이터</span>
+      <h3>발급과 이용 건수 사이에 차이가 있습니다</h3>
+      <div class="klist">
+        <div><span class="dt">안동 발급</span><span class="num">257,198건</span></div>
+        <div><span class="dt">안동 이용</span><span class="num">17,322건</span></div>
+        <div><span class="dt">이용/발급 비율</span><span class="num" style="color:var(--flag);font-weight:700;font-size:19px">6.7%</span></div>
+      </div>
+      <p>2026.7.5 기준이며, 이 6.7%가 <b>경북 7개 시군 중 1위</b>입니다 <span class="ev ev-r">보도값</span></p>
+      <p>이용 17,322건 중 하회마을 6,929건 + 도산서원 3,222건 = <b>58.6%</b>가 두 곳에서 나옵니다. 이용이 두 곳에 집중되어 있습니다. 다른 지점의 이용 수준과 이유는 원자료가 필요합니다.</p>
+    </div>
+  </div>
+  <div class="hbars" role="figure" aria-label="지역별 디지털 관광주민증 발급 대비 이용/발급 비율">
+    <p style="font-size:13.5px;margin-bottom:4px"><b>발급 대비 이용/발급 비율</b> <span class="ev ev-r">보도값</span></p>
+    <div class="hb"><span>평창</span><i style="width:100%"></i><span class="v">10.0%</span></div>
+    <div class="hb me"><span>안동</span><i style="width:67%"></i><span class="v">6.7%</span></div>
+  </div>
+  <p class="caption">평창은 발급 344,180 / 이용 34,605. 구례는 발급 88,440건으로 <b>군 인구(23,941명)의 3.7배</b>인데 가맹점은 24곳입니다. 전국 발급은 100만 명을 넘겼습니다. 발급 실적은 홍보되고 사용 실적은 공개되지 않습니다. 지점별 이용 건수 원자료를 한국관광공사에 정보공개청구(R1)했습니다.</p>
+  <div class="box asked">
+    <p>초안의 <b>"경북 106만 건 발급, 이용/발급 비율 2.88%"</b>는 출처를 찾지 못했습니다 <span class="ev ev-x">가정</span>. 확인된 값은 <b>안동 6.7%</b>이며 경북 전체와 분모가 다릅니다. 제출본에서는 안동 6.7%만 씁니다.</p>
+  </div>
+</section>
+<section aria-labelledby="s-analysis-plan">
+  <div class="sec-head"><span class="step">분석 설계 · 데이터에서 운영 조건까지</span><h2 id="s-analysis-plan">자료를 모으는 데서 끝내지 않고, 결정에 연결합니다</h2><p>분석 단위는 <b>지역·월·업종·시간대</b>입니다. 현재 자료는 개인의 여행을 연결한 데이터가 아니므로, 지역의 패턴을 먼저 확인하고 개인의 계획·제약은 현장에서 별도로 수집합니다.</p></div>
+  <div class="pipeline"><div><b>원자료</b><span>통신 · 카드 · 철도 · 공급 목록</span></div><div><b>정합성 확인</b><span>대상 · 기간 · 단위 · 분류</span></div><div><b>지역 진단</b><span>추세 · 분포 · 비교도시</span></div><div><b>현장 보완</b><span>계획 · 제약 · 의향 · 실행성</span></div><div><b>운영안 수정</b><span>문턱 · 시간 · 경로 · 혜택</span></div></div>
+  <div class="tbl"><table><thead><tr><th>분석 과제</th><th>현재 사용한 데이터·방법</th><th>추가 확인할 데이터</th><th>후속 처리와 결과물</th></tr></thead><tbody>
+    <tr><td class="k">방문 규모 대비 소비</td><td>2024·2026년 각 1~8월 카드 관광소비 합계 ÷ 통신 방문 연인원 합계</td><td>두 자료의 외지인 정의·고객 범위·중복 집계·확대 추정·산식 변경, 현금 및 온라인 선결제 포착 범위</td><td>지역×월 원지표와 비율을 함께 정리. 비교 가능성을 확인하고 실제 개인당 지출액과 구별</td></tr>
+    <tr><td class="k">방문객 구성 변화</td><td>연령·유입지·체류유형 분포 확인. 구성효과 가능성은 남아 있음</td><td>같은 구간으로 나눈 소비액과 방문수, 동일 월 자료, 비공개·결측 셀</td><td>공통 층 확보 시 기준연도 비중으로 표준화 검토. 통신 비중만 있으면 소비 구성효과를 분해하지 않음</td></tr>
+    <tr><td class="k">체험·숙박 소비 구조</td><td>대분류·중분류 소비 비중을 각각 산출</td><td>업종 코드북·분류 대응표·분모 범위·공통 기간·업체 실제 업종</td><td>같은 기준으로 재집계하거나 별도 지표로 분리. 업종 비중을 개인 전환율로 부르지 않음</td></tr>
+    <tr><td class="k">숙박과 체류</td><td>숙박방문자 비율·평균 숙박일수·1박 비중·체류시간 비교</td><td>숙박자 판정·평균 대상·시간/일 단위·장기체류 포함, 2박·3박 이상 분포</td><td>유입 규모와 체류 깊이를 구분. 당일객 추가 1박과 숙박객 체류 연장은 별도 결과로 설계</td></tr>
+    <tr><td class="k">비교도시</td><td>242개 지역 매트릭스, K-means 이웃 6곳과의 격차</td><td>포함·제외 지역, 행정구역 경계, 군집 변수·기간·표준화·군집 수</td><td>공통 지역집합 재비교와 군집 설정 변화 점검. 이웃이 바뀌면 순위보다 분포·범위를 제시</td></tr>
+    <tr><td class="k">저녁 이동</td><td>안동역 시간대별 승차량·평일/주말 비교</td><td>날짜×열차 운행·출발시각·방향·좌석 공급·공휴일·행사일, 현지 노선</td><td>전체 날짜 기준과 확인된 운행일 기준 분리. 같은 공급 조건 비교 및 현장 이동 실측</td></tr>
+    <tr><td class="k">관광주민증 이용</td><td>발급 257,198건·이용 17,322건의 보도값 비율 약 6.7%</td><td>같은 기간 고유 발급·이용 인원, 반복 이용 건수, 지점별 집계 정의</td><td>고유 사용자 비율과 이용 건수/발급 건수 비율을 분리. 회신 전 보도값으로 표시</td></tr>
+  </tbody></table></div>
+  <h3>추가 자료를 확보하는 경로</h3>
+  <div class="three">
+    <div class="box"><span class="tag">제공기관 확인</span><h3>지표 정의와 운행 자료</h3><p>데이터랩 제공기관에 집계 정의·업종표·추정 방식을 확인하고, 철도·운수사 자료에서 운행 여부·시간표·공급을 보완합니다. 제공 가능 여부와 확보 상태를 기록합니다.</p></div>
+    <div class="box"><span class="tag">현장 직접 수집</span><h3>계획과 선택의 이유</h3><p>관광객의 기존 숙박 계획·귀가 제약·이동수단·할인 반응, 업체의 참여 조건, 실제 경로의 이동·대기·영업 상태를 직접 기록합니다.</p></div>
+    <div class="box"><span class="tag">운영 협의</span><h3>판매 가능한 공급</h3><p>숙박 가능 고택 목록을 날짜별 잔여 객실·입실 마감·참여 의향으로 좁힙니다. 체험 정원·마지막 접수·차량 좌석을 함께 확인해 코스를 만듭니다.</p></div>
+  </div>
+  <div class="box sunk"><h3>분석 기준</h3><p>총소비·방문·비율을 함께 표시하고, 기간과 모집단이 다른 결과는 분리합니다. 2019→2025 체류 변화와 2024→2026 소비 변화를 같은 기간의 결과처럼 합치지 않습니다. 공통 층 자료가 없으면 표준화 완료로 표시하지 않습니다. 전국 비교는 안동의 위치를 설명하며, KTX의 인과효과를 입증하지는 않습니다.</p></div>
+</section>
+
+<section aria-labelledby="s-half">
+  <div class="sec-head"><span class="step">제안 배경</span><h2 id="s-half">「안동 반값여행」과의 차이</h2><p>안동시 공고 제2026-2170호(2026.9.10) 조건을 놓고 대조했습니다.</p></div>
+  <div class="tbl"><table>
+    <thead><tr><th style="width:112px">항목</th><th>안동 반값여행 <small>시행 중</small></th><th>릴레이 <small>제안</small></th></tr></thead>
+    <tbody>
+      <tr><td class="k">작동 시점</td><td><b>사후</b> — 여행 종료 14일 내 정산 신청, 쓴 돈의 50%(청년 70%) 환급</td><td><b>현장</b> — 식사 직후 QR을 찍으면 다음 단계 혜택이 즉시 발급</td></tr>
+      <tr><td class="k">무엇을 바꾸나</td><td><b>가격.</b> 어디서 쓰든 같은 비율로 환급</td><td><b>순서.</b> 식사 → 체험 → 야간 → 숙박으로 다음 칸을 지정</td></tr>
+      <tr><td class="k">방문 조건</td><td>지정 관광지 <b>1개소 이상</b> 방문 인증(얼굴+랜드마크 사진). 한 곳이면 충족</td><td>단계를 순서대로 밟아야 다음이 열림. 완주해야 숙박 할인</td></tr>
+      <tr><td class="k">진입 문턱</td><td>여행 <b>3일 전</b> 사전신청 · 신분증 사본 · CHAK 앱 설치 · <b>선착순 5,000명</b> · 최소 소비 <b>10만 원</b></td><td>기존 주민증 활용 지향. 현장 신청과 예산·공급에 따른 인원 상한 검토</td></tr>
+      <tr><td class="k">대상</td><td>관외 거주자. <b>연접 6개 시군(영주·예천·의성·청송·영양·봉화) 제외</b>, 외국인 제외</td><td>대상·제외 조건은 설계 단계</td></tr>
+      <tr><td class="k">인정 소비</td><td>음식점 · 카페 · 숙박 · 편의점/마트 · 도서/문화/공연/오락<small>체험 프로그램 항목이 따로 없음</small></td><td>끊긴 구간(체험 · 야간 · 고택)에만 혜택</td></tr>
+      <tr><td class="k">교통</td><td>안동시 관광택시 · 시티투어만 인정. <b>시외버스 · 기차 · 통행료 불인정</b></td><td>2단계에서 관광택시 유휴 시간대를 저녁 이동에 연계</td></tr>
+      <tr><td class="k">측정</td><td>환급액 총계는 남으나 <b>어디를 어떤 순서로 갔는지는 기록되지 않음</b></td><td>단계별 QR 로그가 그대로 퍼널 데이터</td></tr>
+    </tbody>
+  </table></div>
+  <p class="oneline">반값여행은 <b>쓴 돈을 돌려주고</b>, 릴레이는 <b>어디로 가게 할지를 설계합니다.</b> 둘은 경쟁하지 않습니다. 중복 혜택 적용은 사업 조건과 기관 협의 후 확정합니다.</p>
+  <p class="caption">반값여행의 최소 소비 문턱은 10만 원입니다. 안동의 방문당 소비는 15,134원이지만 분모가 다르므로(연인원 vs 신청 1건) 직접 비교하지 않습니다. 식사비 문항은 식사 인증 문턱에 사용합니다. 전체 여행 10만 원 문턱은 총여행비 범위를 맞춘 별도 문항 없이는 평가하지 않습니다.</p>
+</section>
+<section aria-labelledby="s-idea">
+  <div class="sec-head"><span class="step">제안</span><h2 id="s-idea">데이터가 가리킨 곳 — 3단계 릴레이</h2><p>초안 요지: 디지털 관광주민증과 결합한 F&amp;B–야간–고택 릴레이 바우처로 이동 단절을 해소하고, 식음료 쏠림 소비를 1박 이상 고택 체류형 소비로 잇는다.</p></div>
+
+  <div class="jrn" role="figure" aria-label="관광객의 하루 시간축 위에 저녁 이탈 지점과 릴레이 3단계가 끼어드는 위치">
+    <svg viewBox="0 0 900 292" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M0 0 L10 5 L0 10 z" fill="currentColor"/>
+        </marker>
+      </defs>
+      <rect class="j-box" x="418" y="34" width="262" height="80" rx="5" style="fill:var(--flag-soft);stroke:var(--flag)"/>
+      <text class="j-cut" x="432" y="56">저녁 승차가 관찰됩니다</text>
+      <text class="j-s" x="432" y="76">19~20시 승차 · 0 제외 평균 <tspan style="font-family:var(--mono);fill:var(--ink);font-weight:600">273명</tspan></text>
+      <text class="j-s" x="432" y="95">평일 같은 시간(93명)의 <tspan style="font-family:var(--mono);fill:var(--ink);font-weight:600">2.9배</tspan> · 주말 기준</text>
+      <path class="j-arr" d="M549 118 L549 158" marker-end="url(#ar)" style="color:var(--flag)"/>
+      <text class="j-m" x="80" y="152" text-anchor="middle">14시</text>
+      <text class="j-m" x="249" y="152" text-anchor="middle">16시</text>
+      <text class="j-m" x="417" y="152" text-anchor="middle">18시</text>
+      <text class="j-m" x="586" y="152" text-anchor="middle">20시</text>
+      <text class="j-m" x="755" y="152" text-anchor="middle">22시</text>
+      <line class="j-rail" x1="70" y1="170" x2="850" y2="170"/>
+      <line class="j-rail" x1="80" y1="165" x2="80" y2="175"/><line class="j-rail" x1="164" y1="165" x2="164" y2="175"/>
+      <line class="j-rail" x1="249" y1="165" x2="249" y2="175"/><line class="j-rail" x1="333" y1="165" x2="333" y2="175"/>
+      <line class="j-rail" x1="417" y1="165" x2="417" y2="175"/><line class="j-rail" x1="502" y1="165" x2="502" y2="175"/>
+      <line class="j-rail" x1="586" y1="165" x2="586" y2="175"/><line class="j-rail" x1="671" y1="165" x2="671" y2="175"/>
+      <line class="j-rail" x1="755" y1="165" x2="755" y2="175"/><line class="j-rail" x1="840" y1="165" x2="840" y2="175"/>
+      <circle class="j-node" cx="164" cy="170" r="6"/>
+      <circle class="j-node cut" cx="549" cy="170" r="6" style="stroke:var(--flag)"/>
+      <text class="j-s" x="164" y="200" text-anchor="middle">안동역 도착 · 시내 이동</text>
+      <rect class="j-box" x="325" y="214" width="140" height="66" rx="5"/>
+      <text class="j-boxt" x="337" y="234">1단계 · 원도심 식사</text>
+      <text class="j-s" x="337" y="252">영수증 QR 인증</text>
+      <text class="j-s" x="337" y="270">→ 체험 할인 발급</text>
+      <rect class="j-box" x="495" y="214" width="180" height="66" rx="5" style="stroke-width:2"/>
+      <text class="j-boxt" x="507" y="234">2단계 · 이동 + 야간 (핵심)</text>
+      <text class="j-s" x="507" y="252">관광택시 유휴 시간 개방</text>
+      <text class="j-s" x="507" y="270">월영교 야경 · 낙화 · 줄불놀이</text>
+      <rect class="j-box" x="705" y="214" width="145" height="66" rx="5"/>
+      <text class="j-boxt" x="717" y="234">3단계 · 고택 입실</text>
+      <text class="j-s" x="717" y="252">2만 원 할인 (완주자)</text>
+      <text class="j-s" x="717" y="270">인룸 안동소주 · 웰니스</text>
+      <path class="j-arr" d="M467 247 L493 247" marker-end="url(#ar)" style="color:var(--accent)"/>
+      <path class="j-arr" d="M677 247 L703 247" marker-end="url(#ar)" style="color:var(--accent)"/>
+    </svg>
+  </div>
+  <p class="caption">위는 0 제외 방식으로 계산한 잠정 관측값, 아래는 운영 제안입니다. 19~20시를 현장 점검 시간대로 삼되 관광객의 이탈 원인이나 최적 운영시간으로 확정하지 않습니다.</p>
+
+  <div class="relay">
+    <div class="st">
+      <span class="n">1단계 — F&amp;B → 체험</span>
+      <h3>식사 영수증을 찍으면 체험 쿠폰이 나옵니다</h3>
+      <p>외지인 지출 1위인 원도심 F&amp;B(찜닭골목·갈비골목)에서 식사한 뒤 주민증 QR과 영수증을 인증하면 <b>하회탈 만들기 · 안동소주 양조장 체험 · 월영교 문보트</b> 할인 쿠폰이 즉시 발급됩니다.</p>
+      <span class="fix">확정할 값 — 할인율(초안 10%, 기존 주민증과 동일), 인증 문턱 금액(가안 4만 원). <b>P1</b>의 보조 선호 문항과 업체 수용성을 참고해 조정합니다.</span>
+    </div>
+    <div class="st core">
+      <span class="n">2단계 — 이동 + 19~21시 야간</span>
+      <h3>떠나는 시간에 붙잡습니다</h3>
+      <p>현지 차량을 이용할 수 없는 관광객의 저녁 이동 제약을 점검합니다. <b>안동 관광택시(DRT)의 예약이 빈 시간대</b>를 KTX 도착 시각과 연동해 열고 월영교 방면 이동을 확보합니다. 19:00~21:00의 <b>월영교 야경과 해당 날짜에 운영하는 야간 프로그램</b>을 연결하는 안입니다. 줄불놀이·낙화는 상설 운영으로 전제하지 않습니다.</p>
+      <span class="fix">확정할 값 — 관광택시 유휴율은 대외비입니다. <b>P4</b>에서 저녁 이동이 실제로 막히는지 확인한 뒤 수단을 확정합니다.</span>
+    </div>
+    <div class="st">
+      <span class="n">3단계 — 숙박 전환</span>
+      <h3>21시 이후를 고택으로 보냅니다</h3>
+      <p>1·2단계 완주자에게 <b>고택·한옥 2만 원 할인</b>과 <b>인룸 안동소주 · 웰니스 패키지</b>를 제공합니다. 안동 고택 559곳 중 <b>숙박 가능 71곳</b>을 공급 후보로 검토합니다. 경북 한옥체험업 <b>188곳·637실</b>은 도 전체 참고값이며 안동 공급 상한이 아닙니다 <span class="ev ev-m">산출값</span></p>
+      <span class="fix">팀 내 이견 — 초안의 "빈집 리노베이션 숙소"는 구축비가 커서 기존 인프라 활용 원칙과 충돌합니다. 고택 71곳으로 시작하는 안을 함께 검토 중입니다.</span>
+    </div>
+  </div>
+
+  <h3>비금전적 상생 모델 — 가게가 참여할 이유</h3>
+  <p>기존 주민증 정책의 한계 중 하나는 <b>참여 업체가 할인 비용을 100% 부담</b>한다는 점입니다. 할인 부담이 참여에 미치는 영향은 업체 인터뷰에서 확인합니다. 현금 보전 대신 <b>비용과 실행 권한을 확인할 비금전 혜택</b>으로 유인을 만듭니다.</p>
+  <div class="three">
+    <div class="box"><h3>축제 팝업 입점 우대</h3><p>탈춤축제 메인 부스 입점 우대권. 축제 전체 일평균 방문이 55,449명인 행사 내 공간으로, 부스 유동인구는 별도 확인이 필요하며 시가 이미 운영하는 공간이라 <b>기회비용·운영비와 배정 권한을 확인해야 합니다.</b></p></div>
+    <div class="box"><h3>공식 채널 노출</h3><p>안동 공식 관광 앱·SNS 상단 노출. 홍보 예산이 아니라 <b>지면 배분</b>으로 지급합니다.</p></div>
+    <div class="box"><h3>우리 골목 외지인 리포트</h3><p>읍면동별 방문 데이터(<span class="num">D7</span>)로 만든 상권 리포트를 정기 제공. 개별 가게가 살 수 없는 정보입니다. <a href="#s-out">화면 예시</a></p></div>
+  </div>
+  <p class="caption">문화재로 지정된 고택에는 보수지원비 일부를 연계하는 안도 함께 검토합니다. P3에서 <b>이 혜택들이 실제로 참여 유인이 되는지</b>, 그리고 가게가 감당할 수 있는 할인폭이 얼마인지를 직접 묻습니다.</p>
+</section>
+<section aria-labelledby="s-screen">
+  <div class="sec-head"><span class="label">화면 예시</span><h2 id="s-screen">관광객이 보게 될 화면</h2><p>기존 "대한민국 구석구석" 관광주민증과 연계하는 <b>화면 콘셉트</b>입니다. 실제 연동·기능 추가 가능성은 기관 협의 전이며, 아래 버튼과 QR은 작동하는 서비스가 아닌 목업입니다.</p></div>
+  <div class="mocks">
+    <div class="ph">
+      <div class="scr">
+        <div class="bar"><span>구석구석 · 안동</span><span>19:04</span></div>
+        <div class="steps"><i class="on"></i><i></i><i></i></div>
+        <div class="hd">식사 인증 완료</div>
+        <div class="sub">원도심 가맹점 결제가 확인되었습니다. 체험 쿠폰이 발급됩니다.</div>
+        <svg class="qr" viewBox="0 0 29 29" width="70" height="70" role="img" aria-label="QR 코드 예시">
+          <rect width="29" height="29" fill="var(--surface)"/>
+          <g fill="var(--ink)">
+            <path d="M0 0h7v7H0V0zm1 1v5h5V1H1zm1 1h3v3H2V2z"/>
+            <path d="M22 0h7v7h-7V0zm1 1v5h5V1h-5zm1 1h3v3h-3V2z"/>
+            <path d="M0 22h7v7H0v-7zm1 1v5h5v-5H1zm1 1h3v3H2v-3z"/>
+            <rect x="9" y="1" width="1" height="1"/><rect x="11" y="1" width="2" height="1"/><rect x="15" y="2" width="1" height="2"/>
+            <rect x="9" y="4" width="2" height="1"/><rect x="13" y="3" width="1" height="2"/><rect x="18" y="1" width="1" height="3"/>
+            <rect x="10" y="6" width="1" height="2"/><rect x="12" y="6" width="3" height="1"/><rect x="17" y="5" width="2" height="1"/>
+            <rect x="1" y="9" width="2" height="1"/><rect x="4" y="9" width="1" height="2"/><rect x="6" y="10" width="1" height="1"/>
+            <rect x="9" y="9" width="1" height="1"/><rect x="11" y="9" width="1" height="3"/><rect x="13" y="10" width="2" height="1"/>
+            <rect x="16" y="9" width="1" height="2"/><rect x="18" y="10" width="2" height="1"/><rect x="21" y="9" width="1" height="1"/>
+            <rect x="23" y="10" width="1" height="2"/><rect x="26" y="9" width="2" height="1"/><rect x="25" y="12" width="1" height="1"/>
+            <rect x="2" y="12" width="1" height="2"/><rect x="5" y="13" width="2" height="1"/><rect x="9" y="14" width="1" height="1"/>
+            <rect x="12" y="13" width="1" height="2"/><rect x="14" y="14" width="2" height="1"/><rect x="17" y="13" width="1" height="2"/>
+            <rect x="20" y="14" width="1" height="1"/><rect x="22" y="13" width="2" height="1"/><rect x="26" y="14" width="1" height="2"/>
+            <rect x="1" y="16" width="1" height="2"/><rect x="4" y="17" width="2" height="1"/><rect x="8" y="17" width="1" height="2"/>
+            <rect x="11" y="16" width="2" height="1"/><rect x="15" y="17" width="1" height="2"/><rect x="18" y="16" width="1" height="2"/>
+            <rect x="21" y="17" width="2" height="1"/><rect x="25" y="17" width="1" height="1"/><rect x="27" y="16" width="1" height="2"/>
+            <rect x="9" y="20" width="1" height="1"/><rect x="12" y="20" width="2" height="1"/><rect x="16" y="21" width="1" height="2"/>
+            <rect x="19" y="20" width="1" height="2"/><rect x="22" y="21" width="1" height="1"/><rect x="25" y="20" width="2" height="1"/>
+            <rect x="9" y="23" width="2" height="1"/><rect x="13" y="24" width="1" height="2"/><rect x="17" y="24" width="2" height="1"/>
+            <rect x="21" y="23" width="1" height="2"/><rect x="24" y="24" width="1" height="1"/><rect x="27" y="23" width="1" height="2"/>
+            <rect x="10" y="27" width="1" height="1"/><rect x="14" y="27" width="2" height="1"/><rect x="18" y="26" width="1" height="2"/>
+            <rect x="22" y="27" width="1" height="1"/><rect x="25" y="26" width="1" height="2"/>
+          </g>
+        </svg>
+        <div class="row"><span>가게</span><b>구시장 찜닭 ○○</b></div>
+        <div class="row"><span>결제</span><b>42,000원</b></div>
+        <div class="btn">체험 쿠폰 받기</div>
+      </div>
+      <span class="cap">1단계 · 영수증 인증</span>
+    </div>
+    <div class="ph">
+      <div class="scr">
+        <div class="bar"><span>구석구석 · 안동</span><span>19:12</span></div>
+        <div class="steps"><i class="on"></i><i class="on"></i><i></i></div>
+        <div class="hd">오늘 저녁, 월영교</div>
+        <div class="sub">지금 출발하면 낙화 점화에 맞춰 도착합니다.</div>
+        <div class="row"><span>19:40 낙화 점화</span><b>월영교</b></div>
+        <div class="row"><span>20:20 야경 산책</span><b>월영야행</b></div>
+        <div class="row"><span>21:00 고택 이동</span><b>관광택시</b></div>
+        <div class="row"><span>예상 이동시간</span><b>12분</b></div>
+        <div class="btn">관광택시 호출</div>
+        <div class="btn ghost">체험 쿠폰 사용</div>
+      </div>
+      <span class="cap">2단계 · 이동 + 야간</span>
+    </div>
+    <div class="ph">
+      <div class="scr">
+        <div class="bar"><span>구석구석 · 안동</span><span>21:03</span></div>
+        <div class="steps"><i class="on"></i><i class="on"></i><i class="on"></i></div>
+        <div class="hd">고택 할인이 열렸습니다</div>
+        <div class="sub">1·2단계 완주로 <b>2만 원 할인</b>을 쓸 수 있습니다.</div>
+        <div class="row"><span>수애당</span><b>−20,000원</b></div>
+        <div class="row"><span>지례예술촌</span><b>−20,000원</b></div>
+        <div class="row"><span>농암종택</span><b>−20,000원</b></div>
+        <div class="row"><span>인룸 패키지</span><b>안동소주 1병</b></div>
+        <div class="btn">예약하기</div>
+      </div>
+      <span class="cap">3단계 · 숙박 전환</span>
+    </div>
+  </div>
+  <p class="caption">고택 이름은 정제한 고택 리스트(숙박 가능 71곳)에서 가져온 예시이며 제휴 협의는 하지 않았습니다. 금액·시각도 화면 구성을 보이기 위한 예시입니다.</p>
+</section>
+<section aria-labelledby="s-field-design">
+  <div class="sec-head"><span class="step">현장 실행 계획</span><h2 id="s-field-design">이틀의 조사에서 운영안을 바꿀 근거를 얻습니다</h2><p>준비 메모 기준 이틀·조사자 4명·응답 목표 150명입니다. 이는 검정력 계산으로 정한 표본 수가 아니라 현장 운영 목표입니다. <b>할인 반응·정보 탐색·사업자 조건·이동 실행성</b>을 서로 다른 조사로 확인합니다.</p></div>
+  <div class="two">
+    <div class="box"><span class="tag">P1 · 관광객 설문</span><h3>기존 숙박과 추가 숙박 의향을 구별합니다</h3><p>먼저 관외 거주·관광 목적·일행 규모·숙박 예약 및 계획·귀가편·현지 이동수단을 기록합니다. 당일 귀가 예정자와 숙박 예정자의 응답을 분리하고, 추가 1박 의향을 주요 결과 후보로 둡니다.</p><p>할인액 0·1만·2만·3만 원 네 조건을 무작위 배정하는 초안입니다. 조건당 약 37~38명으로 표본이 나뉘므로, 인쇄 전에 주요 비교와 확보 가능한 표본을 기준으로 2조건 축소 여부를 확정합니다.</p></div>
+    <div class="box"><span class="tag">배정과 측정</span><h3>할인 이외의 조건은 동일하게 제시합니다</h3><p>객실 총가격·인원·교통·입실 조건과 할인 단위(1인/1실/일행)를 통일합니다. 장소·시간대별로 미리 섞은 배정표를 사용하고, 같은 일행의 중복 응답과 조건 간 정보 공유를 줄입니다.</p><p>조건별 배정·완료·결측·의향 응답수, 비율 차이와 불확실성을 보고합니다. 조사단위를 일행으로 정하면 목표 표본도 일행 단위로 다시 산정합니다. 편의표본 결과를 전체 안동 관광객으로 일반화하지 않습니다.</p></div>
+  </div>
+  <div class="tbl"><table><thead><tr><th>조사</th><th>수집 항목</th><th>처리 방법</th><th>운영안에 반영</th></tr></thead><tbody>
+    <tr><td class="k">P1 · 설문</td><td>익명 ID·일행·장소·시각·배정조건, 기존 숙박 계획·이동·귀가 제약, 숙박 의향·이유, 식사 결제액·해당 인원</td><td>기존 계획별로 구분. 무혜택 대비 의향 비율 차이와 구간 추정. 식사비는 개인/일행 기준을 구별</td><td>주요 대상·숙박 할인 후보·식사 인증 문턱 조정. 의향을 실제 예약률로 환산하지 않음</td></tr>
+    <tr><td class="k">P2 · 가게 2곳×2일</td><td>안내카드 배포수·가능하면 적격 계산 일행 수, QR 접속·야간코스 클릭·숙박정보 클릭·문의, 가게·시간대</td><td>단계별 분모 표시. 반복 접속·직원 테스트 구분. 동일 흐름 연결이 안 되면 이벤트 건수만 보고</td><td>안내 문구·버튼 순서·정보 부족 수정. 가게·날짜가 섞인 차이를 안내의 인과효과로 쓰지 않음</td></tr>
+    <tr><td class="k">P3 · 음식점 15곳 목표</td><td>접촉·거절·응답 수, 업종·위치·영업시간, 참여·거부 이유, 할인 부담·처리 업무, 선호 혜택</td><td>응답 업체의 조건과 이유를 유형화. 체험·숙소는 별도로 운영 조건 확인</td><td>가맹 조건·할인 부담·인증 절차·비금전 혜택 조정. 의향과 실제 확약 구별</td></tr>
+    <tr><td class="k">P4 · 모의 릴레이</td><td>구간별 출발·도착·대기·요금, 운행·체험 접수·숙소 입실 마감, 정한 거리의 전체 가게와 21시 영업 가게 수</td><td>날짜·날씨·경로를 함께 기록. 가능한 경로와 막히는 조건을 표시</td><td>운영 시간·이동수단·대체 코스 조정. 팀·지인 경험을 관광객 참여율로 해석하지 않음</td></tr>
+  </tbody></table></div>
+  <h3>조사 전후의 작업 순서</h3>
+  <div class="phase-track">
+    <div class="phase"><span>현장 전</span><b>측정 기준 확정</b><small>대상·조건 수·분모·제외 규칙</small></div>
+    <div class="phase"><span>현장 전</span><b>소규모 사전 점검</b><small>설문 이해·응답 시간·QR 작동</small></div>
+    <div class="phase active"><span>9/19~20</span><b>현장 수집</b><small>배정·거절·공급·경로 기록</small></div>
+    <div class="phase"><span>현장 후</span><b>결과 정리</b><small>응답·결측·비율·이유·제약</small></div>
+    <div class="phase"><span>9/30 제출 전</span><b>운영안 v1</b><small>수정 전후와 근거 연결</small></div>
+  </div>
+  <p class="caption">전체 여행 소비 문턱은 식사비만으로 평가하지 않습니다. 총여행비를 수집할 경우 항목 범위와 실제/예정액을 구분합니다. 숙박 할인 실험의 결과만으로 체험의 최적 할인율을 결정하지 않습니다.</p>
+</section>
+
+<section aria-labelledby="s-verify">
+  <div class="sec-head"><span class="step">계획</span><h2 id="s-verify">조사 도구 미리보기</h2><p>아래는 설문지·안내카드의 시각적 구성 예시입니다. 실제 조사에는 앞 절의 적격성·기존 계획·공통 가격 조건·일행 기준을 반영해 문항을 확정합니다.</p></div>
+  <div class="papers">
+    <div class="paper">
+      <span class="label">P1 설문지 화면 예시 · 최종 문항 아님</span>
+      <div class="ttl">안동 여행에 대한 짧은 질문</div>
+      <div class="rule"></div>
+      <div class="qgrp"><span class="q">Q1. 오늘 안동에서 숙박하실 계획인가요?</span><div class="opt"><span>당일 귀가</span><span class="on">숙박 예정</span><span>미정</span></div></div>
+      <div class="qgrp"><span class="q">Q2. 고택·한옥 숙박에 <b>2만 원 할인</b>이 제공된다면 오늘 숙박하시겠습니까?</span><div class="opt"><span class="on">예</span><span>아니오</span></div><span style="font-size:11.5px;color:var(--ask)">※ 이 금액이 조건마다 0 / 1만 / 2만 / 3만 원으로 달라집니다</span></div>
+      <div class="qgrp"><span class="q">Q3. 오늘 안동에서 식사에 쓰신 금액은?</span><div class="opt"><span>2만 미만</span><span>2~4만</span><span class="on">4~6만</span><span>6만 이상</span></div></div>
+      <div class="qgrp"><span class="q">Q4. 디지털 관광주민증을 알고 계셨나요?</span><div class="opt"><span>발급함</span><span>들어봄</span><span class="on">처음 들음</span></div></div>
+      <div class="rule"></div>
+      <p class="caption" style="font-size:11.5px">배정 순번 <span style="display:inline-block;width:40px;border-bottom:1px solid var(--rule)"></span> · 장소 <span style="display:inline-block;width:56px;border-bottom:1px solid var(--rule)"></span> · 시각 <span style="display:inline-block;width:46px;border-bottom:1px solid var(--rule)"></span><br>이름·연락처는 받지 않습니다.</p>
+    </div>
+    <div class="paper">
+      <span class="label">P2 안내카드 — 식당 계산대 비치</span>
+      <div class="ttl">식사 맛있게 하셨나요?<br>저녁 7시, 월영교에 불이 켜집니다</div>
+      <div class="rule"></div>
+      <div style="display:flex;gap:14px;align-items:center">
+        <svg viewBox="0 0 29 29" width="62" height="62" role="img" aria-label="QR 코드 예시">
+          <rect width="29" height="29" fill="var(--surface)"/>
+          <g fill="var(--ink)">
+            <path d="M0 0h7v7H0V0zm1 1v5h5V1H1zm1 1h3v3H2V2z"/>
+            <path d="M22 0h7v7h-7V0zm1 1v5h5V1h-5zm1 1h3v3h-3V2z"/>
+            <path d="M0 22h7v7H0v-7zm1 1v5h5v-5H1zm1 1h3v3H2v-3z"/>
+            <rect x="10" y="2" width="1" height="3"/><rect x="13" y="1" width="2" height="1"/><rect x="16" y="3" width="1" height="2"/>
+            <rect x="19" y="2" width="1" height="1"/><rect x="9" y="6" width="3" height="1"/><rect x="14" y="5" width="1" height="2"/>
+            <rect x="2" y="10" width="1" height="2"/><rect x="5" y="9" width="2" height="1"/><rect x="9" y="10" width="1" height="2"/>
+            <rect x="12" y="9" width="2" height="1"/><rect x="15" y="11" width="1" height="2"/><rect x="18" y="9" width="1" height="2"/>
+            <rect x="21" y="11" width="2" height="1"/><rect x="25" y="10" width="1" height="2"/><rect x="27" y="9" width="1" height="1"/>
+            <rect x="1" y="14" width="2" height="1"/><rect x="4" y="15" width="1" height="2"/><rect x="8" y="14" width="1" height="1"/>
+            <rect x="11" y="15" width="2" height="1"/><rect x="14" y="14" width="1" height="2"/><rect x="17" y="15" width="1" height="1"/>
+            <rect x="20" y="14" width="2" height="1"/><rect x="24" y="15" width="1" height="2"/><rect x="27" y="14" width="1" height="1"/>
+            <rect x="9" y="18" width="1" height="2"/><rect x="12" y="19" width="2" height="1"/><rect x="16" y="18" width="1" height="1"/>
+            <rect x="19" y="19" width="1" height="2"/><rect x="23" y="18" width="2" height="1"/><rect x="26" y="19" width="1" height="1"/>
+            <rect x="10" y="23" width="2" height="1"/><rect x="14" y="22" width="1" height="2"/><rect x="18" y="23" width="1" height="1"/>
+            <rect x="21" y="24" width="2" height="1"/><rect x="25" y="23" width="1" height="2"/>
+            <rect x="9" y="26" width="1" height="1"/><rect x="13" y="27" width="2" height="1"/><rect x="17" y="26" width="1" height="2"/>
+            <rect x="22" y="27" width="1" height="1"/><rect x="26" y="26" width="2" height="1"/>
+          </g>
+        </svg>
+        <div style="font-size:12.5px;line-height:1.6"><b>QR을 찍으면</b><br>· 오늘 저녁 야간 코스<br>· 고택 숙박 남은 방<br>· 관광주민증 할인 쓰는 법</div>
+      </div>
+      <div class="rule"></div>
+      <p class="caption" style="font-size:11.5px">단계마다 <b>링크를 따로 두어</b> 어디까지 눌렀는지 셉니다. 카드 배포 → QR 접속 → 야간코스 클릭 → 숙박정보 클릭 → 문의.</p>
+    </div>
+  </div>
+  <div class="tbl"><table>
+    <thead><tr><th style="width:48px">#</th><th style="width:142px">무엇을</th><th>잴 수 있는 것</th><th>주장하지 않을 것</th></tr></thead>
+    <tbody>
+      <tr><td class="id">P1</td><td class="k">할인액 무작위 실험<small>목표 150명 · 4조건 초안</small></td><td>무혜택 대비 <b>할인액별 숙박 의향 순증분</b>. 조건을 미리 섞은 설문지를 순서대로 배포해 배정</td><td>실제 숙박 전환율. <b>의향은 행동이 아닙니다</b></td></tr>
+      <tr><td class="id">P2</td><td class="k">안내카드 QR 퍼널<small>가게 2곳 × 2일 교차</small></td><td>안내 후 <b>정보를 찾아보는 초기 반응</b>과 단계별 이탈 지점</td><td>실제 체험 참여율, 도시 규모 효과. <b>2개 가게로 도시 전체 효과 추론은 제한</b></td></tr>
+      <tr><td class="id">P3</td><td class="k">사업자 수용성<small>음식점 15곳</small></td><td>참여 의향, <b>거부 이유</b>, 감당 가능한 할인폭, 계산대 부담, 리포트의 유인 여부</td><td>실제 가맹 여부</td></tr>
+      <tr><td class="id">P4</td><td class="k">모의 릴레이<small>팀·지인</small></td><td>이동·대기 시간, <b>저녁 교통 단절 여부</b>, 21시에 열려 있는 가게 수</td><td>일반 관광객의 참여율·소비효과. <b>참가자가 우리 자신</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="caption">오른쪽 칸은 결과를 쓸 때 그대로 옆에 붙입니다.</p>
+</section>
+<section aria-labelledby="s-gallery">
+  <div class="sec-head"><span class="step">성과물 미리보기 · 화면으로 보는 최종 결과</span><h2 id="s-gallery">분석 결과를 실제 운영자가 쓰는 형태로 만듭니다</h2><p>아래는 제출물과 운영 도구의 <b>제작 예시</b>입니다. 기존 분석값을 담은 화면에는 ‘기존 산출값’을, 현장 자료가 들어갈 화면에는 ‘예시·가정’을 표시했습니다. 운영 서비스가 출시되었거나 효과가 확인되었다는 뜻은 아닙니다.</p></div>
+  <div class="artifact" id="preview-analysis">
+    <div class="artifact-head"><div><span class="label">01 / ANALYTICS REPORT</span><h3>지역 관광 진단 리포트</h3></div><span class="pill p-ok">기존 산출값 · 재검증 항목 포함</span></div>
+    <div class="artifact-body">
+      <div class="report-title"><div><span class="label">ANDONG / 2024 → 2026 · 1~8월</span><h3>방문은 늘었지만,<br>방문 규모 대비 카드소비는 줄었습니다.</h3></div><div class="report-stamp">242<small>전국 비교 지역</small></div></div>
+      <div class="metric-grid"><div><span>외지인 방문 연인원</span><b>+5.6%</b><small>1,110만 → 1,173만 회</small></div><div><span>방문 규모 대비 카드소비</span><b class="negative">−2.8%</b><small>15,572 → 15,134원 / 비율 지표</small></div><div><span>방문↑·소비지표↓ 지역</span><b>105곳</b><small>전국 비교대상의 43.4%</small></div></div>
+      <div class="two"><div class="box sunk"><span class="tag">진단</span><p>안동만의 예외 현상은 아닙니다. 전국 분포에서 위치를 확인하고, 체류 지표와 업종 구성을 함께 분석합니다.</p></div><div class="box sunk"><span class="tag">실행 연결</span><p>관광객 추가 유입만을 목표로 삼기보다, 식사 이후 선택할 활동과 이동 조건을 현장에서 점검합니다.</p></div></div>
+      <div class="report-footer">원천: 데이터랩 이동통신·카드 집계 / 개인별 결합자료 아님 / 동일 기간 비교 / 원자료 정의 확인 필요</div>
+    </div>
+    <p class="artifact-note"><b>만드는 방식:</b> 지역×월 방문·소비 표 → 같은 기간 변화율 → 전국 산점도 → 안동 상세 리포트. <b>사용:</b> 제안의 문제 정의와 비교 근거를 한 화면에서 설명합니다.</p>
+  </div>
+  <figure class="photo-strip" id="preview-route"><img src="assets/andong-ir/hahoe.jpg" width="2100" height="300" alt="안동 하회마을의 실제 기와집과 초가 지붕 풍경" loading="lazy"><figcaption><b>숙박자원도 지도에서 연결합니다.</b>고택 목록에 참여 여부·객실 공급·입실 마감을 붙여 운영 가능한 장소로 좁힙니다. 위 <a href="#s-gis">GIS 대시보드</a>의 숙박 표시는 이 과정을 설명하기 위한 가상 배치입니다. 하회마을 사진은 지역 자원 소개이며 특정 숙소의 제휴를 뜻하지 않습니다.<small>사진 Idobi / 파생 Inkey · <a href="https://commons.wikimedia.org/wiki/File:Hahoe_banner.jpg">Hahoe banner</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · 화면 비율에 맞춰 표시</small></figcaption></figure>
+  <div class="artifact" id="preview-calculator">
+    <div class="artifact-head"><div><span class="label">03 / BUDGET SCENARIO</span><h3>공급 상한을 반영한 예산 시나리오</h3></div><span class="pill p-warn">모든 입력은 가정 · 효과 예측 아님</span></div>
+    <div class="artifact-body">
+      <p>슬라이더를 움직여 <b>가상의 쿠폰 사용 건수와 할인 예산</b>이 어떻게 달라지는지 볼 수 있습니다. 신규 숙박자나 순증 소비를 계산하는 도구가 아닙니다.</p>
+      <div class="calculator-grid">
+        <div class="calculator-inputs">
+          <label for="demo-target">혜택 안내 대상 <output id="demo-target-label">100일행</output></label><input id="demo-target" type="range" min="0" max="1000" step="10" value="100">
+          <label for="demo-participation">안내 대상 중 단계 참여 <output id="demo-participation-label">40%</output></label><input id="demo-participation" type="range" min="0" max="100" step="5" value="40">
+          <label for="demo-use">단계 참여자 중 쿠폰 사용 <output id="demo-use-label">30%</output></label><input id="demo-use" type="range" min="0" max="100" step="5" value="30">
+          <p class="caption">예시 고정 조건: 할인 2만 원/건 · 공급 상한 20건 · 일행당 최대 1건. 실제 값은 공급 협의 후 입력합니다.</p>
+        </div>
+        <div class="calculator-result" aria-live="polite" aria-atomic="true"><span class="label">가정에 따른 계산</span><span>공급 제한 전 쿠폰 사용</span><b id="demo-raw">12.0건</b><span>공급 제한 반영</span><b id="demo-capped">12.0건</b><span>할인 예산</span><strong id="demo-budget">240,000원</strong><small id="demo-cap-note">가정한 공급 상한 20건 이내입니다.</small></div>
+      </div>
+      <div class="report-footer">사용 건수 = min(안내 대상 × 단계 참여 비율 × 참여자 중 사용 비율, 공급 상한) · 소수 건수는 시나리오 계산값</div>
+    </div>
+    <p class="artifact-note"><b>만드는 방식:</b> 대상 규모·단계별 분모·할인 조건·공급 상한을 분리 입력. <b>사용:</b> 정책효과를 과장하지 않고 규모별 필요한 예산과 공급 부족을 설명합니다.</p>
+  </div>
+  <div class="artifact" id="preview-fieldreport">
+    <div class="artifact-head"><div><span class="label">04 / FIELD EVIDENCE</span><h3>현장 결과가 들어갈 분석 화면</h3></div><span class="pill p-idle">수집 전 · 빈 결과 양식</span></div>
+    <div class="artifact-body">
+      <div class="metric-grid"><div><span>조사 완료</span><b>미수집</b><small>배정·완료·거절·중단을 분리</small></div><div><span>무혜택 대비 의향 차이</span><b>미산출</b><small>조건별 분모와 불확실성 표시</small></div><div><span>운영안 수정</span><b>현장 후</b><small>조사 ID → 변경 사양 연결</small></div></div>
+      <div class="tbl"><table><thead><tr><th>비교 조건 초안</th><th>배정수 / 완료수</th><th>숙박 의향</th><th>무혜택 대비 차이</th></tr></thead><tbody><tr><td>무혜택</td><td>현장 후 입력</td><td>예 응답수 / 유효 응답수</td><td>기준 조건</td></tr><tr><td>할인 조건</td><td>현장 후 입력</td><td>비율 + 구간 추정</td><td>%p + 구간 추정</td></tr></tbody></table></div>
+      <div class="report-footer">기존 숙박 계획별 구분 · 결측 공개 · 실제 숙박 전환과 분리 · 최종 조건 수는 조사 전 확정</div>
+    </div>
+    <p class="artifact-note"><b>만드는 방식:</b> P1 익명 응답표 + 배정 기록. <b>사용:</b> 할인액을 확정하는 단독 근거가 아니라 비용·공급·현장 제약과 함께 판단할 근거입니다.</p>
+  </div>
+</section>
+
+<section aria-labelledby="s-out">
+  <div class="sec-head"><span class="step">제안</span><h2 id="s-out">성과물</h2><p>주인공은 <b>데이터로 설계하고 현장에서 고친 운영안</b>입니다. 나머지 넷이 이를 받칩니다.</p></div>
+
+  <div class="dels">
+    <div class="del star"><span class="n">★ 주인공</span><h3>릴레이 운영안 v0 → v1</h3><p>안동시가 반값여행·주민증에 얹을 수 있는 1장짜리 실행 사양표. 현장 전 v0과 현장 후 v1을 나란히 제출합니다.</p></div>
+    <div class="del"><span class="n">뒷받침</span><h3>전국 전환 매트릭스</h3><p>242개 시군 산점도와 사분면 목록. <b>계산 완료</b> — <a href="#s-why">전국 비교</a>에 실었습니다.</p></div>
+    <div class="del"><span class="n">뒷받침</span><h3>하위 진단점수 3종</h3><p>체험·야간·숙박 중 어느 구간부터 손대야 하는지. 체험·숙박·야간 값을 산출했으며 기간과 분류의 정합성을 추가 확인합니다.</p></div>
+    <div class="del"><span class="n">뒷받침</span><h3>예산·공급 시나리오</h3><p>문턱·할인액·사업비를 정하는 도구. 입력마다 실측·추정·가정을 표시합니다.</p></div>
+    <div class="del"><span class="n">뒷받침</span><h3>시행 후 측정 설계</h3><p>단계별 QR 로그 항목과 비교집단 구조. 이번 제출의 결과가 아니라 설계입니다.</p></div>
+  </div>
+
+  <h3>★ 릴레이 운영안 실행 사양표</h3>
+  <div class="tbl"><table>
+    <thead><tr><th style="width:118px">항목</th><th style="width:150px">v0 (현장 전)</th><th style="width:170px">v1 (현장 후 · 예시)</th><th>결정 근거</th></tr></thead>
+    <tbody>
+      <tr><td class="k">우선 권역</td><td>원도심</td><td class="exv">원도심 → 월영교 축</td><td>읍면동별 외지인 방문 <span class="num">D7</span></td></tr>
+      <tr><td class="k">가맹점 목표</td><td>원도심 10곳</td><td class="exv">○곳</td><td>P3 참여 의향·조건</td></tr>
+      <tr><td class="k">1단계 문턱</td><td>4만 원</td><td class="exv">3만 원</td><td>결제 분포 <span class="num">D8</span> + P1 식사비</td></tr>
+      <tr><td class="k">1단계 할인율</td><td>체험 10%</td><td class="exv">○%</td><td>별도 체험 선호·업체 수용성</td></tr>
+      <tr><td class="k">2단계 시간대</td><td>19:00~21:00</td><td class="exv">유지</td><td><b>안동역 주말 19~20시 승차 273명(0 제외 잠정 평균)</b></td></tr>
+      <tr><td class="k">2단계 이동수단</td><td>미정</td><td class="exv">관광택시 유휴 연계</td><td>P4 저녁 이동 실측</td></tr>
+      <tr><td class="k">3단계 할인액</td><td>2만 원</td><td class="exv">○만 원</td><td>P1 무혜택 대비 의향 순증분</td></tr>
+      <tr><td class="k">3단계 공급</td><td>고택 71곳</td><td class="exv">○곳 확약</td><td>안동 참여 고택별 객실·입실 조건 확인</td></tr>
+      <tr><td class="k">적용 대상</td><td>당일객 → 1박</td><td class="exv">+ 숙박객 2박째</td><td>평균 숙박일수 3.07일</td></tr>
+    </tbody>
+  </table></div>
+  <p class="caption">v1 칸(초록)은 <b>형태를 보이기 위한 예시</b>입니다. 실제 값은 9/19~20 현장 이후에 채웁니다. 무엇을 왜 고쳤는지 변경 기록을 함께 제출합니다.</p>
+
+  <h3>시행 후 성과측정 화면</h3>
+  <p>실제 운영 시 동일한 익명 참여 흐름을 연결할 수 있도록 설계한 QR 로그 화면입니다. 아래 수치는 화면 예시이며, 단계별 사용·이탈을 구분해 보여줍니다.</p>
+  <div class="dash" role="figure" aria-label="시행 후 QR 로그 대시보드 화면 예시">
+    <div class="top"><b>안동 릴레이 · 운영 현황</b><span>예시 화면 · 실제 데이터 아님</span></div>
+    <div class="kpis">
+      <div class="kpi"><em>1단계 인증</em><b>1,284</b><i>가맹점 12곳</i></div>
+      <div class="kpi"><em>체험권 발급</em><b>871</b><i>67.8%</i></div>
+      <div class="kpi"><em>체험권 사용</em><b>412</b><i>47.3%</i></div>
+      <div class="kpi drop"><em>야간 이용</em><b>236</b><i>57.3%</i></div>
+      <div class="kpi drop"><em>숙박 할인 사용</em><b>68</b><i>28.8%</i></div>
+    </div>
+    <div class="body">
+      <div class="fun">
+        <div class="f"><span>1단계 인증</span><i style="width:100%"></i><span class="v">1,284</span></div>
+        <div class="f"><span>체험권 발급</span><i style="width:67.8%"></i><span class="v">871</span></div>
+        <div class="f"><span>체험권 사용</span><i style="width:32.1%"></i><span class="v">412</span></div>
+        <div class="f"><span>야간 콘텐츠</span><i style="width:18.4%"></i><span class="v">236</span></div>
+        <div class="f last"><span>숙박 할인 사용</span><i style="width:5.3%"></i><span class="v">68</span></div>
+      </div>
+      <p class="caption" style="font-size:12.5px">단계별 결제금액도 함께 기록합니다. 아래는 설계 후보이며 단순 차이를 인과효과로 해석하지 않습니다 — 릴레이 참여자 vs 비참여자 · 적용 가게 vs 미적용 가게 · 적용 주말 vs 유사 미적용 주말 · 시범권역 vs 비시범권역.</p>
+    </div>
+  </div>
+
+  <h3>소상공인 비금전 혜택 — 가게에 주는 리포트</h3>
+  <p>참여 가게에 현금 보전 대신 <b>축제장 부스 입점 우대 · 공식 채널 노출 · 상권 리포트</b>를 제공합니다. 리포트는 이미 보유한 읍면동별 방문 데이터(<span class="num">D7</span>)를 바탕으로 제작할 계획입니다. 요일·시간·유입지 교차 집계가 가능한 범위를 먼저 확인합니다.</p>
+  <div class="dash" role="figure" aria-label="가맹점에 제공할 상권 리포트 화면 예시">
+    <div class="top"><b>우리 골목 외지인 리포트 · 중구동</b><span>예시 화면 · 수치는 예시</span></div>
+    <div class="kpis">
+      <div class="kpi"><em>월 외지인 방문</em><b>18.4만</b><i>전월 대비 +6.1%</i></div>
+      <div class="kpi"><em>가장 붐비는 요일</em><b>토</b><i>주중 평균의 1.6배</i></div>
+      <div class="kpi"><em>피크 시간대</em><b>12–14시</b><i>저녁대 비중 11%</i></div>
+      <div class="kpi drop"><em>21시 이후 체류</em><b>8.9%</b><i>경북 평균 이하</i></div>
+    </div>
+    <div class="body">
+      <p style="font-size:13.2px"><b>이 골목 손님은 어디서 옵니까</b> — 경기 18.4% · 서울 15.2% · 대구 12.7% · 부산 9.1% · 그 외 44.6%</p>
+      <p style="font-size:13.2px"><b>릴레이 참여 시</b> — 저녁 시간대 유입이 늘어날 구간을 표시하고, 다음 달 같은 지표를 다시 보내 변화를 보여줍니다.</p>
+    </div>
+  </div>
+  <p class="caption">가게가 릴레이에 참여할 이유를 만드는 장치입니다. P3에서 <b>이 리포트가 실제로 참여 유인이 되는지</b>를 함께 묻습니다.</p>
+</section>
+<section aria-labelledby="s-next">
+  <div class="sec-head"><span class="step">실행과 확장</span><h2 id="s-next">이번 제출은 운영 설계, 시행 이후는 효과 검증</h2></div>
+  <div class="two"><div class="box"><span class="tag">이번 제출</span><h3>어떤 조건으로 운영할지 제시합니다</h3><p>분석 원자료와 산식, 전국 비교, 현장 기록, 운영안 v0→v1, 예산 시나리오, 시행 후 측정 계획을 묶습니다. 모든 운영 조건은 ‘어느 데이터 때문에 정했는지’ 추적할 수 있게 합니다.</p></div><div class="box"><span class="tag">시행 이후</span><h3>실제 추가 행동을 확인합니다</h3><p>동의·보관 기준을 정한 익명 참여 로그에 혜택 노출·발급·사용·예약·취소·숙박 확인을 연결합니다. 단순 참여/비참여 비교는 자기선택 영향을 받으므로 무작위 안내 등 실행 가능한 비교설계를 별도로 마련합니다.</p></div></div>
+  <div class="tbl"><table><thead><tr><th>남길 항목</th><th>확인할 행동</th><th>해석 기준</th></tr></thead><tbody><tr><td>익명 일행 ID · 적격 여부 · 배정·노출</td><td>누가 혜택을 볼 기회를 받았는지</td><td>비교의 분모를 먼저 고정</td></tr><tr><td>단계·시각·장소·쿠폰 발급·사용</td><td>실제 이용과 어느 구간에서 멈췄는지</td><td>발급과 사용, 클릭과 방문을 구별</td></tr><tr><td>예약·취소·실제 숙박 확인</td><td>의향 이후 행동이 발생했는지</td><td>예약을 숙박 완료로 세지 않음</td></tr><tr><td>결제·지원금·사업 비용</td><td>소비 및 운영비 규모</td><td>총소비를 순증 소비로 해석하지 않음</td></tr></tbody></table></div>
+  <div class="oneline">최종 성과물은 <b>“관광객을 더 머물게 할 것이다”라는 약속</b>에서 끝나지 않습니다. 누구에게, 어디서, 어떤 혜택과 이동을 제공하고, 무엇을 기록해 다음 운영을 바꿀지까지 제시합니다.</div>
+  <p class="caption">원안: 「아이디어 흐름 및 데이터.docx」 · 분석 설명: 기존 안동 교수자문 브리프 · 현장 제약: 교수면담 준비메모. 이 페이지는 프로젝트 소개와 실행 계획이며, 새로 검증된 정책 성과를 보고하는 문서가 아닙니다.</p>
+</section>
+
+<section aria-labelledby="s-limit">
+  <div class="sec-head"><span class="step">마무리</span><h2 id="s-limit">한계</h2></div>
+  <div class="three">
+    <div class="box"><span class="tag">한계 1</span><h3>인과를 주장하지 않습니다</h3><p>개통 전후로 지표가 변했다는 사실까지만 확인했습니다. KTX가 원인이라는 증거는 아닙니다. 같은 기간 물가·경기·날씨도 변했습니다. 전국 242개 시군 분포를 함께 보이는 것으로 일부 보완합니다.</p></div>
+    <div class="box"><span class="tag">한계 2</span><h3>구성효과가 남아 있습니다</h3><p>방문당 소비 −2.8%가 방문객 구성 변화의 결과일 가능성을 배제하지 못했습니다. 공통 층별 방문·소비 자료 확보 후 직접 표준화를 검토하며, 구성만으로 설명되면 대표 숫자를 바꿉니다.</p></div>
+    <div class="box"><span class="tag">한계 3</span><h3>현장 표본이 작습니다</h3><p>P1 150명, P2 가게 2곳, P4는 팀 자신입니다. 추정치의 정밀도·검출력·일반화에 제약이 있으므로 목표를 <b>운영안 수정 근거 수집</b>으로 잡았습니다.</p></div>
+  </div>
+
+  <div class="box flagged">
+    <span class="tag">쓰지 않는 문장</span>
+    <div class="tbl"><table>
+      <thead><tr><th style="width:238px">표현</th><th>이유</th></tr></thead>
+      <tbody>
+        <tr><td class="k">"안동 관광객 감소"</td><td>시 단위 감소는 <b>풍산읍(바이오단지)·용상동</b>의 착시. 관광권역 방문은 <b>+16%</b></td></tr>
+        <tr><td class="k">"KTX 이후 당일치기 급증"</td><td>무박 비중 86.3% → 86.4%. 급증을 뒷받침하지 않음</td></tr>
+        <tr><td class="k">"안동만 소비가 하락"</td><td>방문↑소비↓ 사분면에 <b>105개 시군</b>이 있습니다. 문경·충주·강화도 마이너스</td></tr>
+        <tr><td class="k">"1인당 소비"</td><td>→ <b>"방문당 소비"</b>. 분모가 연인원</td></tr>
+        <tr><td class="k">"숙박 비중 최하위"</td><td>숙박 소비 9.9%는 상위 31%, 숙박비율 13.5%는 상위 17%</td></tr>
+        <tr><td class="k">"고택 수요가 강하다"</td><td>고택·한옥 검색 비중 <b>37.8% → 17.1%</b></td></tr>
+        <tr><td class="k">"51억 원 손실"</td><td>반사실적 격차이며 손실액이나 회복 가능액이 아닙니다</td></tr>
+        <tr><td class="k">"새 예산 없이"</td><td>→ <b>"구축비 최소화"</b>. 할인·체험권·홍보비는 발생</td></tr>
+        <tr><td class="k">"성과를 증명했다"</td><td>→ <b>"현장 사전검증을 준비 중"</b>. 조사 후에는 수행한 범위에 한해 표현</td></tr>
+        <tr><td class="k">"탈춤축제 160만 명"</td><td>데이터랩 기준 <b>55.4만</b>. 병기하지 않으면 쓰지 않습니다</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="box asked">
+    <span class="tag">초안 「아이디어 흐름 및 데이터」와 달라진 값</span>
+    <div class="tbl"><table>
+      <thead><tr><th style="width:184px">초안</th><th>확인 결과</th><th style="width:96px">조치</th></tr></thead>
+      <tbody>
+        <tr><td class="k">"1인당 소비액 2.8% 감소"</td><td>수치(15,572 → 15,134원)는 맞습니다. 분모가 연인원이라 1인당이 아닙니다.</td><td><span class="pill p-warn">표현 교체</span></td></tr>
+        <tr><td class="k">"1인당 소비가 상승한<br>경주(+7.9%) 전주(+6.1%) 군산(+6.3%)"</td><td><b>방문 증가율과 소비 증감률이 바뀌었습니다.</b> 경주 +7.9%·군산 +6.3%는 <b>방문</b> 증가율과 일치합니다. 소비 증감률은 경주 <b>+8.3%</b> · 군산 <b>+9.9%</b> · 전주 <b>+1.2%</b>로, 전주가 초안과 약 5%p 다릅니다.</td><td><span class="pill p-cut">수치 교체</span></td></tr>
+        <tr><td class="k">"경북 106만 건 발급<br>이용/발급 비율 2.88%"</td><td>출처를 찾지 못했습니다. 확인된 값은 안동 약 6.7%(17,322 / 257,198)이며 분모가 다릅니다.</td><td><span class="pill p-cut">제외</span></td></tr>
+        <tr><td class="k">"21시 상권 마감"</td><td>영업시간 데이터가 없습니다.</td><td><span class="pill p-warn">P4에서 계수</span></td></tr>
+        <tr><td class="k">"빈집 리노베이션 숙소"</td><td>구축비가 커서 기존 인프라 활용 원칙과 충돌합니다.</td><td><span class="pill p-warn">고택 71곳 우선</span></td></tr>
+        <tr><td class="k">"안동관광택시 예약 공백 개방"</td><td>유휴율이 대외비입니다.</td><td><span class="pill p-warn">P4 이후 확정</span></td></tr>
+        <tr><td class="k">체류시간 −6.2% · 숙박 13.5%<br>평균 3.07일 · 1박 66%</td><td>원자료로 확인했습니다.</td><td><span class="pill p-ok">그대로</span></td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+</main>
+<script>
+const target = document.getElementById('demo-target');
+const participation = document.getElementById('demo-participation');
+const use = document.getElementById('demo-use');
+function updateScenario() {
+  const raw = Number(target.value) * Number(participation.value) / 100 * Number(use.value) / 100;
+  const capped = Math.min(raw, 20);
+  document.getElementById('demo-target-label').textContent = target.value + '일행';
+  document.getElementById('demo-participation-label').textContent = participation.value + '%';
+  document.getElementById('demo-use-label').textContent = use.value + '%';
+  document.getElementById('demo-raw').textContent = raw.toFixed(1) + '건';
+  document.getElementById('demo-capped').textContent = capped.toFixed(1) + '건';
+  document.getElementById('demo-budget').textContent = Math.round(capped * 20000).toLocaleString('ko-KR') + '원';
+  document.getElementById('demo-cap-note').textContent = raw > 20 ? '공급 상한 20건이 적용되었습니다. 추가 공급 또는 대상 조정이 필요합니다.' : '가정한 공급 상한 20건 이내입니다.';
+}
+[target, participation, use].forEach(input => input.addEventListener('input', updateScenario));
+updateScenario();
+</script>
+<script src="assets/andong-ir/leaflet.js"></script>
+<script src="assets/andong-ir/places.js"></script>
+<script src="assets/andong-ir/gis.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# 분석 스크립트 실행용 패키지.
+# 로컬(맥)은 .venv_pdf/bin/python 을 그대로 쓰고, 원격(클라우드)에서는 `pip install -r requirements.txt` 후 python3 으로 실행한다.
+pandas>=3.0
+numpy>=2.0
+openpyxl>=3.1
+matplotlib>=3.9
+scikit-learn>=1.5
+statsmodels>=0.14
+scipy>=1.13
+duckdb>=1.1
+requests>=2.32
+pyproj>=3.6
+# 데이터랩 화면 수집(selenium)은 원격에서 쓰지 않는다. 필요하면 로컬 .venv_sel 사용.

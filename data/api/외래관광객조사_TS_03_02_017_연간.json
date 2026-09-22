@@ -1,0 +1,59 @@
+{
+ "list": [
+  {
+   "BASE_DATE": "2015",
+   "NAT_NM": "전체",
+   "RECOM_INTENT": "90.3"
+  },
+  {
+   "BASE_DATE": "2016",
+   "NAT_NM": "전체",
+   "RECOM_INTENT": "88.9"
+  },
+  {
+   "BASE_DATE": "2017",
+   "NAT_NM": "전체",
+   "RECOM_INTENT": "90"
+  },
+  {
+   "BASE_DATE": "2018",
+   "NAT_NM": "전체",
+   "RECOM_INTENT": "88"
+  },
+  {
+   "BASE_DATE": "2019",
+   "NAT_NM": "전체",
+   "RECOM_INTENT": "88.3"
+  },
+  {
+   "BASE_DATE": "2020",
+   "NAT_NM": "전체",
+   "RECOM_INTENT": "88.3"
+  },
+  {
+   "BASE_DATE": "2021",
+   "NAT_NM": "전체",
+   "RECOM_INTENT": "93.1"
+  },
+  {
+   "BASE_DATE": "2022",
+   "NAT_NM": "전체",
+   "RECOM_INTENT": "97.0"
+  },
+  {
+   "BASE_DATE": "2023",
+   "NAT_NM": "전체",
+   "RECOM_INTENT": "96.2"
+  },
+  {
+   "BASE_DATE": "2024",
+   "NAT_NM": "전체",
+   "RECOM_INTENT": "96.0"
+  },
+  {
+   "BASE_DATE": "2025",
+   "NAT_NM": "전체",
+   "RECOM_INTENT": "96.3"
+  }
+ ]
+}

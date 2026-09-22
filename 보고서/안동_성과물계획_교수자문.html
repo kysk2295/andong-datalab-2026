@@ -1,0 +1,265 @@
+<title>안동 릴레이 성과물 계획</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#EFF1EF; --surface:#FFFFFF; --sunk:#E5EAE7;
+  --ink:#171C1A; --muted:#59645F; --faint:#8A958F; --rule:#D3D9D5;
+  --accent:#1F5C4D; --accent-soft:#DFEBE6;
+  --flag:#9C3B26; --flag-soft:#F6E4DE;
+  --ask:#7A5B1E; --ask-soft:#F2EBD9;
+  --serif:"Gowun Batang","Nanum Myeongjo","AppleMyungjo",serif;
+  --sans:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#121614; --surface:#1A201D; --sunk:#232A27;
+    --ink:#E6EBE8; --muted:#A3AEA8; --faint:#7C8781; --rule:#2F3833;
+    --accent:#7FC2AE; --accent-soft:#1F3A32;
+    --flag:#E59A85; --flag-soft:#3E2620;
+    --ask:#D9B872; --ask-soft:#3A3120;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#121614; --surface:#1A201D; --sunk:#232A27;
+  --ink:#E6EBE8; --muted:#A3AEA8; --faint:#7C8781; --rule:#2F3833;
+  --accent:#7FC2AE; --accent-soft:#1F3A32;
+  --flag:#E59A85; --flag-soft:#3E2620;
+  --ask:#D9B872; --ask-soft:#3A3120;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.7;padding-inline:16px;padding-block:40px 72px}
+.wrap{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
+header{display:flex;flex-direction:column;gap:14px;padding-bottom:28px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+h1{font-family:var(--serif);font-size:clamp(28px,5vw,40px);line-height:1.3;margin:0;text-wrap:balance;font-weight:700}
+h2{font-family:var(--serif);font-size:24px;line-height:1.4;margin:0;text-wrap:balance}
+h3{font-size:16px;margin:0;font-weight:600}
+p{margin:0;max-width:68ch}
+.lead{font-size:17px;color:var(--muted)}
+section{display:flex;flex-direction:column;gap:18px}
+.sec-label{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.05em}
+.thesis{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:22px 24px;font-family:var(--serif);font-size:19px;line-height:1.6}
+.thesis b{color:var(--accent)}
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--rule);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:620px}
+th,td{text-align:left;vertical-align:top;padding:11px 14px;border-bottom:1px solid var(--rule)}
+th{font-weight:600;color:var(--muted);font-size:12.5px;background:var(--sunk)}
+tr:last-child td{border-bottom:0}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.pill{display:inline-block;font-size:12px;font-weight:500;padding:1px 9px;border-radius:99px;white-space:nowrap}
+.p-real{background:var(--accent-soft);color:var(--accent)}
+.p-est{background:var(--ask-soft);color:var(--ask)}
+.p-miss{background:var(--flag-soft);color:var(--flag)}
+.p-keep{background:var(--sunk);color:var(--muted)}
+.note{font-size:13px;color:var(--muted)}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.step{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:6px}
+.step .k{font-family:var(--mono);font-size:12px;color:var(--faint)}
+.step h3{font-size:15px}
+.step p{font-size:13px;color:var(--muted)}
+.step.gap{border-color:var(--flag);background:var(--flag-soft)}
+.step.gap .k{color:var(--flag)}
+.outs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.out{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.out.main{grid-column:1/-1;border:1.5px solid var(--accent)}
+.out .tag{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.out p{font-size:14px;color:var(--muted)}
+.out .use{font-size:13px;color:var(--ink);border-top:1px dashed var(--rule);padding-top:8px}
+.eq{font-family:var(--mono);font-size:13.5px;background:var(--sunk);border-radius:8px;padding:16px 18px;overflow-x:auto;white-space:pre;line-height:1.8}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.box{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.box ul,.box ol{margin:0;padding-left:20px;font-size:14px}
+.box li+li{margin-top:4px}
+.box.warn{background:var(--flag-soft);border-color:transparent}
+.box.warn h3{color:var(--flag)}
+.qs{counter-reset:q;display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none}
+.qs li{counter-increment:q;background:var(--ask-soft);border-radius:8px;padding:14px 18px 14px 52px;position:relative}
+.qs li::before{content:"Q" counter(q);position:absolute;left:16px;top:14px;font-family:var(--mono);font-weight:500;color:var(--ask)}
+.qs li b{display:block}
+.qs li span{font-size:13.5px;color:var(--muted)}
+.tl{display:flex;flex-direction:column}
+.tl div{display:grid;grid-template-columns:92px 1fr;gap:14px;padding:10px 0;border-bottom:1px solid var(--rule);font-size:14px}
+.tl div:last-child{border-bottom:0}
+.tl .d{font-family:var(--mono);font-size:13px;color:var(--accent);font-variant-numeric:tabular-nums}
+footer{font-size:12.5px;color:var(--faint);border-top:1px solid var(--rule);padding-top:18px}
+@media (max-width:720px){
+  .flow{grid-template-columns:1fr 1fr}
+  .outs,.two{grid-template-columns:1fr}
+}
+@media (max-width:420px){ .flow{grid-template-columns:1fr} }
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">2026 한국관광 데이터랩 활용 경진대회 · 안동팀 · 교수 자문 자료 · 2026-09-16</div>
+  <h1>성과물을 “숫자로 된 기대효과” 중심으로 다시 짭니다</h1>
+  <p class="lead">현재 제출안은 문제 진단과 운영 설계는 갖췄지만, 효과를 보여줄 대표 수치가 비어 있습니다. 전국 시군 데이터로 회귀 기반 관광소비 기대치 모델을 만들어 문제·우선순위·기대효과에 숫자를 채우려 합니다. 설계가 적절한지 여쭙고자 정리했습니다.</p>
+</header>
+
+<section>
+  <div class="sec-label">1 · 왜 바꾸는가</div>
+  <h2>2025 수상작 5편은 모두 성과를 수치로 냈습니다</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>상</th><th>팀</th><th>분석 방식</th><th>제시한 성과</th><th>수치 성격</th></tr></thead>
+    <tbody>
+      <tr><td>대상</td><td>강진군</td><td>3년 월·성·연령 분포, 유입 시기, 업종 구분</td><td>관광객 +43만 명, 예산 22억 원 → 생산유발 240억 원</td><td><span class="pill p-real">시행 실적</span></td></tr>
+      <tr><td>최우수</td><td>인천관광공사</td><td>국가별 진료과목·소비 특성 비교</td><td>외국인환자 +46.4%</td><td><span class="pill p-real">시행 실적</span></td></tr>
+      <tr><td>우수</td><td>국립공원공단</td><td>인기 관광지·검색 키워드·가맹점</td><td>참여자 +33%, 체험객 소비 2.4배</td><td><span class="pill p-real">시행 실적</span></td></tr>
+      <tr><td>우수</td><td>김포시</td><td>체류시간·이동경로 + 자체 설문</td><td>체류 2.1 → 3.5시간(+66.7%)</td><td><span class="pill p-real">시범운영</span></td></tr>
+      <tr><td>우수</td><td>교육생 팀(부산)</td><td>5종 결합 안전지수 → 2축 매트릭스</td><td>체류 +15%, 소비 +10~15%</td><td><span class="pill p-est">추정</span> 유사사례·회귀</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">시행 권한이 없는 팀은 추정치로 수상했습니다. 저희도 같은 조건입니다. 출처: 한국관광 데이터랩 우수 활용사례(2025).</p>
+</section>
+
+<section>
+  <div class="sec-label">2 · 현재 상태</div>
+  <h2>문제·처방은 있고, 효과 수치가 비어 있습니다</h2>
+  <div class="flow">
+    <div class="step"><span class="k">문제</span><h3>수치 있음</h3><p>외지인 방문 +5.6%, 방문당 소비 −2.8% (2024→2026 1~8월). 숙박객 체류시간 −6.2% (2019→2025)</p></div>
+    <div class="step"><span class="k">원인</span><h3>일부 있음</h3><p>유사 도시 상위 25% 대비 체험 27.9 vs 34.7, 숙박 소비 9.9 vs 13.3. 야간 비교값 없음</p></div>
+    <div class="step"><span class="k">우선순위</span><h3>근거 약함</h3><p>242개 시군 매트릭스는 있으나 “무엇부터”의 결론이 약함</p></div>
+    <div class="step"><span class="k">처방</span><h3>충분함</h3><p>3단계 릴레이 운영안 v0, 예산 계산기, 측정 설계</p></div>
+    <div class="step gap"><span class="k">효과</span><h3>비어 있음</h3><p>현재 “예시·가정·미산출”로만 표시. 심사 30점 항목</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-label">3 · 최종 성과물</div>
+  <h2>5개 + 예시 화면 → 4개로 줄이고 숫자를 채웁니다</h2>
+  <div class="outs">
+    <div class="out main">
+      <span class="tag">새로 만듦 · 나머지 셋에 숫자를 공급</span>
+      <h3>① 전국 관광소비 기대치 모델</h3>
+      <p>전국 시군의 체류·숙박·야간 조건으로 “적정 방문당 소비”를 추정하는 회귀 모델. 기존 전국 매트릭스는 세로축을 조건 대비 격차로 바꿔 v2로, 기존 하위 진단점수는 요인 순위로 대체합니다.</p>
+      <p class="use">쓰는 곳: 안동의 조건 대비 소비 격차(문제) · 요인 순위(릴레이 단계 순서) · 시나리오 추정(기대효과)</p>
+    </div>
+    <div class="out">
+      <span class="tag">기존 유지 · 주인공</span>
+      <h3>② 릴레이 운영안 v0 → v1</h3>
+      <p>문턱·시간대·할인액·공급을 담은 실행 사양표. 현장 전 v0, 현장 후 v1과 변경 기록.</p>
+      <p class="use">변경: “결정 근거” 칸을 모델 결과와 현장 실측으로 채움</p>
+    </div>
+    <div class="out">
+      <span class="tag">기존 계산기 + 모델</span>
+      <h3>③ 효과·예산 계산기</h3>
+      <p>할인 예산·참여율(가정)과 모델의 시나리오 추정을 합쳐 “예산 ○원 → 소비 ○억 원”까지 계산. 보수·기준·낙관 3개 값.</p>
+      <p class="use">대조: 나주 「1박 2득」 환급 4.19억 원 → 유발 소비 16.48억 원(시 추산, 약 3.9배)</p>
+    </div>
+    <div class="out">
+      <span class="tag">기존 유지 + 보강</span>
+      <h3>④ 시행 후 측정 설계</h3>
+      <p>QR 단계 로그와 비교집단 구조에 안동 월별 추세 기준선(시계열 예측구간)을 추가. 시행 후 실제 값이 구간을 벗어나는지로 판단.</p>
+      <p class="use">부록으로 이동: QR 대시보드·가게 리포트·GIS 예시 화면</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-label">4 · 모델 설계</div>
+  <h2>횡단면 다중회귀 기반 잔차 분석</h2>
+  <p>통계적으로는 기본적인 회귀분석입니다. 차별점은 활용 방식에 있습니다. 잔차로 문제를 보이고, 계수로 우선순위를 정하고, 시나리오 예측으로 효과를 추정합니다. 랜덤포레스트는 대조용으로만 씁니다.</p>
+  <div class="eq">log(외지인 방문당 소비)ᵢ = β₀ + β₁·log(숙박객 체류시간)ᵢ + β₂·숙박방문자 비율ᵢ
+                       + β₃·야간(21~06시) 방문 비중ᵢ + β₄·수도권 유입 비중ᵢ
+                       + β₅·log(방문 규모)ᵢ + 시·군·구 구분 + 광역 권역 + εᵢ
+
+i = 시군 (약 230개) · 기준기간 2025년 1~12월 · 외지인 기준</div>
+
+  <div class="tbl"><table>
+    <thead><tr><th>변수</th><th>역할</th><th>로컬 보유 원천</th></tr></thead>
+    <tbody>
+      <tr><td>외지인 방문당 소비</td><td>Y</td><td>카드 시군구×업종×월 외지인(touDiv1) ÷ 이동통신 방문 연인원(D1)</td></tr>
+      <tr><td>숙박객 체류시간, 숙박방문자 비율</td><td>X</td><td>이동통신 숙박일수별 체류시간 BDT_01_01_006_1 (250개 시군, 월별)</td></tr>
+      <tr><td>야간 방문 비중</td><td>X</td><td>D1 교차표 시간대 열에서 전국 재계산</td></tr>
+      <tr><td>수도권 유입 비중</td><td>X</td><td>LN_03_01_053 전국 연도별</td></tr>
+      <tr><td>방문 규모, 시·군·구, 권역</td><td>통제</td><td>D1, 행정코드</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">카드 소비로 만든 비율(체험·숙박 소비 비중)은 X에서 제외합니다. 소비로 소비를 설명하는 순환을 피하려는 것입니다. X는 통신, Y는 카드로 나눕니다. 새 수집은 필요 없습니다.</p>
+
+  <div class="two">
+    <div class="box">
+      <h3>산출물 3가지</h3>
+      <ol>
+        <li><b>잔차</b>: 안동 실제값 − 예측값 → “조건 대비 ○% 낮다”</li>
+        <li><b>표준화 계수</b>: 체류·숙박·야간 중 영향 순위 → 릴레이 단계 순서의 근거</li>
+        <li><b>시나리오 예측</b>: 체류시간 2019 수준 회복(+6.2%) 등을 넣어 방문당 소비 변화와 예측구간</li>
+      </ol>
+    </div>
+    <div class="box">
+      <h3>검증</h3>
+      <ul>
+        <li>5-겹 교차검증 MAE·R², 전국 평균 예측 대비 개선 폭</li>
+        <li>강건 표준오차(HC3), 다중공선성(VIF)</li>
+        <li>랜덤포레스트 대조: 크게 앞서면 본체 교체 검토</li>
+        <li>민감도: 2019 기준, 자치구 제외, 유사 유형만</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="two">
+    <div class="box warn">
+      <h3>채택하지 않는 조건</h3>
+      <ul>
+        <li>교차검증 오차가 평균 예측과 큰 차이가 없음</li>
+        <li>민감도 분석에서 안동 잔차의 부호가 바뀜</li>
+      </ul>
+      <p class="note">이 경우 기대효과는 유사 도시 격차와 유사 사례(나주, 김포) 방식으로 대체합니다.</p>
+    </div>
+    <div class="box">
+      <h3>표현 원칙</h3>
+      <ul>
+        <li>“효과” 대신 <b>“모델 기반 추정”</b>, 산식과 구간을 함께 표시</li>
+        <li>잔차는 손실액이 아니라 “조건이 비슷한 지역 대비 격차”</li>
+        <li>“1인당” 대신 <b>“방문당”</b> (분모가 방문 연인원)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-label">5 · 현장 사전검증과의 연결</div>
+  <h2>추정 모델에 현장 실측을 넣습니다</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>조사 (9/19~20)</th><th>얻는 실측값</th><th>들어가는 곳</th></tr></thead>
+    <tbody>
+      <tr><td>P4 모의 릴레이</td><td>기존 동선 대비 체류시간 변화</td><td>시나리오 입력값 → 방문당 소비 추정</td></tr>
+      <tr><td>P1 할인액 설문</td><td>무혜택 대비 1박 의향 차이 (%p, 구간)</td><td>계산기 참여율 가정의 범위</td></tr>
+      <tr><td>P3 가게 수용성</td><td>15곳 중 참여 의향 수, 조건</td><td>운영안 v1 가맹점 목표</td></tr>
+      <tr><td>P2 안내카드 QR</td><td>카드 배포 대비 스캔 수</td><td>측정 설계의 단계별 분모</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">P1은 의향이지 실제 숙박 전환이 아니고, P4는 팀·지인 대상이라 일반 관광객 효과가 아닙니다. 입력 범위를 정하는 근거로만 씁니다.</p>
+</section>
+
+<section>
+  <div class="sec-label">6 · 일정</div>
+  <h2>접수 마감 9/30 14:00</h2>
+  <div class="tl">
+    <div><span class="d">9/17</span><span>모델 입력표(시군 약 230행) 결합, 야간 비중 전국 계산, 교차검증</span></div>
+    <div><span class="d">9/18</span><span>안동 잔차·요인 순위·시나리오 산출 → 채택 여부 결정, 운영안 v0</span></div>
+    <div><span class="d">9/19~20</span><span>현장 사전검증 P1~P4</span></div>
+    <div><span class="d">9/21~24</span><span>실측 반영 시나리오 재계산, 운영안 v1</span></div>
+    <div><span class="d">9/25~29</span><span>서식4·사이트를 “문제 → 원인 → 우선순위 → 처방 → 효과” 순서로 정리, 코드·데이터 ZIP</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-label">7 · 여쭙고 싶은 점</div>
+  <h2>교수님께 드리는 질문</h2>
+  <ol class="qs">
+    <li><b>횡단면 회귀로 기대효과를 추정해도 괜찮을까요?</b><span>아니면 2019→2025 변화량(1차 차분)으로 보는 편이 심사 질의에 더 강할까요?</span></li>
+    <li><b>잔차를 “조건 대비 격차”로 해석해도 될까요?</b><span>관광자원처럼 모델에 없는 지역 특성이 잔차에 섞이는 문제를 어떻게 다루면 좋을까요?</span></li>
+    <li><b>표본 약 230개에 변수 5~7개가 적절한가요?</b><span>체류시간과 숙박 비율의 공선성이 크면 하나로 묶어야 할지도 여쭙고 싶습니다.</span></li>
+    <li><b>공모전 심사용으로 이 수준이 적절한가요, 과한가요?</b><span>8분 발표에서는 대표 수치 한 장과 부록으로 나눌 계획입니다.</span></li>
+  </ol>
+</section>
+
+<footer>
+  수치 기준: 방문당 소비 = 외지인 카드소비 ÷ 외지인 방문 연인원(2024 vs 2026 각 1~8월, 15,572 → 15,134원). 체류시간은 숙박객 기준 2019 → 2025. 모델 결과는 아직 산출 전이며, 이 문서에는 추정값을 넣지 않았습니다. 상세 근거: andong-professor-brief-production.up.railway.app
+</footer>
+
+</div>

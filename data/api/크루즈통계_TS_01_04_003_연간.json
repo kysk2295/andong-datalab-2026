@@ -1,0 +1,74 @@
+{
+ "list": [
+  {
+   "BASE_DATE": "2013",
+   "TOU_NUM1": 360206,
+   "TOU_NUM2": 338739
+  },
+  {
+   "BASE_DATE": "2014",
+   "TOU_NUM1": 482729,
+   "TOU_NUM2": 471956
+  },
+  {
+   "BASE_DATE": "2015",
+   "TOU_NUM1": 525054,
+   "TOU_NUM2": 520822
+  },
+  {
+   "BASE_DATE": "2016",
+   "TOU_NUM1": 1109559,
+   "TOU_NUM2": 1148775
+  },
+  {
+   "BASE_DATE": "2017",
+   "TOU_NUM1": 273022,
+   "TOU_NUM2": 232261
+  },
+  {
+   "BASE_DATE": "2018",
+   "TOU_NUM1": 123328,
+   "TOU_NUM2": 94616
+  },
+  {
+   "BASE_DATE": "2019",
+   "TOU_NUM1": 156919,
+   "TOU_NUM2": 121832
+  },
+  {
+   "BASE_DATE": "2020",
+   "TOU_NUM1": 2687,
+   "TOU_NUM2": 802
+  },
+  {
+   "BASE_DATE": "2021",
+   "TOU_NUM1": 0,
+   "TOU_NUM2": null
+  },
+  {
+   "BASE_DATE": "2022",
+   "TOU_NUM1": null,
+   "TOU_NUM2": null
+  },
+  {
+   "BASE_DATE": "2023",
+   "TOU_NUM1": 262491,
+   "TOU_NUM2": 162440
+  },
+  {
+   "BASE_DATE": "2024",
+   "TOU_NUM1": 762973,
+   "TOU_NUM2": 572888
+  },
+  {
+   "BASE_DATE": "2025",
+   "TOU_NUM1": 894363,
+   "TOU_NUM2": 707887
+  },
+  {
+   "BASE_DATE": "2026",
+   "TOU_NUM1": 607573,
+   "TOU_NUM2": 485133
+  }
+ ]
+}

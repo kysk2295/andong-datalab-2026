@@ -1,0 +1,307 @@
+<title>관광소비 격차 지도</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#EEF1EF; --surface:#FFFFFF; --sunk:#E4E9E6;
+  --ink:#171C1A; --muted:#58635E; --faint:#8C9691; --rule:#D2D8D4;
+  --accent:#1F5C4D; --accent-soft:#DDEAE4;
+  --land:#DCE1DE; --stroke:#FFFFFF; --sel:#171C1A;
+  --g1:#8E2A1B; --g2:#C4553B; --g3:#E7A48D; --g4:#EDEBE6; --g5:#9CC5D6; --g6:#4E8FAE; --g7:#1D5A7A;
+  --bar-local:#1F5C4D; --bar-peer:#B9C3BE;
+  --serif:"Gowun Batang","Nanum Myeongjo","AppleMyungjo",serif;
+  --sans:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#111513; --surface:#191F1C; --sunk:#222926;
+    --ink:#E5EAE7; --muted:#A2ADA7; --faint:#77827C; --rule:#2E3732;
+    --accent:#7FC2AE; --accent-soft:#1E3830;
+    --land:#2A322E; --stroke:#111513; --sel:#F2F5F3;
+    --g1:#E0735A; --g2:#B9543E; --g3:#7A3F31; --g4:#3A403D; --g5:#2F5566; --g6:#3F7F9E; --g7:#7CBFDB;
+    --bar-local:#7FC2AE; --bar-peer:#46514C;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#111513; --surface:#191F1C; --sunk:#222926;
+  --ink:#E5EAE7; --muted:#A2ADA7; --faint:#77827C; --rule:#2E3732;
+  --accent:#7FC2AE; --accent-soft:#1E3830;
+  --land:#2A322E; --stroke:#111513; --sel:#F2F5F3;
+  --g1:#E0735A; --g2:#B9543E; --g3:#7A3F31; --g4:#3A403D; --g5:#2F5566; --g6:#3F7F9E; --g7:#7CBFDB;
+  --bar-local:#7FC2AE; --bar-peer:#46514C;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.6;padding-inline:16px;padding-block:28px 56px}
+.wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+header{display:flex;flex-direction:column;gap:10px}
+.eyebrow{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.05em}
+h1{font-family:var(--serif);font-size:clamp(24px,4vw,34px);line-height:1.3;margin:0;text-wrap:balance}
+.lead{margin:0;max-width:72ch;color:var(--muted);font-size:15px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{font:inherit;font-size:13px;border:1px solid var(--rule);background:var(--surface);color:var(--ink);border-radius:99px;padding:5px 12px;cursor:pointer}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.chip:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+select{font:inherit;font-size:13px;padding:5px 10px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);color:var(--ink)}
+.stage{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:16px;align-items:start}
+.mapbox{background:var(--surface);border:1px solid var(--rule);border-radius:10px;position:relative;overflow:hidden}
+svg#map{display:block;width:100%;height:auto;aspect-ratio:5/6;touch-action:none;cursor:grab}
+svg#map.drag{cursor:grabbing}
+svg#map path{stroke:var(--stroke);stroke-width:.6;vector-effect:non-scaling-stroke}
+svg#map path.hit{cursor:pointer}
+svg#map path.hit:hover{stroke:var(--sel);stroke-width:1.2}
+svg#map path.sel{stroke:var(--sel);stroke-width:2.2}
+.zoom{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:4px}
+.zoom button{width:32px;height:32px;border:1px solid var(--rule);background:var(--surface);color:var(--ink);border-radius:6px;font-size:16px;cursor:pointer}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--ground);font-size:12px;padding:4px 8px;border-radius:5px;white-space:nowrap}
+.legend{display:flex;flex-direction:column;gap:6px;padding:12px 14px;border-top:1px solid var(--rule)}
+.legend .bar{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
+.legend .bar span{height:10px}
+.legend .ticks{display:grid;grid-template-columns:repeat(7,1fr);font-family:var(--mono);font-size:10.5px;color:var(--muted);text-align:center}
+.legend .ends{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:16px}
+.panel h2{font-family:var(--serif);font-size:26px;margin:0;line-height:1.2}
+.sub{font-size:12.5px;color:var(--muted)}
+.big{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.big .v{font-family:var(--mono);font-size:40px;font-weight:500;font-variant-numeric:tabular-nums;line-height:1}
+.big .v.neg{color:var(--g2)} .big .v.pos{color:var(--g6)}
+.sentence{font-size:15px;margin:0}
+.kv{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.kv div{background:var(--sunk);border-radius:6px;padding:8px 10px;display:flex;flex-direction:column}
+.kv b{font-family:var(--mono);font-weight:500;font-size:16px;font-variant-numeric:tabular-nums}
+.kv span{font-size:11.5px;color:var(--muted)}
+h3{font-size:13px;margin:0;font-weight:600;color:var(--muted)}
+.cats{display:flex;flex-direction:column;gap:9px}
+.cat{display:grid;grid-template-columns:78px 1fr 64px;gap:8px;align-items:center;font-size:13px}
+.cat .bars{display:flex;flex-direction:column;gap:2px}
+.cat .bars i{display:block;height:9px;border-radius:2px}
+.cat .bars i.l{background:var(--bar-local)} .cat .bars i.p{background:var(--bar-peer)}
+.cat .d{font-family:var(--mono);font-size:12px;text-align:right;font-variant-numeric:tabular-nums}
+.cat .d.neg{color:var(--g2)} .cat .d.pos{color:var(--g6)}
+.key{display:flex;gap:14px;font-size:12px;color:var(--muted)}
+.key i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+.peers{display:flex;flex-wrap:wrap;gap:5px}
+.peers button{font:inherit;font-size:12px;border:0;background:var(--sunk);color:var(--ink);border-radius:4px;padding:2px 8px;cursor:pointer}
+.peers button:hover{background:var(--accent-soft)}
+.gray{color:var(--muted)}
+.below{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.card h3{color:var(--ink);font-size:14px}
+.card p,.card li{font-size:13.5px;color:var(--muted);margin:0}
+.card ul,.card ol{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+.rank{width:100%;border-collapse:collapse;font-size:13px}
+.rank td{padding:4px 2px;border-bottom:1px solid var(--rule);font-variant-numeric:tabular-nums}
+.rank tr{cursor:pointer} .rank tr:hover td{background:var(--sunk)}
+.rank td:last-child{text-align:right;font-family:var(--mono)}
+footer{font-size:12px;color:var(--faint)}
+@media (max-width:860px){.stage{grid-template-columns:1fr}.below{grid-template-columns:1fr}}
+@media (max-width:420px){.kv{grid-template-columns:1fr 1fr}.big .v{font-size:32px}}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">한국관광 데이터랩 · 외지인 통신·카드 · 2025 · 시·군 122곳</div>
+    <h1>조건이 비슷한 지역보다 관광객이 덜 쓰는 곳은 어디일까</h1>
+    <p class="lead">방문 규모, 자고 가는 사람 비율, 야간·주말 방문 비율이 비슷한 지역이면 관광객이 한 번 방문에 보통 얼마를 쓰는지 모델로 계산했습니다. 실제 소비가 그보다 낮으면 빨강, 높으면 파랑입니다. 소비는 식당·숙박·체험 카드 지출만 셉니다. 지역을 누르면 오른쪽에 자세한 결과가 나옵니다.</p>
+    <div class="controls" id="quick">
+      <label for="pick" class="sub">지역 찾기</label>
+      <select id="pick"></select>
+    </div>
+  </header>
+
+  <div class="stage">
+    <div class="mapbox">
+      <svg id="map" role="img" aria-label="전국 시·군 조건 대비 현지 관광소비 격차 지도"></svg>
+      <div class="zoom">
+        <button id="zin" aria-label="확대">+</button>
+        <button id="zout" aria-label="축소">−</button>
+        <button id="zreset" aria-label="전체 보기">⟲</button>
+      </div>
+      <div class="tip" id="tip" hidden></div>
+      <div class="legend">
+        <div class="ends"><span>조건 대비 덜 씀</span><span>더 씀</span></div>
+        <div class="bar"><span style="background:var(--g1)"></span><span style="background:var(--g2)"></span><span style="background:var(--g3)"></span><span style="background:var(--g4)"></span><span style="background:var(--g5)"></span><span style="background:var(--g6)"></span><span style="background:var(--g7)"></span></div>
+        <div class="ticks"><span>≤−30%</span><span>−30~−15</span><span>−15~−5</span><span>±5</span><span>5~15</span><span>15~30</span><span>≥30%</span></div>
+        <div class="sub">회색: 분석에서 빠진 지역(자치구, 이름이 겹치는 시·군, 12개월 자료가 없는 곳)</div>
+      </div>
+    </div>
+
+    <aside class="panel" id="panel" aria-live="polite"></aside>
+  </div>
+
+  <div class="below">
+    <div class="card">
+      <h3>조건 대비 가장 덜 쓰는 10곳</h3>
+      <table class="rank" id="rankLow"></table>
+    </div>
+    <div class="card">
+      <h3>이 지도를 읽는 법</h3>
+      <ul>
+        <li>아파트 “적정 시세”와 같은 원리입니다. 조건으로 계산한 적정 소비보다 실제가 낮으면 덜 쓰는 곳입니다.</li>
+        <li>모델의 평균 오차는 약 <b id="mMape"></b>%입니다. ±20% 안쪽 차이는 오차 범위로 봅니다.</li>
+        <li>업종 막대는 조건이 가장 비슷한 15곳 평균과의 비교입니다. 어느 업종에서 차이가 나는지 보여줍니다.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>알게 된 것과 주의할 점</h3>
+      <ul>
+        <li>자고 가는 방문객 비율이 1%p 높은 지역은 현지 관광소비가 약 <b id="mCoef"></b>% 높았습니다. 머무는 시간은 소비와 관계가 없었습니다.</li>
+        <li>원인을 증명하지 않습니다. “덜 쓴다”에는 쓸 곳(시설·가게)이 없는 경우도 섞여 있습니다.</li>
+        <li>카드 결제만 셉니다. 현금과 온라인 선결제는 빠집니다.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>방법: 시·군 122곳 횡단면 다중회귀(HC3), Y = log(외지인 현지 관광소비 ÷ 외지인 방문 연인원), X = log 숙박객 체류시간·숙박객 비중·야간/주말 방문 비중·수도권 유입 비중·log 방문 규모 + 군·권역. 격차는 해당 지역을 빼고 학습한 모델의 예측과 비교(LOO). 5-겹 교차검증 R² <span id="mR2"></span>. 경계: 통계청 2018 시군구(southkorea-maps). 원자료: 한국관광 데이터랩.</footer>
+</div>
+
+<script>
+const DATA = __DATA__;
+const R = DATA.regions, M = DATA.meta;
+document.getElementById("mMape").textContent = Math.round(M.mape);
+document.getElementById("mCoef").textContent = M.stayCoef;
+document.getElementById("mR2").textContent = M.cvR2.toFixed(2);
+
+const fmt = n => n.toLocaleString("ko-KR");
+const sgn = n => (n > 0 ? "+" : "") + n.toFixed(1);
+const bin = g => g <= -30 ? 1 : g <= -15 ? 2 : g <= -5 ? 3 : g < 5 ? 4 : g < 15 ? 5 : g < 30 ? 6 : 7;
+
+// ---- projection ----
+const K = Math.cos(36 * Math.PI / 180), W = 1000;
+let minX = 1e9, maxX = -1e9, minY = 1e9, maxY = -1e9;
+DATA.features.forEach(f => f.r.forEach(r => { for (let i = 0; i < r.length; i += 2) { const x = r[i] * K, y = -r[i + 1]; if (x < minX) minX = x; if (x > maxX) maxX = x; if (y < minY) minY = y; if (y > maxY) maxY = y; } }));
+const S = W / (maxX - minX), H = (maxY - minY) * S;
+const px = (lon, lat) => [((lon * K) - minX) * S, ((-lat) - minY) * S];
+const svg = document.getElementById("map");
+const full = [-20, -20, W + 40, H + 40];
+let vb = full.slice();
+const setVB = () => svg.setAttribute("viewBox", vb.map(v => v.toFixed(1)).join(" "));
+setVB();
+svg.style.aspectRatio = `${(W + 40)} / ${(H + 40)}`;
+
+const ns = "http://www.w3.org/2000/svg";
+const byKey = {};
+const gLand = document.createElementNS(ns, "g");
+svg.appendChild(gLand);
+DATA.features.forEach(f => {
+  const d = f.r.map(r => { let s = ""; for (let i = 0; i < r.length; i += 2) { const [x, y] = px(r[i], r[i + 1]); s += (i ? "L" : "M") + x.toFixed(1) + " " + y.toFixed(1); } return s + "Z"; }).join("");
+  const p = document.createElementNS(ns, "path");
+  p.setAttribute("d", d);
+  const reg = R[f.k];
+  if (reg) {
+    p.setAttribute("fill", `var(--g${bin(reg.gap)})`);
+    p.classList.add("hit");
+    p.dataset.k = f.k;
+    (byKey[f.k] = byKey[f.k] || []).push(p);
+  } else {
+    p.setAttribute("fill", "var(--land)");
+    p.dataset.n = f.s + " " + f.n;
+  }
+  gLand.appendChild(p);
+});
+
+// ---- tooltip ----
+const tip = document.getElementById("tip"), box = svg.parentElement;
+svg.addEventListener("pointermove", e => {
+  const t = e.target;
+  if (t.tagName !== "path" || dragging) { tip.hidden = true; return; }
+  const k = t.dataset.k;
+  tip.textContent = k ? `${k} ${sgn(R[k].gap)}%` : `${t.dataset.n} · 분석 제외`;
+  const b = box.getBoundingClientRect();
+  tip.style.left = (e.clientX - b.left + 12) + "px";
+  tip.style.top = (e.clientY - b.top + 12) + "px";
+  tip.hidden = false;
+});
+svg.addEventListener("pointerleave", () => tip.hidden = true);
+
+// ---- pan / zoom ----
+let dragging = false, moved = false, start = null;
+const toSvg = (cx, cy) => { const b = svg.getBoundingClientRect(); return [vb[0] + (cx - b.left) / b.width * vb[2], vb[1] + (cy - b.top) / b.height * vb[3]]; };
+function zoomAt(f, cx, cy) {
+  const nw = Math.min(full[2], Math.max(full[2] / 12, vb[2] * f)), nh = nw * full[3] / full[2];
+  vb = [cx - (cx - vb[0]) * nw / vb[2], cy - (cy - vb[1]) * nh / vb[3], nw, nh];
+  setVB();
+}
+svg.addEventListener("wheel", e => { e.preventDefault(); const [x, y] = toSvg(e.clientX, e.clientY); zoomAt(e.deltaY > 0 ? 1.2 : 1 / 1.2, x, y); }, { passive: false });
+svg.addEventListener("pointerdown", e => { dragging = true; moved = false; start = [e.clientX, e.clientY, vb[0], vb[1]]; svg.setPointerCapture(e.pointerId); });
+svg.addEventListener("pointermove", e => {
+  if (!dragging) return;
+  const b = svg.getBoundingClientRect(), dx = e.clientX - start[0], dy = e.clientY - start[1];
+  if (Math.abs(dx) + Math.abs(dy) > 4) { moved = true; svg.classList.add("drag"); }
+  vb[0] = start[2] - dx / b.width * vb[2]; vb[1] = start[3] - dy / b.height * vb[3]; setVB();
+});
+svg.addEventListener("pointerup", e => {
+  svg.classList.remove("drag"); dragging = false;
+  if (moved) return;
+  const t = document.elementFromPoint(e.clientX, e.clientY);
+  if (t && t.dataset && t.dataset.k) select(t.dataset.k, false);
+});
+const center = () => [vb[0] + vb[2] / 2, vb[1] + vb[3] / 2];
+document.getElementById("zin").onclick = () => zoomAt(1 / 1.5, ...center());
+document.getElementById("zout").onclick = () => zoomAt(1.5, ...center());
+document.getElementById("zreset").onclick = () => { vb = full.slice(); setVB(); };
+
+// ---- panel ----
+const panel = document.getElementById("panel");
+const CATS = [["외식", "식당·카페"], ["숙박", "숙박"], ["레저·체험", "체험·레저"], ["기타쇼핑·뷰티", "기념품·소매"], ["대형쇼핑·면세", "대형쇼핑"], ["운송", "교통·주유"]];
+function select(k, fly) {
+  const r = R[k]; if (!r) return;
+  document.querySelectorAll("path.sel").forEach(p => p.classList.remove("sel"));
+  byKey[k].forEach(p => { p.classList.add("sel"); p.parentNode.appendChild(p); });
+  pick.value = k;
+  quickBtns.forEach(b => b.setAttribute("aria-pressed", b.dataset.k === k));
+  if (fly) {
+    const bb = byKey[k][0].getBBox(), w = Math.max(bb.width, bb.height) * 7, h = w * full[3] / full[2];
+    vb = [bb.x + bb.width / 2 - w / 2, bb.y + bb.height / 2 - h / 2, w, h]; setVB();
+  }
+  const neg = r.gap < 0, within = Math.abs(r.gap) < 20;
+  const words = within ? "오차 범위(±20%) 안이라 뚜렷한 차이로 보기 어렵습니다."
+    : neg ? `조건이 비슷한 지역보다 <b>${Math.abs(r.gap).toFixed(0)}% 덜</b> 씁니다.` : `조건이 비슷한 지역보다 <b>${r.gap.toFixed(0)}% 더</b> 씁니다.`;
+  const max = Math.max(...CATS.flatMap(([c]) => r.cat[c]), 1);
+  const cats = CATS.map(([c, label]) => {
+    const [a, b] = r.cat[c], d = a - b, cls = Math.abs(d) < 50 ? "" : d < 0 ? "neg" : "pos";
+    return `<div class="cat"><span>${label}</span><span class="bars"><i class="l" style="width:${a / max * 100}%"></i><i class="p" style="width:${b / max * 100}%"></i></span><span class="d ${cls}">${d > 0 ? "+" : ""}${fmt(d)}원</span></div>`;
+  }).join("");
+  panel.innerHTML = `
+    <div><h2>${k}</h2><div class="sub">${r.sido} 권역 · 2025 외지인 방문 ${fmt(r.visits)}만 회</div></div>
+    <div class="big"><span class="v ${within ? "" : neg ? "neg" : "pos"}">${sgn(r.gap)}%</span><span class="sub">조건 대비 현지 관광소비 · 덜 쓰는 순 ${r.rank}위 / ${M.n}</span></div>
+    <p class="sentence">${words}</p>
+    <div class="kv">
+      <div><b>${fmt(r.actual)}원</b><span>실제 방문당</span></div>
+      <div><b>${fmt(r.pred)}원</b><span>조건상 적정</span></div>
+      <div><b>${r.stayRatio}%</b><span>자고 가는 비율</span></div>
+      <div><b>${r.night}%</b><span>야간 방문</span></div>
+      <div><b>${r.weekend}%</b><span>주말 방문</span></div>
+      <div><b>${r.metro}%</b><span>수도권 유입</span></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <h3>업종별 방문당 소비 — 조건이 가장 비슷한 15곳 평균과 비교</h3>
+      <div class="key"><span><i style="background:var(--bar-local)"></i>${k}</span><span><i style="background:var(--bar-peer)"></i>비슷한 15곳 평균</span></div>
+      <div class="cats">${cats}</div>
+      <div class="sub">위 셋(식당·숙박·체험)이 격차 계산에 들어가는 현지 관광소비입니다.</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <h3>비교한 15곳 (누르면 이동)</h3>
+      <div class="peers">${r.peers.map(p => `<button data-k="${p}">${p}</button>`).join("")}</div>
+    </div>`;
+  panel.querySelectorAll(".peers button").forEach(b => b.onclick = () => select(b.dataset.k, true));
+}
+
+// ---- controls ----
+const pick = document.getElementById("pick");
+Object.keys(R).sort((a, b) => a.localeCompare(b, "ko")).forEach(k => { const o = document.createElement("option"); o.value = k; o.textContent = `${k} (${sgn(R[k].gap)}%)`; pick.appendChild(o); });
+pick.onchange = () => select(pick.value, true);
+const quick = document.getElementById("quick");
+const quickBtns = ["인제군", "태안군", "익산시", "안동시", "경주시"].filter(k => R[k]).map(k => {
+  const b = document.createElement("button"); b.className = "chip"; b.dataset.k = k; b.textContent = k; b.setAttribute("aria-pressed", "false");
+  b.onclick = () => select(k, true); quick.insertBefore(b, quick.querySelector("label")); return b;
+});
+
+const low = Object.entries(R).sort((a, b) => a[1].gap - b[1].gap).slice(0, 10);
+const rt = document.getElementById("rankLow");
+low.forEach(([k, r], i) => { const tr = document.createElement("tr"); tr.innerHTML = `<td>${i + 1}</td><td>${k}</td><td class="gray">${r.sido}</td><td>${sgn(r.gap)}%</td>`; tr.onclick = () => select(k, true); rt.appendChild(tr); });
+
+select("인제군", false);
+</script>
