@@ -1,0 +1,10217 @@
+[
+{
+"kind": "h1",
+"runs": [
+{
+"text": "< 안동 이어드림 문제점 및 데이터 정리 >"
+}
+]
+},
+{
+"kind": "byline",
+"runs": [
+{
+"text": "교수님 브리핑 자료 | 2026. 9. 22. | 안동팀 (고윤서, 이예린, 이현표, 최서정)"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "진행 흐름 :",
+"bold": true
+},
+{
+"text": " 01 안동 선정 → 02~04 기존 정책(디지털관광주민증) 점검 → 05~09 데이터로 문제 확인 → 10~11 아이디어(안동 이어드림) → 12~14 문제점, 해결방안, 기대효과 정리 → 15 서식4(활용사례) 구성 미리보기"
+}
+]
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "01 안동 지역선정 이유",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "안동은 2024년 12월 KTX-이음 중앙선이 전 구간 개통되면서 교통이 좋아졌고 방문도 실제로 늘었다. 그런데 늘어난 방문이 지역 안의 소비로 잘 이어지지 않는 곳이라서 선택했다."
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "외지인 방문: 2024년 1~8월 1,110만 명 → 2026년 같은 기간 1,173만 명 ("
+},
+{
+"text": "+5.6%",
+"bold": true
+},
+{
+"text": ")"
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 1,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "방문 1회당 관광소비: 15,572원 → 15,134원 ("
+},
+{
+"text": "-2.8%",
+"bold": true
+},
+{
+"text": "). 비교한 경주, 군산, 포항, 전주는 모두 늘었다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 1,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "방문 1회당 체험·문화 소비: 183.5원 → 152.7원 ("
+},
+{
+"text": "-16.8%",
+"bold": true
+},
+{
+"text": "). 전국 146개 시·군 중앙값은 -2.0%였다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 1,
+"note": false
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "처음에는 \"KTX가 생겨서 당일치기가 늘었고, 그래서 소비가 줄었다\"고 생각했다. 그런데 무박(당일) 비중은 2019년 86.3%, 2025년 86.4%로 거의 그대로였고, 관광객 수도 줄지 않았다."
+}
+]
+},
+{
+"kind": "ins",
+"runs": [
+{
+"text": "=> "
+},
+{
+"text": "문제를 \"사람은 오는데, 돈을 쓸 곳과 그곳으로 이어지는 동선이 없다\"로 다시 잡았다. 먼저 안동이 이미 운영 중인 디지털관광주민증이 이 문제를 풀고 있는지 확인했다.",
+"shade": "FFF2CC"
+}
+]
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "02 디지털관광주민증은 무엇인가?",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "한국관광공사가 인구감소지역의 관광 활성화를 위해 만든 제도다. 관광객이 '대한민국 구석구석' 앱에서 그 지역의 디지털 주민증을 발급받으면, 지역 가맹점에서 QR을 보여주고 할인을 받을 수 있다."
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "2022년 10월 평창군과 옥천군에서 시범 운영을 시작했고, 2026년 6월 기준 "
+},
+{
+"text": "52개 지역",
+"bold": true
+},
+{
+"text": "에서 운영 중이다. 안동은 2024년 6월 1일부터 참여했다."
+}
+]
+},
+{
+"kind": "table",
+"left": false,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "시작 시기"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "새로 참여한 지역"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "누적 지역 수"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2022년 10월 (시범)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2곳 (평창군, 옥천군)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2023년 5월"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "9곳"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "11"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2023년 10~11월"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "4곳"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "15"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2024년 6월"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "19곳 (안동시 포함, 6월 1일)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "34"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2025년 4월"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "10곳"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "44"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2026년 6월"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "8곳"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "52"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 1 디지털관광주민증 운영 지역 확대 (한국관광공사 보도자료, 운영 지역 목록 정리) >"
+}
+]
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "03 안동의 디지털관광주민증 현황",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "안동시에 정보공개청구를 해서 혜택업체 목록과 이용 건수를 받았다("
+},
+{
+"text": "2026.9.18 회신",
+"bold": true,
+"color": "38761D"
+},
+{
+"text": ")."
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "발급: 6만 1천여 명 (2024년 9월 보도 기준)"
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 2,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "혜택업체: 27곳 (2026년 9월 17일 기준으로 운영 중인 업체)"
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 2,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "이용 건수: 2024년 6월 ~ 2026년 8월 합계 "
+},
+{
+"text": "19,353건",
+"bold": true
+},
+{
+"text": ". 월평균은 536건 → 709건 → 888건으로 조금씩 늘고 있다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 2,
+"note": false
+},
+{
+"kind": "table",
+"left": false,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "기간"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "이용 건수"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "월평균"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2024년 6~12월"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "3,750건"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "536건"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2025년"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "8,503건"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "709건"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2026년 1~8월"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "7,100건"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "888건"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "합계",
+"bold": true
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "19,353건",
+"bold": true
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 2 안동 디지털관광주민증 이용 건수 (안동시 정보공개청구 회신) >"
+}
+]
+},
+{
+"kind": "note",
+"runs": [
+{
+"text": "※ 회신에는 업체별 이용 건수가 없고, '이용 건수'가 할인 적용 건인지 QR 인증 건인지도 적혀 있지 않다."
+}
+]
+},
+{
+"kind": "table",
+"left": false,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "업종"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "업체 수"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "전체 27곳 중 비중"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "숙박 (고택·한옥 3곳 포함)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "7"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "25.9%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "식음료 (카페 2곳 포함)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "6"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "22.2%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "체험"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "4"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "14.8%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "전시·박물관"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "3"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "11.1%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "관광지"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "7.4%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "여행상품"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "3.7%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "확인 안 됨"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "4"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "14.8%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "합계",
+"bold": true
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "27",
+"bold": true
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "100%",
+"bold": true
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 3 안동 디지털관광주민증 혜택업체 구성 (업종은 상호명을 보고 팀이 분류) >"
+}
+]
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "04 안동은 왜 디지털관광주민증을 계속 써야 하고, 무엇을 바꿔야 할까?",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "1. 쓸 이유 : 이용이 늘고 있고, 전국에서도 커지는 제도다"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "안동 이용 건수 월평균은 536건(2024년) → 709건(2025년) → 888건(2026년 1~8월)으로 계속 늘고 있다(표 2)."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 3,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "전국 운영 지역은 2022년 2곳에서 2026년 52곳으로 늘었고, 누적 발급은 411만 건(2024년 12월 말, 문화체육관광부 2025.3.26 보도)이다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 3,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "언론에 보도된 지역별 발급 규모도 작지 않다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 3,
+"note": false
+},
+{
+"kind": "table",
+"left": false,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "지역"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "발급 인원"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "기준 시점"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "옥천군"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "47,861명"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2023.10"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "단양군"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "25,000명"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2023.10"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "제천시"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "5만 명"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2024.6"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "안동시"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "6만 1천여 명"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2024.9"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 4 지역별 디지털관광주민증 발급 규모 (언론 보도 기준) >"
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "2. 성공 사례 : 옥천군 (2023년 경진대회 공공 부문 대상)"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "옥천군은 이 경진대회에서 디지털관광주민증으로 대상을 받았다("
+},
+{
+"text": "역대 수상작 인터뷰",
+"bold": true,
+"color": "38761D"
+},
+{
+"text": ")."
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "데이터랩에서 사람이 많이 찾는 관광지 중 유료 관광지를 먼저 혜택업소로 넣고, 지역 맛집 검색 순위대로 식음 업소를 섭외했다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 4,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "혜택업소 15곳에서 14,292건이 사용됐고, 가장 많이 쓰인 곳은 인기 관광지 1위(수생식물학습원)였다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 4,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "인근 지자체보다 낮던 검색·소비 순위가 2022년 12월 이후 앞서기 시작했다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 4,
+"note": false
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "옥천이 잘 된 이유는 "
+},
+{
+"text": "사람이 이미 가는 곳에 혜택을 붙였기 때문",
+"bold": true
+},
+{
+"text": "이다."
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "3. 그런데 안동은 반대다"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "혜택업체가 사람이 많은 곳에 없다.",
+"bold": true
+},
+{
+"br": true
+},
+{
+"text": "외지인 방문이 가장 많은 중구동(원도심, 안동 전체 방문의 12.5%)에는 혜택업체가 한 곳도 없다. 반면 방문 순위 12번째인 도산면(2.4%)에는 6곳이 모여 있다. 혜택이 유교문화 시설 쪽에 붙어 있고, 사람이 모이는 원도심에는 없다. "
+},
+{
+"text": "(",
+"small": true,
+"color": "444444"
+},
+{
+"text": "데이터랩 읍면동별 외지인 방문, 2026년 1~8월",
+"small": true,
+"color": "38761D",
+"bold": true
+},
+{
+"text": "과 혜택업체 주소를 대조. 전체는 15절 그림 4)",
+"small": true,
+"color": "444444"
+}
+],
+"list": "ol",
+"level": 0,
+"list_id": 5,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "업체마다 따로 할인한다.",
+"bold": true
+},
+{
+"br": true
+},
+{
+"text": "식사 → 체험 → 저녁 일정으로 이어지게 묶은 혜택이 없다. 식당 혜택업체는 4곳뿐이다."
+}
+],
+"list": "ol",
+"level": 0,
+"list_id": 5,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "밤에 사람이 모이는 월영교 주변에는 혜택이 거의 없다.",
+"bold": true
+},
+{
+"br": true
+},
+{
+"text": "월영교 반경 1km 안 혜택업체는 카페 1곳(카페구름마루, 22시 마감)이다."
+}
+],
+"list": "ol",
+"level": 0,
+"list_id": 5,
+"note": false
+},
+{
+"kind": "ins",
+"runs": [
+{
+"text": "=> "
+},
+{
+"text": "제도를 새로 만들 필요는 없다. 옥천처럼 사람이 가는 곳에 혜택을 붙이고, 그 혜택을 동선으로 이어야 한다. 그래서 관광객이 실제로 어디에 가고 어디서 돈을 쓰는지를 데이터로 확인했다.",
+"shade": "FFF2CC"
+}
+]
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "05 안동 방문객 및 관광 소비 데이터 (출처 : 한국관광 데이터랩)",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "1. 방문은 늘었는데 방문당 소비는 줄었다"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "데이터 : "
+},
+{
+"text": "이동통신 방문자 수",
+"bold": true,
+"color": "38761D"
+},
+{
+"text": ", "
+},
+{
+"text": "신용카드 외지인 관광소비",
+"bold": true,
+"color": "38761D"
+},
+{
+"text": " (2024년, 2026년 모두 1~8월)"
+}
+]
+},
+{
+"kind": "img",
+"src": "fig1_5개도시.png"
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 그림 1 5개 도시 방문 및 방문당 관광소비 증감률 >"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "안동은 방문이 +5.6% 늘었지만 방문당 관광소비는 -2.8%로 줄었다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 6,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "같은 기간 경주 +8.3%, 군산 +9.9%, 포항 +5.0%, 전주 +0.6%로 비교한 네 도시는 모두 늘었다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 6,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "포항과 전주는 카드 자료가 구 단위로 나뉘어 있어 두 구를 합쳐 계산했다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 6,
+"note": true
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "2. 그중에서도 체험·문화 소비가 크게 줄었다"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "체험·문화 소비는 문화서비스, 관광유원시설, 기타레저 업종의 외지인 카드 소비를 방문 연인원으로 나눈 값이다. 골프장, 스키장, 여행업, 레저용품 쇼핑은 뺐다."
+}
+]
+},
+{
+"kind": "img",
+"src": "fig2_체험문화_분포.png"
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 그림 2 146개 시·군 방문당 체험·문화 소비 증감률 >"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "안동 183.5원 → 152.7원 ("
+},
+{
+"text": "-16.8%",
+"bold": true
+},
+{
+"text": "). 전국 146개 시·군 중앙값은 -2.0%이고, 안동은 감소폭이 "
+},
+{
+"text": "22번째로 크다.",
+"bold": true
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 7,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "2026년 수준(152.7원)은 146곳 중 87위로 중앙값(179.7원)보다 낮지만 최하위권은 아니다. 그래서 \"낮다\"보다 "
+},
+{
+"text": "\"빠르게 줄고 있다\"",
+"bold": true
+},
+{
+"text": "가 맞는 표현이다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 7,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "업종 범위, 기준연도, 비교 대상을 바꿔 18가지로 다시 계산해도 안동은 모두 감소(-8.1% ~ -18.2%)였다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 7,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "같은 기간 경주는 302.3원으로 안동의 약 2배다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 7,
+"note": false
+},
+{
+"kind": "ins",
+"runs": [
+{
+"text": "=> "
+},
+{
+"text": "줄어든 것은 체험·문화 소비다. 어느 관광지에서 결제가 끊기는지 보려고 관광지 단위 자료를 찾았다.",
+"shade": "FFF2CC"
+}
+]
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "06 한국철도공사 8대 도시 관광분석 : 안동시 분석 (2022)",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "한국철도공사가 코레일, KCB, SKT, 신한카드의 가명정보를 결합해 만든 분석이다. 2022년 4~6월 안동 방문객 113,556명(안동 거주자 제외)이 관광지 19곳 중 어디를 가고 어디서 카드를 썼는지 볼 수 있다. 관광지별로 방문 점유율과 소비 건수 점유율을 나란히 놓으면, "
+},
+{
+"text": "사람이 가는 곳과 돈을 쓰는 곳이 다르다.",
+"shade": "FFF2CC"
+}
+]
+},
+{
+"kind": "table",
+"left": false,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "관광지"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "방문 점유율"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "소비 건수 점유율"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "소비 전환 배율"
+},
+{
+"br": true
+},
+{
+"text": "(소비 ÷ 방문)"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "문화의거리 (원도심)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "18.85%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "32.66%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1.73"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "옥동신도시"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "15.88%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "24.51%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1.54"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": true,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "월영교"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "15.24%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "6.05%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.40"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "중앙신시장"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "11.80%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "12.92%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1.09"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "문화관광단지"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "11.02%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2.28%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.21"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": true,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "하회마을"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "6.29%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.40%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.06"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "도산서원"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2.27%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.65%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.29"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 5 안동 주요 관광지 방문·소비 점유율 (19개 관광지 기준) >"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "하회마을은 방문의 6.29%를 차지하지만 소비 건수는 0.40%다(배율 0.06). 원도심 문화의거리는 1.73다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 8,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "만휴정 방문자의 54.8%, 도산서원 방문자의 54.2%가 월영교도 방문했다. 외곽 관광지를 보고 시내로 돌아오는 길에 월영교를 들르는 것으로 보인다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 8,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "그런데 월영교도 배율이 0.40이고, 소비 건수의 25.8%가 편의점, 숙박은 0.3%다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 8,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "안동은 8개 도시 중 관광지를 함께 방문하는 비율이 가장 낮다. 연관 규칙으로 잡힌 조합 중 가장 많이 함께 간 조합도 5.2%이고, 강릉은 16.5%, 목포는 17.0%다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 8,
+"note": false
+},
+{
+"kind": "note",
+"runs": [
+{
+"text": "※ 2022년 4~6월 한 시점의 자료이고, 소비는 금액이 아니라 건수다. 시간대 정보는 없다. 경북도청(방문 8.58%)은 편의점, 주유 같은 업무 소비가 섞여 있어 표에서 뺐다."
+}
+]
+},
+{
+"kind": "ins",
+"runs": [
+{
+"text": "=> "
+},
+{
+"text": "결제가 끊기는 곳은 두 곳이다. 낮에 보고 가는 하회마을, 외곽을 돌고 돌아오며 들르는 월영교.",
+"shade": "FFF2CC"
+}
+]
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "07 안동 관광지 검색 데이터 (T맵 목적지 검색)",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "관광지 검색 수를 그 시·군 전체 목적지 검색 수로 나눠 2018년과 2025년을 비교했다. 안동 전체 목적지 검색은 43만 건에서 127만 건으로 2.95배 늘었다."
+}
+]
+},
+{
+"kind": "table",
+"left": false,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "관광지"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2018년"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2025년"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "증감률"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": true,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "하회마을 (안동시)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "11.4%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "5.1%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "-54.8%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "월영교 (안동시)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "5.8%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "3.7%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "-37.0%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "도산서원 (안동시)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "3.2%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2.1%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "-33.9%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "불국사 (경주시)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "4.8%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "3.1%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "-35.8%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "동궁과월지 (경주시)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2.5%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1.6%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "-35.9%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "경주월드 (경주시)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2.2%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1.5%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "-31.5%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "부석사 (영주시)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "10.8%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "8.4%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "-22.4%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 6 관광지 목적지 검색 비중 변화 (관광지 검색 ÷ 시·군 전체 목적지 검색) >"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "다른 관광지는 -22% ~ -37%로 비슷하게 줄었는데, "
+},
+{
+"text": "하회마을만 -54.8%로 절반 넘게 줄었다.",
+"bold": true
+},
+{
+"text": " 표 5의 하회마을 소비 배율 0.06과 같은 곳을 가리킨다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 9,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "관심관광지 검색 중 역사유적지 비중은 2026년 1~8월 안동 26.4%, 경주 18.4%로 볼거리 수요 자체는 있다. (2025년 1~8월에는 22.0%, 21.8%로 비슷했다.)"
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 9,
+"note": false
+},
+{
+"kind": "ins",
+"runs": [
+{
+"text": "=> "
+},
+{
+"text": "볼거리 수요는 있는데 하회마을은 결제도, 검색 관심도 줄고 있다. 관람 뒤에 이어질 유료 체험이 필요하다.",
+"shade": "FFF2CC"
+}
+]
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "08 안동 여행 당일치기 비율 및 시간대별 승하차",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "1. 당일치기 비율"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "무박(당일) 비중: 2019년 86.3% → 2025년 86.4% (연간). 1~8월로 보면 2024년 85.7% → 2026년 86.5%."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 10,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "KTX 개통 이후 당일치기가 크게 늘었다고 보기는 어렵다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 10,
+"note": false
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "2. 안동역 주말 시간대별 승차"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "데이터 : "
+},
+{
+"text": "코레일 안동역 시간대별 승하차",
+"bold": true,
+"color": "38761D"
+},
+{
+"text": " (KTX-이음, 새마을, 무궁화 전체)"
+}
+]
+},
+{
+"kind": "img",
+"src": "fig3_안동역_주말승차.png"
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 그림 3 안동역 주말 시간대별 승차 인원 (2026년 1~8월 합계) >"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "저녁 승차는 18~19시가 13,454명(10.8%)으로 가장 많다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 11,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "막차는 21~22시이고, 22시 이후에는 승차가 0명이다(열차가 없다)."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 11,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "값은 그 달 주말 전체의 합계이고, 안동 주민도 포함되어 있다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 11,
+"note": true
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "3. 원도심 ↔ 월영교 시내버스"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "원도심과 월영교를 잇는 노선은 112번 하나이고, 평일 방향별로 하루 6회 다닌다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 12,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "막차는 원도심 출발 "
+},
+{
+"text": "18:45",
+"bold": true
+},
+{
+"text": ", 월영교 출발 "
+},
+{
+"text": "19:00",
+"bold": true
+},
+{
+"text": "이다(출발지 기준 시각). 안동역과 원도심 사이는 막차가 22시대(22:10, 22:40)다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 12,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "안동시 버스정보시스템 시간표(2026.9.22 조회). 공휴일 시간표는 따로 게시되어 있지 않다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 12,
+"note": true
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "밤에 안동에 머무는 사람 자체는 적지 않다. 21~24시 외지인 방문 비중은 8.89%로 전국 상위 36%이고, 저녁 전환율(18~21시 ÷ 14~18시)도 0.557로 전국 중앙값(0.559)과 같다."
+}
+]
+},
+{
+"kind": "ins",
+"runs": [
+{
+"text": "=> "
+},
+{
+"text": "당일치기가 늘어난 것이 아니다. 밤에 갈 곳과 이동 수단이 부족하고, 열차 막차(21~22시)와 버스 막차(18:45)가 밤 동선의 시간 제약이다.",
+"shade": "FFF2CC"
+}
+]
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "09 원도심과 월영교 음식점 현황",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "1. 원도심과 월영교 반경 1km 음식점 업종"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "소상공인 상가정보(2026.6.30)로 원도심(안동구시장 기준)과 월영교 반경 1km 음식점을 업종별로 셌다."
+}
+]
+},
+{
+"kind": "table",
+"left": false,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "업종"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "원도심 (곳)"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "원도심 비중"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "월영교 (곳)"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "월영교 비중"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "342"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "44.8%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "10"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "58.8%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "기타 간이음식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "161"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "21.1%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.0%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "카페 (비알코올)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "127"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "16.6%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "6"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "35.3%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": true,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "주점"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "86"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "11.3%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.0%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "중식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "15"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2.0%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.0%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "양식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "13"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1.7%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "5.9%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "일식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "12"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1.6%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.0%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "구내식당·뷔페"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "5"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.7%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.0%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "동남아시아"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "3"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.4%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.0%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "합계",
+"bold": true
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "764",
+"bold": true
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "100%"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "17",
+"bold": true
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "100%"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 7 원도심과 월영교 반경 1km 음식점 업종 구성 (소상공인 상가정보 2026.6.30) >"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "원도심은 764곳으로 한식(342곳), 기타 간이음식(161곳), 카페(127곳), 주점(86곳)이 모여 있다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 13,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "월영교는 17곳뿐이고 한식 10곳, 카페 6곳, 양식 1곳이다. "
+},
+{
+"text": "주점은 없다.",
+"bold": true
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 13,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "원도심 식당 영업시간은 표본 60곳 중 공식 등록 정보가 있는 8곳을 먼저 확인했다. 8곳 모두 21시를 넘겨 열지 않았다(21:00 4곳, 20:30 1곳, 20:00 1곳, 18:00 2곳). 나머지는 토요일 현장조사로 확인한다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 13,
+"note": false
+},
+{
+"kind": "note",
+"runs": [
+{
+"text": "※ 상가정보는 음식점 업종만 뽑은 자료라 소매점 같은 다른 업태는 들어 있지 않다."
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "2. 월영교 반경 1km 음식점 영업 종료 시각 (팀 현장 확인, 2026.9.19)"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "월영교 반경 1km 음식점 18곳(소상공인 상가정보 17곳 + 현장에서 확인한 카페 1곳)의 영업 종료 시각을 확인했다."
+}
+]
+},
+{
+"kind": "table",
+"left": false,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "상호"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "업종"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "영업 종료"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "비고"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "맛50년헛제사밥"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "20:00"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "안동댐간고등어직영식당"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "20:00"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "옛날촌동네"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "20:00"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "호반정"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "20:00"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "고센피제리아안동댐점"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "양식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "20:30"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "삼일가든"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "20:30"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "이정식당"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "20:30"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "안동김대감"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "21:00"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "와룡가든"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "21:00"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "라라룬"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "카페"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "22:00"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "월영당"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "카페"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "22:00"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "카페구름마루"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "카페"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "22:00"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "주민증 혜택업체"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "콩깍지"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "22:00"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "월영교달방"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "카페"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "23:00"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "핸즈안동댐점"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "카페"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "23:00"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "나우커피안동댐점"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "카페"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "24:00"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "카페앤드레스토랑"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "카페"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "-"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "폐업"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "동해가든식당"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한식"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "-"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "폐업"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 8 월영교 반경 1km 음식점 영업 종료 시각 >"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "영업 중인 곳은 16곳이다(2곳 폐업)."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 14,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "식당 10곳 중 7곳이 20:30까지 문을 닫는다(한식 6곳, 양식 1곳)."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 14,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "21시까지 식사가 되는 곳은 3곳이고, 21시를 넘겨 여는 식당은 콩깍지(22:00) 1곳이다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 14,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "22시 이후에는 카페 3곳만 남는다. "
+},
+{
+"text": "주점은 없다.",
+"bold": true
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 14,
+"note": false
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "3. 두 곳을 같은 기준으로 비교"
+}
+]
+},
+{
+"kind": "table",
+"left": false,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "항목"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "원도심"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "월영교"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "반경 1km 음식점"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "764곳"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "17곳"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "그중 주점"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "86곳 (11.3%)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0곳"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "소비 전환 배율 (철도공사, 2022)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1.73 (문화의거리)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.40"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "시내버스 막차 (평일, 112번)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "월영교행 18:45"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "원도심행 19:00"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 9 원도심과 월영교 비교 (상가정보 2026.6.30, 한국철도공사 2022, 안동시 버스정보시스템) >"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "한국관광 데이터랩의 경북 야간 검색 상위 135칸(9개 분류 × 상위 5곳 × 3개 기간) 중 안동은 5칸이고, 그중 3칸이 월영교다. 경주는 62칸이다. 밤에 찾는 안동 관광지는 사실상 월영교 하나다."
+}
+]
+},
+{
+"kind": "ins",
+"runs": [
+{
+"text": "=> "
+},
+{
+"text": "월영교는 사람이 모이는데 밤에 밥 먹고 머물 곳이 없다. 원도심은 가게가 많지만 밤에 월영교까지 가는 교통이 없다.",
+"shade": "FFF2CC"
+}
+]
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "10 아이디어 : '안동 이어드림'과 현재 시행 중인 '안동 반값여행'의 차이",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "앞에서 확인한 세 가지를 하나의 동선으로 이었다."
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "원도심에는 사람과 식당이 많고 결제도 많다 → 여기서 출발한다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 15,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "하회마을처럼 관람 뒤 결제가 끊긴다 → 식사 뒤 유료 체험으로 연결한다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 15,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "월영교는 밤에 사람이 모이는데 먹을 곳과 가는 교통이 없다 → 밤 이동과 월영교 팝업을 붙인다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 15,
+"note": false
+},
+{
+"kind": "flow",
+"runs": [
+{
+"text": "(1단계) 원도심 식사 후 영수증 QR 인증 → 유료 체험 혜택 ⇒"
+}
+]
+},
+{
+"kind": "flow",
+"runs": [
+{
+"text": "(2단계) 안동관광택시 유휴 시간대를 활용한 원도심 → 월영교 야간 이동 ⇒"
+}
+]
+},
+{
+"kind": "flow",
+"runs": [
+{
+"text": "(3단계) 월영교 야간 팝업 포차에서 저녁 식사, 주류"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "운영 시간은 18:30 ~ 21:00으로 잡았다. 안동역 주말 승차가 18~19시에 가장 많고, 막차가 21~22시이기 때문이다(그림 3). 새 앱을 만들지 않고 디지털관광주민증 QR 위에 세 단계를 얹는다."
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "안동 반값여행과의 차이"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "안동 반값여행은 여행을 마친 뒤 영수증을 제출하면 경비 일부를 돌려주는 사업이다. 2026년 1차 모집에는 6,715명이 신청해 5시간여 만에 마감됐다(아주경제, 2026.9.17). 지정 관광지는 36곳이고, 교통비는 관광택시와 시티투어만 인정된다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 16,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "반값여행은 "
+},
+{
+"text": "쓴 돈을 돌려주는",
+"bold": true
+},
+{
+"text": " 방식이고, 이어드림은 "
+},
+{
+"text": "다음에 어디로 갈지를 정해 주는",
+"bold": true
+},
+{
+"text": " 방식이다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 16,
+"note": false
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "11 정책 전환을 통해 달성하고자 하는 지향점",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "하나로 이어지는 동선",
+"bold": true
+},
+{
+"text": " : 업체마다 따로 주던 할인을 \"식사 → 체험 → 야간 이동 → 월영교\"로 묶는다."
+}
+],
+"list": "ol",
+"level": 0,
+"list_id": 17,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "사람이 모이는 곳에 결제 지점 만들기",
+"bold": true
+},
+{
+"text": " : 방문이 가장 많은 원도심과, 외곽 방문자가 돌아오며 들르는 월영교에 체험 결제와 야간 식음 결제를 붙인다."
+}
+],
+"list": "ol",
+"level": 0,
+"list_id": 17,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "구축비 최소화",
+"bold": true
+},
+{
+"text": " : 이미 운영 중인 주민증 QR, 관광택시, 공공 부지를 활용한다."
+}
+],
+"list": "ol",
+"level": 0,
+"list_id": 17,
+"note": false
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "12 데이터를 기반으로 도출한 문제점 및 현안사항",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "05~09에서 확인한 내용을 제출서 문제점 문장으로 정리했다."
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "1. [체험·문화 소비] 방문객 증가 대비 체험 소비 급감(-16.8%, 전국 중앙값 -2.0%)과 유료 콘텐츠 전환 부족"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "안동시는 방문객과 숙박 소비가 크게 증가하였으나, 레저용품 쇼핑을 제외한 실질 체험·문화 소비는 2024년 1~8월 방문당 183.5원에서 2026년 같은 기간 152.7원으로 -16.8% 감소했습니다. 같은 기간 "
+},
+{
+"text": "전국 146개 시·군의 중앙값이 -2.0%",
+"bold": true
+},
+{
+"text": "인 점에 비추어, 안동은 감소폭이 22번째로 큰 지역입니다. 수준 또한 "
+},
+{
+"text": "경주(302.3원)의 절반(50.5%)",
+"bold": true
+},
+{
+"text": "에 머물러 있습니다."
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "특히 2026년 1~8월 안동의 관심관광지 검색 중 역사유적지 비중은 26.4%로 경주(18.4%)보다 높아, 볼거리 수요 자체는 형성되어 있습니다. 그러나 대표 유적인 하회마을은 방문객 점유율 6.29%에 비해 소비 건수 점유율이 0.40%에 그쳐 소비 전환 배율이 0.06에 불과합니다(원도심 1.73). 목적지 검색에서도 하회마을 비중은 11.4%에서 5.1%로 낮아져, 같은 기간 -30%대에 머문 경주 불국사·동궁과월지 등 전국 주요 유적과 뚜렷이 구분되는 하락을 보였습니다. 관람 수요가 지역 내 유료 결제로 이어지지 않는 구조적 단절입니다."
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "2. [야간 동선 집결 및 식음 인프라 부재] 월영교 방문객 유입(외곽 관광객 54.8% 집결) 대비 야간 식사 가능 업소 비율 18.8%(16곳 중 3곳)로 소비 전환 한계"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "안동 외곽 주요 관광지 방문객의 절반 이상이 월영교를 함께 찾습니다(만휴정 54.8%, 도산서원 54.2%). 그러나 월영교 반경 1km에서 영업 중인 음식점 16곳 가운데 21시까지 식사가 가능한 곳은 3곳(18.8%)이며, 식당 7곳(43.8%)이 20:00~20:30 사이 영업을 종료하여 밤 시간대 식음 인프라가 제한적인 상황입니다. 주점은 한 곳도 없습니다."
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "월영교의 방문 점유율(15.24%) 대비 소비건수 점유율은 6.05%(소비 전환 배율 0.40)에 그치며, 소비 건수 중 편의점이 25.8%, 숙박이 0.3%를 차지합니다. 반면 실질 소비 상권인 원도심(음식점 764곳, 소비 전환 배율 1.73)은 월영교와 3.2km 떨어져 있으나, 두 곳을 잇는 시내버스는 112번 한 노선이고 원도심 출발 막차가 18:45(평일)여서 19시 이후에는 대중교통 연결이 없습니다. 유입된 방문객이 밤 시간대 지역 상권 소비로 이어지지 못하고 있습니다."
+}
+]
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "13 해결방안 : 디지털관광주민증 기반 '안동 이어드림' 프로젝트",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "stage",
+"runs": [
+{
+"text": "1단계 : [식음 → 체험 연계] 원도심 F&B 이용객 대상 유료 체험·문화 소비 결제 전환 유도"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "현안 해결 : 높은 외식 지출 및 역사유적 볼거리 수요 대비 체험·문화 소비 급감(-16.8%, 전국 중앙 -2.0%)과 하회마을 소비 전환 배율 0.06 문제 해결"
+}
+],
+"list": "ol",
+"level": 0,
+"list_id": 18,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "실행 방안 "
+}
+],
+"list": "ol",
+"level": 0,
+"list_id": 18,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "방문 연동 : 외지인 방문 및 지출 1위 거점인 원도심 F&B(찜닭골목, 간고등어, 안동국시 등) 이용 후 영수증 QR 인증 또는 디지털관광주민증 스탬프 적립을 연동한다."
+}
+],
+"list": "ul",
+"level": 1,
+"list_id": 19,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "시즌 혜택 : 안동국제탈춤페스티벌, 월영야행 등 축제 기간에는 우선 체험권, 명당 좌석 관람권, 메인 공연 패스트트랙 등 비가격 혜택을 준다."
+}
+],
+"list": "ul",
+"level": 1,
+"list_id": 19,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "비시즌 혜택 : 하회탈 만들기, 전통 양조장 투어, 월영교 문보트 등 유료 체험 시설의 단계별 할인 쿠폰을 바로 발급한다."
+}
+],
+"list": "ul",
+"level": 1,
+"list_id": 19,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "데이터 피드백 : 기존 10% 할인의 실제 유인 효과를 보기 위해 '적정 체감 할인율 및 체류 유인 요소' 설문을 함께 진행한다."
+}
+],
+"list": "ul",
+"level": 1,
+"list_id": 19,
+"note": false
+},
+{
+"kind": "stage",
+"runs": [
+{
+"text": "2단계 : [야간 이동성 확보] 안동관광택시 유휴 시간대 연계 야간 셔틀 및 드라이브 코스 개방"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "현안 해결 : 원도심과 월영교 간(3.2km) 19시 이후 시내버스가 없고(112번 막차 18:45) 동선이 끊겨 밤 시간대에 이탈하는 문제 해결"
+}
+],
+"list": "ol",
+"level": 0,
+"list_id": 20,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "실행 방안 "
+}
+],
+"list": "ol",
+"level": 0,
+"list_id": 20,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "유휴 관광택시 연동 : 낮에 몰리고 밤에 가동률이 떨어지는 안동관광택시의 유휴 시간대를 디지털관광주민증 앱과 연동한다."
+}
+],
+"list": "ul",
+"level": 1,
+"list_id": 21,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "야간 전용 코스 : 원도심 → 월영교 '야간 전용 셔틀' 또는 '월영교-낙동강 야간 드라이브 코스'를 정액 환승·제휴로 개방한다."
+}
+],
+"list": "ul",
+"level": 1,
+"list_id": 21,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "동선 단절 해소 : 대중교통이 끊기는 밤 시간대 이동 장벽을 없애, 원도심 식음 소비 방문객을 월영교로 이어 준다."
+}
+],
+"list": "ul",
+"level": 1,
+"list_id": 21,
+"note": false
+},
+{
+"kind": "stage",
+"runs": [
+{
+"text": "3단계 : [야간 식음 체류 확장] 월영교 권역 청년창업·소상공인 야간 팝업 포차 거리 조성"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "현안 해결 : 월영교 권역에서 21시까지 식사가 되는 곳이 영업 중 16곳 중 3곳(18.8%)뿐이고 주점이 없으며, 소비 건수의 25.8%가 편의점인 문제 해결"
+}
+],
+"list": "ol",
+"level": 0,
+"list_id": 22,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "실행 방안 "
+}
+],
+"list": "ol",
+"level": 0,
+"list_id": 22,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "공유 부스 및 푸드트럭 존 : 영업이 일찍 끝나는 월영교 인근 공공 부지에 대학 축제 형태의 청년창업가·소상공인 야간 팝업 부스와 푸드트럭 거리를 만든다."
+}
+],
+"list": "ul",
+"level": 1,
+"list_id": 23,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "체류시간 및 밤 소비 증대 : 월영교 주변에 야간 식음과 주류(안동소주·막걸리 페어링) 공간을 마련해 소비 전환 배율(0.40)을 높인다."
+}
+],
+"list": "ul",
+"level": 1,
+"list_id": 23,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "상생형 재정 지원 : 지역 청년과 소상공인에게 부스를 무료 또는 최소 임대료로 개방한다."
+}
+],
+"list": "ul",
+"level": 1,
+"list_id": 23,
+"note": false
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "14 기대효과",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "소비 체질 개선",
+"bold": true
+},
+{
+"text": " : 원도심 F&B 지출을 유료 체험·문화 시설 결제로 연계하여, 전국 중앙값(179.7원)을 밑도는 방문당 체험·문화 소비(152.7원)의 회복 도모"
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 24,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "야간 소비 확대",
+"bold": true
+},
+{
+"text": " : 야간 이동 수단과 월영교 팝업 포차로 밤 시간 체류를 늘리고, 월영교 소비 전환 배율(0.40)을 높인다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 24,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "주민증 이용 확대",
+"bold": true
+},
+{
+"text": " : 할인만 주는 대신 동선에 맞춘 혜택(우선 체험권, 이동 편의, 야간 먹거리)으로 실제 방문과 결제를 늘린다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 24,
+"note": false
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "15 서식4(활용사례) 구성 미리보기",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "서식4는 개조식 2~3장이고, 머리칸과 본문 네 칸(1 문제점, 2 데이터 활용 방안, 3 사업 개선·적용 사례, 4 추진성과·기대효과)이 정해져 있다(공모요강). 지금까지의 분석과 결과물 7개가 어느 칸에 들어가는지 정리했다."
+}
+]
+},
+{
+"kind": "table",
+"left": true,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "칸"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "분량"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "들어가는 것"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "머리칸"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.4장"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "제목, 데이터랩 데이터, 타분야 데이터, 성과분야, 핵심성과, 계량성과"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1) 문제점"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.4장"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "문제 수치 3개 (먼저 흔한 설명 2개 기각)"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2) 데이터 활용 방안"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1장"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "① 혜택 배치 진단, ② 운영 시간 창, ④ 월영교 영업 종료 (본문 그림 2개)"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "3) 사업 개선·적용 사례"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.6장"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "운영안 표, ③ 교통 공백 확인"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "4) 추진성과·기대효과"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0.6장"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "⑤ 예상 효과, ⑥ 사후 검증계획, ⑦ 전국 진단표 (본문 표 1개)"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "합계",
+"bold": true
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "약 3장",
+"bold": true
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "나머지 상세는 참고자료(zip)로 제출"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 10 서식4 칸별 분량 배분 >"
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "머리칸 (첫 쪽 상단 표)"
+}
+]
+},
+{
+"kind": "table",
+"left": true,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "항목"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "초안"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "응모작 제목"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "사람 없는 곳에 붙은 혜택, 막차 앞에서 끊긴 밤: 데이터로 다시 잇는 안동 이어드림 "
+},
+{
+"text": "(초안, 팀 결정 필요)",
+"small": true,
+"color": "444444"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "데이터랩 데이터 (필수)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "지역별 관광 현황(외지인 방문, 시간대), 신용카드 관광소비, 읍면동 방문자, 중심·연관 관광지, 내비게이션 검색, 야간관광 현황, 축제 현황"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "타분야 데이터 (선택)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "코레일 안동역 시간대별 승하차, 소상공인 상가(상권)정보, 안동시 디지털관광주민증 혜택업체(정보공개청구), 한국철도공사 8대 도시 가명결합 분석, 안동시 버스정보시스템 시간표"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "성과분야 (1개)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "전략수립 및 기획"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "핵심성과 (1~2줄)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "데이터랩 방문·소비 자료와 철도·상가·주민증 자료를 결합해 혜택 배치의 공백과 막차 제약을 찾아내고, 원도심과 월영교를 잇는 3단계 야간 릴레이 운영안을 설계 "
+},
+{
+"text": "(초안)",
+"small": true,
+"color": "444444"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계량성과"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "현장조사 후 입력. 섭외 동의 업소 수, 안내카드 배포 수 대비 QR 스캔 수, 택시 호출 대기시간처럼 "
+},
+{
+"text": "실제로 센 숫자만",
+"bold": true
+},
+{
+"text": " 쓴다."
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 11 서식4 머리칸 초안 >"
+}
+]
+},
+{
+"kind": "note",
+"runs": [
+{
+"text": "※ 공모요강의 계량성과 예시가 모두 실적(방문객 50% 증가 등)이라 가장 약한 칸이다. 운영 시간 창이나 대상 인원 같은 설계 수치는 성과가 아니라서 이 칸에 쓰지 않는다."
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "1) 문제점 또는 현안사항"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "방문당 체험·문화 소비 "
+},
+{
+"text": "-16.8%",
+"bold": true
+},
+{
+"text": " (2024→2026년 1~8월, 전국 중앙 -2.0%, 146곳 중 감소폭 22번째)"
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 25,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "하회마을 소비 전환 배율 "
+},
+{
+"text": "0.06",
+"bold": true
+},
+{
+"text": " (방문 6.29% vs 소비 건수 0.40%, 2022년 4~6월)"
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 25,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "월영교 반경 1km 주점 "
+},
+{
+"text": "0곳",
+"bold": true
+},
+{
+"text": " (원도심 1km는 764곳 중 86곳)"
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 25,
+"note": false
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "그 앞에 흔한 설명 두 개를 한 줄씩 기각한다. 관광객은 줄지 않았고(방문 +5.6%), 당일치기도 늘지 않았다(무박 86.3% → 86.4%)."
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "2) 현안사항 해결을 위한 데이터 활용 방안 (결과물 ① ② ④)"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "분량을 가장 많이 쓰는 칸이다. ①②는 성과가 아니라 운영안의 값을 정한 분석이라 이 칸에 들어간다."
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "① 식음 → 체험 연결 : 혜택 배치 진단",
+"bold": true
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "외지인이 가장 많이 찾는 "
+},
+{
+"text": "중구동(12.5%)에는 혜택업체가 0곳",
+"bold": true
+},
+{
+"text": "이고, 방문 12번째인 "
+},
+{
+"text": "도산면(2.4%)에 6곳",
+"bold": true
+},
+{
+"text": "이 몰려 있다. 혜택은 유교문화 시설에 붙어 있고, 사람이 모이는 원도심에는 없다."
+}
+]
+},
+{
+"kind": "img",
+"src": "fig4_혜택배치.png"
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 그림 4 읍면동별 외지인 방문 점유율과 주민증 혜택업체 수 >"
+}
+]
+},
+{
+"kind": "note",
+"runs": [
+{
+"text": "※ 외지인 방문은 "
+},
+{
+"text": "데이터랩 읍면동별 외지인 방문자 수(2026년 1~8월 합계)",
+"bold": true,
+"color": "38761D"
+},
+{
+"text": ", 혜택업체는 안동시 정보공개청구 회신(9월 17일 기준 27곳). 읍·면 주소는 그대로 쓰고, 도로명만 있는 9곳은 소상공인 상가정보에서 같은 주소나 같은 도로의 행정동으로 찾았다. 읍면동 방문에는 업무 방문이 섞인다(풍산읍은 바이오단지 영향). 그래서 관광 목적이 뚜렷한 중구동과 도산면 비교만 핵심으로 쓴다."
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "② 운영 시간 창 : 안동역 주말 승차",
+"bold": true
+},
+{
+"text": " (그림 3)"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "주말 저녁 승차는 18~19시가 13,454명으로 가장 많고, 막차는 21~22시다. 22시 이후에는 떠날 열차가 없다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 26,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "그래서 릴레이는 18:30에 시작해 21:00에 끝나야 막차 전에 닿는다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 26,
+"note": false
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "④ 야간 팝업 : 월영교 1km 영업 종료 시각",
+"bold": true
+},
+{
+"text": " (표 8)"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "식당 10곳 중 7곳이 20:30까지 닫고, 22시 이후에는 카페만 남는다. 주점은 0곳이다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 27,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "팝업이 채울 것은 21시 이후 식사와 주점이다. 부스 개수는 예상 수요와 부스당 처리량이 있어야 정할 수 있어 \"무엇이 비었나\"까지만 정한다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 27,
+"note": false
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "3) 데이터 활용을 통한 사업 개선 및 적용 사례"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "2)에서 나온 숫자가 운영안의 어느 값을 정했는지 보여주는 칸이다."
+}
+]
+},
+{
+"kind": "table",
+"left": true,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "운영안 항목"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "정한 값"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "정한 근거"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "릴레이 운영 시간"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "18:30 시작 → 21:00 종료"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "주말 승차 18~19시 최대(13,454명), 막차 21~22시 (②)"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1단계 섭외 우선 권역"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "중구동 (원도심)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "외지인 방문 1위(12.5%)인데 혜택업체 0곳 (①)"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "3단계 팝업이 채울 것"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "21시 이후 식사, 주점"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "월영교 식당 10곳 중 7곳이 20:30까지 마감, 주점 0곳 (④)"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "야간 이동 수단"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "교통 공백 확인 후 결정"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "112번 막차 18:45 확인, 택시 대기는 현장 실측 (③)"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "부스 개수, 차량 대수"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "정하지 않음"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "처리량과 견적이 없어 근거 없이 숫자를 만들지 않는다"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 12 운영안과 그 값을 정한 근거 >"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "③ 교통 공백 확인",
+"bold": true
+},
+{
+"text": " : 밤에 원도심에서 월영교로 실제로 갈 방법이 있는지 방향별로 본다. \"혜택업체 0곳\"과 \"교통수단 0개\"는 다른 이야기라서 따로 쟀다."
+}
+]
+},
+{
+"kind": "table",
+"left": false,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "시간대 (평일, 기점 출발)"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "원도심 → 월영교"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "월영교 → 원도심"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "17시"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1편 (17:55)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0편"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "18시"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1편 (18:45)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1편 (18:25)"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "19시"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0편"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1편 (19:00)"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "20시 이후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0편"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "0편"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 13 원도심과 월영교를 잇는 112번 시내버스 저녁 운행 (안동시 버스정보시스템, 2026.9.22 조회) >"
+}
+]
+},
+{
+"kind": "note",
+"runs": [
+{
+"text": "※ 기점 출발 시각이라 실제 통과는 더 늦다. 공휴일 시간표는 게시되어 있지 않다. 택시 호출 대기시간과 요금은 토요일 저녁 현장조사에서 잰다. 수요가 부족하면 \"상시 운행 부적합\"도 결과로 인정한다."
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "4) 추진성과 및 기대효과 (결과물 ⑤ ⑥ ⑦)"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "정책을 아직 시행하지 않았으므로 \"소비가 늘었다\"고 쓰지 않는다. 지금 낼 수 있는 성과와 시행 후에만 말할 수 있는 성과를 나눈다."
+}
+]
+},
+{
+"kind": "table",
+"left": true,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "구분"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "지금 만들 수 있는 것"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "보고서에서 부르는 이름"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "분석 결과"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "운영 시간 창(18:30~21:00), 혜택 배치 진단, 월영교 영업 종료, 전국 진단표"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "데이터 기반 설계 결과"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "현장 관측"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "섭외 동의 업소 수, 안내카드 배포 수 대비 QR 스캔 수, 이동·대기 실측"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "현장 관측 성과 (관심 반응이지 소비 증가가 아님)"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "예상 효과"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "운영일 × 권역 × 자격 × 노출 범위의 방문기회에 전환율을 곱한 체험·팝업 지출 범위"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "조건부 예상 효과"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "정책 효과"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "시행 후 비교 지역과 대조한 증가분"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "시행 후에만 말할 수 있음"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 14 성과의 네 가지 구분 >"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "⑤ 행동검증 및 예상 효과 계산",
+"bold": true
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "돈이 쓰이는 지점은 체험 결제와 팝업 결제 두 곳이다. 야간 이동은 결제 없는 통로다."
+}
+]
+},
+{
+"kind": "img",
+"src": "fig5_효과계산구조.png"
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 그림 5 예상 효과 계산 구조 >"
+}
+]
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "연 방문 1,172만 명을 그대로 대상에 넣지 않는다. 운영하는 날, 운영하는 권역, 자격을 갖춘 방문만 센다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 28,
+"note": false
+},
+{
+"kind": "li",
+"runs": [
+{
+"text": "참여자가 쓴 돈 전부가 추가 소비는 아니다. 사업이 없어도 썼을 돈과 기존 상권에서 옮겨 온 돈을 뺀다."
+}
+],
+"list": "ul",
+"level": 0,
+"list_id": 28,
+"note": false
+},
+{
+"kind": "table",
+"left": false,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "지표"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "보수"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "기준"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "낙관"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "값의 성격"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "대상 방문기회"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계산 후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계산 후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계산 후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "추정"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "체험·팝업 이용량"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계산 후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계산 후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계산 후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "수용량 반영"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "참여자 총본인부담액 (지출 ① + ②)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계산 후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계산 후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계산 후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "총지출 추정"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "안동 내 추가 소비"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계산 후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계산 후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계산 후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "사업이 없었을 때 지출을 뺀 값"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "예산 1원당 추가 소비"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계산 후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계산 후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "계산 후"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "운영 참고 지표 (비용편익비 아님)"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 15 예상 효과 계산표 (값은 체험 가격, 운영 견적이 들어오면 채움) >"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "⑥ 사후 효과 검증계획서",
+"bold": true
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "사업을 시작하기 전에 \"이 기준으로 판단하겠다\"를 정해 둔다. 주민증은 운영하되 릴레이는 없는 지역들을 섞어 안동의 과거 추이를 따라가는 비교 조합을 만들고, 시행 후 벌어진 차이를 효과로 본다. 과거에 두 선이 겹친다는 것은 방법이 쓸 만하다는 뜻이지 정책 효과의 증명은 아니다."
+}
+]
+},
+{
+"kind": "img",
+"src": "fig6_사후검증_예시.png"
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 그림 6 사후 효과 검증 방식 (예시 그래프, 실제 값 아님) >"
+}
+]
+},
+{
+"kind": "table",
+"left": true,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "항목"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "시행 전에 정해 둘 내용"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "주 지표"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "방문당 체험·문화 소비 (문제를 연 지표 그대로)"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "비교 지역"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "디지털관광주민증은 운영하지만 릴레이는 없는 지역. 운영 지역 52곳의 시작 시기 확보"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "보조 지표"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "야간 체류, 기존 점포 매출, 민원, 취소율"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "판단 기준"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "효과 크기, 불확실성, 비용, 부작용을 함께 본다. \"비교 지역보다 조금이라도 높으면 성공\"으로 정하지 않는다"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "확정 시점"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "사업 시작 전. 이후 바꾸면 이유와 시점을 공개"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 16 사후 효과 검증계획서에 미리 정할 내용 >"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "⑦ 전국 진단표",
+"bold": true
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "같은 네 지표로 다른 시·군도 자기 위치를 확인할 수 있게 만든다. 안동은 체험·문화 소비가 줄어드는 속도와 숙박 기간에서 하위권이고, 저녁 이동은 평범하다. 문제는 시간대가 아니라 밤에 갈 곳이라는 뜻이다."
+}
+]
+},
+{
+"kind": "img",
+"src": "fig7_전국진단표.png"
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 그림 7 전국 진단표의 네 지표와 안동의 위치 >"
+}
+]
+},
+{
+"kind": "note",
+"runs": [
+{
+"text": "※ 정책 효과 점수가 아니라 추가 진단이 필요한 지역을 골라내는 탐색 지표다. 가중치를 바꿨을 때 순위가 얼마나 흔들리는지도 함께 적는다."
+}
+]
+},
+{
+"kind": "h2",
+"runs": [
+{
+"text": "16 데이터 정리",
+"bold": true,
+"shade": "FFE599"
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "1. 이 문서에 쓴 데이터"
+}
+]
+},
+{
+"kind": "table",
+"left": true,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "데이터"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "출처"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "기간"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "이 자료로 본 것"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "이동통신 방문자 수"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한국관광 데이터랩"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2018.1~2026.8"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "방문 증감, 방문당 소비의 분모, 시간대별 방문"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "신용카드 외지인 관광소비"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한국관광 데이터랩"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2019.1~2026.8"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "방문당 관광소비, 체험·문화 소비"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "숙박일수별 관광객"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한국관광 데이터랩"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2018.1~2026.8"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "무박(당일) 비중"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "읍면동별 외지인 방문"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한국관광 데이터랩"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2026.1~8"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "주민증 혜택업체 위치와 방문 비교"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "내비게이션 목적지 검색"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한국관광 데이터랩 (T맵)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2018~2026.8"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "관광지별 검색 비중, 역사유적지 검색"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "야간관광 현황"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한국관광 데이터랩"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2024~2026"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "경북 야간 검색 상위 관광지"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "8대 도시 관광분석"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한국철도공사 (가명정보 결합)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2022.4~6"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "관광지별 방문·소비 점유율, 동시 방문"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "안동역 시간대별 승하차"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "코레일 (팀원 취합)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2024.1~2026.8"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "주말 저녁 승차, 막차 시간"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "상가(상권)정보"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "소상공인시장진흥공단"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2026.6.30"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "반경 1km 음식점·주점 수"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "디지털관광주민증 혜택업체, 이용 건수"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "안동시 정보공개청구 회신"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2024.6~2026.8"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "안동 주민증 현황"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "주민증 운영 지역"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한국관광공사 보도자료, 누리집"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2022~2026"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "제도 확대 연혁"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "시내버스 시간표"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "안동시 버스정보시스템"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2026.9.22 조회"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "원도심↔월영교 막차"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "월영교 음식점 영업 종료 시각"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "팀 현장 확인"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2026.9.19"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "월영교 야간 식음 현황"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "원도심 식당 영업시간 표본"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한국관광공사 TourAPI 등록 정보"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2026.9.22 조회"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "원도심 저녁 영업 (60곳 중 8곳 확인)"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "디지털관광주민증 발급 규모"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "문화체육관광부 보도자료, 언론 보도"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2023~2024"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "전국 누적 발급, 지역별 발급 인원"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "역대 수상작 인터뷰 (옥천 관광주민증)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한국관광공사"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2023"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "주민증 성공 사례"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 17 이 문서에 쓴 데이터 >"
+}
+]
+},
+{
+"kind": "h3",
+"runs": [
+{
+"text": "2. 조사했지만 이 문서에는 쓰지 않은 데이터"
+}
+]
+},
+{
+"kind": "p",
+"runs": [
+{
+"text": "결과물을 만들거나 참고하려고 모아 둔 자료다. 파일은 팀 공유 폴더 "
+},
+{
+"text": "조사/",
+"bold": true,
+"color": "38761D"
+},
+{
+"text": "와 "
+},
+{
+"text": "data/",
+"bold": true,
+"color": "38761D"
+},
+{
+"text": "에 있다."
+}
+]
+},
+{
+"kind": "table",
+"left": true,
+"rows": [
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "데이터"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "출처"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "내용"
+}
+]
+}
+],
+"th": true
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "쓸 곳"
+}
+]
+}
+],
+"th": true
+}
+],
+"head": true
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "체험 프로그램 목록·가격"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "각 시설 공식 안내, 전화"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "14개 체험의 가격·운영시간. 18시 이후 운영은 월영교 문보트·황포돛배뿐"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1단계 연결 체험 선정"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2026 탈춤축제 프로그램"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "축제 누리집, 리플릿"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "일정 413회, 18시 이후 시작 99회. 탈춤사랑쿠폰은 원도심 상가에서 사용"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "축제 기간 혜택"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "야간관광 명소 100선 (밤밤곡곡 100)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "문화체육관광부·한국관광공사 (2023)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "100곳 전체. 경북 15곳 중 안동 2곳(월영교, 선유줄불놀이)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "야간 명소 비교"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "야시장 운영 사례"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "시·구청 보도자료"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "8곳. 부스 14~41개, 주말 2~3일 운영"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "3단계 팝업 규모 참고"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "안동관광택시"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "안동시관광협의회 누리집"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "5시간 125,000원(현재 할인가 95,000원), 코스 9개 중 5개가 월영교 경유"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "2단계 이동 수단"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "주요관광지점 입장객"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "관광지식정보시스템"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "38개 지점, 2018~2026.6. 월영교 2023년 68만 2,541명(2022·2023만 있음)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "관광지 방문 규모"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "버스정류장·안내기"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "안동시 버스정보시스템"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "정류장 3,305개, 안내기 316곳. 원도심(구시장 500m) 20개 중 17개 설치"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "안내 매체 위치"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "전국 문화관광축제 방문·소비"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한국관광 데이터랩"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "56개 축제. 탈춤 외지인 방문당 9,368원(56개 중앙 9,095원)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "팝업 객단가 상한 참고"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "강남동 외지인 관광소비"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한국관광 데이터랩 화면"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1~8월 102.7억 원(2024) → 109.5억 원(2026)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "월영교 소재 동 참고"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "경북 동 단위 야간 방문·소비"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한국관광 데이터랩 야간관광"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "평화동 야간 방문 비율 경북 1위, 야간 소비 상위 10에는 태화동만"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "야간 체류 참고"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "고택 목록"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "팀원 취합"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "안동 고택 559곳(숙박 여부 포함)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "숙박 연계 참고"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "영업 중 일반음식점 인허가"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "행정안전부 인허가 자료"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "안동 영업 중 일반음식점 목록"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "1단계 섭외 모집단"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+},
+{
+"hl": false,
+"cells": [
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "역대 수상작 24편"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "한국관광공사 수상작 인터뷰"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "문제·해결·성과 구조 분석 (강진 반값여행, 옥천 관광주민증 등)"
+}
+]
+}
+],
+"th": false
+},
+{
+"paras": [
+{
+"kind": "cellp",
+"runs": [
+{
+"text": "차별점, 성공 사례"
+}
+]
+}
+],
+"th": false
+}
+],
+"head": false
+}
+]
+},
+{
+"kind": "cap",
+"runs": [
+{
+"text": "< 표 18 조사했지만 이 문서에는 쓰지 않은 데이터 >"
+}
+]
+}
+]
