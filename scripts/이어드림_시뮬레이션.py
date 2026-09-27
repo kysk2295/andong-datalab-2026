@@ -227,8 +227,12 @@ for nm, p_ in (('기준', 0.02), ('흥행', 0.04), ('목표', 0.10)):
     o, o1 = model(sc, d), model({**sc, 'lam': 1.0}, d)
     SC3[nm] = {'참여율': p_, **{k: qs(o[k]) for k in KEYS}, '목표도달확률': float((o['지표1_원'] >= TARGET).mean()),
                '보수_lam1': {k: qs(o1[k]) for k in ('하루_이동', '문보트', '팝업_하루', '연결효과', '추가소비합', '지표2_강남동', '지표1_증가율')}}
+    if nm == '기준':                                 # 9/28 영상용: 기준 시나리오 1만 회 추출값 원본(분포 그림). 난수 순서·요약값 변화 없음
+        o_base = o
 R['시나리오'] = SC3
 json.dump(R, open(f'{D}/시뮬레이션결과.json', 'w'), ensure_ascii=False, indent=1, default=float)
+pd.DataFrame({k: np.asarray(o_base[k], float) for k in ('추가소비합', '지표1_증가율', '새이동_하루')}).to_csv(
+    f'{D}/시나리오_기준_1만회.csv', index=False, encoding='utf-8-sig')
 
 # ── 그림 (브리핑 PDF와 같은 글꼴·색) ───────────────────────────────────
 plt.rcParams.update({'font.family': 'NanumGothic', 'axes.unicode_minus': False, 'svg.fonttype': 'path',
