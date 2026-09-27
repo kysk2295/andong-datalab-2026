@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>안동 이어드림 · 시행 전 효과 검증</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <!-- 숫자·점·분포·지도는 tools/make_data.py가 정본 JSON에서 만든 값(window.ED) -->
+    <script src="assets/data.js"></script>
+    <style>
+      @font-face {
+        font-family: "Pretendard";
+        src: url("assets/fonts/Pretendard-sub.ttf") format("truetype");
+        font-weight: 100 900;
+      }
+      :root {
+        --bg: #fbfcfe;
+        --ink: #34383c;
+        --text: #222222;
+        --muted: #555555;
+        --light: #6b7178;
+        --blue: #2d6bd9;
+        --deep: #1a4fa8;
+        --bl: #a8c4f0;
+        --wash: #eaf1fc;
+        --gray: #d5d9dc;
+        --track: #eceef0;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--bg);
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: var(--bg);
+        font-family: "Pretendard", sans-serif;
+        color: var(--text);
+        word-break: keep-all;
+      }
+      /* 배경: 점 격자(데이터) + 한쪽 파랑 번짐, 느리게 움직임 */
+      #bg-grid {
+        position: absolute;
+        left: -80px;
+        top: -80px;
+        width: 2080px;
+        height: 1240px;
+        background-image: radial-gradient(#dfe6f0 2.2px, transparent 2.4px);
+        background-size: 40px 40px;
+      }
+      #bg-wash {
+        position: absolute;
+        right: -360px;
+        top: -420px;
+        width: 1100px;
+        height: 1100px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(45, 107, 217, 0.16) 0%, rgba(45, 107, 217, 0) 68%);
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+      }
+      .scene + .scene {
+        opacity: 0;
+      }
+      .abs {
+        position: absolute;
+      }
+      .head {
+        position: absolute;
+        left: 120px;
+        top: 96px;
+        width: 1680px;
+      }
+      .eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        height: 40px;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        color: var(--blue);
+      }
+      .tag {
+        display: block;
+        border: 2px solid var(--blue);
+        border-radius: 99px;
+        padding: 2px 16px;
+        font-size: 22px;
+        letter-spacing: 0;
+      }
+      .h1 {
+        display: block;
+        font-size: 72px;
+        font-weight: 800;
+        line-height: 88px;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+        white-space: nowrap;
+      }
+      .h1.b {
+        color: var(--blue);
+      }
+      .rule {
+        display: block;
+        width: 72px;
+        height: 5px;
+        margin-top: 30px;
+        background: var(--blue);
+        transform-origin: left center;
+      }
+      .source {
+        position: absolute;
+        left: 120px;
+        top: 962px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--light);
+      }
+      .source i {
+        display: block;
+        width: 14px;
+        height: 14px;
+        background: var(--blue);
+      }
+      .chart {
+        position: absolute;
+        inset: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: visible;
+      }
+      svg text {
+        font-family: "Pretendard", sans-serif;
+      }
+      .num {
+        font-variant-numeric: tabular-nums;
+      }
+      /* 진행 띠 */
+      #strip {
+        position: absolute;
+        left: 120px;
+        top: 1022px;
+        width: 1680px;
+        height: 44px;
+        display: flex;
+        gap: 8px;
+      }
+      .seg {
+        position: relative;
+        flex: 1;
+        height: 44px;
+      }
+      .seg .trk,
+      .seg .fil {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 6px;
+        border-radius: 3px;
+        background: var(--track);
+      }
+      .seg .fil {
+        background: var(--blue);
+        transform-origin: left center;
+        transform: scaleX(0);
+      }
+      .seg span {
+        position: absolute;
+        left: 0;
+        top: 14px;
+        font-size: 19px;
+        font-weight: 600;
+        color: var(--light);
+      }
+
+      /* S1 */
+      #s1-from {
+        left: 120px;
+        top: 436px;
+        font-size: 52px;
+        font-weight: 700;
+        color: #8e9399;
+      }
+      #s1-big {
+        left: 112px;
+        top: 530px;
+        width: 700px;
+        font-size: 150px;
+        font-weight: 800;
+        line-height: 1;
+        letter-spacing: -0.03em;
+        color: var(--blue);
+        transform-origin: left bottom;
+      }
+      #s1-lab {
+        left: 120px;
+        top: 718px;
+        font-size: 28px;
+        font-weight: 600;
+        color: var(--muted);
+      }
+      #s1-lab2 {
+        left: 120px;
+        top: 760px;
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--light);
+      }
+
+      /* S2 */
+      #s2 .line {
+        position: absolute;
+        left: 120px;
+        font-size: 96px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        white-space: nowrap;
+      }
+      #s2-l1 {
+        top: 380px;
+        color: var(--ink);
+      }
+      #s2-l2 {
+        top: 500px;
+        color: var(--blue);
+      }
+      #s2-rule {
+        position: absolute;
+        left: 120px;
+        top: 650px;
+        width: 72px;
+        height: 5px;
+        background: var(--blue);
+        transform-origin: left center;
+      }
+      #s2-sub {
+        position: absolute;
+        left: 120px;
+        top: 690px;
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--muted);
+      }
+
+      /* S3·S4 공통 블록(가운데 정렬 라벨 묶음) */
+      .stop {
+        position: absolute;
+        width: 640px;
+        margin-left: -320px;
+        text-align: center;
+      }
+      .stop .z {
+        display: block;
+        font-size: 110px;
+        font-weight: 800;
+        line-height: 1;
+        color: var(--blue);
+      }
+      .stop .k {
+        display: block;
+        font-size: 26px;
+        font-weight: 800;
+        color: var(--blue);
+        margin-bottom: 8px;
+      }
+      .stop .m {
+        display: block;
+        font-size: 64px;
+        font-weight: 800;
+        line-height: 1.05;
+        color: var(--blue);
+      }
+      .stop .a {
+        display: block;
+        margin-top: 12px;
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--ink);
+      }
+      .stop .c {
+        display: block;
+        margin-top: 8px;
+        font-size: 22px;
+        font-weight: 500;
+        color: var(--muted);
+      }
+      #s34-band {
+        position: absolute;
+        left: 690px;
+        top: 606px;
+        width: 540px;
+        height: 50px;
+        border-radius: 25px;
+        background: var(--blue);
+        color: #ffffff;
+        font-size: 27px;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .headswap {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      /* S5 */
+      .chipin {
+        position: absolute;
+        left: 120px;
+        width: 400px;
+        height: 70px;
+        border-radius: 35px;
+        background: var(--wash);
+        border: 2px solid var(--bl);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--ink);
+      }
+      #s5-box {
+        position: absolute;
+        left: 700px;
+        top: 540px;
+        width: 300px;
+        height: 140px;
+        border-radius: 20px;
+        background: var(--blue);
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .cap {
+        position: absolute;
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--ink);
+        white-space: nowrap;
+      }
+      .cap.b {
+        color: var(--blue);
+        font-weight: 800;
+      }
+      .note {
+        position: absolute;
+        font-size: 22px;
+        font-weight: 500;
+        color: var(--light);
+        white-space: nowrap;
+      }
+
+      /* S6 */
+      #s6-count {
+        position: absolute;
+        right: 120px;
+        top: 150px;
+        width: 700px;
+        text-align: right;
+        font-size: 110px;
+        font-weight: 800;
+        line-height: 1;
+        color: var(--blue);
+      }
+      #s6-countlab {
+        position: absolute;
+        right: 120px;
+        top: 272px;
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--muted);
+      }
+
+      /* S7 */
+      .steprow {
+        position: absolute;
+        left: 120px;
+        width: 560px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--light);
+        white-space: nowrap;
+      }
+      .steprow b {
+        display: block;
+        width: 60px;
+        font-weight: 800;
+      }
+
+      /* S8 */
+      #s8-pct {
+        position: absolute;
+        left: 1200px;
+        top: 440px;
+        width: 600px;
+        text-align: center;
+        font-size: 170px;
+        font-weight: 800;
+        line-height: 1;
+        color: var(--blue);
+      }
+      .s8c {
+        position: absolute;
+        left: 1200px;
+        width: 600px;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      /* S9 */
+      .chip9 {
+        position: absolute;
+        width: 170px;
+        height: 64px;
+        border-radius: 32px;
+        background: var(--wash);
+        border: 2px solid var(--blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        font-weight: 800;
+        color: var(--blue);
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-jrvh" id="root" data-composition-id="main" data-start="0" data-duration="80" data-width="1920" data-height="1080">
+      <div data-hf-id="hf-r3kh" id="bg-grid"></div>
+      <div data-hf-id="hf-nyxs" id="bg-wash"></div>
+
+      <!-- ───────── S1 줄고 있다 (0–12) ───────── -->
+      <section data-hf-id="hf-mcnq" class="scene" id="s1">
+        <div data-hf-id="hf-z992" class="head">
+          <div data-hf-id="hf-rk6h" class="eyebrow"><span data-hf-id="hf-143q" class="ey">문제 01</span></div>
+          <span data-hf-id="hf-a1ho" class="h1">방문객은 늘었는데</span>
+          <span data-hf-id="hf-k21z" class="h1 b">체험·문화 소비는 줄고 있다</span>
+          <span data-hf-id="hf-6o6j" class="rule"></span>
+        </div>
+        <div data-hf-id="hf-959g" class="abs num" id="s1-from">183.5원 →</div>
+        <div data-hf-id="hf-rb05" class="abs num" id="s1-big"><span data-hf-id="hf-xwe7" id="s1-val">183.5</span>원</div>
+        <div data-hf-id="hf-95qr" class="abs" id="s1-lab">방문 1회당 체험·문화 소비(외지인)</div>
+        <div data-hf-id="hf-q8nc" class="abs" id="s1-lab2">2024년 → 2026년, 각 1~8월</div>
+        <svg data-hf-id="hf-r4c8" class="chart" id="s1-chart" viewBox="0 0 1920 1080" />
+        <div data-hf-id="hf-nsl1" class="source"><i data-hf-id="hf-wt6k"></i>출처: 한국관광 데이터랩 신용카드 관광소비(외지인), 레저용품 쇼핑 제외</div>
+      </section>
+
+      <!-- ───────── S2 먼저 계산했다 (12–18) ───────── -->
+      <section data-hf-id="hf-iejp" class="scene" id="s2">
+        <div data-hf-id="hf-8u0u" class="line" id="s2-l1">시행하기 전에,</div>
+        <div data-hf-id="hf-ohe1" class="line" id="s2-l2">데이터로 먼저 계산했습니다</div>
+        <div data-hf-id="hf-dx9d" id="s2-rule"></div>
+        <div data-hf-id="hf-t2nj" id="s2-sub">그리고 시행하면서 확인할 방법까지 정했습니다</div>
+      </section>
+
+      <!-- ───────── S3·S4 빈 곳 → 릴레이 (18–44) ───────── -->
+      <section data-hf-id="hf-l3bs" class="scene" id="s34">
+        <div data-hf-id="hf-gwvu" class="head">
+          <div data-hf-id="hf-mclw" class="eyebrow" style="position: relative">
+            <span data-hf-id="hf-wyfx" class="ey" id="s34-eyA">문제 02</span>
+            <span data-hf-id="hf-gk7r" class="ey headswap" id="s34-eyB" style="opacity: 0">해법 · 안동 이어드림</span>
+          </div>
+          <div data-hf-id="hf-9mka" style="position: relative; height: 176px">
+            <div data-hf-id="hf-21ez" class="headswap" id="s34-hA">
+              <span data-hf-id="hf-eems" class="h1">사람이 모이는 곳엔 혜택이 없고,</span>
+              <span data-hf-id="hf-s9qd" class="h1 b">막차 앞에서 밤이 끊긴다</span>
+            </div>
+            <div data-hf-id="hf-l9mb" class="headswap" id="s34-hB" style="opacity: 0">
+              <span data-hf-id="hf-v60u" class="h1">낮의 원도심에서</span>
+              <span data-hf-id="hf-wrqy" class="h1 b">밤의 월영교까지 잇는다</span>
+            </div>
+          </div>
+          <span data-hf-id="hf-424r" class="rule"></span>
+        </div>
+        <svg data-hf-id="hf-u3xa" class="chart" id="s34-line" viewBox="0 0 1920 1080" />
+        <!-- 빈 곳 (A) -->
+        <div data-hf-id="hf-ndv7" class="stop" id="s34-a1" style="left: 380px; top: 408px">
+          <span data-hf-id="hf-9z7k" class="z num">0곳</span><span data-hf-id="hf-hmqp" class="a">주민증 혜택 업체</span><span data-hf-id="hf-9bfq" class="c">외지인 방문 1위(12.5%)</span>
+        </div>
+        <div data-hf-id="hf-nlrl" class="stop" id="s34-a2" style="left: 960px; top: 760px">
+          <span data-hf-id="hf-kpyl" class="z num">0회</span><span data-hf-id="hf-d5a0" class="a">19시 이후 시내버스</span><span data-hf-id="hf-iutv" class="c">112번 원도심 출발 막차 18:45</span>
+        </div>
+        <div data-hf-id="hf-ggok" class="stop" id="s34-a3" style="left: 1540px; top: 408px">
+          <span data-hf-id="hf-99x4" class="z num">0곳</span><span data-hf-id="hf-z87f" class="a">1km 안 주점</span><span data-hf-id="hf-pqm3" class="c">21시까지 식사 가능 3곳</span>
+        </div>
+        <!-- 릴레이 (B) -->
+        <div data-hf-id="hf-0zlr" class="stop" id="s34-b1" style="left: 380px; top: 410px; opacity: 0">
+          <span data-hf-id="hf-qfp5" class="k">1 낮</span><span data-hf-id="hf-v2nk" class="m num">0곳 → <span data-hf-id="hf-0mim" id="s34-83">0</span>곳</span><span data-hf-id="hf-ximf" class="a">원도심 식당에서 식사 → 체험 10% 할인</span>
+        </div>
+        <div data-hf-id="hf-np8d" id="s34-band" style="opacity: 0">2 저녁 18:30 ~ 21:00 이동</div>
+        <div data-hf-id="hf-cbu7" class="stop" id="s34-b2" style="left: 960px; top: 790px; opacity: 0">
+          <span data-hf-id="hf-abf7" class="a" style="margin-top: 0">택시로 월영교까지, 이용이 늘면 셔틀</span><span data-hf-id="hf-vbhd" class="c">주말 안동역 승차 18~19시 최다 · 막차 21~22시</span>
+        </div>
+        <div data-hf-id="hf-t5cy" class="stop" id="s34-b3" style="left: 1540px; top: 410px; opacity: 0">
+          <span data-hf-id="hf-elj5" class="k">3 밤</span><span data-hf-id="hf-ba8z" class="m">문보트 · 팝업</span><span data-hf-id="hf-ee8t" class="a">21시 이후 식사·주점 팝업</span>
+        </div>
+        <div data-hf-id="hf-i0ed" class="source" id="s34-srcA"><i data-hf-id="hf-zeb8"></i>출처: 데이터랩 읍면동 방문 · 안동시 주민증 혜택 업체 · 버스정보시스템 시간표 · 팀 현장 확인</div>
+        <div data-hf-id="hf-3a7e" class="source" id="s34-srcB" style="opacity: 0"><i data-hf-id="hf-y7e5"></i>출처: 코레일 안동역 시간대별 승차 · 팀 설문(2026.9.23~24)</div>
+      </section>
+
+      <!-- ───────── S5 무엇을 넣었나 (44–58) ───────── -->
+      <section data-hf-id="hf-yynm" class="scene" id="s5">
+        <div data-hf-id="hf-hb6v" class="head">
+          <div data-hf-id="hf-xl25" class="eyebrow"><span data-hf-id="hf-0xb7" class="ey">시행 전 계산 01</span></div>
+          <span data-hf-id="hf-61j4" class="h1">실제 기록을 넣고,</span>
+          <span data-hf-id="hf-m0kp" class="h1 b">설문은 깎아서 넣었다</span>
+          <span data-hf-id="hf-3ntq" class="rule"></span>
+        </div>
+        <svg data-hf-id="hf-nxlg" class="chart" id="s5-chart" viewBox="0 0 1920 1080" />
+        <div data-hf-id="hf-ee49" class="chipin" style="top: 440px">주민증 이용 기록</div>
+        <div data-hf-id="hf-7vr8" class="chipin" style="top: 540px">축제 방문객 소비</div>
+        <div data-hf-id="hf-x7t8" class="chipin" style="top: 640px">체험 가격 27개</div>
+        <div data-hf-id="hf-ax54" class="chipin" style="top: 740px">팀 설문 103명</div>
+        <div data-hf-id="hf-y9l0" id="s5-box">1만 번 계산</div>
+        <div data-hf-id="hf-t24r" class="cap" id="s5-capA" style="left: 1180px; top: 392px">설문에서 '하겠다' 100명</div>
+        <div data-hf-id="hf-8zmd" class="cap b" id="s5-capB" style="left: 1180px; top: 922px">실제로 할 것으로 본 사람 33~40명(선행연구)</div>
+        <div data-hf-id="hf-kqrt" class="note" id="s5-note" style="left: 120px; top: 876px">설문 의향은 체험 결제율·저녁 이동 배수에만 반영</div>
+      </section>
+
+      <!-- ───────── S6 1만 번 계산 (58–74) ───────── -->
+      <section data-hf-id="hf-v0jl" class="scene" id="s6">
+        <div data-hf-id="hf-hphw" class="head">
+          <div data-hf-id="hf-yrz8" class="eyebrow"><span data-hf-id="hf-0j06" class="ey">시행 전 계산 02</span><span data-hf-id="hf-krks" class="tag">예측</span></div>
+          <span data-hf-id="hf-gv10" class="h1">한 번이 아니라</span>
+          <span data-hf-id="hf-78sr" class="h1 b">1만 번 돌렸다</span>
+          <span data-hf-id="hf-39ip" class="rule"></span>
+        </div>
+        <div data-hf-id="hf-1t3b" id="s6-count" class="num">0번</div>
+        <div data-hf-id="hf-vxoi" id="s6-countlab">계산한 횟수</div>
+        <svg data-hf-id="hf-gyor" class="chart" id="s6-chart" viewBox="0 0 1920 1080" />
+        <div data-hf-id="hf-9pqb" class="note" id="s6-note" style="left: 160px; top: 934px">안동에서 늘어나는 소비(연간) · 참여 2% 기준 · 할인액·원래 썼을 돈 제외 · 2026년 1~8월 자료 연간 환산</div>
+      </section>
+
+      <!-- ───────── S7 몇 명이 참여해야 (74–92) ───────── -->
+      <section data-hf-id="hf-u8vs" class="scene" id="s7">
+        <div data-hf-id="hf-i3sx" class="head">
+          <div data-hf-id="hf-ydo7" class="eyebrow"><span data-hf-id="hf-04p5" class="ey">시행 전 계산 03</span></div>
+          <span data-hf-id="hf-k1l6" class="h1">몇 명이 참여해야</span>
+          <span data-hf-id="hf-gcbz" class="h1 b">전국 중앙까지 오나</span>
+          <span data-hf-id="hf-2v7o" class="rule"></span>
+        </div>
+        <svg data-hf-id="hf-rpre" class="chart" id="s7-chart" viewBox="0 0 1920 1080" />
+        <div data-hf-id="hf-2250" class="steprow" id="s7-r0" style="top: 846px"><b data-hf-id="hf-b9zx">기준</b><span data-hf-id="hf-0b71">100명 중 2명</span><span data-hf-id="hf-5rg2" class="num" id="s7-v0"></span></div>
+        <div data-hf-id="hf-sjxm" class="steprow" id="s7-r1" style="top: 894px"><b data-hf-id="hf-9ctn">흥행</b><span data-hf-id="hf-6n1z">100명 중 4명</span><span data-hf-id="hf-9pk3" class="num" id="s7-v1"></span></div>
+        <div data-hf-id="hf-mxbr" class="steprow" id="s7-r2" style="top: 942px"><b data-hf-id="hf-ugko">목표</b><span data-hf-id="hf-8bkg">100명 중 10명</span><span data-hf-id="hf-11o8" class="num" id="s7-v2"></span></div>
+        <div data-hf-id="hf-w07z" class="cap" id="s7-final" style="left: 760px; top: 880px; font-size: 34px; font-weight: 800">10명 중 1명이 참여하면 전국 중앙 수준(−2.0%)</div>
+        <div data-hf-id="hf-0fry" class="note" id="s7-note" style="left: 760px; top: 934px; font-size: 20px">순위는 다른 시·군이 그대로일 때 · 1만 번 계산의 가운데 값</div>
+      </section>
+
+      <!-- ───────── S8 시행하면서 확인 (92–108) ───────── -->
+      <section data-hf-id="hf-yv67" class="scene" id="s8">
+        <div data-hf-id="hf-ii3y" class="head">
+          <div data-hf-id="hf-zkla" class="eyebrow"><span data-hf-id="hf-xnep" class="ey">시행 후 확인</span></div>
+          <span data-hf-id="hf-d62o" class="h1">식당 83곳을</span>
+          <span data-hf-id="hf-yfdy" class="h1 b">추첨 순서로 연다</span>
+          <span data-hf-id="hf-2gwn" class="rule"></span>
+        </div>
+        <svg data-hf-id="hf-3w8p" class="chart" id="s8-chart" viewBox="0 0 1920 1080" />
+        <div data-hf-id="hf-9awc" id="s8-pct" class="num"><span data-hf-id="hf-yuln" id="s8-val">0</span>%</div>
+        <div data-hf-id="hf-dc9e" class="s8c" id="s8-c1" style="top: 624px; font-size: 28px; font-weight: 700; color: var(--ink)">5개월 만에 효과를 확인할 확률</div>
+        <div data-hf-id="hf-qpfu" class="s8c" id="s8-c2" style="top: 668px; font-size: 22px; font-weight: 500; color: var(--muted)">체험 결제 +50% 효과 기준</div>
+        <div data-hf-id="hf-vokx" class="s8c" id="s8-c3" style="top: 706px; font-size: 22px; font-weight: 500; color: var(--light)">효과가 없는데 있다고 잘못 볼 확률 2.2%</div>
+        <div data-hf-id="hf-uiqn" class="cap b" id="s8-loop" style="left: 330px; top: 884px; font-size: 26px">↺ 시행 첫 달 실제 기록으로 1만 번 계산을 다시 한다</div>
+        <div data-hf-id="hf-w4v7" class="source" id="s8-src"><i data-hf-id="hf-ylp6"></i>출처: 순차 확대 모의실험 1,000회(과산포 반영)</div>
+      </section>
+
+      <!-- ───────── S9 확산과 마무리 (108–120) ───────── -->
+      <section data-hf-id="hf-ux26" class="scene" id="s9">
+        <div data-hf-id="hf-tdo7" id="s9-all" style="position: absolute; inset: 0">
+          <div data-hf-id="hf-iwez" class="head">
+            <div data-hf-id="hf-z6a9" class="eyebrow"><span data-hf-id="hf-7di2" class="ey">확산</span></div>
+            <span data-hf-id="hf-mfxo" class="h1">안동과 같은 유형 6곳,</span>
+            <span data-hf-id="hf-rxpj" class="h1 b">주민증 운영 52개 지자체로</span>
+            <span data-hf-id="hf-22lm" class="rule"></span>
+          </div>
+          <svg data-hf-id="hf-rmw0" class="chart" id="s9-chart" viewBox="0 0 1920 1080" />
+          <div data-hf-id="hf-8vvr" id="s9-chips"></div>
+          <div data-hf-id="hf-ejf7" class="note" id="s9-diag" style="left: 120px; top: 700px; font-size: 26px; font-weight: 600; color: var(--muted); line-height: 1.5; white-space: normal; width: 560px">체험 소비 변화 · 숙박일수 · 저녁 방문을 같은 기준으로 144곳 진단</div>
+          <div data-hf-id="hf-gbjb" class="cap" id="s9-name" style="left: 120px; top: 836px; font-size: 44px; font-weight: 800">안동 이어드림</div>
+          <div data-hf-id="hf-7z9y" class="note" id="s9-tagline" style="left: 120px; top: 900px; font-size: 24px; font-weight: 600; color: var(--muted)">원도심에서 도는 돈과 월영교에 모이는 사람을 밤까지 잇는다</div>
+          <div data-hf-id="hf-5xj9" class="note" id="s9-disc" style="left: 120px; top: 960px; font-size: 18px">효과는 시행 전 예측(1만 번 계산의 가운데 값)이며 시행 첫 달 기록으로 다시 계산</div>
+        </div>
+      </section>
+
+      <!-- 진행 띠 (전 장면) -->
+      <div data-hf-id="hf-7js5" id="strip">
+        <div data-hf-id="hf-ta0z" class="seg"><div data-hf-id="hf-l3rt" class="trk"></div><div data-hf-id="hf-lvwl" class="fil"></div><span data-hf-id="hf-mll1">문제</span></div>
+        <div data-hf-id="hf-xb43" class="seg"><div data-hf-id="hf-wqi5" class="trk"></div><div data-hf-id="hf-m49l" class="fil"></div><span data-hf-id="hf-u9bi">해법</span></div>
+        <div data-hf-id="hf-wwt2" class="seg"><div data-hf-id="hf-xxf8" class="trk"></div><div data-hf-id="hf-nb6o" class="fil"></div><span data-hf-id="hf-nedq">시행 전 계산</span></div>
+        <div data-hf-id="hf-wii1" class="seg"><div data-hf-id="hf-xj47" class="trk"></div><div data-hf-id="hf-mwvn" class="fil"></div><span data-hf-id="hf-6zn3">시행 후 확인</span></div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const ED = window.ED;
+        const NS = "http://www.w3.org/2000/svg";
+        const C = { ink: "#34383C", blue: "#2D6BD9", deep: "#1A4FA8", bl: "#A8C4F0", wash: "#EAF1FC", gray: "#D5D9DC", track: "#ECEEF0", light: "#6B7178", muted: "#555555", bg: "#FBFCFE" };
+        const $ = (s) => document.querySelector(s);
+        const $$ = (s) => Array.from(document.querySelectorAll(s));
+        const fmt = (v, d = 1) => v.toFixed(d).replace("-", "−");
+        function el(parent, tag, attrs, text) {
+          const n = document.createElementNS(NS, tag);
+          for (const k in attrs) n.setAttribute(k, attrs[k]);
+          if (text != null) n.textContent = text;
+          parent.appendChild(n);
+          return n;
+        }
+        function label(svg, x, y, s, size, w, fill, anchor, id) {
+          const a = { x, y, "font-size": size, "font-weight": w, fill, "text-anchor": anchor || "start" };
+          if (id) a.id = id;
+          return el(svg, "text", a, s);
+        }
+
+        // ── 점 그림(146개 시·군): 축 위로 쌓음 ──
+        function swarm(svg, pre, x0, x1, yc) {
+          const ex = ED.ex;
+          const X = (v) => x0 + ((v - ex.lo) / (ex.hi - ex.lo)) * (x1 - x0);
+          const g = el(svg, "g", { id: pre + "-sw" });
+          el(g, "line", { x1: x0, y1: yc + 10, x2: x1, y2: yc + 10, stroke: C.gray, "stroke-width": 2 });
+          [-40, -20, 0, 20, 40].forEach((v) => label(g, X(v), yc + 44, v === 0 ? "0%" : (v > 0 ? "+" : "−") + Math.abs(v) + "%", 20, 500, C.light, "middle"));
+          label(g, x0 - 12, yc + 7, "← " + ex.below + "곳", 18, 600, C.light, "end");
+          label(g, x1 + 12, yc + 7, ex.above + "곳 →", 18, 600, C.light);
+          const dots = [];
+          ex.dots.forEach((d) => {
+            if (d.n === "안동시") return;
+            dots.push(el(svg, "circle", { cx: X(d.v).toFixed(1), cy: (yc - d.k * 14).toFixed(1), r: 7, fill: C.gray, class: pre + "-dot" }));
+          });
+          const mx = X(ex.median);
+          const med = el(svg, "line", { x1: mx, y1: yc - 190, x2: mx, y2: yc + 16, stroke: C.ink, "stroke-width": 3, "stroke-dasharray": "8 8", id: pre + "-med" });
+          const medl = label(svg, mx, yc - 204, "전국 중앙 " + fmt(ex.median) + "%", 24, 700, C.ink, "middle", pre + "-medl");
+          const an = el(svg, "circle", { cx: X(ex.change), cy: yc, r: 13, fill: C.blue, id: pre + "-an" });
+          return { X, dots, med, medl, an, yc };
+        }
+
+        // ── 사람 아이콘 100명 ──
+        function people(svg, pre, x0, y0, gap, r, base) {
+          const out = [];
+          for (let i = 0; i < 100; i++) {
+            const cx = x0 + (i % 10) * gap, cy = y0 + Math.floor(i / 10) * gap;
+            const g = el(svg, "g", { class: pre + "-p", fill: base || C.track });
+            el(g, "circle", { cx, cy: cy - 8, r: r * 0.45 });
+            el(g, "rect", { x: cx - r * 0.75, y: cy, width: r * 1.5, height: r * 0.9, rx: r * 0.45 });
+            out.push(g);
+          }
+          return out;
+        }
+
+        // ================= 도형 만들기 =================
+        // S1
+        const s1 = swarm($("#s1-chart"), "s1", 960, 1780, 700);
+        const s1al = label($("#s1-chart"), s1.X(ED.ex.change), 800, "안동 " + fmt(ED.ex.change) + "%", 30, 800, C.blue, "middle", "s1-al");
+        const s1rk = label($("#s1-chart"), s1.X(ED.ex.change), 836, ED.ex.n + "개 시·군 중 감소폭 " + ED.ex.rank + "번째", 22, 600, C.muted, "middle", "s1-rk");
+
+        // S3·S4 선
+        const L0 = 380, L1 = 1540, LY = 700;
+        const ls = $("#s34-line");
+        const lgray = el(ls, "line", { x1: L0, y1: LY, x2: L1, y2: LY, stroke: C.gray, "stroke-width": 6, "stroke-linecap": "round", id: "s34-lg" });
+        const lblue = el(ls, "line", { x1: L0, y1: LY, x2: L0, y2: LY, stroke: C.blue, "stroke-width": 8, "stroke-linecap": "round", id: "s34-lb" });
+        const km = label(ls, (L0 + L1) / 2, LY - 24, "3.2km", 22, 600, C.light, "middle", "s34-km");
+        const n0 = el(ls, "circle", { cx: L0, cy: LY, r: 26, fill: C.ink, id: "s34-n0" });
+        const n1 = el(ls, "circle", { cx: L1, cy: LY, r: 26, fill: C.ink, id: "s34-n1" });
+        const nl0 = label(ls, L0, LY + 76, "원도심", 34, 800, C.ink, "middle", "s34-nl0");
+        const nl1 = label(ls, L1, LY + 76, "월영교", 34, 800, C.ink, "middle", "s34-nl1");
+        const trav = el(ls, "circle", { cx: L0, cy: LY, r: 14, fill: "#FFFFFF", stroke: C.blue, "stroke-width": 6, id: "s34-trav" });
+
+        // S5 연결선 + 사람
+        const s5 = $("#s5-chart");
+        const s5lines = [0, 1, 2, 3].map((i) => el(s5, "path", { d: `M520 ${475 + i * 100} C 610 ${475 + i * 100}, 620 610, 700 610`, stroke: C.bl, "stroke-width": 3, fill: "none", class: "s5-ln" }));
+        const s5pulses = [0, 1, 2, 3].map((i) => el(s5, "circle", { cx: 520, cy: 475 + i * 100, r: 8, fill: C.blue, class: "s5-pl" }));
+        const s5p = people(s5, "s5", 1200, 470, 46, 15);
+
+        // S6 분포
+        const s6 = $("#s6-chart");
+        const mc = ED.mc, HX0 = 160, HX1 = 1760, HY = 880, HH = 400;
+        const bw = (HX1 - HX0) / mc.counts.length;
+        const Xm = (v) => HX0 + (v / 6) * (HX1 - HX0);
+        const band = el(s6, "rect", { x: Xm(mc.p5), y: 420, width: Xm(mc.p95) - Xm(mc.p5), height: HY - 420, fill: C.wash, id: "s6-band" });
+        const dmax = Math.max(...mc.counts) / mc.n;
+        const bars = mc.counts.map((c, i) => el(s6, "rect", { x: (HX0 + i * bw + 3).toFixed(1), y: HY - HH, width: (bw - 6).toFixed(1), height: HH, rx: 4, fill: C.bl, class: "s6-bar" }));
+        el(s6, "line", { x1: HX0, y1: HY, x2: HX1, y2: HY, stroke: C.ink, "stroke-width": 2, id: "s6-ax" });
+        for (let v = 0; v <= 6; v++) label(s6, Xm(v), HY + 36, v + "억", 20, 500, C.light, "middle", null).setAttribute("class", "s6-tk");
+        const s6med = el(s6, "line", { x1: Xm(mc.p50), y1: 400, x2: Xm(mc.p50), y2: HY, stroke: C.ink, "stroke-width": 3, "stroke-dasharray": "8 8", id: "s6-med" });
+        const s6ml = label(s6, Xm(mc.p50) + 14, 440, "가운데 값 연 " + mc.p50 + "억 원", 30, 800, C.ink, "start", "s6-ml");
+        const s6b1 = label(s6, Xm(mc.p95) + 14, 520, "1만 번 중 가운데 90%", 22, 700, C.blue, "start", "s6-b1");
+        const s6b2 = label(s6, Xm(mc.p95) + 14, 552, mc.p5 + "~" + mc.p95 + "억 원", 22, 700, C.blue, "start", "s6-b2");
+        const inBand = mc.counts.map((_, i) => mc.edges[i] >= mc.p5 - 1e-9 && mc.edges[i] < mc.p95);
+        // 단계별 막대 높이(밀도 기준, 최종 최빈 = 1)
+        const hAt = (k, i) => Math.min(1.15, mc.cum[k][i] / mc.steps[k] / dmax) * HH;
+
+        // S7
+        const s7 = $("#s7-chart");
+        const SK_ = ["기준", "흥행", "목표"];
+        const s7p = people(s7, "s7", 140, 440, 40, 13, C.gray);
+        const s7s = swarm(s7, "s7", 760, 1760, 700);
+        const sc = ED.sc, SK = ["기준", "흥행", "목표"];
+        const ghosts = [ED.ex.change, sc["기준"].change, sc["흥행"].change].map((v, i) => el(s7, "circle", { cx: s7s.X(v), cy: 700, r: 11, fill: C.bg, stroke: C.bl, "stroke-width": 3, class: "s7-gh", id: "s7-gh" + i }));
+        s7.appendChild(s7s.an); // 안동 점을 맨 위로
+        const s7now = label(s7, s7s.X(ED.ex.change), 838, "지금 " + fmt(ED.ex.change) + "%", 20, 600, C.light, "middle", "s7-now");
+        const s7labs = SK_.map((k, i) => label(s7, s7s.X(ED.sc[k].change), 800, fmt(ED.sc[k].change) + "%", 28, 800, C.blue, "middle", "s7-lab" + i));
+        SK.forEach((k, i) => ($("#s7-v" + i).textContent = fmt(sc[k].change) + "% (" + sc[k].rank + "번째)"));
+
+        // S8 계단 표
+        const s8 = $("#s8-chart"), pw = ED.pw, MX = 330, MY = 470, CW = 150, CH = 84;
+        const mh = [], rl = [], cells = [];
+        for (let m = 0; m < pw.months; m++) mh.push(label(s8, MX + m * CW + CW / 2, MY - 20, m + 1 + "개월", 22, 600, C.muted, "middle", null));
+        pw.groups.forEach((n, g) => {
+          const y = MY + g * (CH + 14);
+          rl.push(label(s8, MX - 24, y + CH / 2 + 9, g + 1 + "묶음 " + n + "곳", 24, 700, C.ink, "end", null));
+          for (let m = 0; m < pw.months; m++) {
+            el(s8, "rect", { x: MX + m * CW + 5, y, width: CW - 10, height: CH, rx: 10, fill: C.track, class: "s8-cell" });
+            if (m >= g + 1) cells.push({ m, r: el(s8, "rect", { x: MX + m * CW + 5, y, width: CW - 10, height: CH, rx: 10, fill: C.blue, class: "s8-on" }) });
+          }
+        });
+        const pre = el(s8, "rect", { x: MX + 1, y: MY - 44, width: CW - 2, height: 4 * (CH + 14) + 34, rx: 12, fill: "none", stroke: C.ink, "stroke-width": 2.5, "stroke-dasharray": "8 6", id: "s8-pre" });
+        const prel = label(s8, MX + CW / 2, MY - 52, "시행 전 비교", 20, 700, C.ink, "middle", "s8-prel");
+        const loop = el(s8, "line", { x1: 330, y1: 930, x2: 330, y2: 930, stroke: C.blue, "stroke-width": 3, "stroke-dasharray": "10 8", id: "s8-lp" });
+
+        // S9 지도 + 칩
+        const s9 = $("#s9-chart"), mp = ED.map, sk = 820 / mp.h;
+        const mg = el(s9, "g", { transform: `translate(1180 150) scale(${sk.toFixed(4)})` });
+        const short = (n) => n.replace(/(시|군)$/, "");
+        const hl = {};
+        mp.paths.forEach((p) => {
+          const isA = p.n === "안동시", isS = ED.same.includes(short(p.n)) && !isA;
+          const node = el(mg, "path", { d: p.d, fill: C.track, stroke: C.bg, "stroke-width": 1.5, class: "s9-land" });
+          if (isA) hl["안동"] = node;
+          else if (isS) hl[short(p.n)] = node;
+        });
+        const pins = {};
+        Object.entries(mp.cent).forEach(([n, c]) => {
+          const k = short(n);
+          pins[k] = el(s9, "circle", { cx: 1180 + c[0] * sk, cy: 150 + c[1] * sk, r: 9, fill: n === "안동시" ? C.deep : C.blue, stroke: "#FFFFFF", "stroke-width": 3, class: "s9-pin" });
+        });
+        const alab = label(s9, 1180 + mp.cent["안동시"][0] * sk - 52, 150 + mp.cent["안동시"][1] * sk + 9, "안동", 28, 800, C.deep, "end", "s9-al");
+        alab.setAttribute("stroke", C.bg); alab.setAttribute("stroke-width", 6); alab.setAttribute("paint-order", "stroke");
+        const chipBox = $("#s9-chips");
+        const chips = ED.same.map((nm, i) => {
+          const d = document.createElement("div");
+          d.className = "chip9";
+          d.textContent = nm;
+          d.style.left = 120 + (i % 3) * 190 + "px";
+          d.style.top = 440 + Math.floor(i / 3) * 90 + "px";
+          chipBox.appendChild(d);
+          return d;
+        });
+
+        // ================= 타임라인 =================
+        // 장면 시각은 120초 기준으로 적고, 맨 끝에서 SPEED배로 줄여 붙인다(9/28 사용자 요청 1.5배 → 80초)
+        const SPEED = 1.5;
+        const tl = gsap.timeline();
+        function head(sc, at) {
+          tl.fromTo(`${sc} .eyebrow`, { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, at);
+          tl.fromTo(`${sc} .h1`, { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "power4.out", stagger: 0.18 }, at + 0.15);
+          tl.fromTo(`${sc} .rule`, { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.inOut" }, at + 0.6);
+        }
+        function up(sel, at, dur, ease, y) {
+          return tl.fromTo(sel, { y: y == null ? 30 : y, opacity: 0 }, { y: 0, opacity: 1, duration: dur || 0.6, ease: ease || "power3.out" }, at);
+        }
+        function count(node, from, to, at, dur, dec, ease) {
+          const st = { v: from };
+          node.textContent = from.toFixed(dec);
+          tl.fromTo(st, { v: from }, { v: to, duration: dur, ease: ease || "power2.out", onUpdate: () => (node.textContent = dec ? st.v.toFixed(dec) : Math.round(st.v).toLocaleString("ko-KR")) }, at);
+        }
+        function push(a, b, T) {
+          tl.to(a, { x: -1920, duration: 0.6, ease: "power3.inOut" }, T);
+          tl.fromTo(b, { x: 1920, opacity: 1 }, { x: 0, opacity: 1, duration: 0.6, ease: "power3.inOut" }, T);
+          tl.set(a, { opacity: 0 }, T + 0.62);
+        }
+        function fade(a, b, T, d = 0.8) {
+          tl.to(a, { opacity: 0, duration: d, ease: "sine.inOut" }, T);
+          tl.fromTo(b, { opacity: 0 }, { opacity: 1, duration: d, ease: "sine.inOut" }, T);
+        }
+        const segs = $$("#strip .seg");
+        function section(i, at) {
+          if (i > 0) tl.to(segs[i - 1].querySelector(".fil"), { backgroundColor: C.bl, duration: 0.4 }, at);
+          if (i > 0) tl.to(segs[i - 1].querySelector("span"), { color: C.light, duration: 0.3 }, at);
+          tl.fromTo(segs[i].querySelector(".fil"), { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "power2.inOut" }, at);
+          tl.to(segs[i].querySelector("span"), { color: C.blue, duration: 0.3 }, at);
+        }
+
+        // 배경: 느린 흐름·숨쉬기
+        tl.fromTo("#bg-grid", { x: 0, y: 0 }, { x: -40, y: -40, duration: 120, ease: "none" }, 0);
+        tl.fromTo("#bg-wash", { scale: 0.92 }, { scale: 1.08, duration: 10, ease: "sine.inOut", yoyo: true, repeat: 11 }, 0);
+        tl.fromTo("#strip", { opacity: 0 }, { opacity: 1, duration: 0.6 }, 0.1);
+        section(0, 0.2);
+
+        // ── S1 (0–12) ──
+        head("#s1", 0.2);
+        up("#s1-from", 1.2, 0.6, "power2.out", 20);
+        tl.set("#s1-big", { opacity: 0, scale: 1.08 }, 0);
+        tl.to("#s1-big", { opacity: 1, duration: 0.3 }, 1.5);
+        count($("#s1-val"), ED.ex.y2024, ED.ex.y2026, 1.6, 2.0, 1, "power3.inOut");
+        tl.to("#s1-big", { scale: 1, duration: 2.0, ease: "power3.inOut" }, 1.6);
+        up("#s1-lab", 3.0, 0.5);
+        up("#s1-lab2", 3.2, 0.5);
+        tl.fromTo("#s1-sw", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 1.8);
+        tl.fromTo(s1.dots, { scale: 0, transformOrigin: "50% 50%", transformBox: "fill-box" }, { scale: 1, duration: 0.35, ease: "back.out(2)", stagger: 0.012 }, 2.0);
+        tl.fromTo(s1.an, { y: -120, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "bounce.out" }, 4.4);
+        up([s1al], 5.0, 0.5, "power3.out", 14);
+        up([s1rk], 5.3, 0.5, "power3.out", 14);
+        tl.fromTo(s1.med, { scaleY: 0, transformOrigin: "50% 100%", transformBox: "fill-box" }, { scaleY: 1, duration: 0.8, ease: "power2.out" }, 6.0);
+        up([s1.medl], 6.6, 0.5, "power2.out", 10);
+        up("#s1 .source", 7.2, 0.5, "power2.out", 10);
+        tl.fromTo(s1.an, { attr: { r: 13 } }, { attr: { r: 17 }, duration: 0.9, ease: "sine.inOut", yoyo: true, repeat: 3 }, 7.6);
+
+        // ── S2 (12–18) 멈추는 장면 ──
+        fade("#s1", "#s2", 12);
+        tl.fromTo("#s2-l1", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "expo.out" }, 12.3);
+        tl.fromTo("#s2-l2", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "expo.out" }, 12.7);
+        tl.fromTo("#s2-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.inOut" }, 13.3);
+        up("#s2-sub", 13.6, 0.7, "power2.out", 20);
+
+        // ── S3 (18–30) 빈 곳 ──
+        push("#s2", "#s34", 18);
+        head("#s34", 18.5);
+        tl.fromTo(lgray, { attr: { x2: L0 } }, { attr: { x2: L1 }, duration: 1.2, ease: "power2.inOut" }, 19.3);
+        tl.fromTo([n0, nl0], { opacity: 0, scale: 0.6, transformOrigin: "50% 50%", transformBox: "fill-box" }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2)" }, 19.2);
+        tl.fromTo([n1, nl1], { opacity: 0, scale: 0.6, transformOrigin: "50% 50%", transformBox: "fill-box" }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2)" }, 20.3);
+        tl.fromTo(km, { opacity: 0 }, { opacity: 1, duration: 0.4 }, 20.5);
+        tl.set([lblue, trav], { opacity: 0 }, 0);
+        tl.set(["#s34-a1", "#s34-a2", "#s34-a3"], { opacity: 0 }, 0);
+        [["#s34-a1", 21.2], ["#s34-a2", 22.6], ["#s34-a3", 24.0]].forEach(([s, t]) => {
+          tl.fromTo(s + " .z", { scale: 0.3, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "back.out(2.2)" }, t);
+          tl.set(s, { opacity: 1 }, t);
+          up(s + " .a", t + 0.3, 0.5, "power2.out", 14);
+          up(s + " .c", t + 0.45, 0.5, "power2.out", 14);
+        });
+        up("#s34-srcA", 25.2, 0.5, "power2.out", 10);
+
+        // ── S4 (30–44) 릴레이: 같은 선 위에서 이어짐 ──
+        section(1, 30);
+        tl.to(["#s34-eyA", "#s34-hA"], { opacity: 0, y: -24, duration: 0.45, ease: "power2.in" }, 30);
+        tl.fromTo("#s34-eyB", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 30.35);
+        tl.fromTo("#s34-hB", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.7, ease: "power4.out" }, 30.45);
+        tl.to("#s34-srcA", { opacity: 0, duration: 0.3 }, 30);
+        tl.to(km, { opacity: 0, duration: 0.3 }, 30.2);
+        tl.set(lblue, { opacity: 1 }, 30.6);
+        // 1 낮
+        tl.to("#s34-a1", { opacity: 0, y: -30, duration: 0.4, ease: "power2.in" }, 31.0);
+        tl.fromTo("#s34-b1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 31.4);
+        count($("#s34-83"), 0, 83, 31.7, 1.4, 0, "power2.out");
+        tl.fromTo(n0, { attr: { fill: C.ink } }, { attr: { fill: C.blue }, duration: 0.4 }, 31.7);
+        // 2 저녁
+        tl.to("#s34-a2", { opacity: 0, y: 30, duration: 0.4, ease: "power2.in" }, 33.8);
+        tl.fromTo("#s34-band", { opacity: 0, scaleX: 0.2 }, { opacity: 1, scaleX: 1, duration: 0.7, ease: "power3.out" }, 34.1);
+        tl.fromTo(lblue, { attr: { x2: L0 } }, { attr: { x2: L1 }, duration: 2.6, ease: "power1.inOut" }, 34.4);
+        tl.fromTo(trav, { opacity: 0, attr: { cx: L0 } }, { opacity: 1, attr: { cx: L1 }, duration: 2.6, ease: "power1.inOut" }, 34.4);
+        tl.fromTo("#s34-b2", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 34.9);
+        // 3 밤
+        tl.to(trav, { opacity: 0, duration: 0.3 }, 37.0);
+        tl.fromTo(n1, { attr: { fill: C.ink } }, { attr: { fill: C.blue }, duration: 0.4 }, 37.0);
+        tl.to("#s34-a3", { opacity: 0, y: -30, duration: 0.4, ease: "power2.in" }, 37.1);
+        tl.fromTo("#s34-b3", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "back.out(1.6)" }, 37.5);
+        tl.fromTo("#s34-srcB", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 38.6);
+
+        // ── S5 (44–58) 무엇을 넣었나 ──
+        push("#s34", "#s5", 44);
+        section(2, 44);
+        head("#s5", 44.6);
+        tl.fromTo("#s5 .chipin", { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.55, ease: "power3.out", stagger: 0.15 }, 45.5);
+        tl.fromTo(s5lines, { attr: { "stroke-dasharray": "260 260", "stroke-dashoffset": 260 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.7, ease: "power2.inOut", stagger: 0.1 }, 46.4);
+        tl.fromTo("#s5-box", { scale: 0.7, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "back.out(1.8)" }, 47.1);
+        s5pulses.forEach((p, i) => {
+          tl.fromTo(p, { opacity: 0, attr: { cx: 520, cy: 475 + i * 100 } }, { opacity: 1, attr: { cx: 700, cy: 610 }, duration: 0.8, ease: "power1.in" }, 47.7 + i * 0.25);
+          tl.to(p, { opacity: 0, duration: 0.15 }, 48.5 + i * 0.25);
+        });
+        up("#s5-capA", 49.0, 0.5, "power2.out", 14);
+        tl.fromTo(s5p, { opacity: 0, scale: 0.5, transformOrigin: "50% 50%", transformBox: "fill-box" }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)", stagger: 0.008 }, 49.2);
+        tl.to(s5p, { attr: { fill: C.blue }, duration: 0.3, stagger: 0.004 }, 49.4);
+        // 뒤에서부터 60명은 흐리게, 7명(34~40번째)은 연파랑
+        tl.to(s5p.slice(40).reverse(), { attr: { fill: C.track }, duration: 0.25, stagger: 0.025 }, 51.0);
+        tl.to(s5p.slice(33, 40).reverse(), { attr: { fill: C.bl }, duration: 0.25, stagger: 0.05 }, 52.6);
+        up("#s5-capB", 53.1, 0.6, "power3.out", 16);
+        up("#s5-note", 53.8, 0.5, "power2.out", 10);
+
+        // ── S6 (58–74) 1만 번 계산 ──
+        push("#s5", "#s6", 58);
+        head("#s6", 58.6);
+        up("#s6-countlab", 59.2, 0.5, "power2.out", 10);
+        tl.fromTo("#s6-count", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 59.2);
+        tl.fromTo(["#s6-ax", ".s6-tk"], { opacity: 0 }, { opacity: 1, duration: 0.5 }, 59.4);
+        bars.forEach((b) => tl.set(b, { attr: { y: HY, height: 0 } }, 0));
+        const cnt = $("#s6-count");
+        const st6 = { v: 0 };
+        cnt.textContent = "0번";
+        [60.0, 62.0, 64.0, 66.0].forEach((t, k) => {
+          const from = k ? mc.steps[k - 1] : 0;
+          tl.fromTo(st6, { v: from }, { v: mc.steps[k], duration: 1.2, ease: "power1.inOut", onUpdate: () => (cnt.textContent = Math.round(st6.v).toLocaleString("ko-KR") + "번") }, t);
+          bars.forEach((b, i) => {
+            const h = hAt(k, i);
+            tl.to(b, { attr: { y: HY - h, height: h }, duration: 1.2, ease: "power2.out" }, t);
+          });
+        });
+        tl.set(band, { opacity: 0 }, 0);
+        tl.fromTo(band, { opacity: 0, scaleX: 0, transformOrigin: "50% 50%", transformBox: "fill-box" }, { opacity: 1, scaleX: 1, duration: 0.8, ease: "power3.out" }, 67.4);
+        bars.forEach((b, i) => inBand[i] && tl.to(b, { attr: { fill: C.blue }, duration: 0.4 }, 67.6 + i * 0.02));
+        tl.fromTo(s6med, { scaleY: 0, transformOrigin: "50% 100%", transformBox: "fill-box" }, { scaleY: 1, duration: 0.7, ease: "power2.out" }, 68.4);
+        up([s6ml], 68.9, 0.5, "power3.out", 12);
+        up([s6b1], 69.6, 0.5, "power3.out", 12);
+        up([s6b2], 69.8, 0.5, "power3.out", 12);
+        up("#s6-note", 70.6, 0.5, "power2.out", 10);
+
+        // ── S7 (74–92) 몇 명이 참여해야 ──
+        push("#s6", "#s7", 74);
+        head("#s7", 74.6);
+        tl.fromTo(s7p, { opacity: 0 }, { opacity: 1, duration: 0.2, stagger: 0.006 }, 75.4);
+        tl.fromTo("#s7-sw", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 75.8);
+        tl.fromTo(s7s.dots, { scale: 0, transformOrigin: "50% 50%", transformBox: "fill-box" }, { scale: 1, duration: 0.3, ease: "back.out(2)", stagger: 0.006 }, 75.9);
+        tl.fromTo([s7s.med, s7s.medl], { opacity: 0 }, { opacity: 1, duration: 0.5 }, 76.9);
+        tl.fromTo(s7s.an, { opacity: 0, scale: 0.4, transformOrigin: "50% 50%", transformBox: "fill-box" }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2)" }, 77.0);
+        up([s7now], 77.3, 0.4, "power2.out", 10);
+        tl.set(ghosts, { opacity: 0 }, 0);
+        tl.set(["#s7-r0", "#s7-r1", "#s7-r2"], { opacity: 0 }, 0);
+        const pat = [2, 4, 10], T7 = [78.6, 82.0, 85.4];
+        let prevX = s7s.X(ED.ex.change);
+        SK.forEach((k, i) => {
+          const t = T7[i], x = s7s.X(sc[k].change);
+          tl.to(s7p.slice(i ? pat[i - 1] : 0, pat[i]), { attr: { fill: C.blue }, duration: 0.3, stagger: 0.06 }, t);
+          up("#s7-r" + i, t, 0.45, "power3.out", 12);
+          if (i) tl.to("#s7-r" + (i - 1), { color: C.light, duration: 0.3 }, t);
+          tl.to("#s7-r" + i, { color: C.blue, duration: 0.3 }, t + 0.1);
+          tl.set(ghosts[i], { opacity: 1 }, t + 0.5);
+          tl.to(s7s.an, { attr: { cx: x }, duration: 1.4, ease: "power3.inOut" }, t + 0.5);
+          if (i) tl.to(s7labs[i - 1], { opacity: 0, duration: 0.3 }, t + 0.5);
+          tl.fromTo(s7labs[i], { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, t + 1.6);
+          prevX = x;
+        });
+        tl.set(s7labs, { opacity: 0 }, 0);
+        tl.to(s7now, { opacity: 0.55, duration: 0.3 }, T7[0] + 0.5);
+        tl.fromTo(s7s.an, { attr: { r: 13 } }, { attr: { r: 17 }, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 3 }, 87.4);
+        up("#s7-final", 87.8, 0.7, "power4.out", 20);
+        up("#s7-note", 88.6, 0.5, "power2.out", 10);
+
+        // ── S8 (92–108) 시행하면서 확인 ──
+        push("#s7", "#s8", 92);
+        section(3, 92);
+        head("#s8", 92.6);
+        tl.fromTo(mh, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.08 }, 93.4);
+        tl.fromTo(rl, { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out", stagger: 0.1 }, 93.6);
+        tl.fromTo(".s8-cell", { opacity: 0, scale: 0.8, transformOrigin: "50% 50%", transformBox: "fill-box" }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)", stagger: 0.025 }, 93.8);
+        tl.set(".s8-on", { opacity: 0 }, 0);
+        tl.fromTo([pre, prel], { opacity: 0 }, { opacity: 1, duration: 0.5 }, 94.8);
+        [1, 2, 3, 4].forEach((m, j) => {
+          const cs = cells.filter((c) => c.m === m).map((c) => c.r);
+          tl.fromTo(cs, { opacity: 1, scaleX: 0, transformOrigin: "0% 50%", transformBox: "fill-box" }, { scaleX: 1, duration: 0.5, ease: "power3.out", stagger: 0.06 }, 95.6 + j * 1.0);
+        });
+        tl.set("#s8-pct", { opacity: 0, scale: 0.7 }, 0);
+        tl.to("#s8-pct", { opacity: 1, duration: 0.3 }, 99.6);
+        count($("#s8-val"), 0, Math.round(pw.power50 * 100), 99.6, 1.4, 0, "power2.out");
+        tl.to("#s8-pct", { scale: 1, duration: 1.4, ease: "power2.out" }, 99.6);
+        up("#s8-c1", 100.8, 0.5, "power3.out", 12);
+        up("#s8-c2", 101.1, 0.5, "power3.out", 12);
+        up("#s8-c3", 101.3, 0.5, "power3.out", 12);
+        tl.fromTo(loop, { attr: { x2: 330 } }, { attr: { x2: 1280 }, duration: 1.2, ease: "power2.inOut" }, 102.2);
+        tl.fromTo("#s8-loop", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, 102.6);
+        up("#s8 .source", 103.6, 0.5, "power2.out", 10);
+
+        // ── S9 (108–120) 확산과 마무리 ──
+        fade("#s8", "#s9", 108);
+        head("#s9", 108.6);
+        tl.fromTo(".s9-land", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.out" }, 109.0);
+        tl.set(".s9-pin", { opacity: 0 }, 0);
+        tl.to(hl["안동"], { attr: { fill: C.deep }, duration: 0.4 }, 109.8);
+        tl.fromTo(pins["안동"], { opacity: 0, scale: 0.3, transformOrigin: "50% 50%", transformBox: "fill-box" }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 109.8);
+        up([alab], 110.0, 0.4, "power2.out", 8);
+        ED.same.forEach((nm, i) => {
+          const t = 110.4 + i * 0.28;
+          if (hl[nm]) tl.to(hl[nm], { attr: { fill: C.blue }, duration: 0.3 }, t);
+          if (pins[nm]) tl.fromTo(pins[nm], { opacity: 0, scale: 0.3, transformOrigin: "50% 50%", transformBox: "fill-box" }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, t);
+          tl.fromTo(chips[i], { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, t);
+        });
+        up("#s9-diag", 112.4, 0.6, "power2.out", 14);
+        tl.fromTo("#s9-name", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.8, ease: "expo.out" }, 114.0);
+        up("#s9-tagline", 114.5, 0.6, "power2.out", 12);
+        up("#s9-disc", 115.3, 0.5, "power2.out", 8);
+        // 마지막 장면만 퇴장: 끝 0.8초에 바탕으로 사라짐
+        tl.to(["#s9-all", "#strip"], { opacity: 0, duration: 0.8, ease: "sine.inOut" }, 119.2);
+
+        const main = gsap.timeline({ paused: true });
+        main.add(tl.timeScale(SPEED), 0);
+        window.__timelines["main"] = main;
+      })();
+    </script>
+  </body>
+</html>
