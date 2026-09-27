@@ -43,11 +43,26 @@ R['A_가맹개월'] = MON
 cat = bz.groupby('분류')['이용률_1만'].agg(['count', 'median', 'mean', 'min', 'max'])
 R['A_분류별'] = cat.round(4).to_dict('index')
 
-# 음이항 GLM: log E[이용] = log(월수) + β0 + β1·log(동월방문) + 분류 — 동 방문이 이용을 설명하는지, 분류 차이가 얼마인지
+# 이용 건수 회귀: 종속변수 = 이용 건수(정수, 로그 변환 안 함), 로그 연결, 노출 = 가맹 개월(offset)
+#   log E[이용] = log(월수) + β0 + β1·log(동월방문) + 분류 — 동 방문이 이용을 설명하는지, 분류 차이가 얼마인지
+# 모형 선택(9/27 교수님 피드백): 포아송을 먼저 맞추고 과산포를 검정 → 음이항(NB2, α 최대우도 추정)
 bz['l방문'] = np.log(bz['동월방문'])
-glm = smf.glm('이용 ~ l방문 + C(분류, Treatment("식음료"))', data=bz,
-              family=sm.families.NegativeBinomial(alpha=1.0), offset=np.log(np.full(len(bz), MON))).fit()
-R['A_GLM'] = {'계수': glm.params.round(4).to_dict(), 'p값': glm.pvalues.round(4).to_dict(), 'n': int(glm.nobs)}
+FML = '이용 ~ l방문 + C(분류, Treatment("식음료"))'
+OFF = np.log(np.full(len(bz), MON))
+pois = smf.glm(FML, data=bz, family=sm.families.Poisson(), offset=OFF).fit()
+ct_aux = ((bz['이용'] - pois.mu) ** 2 - bz['이용']) / pois.mu               # Cameron–Trivedi 보조회귀: aux = α·μ + 오차
+ct = sm.OLS(ct_aux, pois.mu).fit()
+glm = smf.negativebinomial(FML, data=bz, offset=OFF).fit(disp=0, maxiter=500)
+lr = 2 * (glm.llf - pois.llf)
+from scipy.stats import chi2
+ci = glm.conf_int()
+R['A_과산포'] = {'평균': float(bz['이용'].mean()), '분산': float(bz['이용'].var()), '분산_평균비': float(bz['이용'].var() / bz['이용'].mean()),
+                'Pearson_chi2_df': float(pois.pearson_chi2 / pois.df_resid), 'CT_alpha': float(ct.params.iloc[0]),
+                'CT_t': float(ct.tvalues.iloc[0]), 'CT_p': float(ct.pvalues.iloc[0]), 'LR': float(lr), 'LR_p': float(0.5 * chi2.sf(lr, 1)),
+                'AIC_포아송': float(pois.aic), 'AIC_음이항': float(glm.aic), '정수': bool((bz['이용'] % 1 == 0).all())}
+R['A_GLM'] = {'계수': glm.params.round(4).to_dict(), 'p값': glm.pvalues.round(4).to_dict(), 'n': int(glm.nobs),
+              '하한95': ci[0].round(4).to_dict(), '상한95': ci[1].round(4).to_dict(), 'alpha': float(glm.params['alpha']),
+              '추정': '최대우도(음이항 NB2, α 함께 추정)'}
 # 교차검증(LOO): 같은 분류 나머지 업체의 이용률 중앙값 × 자기 동 방문으로 자기 이용을 예측 → 로그 오차
 err = []
 for i, row in bz.iterrows():
@@ -169,6 +184,7 @@ boot.to_csv(f'{D}/파라미터_부트스트랩.csv', index=False, encoding='utf-
 json.dump(R, open(f'{D}/파라미터추정.json', 'w'), ensure_ascii=False, indent=1, default=float)
 
 print('A 분류별 이용률(동 월방문 1만당 월 건수)\n', cat.round(3))
+print('A 과산포', {k: round(v, 4) if isinstance(v, float) else v for k, v in R['A_과산포'].items()})
 print('A GLM', R['A_GLM'])
 print('A LOO 중앙 절대로그오차', round(R['A_LOO']['중앙_절대로그오차'], 3), '→ 배수', round(R['A_LOO']['배수로'], 2))
 print('A 합계대조', R['A_합계대조'])

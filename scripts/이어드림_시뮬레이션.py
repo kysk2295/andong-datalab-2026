@@ -24,7 +24,7 @@
 import json, numpy as np, pandas as pd
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
-from scipy.stats import spearmanr
+from scipy.stats import spearmanr, beta as beta_dist
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -49,12 +49,12 @@ POP_ORIG, BOOTH_REF, FOOD, JM26 = 83, 24, 0.606, 887.5
 NOCAR = 0.091 + 0.014                                         # 철도·버스 유입 비중(철도공사 SKT 추정, 2022.4~6) = 저녁 교통 없이는 못 가는 몫
 WKND_DAYS = 70
 
-# ── p 하한: 주민증 경로(음이항 GLM) ─────────────────────────────────────
+# ── p 하한: 주민증 경로(음이항, α 최대우도 — 파라미터추정.py A절과 같은 모형) ──────────
 bz = pd.DataFrame(P['A_업체'])
 bz['l방문'] = np.log(bz['동월방문'])
-glm = smf.glm('이용 ~ l방문 + C(분류, Treatment("식음료"))', data=bz, family=sm.families.NegativeBinomial(alpha=1.0),
-              offset=np.log(np.full(len(bz), P['A_가맹개월']))).fit()
-glm_m = float(glm.predict(pd.DataFrame({'l방문': [np.log(JG_M)], '분류': ['식음료']}))[0])
+glm = smf.negativebinomial('이용 ~ l방문 + C(분류, Treatment("식음료"))', data=bz,
+                           offset=np.log(np.full(len(bz), P['A_가맹개월']))).fit(disp=0, maxiter=500)
+glm_m = float(glm.predict(pd.DataFrame({'l방문': [np.log(JG_M)], '분류': ['식음료']}), offset=[0.0])[0])   # 월 1개월당 예측
 P_LO = glm_m * POP_ORIG / JG_M                                  # 원도심 83곳이 모두 주민증 가맹일 때 방문 대비 이용률
 P_MD = 6715 / (V26 / 8)                                         # 안동 반값여행 1차 신청 ÷ 월 외지인 방문
 P_HI = S['3단계']['하회마을_이용률_pct'] / 100                  # 혜택이 있는 하회마을 이용률
@@ -144,6 +144,20 @@ for nm, (d, o) in OUT.items():
     day = o['팝업추가소비'] / WKND_DAYS
     R[nm]['검증_월영야행'] = {'행사1일_상한_원': float(up_day), '팝업하루_P50': float(day.median()), '팝업하루_P95': float(day.quantile(.95)),
                          '상한이내_비율': float((day <= up_day).mean())}
+
+# ── 임계값(9/27): 참여율을 고정하면 격차를 얼마나 메우나 / 격차의 몇 %를 메우려면 참여율이 얼마여야 하나 ──
+# 격차기여율은 참여율 p에 비례하므로, 나머지 값을 뽑은 뒤 (격차기여율 ÷ p)의 중앙값 × p = p를 고정했을 때의 중앙값이다.
+# 위 결과와 난수 순서가 겹치지 않도록 맨 뒤에서 뽑는다.
+P_GRID = (0.001, 0.005, 0.01, 0.02, 0.05, 0.10)
+FRAC = (0.25, 0.5, 1.0)
+TH = {'참여율': list(P_GRID), '격차비율_P50': {}, '필요참여율_P50': {}}
+for sc in SCN:
+    d = draw(sc, N)
+    g = model(sc, d)['격차기여율'] / d['p']
+    TH['격차비율_P50'][sc['이름']] = [float(np.median(g) * p) for p in P_GRID]
+    TH['필요참여율_P50'][sc['이름']] = {str(f): float(f / np.median(g)) for f in FRAC}
+TH['r_분포'] = {'P5': float(beta_dist.ppf(.05, 2, 6)), 'P50': float(beta_dist.ppf(.5, 2, 6)), 'P95': float(beta_dist.ppf(.95, 2, 6))}
+R['임계값'] = TH
 json.dump(R, open(f'{D}/시뮬레이션결과.json', 'w'), ensure_ascii=False, indent=1, default=float)
 
 # ── 그림 (브리핑 PDF와 같은 글꼴·색) ───────────────────────────────────
@@ -261,3 +275,4 @@ for nm in ('기본안', '확대안'):
     print(f"  지표② 강남동 +{r_['지표2_강남동']['P50']:.2%}, 추가소비 {r_['추가소비합']['P50']/1e8:.2f}억 ({r_['추가소비합']['P5']/1e8:.2f}~{r_['추가소비합']['P95']/1e8:.2f})")
     print('  분산기여', {k: round(v, 2) for k, v in r_['분산기여']['추가소비합'].items() if v > .01})
     print('  검증', r_['검증_월영야행'])
+    print('  임계값 격차비율', [f'{x:.1%}' for x in R['임계값']['격차비율_P50'][nm]], '필요 p', {k: f'{v:.2%}' for k, v in R['임계값']['필요참여율_P50'][nm].items()})
