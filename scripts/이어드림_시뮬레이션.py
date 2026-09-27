@@ -6,19 +6,29 @@
 
 운영 구조 (9/23 사용자 결정)
   1단계  원도심 식당 영수증 QR 인증(주민증 앱 밖 개방형) → 낮 체험(18시 마감 시설) 결제
-  2단계  인증자 중 저녁에 월영교로 가는 사람(자연 완주율 c, 철도공사 역산 × 야간 비중)
+  2단계  인증자 중 저녁에 월영교로 가는 사람(자연 완주율 c, 철도공사 역산 × 야간 비중) × 저녁 이동 배수 lam(설문)
   3단계  월영교: 저녁 체험 = 문보트(주말 23시 운영) + 야간 팝업
 
 1회 추출의 계산 (T개월, 기준 기간 2026년 1~8월)
   인증 N_R      = 중구동 외지인 방문(T개월) × (참여 식당 n1 ÷ 83) × p
-  낮 체험 N_D    = N_R × r                     저녁 도착 M = N_R × c
+  낮 체험 N_D    = N_R × r                     저녁 도착 M = N_R × c × lam
   문보트 N_B     = M × q_b                     팝업(릴레이) = M × q_p
-  체험 추가소비   = (N_D × 체험가격 + N_B × 문보트가격) × (1 − 반사실)
+  체험 추가소비   = (N_D × 체험가격 + N_B × 문보트가격) × (1 − 반사실 − 할인율)
   팝업 직접 지출  = 월영교 주말 저녁 방문기회 × 축제 방문당 소비 × 식음 0.606 × k × (n3 ÷ 24)
   지표① 방문당 체험·문화 소비 = 152.7원 + 체험 추가소비 ÷ 안동 외지인 방문(T개월)
   지표② 강남동 외지인 관광소비 증가율 = 팝업 추가소비 ÷ 강남동 관광총소비(T개월)
 
 시나리오: 기본안(식당 20곳, p = 실측·사례) / 확대안(83곳 전부, p = 계산대 권유 가정)
+          + 참여율 3단계(9/27 저녁): 기준 2% / 흥행 4%(강진 반값여행 규모) / 목표 10%(참여 식당 전원 안내), 모두 83곳
+
+운영 기간(9/27 밤): T = 12개월(2026년 1~8월 월평균 × 12, 연간). 건수·금액은 연간, 비율 지표(방문당·격차)는 기간과 무관.
+
+설문 보정(9/27 저녁, 사용자 결정 — 파라미터추정.json F_설문보정)
+  r   = 설문 6번 의향(베타 사후) × 실현율 U(0.33, 0.40)                          [가정 베타(2, 6) 대체]
+        의향 기준: 추출마다 반반 확률로 "매우 있다" 또는 "매우 + 있다"(9/27 밤, 선행연구 적용 범주 불명)
+  lam = (c + (1 − c) × 새 이동) ÷ c, 새 이동 = 비이동자 셔틀 "매우 있다"(차 유무별 베타, 차 없음 10.5% 가중) × 실현율
+        기존 lam = 1(연결이 저녁 이동을 늘리지 않음)은 "보수" 기준으로 함께 낸다
+  할인율 10%: 새로 체험한 사람은 할인가만 내고, 원래 할 사람은 할인만큼 덜 낸다 → 순효과에서 가격 × 할인율을 뺀다
 출력: 보고서/성과도출_20260922/시뮬레이션결과.json, 그림 g1~g4 (png·svg)
 """
 import json, numpy as np, pandas as pd
@@ -58,43 +68,67 @@ glm_m = float(glm.predict(pd.DataFrame({'l방문': [np.log(JG_M)], '분류': ['�
 P_LO = glm_m * POP_ORIG / JG_M                                  # 원도심 83곳이 모두 주민증 가맹일 때 방문 대비 이용률
 P_MD = 6715 / (V26 / 8)                                         # 안동 반값여행 1차 신청 ÷ 월 외지인 방문
 P_HI = S['3단계']['하회마을_이용률_pct'] / 100                  # 혜택이 있는 하회마을 이용률
+SV = P['F_설문보정']                                            # 설문 보정 집계(9/27 저녁)
+DISC = SV['할인율']
 
-BASE = dict(이름='기본안', n1=20, n3=8, T=8.0, p=(P_LO, P_MD, P_HI), r=(2, 6), cf=(5, 5),
-            qb=(0.10, 0.25, 0.50), qp=(0.20, 0.40, 0.60), k=(0.10, 0.25, 0.50), boat=(7000, 9333, 12000), lam=1.0)
+BASE = dict(이름='기본안', n1=20, n3=8, T=12.0, p=(P_LO, P_MD, P_HI), cf=(5, 5), disc=DISC,
+            qb=(0.10, 0.25, 0.50), qp=(0.20, 0.40, 0.60), k=(0.10, 0.25, 0.50), boat=(7000, 9333, 12000), lam=None)
 WIDE = {**BASE, '이름': '확대안', 'n1': 83, 'p': (P_MD, 0.02, 0.05)}
 SCN = [BASE, WIDE]
 
 
+def base(key, n):
+    # 실현율을 "매우 있다"에만 적용할지 "매우 + 있다"에 적용할지 선행연구로 확인되지 않아, 추출마다 반반 확률로 둘 중 하나를 쓴다
+    hi = rng.uniform(size=n) < SV['해석_섞기']
+    k = np.where(hi, SV[f'{key}_긍정'][0], SV[f'{key}_매우'][0])
+    return k, SV[f'{key}_매우'][1]
+
+
+def draw_r(n):
+    k, m = base('r', n)
+    return rng.beta(k + 1, m - k + 1) * rng.uniform(*SV['실현율'], n)
+
+
+def draw_new(n):
+    (kc, nc), (kn, nn), w = base('lam_차', n), base('lam_차없음', n), SV['차없음_비중']
+    return (w * rng.beta(kn + 1, nn - kn + 1) + (1 - w) * rng.beta(kc + 1, nc - kc + 1)) * rng.uniform(*SV['실현율'], n)
+
+
 def draw(inp, n):
-    tri = lambda t: rng.triangular(*t, n)
+    tri = lambda t: np.full(n, float(t[0])) if t[0] == t[2] else rng.triangular(*t, n)   # 참여율 고정 시나리오는 상수
     pick = lambda col: boot[col].sample(n, replace=True, random_state=int(rng.integers(1e9))).values
-    return pd.DataFrame({'p': tri(inp['p']), 'r': rng.beta(*inp['r'], n), '체험가격': pick('체험가격'),
-                         'c': pick('c_자연완주율'), 'q_b': tri(inp['qb']), '문보트가격': tri(inp['boat']),
-                         'q_p': tri(inp['qp']), 'k': tri(inp['k']), '팝업객단가': pick('팝업객단가'),
-                         '반사실': rng.beta(*inp['cf'], n)})
+    d = pd.DataFrame({'p': tri(inp['p']), 'r': draw_r(n), '체험가격': pick('체험가격'),
+                      'c': pick('c_자연완주율'), 'q_b': tri(inp['qb']), '문보트가격': tri(inp['boat']),
+                      'q_p': tri(inp['qp']), 'k': tri(inp['k']), '팝업객단가': pick('팝업객단가'),
+                      '반사실': rng.beta(*inp['cf'], n)})
+    d['lam'] = (d['c'] + (1 - d['c']) * draw_new(n)) / d['c']        # 저녁 이동 배수(설문)
+    return d
 
 
 def model(inp, d):
     s = inp['T'] / 8
     NR = JG_M * 8 * s * (inp['n1'] / POP_ORIG) * d['p']
     ND = NR * d['r']
-    M = NR * d['c'] * inp.get('lam', 1.0)                   # lam: 연결이 저녁 이동 자체를 늘리는 배수(기본 1 = 자연 완주율 그대로)
+    lam = d['lam'] if inp.get('lam') is None else inp['lam']   # 저녁 이동 배수: None = 설문 추정, 1 = 늘리지 않음(보수)
+    M0 = NR * d['c']                                          # 연결이 없어도 원래 저녁에 월영교로 가는 인증자
+    M = M0 * lam
     NB = M * d['q_b']
+    keep = 1 - d['반사실'] - inp.get('disc', 0.0)                # 할인 체험권: 새로 한 사람은 할인가, 원래 할 사람은 할인만큼 덜 냄
     G1 = ND * d['체험가격'] + NB * d['문보트가격']
-    E1 = G1 * (1 - d['반사실'])
+    E1 = G1 * keep
     Gp_r = M * d['q_p'] * d['팝업객단가']
     Gp_d = OPP3 * s * d['팝업객단가'] * FOOD * d['k'] * (inp['n3'] / BOOTH_REF)
     E3 = (Gp_r + Gp_d) * (1 - d['반사실'])
     days = WKND_DAYS * s
     base_buy = FOOD * d['k'] * (inp['n3'] / BOOTH_REF)          # 릴레이 없이도 월영교 저녁 방문객이 팝업에 쓰는 비율(객단가 환산)
-    L_boat = NB * d['문보트가격'] * (1 - d['반사실'])            # 연결이 있어야 생기는 저녁 문보트 결제
+    L_boat = NB * d['문보트가격'] * keep                        # 연결이 있어야 생기는 저녁 문보트 결제
     L_pop = M * np.maximum(d['q_p'] - base_buy, 0) * d['팝업객단가'] * (1 - d['반사실'])
     LINK = L_boat + L_pop
     return pd.DataFrame({
         '연결_문보트': L_boat, '연결_팝업': L_pop, '연결효과': LINK, '연결비중': LINK / (E1 + E3), '연결_교통몫': LINK * NOCAR,
-        '구성_낮체험': ND * d['체험가격'] * (1 - d['반사실']), '구성_팝업단독': E3 - L_pop,
+        '구성_낮체험': ND * d['체험가격'] * keep, '구성_팝업단독': E3 - L_pop,
         '인증': NR, '인증_월': NR / (8 * s), '주민증대비_증가율': NR / (8 * s) / JM26,
-        '낮체험': ND, '문보트': NB, '체험결제합': ND + NB, '하루_이동': M / days,
+        '낮체험': ND, '문보트': NB, '체험결제합': ND + NB, '하루_이동': M / days, '하루_이동_보수': M0 / days, '새이동_하루': (M - M0) / days,
         '하루_택시운행': np.ceil(M / days / 4), '팝업_하루': (M * d['q_p'] + Gp_d / d['팝업객단가']) / days,
         '체험총지출': G1, '체험추가소비': E1, '팝업총지출': Gp_r + Gp_d, '팝업추가소비': E3, '추가소비합': E1 + E3,
         '지표1_원': EXP26 + E1 / (V26 * s), '지표1_증가율': E1 / (V26 * s) / EXP26,
@@ -119,20 +153,20 @@ for sc in SCN:
         con[tgt] = {k: float(v ** 2 / tot) for k, v in sorted(rho.items(), key=lambda x: -abs(x[1]))}
     res['분산기여'] = con
     med = d.median()
-    per_p = JG_M * 8 * (sc['n1'] / POP_ORIG) * (med['r'] * med['체험가격'] + med['c'] * med['q_b'] * med['문보트가격']) * (1 - med['반사실'])
+    per_p = JG_M * 8 * (sc['n1'] / POP_ORIG) * (med['r'] * med['체험가격'] + med['c'] * med['lam'] * med['q_b'] * med['문보트가격']) * (1 - med['반사실'] - DISC)
     res['목표_필요_p'] = float(GAP / per_p)
     res['입력'] = {k: (list(v) if isinstance(v, tuple) else v) for k, v in sc.items()}
     R[sc['이름']] = res
 
-# 연결 효과 민감도: 연결이 저녁 이동을 늘리는 배수 lam
+# 연결 효과 민감도: 연결이 저녁 이동을 늘리는 배수 lam (1 = 보수, 설문 = 본 결과, 1.5·2.0 = 참고)
 for sc in SCN:
     sens = {}
-    for lam in (1.0, 1.5, 2.0):
+    for lam in (1.0, None, 1.5, 2.0):
         d = draw({**sc, 'lam': lam}, N)
         o = model({**sc, 'lam': lam}, d)
-        sens[str(lam)] = {'연결효과_P50': float(o['연결효과'].median()), '연결비중_P50': float(o['연결비중'].median()),
+        sens['설문' if lam is None else str(lam)] = {'연결효과_P50': float(o['연결효과'].median()), '연결비중_P50': float(o['연결비중'].median()),
                           '문보트_P50': float(o['문보트'].median()), '추가소비_P50': float(o['추가소비합'].median()),
-                          '하루이동_P50': float(o['하루_이동'].median())}
+                          '하루이동_P50': float(o['하루_이동'].median()), '새이동_P50': float(o['새이동_하루'].median())}
     R[sc['이름']]['연결민감도'] = sens
     o = OUT[sc['이름']][1]
     R[sc['이름']]['구성_평균'] = {k: float(o[k].mean()) for k in ('구성_낮체험', '연결_문보트', '연결_팝업', '구성_팝업단독')}
@@ -141,14 +175,14 @@ R['NOCAR'] = NOCAR
 C = P['C_월영야행']
 up_day = (np.exp(C['월FE_95%'][1]) - 1) * (GN_TOUR / 8)
 for nm, (d, o) in OUT.items():
-    day = o['팝업추가소비'] / WKND_DAYS
+    day = o['팝업추가소비'] / (WKND_DAYS * BASE['T'] / 8)
     R[nm]['검증_월영야행'] = {'행사1일_상한_원': float(up_day), '팝업하루_P50': float(day.median()), '팝업하루_P95': float(day.quantile(.95)),
                          '상한이내_비율': float((day <= up_day).mean())}
 
 # ── 임계값(9/27): 참여율을 고정하면 격차를 얼마나 메우나 / 격차의 몇 %를 메우려면 참여율이 얼마여야 하나 ──
 # 격차기여율은 참여율 p에 비례하므로, 나머지 값을 뽑은 뒤 (격차기여율 ÷ p)의 중앙값 × p = p를 고정했을 때의 중앙값이다.
 # 위 결과와 난수 순서가 겹치지 않도록 맨 뒤에서 뽑는다.
-P_GRID = (0.001, 0.005, 0.01, 0.02, 0.05, 0.10)
+P_GRID = (0.001, 0.005, 0.01, 0.02, 0.04, 0.05, 0.10)
 FRAC = (0.25, 0.5, 1.0)
 TH = {'참여율': list(P_GRID), '격차비율_P50': {}, '필요참여율_P50': {}}
 for sc in SCN:
@@ -156,8 +190,44 @@ for sc in SCN:
     g = model(sc, d)['격차기여율'] / d['p']
     TH['격차비율_P50'][sc['이름']] = [float(np.median(g) * p) for p in P_GRID]
     TH['필요참여율_P50'][sc['이름']] = {str(f): float(f / np.median(g)) for f in FRAC}
-TH['r_분포'] = {'P5': float(beta_dist.ppf(.05, 2, 6)), 'P50': float(beta_dist.ppf(.5, 2, 6)), 'P95': float(beta_dist.ppf(.95, 2, 6))}
+RPOOL = draw_r(200000)
+LPOOL = draw(WIDE, 50000)['lam'].values
+TH['r_분포'] = qs(RPOOL)
 R['임계값'] = TH
+R['설문보정'] = {'r': qs(RPOOL), 'r_평균': float(RPOOL.mean()), 'lam': qs(LPOOL), '할인율': DISC, '실현율': SV['실현율'],
+               'r_매우': SV['r_매우'], 'lam_차_매우': SV['lam_차_매우'], 'lam_차없음_매우': SV['lam_차없음_매우'], '비이동자': SV['lam_비이동자'],
+               'r_긍정': SV['r_긍정'], 'lam_차_긍정': SV['lam_차_긍정'], 'lam_차없음_긍정': SV['lam_차없음_긍정'], '해석_섞기': SV['해석_섞기'], '운영개월': BASE['T']}
+
+# ── 입력 상관 민감도(9/27, 선행연구 대조): 위에서는 입력을 서로 독립으로 뽑았다.
+# 참여율 p가 높은 곳은 체험 결제율 r도 높을 수 있으므로, 둘을 가우스 코퓰라로 묶어(순위 상관 ≈ ρ) 결과 범위가 얼마나 바뀌는지 본다.
+# 위 결과와 난수 순서가 겹치지 않도록 맨 뒤에서 뽑는다.
+from scipy.stats import norm, triang
+COR = {}
+for sc in SCN:
+    COR[sc['이름']] = {}
+    for rho in (0.0, 0.5, 0.8):
+        d = draw(sc, N)
+        u = norm.cdf(rng.multivariate_normal([0, 0], [[1, rho], [rho, 1]], N))
+        a, m, b = sc['p']
+        d['p'] = triang.ppf(u[:, 0], (m - a) / (b - a), loc=a, scale=b - a)
+        d['r'] = np.quantile(RPOOL, u[:, 1])
+        o = model(sc, d)
+        COR[sc['이름']][str(rho)] = {'격차기여율': qs(o['격차기여율']), '추가소비합': qs(o['추가소비합'])}
+R['상관민감도'] = COR
+
+# ── 참여율 3단계 시나리오(9/27 저녁, 사용자 결정): 83곳, 참여율만 고정하고 나머지는 1만 회 추출 ──
+# 기준 2% = 확대안 최빈 / 흥행 4% = 강진 반값여행 2025 참여 규모를 안동 방문 규모로 옮긴 수준의 약 2배 / 목표 10% = 참여 식당 전원 안내(설계 목표)
+# 저녁 이동은 설문 배수(본 결과)와 배수 1(보수)을 같은 추출로 함께 낸다. 맨 뒤에서 뽑아 위 결과의 난수 순서는 그대로다.
+KEYS = ('인증_월', '체험결제합', '문보트', '하루_이동', '새이동_하루', '팝업_하루', '하루_택시운행', '지표1_증가율', '격차기여율',
+        '체험추가소비', '팝업추가소비', '추가소비합', '연결효과', '연결비중', '지표2_강남동')
+SC3 = {}
+for nm, p_ in (('기준', 0.02), ('흥행', 0.04), ('목표', 0.10)):
+    sc = {**WIDE, '이름': nm, 'p': (p_, p_, p_)}
+    d = draw(sc, N)
+    o, o1 = model(sc, d), model({**sc, 'lam': 1.0}, d)
+    SC3[nm] = {'참여율': p_, **{k: qs(o[k]) for k in KEYS}, '목표도달확률': float((o['지표1_원'] >= TARGET).mean()),
+               '보수_lam1': {k: qs(o1[k]) for k in ('하루_이동', '문보트', '팝업_하루', '연결효과', '추가소비합', '지표2_강남동', '지표1_증가율')}}
+R['시나리오'] = SC3
 json.dump(R, open(f'{D}/시뮬레이션결과.json', 'w'), ensure_ascii=False, indent=1, default=float)
 
 # ── 그림 (브리핑 PDF와 같은 글꼴·색) ───────────────────────────────────
@@ -229,9 +299,9 @@ fig.tight_layout()
 save(fig, 'g3_기여분포')
 
 # g4 분산 기여(확대안, 추가 소비)
-lab = {'p': '참여(인증)율 p', 'r': '낮 체험 결제율 r', '체험가격': '체험 가격', 'c': '자연 완주율 c', 'q_b': '문보트 결제율',
+lab = {'p': '참여(인증)율 p', 'r': '낮 체험 결제율 r', 'lam': '저녁 이동 배수', '체험가격': '체험 가격', 'c': '자연 완주율 c', 'q_b': '문보트 결제율',
        '문보트가격': '문보트 가격', 'q_p': '팝업 구매율', 'k': '팝업 강도 k', '팝업객단가': '팝업 객단가', '반사실': '반사실 몫'}
-tag = {'p': '가정', 'r': '가정', '체험가격': '실측', 'c': '추정', 'q_b': '가정', '문보트가격': '미확인', 'q_p': '가정', 'k': '가정',
+tag = {'p': '가정', 'r': '설문', 'lam': '설문', '체험가격': '실측', 'c': '추정', 'q_b': '가정', '문보트가격': '미확인', 'q_p': '가정', 'k': '가정',
        '팝업객단가': '사례', '반사실': '가정'}
 con = R['확대안']['분산기여']['추가소비합']
 ks = [k for k in con if con[k] >= .01][:7][::-1]
@@ -276,3 +346,7 @@ for nm in ('기본안', '확대안'):
     print('  분산기여', {k: round(v, 2) for k, v in r_['분산기여']['추가소비합'].items() if v > .01})
     print('  검증', r_['검증_월영야행'])
     print('  임계값 격차비율', [f'{x:.1%}' for x in R['임계값']['격차비율_P50'][nm]], '필요 p', {k: f'{v:.2%}' for k, v in R['임계값']['필요참여율_P50'][nm].items()})
+print('\n설문 보정', {k: v for k, v in R['설문보정'].items() if k in ('r', 'lam')})
+for nm, v in R['시나리오'].items():
+    print(f"[{nm} {v['참여율']:.0%}] 체험결제 월 {v['체험결제합']['P50']/BASE['T']:,.0f} · 저녁이동 하루 {v['하루_이동']['P50']:.0f}(새로 {v['새이동_하루']['P50']:.0f}, 보수 {v['보수_lam1']['하루_이동']['P50']:.0f})"
+          f" · 팝업 하루 {v['팝업_하루']['P50']:.0f} · 방문당 +{v['지표1_증가율']['P50']:.1%} · 격차 {v['격차기여율']['P50']:.0%} · 추가소비 {v['추가소비합']['P50']/1e8:.2f}억 · 도달 {v['목표도달확률']:.0%}")
