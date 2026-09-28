@@ -864,7 +864,7 @@ st_ = [(2.3, '1', '원도심', '낮 · 식사 → 체험', '혜택 0곳', '식�
        (8.7, '3', '월영교', '밤 · 21시 이후', '주점 0곳', '야간 팝업')]
 YN, YE = 6.3, 2.4                                                       # 지금 줄, 이어드림 줄
 ax.text(0.15, YN, '지금', fontsize=9, fontweight='extra bold', color=RED, va='center')
-ax.text(0.15, YE, '이어드림', fontsize=9, fontweight='extra bold', color=BLUE_D, va='center')
+ax.text(0.15, YE, '안동 이어드림', fontsize=9, fontweight='extra bold', color=BLUE_D, va='center')
 ax.plot([2.3, 8.7], [YN, YN], color=GRAY_L, lw=2.2, ls=(0, (2.5, 2.5)), zorder=1)
 for xm_ in (3.9, 7.1):                                                 # 역 사이가 끊겼다는 표시
     ax.add_patch(Ellipse((xm_, YN), 0.5, 0.5 * ASP, fc='white', ec='none', zorder=3))
