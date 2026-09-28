@@ -697,34 +697,43 @@ ax.text(22, 0.55, '21시 이후\n0곳', ha='center', va='center', fontsize=10, f
 ax.set_xlim(17.2, 23); ax.set_ylim(-0.6, 1.3); ax.set_xticks([]); ax.set_yticks([])
 save(fig)
 
-# 10 업종 구성 (9/28 3차: 도넛은 뜻이 안 보임 → 가게 하나 = 점 하나. 규모 차이와 주점 0곳이 바로 보이게)
+# 10 업종 구성 (9/28 4차: 점 그림도 안 와닿음 → 위 큰 숫자 카드 둘(주점 86곳 vs 0곳) + 아래 업종 비중 대칭 막대)
 bk = Q['반경1km업종']
 grp = lambda d: {'주점': d.get('주점', 0), '한식': d.get('한식', 0), '카페': d.get('비알코올', 0),
                  '기타 식당': sum(v for k, v in d.items() if k not in ('한식', '비알코올', '주점'))}
-ccol = {'주점': RED, '한식': CHAR, '카페': GRAY, '기타 식당': GRAY_L}
 g_o, g_w = grp(bk['원도심']), grp(bk['월영교'])
+n_o, n_w = sum(g_o.values()), sum(g_w.values())
 fig = base('업종구성_월영교vs원도심', 10, '근거', '밤에 갈 주점, 원도심 86곳', '월영교 0곳',
-           '반경 1km 안의 음식점을 점 하나씩으로 (빨강 = 주점)', '출처: 소상공인 상가(상권)정보 2026.6. 월영교는 폐업 확인 가게 포함 17곳', h_in=4.4)
-axo = fig.add_axes([0.04, fig._bot + 0.1, 0.56, fig._top - fig._bot - 0.2]); axo.axis('off')
-wo, ho = 0.56 * W_IN, (fig._top - fig._bot - 0.2) * fig._h
-axo.set_xlim(0, wo); axo.set_ylim(0, ho); axo.set_aspect('equal')
-cols_o = 36; gap_o = (wo - 0.1) / cols_o
-seq_o = [k for k in ccol for _ in range(g_o[k])]
-for i_, k in enumerate(seq_o):
-    axo.add_patch(Circle((0.05 + (i_ % cols_o) * gap_o + gap_o / 2, ho - 0.55 - (i_ // cols_o) * gap_o), gap_o * 0.36, color=ccol[k], lw=0))
-axo.text(0.05, ho - 0.2, f"원도심 1km  {sum(g_o.values())}곳", fontsize=10, fontweight='extra bold', color=CHAR, va='center')
-axw = fig.add_axes([0.64, fig._bot + 0.1, 0.33, fig._top - fig._bot - 0.2]); axw.axis('off')
-ww, hw = 0.33 * W_IN, (fig._top - fig._bot - 0.2) * fig._h
-axw.set_xlim(0, ww); axw.set_ylim(0, hw); axw.set_aspect('equal')
-seq_w = [k for k in ccol for _ in range(g_w[k])]
-for i_, k in enumerate(seq_w):
-    axw.add_patch(Circle((0.05 + (i_ % 36) * gap_o + gap_o / 2, hw - 0.55 - (i_ // 36) * gap_o), gap_o * 0.36, color=ccol[k], lw=0))
-axw.text(0.05, hw - 0.2, f"월영교 1km  {sum(g_w.values())}곳", fontsize=10, fontweight='extra bold', color=BLUE_D, va='center')
-axw.text(0.05, hw - 1.0, '주점', fontsize=8, color=SUB, va='center')
-axw.text(0.05, hw - 1.45, '0곳', fontsize=26, fontweight='black', color=RED, va='center')
-axw.text(0.05, hw - 1.95, f"원도심은 {g_o['주점']}곳 ({g_o['주점'] / sum(g_o.values()) * 100:.0f}%)", fontsize=7.4, color=SUB, va='center')
-fig.add_artist(Line2D([0.62, 0.62], [fig._bot + 0.1, fig._top - 0.03], color=TRACK, lw=1, transform=fig.transFigure))
-legend(fig, [(f"{k} ({g_o[k]} / {g_w[k]})", c, 'dot') for k, c in ccol.items()], y=fig._bot + 0.05)
+           '반경 1km 안의 음식점 업종', '출처: 소상공인 상가(상권)정보 2026.6. 월영교는 폐업 확인 가게 포함 17곳', h_in=4.3)
+ty_, th_ = fig._top - 1.25 / fig._h, 1.13 / fig._h                    # 카드 위치·높이
+for x0_, nm_, n_, k_, col, bg in ((0.06, '원도심 반경 1km', n_o, g_o['주점'], CHAR, '#F4F6F7'),
+                                  (0.53, '월영교 반경 1km', n_w, g_w['주점'], RED, RED_XL)):
+    fig.patches.append(FancyBboxPatch((x0_, ty_), 0.41, th_, boxstyle='round,pad=0,rounding_size=0.02', transform=fig.transFigure, fc=bg, ec='none'))
+    fig.text(x0_ + 0.03, ty_ + th_ - 0.2 / fig._h, nm_, fontsize=7.8, fontweight='bold', color=INK, va='center')
+    fig.text(x0_ + 0.03, ty_ + th_ * 0.42, '주점', fontsize=9, fontweight='bold', color=col, va='center')
+    fig.text(x0_ + 0.105, ty_ + th_ * 0.42, f'{k_}곳', fontsize=24, fontweight='black', color=col, va='center')
+    fig.text(x0_ + 0.38, ty_ + th_ * 0.42, f'음식점 {n_}곳 중\n{k_ / n_ * 100:.0f}%', fontsize=7, color=SUB, va='center', ha='right', linespacing=1.4)
+fig.text(0.5, ty_ + th_ / 2, 'vs', fontsize=8, fontweight='bold', color=GRAY, ha='center', va='center')
+ax = fig.add_axes([0.06, fig._bot + 0.12 / fig._h, 0.88, ty_ - fig._bot - 0.42 / fig._h]); ax.axis('off')
+cats = list(g_o); ys = np.arange(len(cats))[::-1]; G0 = 13; SC_ = 0.62            # 가운데 이름 칸 폭, 막대 배율(% → 축)
+for y_, k in zip(ys, cats):
+    so, sw = g_o[k] / n_o * 100, g_w[k] / n_w * 100
+    if k == '주점':
+        ax.add_patch(FancyBboxPatch((-G0 - 60 * SC_ - 9, y_ - 0.42), 2 * (G0 + 60 * SC_ + 9), 0.84, boxstyle='round,pad=0,rounding_size=0.3',
+                                    fc=RED_XL, ec='none', zorder=0, mutation_aspect=0.05))
+    ax.plot([-G0, -G0 - 60 * SC_], [y_, y_], color=TRACK, lw=9, solid_capstyle='round', zorder=1)
+    ax.plot([G0, G0 + 60 * SC_], [y_, y_], color=TRACK, lw=9, solid_capstyle='round', zorder=1)
+    ax.plot([-G0, -G0 - max(so, 0.8) * SC_], [y_, y_], color=CHAR, lw=9, solid_capstyle='round', zorder=2)
+    if sw > 0:
+        ax.plot([G0, G0 + sw * SC_], [y_, y_], color=BLUE, lw=9, solid_capstyle='round', zorder=2)
+    ax.text(-G0 - so * SC_ - 2.2, y_, f'{so:.0f}%', ha='right', va='center', fontsize=7.6, fontweight='bold', color=INK)
+    hot = k == '주점'
+    ax.text(G0 + sw * SC_ + (2.2 if sw else 0.5), y_, f'{sw:.0f}%', ha='left', va='center', fontsize=10 if hot else 7.6,
+            fontweight='black' if hot else 'bold', color=RED if hot else INK)
+    ax.text(0, y_, k, ha='center', va='center', fontsize=8, fontweight='extra bold' if hot else 'semibold', color=RED if hot else INK)
+ax.text(-G0, len(cats) - 0.35, '원도심', ha='right', va='center', fontsize=7.4, fontweight='bold', color=CHAR)
+ax.text(G0, len(cats) - 0.35, '월영교', ha='left', va='center', fontsize=7.4, fontweight='bold', color=BLUE_D)
+ax.set_xlim(-G0 - 60 * SC_ - 10, G0 + 60 * SC_ + 10); ax.set_ylim(-0.6, len(cats) - 0.05)
 save(fig)
 
 # 11 관광지별 방문 vs 소비 (철도공사)
@@ -844,27 +853,33 @@ ax.text(day, 0.5, f'숙박 {stay}명은 제외', ha='right', fontsize=6.6, color
 save(fig)
 
 # ═════════════ 4. 해법 ═════════════
-# 9/28 3차: 글이 많고 안 와닿음 → 하루 시간 띠 위 세 구간 + 구간마다 "지금(빨강) → 이어드림(파랑)" 두 줄만
-fig = base('3단계릴레이', 16, '해법', '하루를 세 구간으로 잇는', '3단계 릴레이',
-           '낮에 원도심에서, 저녁에 월영교로, 밤까지 머물게', '출처: 서식4 3)칸 운영안, 한국관광 데이터랩·BIS·상가정보', h_in=3.8)
-ax = fig.add_axes([0.1, fig._bot + 0.05, 0.86, fig._top - fig._bot - 0.08]); ax.axis('off')
-ax.set_xlim(10.2, 23.2); ax.set_ylim(0, 10)
-segs = [(11, 18.5, '낮 · 원도심', '식사 → 체험', BLUE_L, CHAR, '혜택 0곳', '식당 83곳 체험 할인'),
-        (18.5, 21, '저녁', '원도심 → 월영교', BLUE, 'white', '버스 0회', '택시·셔틀'),
-        (21, 23, '밤 · 월영교', '머물며 쓰기', BLUE_D, 'white', '주점 0곳', '야간 팝업')]
-for x0_, x1_, t1, t2, col, tc, now_, new_ in segs:
-    ax.add_patch(FancyBboxPatch((x0_ + 0.04, 6.6), x1_ - x0_ - 0.08, 2.4, boxstyle='round,pad=0,rounding_size=0.25', fc=col, ec='none', mutation_aspect=1 / 3.5))
-    xc = (x0_ + x1_) / 2
-    ax.text(xc, 8.2, t1, ha='center', va='center', fontsize=9.6, fontweight='black', color=tc)
-    ax.text(xc, 7.25, t2, ha='center', va='center', fontsize=7.4, color=tc)
-    ax.text(xc, 4.9, now_, ha='center', va='center', fontsize=13, fontweight='black', color=RED)
-    ax.text(xc, 3.55, '▼', ha='center', va='center', fontsize=8, color=GRAY)
-    ax.text(xc, 2.3, new_, ha='center', va='center', fontsize=10, fontweight='extra bold', color=BLUE_D)
-for h in (11, 18.5, 21, 23):
-    ax.text(h, 9.55, f"{int(h)}:{'30' if h % 1 else '00'}", ha='center', va='center', fontsize=7, color=SUB)
-ax.text(10.25, 4.9, '지금', ha='left', va='center', fontsize=7.6, fontweight='bold', color=RED)
-ax.text(10.25, 2.3, '이어드림', ha='left', va='center', fontsize=7.6, fontweight='bold', color=BLUE_D)
-ax.plot([10.2, 23.2], [3.55, 3.55], color=TRACK, lw=0.8, zorder=0)
+# 9/28 4차: 시간 띠도 안 와닿음 → 노선도 두 줄. 지금 = 끊긴 회색 점선 + 역마다 빨간 공백, 이어드림 = 이어진 파란 선 + 해법
+fig = base('3단계릴레이', 16, '해법', '끊긴 하루를 한 줄로 잇는', '3단계 릴레이',
+           '낮에 원도심에서, 저녁에 월영교로, 밤까지 머물게', '출처: 서식4 3)칸 운영안, 한국관광 데이터랩·BIS·상가정보', h_in=3.6)
+ax = fig.add_axes([0.03, fig._bot + 0.05 / fig._h, 0.94, fig._top - fig._bot - 0.1 / fig._h]); ax.axis('off')
+ax.set_xlim(0, 10); ax.set_ylim(0, 10)
+ASP = (0.94 * W_IN) / ((fig._top - fig._bot - 0.1 / fig._h) * fig._h)     # 가로 1칸 대비 세로 1칸 길이 비 → 원이 찌그러지지 않게
+st_ = [(2.3, '1', '원도심', '낮 · 식사 → 체험', '혜택 0곳', '식당 83곳 체험 할인'),
+       (5.5, '2', '저녁 이동', '18:30 ~ 21:00', '버스 0회', '택시·셔틀'),
+       (8.7, '3', '월영교', '밤 · 21시 이후', '주점 0곳', '야간 팝업')]
+YN, YE = 6.3, 2.4                                                       # 지금 줄, 이어드림 줄
+ax.text(0.15, YN, '지금', fontsize=9, fontweight='extra bold', color=RED, va='center')
+ax.text(0.15, YE, '이어드림', fontsize=9, fontweight='extra bold', color=BLUE_D, va='center')
+ax.plot([2.3, 8.7], [YN, YN], color=GRAY_L, lw=2.2, ls=(0, (2.5, 2.5)), zorder=1)
+for xm_ in (3.9, 7.1):                                                 # 역 사이가 끊겼다는 표시
+    ax.add_patch(Ellipse((xm_, YN), 0.5, 0.5 * ASP, fc='white', ec='none', zorder=3))
+    for sx_ in (1, -1):
+        ax.plot([xm_ - 0.13, xm_ + 0.13], [YN - 0.13 * ASP * sx_, YN + 0.13 * ASP * sx_], color=RED, lw=2.4, solid_capstyle='round', zorder=4)
+ax.plot([2.3, 8.7], [YE, YE], color=BLUE, lw=6, solid_capstyle='round', zorder=1)
+for x_, no_, nm_, tm_, bad_, fix_ in st_:
+    ax.text(x_, 9.6, nm_, ha='center', va='center', fontsize=10, fontweight='black', color=CHAR)
+    ax.text(x_, 8.75, tm_, ha='center', va='center', fontsize=7, color=SUB)
+    ax.add_patch(Ellipse((x_, YN), 0.42, 0.42 * ASP, fc='white', ec=GRAY, lw=1.6, zorder=3))
+    ax.text(x_, YN - 1.1, bad_, ha='center', va='center', fontsize=12, fontweight='black', color=RED)
+    ax.add_patch(Ellipse((x_, YE), 0.6, 0.6 * ASP, fc=BLUE_D, ec='white', lw=2, zorder=3))
+    ax.text(x_, YE, no_, ha='center', va='center', fontsize=8, fontweight='bold', color='white', zorder=4)
+    ax.text(x_, YE - 1.15, fix_, ha='center', va='center', fontsize=9.5, fontweight='extra bold', color=BLUE_D, linespacing=1.25)
+ax.plot([0.15, 9.85], [4.2, 4.2], color=TRACK, lw=0.8, zorder=0)
 save(fig)
 
 # ═════════════ 5. 효과 (시행 전 예측) ═════════════
