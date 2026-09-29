@@ -1,0 +1,78 @@
+.place-media-dialog { max-width:1120px;width:calc(100vw - 40px);max-height:92dvh;padding:24px;background:#f7f8f1;overflow:auto; }
+.media-top,.media-heading,.media-footer { display:flex;align-items:center;justify-content:space-between;gap:24px; }
+.media-top { font-size:10px;letter-spacing:.09em;color:#657668; }
+.media-top button,.media-footer button { padding:9px 13px;border:1px solid #cad4c5;border-radius:8px;font-size:12px; }
+.media-heading { margin:22px 0 16px;align-items:end; }
+.media-heading h2 { margin:5px 0 0;font-size:29px;letter-spacing:-.04em; }
+.media-heading p { margin:0;color:#667664;font-size:11px; }
+.media-heading label { width:285px;max-width:50%;font-size:11px;display:grid;gap:7px; }
+.media-featured { display:flex;gap:6px;flex-wrap:wrap;margin-bottom:17px; }
+.media-featured button { padding:7px 10px;font-size:11px;border:1px solid #d0d9ca;border-radius:20px;color:#637660; }
+.media-featured button[aria-pressed=true] { background:#e4eddc;color:#2c533e;border-color:#90ab7e; }
+.media-tabs { display:flex;border-bottom:1px solid #c7d2bf;gap:22px; }
+.media-tabs button { padding:12px 0 11px;font-size:13px;border-bottom:2px solid transparent;color:#6f7c6a; }
+.media-tabs button[aria-selected=true] { color:#28543d;border-color:#28543d;font-weight:700; }
+.media-photo { margin:18px 0 0; }
+.media-photo-frame { height:clamp(250px,46dvh,490px);background:#e8ece2;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden; }
+.media-photo img { display:block;width:100%;height:100%;object-fit:contain; }
+.media-photo img[hidden] { display:none; }
+.media-photo-frame { position:relative; }
+#media-photo-loading { position:absolute;color:#64765e;font-size:12px; }
+#media-photo-loading[hidden] { display:none; }
+#media-photo-error { text-align:center;padding:20px;font-size:12px; }
+.media-photo figcaption { display:flex;flex-wrap:wrap;gap:6px 20px;padding:11px 2px 0;line-height:1.7;font-size:10px;color:#667360; }
+.media-photo figcaption strong { display:block;width:100%;font-size:12px;font-weight:500;color:#354d3c; }
+.media-photo a,.media-review-note a { color:#4b7256; }
+.media-links { display:flex;gap:9px;flex-wrap:wrap;margin:18px 0; }
+.media-links a { display:inline-flex;align-items:center;padding:11px 16px;border:1px solid #aebda7;border-radius:8px;color:#315a42;font-size:12px;text-decoration:none; }
+.media-links a.media-primary { background:#376148;border-color:#376148;color:white; }
+.media-footer { margin-top:16px;padding-top:15px;border-top:1px solid #d4dccf;font-size:10px;color:#6b7b63; }
+.media-empty { display:flex;align-items:center;justify-content:center;flex-direction:column;min-height:235px;text-align:center;background:#eaf0e3;border-radius:10px;margin-top:18px;padding:20px; }
+.media-empty span { color:#6b8060;font-size:11px; }
+.media-empty h3 { font-size:18px;margin:13px 0 4px; }
+.media-empty p { font-size:12px;max-width:410px; }
+.street-intro { display:flex;justify-content:space-between;align-items:center;gap:16px; }
+.street-intro h3 { font-size:20px;margin:22px 0 6px; }
+.street-intro p,#media-street-status { font-size:12px;color:#62715d; }
+.media-coordinate { font-size:11px;line-height:1.8;color:#829176;white-space:nowrap;font-variant-numeric:tabular-nums; }
+#media-roadview { width:100%;height:48dvh;border-radius:10px;overflow:hidden; }
+.review-intro h3 { font-size:20px; }
+.review-intro p { font-size:12px; }
+.review-facts { display:grid;grid-template-columns:repeat(4,1fr);margin:22px 0;background:#eef2e7;border:1px solid #d5dfca;border-radius:10px;overflow:hidden; }
+.review-facts article { padding:18px;border-right:1px solid #d5dfca; }
+.review-facts article:last-child { border:0; }
+.review-facts span { font-size:10px;color:#6f8363; }
+.review-facts h3 { margin:12px 0 6px;font-size:14px; }
+.review-facts p { font-size:12px;line-height:1.8;margin:0;color:#66745e; }
+.review-source h3 { font-size:15px; }
+.review-source p { font-size:12px;margin:6px 0; }
+.review-source small,.media-review-note { font-size:10px!important;color:#6c7965; }
+.media-entry { display:flex;gap:8px;margin:12px 0; }
+.media-entry button { width:100%;padding:12px;border:1px solid #bacab1;border-radius:8px;background:#e7eedf;color:#3b5b43;font-size:12px; }
+@media(max-width:700px) {
+ .place-media-dialog { width:calc(100vw - 20px);max-height:94dvh;padding:16px; }
+ .media-top { gap:10px;letter-spacing:0;font-size:9px; }
+ .media-top button { white-space:nowrap; }
+ .media-heading { display:block;margin:17px 0; }
+ .media-heading h2 { font-size:24px; }
+ .media-heading label { width:100%;max-width:none;margin-top:16px; }
+ .media-featured { flex-wrap:nowrap;overflow:auto;padding-bottom:5px; }
+ .media-featured button { flex-shrink:0; }
+ .media-tabs { gap:22px; }
+ .media-tabs button { font-size:12px; }
+ .media-photo-frame { height:31dvh;min-height:210px; }
+ .media-footer { align-items:start;gap:12px; }
+ .media-footer span { max-width:55%;line-height:1.7; }
+ .media-footer button { white-space:nowrap;font-size:10px; }
+ .review-facts { grid-template-columns:1fr 1fr; }
+ .review-facts article { padding:14px;border-bottom:1px solid #d5dfca; }
+ .review-facts article:nth-child(2) { border-right:0; }
+ .review-facts article:nth-child(3) { border-bottom:0; }
+ .media-coordinate { display:none; }
+}
+.media-vr{width:100%;height:min(55dvh,560px);min-height:260px;background:#e4eae4;border:1px solid var(--edge);border-radius:6px;overflow:hidden;}
+.media-vr iframe{width:100%;height:100%;border:0;display:block;}
+.media-vr-start{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;color:var(--text);}
+.media-vr-start span{font-size:11px;letter-spacing:2px;color:var(--muted);}.media-vr-start h3{font-size:28px;margin:14px 0;}.media-vr-start p{font-size:12px;line-height:1.8;}.media-vr-start button{padding:12px 22px;margin-top:12px;border-radius:5px;background:var(--selected);color:white;}
+.media-vr-credit{font-size:11px;color:var(--muted);margin:10px 0;}
+@media(max-width:700px){.media-vr{height:48dvh;min-height:280px;}}

@@ -1,0 +1,22 @@
+.transit-dialog{width:min(820px,calc(100vw - 32px));color:var(--ink);background:var(--panel)}
+.transit-fields{display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:12px}
+.transit-caption{display:flex;gap:15px;align-items:center;margin-top:20px}
+.transit-caption small{display:block;color:var(--muted);margin-top:6px}
+.transit-number{font-size:30px;font-weight:700;color:var(--selected);font-variant-numeric:tabular-nums}
+.transit-diagram{width:100%;max-height:250px;margin:16px 0;color:#267e89;background:var(--track);border-radius:8px}
+.transit-departures{border-block:1px solid var(--edge);padding:12px 0}.transit-departures h3{font-size:14px;margin:0 0 10px}
+.departure-times{display:flex;flex-wrap:wrap;gap:8px}.departure-times time{padding:6px 10px;background:var(--track);font-variant-numeric:tabular-nums}
+.transit-stops{list-style:none;margin:0;padding:4px 0;max-height:270px;overflow:auto}
+.transit-stops button{width:100%;display:flex;align-items:center;gap:14px;min-height:42px;text-align:left;border-bottom:1px solid var(--edge);padding:8px;font-size:12px}
+.transit-stops button span{color:var(--muted);font-variant-numeric:tabular-nums}.transit-stops [aria-pressed=true]{background:var(--track);font-weight:700}
+#transit-map-bar{position:fixed;z-index:35;left:50%;bottom:118px;transform:translateX(-50%);max-width:calc(100vw - 32px);padding:12px 16px;display:flex;align-items:center;gap:12px;font-size:12px}
+#transit-map-bar[hidden]{display:none}#transit-map-name{max-width:360px}#transit-map-bar button{white-space:nowrap;padding:8px;border:1px solid var(--edge);border-radius:5px}
+.report-comparison{margin-top:28px;padding-top:20px;border-top:1px solid var(--edge)}.report-comparison h3{font-size:16px}.report-comparison table{min-width:560px}.report-comparison td{font-variant-numeric:tabular-nums}
+.restaurant-practical{border-top:1px solid var(--edge);padding-top:12px;margin-top:12px}.restaurant-practical h3{font-size:13px;margin:0 0 7px}.restaurant-practical p{font-size:12px;line-height:1.7}.restaurant-practical a{display:inline-flex;align-items:center;min-height:40px;padding:4px 8px;margin:0 4px 4px 0;border:1px solid var(--edge);border-radius:5px;text-decoration:none;font-size:12px}
+.food-source-status{color:var(--muted);font-size:11px}.review-facts article small{display:block;color:var(--muted);font-size:11px;margin-top:8px}
+@media(max-width:600px){.transit-fields{grid-template-columns:1fr}.transit-dialog{padding:16px;max-height:90dvh}.transit-caption strong{font-size:13px}.transit-caption small{font-size:11px}#transit-map-bar{bottom:100px;flex-wrap:wrap;width:calc(100vw - 32px);gap:6px}#transit-map-name{width:100%;max-width:none}.transit-diagram{max-height:180px}}
+.transit-dialog .transit-diagram{display:block;height:240px}
+body.transit-map-open #atlas-route{display:none!important}
+.transit-dialog .journey-actions button.primary{background:var(--selected);color:white}
+.transit-dialog .journey-actions a{align-self:center;font-size:12px;white-space:nowrap}
+@media(max-width:600px){.transit-dialog .transit-diagram{height:180px}.transit-dialog .journey-actions{flex-wrap:wrap}}

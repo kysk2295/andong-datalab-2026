@@ -1,0 +1,481 @@
+{
+  "checkedAt": "2026-09-29",
+  "photos": {
+    "heritage-dosan": {
+      "id": "heritage-dosan",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Korea-Andong-Dosan_Seowon-01.jpg/960px-Korea-Andong-Dosan_Seowon-01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korea-Andong-Dosan_Seowon-01.jpg",
+      "credit": "Julie",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "capturedAt": "2008-05-25",
+      "caption": "도산서원 경내 · 권역 참고 사진",
+      "provider": "Wikimedia Commons",
+      "view": "photo"
+    },
+    "heritage-byeongsan": {
+      "id": "heritage-byeongsan",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/%EB%B3%91%EC%82%B0%EC%84%9C%EC%9B%90-1.jpg/960px-%EB%B3%91%EC%82%B0%EC%84%9C%EC%9B%90-1.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%EB%B3%91%EC%82%B0%EC%84%9C%EC%9B%90-1.jpg",
+      "credit": "limhyungkyu",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capturedAt": "2016-09-15",
+      "caption": "병산서원 전경 · 권역 참고 사진",
+      "provider": "Wikimedia Commons",
+      "view": "photo"
+    },
+    "heritage-bongjeong": {
+      "id": "heritage-bongjeong",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Korea-Andong-Bongjeongsa_3040-06_Geungnakjeon.JPG/960px-Korea-Andong-Bongjeongsa_3040-06_Geungnakjeon.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korea-Andong-Bongjeongsa_3040-06_Geungnakjeon.JPG",
+      "credit": "Steve46814",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "capturedAt": "2006-05-11",
+      "caption": "봉정사 극락전",
+      "provider": "Wikimedia Commons",
+      "view": "photo"
+    }
+  },
+  "records": {
+    "hahoe:osm-908177187": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-908177219": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-908177242": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-908177247": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-908177268": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-908177273": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-908177289": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-908177404": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-3616323116": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-355844658": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-789364701": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-789364712": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790243928": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790243934": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790435920": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790435930": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790435941": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790620979": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790621003": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790621013": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790651288": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790651290": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790651293": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790651298": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790651300": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790651360": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790784013": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-790784030": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-1244800321": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-1534570550": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe:osm-1545490812": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "hahoe": {
+      "photos": [
+        "hahoe"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-313680336": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-784388297": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-784388298": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-784388299": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-784388300": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-784388301": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-784388302": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-784388303": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-784388304": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-786237855": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-786237856": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-787368608": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-787368609": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-787368610": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-787368611": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-787368613": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-791619778": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan:osm-791619779": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "dosan": {
+      "photos": [
+        "heritage-dosan"
+      ],
+      "photoScope": "region"
+    },
+    "byeongsan:osm-313681777": {
+      "photos": [
+        "heritage-byeongsan"
+      ],
+      "photoScope": "region"
+    },
+    "byeongsan:osm-373013714": {
+      "photos": [
+        "heritage-byeongsan"
+      ],
+      "photoScope": "region"
+    },
+    "byeongsan:osm-784383450": {
+      "photos": [
+        "heritage-byeongsan"
+      ],
+      "photoScope": "region"
+    },
+    "byeongsan:osm-784383451": {
+      "photos": [
+        "heritage-byeongsan"
+      ],
+      "photoScope": "region"
+    },
+    "byeongsan:osm-784383452": {
+      "photos": [
+        "heritage-byeongsan"
+      ],
+      "photoScope": "region"
+    },
+    "byeongsan:osm-784383454": {
+      "photos": [
+        "heritage-byeongsan"
+      ],
+      "photoScope": "region"
+    },
+    "byeongsan:osm-784383455": {
+      "photos": [
+        "heritage-byeongsan"
+      ],
+      "photoScope": "region"
+    },
+    "byeongsan:osm-784383456": {
+      "photos": [
+        "heritage-byeongsan"
+      ],
+      "photoScope": "region"
+    },
+    "byeongsan:osm-787471934": {
+      "photos": [
+        "heritage-byeongsan"
+      ],
+      "photoScope": "region"
+    },
+    "byeongsan:osm-787471936": {
+      "photos": [
+        "heritage-byeongsan"
+      ],
+      "photoScope": "region"
+    },
+    "byeongsan": {
+      "photos": [
+        "heritage-byeongsan"
+      ],
+      "photoScope": "region"
+    },
+    "bongjeong:osm-3756789466": {
+      "photos": [
+        "heritage-bongjeong"
+      ],
+      "photoScope": "region"
+    },
+    "bongjeong:osm-3756789467": {
+      "photos": [
+        "heritage-bongjeong"
+      ],
+      "photoScope": "region"
+    },
+    "bongjeong:osm-691112449": {
+      "photos": [
+        "heritage-bongjeong"
+      ],
+      "photoScope": "place"
+    },
+    "bongjeong:osm-691112450": {
+      "photos": [
+        "heritage-bongjeong"
+      ],
+      "photoScope": "region"
+    },
+    "bongjeong:osm-691120153": {
+      "photos": [
+        "heritage-bongjeong"
+      ],
+      "photoScope": "region"
+    },
+    "bongjeong:osm-691120154": {
+      "photos": [
+        "heritage-bongjeong"
+      ],
+      "photoScope": "region"
+    },
+    "bongjeong:osm-787030275": {
+      "photos": [
+        "heritage-bongjeong"
+      ],
+      "photoScope": "region"
+    },
+    "bongjeong:osm-787030276": {
+      "photos": [
+        "heritage-bongjeong"
+      ],
+      "photoScope": "region"
+    },
+    "bongjeong:osm-787030277": {
+      "photos": [
+        "heritage-bongjeong"
+      ],
+      "photoScope": "region"
+    },
+    "bongjeong:osm-1441576832": {
+      "photos": [
+        "heritage-bongjeong"
+      ],
+      "photoScope": "region"
+    },
+    "bongjeong": {
+      "photos": [
+        "heritage-bongjeong"
+      ],
+      "photoScope": "region"
+    }
+  }
+}

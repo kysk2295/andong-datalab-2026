@@ -1,0 +1,16 @@
+.place-relay-entry{display:block;padding:11px 12px;margin:10px 0;border:1px solid #75988855;border-radius:7px;background:#e5eee8;color:#254f42;text-decoration:none;line-height:1.5}
+.place-relay-entry strong{display:flex;justify-content:space-between;gap:8px;font-size:12px;font-weight:650}
+.place-relay-entry small{display:block;font-size:10px;color:#526e60;margin-top:4px;line-height:1.6}
+.place-relay-entry:hover{background:#d3e5d9}.place-relay-entry:focus-visible,.atlas-relay-hub a:focus-visible,.landmark-relay:focus-visible,.toolbar-relay:focus-visible{outline:3px solid #bb873c;outline-offset:3px}
+.atlas-relay-hub{order:-2;margin-bottom:15px;border:1px solid var(--edge,#bccdc0);border-radius:8px;overflow:hidden}
+.relay-hub-primary{display:block;padding:13px 12px;text-decoration:none;background:#285b4e;color:#fff8e6}
+.relay-hub-primary>span{font-size:10px;opacity:.8}.relay-hub-primary strong{display:flex;align-items:center;justify-content:space-between;margin:5px 0;font-size:15px;font-weight:600}.relay-hub-primary b{font-size:17px;font-weight:400}.relay-hub-primary small{font-size:10px;opacity:.85}
+.relay-hub-shortcuts{display:grid;grid-template-columns:1fr 1fr;background:var(--panel,#f4f5ed);gap:1px}
+.relay-hub-shortcuts a{display:flex;justify-content:space-between;padding:10px 12px;color:var(--ink,#284f42);background:var(--track,#e9eee5);font-size:11px;text-decoration:none}.relay-hub-shortcuts a:hover{background:var(--accent-soft,#d6e5da)}
+.place-row-shell{display:grid;grid-template-columns:minmax(0,1fr) 42px;align-items:center;gap:3px}.place-row-shell .place-row{width:100%;min-width:0}.place-row-shell .place-name{min-width:0;overflow-wrap:anywhere}
+.landmark-relay{color:var(--selected,#285b4e);background:var(--accent-soft,#e1ebe5);border-radius:5px;padding:9px 3px;font-size:10px;text-align:center;text-decoration:none}
+#location-relay:empty{display:none}.location .place-relay-entry{margin:10px 0 2px}.location .place-relay-entry small{font-size:9px}
+#media-relay-entry{padding:0 24px}.heritage-compact .place-relay-entry{display:block}
+.toolbar .toolbar-relay{display:flex;align-items:center;justify-content:center;flex:0 0 auto;min-height:42px;padding:8px 13px;margin:3px;border-radius:6px;background:#285b4e;color:#fff8e6;text-decoration:none;font-size:12px;font-weight:600}
+[data-ui-theme=dark] .place-relay-entry{background:#294b40;color:#e6f2e9;border-color:#8aad9155}[data-ui-theme=dark] .place-relay-entry small{color:#bed0c1}
+@media(max-width:700px){.atlas-relay-hub{margin-bottom:12px}.relay-hub-primary{padding:10px 12px}.relay-hub-shortcuts a{padding:9px 12px}.toolbar .toolbar-relay{font-size:11px;padding:7px 9px;min-height:36px}.atlas-shell .toolbar{max-width:calc(100% - 20px);overflow-x:auto}.location .place-relay-entry small{display:none}#media-relay-entry{padding:0 14px}}

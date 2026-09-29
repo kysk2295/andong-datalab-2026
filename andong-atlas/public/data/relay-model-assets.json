@@ -1,0 +1,41 @@
+[
+  {
+    "id": "wooden_bowl_01",
+    "source": "https://polyhaven.com/a/wooden_bowl_01",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "file": "/assets/relay/models/wooden_bowl_01/wooden_bowl_01.gltf",
+    "files": [
+      {
+        "file": "/assets/relay/models/wooden_bowl_01/wooden_bowl_01.gltf",
+        "download": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/wooden_bowl_01/wooden_bowl_01_1k.gltf",
+        "bytes": 2811,
+        "sha256": "7fe0d6aa4b58e1b9bfc704a8142f4f23f651640c5701b26037fbee3c01613c3b"
+      },
+      {
+        "file": "/assets/relay/models/wooden_bowl_01/textures/wooden_bowl_01_diff_1k.jpg",
+        "download": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/wooden_bowl_01/wooden_bowl_01_diff_1k.jpg",
+        "bytes": 450565,
+        "sha256": "7c33269d85411cf905d5bb53d95bd148c174b26a3cfb86ee58a26735123098b1"
+      },
+      {
+        "file": "/assets/relay/models/wooden_bowl_01/wooden_bowl_01.bin",
+        "download": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/wooden_bowl_01/wooden_bowl_01.bin",
+        "bytes": 321052,
+        "sha256": "2659e19ea140aed29edca6761b6ee117e0a488ac14cd32c30fd0f1116f645761"
+      },
+      {
+        "file": "/assets/relay/models/wooden_bowl_01/textures/wooden_bowl_01_nor_gl_1k.jpg",
+        "download": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/wooden_bowl_01/wooden_bowl_01_nor_gl_1k.jpg",
+        "bytes": 597196,
+        "sha256": "f25955450f21c80e8db34b4621ceec3778199f73c8d5c3350367640cac8cc214"
+      },
+      {
+        "file": "/assets/relay/models/wooden_bowl_01/textures/wooden_bowl_01_arm_1k.jpg",
+        "download": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/wooden_bowl_01/wooden_bowl_01_arm_1k.jpg",
+        "bytes": 451613,
+        "sha256": "206e84e320ebc4eb538a1509d3a59cfce5feb96596f7cae3700382d1a0790c81"
+      }
+    ]
+  }
+]

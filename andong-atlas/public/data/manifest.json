@@ -1,0 +1,47 @@
+{
+  "accessed": "2026-09-28T10:52:16.359Z",
+  "bbox": [
+    128.41721928369836,
+    36.283891910734866,
+    129.01337729361293,
+    36.83515655756613
+  ],
+  "districtCount": 24,
+  "counts": {
+    "water": 1303,
+    "landcover": 5621,
+    "transportation": 9458,
+    "building": 264,
+    "poi": 2672
+  },
+  "terrain": {
+    "cols": 321,
+    "rows": 321,
+    "samples": 103041
+  },
+  "sources": [
+    {
+      "name": "OpenFreeMap / OpenMapTiles / © OpenStreetMap contributors",
+      "url": "https://tiles.openfreemap.org/planet/20260913_164504_pt/{z}/{x}/{y}.pbf",
+      "license": "ODbL 1.0",
+      "note": "Public vector snapshot; building heights may be source estimates."
+    },
+    {
+      "name": "AWS Terrain Tiles / Mapzen",
+      "url": "https://registry.opendata.aws/terrain-tiles/",
+      "license": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md"
+    },
+    {
+      "name": "통계청 SGIS · 가공 vuski/admdongkor",
+      "url": "https://raw.githubusercontent.com/vuski/admdongkor/master/ver20260701/HangJeongDong_ver20260701.geojson",
+      "license": "공공누리 제1유형(출처표시)",
+      "date": "2026-07-01"
+    },
+    {
+      "name": "안동 이어드림 팀 분석",
+      "url": "../../보고서/교수브리핑_20260922/수치.json",
+      "date": "2026-09-28",
+      "note": "Existing analysis JSON; individual survey responses excluded."
+    }
+  ]
+}

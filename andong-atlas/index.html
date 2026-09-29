@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#e2e6de" />
+    <meta
+      name="description"
+      content="실제 지형 위에서 만나는 안동의 낮과 밤. 안동 전역과 이어드림 관광 연결 구상을 탐색하는 인터랙티브 3D 지도."
+    />
+    <title>안동 3D Atlas · 지도와 코스 여행</title>
+    <script>
+      { const p=new URLSearchParams(location.search); if(p.get('experience')==='relay')document.documentElement.classList.add('relay-loading'); }
+    </script>
+    <style>.relay-loading{background:#14252b}.relay-loading body>*{visibility:hidden}.relay-loading:before{content:'안동 이어드림 · 여정을 준비하고 있습니다';position:fixed;inset:45% 0 auto;text-align:center;color:#e1bd7f;font:14px sans-serif}</style>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <main
+      id="viewport"
+      aria-label="안동 전역 인터랙티브 3D 지도"
+      tabindex="0"
+    ></main>
+    <div id="labels" aria-label="지도 위 랜드마크"></div>
+    <header>
+      <div class="eyebrow">
+        대한민국 (SOUTH KOREA) <span>·</span> 3D 지도 (ATLAS)
+      </div>
+      <h1>안동 <span>ANDONG</span> <small>3D</small> <em>v1.8</em></h1>
+      <p>낙동강을 따라, 안동의 낮과 밤을 잇다.</p>
+    </header>
+    <section class="environment" aria-label="풍경 설정">
+      <div class="environment-row">
+        <div id="weather" class="glass segmented"></div>
+        <button
+          class="glass square"
+          id="info"
+          aria-label="지도 설명과 데이터 출처"
+        >
+          <i data-lucide="info"></i>
+        </button>
+      </div>
+      <label class="glass season"
+        >나무 계절 (Tree season)<select id="season" aria-label="나무 계절">
+          <option value="spring">봄 · 꽃·새잎 (Spring)</option>
+          <option value="summer" selected>여름 · 녹음 (Summer)</option>
+          <option value="autumn">가을 · 단풍 (Autumn)</option>
+          <option value="winter">겨울 · 잔가지 (Winter)</option>
+        </select></label
+      >
+    </section>
+    <aside class="glass explore" id="explore" aria-label="안동 탐색">
+      <div class="panel-heading">
+        <h2>안동 탐색 <span>(Explore Andong)</span></h2>
+        <button id="close-explore" class="square" aria-label="탐색 닫기">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="view-switch">
+        <button data-district-view="overview" aria-pressed="true">
+          안동 전역</button
+        ><button data-district-view="city" aria-pressed="false">
+          도심 전체</button
+        ><button data-district-view="market" aria-pressed="false">
+          원도심 상세</button
+        ><button data-district-view="popup" aria-pressed="false">
+          월영교 상세
+        </button>
+      </div>
+      <p id="district-note" class="note" hidden></p>
+      <div class="tabs" role="tablist" aria-label="탐색 유형">
+        <button
+          role="tab"
+          aria-selected="true"
+          aria-controls="panel-city"
+          id="tab-city"
+          data-tab="city"
+        >
+          도시 <small>(City)</small></button
+        ><button
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-relay"
+          id="tab-relay"
+          data-tab="relay"
+        >
+          이어드림 <small>(Relay)</small></button
+        >
+        <button
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-journey"
+          id="tab-journey"
+          data-tab="journey"
+        >
+          여행 <small>(Trip)</small>
+        </button>
+      </div>
+      <div class="panel-body">
+        <section
+          id="panel-journey"
+          role="tabpanel"
+          aria-labelledby="tab-journey"
+          hidden
+        ></section>
+        <section id="panel-city" role="tabpanel" aria-labelledby="tab-city">
+          <div class="media-entry"><button id="open-place-photos">실제 사진·거리 둘러보기</button></div>
+          <label class="field"
+            >안동 24개 읍면동 (Districts)<select id="district">
+              <option value="">읍면동 선택 (Select district)</option>
+            </select></label
+          >
+          <div class="section-label">
+            <span>랜드마크 (Landmarks)</span><small id="place-count"></small>
+          </div>
+          <div class="city-life">
+            <button id="street-focus">사람·차량 가까이</button
+            ><button id="park-focus">웅부공원 산책</button>
+          </div>
+          <div class="city-life">
+            <button id="boats-focus">월영교 수상 풍경</button
+            ><button id="city-motion" aria-pressed="true">
+              풍경 움직임 켜짐
+            </button>
+          </div>
+          <p class="note">차량·배·창문은 미니어처 연출입니다.</p>
+
+          <button id="open-journey" class="wide-button primary">
+            코스 여행 · 혜택 비교
+          </button>
+          <nav id="places" aria-label="랜드마크 바로 가기"></nav>
+          <label class="toggle-row"
+            >행정경계 (Borders)<input type="checkbox" id="boundaries" /><span
+              >표시</span
+            ></label
+          >
+        </section>
+        <section
+          id="panel-relay"
+          role="tabpanel"
+          aria-labelledby="tab-relay"
+          hidden
+        >
+          <p class="intro">
+            원도심에서 시작해<br /><strong>월영교의 밤으로.</strong>
+          </p>
+          <a class="atlas-relay-entry" href="?experience=relay&amp;play=1">릴레이 직접 체험 <span>관광객의 시점에서 먹고, 만들고, 이동해요</span></a>
+          <div class="tabs mode-tabs">
+            <button id="mode-current" aria-pressed="true">현재 자료</button
+            ><button id="mode-proposal" aria-pressed="false">
+              이어드림 구상
+            </button>
+          </div>
+          <div class="plan-switch">
+            <span>사업 적용 모형</span>
+            <div class="tabs">
+              <button data-plan="기본안" aria-pressed="false">
+                기본안 · 20곳</button
+              ><button data-plan="확대안" aria-pressed="false">
+                확대안 · 83곳
+              </button>
+            </div>
+          </div>
+          <div class="site-shortcuts">
+            <button data-site="market">인증·체험 거점</button
+            ><button data-site="transport">이동 경로</button
+            ><button data-site="popup">팝업 가까이</button>
+          </div>
+          <p class="note">안을 누르면 실제 지리 위에 제안 시설이 나타납니다.</p>
+          <div id="steps"></div>
+          <div class="time-section">
+            <label for="time"
+              >운영 시각 <output id="time-value">18:30</output></label
+            ><input
+              type="range"
+              id="time"
+              min="1020"
+              max="1320"
+              step="15"
+              value="1110"
+            />
+            <div class="range-ends"><span>17:00</span><span>22:00</span></div>
+            <p class="note">배경의 낮·밤 연출과 별도 · 조사 기준 정보</p>
+            <div id="operation"></div>
+          </div>
+          <details>
+            <summary>주변 시설 영업시간</summary>
+            <p class="note">
+              2026.09.19 현장 확인 · 요일별 차이 미확인<br />당일 실시간 영업
+              여부는 아닙니다.
+            </p>
+            <div id="facilities"></div>
+          </details>
+          <details id="effects">
+            <summary>참여율별 예상 효과</summary>
+            <p class="note">조건부 예상 · 2026년 1~8월 월평균의 연간 환산</p>
+            <label class="field"
+              >참여율 시나리오<select id="scenario">
+                <option value="기준">기준 · 2%</option>
+                <option value="흥행">흥행 · 4%</option>
+                <option value="목표">목표 · 10%</option>
+              </select></label
+            >
+            <div id="metrics"></div>
+            <p class="note">
+              체험 10% 할인·설문 의향 보정·기존 소비 차감 반영. 참여율은
+              가정이며 확정 성과가 아닙니다.
+            </p>
+          </details>
+          <details>
+            <summary>분석 근거와 읽는 방법</summary>
+            <div id="evidence"></div>
+          </details>
+          <button class="wide-button" id="story">
+            <i data-lucide="play"></i> 이어드림 순서대로 보기
+          </button>
+          <div id="story-controls" hidden>
+            <button id="story-prev">이전</button><span id="story-index"></span
+            ><button id="story-next">다음</button
+            ><button id="story-stop">종료</button>
+          </div>
+        </section>
+      </div>
+    </aside>
+    <div class="map-tools">
+      <button id="north" class="north" aria-label="북쪽을 위로 정렬">
+        <span>북 (N)</span><i data-lucide="navigation"></i>
+      </button>
+      <div class="glass zoom">
+        <button id="zoom-in" aria-label="확대">
+          <i data-lucide="plus"></i></button
+        ><button id="zoom-out" aria-label="축소">
+          <i data-lucide="minus"></i>
+        </button>
+      </div>
+    </div>
+    <section class="glass location" id="location" aria-live="polite">
+      <div class="location-kicker">
+        <span>미니어처 도시 (City in miniature)</span><span>ANDONG</span>
+      </div>
+      <h2 id="location-name">안동, 한눈에</h2>
+      <p id="location-description">낙동강과 호수, 그 사이에 펼쳐진 안동</p>
+      <div id="location-relay"></div>
+      <div id="coordinates">실제 지형과 공개 지도 기반</div>
+    </section>
+    <div class="gesture-hint">
+      드래그 회전 (Rotate) · 휠 확대 (Zoom) · 오른쪽 드래그 이동 (Pan)
+    </div>
+    <nav class="glass toolbar" aria-label="지도 조작">
+      <a class="toolbar-relay" href="?experience=relay&amp;play=1">릴레이 체험 ↗</a>
+      <button id="home">
+        <i data-lucide="house"></i>안동 전체<small>(Overview)</small></button
+      ><button id="open-explore" class="mobile-only">
+        <i data-lucide="panel-left"></i>탐색<small>(Explore)</small></button
+      ><button id="tour" aria-pressed="false">
+        <i data-lucide="play"></i>자동 비행<small>(Auto tour)</small></button
+      ><button id="view-mode" aria-pressed="false">
+        <i data-lucide="layers"></i>평면 보기<small>(2D view)</small></button
+      ><button id="toggle-labels" aria-pressed="true">
+        <i data-lucide="map-pin"></i>지명<small>(Labels)</small></button
+      ><button id="fullscreen">
+        <i data-lucide="maximize"></i>전체 화면<small>(Fullscreen)</small>
+      </button>
+    </nav>
+    <footer>
+      <span>실제 지도 기반 (Map data) · 높이 (Height) 4×</span
+      ><button id="credits">지도 안내 (About)</button>
+    </footer>
+    <div class="loading glass" id="loading" role="status">
+      <strong>안동</strong
+      ><span id="loading-text">낙동강과 안동의 산을 펼치는 중</span
+      ><progress id="progress" max="5" value="0"></progress
+      ><button id="retry" hidden>다시 불러오기</button>
+    </div>
+    <dialog id="about">
+      <div class="dialog-heading">
+        <span>지도 안내 · ANDONG 3D v1.8</span
+        ><button id="close-about" class="square" aria-label="안내 닫기">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <h2>안동을 닮은 작은 세계</h2>
+      <p>
+        안동 전역의 실제 표고·도로·수계를 바탕으로 만든 인터랙티브
+        미니어처입니다. 이어드림은 식음·체험·야간 이동·월영교를 잇는 사업
+        구상입니다.
+      </p>
+      <div id="data-summary"></div>
+      <h3>자료를 읽는 방법</h3>
+      <p>
+        지도에서는 지형과 일반 건물 높이를 4배, 전통 건축 표현은 2배로 강조했습니다.
+        1인칭에서는 지형 높이를 원래 비율로 되돌립니다. 건물은 공개 자료의 윤곽이며
+        높이가 없을 때는 추정값입니다. 전통 건축 주변의 지면은 화면에서만 완만하게
+        다듬었습니다. 창문·지붕·나무·주차선·사람·차량·열차는 미니어처 연출이며
+        실제 외관 복원이나 실시간 운행 정보가 아닙니다.
+      </p>
+      <p>
+        운영 시각은 조사 기록을 보여 줍니다. 제안 연결선과 팝업은 확정 운영이
+        아니며, 예상 효과는 참여율과 행동 가정에 따른 결과입니다. 장소별
+        소비건수 비중을 구매 전환율로 해석하지 마세요.
+      </p>
+      <h3>데이터와 출처</h3>
+      <p>
+        건물 윤곽·높이 보완:
+        <a
+          href="https://github.com/zhu-xlab/GlobalBuildingAtlas"
+          target="_blank"
+          rel="noopener"
+          >GlobalBuildingAtlas — Zhu et al. (2025)</a
+        >,
+        <a
+          href="https://creativecommons.org/licenses/by-nc/4.0/"
+          target="_blank"
+          rel="noopener"
+          >CC BY-NC 4.0</a
+        >. 위성 기반 추정 자료이며 현장 실측이나 최신 건물 현황을 보장하지
+        않습니다. 색상 태그가 없는 건물의 외벽·지붕 색은 구분을 위한
+        팔레트입니다. 공원·잔디·운동장 경계는 OSM 자료입니다. 내부 길이 없는
+        공원의 산책로와 수목·벤치·화단 배치는 연출입니다. 창문·가로시설은
+        미니어처 표현입니다. 제안 시설의 수평 받침은 경사면에서 모형을 읽기 위한
+        표현이며 토목·시공 계획이 아닙니다. 수면은 시각화를 위해 평탄화했으며
+        원본 표고는 별도로 유지합니다.
+      </p>
+      <p>
+        건물 창문·창틀·실내 조명, 월영교 주변 배와 탑승객, 도로 위 차량은
+        미니어처 연출입니다. 선박은 지도 수계 안의 연출 경로를 따라 움직이며
+        실제 운항 항로가 아닙니다. 상세 구역 차량은 공개 도로의 연결과 일방통행
+        태그를 따릅니다. 교통신호·실시간 통제·실제 운행 정보는 반영하지 않는
+        연출입니다. 기기의 동작 줄이기 설정 또는 풍경 움직임 버튼으로 정지할 수
+        있습니다.
+      </p>
+      <div id="sources"></div>
+      <p class="note">
+        디자인 참고:
+        <a
+          href="https://seoul-3d-atlas.synabreu.chatgpt.site/"
+          target="_blank"
+          rel="noreferrer"
+          >synabreu · Seoul 3D Atlas</a
+        ><br />분석: 안동 이어드림 팀 · 자료 확인 2026.09.28
+      </p>
+    </dialog>
+    <aside
+      id="solution-panel"
+      class="solution-panel"
+      aria-label="사업 모형과 기대효과"
+      hidden
+    >
+      <header>
+        <div>
+          <small>ANDONG RELAY · 사업 모형</small>
+          <h2 id="solution-title">기본안</h2>
+        </div>
+        <button id="solution-fold" aria-expanded="true">효과 접기</button>
+      </header>
+      <div class="solution-body">
+        <p id="plan-assumptions" class="note"></p>
+        <label class="field">보고서 참여율<select id="solution-report-scenario"><option value="기준">기준 · 2%</option><option value="흥행">흥행 · 4%</option><option value="목표">목표 · 10%</option></select></label><div id="solution-experience"></div><div id="solution-highlights"></div>
+        <div class="site-shortcuts">
+          <button data-site="market">01 인증·체험</button
+          ><button data-site="transport">02 차량 이동</button
+          ><button data-site="popup">03 야간 팝업</button>
+        </div>
+        <p id="solution-detail"></p>
+        <p id="solution-coordinate" class="note"></p>
+        <p id="animation-status" class="note" aria-live="polite"></p>
+        <button id="follow-bus">버스 따라가기</button
+        ><button id="solution-pause" aria-pressed="false">장면 일시정지</button>
+        <p class="note">
+          사람·차량은 흐름을 설명하는 모형입니다. 실제 인원·실시간 위치가 아니며
+          표시 크기를 강조했습니다.
+        </p>
+        <div id="solution-recovery"></div>
+        <details open>
+          <summary>디지털 관광주민증 · 인증과 할인</summary>
+          <div id="resident-detail"></div>
+        </details>
+        <details>
+          <summary>기대효과 전체 · 중앙값과 범위</summary>
+          <p class="note">
+            큰 수는 P50, 아래는 P5~P95. 모의실험 범위이며 신뢰구간이 아닙니다.
+            월·연·주말 하루 단위를 구분하세요.
+          </p>
+          <table class="effect-table">
+            <tbody id="solution-metrics"></tbody>
+          </table>
+          <p class="note">
+            항목별 중앙값의 합은 합계 중앙값과 다를 수 있습니다. 연결 효과는 총
+            추가 소비에 포함되어 중복 합산하지 않습니다.
+          </p>
+        </details>
+        <details>
+          <summary>보고서 참여율별 나란히 비교</summary>
+          <div id="plan-comparison"></div>
+        </details>
+        <p class="note">
+          출처: 최신 시뮬레이션결과.json. 10% 체험 할인·설문 의향 실현율
+          33~40%·기존 소비 차감 반영. 부지·부스 수·운영 주체·차량 배차는 확정
+          전입니다.
+        </p>
+      </div>
+    </aside>
+    <noscript>지도를 탐색하려면 브라우저에서 JavaScript를 켜 주세요.</noscript>
+    <script type="module" src="/src/entry.js"></script>
+  </body>
+</html>

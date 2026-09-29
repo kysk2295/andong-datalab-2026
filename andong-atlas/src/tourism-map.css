@@ -1,0 +1,83 @@
+.tourism-switches{display:grid;gap:9px;color:var(--ink,#243c34);font:500 12px/1.5 Pretendard,sans-serif}
+.tourism-switches label{display:flex;align-items:center;gap:9px;cursor:pointer;position:relative;min-height:30px}
+.tourism-switches input{position:absolute;opacity:0;width:34px;height:24px;left:0;margin:0}
+.tourism-switches i{width:32px;height:18px;flex:none;background:#abb5ae;border-radius:12px;position:relative;transition:background .15s}
+.tourism-switches i:after{content:'';position:absolute;width:12px;height:12px;left:3px;top:3px;border-radius:50%;background:white;transition:transform .15s}
+.tourism-switches input:checked+i{background:#28735c}.tourism-switches input:checked+i:after{transform:translateX(14px)}
+.tourism-switches input:focus-visible+i{outline:2px solid #a86628;outline-offset:3px}
+.tourism-layer-panel{margin:0 16px 12px;padding:10px 0 12px;border-block:1px solid var(--edge,#ccd5cc);flex:none}
+.tourism-layer-actions{display:flex;justify-content:space-between;gap:8px;margin-top:8px}
+.tourism-layer-actions button{font-size:10px;padding:4px 0;color:var(--muted,#60726a);text-decoration:underline;text-underline-offset:3px}
+.tourism-stages{display:flex;gap:0;margin-top:12px;position:relative}
+.tourism-stages:before{content:'';height:1px;background:#ba9b72;position:absolute;top:13px;left:16%;right:16%}
+.tourism-stages button{flex:1;min-width:0;display:flex;align-items:center;flex-direction:column;gap:6px;position:relative;font-size:10px!important;text-align:center;padding:0 4px!important;color:inherit}
+.tourism-stages b{display:grid;place-items:center;width:26px;height:26px;background:#fbf8ed;border:1px solid #b8905b;color:#76532b;border-radius:50%;font-size:12px}
+.tourism-stages span{line-height:1.5;word-break:keep-all}
+.tourism-info{position:fixed;z-index:12;right:22px;top:290px;width:310px;max-height:calc(100dvh - 410px);overflow:auto;padding:20px;background:var(--panel,#fffdf7);color:var(--ink,#243c34);border:1px solid var(--edge,#ccd5cc);border-radius:10px;box-shadow:0 8px 32px #182a2426}
+.tourism-info h3,.tourism-map-selection h3{font-size:18px;line-height:1.4;margin:10px 25px 12px 0}
+.tourism-info p,.tourism-map-selection p{font-size:12px;line-height:1.8;margin:10px 0}
+.tourism-info [data-tourism-close],.tourism-map-selection [data-map-close]{position:absolute;right:12px;top:10px;font-size:23px;min-width:32px;min-height:32px;color:inherit}
+.tourism-eyebrow{font-size:10px;color:#687e72;letter-spacing:.2px}
+.tourism-benefit{border-left:2px solid #37705b;padding-left:12px;font-weight:600}
+.tourism-info dl,.tourism-map-selection dl{display:grid;grid-template-columns:62px 1fr;gap:7px;font-size:11px;line-height:1.6}.tourism-info dd,.tourism-map-selection dd{margin:0}.tourism-info dt,.tourism-map-selection dt{color:#687e72}
+.tourism-note{font-size:10px!important;line-height:1.8!important;color:#6b796e;margin:10px 0}
+.tourism-benefit-list{display:grid;gap:0}.tourism-benefit-list button{padding:11px 0!important;text-align:left!important;border-bottom:1px solid #ccd5c780!important;color:inherit;font-size:12px!important;line-height:1.5}
+.tourism-benefit-list small{display:block;font-size:10px;color:#748379;margin-top:3px}
+.tourism-info [data-tourism-list]{font-size:11px;text-decoration:underline;padding:10px 0}
+.tourism-atlas-points .tourism-stage-marker .gis-symbol{display:grid;place-items:center;width:25px;height:25px;border:1px solid #a5743a;background:#fff8e9;color:#715024;font:600 12px/1 sans-serif;box-shadow:0 2px 7px #24372b2b}
+.tourism-atlas-points .tourism-stage-marker .gis-point-name{display:block;font-size:10px;padding:3px 6px;left:28px;max-width:150px}
+.tourism-atlas-points [data-symbol=benefit] .gis-symbol{width:12px;height:12px}
+.tourism-atlas-points [data-symbol=benefit] .gis-point-name{display:block;font-size:10px;padding:3px 6px;max-width:150px}
+.tourism-route-dialog{width:min(940px,calc(100vw - 32px));height:min(820px,calc(100dvh - 40px));max-height:calc(100dvh - 40px);margin:auto;inset:0;padding:0;border:1px solid #bdc9ba;background:#f6f5ee;color:#263d33;border-radius:10px;font-family:inherit}
+.tourism-route-dialog::backdrop{background:#07101655}
+.tourism-route-dialog>.drawer-heading{height:60px;padding:0 22px;border-bottom:1px solid #d6dbce;display:flex;align-items:center;justify-content:space-between}.tourism-route-dialog h2{font:600 18px Pretendard,sans-serif;margin:0}.tourism-route-dialog>.drawer-heading button{min-width:40px;min-height:40px;color:inherit}
+.tourism-map-host{height:calc(100% - 60px);overflow:auto;padding:18px 22px;box-sizing:border-box}
+.tourism-map-ui{color:#263d33;--ink:#263d33}
+.tourism-map-ui .tourism-switches{grid-template-columns:1fr 1fr;gap:8px}
+.tourism-map-tools{display:flex;align-items:center;gap:6px;margin:12px 0 8px}.tourism-map-tools button{background:#e5e9dd!important;border:1px solid #c9d3c1!important;border-radius:5px;padding:7px 10px!important;font-size:11px!important;color:#334f40;min-height:34px}.tourism-map-tools [data-map-zoom=in]{margin-left:auto}
+.tourism-map-surface{height:clamp(260px,42dvh,400px);position:relative;overflow:hidden;background:#e6ebde;border:1px solid #c9d3c1;border-radius:7px;touch-action:none;cursor:grab}
+.tourism-map-surface:active{cursor:grabbing}.tourism-map-surface>svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.tourism-map-pins{position:absolute;inset:0;pointer-events:none}.tourism-map-surface .map-water{fill:#a5c7c6;stroke:#87b2b2;stroke-width:.5}.tourism-map-surface .map-road{fill:none;stroke:#faf9ef;stroke-width:2}
+.tourism-route-halo{fill:none;stroke:#fff8e6;stroke-width:7;stroke-linejoin:round;stroke-linecap:round}.tourism-route-line{fill:none;stroke:#a96d2e;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.tourism-map-ui .tourism-map-pin{position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#fff7e5!important;color:#694a26!important;border:2px solid #ab7d44!important;font-size:14px!important;font-weight:650;padding:0!important;pointer-events:auto;box-shadow:0 2px 6px #20372f30;cursor:pointer}
+.tourism-map-ui .tourism-map-pin.is-benefit{width:38px;height:28px;border-radius:6px;background:#2d715a!important;color:#fff!important;border:2px solid #f4f6e9!important;font-size:10px!important}
+.tourism-map-ui .tourism-map-pin.is-cluster{width:38px;height:38px;background:#f5f5e9!important;color:#365546!important;border-color:#64806c!important;font-size:11px!important}
+.relay-app .tourism-route-dialog h2{font:600 18px Pretendard,sans-serif}
+.tourism-map-ui .tourism-map-pin[aria-pressed=true]{outline:3px solid #ba8a47;outline-offset:3px;z-index:2}
+.tourism-map-ui .tourism-map-pin:focus-visible{outline:3px solid #162d25;outline-offset:4px}
+.tourism-north{position:absolute;top:12px;right:14px;font-size:11px;pointer-events:none;color:#465a4a}
+.tourism-map-caption{display:flex;justify-content:space-between;gap:8px;font-size:9px;color:#647463;margin:7px 0}
+.tourism-map-selection{position:relative;border:1px solid #c9d3c1;border-radius:6px;padding:14px 18px;background:#fffdf5;margin:12px 0}
+.tourism-all-benefits{border-top:1px solid #ccd5c7;margin-top:16px;padding-top:14px}.tourism-all-benefits summary{cursor:pointer;font-size:12px}.tourism-all-benefits .tourism-benefit-list{max-height:280px;overflow:auto}
+.tourism-atlas-link{display:inline-block;margin:16px 0 4px;font-size:12px;text-decoration:underline;text-underline-offset:4px;color:#365c48}
+.tourism-layer-panel [hidden],.tourism-map-ui [hidden],.tourism-info[hidden]{display:none!important}
+@media(max-width:700px){.tourism-layer-panel{margin:0 14px 10px;padding:8px 0}.tourism-switches{gap:3px}.tourism-info{left:12px;right:12px;top:auto;bottom:96px;width:auto;max-height:40dvh}.tourism-route-dialog{width:calc(100vw - 16px);height:calc(100dvh - 24px);max-height:calc(100dvh - 24px)}.tourism-map-host{padding:12px}.tourism-map-ui .tourism-switches{grid-template-columns:1fr}.tourism-map-surface{height:300px}.tourism-map-tools{gap:4px}.tourism-map-tools button{padding:6px 8px!important;font-size:10px!important}.tourism-map-caption{font-size:8px}.tourism-stages button{font-size:10px!important}.tourism-atlas-points .gis-point-name{max-width:100px!important}}
+
+/* A separate layer for the proposed night market; the base map remains visible. */
+.tourism-booth-toggle small{margin-left:auto;font-size:10px;background:#b7782520;color:#8b5a22;padding:1px 7px;border-radius:10px}
+.tourism-booth-toggle input:checked+i{background:#a9702d}
+[data-tourism-popup],[data-map-popup]{margin-top:10px;padding:9px 10px;border:1px solid #b58c5055;border-radius:6px;background:#c3974e10}
+.tourism-popup-open{display:flex;align-items:center;justify-content:space-between;width:100%;padding:3px 0!important;color:var(--ink,#344b3b);font-size:12px!important;font-weight:600;text-align:left}
+[data-tourism-popup]>small,[data-map-popup]>small{display:block;font-size:9px;color:var(--muted,#6b796e);margin-top:3px}
+.tourism-atlas-points .tourism-popup-marker .gis-symbol{display:grid;place-items:center;width:30px;height:30px;background:#9c6427!important;border:2px solid #fff0cf!important;border-radius:7px!important;transform:none!important;color:#fff5de;font:700 13px/1 sans-serif;box-shadow:0 0 0 6px #dea84f40,0 3px 10px #55371644!important}
+.tourism-atlas-points .tourism-popup-marker .gis-point-name{display:block;left:34px;background:var(--panel,#fffbf1);border-color:#b99256;font-size:11px;max-width:210px}
+.tourism-map-ui .tourism-map-pin.is-popup{width:48px;height:30px;border-radius:6px;background:#9c6427!important;color:#fff8e7!important;border-color:#fff0cf!important;font-size:10px!important;box-shadow:0 0 0 5px #dea84f40}
+.tourism-info.is-popup{top:210px;max-height:calc(100dvh - 310px);width:340px}
+.popup-layer-plan{--popup-plan-height:250px;position:relative;height:var(--popup-plan-height);border-radius:6px;overflow:hidden;margin:12px 0}
+.popup-layer-plan>svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.popup-plan-river,.popup-plan-stage{position:absolute;color:#e1ebe2;pointer-events:none;font-size:9px}
+.popup-plan-river{top:5px;left:9px}.popup-plan-stage{left:50%;top:18%;transform:translateX(-50%);color:#dfdac7;font-size:8px}
+.popup-layer-plan>button{position:absolute;display:grid;place-items:center;transform:translate(-50%,-50%);width:28px;min-height:28px;padding:0!important;background:#f8ead1!important;color:#493d2d!important;border:2px solid #d1b483!important;border-radius:6px;font:700 11px/1 sans-serif!important;cursor:pointer}
+.popup-layer-plan>button:is(:hover,[aria-pressed=true]){background:#ffc976!important;border-color:#fff7df!important;box-shadow:0 0 0 4px #ffc97655;z-index:2}
+.popup-layer-plan button:focus-visible,.popup-layer-legend button:focus-visible{outline:2px solid #d99130;outline-offset:3px}
+.popup-layer-legend{display:grid;grid-template-columns:1fr 1fr;gap:3px 8px;margin:10px 0}
+.popup-layer-legend button{display:flex;align-items:center;gap:7px;padding:6px 0!important;text-align:left;color:inherit;font-size:11px!important;line-height:1.4;background:none;border:0;border-radius:3px;cursor:pointer}
+.popup-layer-legend b{display:grid;place-items:center;width:19px;height:19px;background:#b1884920;color:#987140;border-radius:4px;font-size:10px;flex:none}
+.popup-layer-legend button[aria-pressed=true]{color:#a16b24;font-weight:700}
+.popup-layer-plan>button[aria-pressed=true],.popup-layer-legend button[aria-pressed=true] b{animation:popup-booth-flash .8s ease-in-out 3}
+@keyframes popup-booth-flash{0%,100%{box-shadow:0 0 0 4px #ffc97655;filter:brightness(1)}50%{box-shadow:0 0 0 7px #ffd17a99,0 0 24px #ffd17a;filter:brightness(1.45)}}
+@media(prefers-reduced-motion:reduce){.popup-layer-plan>button[aria-pressed=true],.popup-layer-legend button[aria-pressed=true] b{animation:none;box-shadow:0 0 0 4px #ffc97680}}
+.popup-booth-detail{margin-top:12px;padding-top:12px;border-top:1px solid #b49e7555;font-size:13px}.popup-booth-detail p{margin:5px 0 10px!important}
+.popup-walking-layout{position:relative;--popup-plan-height:250px}.popup-walking-layout .popup-layer-plan{margin-bottom:0}.popup-walking-layout .popup-you{z-index:3;top:0}.popup-walking-layout .popup-layer-legend{color:inherit}
+.is-booths-hidden .popup-layer-plan>button,.is-booths-hidden [data-booth-shape],.is-booths-hidden .popup-layer-legend{display:none!important}
+@media(max-width:700px){.tourism-info.is-popup{top:auto;bottom:96px;width:auto;max-height:55dvh}.tourism-map-tools{flex-wrap:wrap}.tourism-map-caption{flex-wrap:wrap}.tourism-map-ui .popup-layer-plan{max-width:450px}.tourism-info.is-popup .popup-layer-plan{--popup-plan-height:220px}.popup-layer-legend button{min-height:32px}}

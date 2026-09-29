@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.cache/
+
+.env
+.env.local
+.env.*.local
+
+# Local screenshots, downloaded source documents, and deployment logs
+artifacts/
+.DS_Store
+__pycache__/
+*.pyc
+.env.*
+!.env.example

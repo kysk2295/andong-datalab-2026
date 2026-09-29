@@ -1,0 +1,41 @@
+#study-route{bottom:92px}
+#study-start{background:var(--selected);color:var(--panel);padding:11px 16px;border-radius:6px;white-space:nowrap;font-size:13px}
+.journey-preview-heading>div p{margin-top:7px}
+.journey-preview-stops button{white-space:normal;line-height:1.6;min-width:155px}
+.journey-preview-stops time{display:block}
+body[data-study=atlas] .journey-preview-heading>div p{display:none}
+body[data-study=atlas] #study-start{display:none}
+body[data-study=atlas] #study-route{right:86px}
+body[data-study=journey] #study-route{left:24px;right:24px;bottom:88px;padding:22px 26px}
+body[data-study=journey] .journey-preview-stops button{min-width:180px;min-height:76px;font-size:14px}
+body[data-study=journey]:not(.sidebar-collapsed) #study-route{left:calc(var(--sidebar) + 24px)}
+body[data-study=journey] .journey-preview-heading h2{font-size:22px;letter-spacing:-.5px}
+body[data-study=photo]{--sidebar:430px}
+body[data-study=photo] #discovery-img{height:230px}
+body[data-study=photo] .atlas-discovery h2{font-size:31px}
+body[data-study=photo] .atlas-discovery>p{font-size:14px}
+body[data-study=photo] .panel-heading{display:none}
+body[data-study=photo] #panel-city>.city-life,body[data-study=photo] #panel-city>.section-label,body[data-study=photo] #panel-city>.note,body[data-study=photo] #panel-city>#open-journey{display:none}
+body[data-study=photo] #study-route{display:none!important}
+.atlas-shell.journey-playing #study-route{display:none!important}
+@media(max-width:1150px) and (min-width:701px){body[data-study=photo]{--sidebar:370px}}
+@media(max-width:700px){body[data-study=photo]{--sidebar:0px}body[data-study=journey] #study-route,body[data-study=journey]:not(.sidebar-collapsed) #study-route{left:12px;right:12px;bottom:78px;padding:16px}body[data-study=journey] .journey-preview-heading h2{font-size:18px}body[data-study=journey] .journey-preview-stops button{min-width:140px}body[data-study=photo] #discovery-img{height:210px}body[data-study=atlas] #study-route{left:12px;right:12px}}
+
+body[data-study=atlas] #study-route{display:none!important}
+.study-primary{display:none;position:absolute;bottom:0;left:0;right:0;background:var(--panel);padding:16px 26px 22px;border-top:1px solid var(--edge)}
+.journey-open:not(.journey-playing) .study-primary{display:block}
+.atlas-shell .study-primary .journey-summary{margin:0 0 12px}
+.atlas-shell .study-primary .journey-summary strong{font-size:22px}
+.atlas-shell .study-primary .journey-summary span{font-size:11px}
+.atlas-shell .study-primary .journey-summary .note{margin:5px 0 0;font-size:11px}
+.atlas-shell.journey-open .panel-body{padding-bottom:185px}
+.atlas-shell>footer{display:none}
+.atlas-shell.journey-open .panel-heading{display:none}
+.atlas-shell .intro{margin-bottom:14px}
+.atlas-shell .media-entry{margin-bottom:14px}
+@media(max-width:700px){.study-primary{padding:12px 22px 16px}}
+
+body[data-study=journey] #study-route{padding:16px 22px}
+body[data-study=journey] .journey-preview-heading h2{font-size:18px}
+body[data-study=journey] .journey-preview-heading>div p{display:none}
+body[data-study=journey] .journey-preview-stops button{font-size:13px;min-height:56px;padding:6px 14px}
