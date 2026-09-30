@@ -162,3 +162,9 @@
 /* Rhythm controls sit beside the stage rather than covering the performer. */
 .relay-app.watching-performance .relay-work-task{left:auto;right:24px;bottom:28px;transform:none;width:290px;padding:16px}
 @media(max-width:700px){.relay-app.watching-performance .relay-work-task{left:12px;right:12px;bottom:18px;width:auto;padding:10px}.relay-app.watching-performance .relay-work-task>p{font-size:10px;margin:5px 0}.relay-app.watching-performance .relay-work-task h2{font-size:14px}}
+.relay-loading-status{position:fixed;z-index:40;left:50%;top:50%;transform:translate(-50%,-50%);width:min(320px,calc(100vw - 48px));padding:24px;border:1px solid #cdbb8740;border-radius:12px;background:#152127f2;color:#f3ecdc;text-align:center}
+.relay-loading-status[hidden]{display:none}
+.relay-loading-status p{font-size:13px;color:#c9c5b8}
+.relay-loading-status progress{display:block;width:100%;margin:20px 0;accent-color:#d6bb7c}
+.relay-loading-status button{padding:10px 16px;border:1px solid #d6bb7c80;border-radius:6px;background:transparent;color:inherit;cursor:pointer}
+.relay-loading-status a{display:block;margin-top:14px;font-size:12px;color:#c9c5b8}

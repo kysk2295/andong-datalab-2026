@@ -1,3 +1,4 @@
+import {withDeadline} from './loading.js';
 import {popupZoneAt} from './relay-popup-layout.js';
 import {PopupPostcard} from './relay-popup-postcard.js';
 import {passageAt} from './relay-passages.js';
@@ -30,7 +31,7 @@ export class RelayScene{
   this.renderer.outputColorSpace=T.SRGBColorSpace;this.renderer.toneMapping=T.ACESFilmicToneMapping;this.renderer.toneMappingExposure=1.25;
   this.renderer.domElement.setAttribute('aria-label','1인칭 3D 공간. 드래그로 둘러보기, 위아래 방향키 또는 W A S D로 이동, 좌우 방향키로 회전, Space로 점프, Shift로 달리기, R로 시점 복원');this.renderer.domElement.tabIndex=0;
   container.append(this.renderer.domElement);this.scene=new T.Scene();this.scene.background=new T.Color('#c2b9a0');
-  this.skies={};for(const [key,file] of [['day','qwantani_sunset_puresky'],['night','qwantani_night_puresky'],['interior','studio_small_09']])new HDRLoader().load('/assets/relay/materials/'+file+'_hdri.hdr',tx=>{if(this.disposed){tx.dispose();return;}tx.mapping=T.EquirectangularReflectionMapping;this.skies[key]=tx;this.updateEnvironment();},undefined,()=>{});
+  this.skies={};this.skyPending=new Map();
   this.camera=new T.PerspectiveCamera(58,1,.045,220);this.scene.add(this.camera);this.lighting=new RelayLighting(this.renderer,this.scene,this.camera);RectAreaLightUniformsLib.init();this.ceilingLight=new T.RectAreaLight('#fff2da',5,3.5,2);this.ceilingLight.position.set(0,3.3,0);this.ceilingLight.lookAt(0,0,0);this.scene.add(this.ceilingLight);
   this.windowLight=new T.RectAreaLight('#f4f6ee',7,2.5,2.3);this.windowLight.position.set(-3,2.15,1.7);this.windowLight.lookAt(0,.8,0);this.scene.add(this.windowLight);
   this.ambient=new T.HemisphereLight('#fff0c9','#556a5f',2);this.scene.add(this.ambient);
@@ -95,10 +96,10 @@ export class RelayScene{
   this.payment?.finish(false);this.tuho?.finish(null);this.meal?.finish(false);this.scanner?.finish(false);this.workshop?.finish(false);this.cancelPaint();this.cancelAction();this.cancelNavigation();this.mapView=false;this.id=id;this.options=options;if(options.paid){const receiptKey=options.meal+options.payment;if(receiptKey!==this.receiptKey){this.receiptSlip?.dispose();this.receiptSlip=createReceiptSlip(MEALS[options.meal]||MEALS.jjimdak,options.payment);this.receipt.add(this.receiptSlip.mesh);this.receiptSlip.mesh.position.set(0,.17,-.034);this.receiptKey=receiptKey;}}
   const key=JSON.stringify([id,options.meal,options.seat,options.program,options.craftSteps,options.color,options.maskArt,options.transport,options.cover,options.walked,options.ordered,options.eaten,options.paid,options.journey,options.gameScore,options.gameAttempts,options.cart]);
   if(this.current)this.scene.remove(this.current.group);
-  if(!this.cache.has(key)){const kit=createKit();this.cache.set(key,{...buildRelaySet(id,kit,options),kit});}
+  if(!this.cache.has(key)){const limit=this.container.clientWidth<700?1:2;while(this.cache.size>=limit){const [oldKey,oldSet]=this.cache.entries().next().value;this.disposeSet(oldSet);this.cache.delete(oldKey);}const kit=createKit();this.cache.set(key,{...buildRelaySet(id,kit,options),kit});}
   this.audio.setLocation(options.cover?'':id);this.audio.setPaused(this.paused||document.hidden||!!options.cover);
   this.busProgress=0;this.current=this.cache.get(key);this.current.refs.busCabin?.reset();this.cache.delete(key);this.cache.set(key,this.current);
-  while(this.cache.size>5){const [oldKey,oldSet]=this.cache.entries().next().value;this.disposeSet(oldSet);this.cache.delete(oldKey);}
+  this.renderer.domElement.dataset.cachedScenes=String(this.cache.size);
   this.scene.add(this.current.group);if(this.current.refs.entryDoor)this.current.refs.entryDoor.rotation.y=0;
   const night=this.current.night,interior=['meal','receipt','workshop'].includes(id);this.updateEnvironment();
   this.scene.fog=new T.Fog(night?'#101e2b':'#aeb6b4',night?42:35,night?175:155);
@@ -117,8 +118,20 @@ export class RelayScene{
   this.resetView();if(same){this.camera.position.copy(position);this.yaw=yaw;this.pitch=pitch;this.station=station;this.orient();}else this.station=null;this.syncHands();this.renderer.shadowMap.needsUpdate=true;
  }
  resizeWater(){const water=this.current?.refs.water;if(!water)return;const size=this.lowQuality?256:this.container.clientWidth<700?384:768,target=water.getRenderTarget();if(target.width!==size)target.setSize(size,size);}
+ loadEnvironment(key){
+  if(this.skyPending.has(key)||this.disposed)return;
+  const files={day:'qwantani_sunset_puresky',night:'qwantani_night_puresky',interior:'studio_small_09'},manager=new T.LoadingManager();
+  const pending=withDeadline(async signal=>{
+   signal.addEventListener('abort',()=>manager.abort(),{once:true});
+   const tx=await new HDRLoader(manager).loadAsync('/assets/relay/materials/'+files[key]+'_hdri.hdr');
+   if(signal.aborted||this.disposed){tx.dispose();return;}
+   tx.mapping=T.EquirectangularReflectionMapping;this.skies[key]=tx;this.updateEnvironment();
+  },{signal:this.events.signal}).catch(()=>{});
+  this.skyPending.set(key,pending);
+ }
  updateEnvironment(){
   if(!this.current)return;const interior=['meal','receipt','workshop'].includes(this.id),key=interior||this.id==='market'?'interior':this.current.night?'night':'day';
+  this.loadEnvironment(key);this.loadEnvironment(this.id==='popup'?'night':'day');
   const environment=this.skies[key]||this.skies.day;if(environment)this.scene.environment=environment;
   this.scene.background=(this.id==='popup'?this.skies.night:this.skies.day)||new T.Color(this.current.night?'#101e2b':'#aeb6b4');this.scene.backgroundIntensity=this.current.night?(this.id==='popup'?.085:.06):.75;this.scene.backgroundBlurriness=.015;
  }

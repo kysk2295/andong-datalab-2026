@@ -1,9 +1,18 @@
 import * as T from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import assets from '../public/data/relay-model-assets.json';
+import {withDeadline} from './loading.js';
 const models=new Map();let loading;
 export function loadRelayProps(){
- return loading??=Promise.allSettled(assets.map(async a=>{const {scene}=await new GLTFLoader().loadAsync(a.file);models.set(a.id,scene);}));
+ return loading??=Promise.allSettled(assets.map(async a=>{
+  const manager=new T.LoadingManager();
+  return withDeadline(async signal=>{
+   signal.addEventListener('abort',()=>manager.abort(),{once:true});
+   const {scene}=await new GLTFLoader(manager).loadAsync(a.file);
+   if(signal.aborted){scene.traverse(o=>{o.geometry?.dispose();if(o.material){for(const m of Array.isArray(o.material)?o.material:[o.material]){for(const value of Object.values(m))if(value?.isTexture)value.dispose();m.dispose();}}});return;}
+   models.set(a.id,scene);
+  });
+ }));
 }
 // Source resources are shared; each set owns and disposes its cloned resources.
 export function scannedProp(id,parent,position,width,track){

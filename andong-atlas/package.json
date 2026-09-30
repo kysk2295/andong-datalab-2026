@@ -1,6 +1,6 @@
 {
   "name": "andong-3d-atlas",
-  "version": "1.30.0",
+  "version": "1.31.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,6 +8,7 @@
     "dev": "vite --host 0.0.0.0",
     "prebuild": "node scripts/compress-data.mjs",
     "build": "vite build",
+    "postbuild": "node scripts/compress-assets.mjs",
     "preview": "vite preview --host 0.0.0.0",
     "data": "node scripts/prepare-data.mjs && python3 scripts/prepare-facilities.py && python3 scripts/prepare-solution.py && python3 scripts/prepare-journey.py && python3 scripts/prepare-place-media.py && python3 scripts/prepare-restaurant-info.py && python3 scripts/export-report.py && python3 scripts/prepare-transport.py --refresh && node scripts/prepare-tourism-map.mjs",
     "test": "node --test tests/*.test.mjs"

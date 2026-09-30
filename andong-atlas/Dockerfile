@@ -6,6 +6,7 @@ COPY index.html ./
 COPY src ./src
 COPY public ./public
 COPY scripts/compress-data.mjs ./scripts/compress-data.mjs
+COPY scripts/compress-assets.mjs ./scripts/compress-assets.mjs
 RUN npm run build
 FROM node:22-alpine
 WORKDIR /app

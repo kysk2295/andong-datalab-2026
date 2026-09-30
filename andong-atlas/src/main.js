@@ -1,4 +1,5 @@
 import {relayEntryHTML,relayEntryFor} from './relay-entry.js';
+import {loadJSON,yieldToPage} from './loading.js';
 import './relay-entry.css';
 import { report } from "./report-effects.js";
 import { enrichRestaurant } from "./restaurant-info.js";
@@ -326,6 +327,7 @@ function story() {
   }
 }
 async function init() {
+  const started=performance.now(),requests=new AbortController();
   try {
     let done = 0;
     $("progress").max = 10;
@@ -353,17 +355,10 @@ async function init() {
         "buildings",
         "journey",
       ].map(async (key) => {
-        const compressed =
-          ["map", "district", "buildings", "journey"].includes(key) &&
-          typeof DecompressionStream !== "undefined";
-        const r = await fetch(`/data/${key}.json${compressed ? ".gz" : ""}`);
-        if (!r.ok) throw Error(`${key} 자료를 불러오지 못했습니다.`);
-        const value =
-          compressed && !r.headers.get("content-encoding")?.includes("gzip")
-            ? await new Response(
-                r.body.pipeThrough(new DecompressionStream("gzip")),
-              ).json()
-            : await r.json();
+        const value=await loadJSON(`/data/${key}.json`,{
+          compressed:["map","district","buildings","journey"].includes(key),
+          signal:requests.signal,
+        });
         $("progress").value = ++done;
         return value;
       }),
@@ -386,6 +381,7 @@ async function init() {
     places = buildPlaces(map.poi);
     $("loading-text").textContent = "지형에 숲과 마을을 놓는 중";
     const { AtlasScene } = await import("./scene.js");
+    await yieldToPage();
     scene = new AtlasScene($("viewport"), data, places, selected, stopTour);
     document.querySelectorAll("[data-district-view]").forEach((b) =>
       b.addEventListener("click", () => {
@@ -671,6 +667,8 @@ async function init() {
     $("location-description").textContent =
       "원도심에서 월영교까지, 건물과 강변을 가까이 탐색하세요.";
     document.body.dataset.ready = "true";
+    document.dispatchEvent(new Event('app-ready'));
+    document.body.dataset.loadMs=String(Math.round(performance.now()-started));
     interactiveSections.forEach((el) => (el.inert = false));
     if (new URLSearchParams(location.search).has("journey")) {
       setTab("journey");
@@ -683,9 +681,23 @@ async function init() {
     }
     initLayoutModes({catalog:data.journey.places,mediaData,media:mediaUI,setTab,refreshIcons,frameJourney:()=>journeyUI.frame(),
       locate:p=>selected(places.find(x=>x.id===({bridge:'woryeong',downtown:'market'}[p.id]||p.id))||p)});
-    scene.tourismLayers = await initTourismLayers(scene);
+    const loadLayers=async()=>{
+      const previous=document.getElementById('tourism-load-error');previous?.remove();
+      try {scene.tourismLayers=await initTourismLayers(scene);}
+      catch(error) {
+        console.warn('Tourism layers unavailable',error);
+        const notice=document.createElement('div');notice.id='tourism-load-error';notice.setAttribute('role','status');
+        notice.textContent='혜택·팝업 지도 자료를 불러오지 못했습니다. ';
+        const retry=document.createElement('button');retry.textContent='다시 불러오기';retry.onclick=loadLayers;notice.append(retry);
+        $('explore').append(notice);
+      }
+    };
+    void loadLayers();
   } catch (error) {
+    requests.abort();
+    document.dispatchEvent(new Event('app-load-handled'));
     console.error(error);
+    $("loading").hidden = false;
     $("loading-text").textContent =
       `지도를 준비하지 못했습니다. ${error.message}`;
     $("retry").hidden = false;

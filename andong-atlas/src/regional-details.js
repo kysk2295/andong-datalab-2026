@@ -1,6 +1,7 @@
 import { DistrictScene } from './district-scene.js';
 import { regionFor } from './region-model.js';
 import index from '../public/data/regions.json' with {type:'json'};
+import {loadJSON} from './loading.js';
 
 // Keep the city and at most two other GPU scenes. Payloads remain local files,
 // loaded only when the visitor approaches a region. No remote runtime map API.
@@ -51,10 +52,6 @@ export class RegionalDetails {
     } finally {this.pending.delete(key);}
   }
   async load(meta) {
-    const compressed=typeof DecompressionStream!=='undefined';
-    const response=await fetch(meta.url+(compressed?'.gz':''));
-    if(!response.ok)throw Error(`상세 자료 응답 ${response.status}`);
-    return compressed&&!response.headers.get('content-encoding')?.includes('gzip')
-      ?new Response(response.body.pipeThrough(new DecompressionStream('gzip'))).json():response.json();
+    return loadJSON(meta.url,{compressed:true});
   }
 }

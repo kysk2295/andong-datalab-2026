@@ -11,7 +11,23 @@
     <title>안동 3D Atlas · 지도와 코스 여행</title>
     <script>
       { const p=new URLSearchParams(location.search); if(p.get('experience')==='relay')document.documentElement.classList.add('relay-loading'); }
+      // This recovery UI also works when the entry bundle itself fails to load.
+      {
+        let ready=false;
+        const recover=()=>{
+          if(ready||document.getElementById('startup-recovery'))return;
+          const panel=document.createElement('section');panel.id='startup-recovery';panel.setAttribute('role','alert');
+          panel.innerHTML='<strong>화면 준비가 지연되고 있어요</strong><p>연결을 확인하고 다시 시도해 주세요.<br>저장된 여행 기록은 유지됩니다.</p><button type="button">다시 불러오기</button> <a href="?layout=atlas">전체 지도</a>';
+          panel.querySelector('button').onclick=()=>location.reload();document.body.append(panel);
+        };
+        const timer=setTimeout(recover,35000);
+        document.addEventListener('app-load-error',recover);
+        const settled=()=>{ready=true;clearTimeout(timer);document.getElementById('startup-recovery')?.remove();};
+        document.addEventListener('app-ready',settled,{once:true});
+        document.addEventListener('app-load-handled',settled,{once:true});
+      }
     </script>
+    <style>#startup-recovery{visibility:visible!important;position:fixed;z-index:10000;left:50%;top:50%;transform:translate(-50%,-50%);width:min(320px,calc(100vw - 64px));padding:28px;background:#17282d;color:#f2eedf;border:1px solid #a8915c;border-radius:12px;text-align:center;font:14px/1.6 sans-serif}#startup-recovery strong{font-size:18px}#startup-recovery button{padding:9px 14px;cursor:pointer}#startup-recovery a{color:#e5ce90}</style>
     <style>.relay-loading{background:#14252b}.relay-loading body>*{visibility:hidden}.relay-loading:before{content:'안동 이어드림 · 여정을 준비하고 있습니다';position:fixed;inset:45% 0 auto;text-align:center;color:#e1bd7f;font:14px sans-serif}</style>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>

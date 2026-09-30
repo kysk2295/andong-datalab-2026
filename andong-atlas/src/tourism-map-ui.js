@@ -1,4 +1,5 @@
 import {popupSite,popupDetailsHTML,popupBooth} from './popup-map-layer.js';
+import {loadJSON} from './loading.js';
 import {relayEntryHTML} from './relay-entry.js';
 import './relay-entry.css';
 import './tourism-map.css';
@@ -6,7 +7,7 @@ import {MAP_LAYER_KEY,layerState,visibleMapPlaces,fitMapBounds,projectMapPoint,c
 export const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let dataPromise;
 export function loadTourismMap() {
-  if(!dataPromise)dataPromise=fetch('/data/tourism-map.json').then(r=>{if(!r.ok)throw Error('지도 자료를 불러오지 못했습니다.');return r.json();}).catch(e=>{dataPromise=null;throw e;});
+  if(!dataPromise)dataPromise=loadJSON('/data/tourism-map.json').catch(e=>{dataPromise=null;throw e;});
   return dataPromise;
 }
 export function readLayers(defaults) {try{return layerState(localStorage.getItem(MAP_LAYER_KEY),defaults);}catch{return layerState(null,defaults);}}
