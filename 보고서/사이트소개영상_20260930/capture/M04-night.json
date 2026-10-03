@@ -1,0 +1,34 @@
+{
+ "duration": 8,
+ "force": true,
+ "p": [
+  [
+   6.8,
+   1.4,
+   -2.25
+  ],
+  [
+   7.25,
+   1.08,
+   -2.85
+  ]
+ ],
+ "t": [
+  [
+   8.3,
+   0.8,
+   -3.85
+  ],
+  [
+   8.5,
+   0.78,
+   -3.95
+  ]
+ ],
+ "id": "M04-night",
+ "file": "M04_월영교_night.mp4",
+ "fps": 30,
+ "frames": 240,
+ "method": "actual WebGL frame capture",
+ "elapsed": 12.988
+}

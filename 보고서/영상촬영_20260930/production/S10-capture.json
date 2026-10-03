@@ -1,0 +1,31 @@
+{
+  "id": "S10",
+  "file": "S10_월영교_산책.mp4",
+  "duration": 11,
+  "lead": 1,
+  "move": 7,
+  "from": [
+    0.1,
+    1.94,
+    5
+  ],
+  "to": [
+    0.1,
+    1.94,
+    -5
+  ],
+  "target": [
+    0,
+    2.1,
+    -14
+  ],
+  "targetTo": [
+    0,
+    2.2,
+    -14
+  ],
+  "fps": 30,
+  "frames": 330,
+  "method": "actual WebGL frame capture, no optical-flow interpolation",
+  "elapsed": 22.193
+}

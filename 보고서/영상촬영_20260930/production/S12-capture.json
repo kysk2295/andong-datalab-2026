@@ -1,0 +1,31 @@
+{
+  "id": "S12",
+  "file": "S12_수면반사에서_월영교로.mp4",
+  "duration": 12,
+  "lead": 1,
+  "move": 7,
+  "from": [
+    23,
+    1.7,
+    -21.5
+  ],
+  "to": [
+    23,
+    1.7,
+    -21.5
+  ],
+  "target": [
+    7,
+    -1.8,
+    -32
+  ],
+  "targetTo": [
+    4,
+    1.3,
+    -37
+  ],
+  "fps": 30,
+  "frames": 360,
+  "method": "actual WebGL frame capture, no optical-flow interpolation",
+  "elapsed": 44.174
+}

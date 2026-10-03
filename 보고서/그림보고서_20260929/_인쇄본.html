@@ -1,0 +1,180 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>안동 이어드림 분석 보고서</title><style>
+@page{size:210mm 297mm;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Pretendard',sans-serif;color:#23272B;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+a{color:inherit;text-decoration:none}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;padding:9mm 14mm 13mm;page-break-after:always;background:#fff}
+.page:last-child{page-break-after:auto}
+.logo{display:inline-flex;align-items:center;gap:6px}.logo b{color:#1A4FA8;font-size:13.5pt;font-weight:800;letter-spacing:-.3px}
+.logo i{font-style:normal;color:#2D6BD9;font-size:10.5pt;font-weight:600;margin-left:1px}
+.topbar{display:flex;align-items:center;justify-content:space-between;height:10mm;border-bottom:1px solid #E3E8EE;margin-bottom:3mm}
+.topbar .logo svg{width:22px;height:22px}.topbar .logo b{font-size:11pt}.topbar .logo i{font-size:9pt}
+.crumb,.crumb2{font-size:7.5pt;color:#7A828A}.crumb b{color:#23272B}
+.util{display:flex;justify-content:flex-end;gap:14px;font-size:7pt;color:#7A828A;margin-bottom:1.5mm}
+.gnb-top{display:flex;align-items:center;gap:10mm}
+.search{width:58mm;height:8mm;border:1.5px solid #2D6BD9;border-radius:20px;font-size:7.5pt;color:#9AA2AA;display:flex;align-items:center;justify-content:space-between;padding:0 4mm}
+.search span{color:#2D6BD9;font-size:12pt}
+.team{margin-left:auto;display:flex;gap:10px;font-size:7.5pt;color:#555}.team span+span{display:none}.team span:first-child{color:#2D6BD9}
+.gnb{display:flex;gap:5.5mm;font-size:9.5pt;font-weight:700;padding:3mm 0 2.6mm;border-top:1px solid #E3E8EE;border-bottom:1px solid #E3E8EE;margin-top:2mm}
+.gnb .on{color:#2D6BD9}.gnb em{font-style:normal;color:#9AA2AA;font-size:7pt;margin-right:1.5mm;font-weight:800}
+.crumb2{margin:3.2mm 0 1.5mm}
+h1{font-size:21pt;font-weight:800;letter-spacing:-.6px}
+.one{font-size:8.6pt;color:#4A5057;margin:1.2mm 0 3.5mm}.one b{color:#1A4FA8}
+.fab{position:absolute;right:16mm;top:36mm;width:18mm;height:18mm;border-radius:50%;background:#D9853B;color:#fff;font-size:6.8pt;font-weight:700;
+ display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.25;box-shadow:0 2px 6px rgba(0,0,0,.18)}
+.filter{background:#EAF1FA;border-radius:6px;padding:4mm 6mm;display:flex;align-items:flex-end;gap:3mm}
+.f label{display:block;font-size:7pt;font-weight:700;margin-bottom:1.2mm}
+.sel{display:inline-flex;justify-content:space-between;gap:4mm;min-width:26mm;background:#fff;border:1px solid #CBD5E1;border-radius:4px;padding:1.6mm 2.5mm;font-size:7.5pt}
+.sel small{color:#8A939C}
+.btn{margin-left:5mm;background:#2D6BD9;color:#fff;font-size:8pt;font-weight:700;padding:1.9mm 9mm;border-radius:4px}
+.notice{display:flex;gap:3mm;align-items:flex-start;padding:3.5mm 1mm 3mm;border-bottom:1px solid #EEF1F4}
+.ck{width:4.2mm;height:4.2mm;border:1.4px solid #23272B;border-radius:2px;font-size:7pt;display:flex;align-items:center;justify-content:center;flex:none;margin-top:.3mm}
+.notice b{font-size:9pt;white-space:nowrap}.notice p{font-size:7.4pt;line-height:1.6;color:#4A5057}.notice u{text-decoration:none;color:#1A4FA8;font-weight:600}
+.tabs{display:flex;gap:1.5mm;margin-top:3.5mm;border-bottom:2px solid #2D6BD9}
+.tab{font-size:7.8pt;padding:1.7mm 5mm;border:1px solid #CBD5E1;border-bottom:none;border-radius:4px 4px 0 0;color:#666;background:#F5F7FA}
+.tab.on{background:#2D6BD9;color:#fff;border-color:#2D6BD9;font-weight:700}
+.tbar{display:flex;justify-content:space-between;align-items:center;gap:2mm;margin:3mm 0 2.5mm}.tools span:nth-child(2){display:none}
+.subs{display:flex;gap:1.5mm}
+.sub{font-size:7.4pt;padding:1.2mm 3.4mm;border:1px solid #CBD5E1;border-radius:3px;color:#555;background:#fff}
+.sub.on{background:#2D6BD9;border-color:#2D6BD9;color:#fff;font-weight:700}
+.tools{display:flex;gap:1.5mm}.tools span{font-size:6.8pt;border:1px solid #CBD5E1;border-radius:3px;padding:1.1mm 2.6mm;color:#555}
+.dt{width:100%;border-collapse:collapse;font-size:7.8pt;border-top:2px solid #34383C}
+.dt th{background:#F3F6FA;font-weight:700;padding:1.6mm 2mm;border:1px solid #DDE3EA;text-align:center}
+.dt th small{font-weight:500;color:#7A828A;font-size:6.5pt}
+.dt td{padding:1.7mm 2mm;border:1px solid #E3E8EE;text-align:right;font-variant-numeric:tabular-nums}
+.dt .l{text-align:left}.dt .c{text-align:center}.dt td.u{text-align:center;color:#7A828A}
+.eff .l{width:34%}
+.dt .hi{background:#EAF1FC;color:#1A4FA8;font-weight:800}.dt th.hi{background:#DCE8FB}
+.idea td{padding:2.3mm 2.4mm}.idea .warn{color:#E8710A;font-weight:700}
+.stp{display:inline-block;background:#2D6BD9;color:#fff;font-size:7pt;font-weight:800;border-radius:3mm;padding:.5mm 2.6mm}
+.fl{display:inline-block;text-align:center;font-size:6.6pt;font-weight:700;color:#2D6BD9;border:1px solid #CFDAEA;border-radius:2px;padding:0 1.4mm;margin:0 .8mm .5mm 0;white-space:nowrap}
+.tnote{font-size:6.8pt;color:#7A828A;margin-top:2mm}
+.flh{font-size:9pt;font-weight:800;margin:5mm 0 2mm}.flh small{font-size:6.8pt;font-weight:500;color:#7A828A;margin-left:2mm}
+.flow{display:flex;align-items:stretch;gap:1.5mm}
+.fs{flex:1;border:1px solid #E3E8EE;border-top:1.2mm solid #2D6BD9;border-radius:3px;padding:2.4mm 3mm;display:flex;flex-direction:column;background:#fff}
+.fs .n{font-size:13pt;font-weight:900;color:#2D6BD9;line-height:1}.fs b{font-size:9pt;margin:1mm 0 .8mm}
+.fs p{font-size:7pt;color:#4A5057;line-height:1.5;flex:1}.fs em{font-style:normal;font-size:6.4pt;color:#9AA2AA;margin-top:1.2mm}
+.ar{display:none}
+.sech{display:flex;align-items:center;gap:3.5mm;margin-bottom:2.2mm}
+.sech .num{font-size:20pt;font-weight:900;color:#2D6BD9;letter-spacing:-.5px;line-height:1}
+.sech .en{display:block;font-size:6.6pt;color:#1A4FA8;font-weight:700;letter-spacing:.6px}
+.sech h2{font-size:14pt;font-weight:800;letter-spacing:-.4px;line-height:1.15}
+.sech .subs{margin-left:auto}
+.msg{border-left:1.2mm solid #2D6BD9;background:#F6F9FE;padding:2.6mm 4mm;margin-bottom:3mm;border-radius:0 4px 4px 0}
+.msg strong{display:block;font-size:10.5pt;font-weight:800;letter-spacing:-.3px;margin-bottom:1mm}
+.msg li{list-style:none;font-size:7.8pt;color:#34383C;line-height:1.65;padding-left:3mm;position:relative}
+.msg li::before{content:'';position:absolute;left:.4mm;top:1.9mm;width:1.2mm;height:1.2mm;background:#2D6BD9;border-radius:50%}
+.grid{display:flex;flex-direction:column;gap:5mm}
+.row{display:flex;gap:6mm;align-items:flex-start}
+.card{flex:0 0 100%;border:1px solid #E3E8EE;border-radius:5px;padding:2.4mm 4mm 2.6mm;background:#fff}
+.ch{display:flex;align-items:center;gap:1.4mm;height:6.5mm;margin-bottom:1.2mm}
+.ch h4{font-size:9pt;font-weight:800;margin-right:1.5mm;letter-spacing:-.2px}
+.ch .no{color:#2D6BD9;margin-right:1.6mm}
+.chip{font-size:6.4pt;padding:.7mm 2mm;border:1px solid #2D6BD9;color:#2D6BD9;border-radius:2px;white-space:nowrap}
+.chip.on{background:#2D6BD9;color:#fff}
+.links{margin-left:auto;font-size:6.3pt;color:#8A939C;white-space:nowrap}.links i{font-style:normal;color:#CBD5E1;margin:0 1mm}
+.img{text-align:center}.img img{display:inline-block}
+.srcl{display:flex;gap:1.5mm;font-size:6.4pt;line-height:1.45;color:#5B6269;margin-top:1.2mm;padding-top:1.2mm;border-top:1px dashed #E3E8EE}
+.srcl b{flex:none;width:1.4mm;height:1.4mm;background:#2D6BD9;margin-top:1mm}
+.eff{margin-top:3.5mm}
+.foot{position:absolute;left:14mm;right:14mm;bottom:5mm;display:flex;justify-content:space-between;font-size:6.5pt;color:#9AA2AA;border-top:1px solid #EEF1F4;padding-top:1.6mm}
+.gold{display:flex;justify-content:space-between;align-items:center;background:linear-gradient(#E8C067,#E2B65A);border-radius:6px;padding:3mm 6mm;margin:3mm 0 3.5mm;
+ font-size:10.5pt;font-weight:800;color:#3D2E10;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.two{display:flex;flex-direction:column;gap:5mm}
+.desc,.srct{width:100%;border-collapse:collapse;font-size:7.1pt;border-top:1.5px solid #34383C}
+.desc th{width:17mm;background:#F6F7F9;font-weight:600;color:#4A5057;text-align:center;padding:1.5mm 1.5mm;border-bottom:1px solid #E6E9ED}
+.desc thead th,.desc thead td{font-weight:700;color:#23272B;text-align:center;background:#F6F7F9}
+.desc td{padding:1.5mm 2.5mm;border-bottom:1px solid #E6E9ED;line-height:1.55;color:#34383C}
+.srct th{background:#F6F7F9;padding:1.5mm 1.8mm;border-bottom:1px solid #E6E9ED;text-align:left}
+.srct td{padding:1.3mm 1.8mm;border-bottom:1px solid #E6E9ED;vertical-align:top}
+.srct .o{font-weight:700}.srct .p{color:#6B7177}
+.lic{display:flex;align-items:center;gap:3mm;margin-top:2.6mm;font-size:6.8pt;color:#4A5057}
+.open{display:inline-flex;align-items:center;border:1.4px solid #23272B;border-radius:3px;font-weight:900;font-size:7.5pt;padding-left:1.8mm;flex:none}
+.open em{font-style:normal;background:#23272B;color:#fff;margin-left:1.8mm;padding:.6mm 1.8mm;font-size:6.5pt;font-weight:700}
+</style></head><body><section class="page cover">
+<div class="util"><span>보고서 소개</span><span>데이터 출처</span><span>그림 목록</span></div>
+<div class="gnb-top"><span class="logo"><svg viewBox="0 0 40 40" width="30" height="30"><circle cx="20" cy="20" r="18" fill="#E6EEFB"/>
+<path d="M6 24c6-9 14-11 28-8-10 0-17 4-22 12z" fill="#2D6BD9"/><path d="M10 29c7-5 13-6 22-4-7 1-12 3-16 7z" fill="#8FB0EA"/>
+<circle cx="27" cy="11" r="3.2" fill="#E8710A"/></svg><b>안동 이어드림</b><i>데이터 리포트</i></span><div class="search">지표나 그림 번호를 입력해 주세요 <span>⌕</span></div>
+<div class="team"><span>● 안동팀</span><span>2026 한국관광 데이터랩 활용 경진대회</span></div></div>
+<nav class="gnb"><span class="on">전체 흐름</span><span><em>01</em>문제</span><span><em>02</em>원인</span><span><em>03</em>해법</span><span><em>04</em>기대효과</span><span><em>05</em>검증·확산</span></nav>
+<div class="crumb2">⌂ › 분석 리포트 › 안동 이어드림</div>
+<h1>안동 이어드림 분석 보고서</h1>
+<p class="one"><b>한 줄 기획</b> · 디지털 관광주민증 위 3단계 릴레이로, 원도심에서 도는 돈과 월영교에 모이는 사람을 밤까지 잇는다.</p>
+<a class="fab" href="#desc">ⓘ<br>데이터<br>설명</a>
+<div class="filter"><div class="f"><label>단계</label><span class="sel">전체 흐름 <small>∨</small></span></div>
+<div class="f"><label>자료</label><span class="sel">전체 <small>∨</small></span></div>
+<div class="f"><label>참여율 (효과 표 강조)</label><span class="sel">목표 10% <small>∨</small></span></div><span class="btn">조회</span></div>
+<div class="notice"><span class="ck">✓</span><b>알아두세요!</b><p>방문 1회당 소비는 한국관광 데이터랩의 <u>신용카드 외지인 소비 ÷ 이동통신 방문 연인원</u>이며, 비교 기준은 146개 시·군의 전국 중앙값입니다. 시행 후 값은 <u>시행 전 예측(1만 번 계산의 가운데 값, 원도심 식당 83곳 운영)</u>이고, 순위는 다른 시·군이 그대로일 때입니다.</p></div>
+<div class="tabs"><span class="tab on">기본조회</span><span class="tab">상세조회</span></div>
+<div class="tbar"><div class="subs"><span class="sub on">전체 흐름</span><span class="sub">01 문제</span><span class="sub">02 원인</span><span class="sub">03 해법</span><span class="sub">04 기대효과</span><span class="sub">05 검증·확산</span></div>
+<div class="tools"><span>효과 표 CSV 저장</span><span>데이터 출처 모두 펼치기</span><span>인쇄</span></div></div>
+<table class="dt idea"><thead><tr><th>단계</th><th class="l">무엇을</th><th>언제</th><th class="l">어떻게</th><th class="l">지금 (근거)</th><th>그림</th></tr></thead><tbody><tr><td class="c"><span class="stp">1단계</span></td><td class="l"><b>원도심 식음 → 체험</b></td><td class="c">낮 · 식사 뒤</td><td class="l">원도심 식당 영수증 인증 → 체험 10% 할인</td><td class="l warn">원도심 주민증 혜택 업체 0곳</td><td class="c"><span class="fl">그림 09</span></td></tr><tr><td class="c"><span class="stp">2단계</span></td><td class="l"><b>저녁 이동</b></td><td class="c">18:30 ~ 21:00</td><td class="l">원도심 → 월영교 택시·셔틀</td><td class="l warn">19시 이후 원도심 출발 112번 0회</td><td class="c"><span class="fl">그림 08</span></td></tr><tr><td class="c"><span class="stp">3단계</span></td><td class="l"><b>월영교 야간 팝업</b></td><td class="c">21시 전후</td><td class="l">월영교 야간 팝업으로 밤까지 머물게</td><td class="l warn">월영교 1km 주점 0곳</td><td class="c"><span class="fl">그림 08</span></td></tr></tbody></table>
+<h3 class="flh">지금과 시행 후 <small>시행 전 예측 · 원도심 식당 83곳 운영 · 추가 소비는 연간 환산(1~8월 월평균 × 12)</small></h3>
+<table class="dt eff"><thead><tr><th rowspan="2" class="l">지표</th><th rowspan="2">단위</th><th rowspan="2">지금<br><small>2026년 1~8월</small></th><th colspan="3">시행 후 예측 (원도심 방문객 중 참여율)</th></tr><tr><th class="">기준 2%</th><th class="">흥행 4%</th><th class="hi">목표 10%</th></tr></thead><tbody><tr><td class="l">방문 1회당 체험·문화 소비</td><td class="u">원</td><td>152.7</td><td class="">158.0</td><td class="">163.1</td><td class="hi">179.0</td></tr><tr><td class="l">2024년 대비 변화</td><td class="u">%</td><td>−16.8</td><td class="">−13.9</td><td class="">−11.1</td><td class="hi">−2.5</td></tr><tr><td class="l">146개 시·군 중 감소폭 순위</td><td class="u">위</td><td>22</td><td class="">27</td><td class="">38</td><td class="hi">71</td></tr><tr><td class="l">월영교로 새로 가는 저녁 이동 (주말 하루)</td><td class="u">명</td><td>-</td><td class="">110</td><td class="">217</td><td class="hi">549</td></tr><tr><td class="l">안동 추가 소비 (연간)</td><td class="u">억 원</td><td>-</td><td class="">1.56</td><td class="">2.86</td><td class="hi">6.91</td></tr></tbody></table>
+<h3 class="flh">보고서 흐름</h3><div class="flow"><div class="fs"><span class="n">01</span><b>문제</b><p>방문은 늘었는데, 방문 1회당 체험·문화 소비는 줄고 있다</p><em>2쪽</em></div><span class="ar">›</span><div class="fs"><span class="n">02</span><b>원인</b><p>돈이 도는 원도심과 사람이 모이는 월영교가 저녁에 끊겨 있다</p><em>3쪽</em></div><span class="ar">›</span><div class="fs"><span class="n">03</span><b>해법</b><p>디지털 관광주민증 위 3단계 릴레이로 원도심의 낮을 월영교의 밤까지 잇는다</p><em>4쪽</em></div><span class="ar">›</span><div class="fs"><span class="n">04</span><b>기대효과</b><p>참여 2%만 되어도 체험 소비가 늘고, 10%면 전국 중앙 추세 수준에 가까워진다</p><em>5쪽</em></div><span class="ar">›</span><div class="fs"><span class="n">05</span><b>검증·확산</b><p>시행 뒤에는 효과를 재는 방법이 있고, 같은 문제를 가진 곳에 옮길 수 있다</p><em>6쪽</em></div></div>
+<p class="tnote">※ 이어드림 3단계 운영안(서식4 3)칸). 다음 쪽부터 문제 → 원인 → 해법 → 기대효과 → 검증·확산 순서로 근거 그림 10장을 싣습니다.</p>
+<div class="foot"><span>안동 이어드림 분석 보고서 · 요약</span><span>2026 한국관광 데이터랩 활용 경진대회 · 안동팀</span><span>1 / 7</span></div></section><section class="page"><div class="topbar"><span class="logo"><svg viewBox="0 0 40 40" width="30" height="30"><circle cx="20" cy="20" r="18" fill="#E6EEFB"/>
+<path d="M6 24c6-9 14-11 28-8-10 0-17 4-22 12z" fill="#2D6BD9"/><path d="M10 29c7-5 13-6 22-4-7 1-12 3-16 7z" fill="#8FB0EA"/>
+<circle cx="27" cy="11" r="3.2" fill="#E8710A"/></svg><b>안동 이어드림</b><i>데이터 리포트</i></span><div class="crumb">⌂ › 분석 리포트 › 안동 이어드림 › <b>문제</b></div></div><div class="sech"><span class="num">01</span><div><span class="en">PROBLEM</span><h2>문제</h2></div>
+<div class="subs"><span class="sub on">01 문제</span><span class="sub">02 원인</span><span class="sub">03 해법</span><span class="sub">04 기대효과</span><span class="sub">05 검증·확산</span></div></div><div class="msg"><strong>방문은 늘었는데, 방문 1회당 체험·문화 소비는 줄고 있다</strong><ul><li>방문 1회당 체험·문화 소비 183.5 → 152.7원(−16.8%), 146개 시·군 중 22번째로 많이 줄었다.</li><li>같은 기간 전국 시·군 중앙값은 −2.0%다. 수준은 146곳 중 87위로 중간이고, 줄어드는 속도가 빠른 것이 문제다.</li></ul></div><div class="grid"><div class="row"><div class="card" id="fig-01"><div class="ch"><h4><span class="no">01</span>방문과 체험·문화 소비</h4>
+<span class="chip on">안동</span><span class="chip">데이터랩</span>
+<span class="links">차트 그림 저장 <i>|</i> <a href="#desc">데이터 출처</a></span></div>
+<div class="img"><img src="../보고서그림_20260928/01_문제_방문과체험소비.png" style="width:152.3mm"></div>
+<div class="srcl"><b></b>출처: 한국관광 데이터랩(이동통신 방문 연인원, 신용카드 외지인 소비). 체험·문화 = 문화서비스·관광유원시설·기타레저</div></div></div><div class="row"><div class="card" id="fig-02"><div class="ch"><h4><span class="no">02</span>146개 시·군 체험 소비 변화</h4>
+<span class="chip on">안동</span><span class="chip">데이터랩</span>
+<span class="links">차트 그림 저장 <i>|</i> <a href="#desc">데이터 출처</a></span></div>
+<div class="img"><img src="../보고서그림_20260928/02_문제_146개시군_체험소비변화.png" style="width:152.3mm"></div>
+<div class="srcl"><b></b>출처: 한국관광 데이터랩. +80%를 넘는 4곳은 오른쪽 끝에 모아 표시</div></div></div></div><div class="foot"><span>안동 이어드림 분석 보고서 · 요약</span><span>2026 한국관광 데이터랩 활용 경진대회 · 안동팀</span><span>2 / 7</span></div></section><section class="page"><div class="topbar"><span class="logo"><svg viewBox="0 0 40 40" width="30" height="30"><circle cx="20" cy="20" r="18" fill="#E6EEFB"/>
+<path d="M6 24c6-9 14-11 28-8-10 0-17 4-22 12z" fill="#2D6BD9"/><path d="M10 29c7-5 13-6 22-4-7 1-12 3-16 7z" fill="#8FB0EA"/>
+<circle cx="27" cy="11" r="3.2" fill="#E8710A"/></svg><b>안동 이어드림</b><i>데이터 리포트</i></span><div class="crumb">⌂ › 분석 리포트 › 안동 이어드림 › <b>원인</b></div></div><div class="sech"><span class="num">02</span><div><span class="en">WHY</span><h2>원인</h2></div>
+<div class="subs"><span class="sub">01 문제</span><span class="sub on">02 원인</span><span class="sub">03 해법</span><span class="sub">04 기대효과</span><span class="sub">05 검증·확산</span></div></div><div class="msg"><strong>돈이 도는 원도심과 사람이 모이는 월영교가 저녁에 끊겨 있다</strong><ul><li>원도심: 사람이 가장 많은 원도심에 혜택은 0곳. 혜택 이용의 대부분은 관람지에 몰려 있다.</li><li>시간: 주말 안동역 승차는 18시대에 다시 몰린다(코레일). 저녁에 움직일 수요는 있다.</li><li>이동·목적지: 19시 이후 원도심에서 월영교 가는 버스 0회(안동시 BIS), 밤에 갈 주점은 원도심 86곳 · 월영교 0곳(상가정보).</li></ul></div><div class="grid"><div class="row"><div class="card" id="fig-08"><div class="ch"><h4><span class="no">08</span>두 거점: 원도심과 월영교</h4>
+<span class="chip on">안동</span><span class="chip">복합</span>
+<span class="links">차트 그림 저장 <i>|</i> <a href="#desc">데이터 출처</a></span></div>
+<div class="img"><img src="../보고서그림_20260928/08_근거_두거점_원도심과월영교.png" style="width:132.8mm"></div>
+<div class="srcl"><b></b>출처: 한국관광 데이터랩(읍면동 방문 2026년 1~8월), 상가정보 2026.6, 안동시 BIS, 주민증 혜택업체, 팀 확인</div></div></div><div class="row"><div class="card" id="fig-09"><div class="ch"><h4><span class="no">09</span>읍면동 방문과 혜택 업체</h4>
+<span class="chip on">안동</span><span class="chip">정보공개</span>
+<span class="links">차트 그림 저장 <i>|</i> <a href="#desc">데이터 출처</a></span></div>
+<div class="img"><img src="../보고서그림_20260928/09_근거_읍면동_방문vs혜택업체.png" style="width:132.8mm"></div>
+<div class="srcl"><b></b>출처: 한국관광 데이터랩(읍면동 방문), 안동시 정보공개(혜택업체 27곳 주소). 중구동 = 원도심</div></div></div></div><div class="foot"><span>안동 이어드림 분석 보고서 · 요약</span><span>2026 한국관광 데이터랩 활용 경진대회 · 안동팀</span><span>3 / 7</span></div></section><section class="page"><div class="topbar"><span class="logo"><svg viewBox="0 0 40 40" width="30" height="30"><circle cx="20" cy="20" r="18" fill="#E6EEFB"/>
+<path d="M6 24c6-9 14-11 28-8-10 0-17 4-22 12z" fill="#2D6BD9"/><path d="M10 29c7-5 13-6 22-4-7 1-12 3-16 7z" fill="#8FB0EA"/>
+<circle cx="27" cy="11" r="3.2" fill="#E8710A"/></svg><b>안동 이어드림</b><i>데이터 리포트</i></span><div class="crumb">⌂ › 분석 리포트 › 안동 이어드림 › <b>해법</b></div></div><div class="sech"><span class="num">03</span><div><span class="en">SOLUTION</span><h2>해법</h2></div>
+<div class="subs"><span class="sub">01 문제</span><span class="sub">02 원인</span><span class="sub on">03 해법</span><span class="sub">04 기대효과</span><span class="sub">05 검증·확산</span></div></div><div class="msg"><strong>디지털 관광주민증 위 3단계 릴레이로 원도심의 낮을 월영교의 밤까지 잇는다</strong><ul><li>1 원도심 식당 영수증 → 체험 할인, 2 저녁 이동(18:30~21:00), 3 월영교 야간 팝업.</li><li>팀 설문: 방문객 10명 중 8명이 이용하겠다고 답했다. 의향은 참여율이 아니어서 계산에는 실현율(0.33~0.40)로 보정한 값만 쓴다.</li></ul></div><div class="grid"><div class="row"><div class="card" id="fig-26"><div class="ch"><h4><span class="no">26</span>3단계 릴레이</h4>
+<span class="chip on">안동</span><span class="chip">운영안</span>
+<span class="links">차트 그림 저장 <i>|</i> <a href="#desc">데이터 출처</a></span></div>
+<div class="img"><img src="../보고서그림_20260928/26_해법_3단계릴레이.png" style="width:162.5mm"></div>
+<div class="srcl"><b></b>출처: 서식4 3)칸 운영안, 한국관광 데이터랩·BIS·상가정보</div></div></div><div class="row"><div class="card" id="fig-21"><div class="ch"><h4><span class="no">21</span>이용 의향 4문항</h4>
+<span class="chip on">안동</span><span class="chip">설문</span>
+<span class="links">차트 그림 저장 <i>|</i> <a href="#desc">데이터 출처</a></span></div>
+<div class="img"><img src="../보고서그림_20260928/21_설문_이용의향_4문항.png" style="width:162.5mm"></div>
+<div class="srcl"><b></b>출처: 팀 온라인 설문(2026.9.23~24, 응답 103명 중 방문 경험 72명). 의향은 참여율이 아니며 계산에는 33~40%만 반영</div></div></div></div><div class="foot"><span>안동 이어드림 분석 보고서 · 요약</span><span>2026 한국관광 데이터랩 활용 경진대회 · 안동팀</span><span>4 / 7</span></div></section><section class="page"><div class="topbar"><span class="logo"><svg viewBox="0 0 40 40" width="30" height="30"><circle cx="20" cy="20" r="18" fill="#E6EEFB"/>
+<path d="M6 24c6-9 14-11 28-8-10 0-17 4-22 12z" fill="#2D6BD9"/><path d="M10 29c7-5 13-6 22-4-7 1-12 3-16 7z" fill="#8FB0EA"/>
+<circle cx="27" cy="11" r="3.2" fill="#E8710A"/></svg><b>안동 이어드림</b><i>데이터 리포트</i></span><div class="crumb">⌂ › 분석 리포트 › 안동 이어드림 › <b>기대효과</b></div></div><div class="sech"><span class="num">04</span><div><span class="en">IMPACT</span><h2>기대효과</h2></div>
+<div class="subs"><span class="sub">01 문제</span><span class="sub">02 원인</span><span class="sub">03 해법</span><span class="sub on">04 기대효과</span><span class="sub">05 검증·확산</span></div></div><div class="msg"><strong>참여 2%만 되어도 체험 소비가 늘고, 10%면 전국 중앙 추세 수준에 가까워진다</strong><ul><li>방문 1회당 체험·문화 소비: 지금 152.7원 → 참여 2% 158.0원 → 참여 10% 179.0원 (전국 중앙 추세만큼만 줄었다면 179.7원).</li><li>안동에 남는 돈 연 1.56억 ~ 6.91억 원. 모두 시행 전 예측(1만 번 계산의 가운데 값)이다.</li></ul></div><div class="grid"><div class="row"><div class="card" id="fig-28"><div class="ch"><h4><span class="no">28</span>참여율별 체험 소비 회복</h4>
+<span class="chip on">안동</span><span class="chip">예측</span>
+<span class="links">차트 그림 저장 <i>|</i> <a href="#desc">데이터 출처</a></span></div>
+<div class="img"><img src="../보고서그림_20260928/28_효과_참여율별_체험소비회복.png" style="width:152.1mm"></div>
+<div class="srcl"><b></b>출처: 이어드림 기대효과 모의실험. 시행 전 예측, 1만 번 계산의 가운데 값, 원도심 식당 83곳 운영</div></div></div><div class="row"><div class="card" id="fig-30"><div class="ch"><h4><span class="no">30</span>참여율별 추가 소비</h4>
+<span class="chip on">안동</span><span class="chip">예측</span>
+<span class="links">차트 그림 저장 <i>|</i> <a href="#desc">데이터 출처</a></span></div>
+<div class="img"><img src="../보고서그림_20260928/30_효과_참여율별_추가소비.png" style="width:152.1mm"></div>
+<div class="srcl"><b></b>출처: 이어드림 기대효과 모의실험. 시행 전 예측, 1만 번 계산의 가운데 값과 90% 범위, 원도심 식당 83곳 운영</div></div></div></div><div class="foot"><span>안동 이어드림 분석 보고서 · 요약</span><span>2026 한국관광 데이터랩 활용 경진대회 · 안동팀</span><span>5 / 7</span></div></section><section class="page"><div class="topbar"><span class="logo"><svg viewBox="0 0 40 40" width="30" height="30"><circle cx="20" cy="20" r="18" fill="#E6EEFB"/>
+<path d="M6 24c6-9 14-11 28-8-10 0-17 4-22 12z" fill="#2D6BD9"/><path d="M10 29c7-5 13-6 22-4-7 1-12 3-16 7z" fill="#8FB0EA"/>
+<circle cx="27" cy="11" r="3.2" fill="#E8710A"/></svg><b>안동 이어드림</b><i>데이터 리포트</i></span><div class="crumb">⌂ › 분석 리포트 › 안동 이어드림 › <b>검증·확산</b></div></div><div class="sech"><span class="num">05</span><div><span class="en">VERIFY · SCALE</span><h2>검증·확산</h2></div>
+<div class="subs"><span class="sub">01 문제</span><span class="sub">02 원인</span><span class="sub">03 해법</span><span class="sub">04 기대효과</span><span class="sub on">05 검증·확산</span></div></div><div class="msg"><strong>시행 뒤에는 효과를 재는 방법이 있고, 같은 문제를 가진 곳에 옮길 수 있다</strong><ul><li>원도심 식당 83곳을 4묶음으로 한 달씩 넓히면 체험 결제 +50% 효과를 85% 확률로 확인한다.</li><li>전국 144개 시·군 진단: 안동과 같은 문제를 가진 전국 6곳. 주민증을 운영하는 지자체에 같은 방식을 적용할 수 있다.</li></ul></div><div class="grid"><div class="row"><div class="card" id="fig-35"><div class="ch"><h4><span class="no">35</span>순차 확대 검정력</h4>
+<span class="chip on">안동</span><span class="chip">모의실험</span>
+<span class="links">차트 그림 저장 <i>|</i> <a href="#desc">데이터 출처</a></span></div>
+<div class="img"><img src="../보고서그림_20260928/35_검증_순차확대_검정력.png" style="width:133.9mm"></div>
+<div class="srcl"><b></b>출처: 순차 확대 모의실험 1,000회. 효과 = 참여 식당 손님의 체험 결제 증가</div></div></div><div class="row"><div class="card" id="fig-38"><div class="ch"><h4><span class="no">38</span>같은 문제 유형 지도</h4>
+<span class="chip on">안동</span><span class="chip">진단표</span>
+<span class="links">차트 그림 저장 <i>|</i> <a href="#desc">데이터 출처</a></span></div>
+<div class="img"><img src="../보고서그림_20260928/38_확산_전국지도_같은유형6곳.png" style="width:133.9mm"></div>
+<div class="srcl"><b></b>출처: 한국관광 데이터랩, 팀 전국 진단표. 두 지표 모두 문제 백분위 75 이상</div></div></div></div><div class="foot"><span>안동 이어드림 분석 보고서 · 요약</span><span>2026 한국관광 데이터랩 활용 경진대회 · 안동팀</span><span>6 / 7</span></div></section><section class="page" id="desc"><div class="topbar"><span class="logo"><svg viewBox="0 0 40 40" width="30" height="30"><circle cx="20" cy="20" r="18" fill="#E6EEFB"/>
+<path d="M6 24c6-9 14-11 28-8-10 0-17 4-22 12z" fill="#2D6BD9"/><path d="M10 29c7-5 13-6 22-4-7 1-12 3-16 7z" fill="#8FB0EA"/>
+<circle cx="27" cy="11" r="3.2" fill="#E8710A"/></svg><b>안동 이어드림</b><i>데이터 리포트</i></span><div class="crumb">⌂ › 분석 리포트 › 안동 이어드림 › <b>데이터 설명</b></div></div>
+<div class="gold"><span>데이터 설명</span><span class="car">⌃</span></div>
+<div class="two"><table class="desc"><thead><tr><th>구분</th><td>세부내용</td></tr></thead><tbody><tr><th>보고서명</th><td><div>▷ 안동 이어드림 분석 보고서 (요약)</div></td></tr><tr><th>작성주체</th><td><div>▷ 2026 한국관광 데이터랩 활용 경진대회 안동팀</div></td></tr><tr><th>작성목적</th><td><div>▷ 안동의 체험·문화 소비 감소와 원도심–월영교 저녁 공백을 데이터로 보이고, 3단계 릴레이의 기대효과와 효과 평가 방법을 제시</div></td></tr><tr><th>작성방법</th><td><div>▷ 방문 1회당 소비 = 신용카드 외지인 소비 ÷ 이동통신 방문 연인원 (1인당 소비가 아님)</div><div>▷ 체험·문화 = 문화서비스 · 관광유원시설 · 기타레저. 안동 값은 전국 시·군 중앙값과 함께 표시</div><div>▷ 기대효과 = 설문 의향 × 실현율(0.33~0.40)로 보정한 모의실험 1만 번의 가운데 값과 90% 범위</div></td></tr><tr><th>분석기간</th><td><div>▷ 2024~2026년 각 1~8월 (그림마다 기간이 다르면 그림 부제의 기간을 따름)</div></td></tr><tr><th>유의사항</th><td><div>▷ 기대효과는 시행 전 예측이며 성과 실적이 아닙니다. 90% 범위는 신뢰구간이 아닙니다.</div><div>▷ 설문 의향 %는 참여율이 아닙니다. 순위 예측은 다른 시·군이 그대로일 때의 값입니다.</div><div>▷ 이 보고서는 그림 42장 중 흐름에 필요한 10장만 실었습니다. 나머지는 보고서그림 폴더와 분석보고서에 있습니다.</div></td></tr></tbody></table>
+<div><table class="srct"><thead><tr><th style="width:26%">제공 기관</th><th style="width:34%">자료</th><th style="width:26%">기간 · 코드</th><th>그림</th></tr></thead><tbody><tr><td class="o">한국관광 데이터랩</td><td>이동통신 방문 연인원 (시·군, 읍면동)</td><td class="p">BDT_01_01_006 · 2024~2026년 1~8월 월별</td><td><a class=fl href=#fig-01>01</a><a class=fl href=#fig-02>02</a><a class=fl href=#fig-08>08</a><a class=fl href=#fig-09>09</a><a class=fl href=#fig-26>26</a><a class=fl href=#fig-38>38</a></td></tr><tr><td class="o">한국관광 데이터랩</td><td>신용카드 외지인 소비 (업종 중분류)</td><td class="p">BDT_02_01_003 · 2024~2026년 1~8월 월별</td><td><a class=fl href=#fig-01>01</a><a class=fl href=#fig-02>02</a><a class=fl href=#fig-38>38</a></td></tr><tr><td class="o">한국관광 데이터랩</td><td>평균 숙박일수</td><td class="p">LN_02_01_013 (전국 진단표)</td><td><a class=fl href=#fig-38>38</a></td></tr><tr><td class="o">안동시 정보공개청구</td><td>디지털 관광주민증 혜택업체 목록 · 업체별 이용 건수</td><td class="p">목록 2026.9.18 · 이용 2024.6~2026.8</td><td><a class=fl href=#fig-08>08</a><a class=fl href=#fig-09>09</a></td></tr><tr><td class="o">안동시 버스정보시스템(BIS)</td><td>시내버스 112번 노선 시간표</td><td class="p">평일 시간표</td><td><a class=fl href=#fig-08>08</a><a class=fl href=#fig-26>26</a></td></tr><tr><td class="o">소상공인시장진흥공단</td><td>상가(상권)정보</td><td class="p">2026.6</td><td><a class=fl href=#fig-08>08</a><a class=fl href=#fig-26>26</a></td></tr><tr><td class="o">안동팀 확인</td><td>지도 앱 영업시간</td><td class="p">2026.9.19</td><td><a class=fl href=#fig-08>08</a></td></tr><tr><td class="o">안동팀 온라인 설문</td><td>응답 103명 (안동 방문 경험 72명)</td><td class="p">2026.9.23~24</td><td><a class=fl href=#fig-21>21</a></td></tr><tr><td class="o">안동팀 모의실험</td><td>이어드림 기대효과 모의실험 1만 번</td><td class="p">시행 전 예측 · 원도심 식당 83곳 운영 · 연간 환산</td><td><a class=fl href=#fig-28>28</a><a class=fl href=#fig-30>30</a></td></tr><tr><td class="o">안동팀 모의실험</td><td>순차 확대 검정력 1,000회</td><td class="p">식당 4묶음, 한 달씩 5개월</td><td><a class=fl href=#fig-35>35</a></td></tr><tr><td class="o">안동팀 전국 진단표</td><td>144개 시·군 네 지표 진단</td><td class="p">2026.9.23</td><td><a class=fl href=#fig-38>38</a></td></tr><tr><td class="o">행정 경계</td><td>2018 시·군 경계 (skorea-municipalities-2018)</td><td class="p">지도 그림 배경</td><td><a class=fl href=#fig-38>38</a></td></tr></tbody></table>
+<div class="lic"><span class="open">OPEN<em>출처</em></span><p>그림의 숫자는 팀 분석 파일에서 자동으로 읽어 그렸습니다. 원자료 이용 조건은 각 제공 기관의 조건을 따릅니다.</p></div>
+<div class="lic"><span class="open">OPEN<em>코드</em></span><p>scripts/보고서그림.py · scripts/그림보고서_PDF.py (공개 저장소 kysk2295/andong-datalab-2026)</p></div></div></div>
+<div class="foot"><span>안동 이어드림 분석 보고서 · 요약</span><span>2026 한국관광 데이터랩 활용 경진대회 · 안동팀</span><span>7 / 7</span></div></section></body></html>

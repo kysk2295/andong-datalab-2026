@@ -1,0 +1,31 @@
+{
+  "id": "S09",
+  "file": "S09_월영교_첫전경.mp4",
+  "duration": 11,
+  "lead": 1,
+  "move": 7,
+  "from": [
+    25,
+    1.7,
+    -20.5
+  ],
+  "to": [
+    23,
+    1.7,
+    -21.5
+  ],
+  "target": [
+    17,
+    1.4,
+    -37
+  ],
+  "targetTo": [
+    4,
+    1.3,
+    -37
+  ],
+  "fps": 30,
+  "frames": 330,
+  "method": "actual WebGL frame capture, no optical-flow interpolation",
+  "elapsed": 34.837
+}

@@ -10,3 +10,73 @@ __pycache__/
 # 원격에서는 `bash scripts/원자료_복원.sh`로 풀면 원래 경로에 .csv가 생긴다.
 data/bdt/이동통신/방문자수_성별연령요일시간대_교차표_BDT_01_01_006_20*.csv
 data/bdt/신용카드/시도별_업종중분류_월별_외지인지출액_대용량_BDT_02_01_002_35_1.csv
+
+# 2026-10-03 저장소 정리: 중복 사본과 편집 도구 로컬 캐시
+보고서/보고서그림_20260928 2.zip
+보고서/보고서그림_20260928 3.zip
+보고서/웹소개_핵심이미지_20260930 2/
+보고서/안동이어드림_클로드전달_촬영패키지.zip
+**/.hyperframes/
+**/.media/
+
+# 2026-10-03 5MB 넘는 영상·zip은 GitHub Releases(media-20261003)에 둔다. 목록 보고서/대용량_영상_목록.csv, 복원 scripts/영상_내려받기.sh
+/보고서/보고서그림_20260928.zip
+/보고서/사이트소개영상_20260930/andong-atlas-promo/assets/cut/aerial.mp4
+/보고서/사이트소개영상_20260930/andong-atlas-promo/assets/cut/alley.mp4
+/보고서/사이트소개영상_20260930/andong-atlas-promo/assets/cut/bridge.mp4
+/보고서/사이트소개영상_20260930/andong-atlas-promo/assets/cut/city.mp4
+/보고서/사이트소개영상_20260930/andong-atlas-promo/assets/cut/cta.mp4
+/보고서/사이트소개영상_20260930/andong-atlas-promo/assets/cut/ending.mp4
+/보고서/사이트소개영상_20260930/andong-atlas-promo/assets/cut/hahoe.mp4
+/보고서/사이트소개영상_20260930/andong-atlas-promo/assets/cut/popup.mp4
+/보고서/사이트소개영상_20260930/andong-atlas-promo/assets/cut/ui.mp4
+/보고서/사이트소개영상_20260930/andong-atlas-promo/assets/cut/walk.mp4
+/보고서/사이트소개영상_20260930/andong-atlas-promo/renders/안동3DAtlas_사이트소개_76초.mp4
+/보고서/사이트소개영상_20260930/andong-atlas-promo/renders/안동3DAtlas_사이트소개_76초_공유용.mp4
+/보고서/사이트소개영상_20260930/clips/M01_안동_항공.mp4
+/보고서/사이트소개영상_20260930/clips/M02_하회마을.mp4
+/보고서/사이트소개영상_20260930/clips/M03_원도심_낙동강.mp4
+/보고서/사이트소개영상_20260930/clips/M04_월영교_day.mp4
+/보고서/사이트소개영상_20260930/clips/M04_월영교_night.mp4
+/보고서/사이트소개영상_20260930/clips/M04_월영교_sunset.mp4
+/보고서/사이트소개영상_20260930/clips/M05a_화면_노을야경.mp4
+/보고서/사이트소개영상_20260930/clips/M05b_화면_릴레이진입.mp4
+/보고서/영상_20260928/eodream-verify/renders/안동이어드림_시행전효과검증_80초.mp4
+/보고서/영상촬영_20260930/clips/S01_안동_3D전경.mp4
+/보고서/영상촬영_20260930/clips/S02_원도심으로_줌인.mp4
+/보고서/영상촬영_20260930/clips/S03_골목에서_식당으로.mp4
+/보고서/영상촬영_20260930/clips/S04_찜닭_직접식사.mp4
+/보고서/영상촬영_20260930/clips/S07b_하회탈_붓질과완성.mp4
+/보고서/영상촬영_20260930/clips/S09_월영교_첫전경.mp4
+/보고서/영상촬영_20260930/clips/S10_월영교_산책.mp4
+/보고서/영상촬영_20260930/clips/S11a_월영밤마당_산책.mp4
+/보고서/영상촬영_20260930/clips/S11b_국화차_구매와맛보기.mp4
+/보고서/영상촬영_20260930/clips/S12_수면반사에서_월영교로.mp4
+/보고서/영상촬영_20260930/clips/S13_S14_월영교_엔딩전경.mp4
+/보고서/영상촬영_20260930/production/assembly/00.mp4
+/보고서/영상촬영_20260930/production/assembly/01.mp4
+/보고서/영상촬영_20260930/production/assembly/11.mp4
+/보고서/영상촬영_20260930/production/assembly/12.mp4
+/보고서/영상촬영_20260930/production/assembly/15.mp4
+/보고서/영상촬영_20260930/production/assembly/16.mp4
+/보고서/영상촬영_20260930/raw/relay_full.webm
+/보고서/영상촬영_20260930/안동이어드림_90초_촬영연결본.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/clips/s01.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/clips/s02.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/clips/s03.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/clips/s04.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/clips/s07b.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/clips/s09.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/clips/s10.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/clips/s11a.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/clips/s12.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/clips/s13.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/cut/alley.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/cut/bridge.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/cut/ending.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/cut/map.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/cut/river.mp4
+/보고서/영상편집_20260930/eodream-relay/assets/cut/walk.mp4
+/보고서/영상편집_20260930/eodream-relay/renders/안동이어드림_한끼에서안동의밤까지_72초.mp4
+/보고서/영상편집_20260930/eodream-relay/renders/안동이어드림_한끼에서안동의밤까지_72초_v2.mp4
+/보고서/웹소개_핵심이미지_10장.zip

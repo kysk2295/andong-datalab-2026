@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>안동 3D Atlas · 사이트 소개</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Pretendard"; src: url("assets/fonts/Pretendard-Light.otf") format("opentype"); font-weight: 300; }
+      @font-face { font-family: "Pretendard"; src: url("assets/fonts/Pretendard-Regular.otf") format("opentype"); font-weight: 400; }
+      @font-face { font-family: "Pretendard"; src: url("assets/fonts/Pretendard-Medium.otf") format("opentype"); font-weight: 500; }
+      @font-face { font-family: "Pretendard"; src: url("assets/fonts/Pretendard-SemiBold.otf") format("opentype"); font-weight: 600; }
+      @font-face { font-family: "Pretendard"; src: url("assets/fonts/Pretendard-Bold.otf") format("opentype"); font-weight: 700; }
+      :root {
+        --ink: #f7f4ec;
+        --ink-soft: #e8e4da;
+        --lamp: #e8bf78;
+        --shade: 8, 16, 14;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #070b0a; }
+      #root {
+        position: relative; width: 100%; height: 100%; overflow: hidden;
+        font-family: "Pretendard", sans-serif; color: var(--ink); word-break: keep-all;
+      }
+      .shot { position: absolute; inset: 0; will-change: transform, opacity; }
+      .shot video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      p { margin: 0; }
+      .sh { text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.45); }
+
+      /* 장소 자막: 작은 장소 이름 + 한 줄. 흰 글자와 경계 없는 어둠 번짐만 */
+      .cap { position: absolute; inset: 0; z-index: 100; pointer-events: none; }
+      .cap .scrim { position: absolute; }
+      .cap-bottom .scrim { left: 0; right: 0; bottom: 0; height: 360px; background: linear-gradient(to top, rgba(var(--shade), 0.74), rgba(var(--shade), 0.34) 55%, rgba(var(--shade), 0)); }
+      .cap-ui .scrim { left: 330px; width: 1000px; bottom: 90px; height: 330px; background: radial-gradient(ellipse at 30% 70%, rgba(var(--shade), 0.72), rgba(var(--shade), 0) 68%); }
+      .cap-body { position: absolute; display: flex; flex-direction: column; gap: 14px; }
+      .cap-bottom .cap-body { left: 132px; bottom: 100px; }
+      .cap-ui .cap-body { left: 420px; bottom: 170px; }
+      .line { font-size: 54px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25; text-shadow: 0 2px 16px rgba(0, 0, 0, 0.55), 0 1px 3px rgba(0, 0, 0, 0.5); }
+      .tag { display: flex; align-items: center; gap: 12px; font-size: 26px; font-weight: 500; color: var(--ink-soft); letter-spacing: 0.02em; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6); }
+      .tag::before { content: ""; display: block; width: 9px; height: 9px; border-radius: 50%; background: var(--lamp); }
+
+      /* 여는 제목 */
+      #open { position: absolute; inset: 0; z-index: 110; pointer-events: none; }
+      #open .scrim { position: absolute; inset: 0; background: radial-gradient(ellipse 1500px 760px at 0% 18%, rgba(var(--shade), 0.72), rgba(var(--shade), 0.35) 50%, rgba(var(--shade), 0) 80%), radial-gradient(ellipse 1100px 360px at 100% 100%, rgba(var(--shade), 0.85), rgba(var(--shade), 0) 75%); }
+      #open .copy { position: absolute; left: 132px; top: 150px; display: flex; flex-direction: column; gap: 22px; }
+      #open .kicker { font-size: 28px; font-weight: 500; letter-spacing: 0.08em; color: var(--ink-soft); }
+      #open .headline { font-size: 96px; font-weight: 700; letter-spacing: -0.025em; line-height: 1.12; }
+      #open .rule, #ending .rule { display: block; width: 84px; height: 3px; background: var(--lamp); transform-origin: left center; }
+      #open .notes { position: absolute; right: 120px; bottom: 80px; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; text-align: right; }
+      #open .notes .demo { font-size: 24px; font-weight: 600; }
+      #open .notes .credit { font-size: 19px; font-weight: 400; color: var(--ink-soft); }
+
+      /* 엔딩: 하늘 쪽 왼쪽 위. 월영정과 수면 반사를 가리지 않는다 */
+      #ending { position: absolute; inset: 0; z-index: 120; pointer-events: none; }
+      #ending .scrim { position: absolute; left: 0; top: 0; width: 1250px; height: 560px; background: radial-gradient(ellipse at 0% 0%, rgba(var(--shade), 0.6), rgba(var(--shade), 0) 70%); }
+      #ending .title-block { position: absolute; left: 132px; top: 96px; display: flex; flex-direction: column; gap: 20px; }
+      #ending .kicker { font-size: 28px; font-weight: 500; letter-spacing: 0.08em; color: var(--ink-soft); }
+      #ending .title { font-size: 112px; font-weight: 700; letter-spacing: -0.025em; line-height: 1.05; }
+      #ending .subtitle { font-size: 46px; font-weight: 300; letter-spacing: -0.005em; }
+      #ending .url { margin-top: 10px; font-size: 30px; font-weight: 500; letter-spacing: 0.01em; color: var(--lamp); }
+      #ending .credits { position: absolute; right: 96px; bottom: 60px; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; text-align: right; }
+      #ending .credits p { font-size: 19px; font-weight: 400; color: var(--ink-soft); text-shadow: 0 1px 6px rgba(0, 0, 0, 0.75); }
+      #ending .credits .demo { font-size: 22px; font-weight: 600; color: var(--ink); }
+
+      #fade { position: absolute; inset: 0; z-index: 200; background: #000; pointer-events: none; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="76" data-width="1920" data-height="1080">
+      <!-- 안동 전역 항공, 도심 쪽으로 천천히 전진 -->
+      <div id="aerial-w" class="shot" style="z-index: 1">
+        <video id="aerial" class="clip" src="assets/cut/aerial.mp4" data-start="0" data-duration="9" data-media-start="0" data-track-index="0" muted playsinline></video>
+      </div>
+      <!-- 하회마을 물돌이 둘레 선회 -->
+      <div id="hahoe-w" class="shot" style="z-index: 2">
+        <video id="hahoe" class="clip" src="assets/cut/hahoe.mp4" data-start="8.2" data-duration="8" data-media-start="0" data-track-index="1" muted playsinline></video>
+      </div>
+      <!-- 원도심 강변을 따라 옆으로 이동 -->
+      <div id="city-w" class="shot" style="z-index: 3">
+        <video id="city" class="clip" src="assets/cut/city.mp4" data-start="15.4" data-duration="7.6" data-media-start="0" data-track-index="0" muted playsinline></video>
+      </div>
+      <!-- 사이트 화면: 노을 → 야경 버튼 -->
+      <div id="ui-w" class="shot" style="z-index: 4">
+        <video id="ui" class="clip" src="assets/cut/ui.mp4" data-start="22.4" data-duration="8" data-media-start="0" data-track-index="1" muted playsinline></video>
+      </div>
+      <!-- 밤의 월영교(지도) -->
+      <div id="bridge-w" class="shot" style="z-index: 5">
+        <video id="bridge" class="clip" src="assets/cut/bridge.mp4" data-start="29.8" data-duration="6.8" data-media-start="0" data-track-index="0" muted playsinline></video>
+      </div>
+      <!-- 사이트 화면: 1인칭 릴레이 체험 누르기 -->
+      <div id="cta-w" class="shot" style="z-index: 6">
+        <video id="cta" class="clip" src="assets/cut/cta.mp4" data-start="36" data-duration="4.9" data-media-start="0" data-track-index="1" muted playsinline></video>
+      </div>
+      <!-- 찜닭골목 걷기 -->
+      <div id="alley-w" class="shot" style="z-index: 7">
+        <video id="alley" class="clip" src="assets/cut/alley.mp4" data-start="40.5" data-duration="4.3" data-media-start="0" data-track-index="0" muted playsinline></video>
+      </div>
+      <!-- 젓가락으로 찜닭 집기 -->
+      <div id="meal-w" class="shot" style="z-index: 8">
+        <video id="meal" class="clip" src="assets/cut/meal.mp4" data-start="44.4" data-duration="4" data-media-start="0" data-track-index="1" muted playsinline></video>
+      </div>
+      <!-- 하회탈 색칠 → 완성 -->
+      <div id="mask-w" class="shot" style="z-index: 9">
+        <video id="mask" class="clip" src="assets/cut/mask.mp4" data-start="48" data-duration="5.6" data-media-start="0" data-track-index="0" muted playsinline></video>
+      </div>
+      <!-- 밤의 월영교 걷기 -->
+      <div id="walk-w" class="shot" style="z-index: 10">
+        <video id="walk" class="clip" src="assets/cut/walk.mp4" data-start="53" data-duration="6" data-media-start="0" data-track-index="1" muted playsinline></video>
+      </div>
+      <!-- 월영 밤마당(야간 팝업 제안) -->
+      <div id="popup-w" class="shot" style="z-index: 11">
+        <video id="popup" class="clip" src="assets/cut/popup.mp4" data-start="58.4" data-duration="5.2" data-media-start="0" data-track-index="0" muted playsinline></video>
+      </div>
+      <!-- 월영교 엔딩 전경 -->
+      <div id="ending-w" class="shot" style="z-index: 12">
+        <video id="ending" class="clip" src="assets/cut/ending.mp4" data-start="62.8" data-duration="13.2" data-media-start="0" data-track-index="1" muted playsinline></video>
+      </div>
+
+      <div id="open" class="clip" data-start="1" data-duration="7.5" data-track-index="4">
+        <div class="scrim"></div>
+        <div class="copy">
+          <p class="kicker sh">안동 3D Atlas</p>
+          <p class="headline sh">강이 돌아 흐르는 도시,<br />안동</p>
+          <span class="rule"></span>
+        </div>
+        <div class="notes sh">
+          <p class="demo">안동 이어드림 제안 · 3D 지도 시연</p>
+          <p class="credit">지도 © OpenStreetMap contributors / OpenFreeMap · 행정경계 통계청 SGIS</p>
+        </div>
+      </div>
+
+      <div id="c-hahoe" class="clip cap cap-bottom" data-start="9.3" data-duration="5.9" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="tag">하회마을</p>
+          <p class="line">물이 마을을 감싸 도는 곳</p>
+        </div>
+      </div>
+      <div id="c-city" class="clip cap cap-bottom" data-start="16.4" data-duration="5.6" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="tag">안동 원도심 · 낙동강</p>
+          <p class="line">원도심의 건물과 강변을 가까이</p>
+        </div>
+      </div>
+      <div id="c-ui" class="clip cap cap-ui" data-start="23.2" data-duration="6.4" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="tag">날씨 · 시간 바꾸기</p>
+          <p class="line">낮에서 밤까지, 버튼 하나로</p>
+        </div>
+      </div>
+      <div id="c-bridge" class="clip cap cap-bottom" data-start="30.6" data-duration="5" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="tag">월영교</p>
+          <p class="line">밤이 되면 월영교에 불이 켜지고</p>
+        </div>
+      </div>
+      <div id="c-cta" class="clip cap cap-ui" data-start="36.6" data-duration="3.4" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="tag">1인칭 릴레이 체험</p>
+          <p class="line">지도에서 바로 1인칭 체험으로</p>
+        </div>
+      </div>
+      <div id="c-alley" class="clip cap cap-bottom" data-start="41.1" data-duration="3.2" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="tag">찜닭골목</p>
+          <p class="line">골목을 걸어 식당으로</p>
+        </div>
+      </div>
+      <div id="c-meal" class="clip cap cap-bottom" data-start="44.8" data-duration="3" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="tag">원도심 식당 · 시연</p>
+          <p class="line">찜닭 한 끼를 직접</p>
+        </div>
+      </div>
+      <div id="c-mask" class="clip cap cap-bottom" data-start="48.5" data-duration="4.2" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="tag">전통 체험 · 제안 공방</p>
+          <p class="line">하회탈에 색을 입히고</p>
+        </div>
+      </div>
+      <div id="c-walk" class="clip cap cap-bottom" data-start="53.7" data-duration="4.5" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="tag">월영교</p>
+          <p class="line">강 위의 밤길을 걷는다</p>
+        </div>
+      </div>
+      <div id="c-popup" class="clip cap cap-bottom" data-start="59" data-duration="3.6" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="tag">월영 밤마당 · 제안</p>
+          <p class="line">강변 야간 팝업까지</p>
+        </div>
+      </div>
+
+      <div id="ending" class="clip" data-start="66.2" data-duration="9.8" data-track-index="6">
+        <div class="scrim"></div>
+        <div class="title-block">
+          <p class="kicker sh">안동 3D Atlas</p>
+          <p class="title sh">안동 이어드림</p>
+          <span class="rule"></span>
+          <p class="subtitle sh">지도에서 시작해, 안동의 밤까지</p>
+          <p class="url sh">andong-atlas-production.up.railway.app</p>
+        </div>
+        <div class="credits">
+          <p class="demo">3D 시연 화면 · 공방·팝업·혜택 일부는 제안</p>
+          <p>지도 © OpenStreetMap contributors / OpenFreeMap · 행정경계 통계청 SGIS</p>
+          <p>음악 자체 제작 · 효과음 Pixabay</p>
+        </div>
+      </div>
+
+      <div id="fade" class="clip" data-start="0" data-duration="76" data-track-index="7"></div>
+
+      <audio id="bgm" src="assets/audio/bgm.wav" data-start="0" data-duration="76" data-track-index="10" data-volume="1"></audio>
+      <audio id="amb" src="assets/audio/ambience.wav" data-start="0" data-duration="76" data-track-index="11" data-volume="0.8"></audio>
+      <audio id="foley" src="assets/audio/foley.wav" data-start="0" data-duration="76" data-track-index="12" data-volume="0.85"></audio>
+      <audio id="sfx-sunset" src="assets/audio/sfx/click-soft.mp3" data-start="24.837" data-duration="0.37" data-track-index="13" data-volume="0.45"></audio>
+      <audio id="sfx-night" src="assets/audio/sfx/click-soft.mp3" data-start="27.837" data-duration="0.37" data-track-index="14" data-volume="0.45"></audio>
+      <audio id="sfx-cta" src="assets/audio/sfx/click-soft.mp3" data-start="39.303" data-duration="0.37" data-track-index="15" data-volume="0.5"></audio>
+      <audio id="sfx-whoosh" src="assets/audio/sfx/whoosh-short.mp3" data-start="40.15" data-duration="0.57" data-track-index="16" data-volume="0.3"></audio>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      gsap.set("#cta-w", { transformOrigin: "130px 618px", scale: 1, filter: "blur(0px)" });
+      gsap.set("#ending-w", { transformOrigin: "50% 60%" });
+      gsap.set("#hahoe-w", { opacity: 0 });
+      tl.fromTo("#hahoe-w", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut", immediateRender: false }, 8.2);
+      gsap.set("#city-w", { opacity: 0 });
+      tl.fromTo("#city-w", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut", immediateRender: false }, 15.4);
+      gsap.set("#ui-w", { opacity: 0 });
+      tl.fromTo("#ui-w", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.inOut", immediateRender: false }, 22.4);
+      gsap.set("#bridge-w", { opacity: 0 });
+      tl.fromTo("#bridge-w", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.inOut", immediateRender: false }, 29.8);
+      gsap.set("#cta-w", { opacity: 0 });
+      tl.fromTo("#cta-w", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.inOut", immediateRender: false }, 36);
+      gsap.set("#meal-w", { opacity: 0 });
+      tl.fromTo("#meal-w", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.inOut", immediateRender: false }, 44.4);
+      gsap.set("#mask-w", { opacity: 0 });
+      tl.fromTo("#mask-w", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.inOut", immediateRender: false }, 48);
+      gsap.set("#walk-w", { opacity: 0 });
+      tl.fromTo("#walk-w", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.inOut", immediateRender: false }, 53);
+      gsap.set("#popup-w", { opacity: 0 });
+      tl.fromTo("#popup-w", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.inOut", immediateRender: false }, 58.4);
+      gsap.set("#ending-w", { opacity: 0 });
+      tl.fromTo("#ending-w", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut", immediateRender: false }, 62.8);
+      gsap.set("#alley-w", { opacity: 0 });
+      tl.fromTo("#cta-w", { scale: 1, filter: "blur(0px)" }, { scale: 1.45, filter: "blur(12px)", duration: 0.8, ease: "power2.in", immediateRender: false }, 40.1);
+      tl.fromTo("#alley-w", { opacity: 0, scale: 1.12, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.8, ease: "power2.out", immediateRender: false }, 40.5);
+      tl.fromTo("#ending-w", { scale: 1 }, { scale: 1.045, duration: 13.2, ease: "none", immediateRender: false }, 62.8);
+      tl.fromTo("#c-hahoe .scrim", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 9.3);
+      tl.fromTo("#c-hahoe .tag", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 9.35);
+      tl.fromTo("#c-hahoe .line", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 9.5);
+      tl.to("#c-hahoe .cap-body, #c-hahoe .scrim", { opacity: 0, duration: 0.45, ease: "sine.in" }, 14.75);
+      tl.fromTo("#c-city .scrim", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 16.4);
+      tl.fromTo("#c-city .tag", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 16.45);
+      tl.fromTo("#c-city .line", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 16.6);
+      tl.to("#c-city .cap-body, #c-city .scrim", { opacity: 0, duration: 0.45, ease: "sine.in" }, 21.55);
+      tl.fromTo("#c-ui .scrim", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 23.2);
+      tl.fromTo("#c-ui .tag", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 23.25);
+      tl.fromTo("#c-ui .line", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 23.4);
+      tl.to("#c-ui .cap-body, #c-ui .scrim", { opacity: 0, duration: 0.45, ease: "sine.in" }, 29.15);
+      tl.fromTo("#c-bridge .scrim", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 30.6);
+      tl.fromTo("#c-bridge .tag", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 30.65);
+      tl.fromTo("#c-bridge .line", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 30.8);
+      tl.to("#c-bridge .cap-body, #c-bridge .scrim", { opacity: 0, duration: 0.45, ease: "sine.in" }, 35.15);
+      tl.fromTo("#c-cta .scrim", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 36.6);
+      tl.fromTo("#c-cta .tag", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 36.65);
+      tl.fromTo("#c-cta .line", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 36.8);
+      tl.to("#c-cta .cap-body, #c-cta .scrim", { opacity: 0, duration: 0.45, ease: "sine.in" }, 39.55);
+      tl.fromTo("#c-alley .scrim", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 41.1);
+      tl.fromTo("#c-alley .tag", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 41.15);
+      tl.fromTo("#c-alley .line", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 41.3);
+      tl.to("#c-alley .cap-body, #c-alley .scrim", { opacity: 0, duration: 0.45, ease: "sine.in" }, 43.85);
+      tl.fromTo("#c-meal .scrim", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 44.8);
+      tl.fromTo("#c-meal .tag", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 44.85);
+      tl.fromTo("#c-meal .line", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 45);
+      tl.to("#c-meal .cap-body, #c-meal .scrim", { opacity: 0, duration: 0.45, ease: "sine.in" }, 47.35);
+      tl.fromTo("#c-mask .scrim", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 48.5);
+      tl.fromTo("#c-mask .tag", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 48.55);
+      tl.fromTo("#c-mask .line", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 48.7);
+      tl.to("#c-mask .cap-body, #c-mask .scrim", { opacity: 0, duration: 0.45, ease: "sine.in" }, 52.25);
+      tl.fromTo("#c-walk .scrim", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 53.7);
+      tl.fromTo("#c-walk .tag", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 53.75);
+      tl.fromTo("#c-walk .line", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 53.9);
+      tl.to("#c-walk .cap-body, #c-walk .scrim", { opacity: 0, duration: 0.45, ease: "sine.in" }, 57.75);
+      tl.fromTo("#c-popup .scrim", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 59);
+      tl.fromTo("#c-popup .tag", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 59.05);
+      tl.fromTo("#c-popup .line", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 59.2);
+      tl.to("#c-popup .cap-body, #c-popup .scrim", { opacity: 0, duration: 0.45, ease: "sine.in" }, 62.15);
+      tl.fromTo("#open .scrim", { opacity: 0 }, { opacity: 1, duration: 1.0, ease: "sine.out" }, 1);
+      tl.fromTo("#open .kicker", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 1.3);
+      tl.fromTo("#open .headline", { opacity: 0, y: 22 }, { opacity: 1, y: 0, duration: 1.1, ease: "power3.out" }, 1.6);
+      tl.fromTo("#open .rule", { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "power3.out" }, 2.2);
+      tl.fromTo("#open .notes", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "sine.out" }, 2.4);
+      tl.to("#open .copy, #open .notes, #open .scrim", { opacity: 0, duration: 0.6, ease: "sine.in" }, 7.8);
+      tl.fromTo("#ending .scrim", { opacity: 0 }, { opacity: 1, duration: 1.0, ease: "sine.out" }, 66.2);
+      tl.fromTo("#ending .kicker", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 66.3);
+      tl.fromTo("#ending .title", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 1.0, ease: "power2.out" }, 66.5);
+      tl.fromTo("#ending .rule", { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "power3.out" }, 67);
+      tl.fromTo("#ending .subtitle", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 67.1);
+      tl.fromTo("#ending .url", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 67.8);
+      tl.fromTo("#ending .credits", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.out" }, 68.2);
+      tl.fromTo("#fade", { opacity: 1 }, { opacity: 0, duration: 1.2, ease: "sine.out" }, 0);
+      tl.to("#fade", { opacity: 1, duration: 1.2, ease: "sine.in" }, 74.8);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

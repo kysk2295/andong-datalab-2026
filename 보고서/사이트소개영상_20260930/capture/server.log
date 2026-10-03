@@ -1,0 +1,76 @@
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/place-media.json instead of /public/data/place-media.json.
+If you intend to use the URL of that asset, use /data/place-media.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/heritage-media.json instead of /public/data/heritage-media.json.
+If you intend to use the URL of that asset, use /data/heritage-media.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/report-effects.json instead of /public/data/report-effects.json.
+If you intend to use the URL of that asset, use /data/report-effects.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/restaurant-info.json instead of /public/data/restaurant-info.json.
+If you intend to use the URL of that asset, use /data/restaurant-info.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/transport.json instead of /public/data/transport.json.
+If you intend to use the URL of that asset, use /data/transport.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/regions.json instead of /public/data/regions.json.
+If you intend to use the URL of that asset, use /data/regions.json?url.
+{"ready":true,"out":"/Users/koyunseo/한국관광데이터분석/보고서/사이트소개영상_20260930","api":"http://127.0.0.1:6287"}
+4:01:36 AM [vite] (client) page reload src/railways.js
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/place-media.json instead of /public/data/place-media.json.
+If you intend to use the URL of that asset, use /data/place-media.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/heritage-media.json instead of /public/data/heritage-media.json.
+If you intend to use the URL of that asset, use /data/heritage-media.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/report-effects.json instead of /public/data/report-effects.json.
+If you intend to use the URL of that asset, use /data/report-effects.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/restaurant-info.json instead of /public/data/restaurant-info.json.
+If you intend to use the URL of that asset, use /data/restaurant-info.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/transport.json instead of /public/data/transport.json.
+If you intend to use the URL of that asset, use /data/transport.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/regions.json instead of /public/data/regions.json.
+If you intend to use the URL of that asset, use /data/regions.json?url.
+4:03:18 AM [vite] (client) page reload src/railway-structure.js
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/place-media.json instead of /public/data/place-media.json.
+If you intend to use the URL of that asset, use /data/place-media.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/heritage-media.json instead of /public/data/heritage-media.json.
+If you intend to use the URL of that asset, use /data/heritage-media.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/report-effects.json instead of /public/data/report-effects.json.
+If you intend to use the URL of that asset, use /data/report-effects.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/restaurant-info.json instead of /public/data/restaurant-info.json.
+If you intend to use the URL of that asset, use /data/restaurant-info.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/transport.json instead of /public/data/transport.json.
+If you intend to use the URL of that asset, use /data/transport.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/regions.json instead of /public/data/regions.json.
+If you intend to use the URL of that asset, use /data/regions.json?url.
+4:05:48 AM [vite] (client) page reload src/railways.js
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/place-media.json instead of /public/data/place-media.json.
+If you intend to use the URL of that asset, use /data/place-media.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/heritage-media.json instead of /public/data/heritage-media.json.
+If you intend to use the URL of that asset, use /data/heritage-media.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/report-effects.json instead of /public/data/report-effects.json.
+If you intend to use the URL of that asset, use /data/report-effects.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/restaurant-info.json instead of /public/data/restaurant-info.json.
+If you intend to use the URL of that asset, use /data/restaurant-info.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/transport.json instead of /public/data/transport.json.
+If you intend to use the URL of that asset, use /data/transport.json?url.
+Assets in public directory cannot be imported from JavaScript.
+If you intend to import that asset, put the file in the src directory, and use /src/data/regions.json instead of /public/data/regions.json.
+If you intend to use the URL of that asset, use /data/regions.json?url.

@@ -1,0 +1,22 @@
+{
+ "id": "M02",
+ "file": "M02_하회마을.mp4",
+ "duration": 8.5,
+ "orbit": {
+  "c": [
+   -35,
+   0.62,
+   4.55
+  ],
+  "a0": 238,
+  "a1": 182,
+  "r0": 3.1,
+  "r1": 2.45,
+  "h0": 1.55,
+  "h1": 1.05
+ },
+ "fps": 30,
+ "frames": 255,
+ "method": "actual WebGL frame capture",
+ "elapsed": 14.991
+}

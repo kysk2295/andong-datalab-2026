@@ -1,5 +1,0 @@
-import {popupPlanHTML} from './popup-map-layer.js';
-import {POPUP_ZONES} from './relay-popup-layout.js';
-export function popupMapHTML(position=[0,1.7,20],{booths=true}={}){
- return `<p class="popup-map-intro">강변을 따라 여섯 공간이 이어집니다.<br>부스 번호나 이름을 누르면 그곳까지 걸어가요.</p><div class="tourism-switches"><label class="tourism-booth-toggle"><input type="checkbox" role="switch" data-popup-booth-toggle ${booths?'checked':''}><i aria-hidden="true"></i><span>야간 팝업 부스</span><small>9</small></label></div><div data-popup-layout class="popup-walking-layout ${booths?'':'is-booths-hidden'}">${popupPlanHTML(null,{walking:true,position})}</div><p class="popup-map-caption">● 현재 위치 · 기획 배치 시안 · 현장 축척 지도와 다릅니다</p><div class="popup-zone-list">${POPUP_ZONES.map(z=>`<button data-popup-go="${z.id}"><b>${z.name}</b><small>${z.subtitle}</small></button>`).join('')}<button data-popup-go="print"><b>달빛 엽서 공방</b><small>직접 도장을 찍는 체험</small></button><button data-popup-go="gallery"><b>하회탈 야외 전시</b><small>공예 골목 뒤 작은 전시</small></button></div><button id="popup-tourism-map" class="relay-inline">혜택업체 · 전체 릴레이 지도</button>`;
-}

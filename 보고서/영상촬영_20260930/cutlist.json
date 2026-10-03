@@ -1,0 +1,164 @@
+[
+  {
+    "cut": "S01",
+    "timeline_start": 0,
+    "duration": 5,
+    "file": "clips/S01_안동_3D전경.mp4",
+    "source_in": 1,
+    "source_out": 6,
+    "note": "Actual app capture"
+  },
+  {
+    "cut": "S02",
+    "timeline_start": 5,
+    "duration": 5,
+    "file": "clips/S02_원도심으로_줌인.mp4",
+    "source_in": 1,
+    "source_out": 6,
+    "note": "Actual app capture"
+  },
+  {
+    "cut": "S03",
+    "timeline_start": 10,
+    "duration": 5,
+    "file": "clips/S03_골목에서_식당으로.mp4",
+    "source_in": 10,
+    "source_out": 15,
+    "note": "Actual app capture"
+  },
+  {
+    "cut": "S04",
+    "timeline_start": 15,
+    "duration": 6,
+    "file": "clips/S04_찜닭_직접식사.mp4",
+    "source_in": 1.3,
+    "source_out": 7.3,
+    "note": "Actual app capture"
+  },
+  {
+    "cut": "S05",
+    "timeline_start": 21,
+    "duration": 5,
+    "file": "clips/S05_결제와_영수증수령.mp4",
+    "source_in": 0.8,
+    "source_out": 5.8,
+    "note": "Actual app capture"
+  },
+  {
+    "cut": "S06",
+    "timeline_start": 26,
+    "duration": 6.5,
+    "file": "clips/S06_QR인증과_할인권.mp4",
+    "source_in": 0.5,
+    "source_out": 7.0,
+    "note": "Actual app capture"
+  },
+  {
+    "cut": "S06b",
+    "timeline_start": 32.5,
+    "duration": 2.5,
+    "file": "clips/S06b_할인권발급_실제화면홀드.mp4",
+    "source_in": 0,
+    "source_out": 2.5,
+    "note": "Actual captured still hold"
+  },
+  {
+    "cut": "S07a",
+    "timeline_start": 35.0,
+    "duration": 2,
+    "file": "clips/S07c_할인적용_실제화면홀드.mp4",
+    "source_in": 0,
+    "source_out": 2,
+    "note": "Actual captured still hold"
+  },
+  {
+    "cut": "S07b",
+    "timeline_start": 37.0,
+    "duration": 4,
+    "file": "clips/S07b_하회탈_붓질과완성.mp4",
+    "source_in": 1,
+    "source_out": 5,
+    "note": "Actual app capture"
+  },
+  {
+    "cut": "S07c",
+    "timeline_start": 41.0,
+    "duration": 2,
+    "file": "clips/S07b_하회탈_붓질과완성.mp4",
+    "source_in": 24.5,
+    "source_out": 26.5,
+    "note": "Actual app capture"
+  },
+  {
+    "cut": "S08",
+    "timeline_start": 43.0,
+    "duration": 6,
+    "file": "clips/S08_월영교로_이동.mp4",
+    "source_in": 2,
+    "source_out": 8,
+    "note": "Actual app capture"
+  },
+  {
+    "cut": "S09",
+    "timeline_start": 49.0,
+    "duration": 7,
+    "file": "clips/S09_월영교_첫전경.mp4",
+    "source_in": 1,
+    "source_out": 8,
+    "note": "Actual app capture"
+  },
+  {
+    "cut": "S10",
+    "timeline_start": 56.0,
+    "duration": 7,
+    "file": "clips/S10_월영교_산책.mp4",
+    "source_in": 1,
+    "source_out": 8,
+    "note": "Actual app capture"
+  },
+  {
+    "cut": "S11a",
+    "timeline_start": 63.0,
+    "duration": 3,
+    "file": "clips/S11a_월영밤마당_산책.mp4",
+    "source_in": 2,
+    "source_out": 5,
+    "note": "Actual app capture"
+  },
+  {
+    "cut": "S11b",
+    "timeline_start": 66.0,
+    "duration": 5,
+    "file": "clips/S11c_국화차_맛보기_30fps.mp4",
+    "source_in": 0.5,
+    "source_out": 5.5,
+    "note": "Actual app capture"
+  },
+  {
+    "cut": "S12",
+    "timeline_start": 71.0,
+    "duration": 8,
+    "file": "clips/S12_수면반사에서_월영교로.mp4",
+    "source_in": 1,
+    "source_out": 9,
+    "note": "Actual app capture"
+  },
+  {
+    "cut": "S13",
+    "timeline_start": 79.0,
+    "duration": 7,
+    "file": "clips/S13_S14_월영교_엔딩전경.mp4",
+    "source_in": 0,
+    "source_out": 7,
+    "note": "Actual app capture"
+  },
+  {
+    "cut": "S14",
+    "timeline_start": 86.0,
+    "duration": 4,
+    "file": "clips/S13_S14_월영교_엔딩전경.mp4",
+    "source_in": 7,
+    "source_out": 11,
+    "note": "Actual app capture"
+  }
+]

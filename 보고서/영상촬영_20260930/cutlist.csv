@@ -1,0 +1,19 @@
+﻿cut,timeline_start,duration,file,source_in,source_out,note
+S01,0,5,clips/S01_안동_3D전경.mp4,1,6,Actual app capture
+S02,5,5,clips/S02_원도심으로_줌인.mp4,1,6,Actual app capture
+S03,10,5,clips/S03_골목에서_식당으로.mp4,10,15,Actual app capture
+S04,15,6,clips/S04_찜닭_직접식사.mp4,1.3,7.3,Actual app capture
+S05,21,5,clips/S05_결제와_영수증수령.mp4,0.8,5.8,Actual app capture
+S06,26,6.5,clips/S06_QR인증과_할인권.mp4,0.5,7.0,Actual app capture
+S06b,32.5,2.5,clips/S06b_할인권발급_실제화면홀드.mp4,0,2.5,Actual captured still hold
+S07a,35.0,2,clips/S07c_할인적용_실제화면홀드.mp4,0,2,Actual captured still hold
+S07b,37.0,4,clips/S07b_하회탈_붓질과완성.mp4,1,5,Actual app capture
+S07c,41.0,2,clips/S07b_하회탈_붓질과완성.mp4,24.5,26.5,Actual app capture
+S08,43.0,6,clips/S08_월영교로_이동.mp4,2,8,Actual app capture
+S09,49.0,7,clips/S09_월영교_첫전경.mp4,1,8,Actual app capture
+S10,56.0,7,clips/S10_월영교_산책.mp4,1,8,Actual app capture
+S11a,63.0,3,clips/S11a_월영밤마당_산책.mp4,2,5,Actual app capture
+S11b,66.0,5,clips/S11c_국화차_맛보기_30fps.mp4,0.5,5.5,Actual app capture
+S12,71.0,8,clips/S12_수면반사에서_월영교로.mp4,1,9,Actual app capture
+S13,79.0,7,clips/S13_S14_월영교_엔딩전경.mp4,0,7,Actual app capture
+S14,86.0,4,clips/S13_S14_월영교_엔딩전경.mp4,7,11,Actual app capture

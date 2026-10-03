@@ -1,0 +1,101 @@
+[
+  {
+    "id": "S03",
+    "file": "S03_골목에서_식당으로.mp4",
+    "duration": 15.230999999999995,
+    "sourceStart": 153.13500000000016,
+    "source": "raw/relay_full.webm",
+    "sourceFPS": 25,
+    "outputFPS": 30,
+    "audio": "native synthesized app sounds",
+    "syncOffset": 5.044999999999845
+  },
+  {
+    "id": "S04",
+    "file": "S04_찜닭_직접식사.mp4",
+    "duration": 14.353000000000009,
+    "sourceStart": 223.90500000000014,
+    "source": "raw/relay_full.webm",
+    "sourceFPS": 25,
+    "outputFPS": 30,
+    "audio": "native synthesized app sounds",
+    "syncOffset": 5.044999999999845
+  },
+  {
+    "id": "S05",
+    "file": "S05_결제와_영수증수령.mp4",
+    "duration": 8.064999999999998,
+    "sourceStart": 289.61800000000017,
+    "source": "raw/relay_full.webm",
+    "sourceFPS": 25,
+    "outputFPS": 30,
+    "audio": "native synthesized app sounds",
+    "syncOffset": 5.044999999999845
+  },
+  {
+    "id": "S06",
+    "file": "S06_QR인증과_할인권.mp4",
+    "duration": 13.326999999999998,
+    "sourceStart": 298.18200000000013,
+    "source": "raw/relay_full.webm",
+    "sourceFPS": 25,
+    "outputFPS": 30,
+    "audio": "native synthesized app sounds",
+    "syncOffset": 5.044999999999845
+  },
+  {
+    "id": "S07a",
+    "file": "S07a_체험할인권_사용.mp4",
+    "duration": 6.774000000000001,
+    "sourceStart": 375.7880000000002,
+    "source": "raw/relay_full.webm",
+    "sourceFPS": 25,
+    "outputFPS": 30,
+    "audio": "native synthesized app sounds",
+    "syncOffset": 5.044999999999845
+  },
+  {
+    "id": "S07b",
+    "file": "S07b_하회탈_붓질과완성.mp4",
+    "duration": 26.571000000000026,
+    "sourceStart": 541.3980000000001,
+    "source": "raw/relay_full.webm",
+    "sourceFPS": 25,
+    "outputFPS": 30,
+    "audio": "native synthesized app sounds",
+    "syncOffset": 5.044999999999845
+  },
+  {
+    "id": "S08",
+    "file": "S08_월영교로_이동.mp4",
+    "duration": 10.913000000000011,
+    "sourceStart": 618.5280000000001,
+    "source": "raw/relay_full.webm",
+    "sourceFPS": 25,
+    "outputFPS": 30,
+    "audio": "native synthesized app sounds",
+    "syncOffset": 5.044999999999845
+  },
+  {
+    "id": "S11a",
+    "file": "S11a_월영밤마당_산책.mp4",
+    "duration": 11.07899999999995,
+    "sourceStart": 818.8580000000002,
+    "source": "raw/relay_full.webm",
+    "sourceFPS": 25,
+    "outputFPS": 30,
+    "audio": "native synthesized app sounds",
+    "syncOffset": 5.044999999999845
+  },
+  {
+    "id": "S11b",
+    "file": "S11b_국화차_구매와맛보기.mp4",
+    "duration": 15.745000000000005,
+    "sourceStart": 853.1020000000002,
+    "source": "raw/relay_full.webm",
+    "sourceFPS": 25,
+    "outputFPS": 30,
+    "audio": "native synthesized app sounds",
+    "syncOffset": 5.044999999999845
+  }
+]

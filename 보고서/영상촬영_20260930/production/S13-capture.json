@@ -1,0 +1,31 @@
+{
+  "id": "S13",
+  "file": "S13_S14_월영교_엔딩전경.mp4",
+  "duration": 15,
+  "lead": 1,
+  "move": 6,
+  "from": [
+    23,
+    1.7,
+    -21.5
+  ],
+  "to": [
+    21.5,
+    1.7,
+    -21.5
+  ],
+  "target": [
+    4,
+    1.3,
+    -37
+  ],
+  "targetTo": [
+    3.5,
+    1.3,
+    -37
+  ],
+  "fps": 30,
+  "frames": 450,
+  "method": "actual WebGL frame capture, no optical-flow interpolation",
+  "elapsed": 59.957
+}

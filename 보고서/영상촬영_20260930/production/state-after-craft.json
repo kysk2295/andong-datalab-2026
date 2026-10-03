@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "stage": 3,
+  "started": true,
+  "meal": "jjimdak",
+  "seat": "center",
+  "ordered": true,
+  "paid": true,
+  "payment": "card",
+  "eaten": true,
+  "receipt": "verified",
+  "scanError": false,
+  "coupon": "used",
+  "program": "mask",
+  "redeemedProgram": "mask",
+  "paintColor": "#c77a48",
+  "maskArt": "[saved in browser]",
+  "craftSteps": 3,
+  "craftProgress": {
+    "mask": 3,
+    "tea": 0,
+    "soju": 0
+  },
+  "completedPrograms": [
+    "mask"
+  ],
+  "transport": "shuttle",
+  "arrived": false,
+  "bridgeWalked": false,
+  "cart": [],
+  "popupPayments": {},
+  "popupTasted": [],
+  "popupStamps": [],
+  "popupPhotos": 0,
+  "gameScore": 0,
+  "gameAttempts": 0,
+  "performanceScore": null,
+  "finished": false
+}

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>안동 이어드림 · 한 끼에서, 안동의 밤까지</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Pretendard"; src: url("assets/fonts/Pretendard-Light.otf") format("opentype"); font-weight: 300; }
+      @font-face { font-family: "Pretendard"; src: url("assets/fonts/Pretendard-Regular.otf") format("opentype"); font-weight: 400; }
+      @font-face { font-family: "Pretendard"; src: url("assets/fonts/Pretendard-Medium.otf") format("opentype"); font-weight: 500; }
+      @font-face { font-family: "Pretendard"; src: url("assets/fonts/Pretendard-SemiBold.otf") format("opentype"); font-weight: 600; }
+      @font-face { font-family: "Pretendard"; src: url("assets/fonts/Pretendard-Bold.otf") format("opentype"); font-weight: 700; }
+      :root {
+        --ink: #f5f2ea;
+        --ink-soft: #e6e2d8;
+        --lamp: #e8bf78;
+        --night: 6, 12, 10;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #070b0a; }
+      #root {
+        position: relative; width: 100%; height: 100%; overflow: hidden;
+        font-family: "Pretendard", sans-serif; color: var(--ink);
+        word-break: keep-all;
+      }
+      .shot { position: absolute; inset: 0; will-change: transform, opacity; }
+      .shot video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      p { margin: 0; }
+
+      /* 표시 자막: 지금 어느 체험·장소인지만. 흰 글자 + 약한 그림자, 뒤에 경계 없는 어둠 번짐만 */
+      .cap { position: absolute; inset: 0; z-index: 100; pointer-events: none; }
+      .cap .scrim { position: absolute; left: 0; right: 0; }
+      .cap-bottom .scrim { bottom: 0; height: 320px; background: linear-gradient(to top, rgba(var(--night), 0.6), rgba(var(--night), 0.26) 55%, rgba(var(--night), 0)); }
+      .cap-top .scrim { top: 0; height: 300px; background: linear-gradient(to bottom, rgba(var(--night), 0.64), rgba(var(--night), 0.28) 55%, rgba(var(--night), 0)); }
+      .cap-body { position: absolute; left: 132px; right: 132px; display: flex; flex-direction: column; gap: 12px; }
+      .cap-bottom .cap-body { bottom: 92px; }
+      .cap-top .cap-body { top: 84px; }
+      .line {
+        font-size: 50px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.3;
+        text-shadow: 0 2px 14px rgba(0, 0, 0, 0.55), 0 1px 2px rgba(0, 0, 0, 0.5);
+      }
+      .tag {
+        display: flex; align-items: center; gap: 12px;
+        font-size: 26px; font-weight: 500; color: var(--ink-soft); letter-spacing: 0.02em;
+        text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+      }
+      .tag::before { content: ""; display: block; width: 9px; height: 9px; border-radius: 50%; background: var(--lamp); }
+
+      /* 시작 표시·지도 출처 */
+      #open-note { position: absolute; inset: 0; z-index: 110; pointer-events: none; }
+      #open-note .scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 320px; background: linear-gradient(to top, rgba(var(--night), 0.6), rgba(var(--night), 0.26) 55%, rgba(var(--night), 0)); }
+      #open-note .notes { position: absolute; right: 132px; bottom: 96px; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; text-align: right; }
+      #open-note .demo { font-size: 26px; font-weight: 600; letter-spacing: 0.02em; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6); }
+      #open-note .credit { font-size: 20px; font-weight: 400; color: var(--ink-soft); text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7); }
+
+      /* 엔딩: 하늘 쪽 왼쪽 위에 제목, 오른쪽 위에 출처. 월영정·수면 반사를 가리지 않는다 */
+      #ending { position: absolute; inset: 0; z-index: 120; pointer-events: none; }
+      #ending .scrim { position: absolute; left: 0; top: 0; width: 1100px; height: 420px; background: radial-gradient(ellipse at 0% 0%, rgba(var(--night), 0.55), rgba(var(--night), 0) 70%); }
+      #ending .title-block { position: absolute; left: 132px; top: 104px; display: flex; flex-direction: column; gap: 22px; }
+      #ending .title { font-size: 112px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.05; text-shadow: 0 2px 18px rgba(0, 0, 0, 0.5); }
+      #ending .rule { display: block; width: 84px; height: 3px; background: var(--lamp); transform-origin: left center; }
+      #ending .subtitle { font-size: 48px; font-weight: 300; letter-spacing: -0.005em; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55); }
+      #ending .credits { position: absolute; right: 96px; top: 64px; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; text-align: right; }
+      #ending .credits p { font-size: 20px; font-weight: 400; color: var(--ink-soft); text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7); }
+      #ending .credits .demo { font-size: 24px; font-weight: 600; color: var(--ink); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="72.29" data-width="1920" data-height="1080">
+      <!-- S01+S02 한 줄 카메라 경로(S01 끝 = S02 시작, 건너뛰기 없음) -->
+      <div id="map-w" class="shot" style="z-index: 1">
+        <video id="map" class="clip" src="assets/cut/map.mp4" data-start="0" data-duration="9.462" data-media-start="0" data-track-index="0" muted playsinline></video>
+      </div>
+      <!-- S03 골목 걷기 → 식당 문(문틀 가림에서 다음 컷) -->
+      <div id="alley-w" class="shot" style="z-index: 2">
+        <video id="alley" class="clip" src="assets/cut/alley.mp4" data-start="8.862" data-duration="6.154" data-media-start="0" data-track-index="1" muted playsinline></video>
+      </div>
+      <!-- S04 찜닭 식사 -->
+      <div id="meal-w" class="shot" style="z-index: 3">
+        <video id="meal" class="clip" src="assets/cut/meal.mp4" data-start="15.016" data-duration="4.615" data-media-start="0" data-track-index="0" muted playsinline></video>
+      </div>
+      <!-- S05 결제·영수증 -->
+      <div id="pay-w" class="shot" style="z-index: 4">
+        <video id="pay" class="clip" src="assets/cut/pay.mp4" data-start="19.631" data-duration="3.846" data-media-start="0" data-track-index="1" muted playsinline></video>
+      </div>
+      <!-- S06 QR 인증(첫 프레임 번쩍임 제외) -->
+      <div id="qr-w" class="shot" style="z-index: 5">
+        <video id="qr" class="clip" src="assets/cut/qr.mp4" data-start="23.477" data-duration="4.5" data-media-start="0" data-track-index="0" muted playsinline></video>
+      </div>
+      <!-- S06b 할인권 발급 실제 화면 -->
+      <div id="coupon-w" class="shot" style="z-index: 6">
+        <video id="coupon" class="clip" src="assets/cut/coupon.mp4" data-start="27.977" data-duration="2.2" data-media-start="0" data-track-index="1" muted playsinline></video>
+      </div>
+      <!-- S07c 할인 적용 실제 화면 -->
+      <div id="apply-w" class="shot" style="z-index: 7">
+        <video id="apply" class="clip" src="assets/cut/apply.mp4" data-start="29.777" data-duration="1.9" data-media-start="0" data-track-index="0" muted playsinline></video>
+      </div>
+      <!-- S07b 붓질 -->
+      <div id="paint-w" class="shot" style="z-index: 8">
+        <video id="paint" class="clip" src="assets/cut/paint.mp4" data-start="31.677" data-duration="3.077" data-media-start="0" data-track-index="1" muted playsinline></video>
+      </div>
+      <!-- S07b 완성 -->
+      <div id="mask-w" class="shot" style="z-index: 9">
+        <video id="mask" class="clip" src="assets/cut/mask.mp4" data-start="34.354" data-duration="1.769" data-media-start="0" data-track-index="0" muted playsinline></video>
+      </div>
+      <!-- S08 월영교로 이동 -->
+      <div id="ride-w" class="shot" style="z-index: 10">
+        <video id="ride" class="clip" src="assets/cut/ride.mp4" data-start="35.623" data-duration="4.846" data-media-start="0" data-track-index="1" muted playsinline></video>
+      </div>
+      <!-- S09 월영교 첫 전경 -->
+      <div id="bridge-w" class="shot" style="z-index: 11">
+        <video id="bridge" class="clip" src="assets/cut/bridge.mp4" data-start="39.569" data-duration="6.077" data-media-start="0" data-track-index="0" muted playsinline></video>
+      </div>
+      <!-- S10 다리 산책 -->
+      <div id="walk-w" class="shot" style="z-index: 12">
+        <video id="walk" class="clip" src="assets/cut/walk.mp4" data-start="44.946" data-duration="5.923" data-media-start="0" data-track-index="1" muted playsinline></video>
+      </div>
+      <!-- S11a 밤마당 전경(실제 캡처 프레임, 흔들림 때문에 정지+밀어넣기) -->
+      <div id="market-w" class="shot" style="z-index: 13">
+        <video id="market" class="clip" src="assets/cut/market.mp4" data-start="50.369" data-duration="2.7" data-media-start="0" data-track-index="0" muted playsinline></video>
+      </div>
+      <!-- S11c 국화차 맛보기 -->
+      <div id="tea-w" class="shot" style="z-index: 14">
+        <video id="tea" class="clip" src="assets/cut/tea.mp4" data-start="52.769" data-duration="4.308" data-media-start="0" data-track-index="1" muted playsinline></video>
+      </div>
+      <!-- S12 수면 반사 → 월영교 -->
+      <div id="river-w" class="shot" style="z-index: 15">
+        <video id="river" class="clip" src="assets/cut/river.mp4" data-start="56.377" data-duration="6.769" data-media-start="0" data-track-index="0" muted playsinline></video>
+      </div>
+      <!-- S13·S14 엔딩 전경(한 소스 연속) -->
+      <div id="ending-w" class="shot" style="z-index: 16">
+        <video id="ending" class="clip" src="assets/cut/ending.mp4" data-start="62.446" data-duration="9.846" data-media-start="0" data-track-index="1" muted playsinline></video>
+      </div>
+
+      <div id="open-note" class="clip" data-start="0.6" data-duration="8.262" data-track-index="4">
+        <div class="scrim"></div>
+        <div class="notes">
+          <p class="demo">안동 이어드림 제안 · 3D 체험 시연</p>
+          <p class="credit">지도 © OpenStreetMap contributors / OpenFreeMap · 행정경계 통계청 SGIS</p>
+        </div>
+      </div>
+
+      <div id="lab-map" class="clip cap cap-bottom" data-start="0.8" data-duration="7.46" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="line">안동 원도심</p>
+        </div>
+      </div>
+      <div id="lab-alley" class="clip cap cap-bottom" data-start="10.16" data-duration="4.35" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="line">찜닭골목 · 이어드림 식당</p>
+        </div>
+      </div>
+      <div id="lab-meal" class="clip cap cap-bottom" data-start="15.32" data-duration="4.01" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="line">찜닭 식사</p>
+        </div>
+      </div>
+      <div id="lab-pay" class="clip cap cap-bottom" data-start="19.93" data-duration="3.35" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="line">계산 · 영수증</p>
+        </div>
+      </div>
+      <div id="lab-qr" class="clip cap cap-top" data-start="23.78" data-duration="6.2" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="line">영수증 QR 인증 · 체험 할인권</p>
+          <p class="tag">인증·혜택 시연</p>
+        </div>
+      </div>
+      <div id="lab-paint" class="clip cap cap-bottom" data-start="31.88" data-duration="3.95" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="line">하회탈 꾸미기 체험</p>
+        </div>
+      </div>
+      <div id="lab-ride" class="clip cap cap-bottom" data-start="36.52" data-duration="3.55" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="line">월영교 가는 연결차량</p>
+          <p class="tag">연결차량 운영 제안</p>
+        </div>
+      </div>
+      <div id="lab-bridge" class="clip cap cap-bottom" data-start="41.27" data-duration="1.38" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="line">월영교</p>
+        </div>
+      </div>
+      <div id="lab-market" class="clip cap cap-bottom" data-start="51.17" data-duration="5.51" data-track-index="3">
+        <div class="scrim"></div>
+        <div class="cap-body">
+          <p class="line">월영교 밤마당 · 국화차</p>
+          <p class="tag">야간 팝업 제안</p>
+        </div>
+      </div>
+
+      <div id="ending" class="clip" data-start="68.29" data-duration="4" data-track-index="6">
+        <div class="scrim"></div>
+        <div class="title-block">
+          <p class="title">안동 이어드림</p>
+          <span class="rule"></span>
+          <p class="subtitle">한 끼에서, 안동의 밤까지.</p>
+        </div>
+        <div class="credits">
+          <p class="demo">3D 체험 시연 · 일부 공간·혜택·운영은 제안</p>
+          <p>지도 © OpenStreetMap contributors / OpenFreeMap · 행정경계 통계청 SGIS</p>
+          <p>음악 자체 제작 · 효과음 Pixabay</p>
+        </div>
+      </div>
+
+      <audio id="bgm" src="assets/audio/bgm.wav" data-start="0" data-duration="72.29" data-track-index="10" data-volume="1"></audio>
+      <audio id="amb" src="assets/audio/ambience.wav" data-start="0" data-duration="72.29" data-track-index="11" data-volume="0.8"></audio>
+      <audio id="foley" src="assets/audio/foley.wav" data-start="0" data-duration="72.29" data-track-index="12" data-volume="0.9"></audio>
+      <audio id="sfx-whoosh" src="assets/audio/sfx/whoosh-short.mp3" data-start="8.612" data-duration="0.57" data-track-index="13" data-volume="0.3"></audio>
+      <audio id="sfx-pay" src="assets/audio/sfx/click-soft.mp3" data-start="21.139" data-duration="0.37" data-track-index="14" data-volume="0.55"></audio>
+      <audio id="sfx-qr" src="assets/audio/sfx/chime.mp3" data-start="26.669" data-duration="2.5" data-track-index="15" data-volume="0.4"></audio>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      gsap.set("#map-w", { scale: 1, filter: "blur(0px)" });
+      gsap.set("#qr-w", { transformOrigin: "1640px 1000px", scale: 1.0, opacity: 1 });
+      gsap.set("#coupon-w", { transformOrigin: "1644px 800px", scale: 1.0, opacity: 1 });
+      gsap.set("#apply-w", { transformOrigin: "1738px 255px", scale: 1.15, opacity: 0 });
+      gsap.set("#mask-w", { transformOrigin: "960px 460px", scale: 1.0, opacity: 0 });
+      gsap.set("#market-w", { transformOrigin: "1150px 430px", scale: 1.0, opacity: 0 });
+      tl.fromTo("#apply-w", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.inOut", immediateRender: false }, 29.777);
+      tl.fromTo("#mask-w", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.inOut", immediateRender: false }, 34.354);
+      tl.fromTo("#ride-w", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.inOut", immediateRender: false }, 35.623);
+      tl.fromTo("#bridge-w", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "sine.inOut", immediateRender: false }, 39.569);
+      tl.fromTo("#walk-w", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false }, 44.946);
+      tl.fromTo("#market-w", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.inOut", immediateRender: false }, 50.369);
+      tl.fromTo("#tea-w", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "sine.inOut", immediateRender: false }, 52.769);
+      tl.fromTo("#river-w", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false }, 56.377);
+      tl.fromTo("#ending-w", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false }, 62.446);
+      tl.fromTo("#map-w", { scale: 1, filter: "blur(0px)" }, { scale: 1.3, filter: "blur(10px)", duration: 0.9, ease: "power2.in", immediateRender: false }, 8.562);
+      tl.fromTo("#alley-w", { opacity: 0, scale: 1.14, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.8, ease: "power2.out" }, 8.862);
+      tl.fromTo("#qr-w", { scale: 1.0 }, { scale: 1.2, duration: 2.308, ease: "sine.inOut", immediateRender: false }, 25.669);
+      tl.fromTo("#coupon-w", { scale: 1.0 }, { scale: 1.08, duration: 2.2, ease: "sine.inOut", immediateRender: false }, 27.977);
+      tl.fromTo("#apply-w", { scale: 1.15 }, { scale: 1.28, duration: 1.9, ease: "sine.inOut", immediateRender: false }, 29.777);
+      tl.fromTo("#mask-w", { scale: 1.0 }, { scale: 1.05, duration: 1.769, ease: "sine.inOut", immediateRender: false }, 34.354);
+      tl.fromTo("#market-w", { scale: 1.0 }, { scale: 1.08, duration: 2.7, ease: "sine.inOut", immediateRender: false }, 50.369);
+      tl.fromTo("#lab-map .scrim", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, 0.8);
+      tl.fromTo("#lab-map .line", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.85);
+      tl.to("#lab-map .cap-body, #lab-map .scrim", { opacity: 0, duration: 0.4, ease: "sine.in" }, 7.86);
+      tl.fromTo("#lab-alley .scrim", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, 10.16);
+      tl.fromTo("#lab-alley .line", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 10.21);
+      tl.to("#lab-alley .cap-body, #lab-alley .scrim", { opacity: 0, duration: 0.4, ease: "sine.in" }, 14.11);
+      tl.fromTo("#lab-meal .scrim", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, 15.32);
+      tl.fromTo("#lab-meal .line", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 15.37);
+      tl.to("#lab-meal .cap-body, #lab-meal .scrim", { opacity: 0, duration: 0.4, ease: "sine.in" }, 18.93);
+      tl.fromTo("#lab-pay .scrim", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, 19.93);
+      tl.fromTo("#lab-pay .line", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 19.98);
+      tl.to("#lab-pay .cap-body, #lab-pay .scrim", { opacity: 0, duration: 0.4, ease: "sine.in" }, 22.88);
+      tl.fromTo("#lab-qr .scrim", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, 23.78);
+      tl.fromTo("#lab-qr .line", { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 23.83);
+      tl.fromTo("#lab-qr .tag", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.out" }, 24.08);
+      tl.to("#lab-qr .cap-body, #lab-qr .scrim", { opacity: 0, duration: 0.4, ease: "sine.in" }, 29.58);
+      tl.fromTo("#lab-paint .scrim", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, 31.88);
+      tl.fromTo("#lab-paint .line", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 31.93);
+      tl.to("#lab-paint .cap-body, #lab-paint .scrim", { opacity: 0, duration: 0.4, ease: "sine.in" }, 35.43);
+      tl.fromTo("#lab-ride .scrim", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, 36.52);
+      tl.fromTo("#lab-ride .line", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 36.57);
+      tl.fromTo("#lab-ride .tag", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.out" }, 36.82);
+      tl.to("#lab-ride .cap-body, #lab-ride .scrim", { opacity: 0, duration: 0.4, ease: "sine.in" }, 39.67);
+      tl.fromTo("#lab-bridge .scrim", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, 41.27);
+      tl.fromTo("#lab-bridge .line", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 41.32);
+      tl.to("#lab-bridge .cap-body, #lab-bridge .scrim", { opacity: 0, duration: 0.4, ease: "sine.in" }, 42.25);
+      tl.fromTo("#lab-market .scrim", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, 51.17);
+      tl.fromTo("#lab-market .line", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 51.22);
+      tl.fromTo("#lab-market .tag", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.out" }, 51.47);
+      tl.to("#lab-market .cap-body, #lab-market .scrim", { opacity: 0, duration: 0.4, ease: "sine.in" }, 56.28);
+      tl.fromTo("#open-note .scrim", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, 0.6);
+      tl.fromTo("#open-note .notes", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, 0.8);
+      tl.to("#open-note .notes, #open-note .scrim", { opacity: 0, duration: 0.4, ease: "sine.in" }, 8.262);
+      tl.fromTo("#ending .scrim", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "sine.out" }, 68.29);
+      tl.fromTo("#ending .title", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.9, ease: "power2.out" }, 68.39);
+      tl.fromTo("#ending .rule", { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "power3.out" }, 68.79);
+      tl.fromTo("#ending .subtitle", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 68.89);
+      tl.fromTo("#ending .credits", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "sine.out" }, 69.19);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

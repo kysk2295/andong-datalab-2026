@@ -1,0 +1,90 @@
+[
+  {
+    "name": "session-ready",
+    "time": 9.163
+  },
+  {
+    "name": "S03_start",
+    "time": 158.18
+  },
+  {
+    "name": "S03_end",
+    "time": 173.411
+  },
+  {
+    "name": "S04_start",
+    "time": 228.95
+  },
+  {
+    "name": "S04_end",
+    "time": 243.303
+  },
+  {
+    "name": "S05_start",
+    "time": 294.663
+  },
+  {
+    "name": "S05_end",
+    "time": 302.728
+  },
+  {
+    "name": "S06_start",
+    "time": 303.227
+  },
+  {
+    "name": "S06_end",
+    "time": 316.554
+  },
+  {
+    "name": "S07a_start",
+    "time": 380.833
+  },
+  {
+    "name": "S07a_end",
+    "time": 387.607
+  },
+  {
+    "name": "S07b_start",
+    "time": 546.443
+  },
+  {
+    "name": "S07b_end",
+    "time": 573.014
+  },
+  {
+    "name": "S08_start",
+    "time": 623.573
+  },
+  {
+    "name": "S08_end",
+    "time": 634.486
+  },
+  {
+    "name": "S10_start",
+    "time": 708.429
+  },
+  {
+    "name": "S10_end",
+    "time": 721.479
+  },
+  {
+    "name": "S11a_start",
+    "time": 823.903
+  },
+  {
+    "name": "S11a_end",
+    "time": 834.982
+  },
+  {
+    "name": "S11b_start",
+    "time": 858.147
+  },
+  {
+    "name": "S11b_end",
+    "time": 873.892
+  },
+  {
+    "name": "session_end",
+    "time": 1093.205
+  }
+]

@@ -1,0 +1,67 @@
+{
+ "id": "M05b",
+ "file": "M05b_화면_릴레이진입.mp4",
+ "duration": 5,
+ "p": [
+  [
+   7,
+   4.9,
+   4
+  ],
+  [
+   7.3,
+   4.3,
+   3.3
+  ]
+ ],
+ "t": [
+  [
+   3.4,
+   0.8,
+   -1.8
+  ],
+  [
+   3.6,
+   0.8,
+   -1.95
+  ]
+ ],
+ "cursor": [
+  {
+   "f": 0,
+   "x": 1400,
+   "y": 480
+  },
+  {
+   "f": 80,
+   "x": 130,
+   "y": 618
+  },
+  {
+   "f": 100,
+   "x": 130,
+   "y": 618,
+   "down": true
+  },
+  {
+   "f": 112,
+   "x": 130,
+   "y": 618
+  },
+  {
+   "f": 149,
+   "x": 136,
+   "y": 622
+  }
+ ],
+ "events": [
+  {
+   "frame": 78,
+   "js": "document.querySelector('.relay-hub-primary').classList.add('film-hover');document.querySelector('.relay-hub-primary').style.filter='brightness(1.18)'"
+  }
+ ],
+ "fps": 30,
+ "frames": 150,
+ "method": "actual WebGL frame capture",
+ "elapsed": 8.746
+}
